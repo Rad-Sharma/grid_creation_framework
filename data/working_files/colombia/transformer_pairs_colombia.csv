@@ -1,0 +1,8 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+5,6,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ocana_500kV,Ocana_230kV,0.0,,transformer
+23,24,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cerromatoso_500kV,Cerromatoso_230kV,0.0,,transformer
+29,30,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Chinú_500kV,Chinú_230kV,0.0,,transformer
+38,39,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,San Marcos_500kV,San Marcos_230kV,0.0,,transformer
+68,69,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Subestación eléctrica Primavera_500kV,Subestación eléctrica Primavera_230kV,0.0,,transformer
+103,104,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Nueva Esperanza_500kV,Nueva Esperanza_230kV,0.0,,transformer
+142,143,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Sogamoso_500kV,Sogamoso_230kV,0.0,,transformer

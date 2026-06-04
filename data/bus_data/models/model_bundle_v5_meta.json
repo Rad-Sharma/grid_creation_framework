@@ -1,0 +1,26 @@
+{
+  "model_type": "nnridge_a1.0",
+  "features": [
+    "pop_density",
+    "road_density",
+    "gem_steel_mw_voronoi",
+    "mining_ntl_product",
+    "ind_heavy_chemical_km2",
+    "fp_gold_ntl"
+  ],
+  "cv_r2_mw": 0.6705564327287548,
+  "cv_r2_log": 0.7706996635696974,
+  "cv_pearson": 0.8278180101010469,
+  "cv_spearman": 0.8586287095792509,
+  "cv_rmse_mw": 110.58822936848173,
+  "cv_mae_mw": 56.88023507972299,
+  "cv_rmse_log": 0.6730622714156604,
+  "cv_wmape": 41.88256839273482,
+  "training_n": 103,
+  "training_n_raw": 433,
+  "alpha": 1.0,
+  "training_sources": {
+    "gb_gsp_zenodo10866260": 61,
+    "nz_gxp_metered": 42
+  }
+}

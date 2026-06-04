@@ -1,0 +1,2407 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-05-17T04:31:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/170872587",
+        "industrial": "power",
+        "landuse": "industrial",
+        "name": "Takoradi CCGT Power Plant",
+        "operator": "Volta River Authority VRA",
+        "plant:method": "combustion",
+        "plant:output:electricity": "792 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "ref": "40359",
+        "wikidata": "Q7678482"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6563048,
+              4.9739765
+            ],
+            [
+              -1.6563553,
+              4.9746057
+            ],
+            [
+              -1.6584206,
+              4.9761929
+            ],
+            [
+              -1.6593862,
+              4.9754394
+            ],
+            [
+              -1.6593382,
+              4.9740018
+            ],
+            [
+              -1.6594987,
+              4.9739876
+            ],
+            [
+              -1.6596277,
+              4.9739781
+            ],
+            [
+              -1.6596216,
+              4.9738566
+            ],
+            [
+              -1.6600456,
+              4.9738345
+            ],
+            [
+              -1.6620487,
+              4.9737301
+            ],
+            [
+              -1.6619723,
+              4.9722748
+            ],
+            [
+              -1.66076,
+              4.972338
+            ],
+            [
+              -1.6607595,
+              4.9722329
+            ],
+            [
+              -1.6612101,
+              4.9715114
+            ],
+            [
+              -1.6611004,
+              4.9701044
+            ],
+            [
+              -1.6572849,
+              4.9703545
+            ],
+            [
+              -1.6573054,
+              4.970673
+            ],
+            [
+              -1.6569246,
+              4.9707004
+            ],
+            [
+              -1.6562301,
+              4.9707403
+            ],
+            [
+              -1.6552603,
+              4.9707959
+            ],
+            [
+              -1.6551261,
+              4.9708808
+            ],
+            [
+              -1.6550578,
+              4.9710009
+            ],
+            [
+              -1.6552051,
+              4.9736003
+            ],
+            [
+              -1.655277,
+              4.9738695
+            ],
+            [
+              -1.6554485,
+              4.9740423
+            ],
+            [
+              -1.6563048,
+              4.9739765
+            ]
+          ]
+        ]
+      },
+      "id": "way/170872587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/256777446",
+        "landuse": "industrial",
+        "name": "Sunon Asogli Power Plant",
+        "operator": "Sunon Asogli Power (Ghana) Ltd",
+        "plant:method": "combustion",
+        "plant:output:electricity": "560 MW",
+        "plant:source": "gas",
+        "power": "plant",
+        "source": "https://www.gem.wiki/Sunon_Asogli_power_station",
+        "website": "https://sunonasogli.com/",
+        "wikidata": "Q25102069"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0484633,
+              5.6819937
+            ],
+            [
+              0.0491302,
+              5.6821918
+            ],
+            [
+              0.0489317,
+              5.6834369
+            ],
+            [
+              0.0488995,
+              5.6834369
+            ],
+            [
+              0.0488995,
+              5.6838359
+            ],
+            [
+              0.0486474,
+              5.6838559
+            ],
+            [
+              0.0485508,
+              5.6843163
+            ],
+            [
+              0.0467524,
+              5.6829584
+            ],
+            [
+              0.0461502,
+              5.6815821
+            ],
+            [
+              0.0458,
+              5.6807821
+            ],
+            [
+              0.0455932,
+              5.6803094
+            ],
+            [
+              0.0446873,
+              5.6788475
+            ],
+            [
+              0.045686,
+              5.6775061
+            ],
+            [
+              0.0491151,
+              5.6800565
+            ],
+            [
+              0.0484633,
+              5.6819937
+            ]
+          ]
+        ]
+      },
+      "id": "way/256777446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/256779004",
+        "landuse": "industrial",
+        "name": "Tema Cenit & Tema Thermal Power Plants",
+        "plant:method": "combustion",
+        "plant:output:electricity": "252 MW",
+        "plant:source": "gas;oil",
+        "power": "plant",
+        "source": "https://cenitenergy.com/our-company/our-history/;https://cenitenergy.com/projects/combined-cycle/",
+        "wikidata": "Q16734150"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0112739,
+              5.6745156
+            ],
+            [
+              0.0108221,
+              5.6739772
+            ],
+            [
+              0.0113394,
+              5.6726858
+            ],
+            [
+              0.0134493,
+              5.6735546
+            ],
+            [
+              0.0140582,
+              5.6738052
+            ],
+            [
+              0.0120715,
+              5.6754733
+            ],
+            [
+              0.0112739,
+              5.6745156
+            ]
+          ]
+        ]
+      },
+      "id": "way/256779004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/282578856",
+        "landuse": "industrial",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0105372,
+              5.6744598
+            ],
+            [
+              0.0107431,
+              5.6749005
+            ],
+            [
+              0.0104293,
+              5.6751352
+            ],
+            [
+              0.0098112,
+              5.6760722
+            ],
+            [
+              0.0094978,
+              5.6761739
+            ],
+            [
+              0.0092993,
+              5.6759657
+            ],
+            [
+              0.0093686,
+              5.6757627
+            ],
+            [
+              0.0092646,
+              5.6755219
+            ],
+            [
+              0.0098249,
+              5.6741401
+            ],
+            [
+              0.0101039,
+              5.6740867
+            ],
+            [
+              0.0103774,
+              5.6742255
+            ],
+            [
+              0.0105372,
+              5.6744598
+            ]
+          ]
+        ]
+      },
+      "id": "way/282578856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/302127338",
+        "building": "yes",
+        "name": "Kpong Power Station",
+        "operator": "Volta River Authority",
+        "plant:method": "water-storage",
+        "plant:output:electricity": "160 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "http://www.vra.com/our_mandate/kpong_hydro_plant.php",
+        "wikidata": "Q6435738"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.1235935,
+              6.1187491
+            ],
+            [
+              0.1237121,
+              6.1186412
+            ],
+            [
+              0.1238721,
+              6.1188151
+            ],
+            [
+              0.1239766,
+              6.1187201
+            ],
+            [
+              0.1248572,
+              6.119677
+            ],
+            [
+              0.1246342,
+              6.1198799
+            ],
+            [
+              0.1235935,
+              6.1187491
+            ]
+          ]
+        ]
+      },
+      "id": "way/302127338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/407081343",
+        "landuse": "industrial",
+        "name": "Bui Hydropower Plant",
+        "plant:method": "water-storage",
+        "plant:output:electricity": "400 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "wikidata": "Q4986338"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.2352493,
+              8.2795417
+            ],
+            [
+              -2.2358709,
+              8.2788727
+            ],
+            [
+              -2.2357154,
+              8.2787313
+            ],
+            [
+              -2.2350939,
+              8.2794003
+            ],
+            [
+              -2.2352493,
+              8.2795417
+            ]
+          ]
+        ]
+      },
+      "id": "way/407081343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/444487572",
+        "name": "University of Ghana",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "2 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.1821022,
+              5.6334064
+            ],
+            [
+              -0.1818343,
+              5.6325966
+            ],
+            [
+              -0.1813747,
+              5.6327534
+            ],
+            [
+              -0.1815198,
+              5.6331895
+            ],
+            [
+              -0.1807383,
+              5.6334369
+            ],
+            [
+              -0.1807112,
+              5.6337043
+            ],
+            [
+              -0.1809118,
+              5.6342725
+            ],
+            [
+              -0.1817593,
+              5.6340038
+            ],
+            [
+              -0.1816097,
+              5.6335641
+            ],
+            [
+              -0.1821022,
+              5.6334064
+            ]
+          ]
+        ]
+      },
+      "id": "way/444487572"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/479861255",
+        "addr:district": "Ashaiman",
+        "amenity": "recycling",
+        "branch": "Safi Sana",
+        "contact:pobox": "P. O. Box CT 8312, Cantonments-Accra, Ghana",
+        "description": "Making sanitation and waste treatment affordable",
+        "email": "ashaiman@safisana.org",
+        "generator:method": "anaerobic_digestion",
+        "name": "Safi Sana Ghana Limited",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "operator": "Safi Sana Ghana",
+        "operator:type": "private",
+        "phone": "+233 30 297 2380;+233 24 485 2397",
+        "plant:output:biogas": "yes",
+        "plant:output:electricity": "100 kW",
+        "plant:source": "waste",
+        "power": "plant",
+        "recycling:food_waste": "yes",
+        "recycling:green_waste": "yes",
+        "recycling_type": "centre",
+        "source": "UNDP Ghana Data Collection 2021",
+        "website": "https://safisana.org"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.05006,
+              5.6842475
+            ],
+            [
+              -0.0496266,
+              5.6834625
+            ],
+            [
+              -0.049538,
+              5.6833021
+            ],
+            [
+              -0.0479055,
+              5.6839283
+            ],
+            [
+              -0.048248,
+              5.6846806
+            ],
+            [
+              -0.05006,
+              5.6842475
+            ]
+          ]
+        ]
+      },
+      "id": "way/479861255"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/507400869",
+        "barrier": "fence",
+        "landuse": "industrial",
+        "name": "Osagyefo Barge",
+        "operator": "Ghana National Petroleum Corporation",
+        "plant:method": "combustion",
+        "plant:output:electricity": "125 MW",
+        "plant:source": "gas",
+        "power": "plant",
+        "wikidata": "Q7105531"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -3.0434753,
+              5.078638
+            ],
+            [
+              -3.0427272,
+              5.0784574
+            ],
+            [
+              -3.0421749,
+              5.0782992
+            ],
+            [
+              -3.0416787,
+              5.0782084
+            ],
+            [
+              -3.040482,
+              5.0780132
+            ],
+            [
+              -3.0387196,
+              5.0775948
+            ],
+            [
+              -3.0376155,
+              5.0773689
+            ],
+            [
+              -3.0369624,
+              5.0772124
+            ],
+            [
+              -3.0363421,
+              5.0771024
+            ],
+            [
+              -3.0363008,
+              5.0772598
+            ],
+            [
+              -3.0351166,
+              5.0826112
+            ],
+            [
+              -3.0363243,
+              5.0828694
+            ],
+            [
+              -3.0369834,
+              5.0830064
+            ],
+            [
+              -3.0379205,
+              5.0832012
+            ],
+            [
+              -3.0403113,
+              5.0836884
+            ],
+            [
+              -3.0410645,
+              5.0804184
+            ],
+            [
+              -3.0430439,
+              5.0808512
+            ],
+            [
+              -3.0434487,
+              5.0787951
+            ],
+            [
+              -3.0434753,
+              5.078638
+            ]
+          ]
+        ]
+      },
+      "id": "way/507400869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/636838998",
+        "name": "Gomoa Onyaadze",
+        "operator": "Meinergy",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "20 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "start_date": "2016"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.7013811,
+              5.3473099
+            ],
+            [
+              -0.7060214,
+              5.3473547
+            ],
+            [
+              -0.706067,
+              5.3425684
+            ],
+            [
+              -0.7036981,
+              5.3425251
+            ],
+            [
+              -0.7037203,
+              5.3406003
+            ],
+            [
+              -0.701273,
+              5.3405305
+            ],
+            [
+              -0.701239,
+              5.3425043
+            ],
+            [
+              -0.7013811,
+              5.3473099
+            ]
+          ]
+        ]
+      },
+      "id": "way/636838998"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/695710257",
+        "alt_name": "Kpone Thermal Power Station II",
+        "landuse": "industrial",
+        "name": "Kpone Independent Power Plant",
+        "operator": "Cenpower",
+        "plant:method": "combustion",
+        "plant:output:electricity": "340 MW",
+        "plant:source": "oil;gas",
+        "plant:type": "combined_cycle",
+        "power": "plant",
+        "source": "https://www.gem.wiki/Kpone_IPP_(KIPP)_power_station",
+        "wikidata": "Q25247875",
+        "wikipedia": "en:Kpone Thermal Power Station II"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.040162,
+              5.6807923
+            ],
+            [
+              0.0420852,
+              5.6784689
+            ],
+            [
+              0.0421388,
+              5.6784356
+            ],
+            [
+              0.0430977,
+              5.6792269
+            ],
+            [
+              0.0428242,
+              5.6795579
+            ],
+            [
+              0.042513,
+              5.6801504
+            ],
+            [
+              0.0425827,
+              5.6802785
+            ],
+            [
+              0.0413865,
+              5.6819507
+            ],
+            [
+              0.041369,
+              5.681972
+            ],
+            [
+              0.0412685,
+              5.6820641
+            ],
+            [
+              0.040162,
+              5.6807923
+            ]
+          ]
+        ]
+      },
+      "id": "way/695710257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/791950855",
+        "name": "Vpower Power plant",
+        "plant:method": "combustion",
+        "plant:output:electricity": "50 MW",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.013548,
+              5.6771686
+            ],
+            [
+              0.0137678,
+              5.6766201
+            ],
+            [
+              0.0146663,
+              5.6769766
+            ],
+            [
+              0.0144465,
+              5.6775251
+            ],
+            [
+              0.013548,
+              5.6771686
+            ]
+          ]
+        ]
+      },
+      "id": "way/791950855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/826311725",
+        "landuse": "industrial",
+        "name": "Kpone Thermal Power Station I",
+        "operator": "Volta River Authority",
+        "plant:method": "combustion",
+        "plant:output:electricity": "220 MW",
+        "plant:source": "gas;oil",
+        "power": "plant",
+        "source": "https://www.gem.wiki/Kpone_Thermal_power_plant",
+        "wikidata": "Q25230618"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0080466,
+              5.7363496
+            ],
+            [
+              0.0065875,
+              5.7306384
+            ],
+            [
+              0.0082612,
+              5.7313003
+            ],
+            [
+              0.0085133,
+              5.7306437
+            ],
+            [
+              0.0088859,
+              5.7307913
+            ],
+            [
+              0.01288,
+              5.7323731
+            ],
+            [
+              0.0137275,
+              5.7349031
+            ],
+            [
+              0.0080466,
+              5.7363496
+            ]
+          ]
+        ]
+      },
+      "id": "way/826311725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/826311727",
+        "name": "Akosombo Hydroelectric Power Plant",
+        "operator": "Volta River Authority",
+        "plant:method": "water-storage",
+        "plant:output:electricity": "1020 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "http://www.vra.com/our_mandate/akosombo_hydro_plant.php",
+        "wikidata": "Q1282314"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0565014,
+              6.299169
+            ],
+            [
+              0.0566831,
+              6.2994027
+            ],
+            [
+              0.0565155,
+              6.299544
+            ],
+            [
+              0.0560595,
+              6.2994947
+            ],
+            [
+              0.055275,
+              6.2986415
+            ],
+            [
+              0.0548919,
+              6.2982928
+            ],
+            [
+              0.0552501,
+              6.297954
+            ],
+            [
+              0.0555256,
+              6.2982623
+            ],
+            [
+              0.0563891,
+              6.2991729
+            ],
+            [
+              0.0564444,
+              6.2991201
+            ],
+            [
+              0.0565014,
+              6.299169
+            ]
+          ]
+        ]
+      },
+      "id": "way/826311727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/954729945",
+        "landuse": "industrial",
+        "name": "Amandi Energy power plant",
+        "operator": "Amandi Energy Limited",
+        "plant:method": "combustion",
+        "plant:output:electricity": "200 MW",
+        "plant:source": "gas",
+        "power": "plant",
+        "source": "https://www.miningweekly.com/article/ghanaian-power-plant-reaches-commercial-operation-2021-11-05"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6677617,
+              4.9701623
+            ],
+            [
+              -1.668858,
+              4.9700932
+            ],
+            [
+              -1.6688643,
+              4.9682354
+            ],
+            [
+              -1.669173,
+              4.9678023
+            ],
+            [
+              -1.6692486,
+              4.9674759
+            ],
+            [
+              -1.669047,
+              4.9669612
+            ],
+            [
+              -1.6642996,
+              4.9676867
+            ],
+            [
+              -1.6646229,
+              4.9702895
+            ],
+            [
+              -1.6677617,
+              4.9701623
+            ]
+          ]
+        ]
+      },
+      "id": "way/954729945"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1021746811",
+        "landuse": "industrial",
+        "plant:method": "combustion",
+        "plant:source": "biogas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.3598356,
+              5.8265775
+            ],
+            [
+              -0.3598289,
+              5.8265775
+            ],
+            [
+              -0.3598291,
+              5.8266068
+            ],
+            [
+              -0.3598373,
+              5.8266068
+            ],
+            [
+              -0.3598453,
+              5.826613
+            ],
+            [
+              -0.3598494,
+              5.8266241
+            ],
+            [
+              -0.3598448,
+              5.8266347
+            ],
+            [
+              -0.3598383,
+              5.8266381
+            ],
+            [
+              -0.3598293,
+              5.8266382
+            ],
+            [
+              -0.3598296,
+              5.8266742
+            ],
+            [
+              -0.3598427,
+              5.8266735
+            ],
+            [
+              -0.3598574,
+              5.8266692
+            ],
+            [
+              -0.3598742,
+              5.8266557
+            ],
+            [
+              -0.3598835,
+              5.8266363
+            ],
+            [
+              -0.3598833,
+              5.8266147
+            ],
+            [
+              -0.3598738,
+              5.8265954
+            ],
+            [
+              -0.3598568,
+              5.8265821
+            ],
+            [
+              -0.3598356,
+              5.8265775
+            ]
+          ]
+        ]
+      },
+      "id": "way/1021746811"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1079543440",
+        "name": "RMU Solar Farm",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0657986,
+              5.6084769
+            ],
+            [
+              -0.0656202,
+              5.6079284
+            ],
+            [
+              -0.0644656,
+              5.6084956
+            ],
+            [
+              -0.064487,
+              5.6097088
+            ],
+            [
+              -0.0647298,
+              5.6096848
+            ],
+            [
+              -0.064715,
+              5.6090068
+            ],
+            [
+              -0.0648156,
+              5.6089708
+            ],
+            [
+              -0.0657986,
+              5.6084769
+            ]
+          ]
+        ]
+      },
+      "id": "way/1079543440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1090281209",
+        "name": "Bridge Power Station",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0195237,
+              5.6783815
+            ],
+            [
+              0.0180014,
+              5.6778253
+            ],
+            [
+              0.0181218,
+              5.6774318
+            ],
+            [
+              0.0191495,
+              5.6768036
+            ],
+            [
+              0.0192629,
+              5.6766518
+            ],
+            [
+              0.0201199,
+              5.6769556
+            ],
+            [
+              0.0195237,
+              5.6783815
+            ]
+          ]
+        ]
+      },
+      "id": "way/1090281209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1133332174",
+        "name": "Nadowli-Kaleo District solar project",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "5.8 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.5342152,
+              10.1703549
+            ],
+            [
+              -2.5323295,
+              10.1706355
+            ],
+            [
+              -2.5330208,
+              10.1751367
+            ],
+            [
+              -2.5349065,
+              10.1748561
+            ],
+            [
+              -2.5342152,
+              10.1703549
+            ]
+          ]
+        ]
+      },
+      "id": "way/1133332174"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1133332257",
+        "name": "Kaleo Solar Farm - Phase I",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "15 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.5354565,
+              10.1783089
+            ],
+            [
+              -2.5325563,
+              10.1787982
+            ],
+            [
+              -2.5330589,
+              10.1817521
+            ],
+            [
+              -2.5351994,
+              10.1813717
+            ],
+            [
+              -2.5358526,
+              10.1807591
+            ],
+            [
+              -2.5354565,
+              10.1783089
+            ]
+          ]
+        ]
+      },
+      "id": "way/1133332257"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1158032338",
+        "building": "ship",
+        "man_made": "works",
+        "name": "Osman Khan Power Plant",
+        "official_name": "MV Karadeniz Powership Osman Khan",
+        "operator": "Karpowership Ghana Company Limited",
+        "plant:method": "combustion",
+        "plant:output:electricity": "450 MW",
+        "plant:source": "gas",
+        "power": "plant",
+        "start_date": "2015",
+        "website": "https://karpowership.com/project-ghana",
+        "wikidata": "Q28126859",
+        "wikipedia": "en:MV Karadeniz Powership Osman Khan"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6975042,
+              4.939341
+            ],
+            [
+              -1.697516,
+              4.939067
+            ],
+            [
+              -1.6974126,
+              4.9388891
+            ],
+            [
+              -1.6962544,
+              4.9376582
+            ],
+            [
+              -1.6960032,
+              4.9374936
+            ],
+            [
+              -1.6956259,
+              4.9373534
+            ],
+            [
+              -1.6954466,
+              4.9375104
+            ],
+            [
+              -1.6954938,
+              4.9376938
+            ],
+            [
+              -1.6955715,
+              4.9378413
+            ],
+            [
+              -1.6969318,
+              4.9392974
+            ],
+            [
+              -1.6971132,
+              4.9393973
+            ],
+            [
+              -1.6973209,
+              4.9394669
+            ],
+            [
+              -1.6975042,
+              4.939341
+            ]
+          ]
+        ]
+      },
+      "id": "way/1158032338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1201725680",
+        "name": "BXC Oyandze",
+        "operator": "Beijing Xiaocheng Company",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "20 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.6931708,
+              5.3675314
+            ],
+            [
+              -0.6918181,
+              5.3675342
+            ],
+            [
+              -0.6905109,
+              5.3687255
+            ],
+            [
+              -0.6905158,
+              5.371081
+            ],
+            [
+              -0.6917743,
+              5.3710785
+            ],
+            [
+              -0.6912595,
+              5.3730603
+            ],
+            [
+              -0.6915552,
+              5.3730548
+            ],
+            [
+              -0.6916702,
+              5.3746688
+            ],
+            [
+              -0.6951862,
+              5.3746579
+            ],
+            [
+              -0.6951774,
+              5.3718172
+            ],
+            [
+              -0.6959804,
+              5.3718147
+            ],
+            [
+              -0.6959775,
+              5.3708957
+            ],
+            [
+              -0.6954436,
+              5.3708973
+            ],
+            [
+              -0.6953724,
+              5.3697888
+            ],
+            [
+              -0.6951589,
+              5.369129
+            ],
+            [
+              -0.6946988,
+              5.3687528
+            ],
+            [
+              -0.6938116,
+              5.3683384
+            ],
+            [
+              -0.6932968,
+              5.3678258
+            ],
+            [
+              -0.6931708,
+              5.3675314
+            ]
+          ]
+        ]
+      },
+      "id": "way/1201725680"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1246063588",
+        "landuse": "industrial",
+        "name": "Ameri Power Plant",
+        "note": "Reportedly relocated to Anwomaso from this location in 2023",
+        "power": "plant",
+        "source": "https://www.vra.com/media/2022/Relocation-of-Ameri-Power-Plant.php",
+        "utility": "power"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6611952,
+              4.9744276
+            ],
+            [
+              -1.6611609,
+              4.9738739
+            ],
+            [
+              -1.6596277,
+              4.9739781
+            ],
+            [
+              -1.6594987,
+              4.9739876
+            ],
+            [
+              -1.6595385,
+              4.9745226
+            ],
+            [
+              -1.6611952,
+              4.9744276
+            ]
+          ]
+        ]
+      },
+      "id": "way/1246063588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1246170595",
+        "name": "GPGC Power Plant",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0235391,
+              5.6996834
+            ],
+            [
+              0.02175,
+              5.6978272
+            ],
+            [
+              0.0227183,
+              5.6968637
+            ],
+            [
+              0.0241721,
+              5.698393
+            ],
+            [
+              0.0237349,
+              5.69882
+            ],
+            [
+              0.0240648,
+              5.6991136
+            ],
+            [
+              0.0235391,
+              5.6996834
+            ]
+          ]
+        ]
+      },
+      "id": "way/1246170595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1246170596",
+        "landuse": "industrial",
+        "name:en": "Aksa Ghana HFO power plant",
+        "plant:method": "combustion",
+        "plant:output:electricity": "370 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "source": "https://www.gem.wiki/Aksa_Ghana_HFO_power_plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0277957,
+              5.6928789
+            ],
+            [
+              0.0248842,
+              5.6954585
+            ],
+            [
+              0.0245154,
+              5.6950995
+            ],
+            [
+              0.024426,
+              5.6951811
+            ],
+            [
+              0.0235798,
+              5.695999
+            ],
+            [
+              0.0222945,
+              5.6944963
+            ],
+            [
+              0.0245824,
+              5.6924706
+            ],
+            [
+              0.0254434,
+              5.6931618
+            ],
+            [
+              0.0264682,
+              5.6922342
+            ],
+            [
+              0.0268757,
+              5.6918647
+            ],
+            [
+              0.0277957,
+              5.6928789
+            ]
+          ]
+        ]
+      },
+      "id": "way/1246170596"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1246170609",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.0134757,
+              5.6776489
+            ],
+            [
+              0.013606,
+              5.6773159
+            ],
+            [
+              0.014229,
+              5.6775573
+            ],
+            [
+              0.0140987,
+              5.6778902
+            ],
+            [
+              0.0134757,
+              5.6776489
+            ]
+          ]
+        ]
+      },
+      "id": "way/1246170609"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1254910749",
+        "landuse": "industrial",
+        "name": "Chirano Plant",
+        "operator": "Genser Energy",
+        "plant:method": "combustion",
+        "plant:output:electricity": "33MW",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.3723619,
+              6.2920852
+            ],
+            [
+              -2.3732504,
+              6.2924495
+            ],
+            [
+              -2.3736558,
+              6.2922352
+            ],
+            [
+              -2.373811,
+              6.2918108
+            ],
+            [
+              -2.3740784,
+              6.2913392
+            ],
+            [
+              -2.3740914,
+              6.2910949
+            ],
+            [
+              -2.3740094,
+              6.2907477
+            ],
+            [
+              -2.3738197,
+              6.2905205
+            ],
+            [
+              -2.3736515,
+              6.2903447
+            ],
+            [
+              -2.3731641,
+              6.2902633
+            ],
+            [
+              -2.3729959,
+              6.2908591
+            ],
+            [
+              -2.3728191,
+              6.2909149
+            ],
+            [
+              -2.3725991,
+              6.2910692
+            ],
+            [
+              -2.3723447,
+              6.2917551
+            ],
+            [
+              -2.3723619,
+              6.2920852
+            ]
+          ]
+        ]
+      },
+      "id": "way/1254910749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1284312136",
+        "name": "Navrongo",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "2.5 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "start_date": "2013"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.0557017,
+              10.9224938
+            ],
+            [
+              -1.0538756,
+              10.9237623
+            ],
+            [
+              -1.0538876,
+              10.9241929
+            ],
+            [
+              -1.0550359,
+              10.9241812
+            ],
+            [
+              -1.057149,
+              10.9230967
+            ],
+            [
+              -1.057157,
+              10.9226544
+            ],
+            [
+              -1.0567862,
+              10.9224938
+            ],
+            [
+              -1.0557017,
+              10.9224938
+            ]
+          ]
+        ]
+      },
+      "id": "way/1284312136"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1284321013",
+        "name": "Kaleo Solar Farm - Phase II",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "15 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.5372167,
+              10.1678993
+            ],
+            [
+              -2.5366472,
+              10.1640919
+            ],
+            [
+              -2.5351247,
+              10.1647135
+            ],
+            [
+              -2.5335008,
+              10.1652297
+            ],
+            [
+              -2.5340139,
+              10.1690814
+            ],
+            [
+              -2.5372167,
+              10.1678993
+            ]
+          ]
+        ]
+      },
+      "id": "way/1284321013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1408189396",
+        "landuse": "industrial",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.4921882,
+              6.727966
+            ],
+            [
+              -1.4921712,
+              6.7278611
+            ],
+            [
+              -1.4921217,
+              6.727869
+            ],
+            [
+              -1.4921388,
+              6.7279739
+            ],
+            [
+              -1.4921882,
+              6.727966
+            ]
+          ]
+        ]
+      },
+      "id": "way/1408189396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1420859791",
+        "landuse": "industrial",
+        "plant:method": "combustion",
+        "plant:output:electricity": "yes",
+        "plant:source": "coal",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0878177,
+              5.675548
+            ],
+            [
+              -0.0878518,
+              5.6753004
+            ],
+            [
+              -0.0876851,
+              5.6752785
+            ],
+            [
+              -0.0876591,
+              5.675531
+            ],
+            [
+              -0.0878177,
+              5.675548
+            ]
+          ]
+        ]
+      },
+      "id": "way/1420859791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424431183",
+        "name": "Yendi",
+        "operator": "Bui Power Authority",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "50 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "start_date": "2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.0494369,
+              9.4773932
+            ],
+            [
+              -0.0573448,
+              9.4740476
+            ],
+            [
+              -0.0519169,
+              9.472431
+            ],
+            [
+              -0.0492454,
+              9.4719368
+            ],
+            [
+              -0.0446292,
+              9.4708686
+            ],
+            [
+              -0.0429868,
+              9.4732832
+            ],
+            [
+              -0.0491718,
+              9.4773897
+            ],
+            [
+              -0.0494369,
+              9.4773932
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424431183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424431903",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.4497737,
+              6.8641786
+            ],
+            [
+              -0.4492717,
+              6.8644357
+            ],
+            [
+              -0.4497232,
+              6.8652727
+            ],
+            [
+              -0.4507652,
+              6.8652069
+            ],
+            [
+              -0.4514126,
+              6.8663637
+            ],
+            [
+              -0.4516999,
+              6.8661976
+            ],
+            [
+              -0.4507779,
+              6.8645674
+            ],
+            [
+              -0.4500958,
+              6.8646677
+            ],
+            [
+              -0.4497737,
+              6.8641786
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424431903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1442128806",
+        "name": "Bui Solar Farm",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "50 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "start_date": "2024"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.2549648,
+              8.2555402
+            ],
+            [
+              -2.2382909,
+              8.2555302
+            ],
+            [
+              -2.2361331,
+              8.2615079
+            ],
+            [
+              -2.2400377,
+              8.2674359
+            ],
+            [
+              -2.2476945,
+              8.2621819
+            ],
+            [
+              -2.2514663,
+              8.2613625
+            ],
+            [
+              -2.2546966,
+              8.2575957
+            ],
+            [
+              -2.2549648,
+              8.2555402
+            ]
+          ]
+        ]
+      },
+      "id": "way/1442128806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1442129276",
+        "name": "Premium Foods - Kwaso",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "2 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.4607744,
+              6.6140241
+            ],
+            [
+              -1.4590366,
+              6.6140367
+            ],
+            [
+              -1.4589958,
+              6.614481
+            ],
+            [
+              -1.4597157,
+              6.6153467
+            ],
+            [
+              -1.4602852,
+              6.6153558
+            ],
+            [
+              -1.4607499,
+              6.6149959
+            ],
+            [
+              -1.4607744,
+              6.6140241
+            ]
+          ]
+        ]
+      },
+      "id": "way/1442129276"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1442129277",
+        "plant:output:electricity": "6.5 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.9010307,
+              10.667241
+            ],
+            [
+              -2.901982,
+              10.6674115
+            ],
+            [
+              -2.9022002,
+              10.6668654
+            ],
+            [
+              -2.9012381,
+              10.6658316
+            ],
+            [
+              -2.9010661,
+              10.6658192
+            ],
+            [
+              -2.9007609,
+              10.6650401
+            ],
+            [
+              -2.898506,
+              10.6630695
+            ],
+            [
+              -2.8984838,
+              10.6633567
+            ],
+            [
+              -2.898358,
+              10.665057
+            ],
+            [
+              -2.8983562,
+              10.6661757
+            ],
+            [
+              -2.8996955,
+              10.6672417
+            ],
+            [
+              -2.9008007,
+              10.6672211
+            ],
+            [
+              -2.9010307,
+              10.667241
+            ]
+          ]
+        ]
+      },
+      "id": "way/1442129277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1450979103",
+        "floating": "yes",
+        "name": "Bui Floating Solar Farm",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "5 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.2520811,
+              8.2647173
+            ],
+            [
+              -2.2536191,
+              8.2667931
+            ],
+            [
+              -2.2545031,
+              8.2660606
+            ],
+            [
+              -2.2530191,
+              8.263997
+            ],
+            [
+              -2.2520811,
+              8.2647173
+            ]
+          ]
+        ]
+      },
+      "id": "way/1450979103"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1458096387",
+        "landuse": "industrial",
+        "name": "Tarkwa Plant",
+        "operator": "Genser Energy",
+        "plant:method": "combustion",
+        "plant:output:electricity": "66MW",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.0258908,
+              5.3273847
+            ],
+            [
+              -2.0260713,
+              5.3276954
+            ],
+            [
+              -2.0273569,
+              5.3269543
+            ],
+            [
+              -2.0271727,
+              5.3266586
+            ],
+            [
+              -2.0258908,
+              5.3273847
+            ]
+          ]
+        ]
+      },
+      "id": "way/1458096387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1458098307",
+        "landuse": "industrial",
+        "name": "Damang Plant",
+        "operator": "Genser Energy",
+        "plant:method": "combustion",
+        "plant:output:electricity": "25.5MW",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.8519209,
+              5.5211937
+            ],
+            [
+              -1.8515009,
+              5.5215271
+            ],
+            [
+              -1.8508763,
+              5.521998
+            ],
+            [
+              -1.8513016,
+              5.5225298
+            ],
+            [
+              -1.8520538,
+              5.5219398
+            ],
+            [
+              -1.8523754,
+              5.5213869
+            ],
+            [
+              -1.8519209,
+              5.5211937
+            ]
+          ]
+        ]
+      },
+      "id": "way/1458098307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1458099924",
+        "landuse": "industrial",
+        "name": "Wassa Plant",
+        "operator": "Genser Energy",
+        "plant:method": "combustion",
+        "plant:output:electricity": "33Mw",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.7286665,
+              5.4834231
+            ],
+            [
+              -1.7293595,
+              5.4824931
+            ],
+            [
+              -1.7285324,
+              5.481879
+            ],
+            [
+              -1.7278261,
+              5.482858
+            ],
+            [
+              -1.7286665,
+              5.4834231
+            ]
+          ]
+        ]
+      },
+      "id": "way/1458099924"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1458100137",
+        "landuse": "industrial",
+        "name": "Edikan Plant",
+        "operator": "Genser Energy",
+        "plant:method": "combustion",
+        "plant:output:electricity": "33MW",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.9307307,
+              5.9585808
+            ],
+            [
+              -1.9310123,
+              5.9589588
+            ],
+            [
+              -1.9313565,
+              5.958712
+            ],
+            [
+              -1.9317533,
+              5.9592398
+            ],
+            [
+              -1.9319891,
+              5.9590721
+            ],
+            [
+              -1.9321388,
+              5.9584853
+            ],
+            [
+              -1.9322729,
+              5.9582585
+            ],
+            [
+              -1.9321008,
+              5.9581673
+            ],
+            [
+              -1.9317767,
+              5.9577272
+            ],
+            [
+              -1.9307307,
+              5.9585808
+            ]
+          ]
+        ]
+      },
+      "id": "way/1458100137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1511993253",
+        "floating": "yes",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.2575096,
+              8.2664243
+            ],
+            [
+              -2.2557976,
+              8.2643726
+            ],
+            [
+              -2.2548479,
+              8.2652065
+            ],
+            [
+              -2.2565332,
+              8.2671787
+            ],
+            [
+              -2.2575096,
+              8.2664243
+            ]
+          ]
+        ]
+      },
+      "id": "way/1511993253"
+    }
+  ]
+}

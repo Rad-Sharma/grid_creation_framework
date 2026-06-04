@@ -1,0 +1,36 @@
+bus,Pg,Qg,Qmax,Qmin,Vg,mBase,status,Pmax,Pmin,generator_name,operator,source,genfuel,latitude,longitude,osm_id,bus_name,bus_distance_km
+15,0.0,0.0,39.2,-4.48,1.0,100.0,1,70.0,0.0,Central Térmica José Batlle y Ordóñez,UTE,oil,gas_turbine,-34.884527,-56.197658,way/180080438,Subestación Norte 150kV,5.606
+99,0.0,0.0,107.908,-23.532,1.0,100.0,1,212.0,0.0,"Central Térmica ""La Tablada""",UTE,gas,gas,-34.826776,-56.236433,way/180080441,Substation_W663287825,0.102
+83,0.0,0.0,449.05,-97.926,1.0,100.0,1,882.22,0.0,"Central Térmica ""Punta del Tigre""",UTE,gas,gas,-34.751645,-56.543046,way/224812627,San José Substation,0.163
+27,0.0,0.0,5.825,-1.525,1.0,100.0,1,12.5,0.0,Galofer,Galofer S.A.,biomass,steam,-33.250625,-54.402016,way/352197632,Substation_W201054300,2.8
+76,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,La Jacinta,Jacinta Solar Farm S.R.L.,solar,solar,-31.43118,-57.908769,way/585413683,Substation_W585413682,0.509
+77,0.0,0.0,9.952,-9.952,1.0,100.0,1,30.25,0.0,Fenima / Dicano / Petilcoran,Fenima S.A.;Petilcoran S. A.;Dicano S.A.,solar,solar,-32.287067,-58.027642,way/591445991,Substation_W585751341,1.77
+77,0.0,0.0,0.576,-0.576,1.0,100.0,1,1.75,0.0,Casalko,Casalko S.A.,solar,solar,-32.209604,-58.005155,way/591446003,Substation_W585751341,10.639
+77,0.0,0.0,2.632,-2.632,1.0,100.0,1,8.0,0.0,Raditon,Raditon S. A.,solar,solar,-32.386742,-58.132865,way/591446018,Substation_W585751341,13.35
+147,0.0,0.0,4.66,-1.22,1.0,100.0,1,10.0,0.0,ALUR,Alcoholes del Uruguay S. A.,biomass,steam,-30.329996,-57.622504,way/591446629,Substation_W1390515245,4.777
+74,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,Alto Cielo,Alto Cielo S. A.,solar,solar,-30.419772,-57.459551,way/591446630,Substation_W560608925,2.663
+79,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,El Naranjal,Colidim S.A.,solar,solar,-31.261602,-57.8711,way/591450822,Substation_W591450808,0.816
+1,0.0,0.0,0.165,-0.165,1.0,100.0,1,0.5,0.0,ASAHI,MIEM + UTE,solar,solar,-31.28061,-57.917074,way/591450827,Substation_W102825136,1.718
+11,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,0.0,Arapey Solar,Giacotte S. A.,solar,solar,-30.872298,-57.454165,way/591450831,Substation_W182128739,10.486
+76,0.0,0.0,5.264,-5.264,1.0,100.0,1,16.0,0.0,Del Litoral,Jolipark S. A.,solar,solar,-31.440269,-57.864466,way/591456831,Substation_W585413682,4.713
+143,0.0,0.0,0.016,-0.016,1.0,100.0,1,0.05,0.0,Cerros de Vera,UTE,solar,solar,-31.60141,-56.812193,way/591466440,Substation_W1381122433,60.466
+34,0.0,0.0,3.262,-0.854,1.0,100.0,1,7.0,0.0,Ponlar,Ponlar S. A.,biomass,steam,-31.076697,-55.755098,way/591472217,Convertidor Rivera,23.948
+118,0.0,0.0,4.66,-1.22,1.0,100.0,1,10.0,0.0,Fenirol,Fenirol S. A.,biomass,steam,-31.698728,-55.933599,way/591474235,Substation_W1182069846,0.652
+119,0.0,0.0,5.592,-1.464,1.0,100.0,1,12.0,0.0,Uruply,Uruply S. A.,biomass,steam,-31.640899,-55.901519,way/591474238,Substation_W1182069848,0.077
+77,0.0,0.0,2.33,-0.61,1.0,100.0,1,5.0,0.0,Liderdat,Liderdat S.A.,biomass,steam,-32.303214,-58.088897,way/597470246,Substation_W585751341,5.402
+31,0.0,0.0,3.126,-3.126,1.0,100.0,1,9.5,0.0,Natelu,Natelu S.A.,solar,solar,-33.260966,-57.991538,way/623126161,Substation_W204254243,1.331
+43,0.0,0.0,3.126,-3.126,1.0,100.0,1,9.5,0.0,Yarnel,Yarnel S.A.,solar,solar,-32.686381,-57.605246,way/623127729,Substation_W237321266,2.711
+43,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,Manafra Solar,Giacote S.A.,solar,solar,-32.607889,-57.437137,way/623168796,Substation_W237321266,15.723
+77,0.0,0.0,0.987,-0.987,1.0,100.0,1,3.0,0.0,Vignano / TS / Abril,unknown,solar,solar,-32.294997,-58.024168,way/691696283,Substation_W585751341,1.092
+13,0.0,0.0,0.0,-0.0,1.0,100.0,1,0.0005,0.0,Aeropuerto de Carrasco,Aeropuerto de Carrasco,solar,solar,-34.834954,-56.013677,way/879828336,Substation_W184698746,4.524
+109,0.0,0.0,83.88,-21.96,1.0,100.0,1,180.0,0.0,Central Eléctrica Montes del Plata,Celulosa y Energia Punta Pereira S.A.,biomass,steam,-34.226332,-58.056447,way/925290959,Substation_W1022121454,1.251
+51,0.0,0.0,0.611,-0.133,1.0,100.0,1,1.2,0.0,Las Rosas,Aborgama,gas,gas,-34.817871,-54.970077,way/1022135455,Sub Estación UTE,5.968
+47,0.0,0.0,2.189,-0.477,1.0,100.0,1,4.3,0.0,Turbuna Rio Branco,UTE,gas,gas,-32.65764,-53.335892,way/1022138508,Substation_W242582059,45.89
+28,0.0,0.0,0.233,-0.061,1.0,100.0,1,0.5,0.0,Arboreto,Lanas Trinidad S.A.,biomass,steam,-33.505889,-56.889745,way/1022371628,Estación Trinidad,4.723
+94,0.0,0.0,,,1.0,100.0,1,1.44,0.0,Central Eléctrica San Gregorio,UTE,unknown,unknown,-32.613449,-55.834339,way/1047740632,Substation_W626921292,36.594
+17,0.0,0.0,75.026,-19.642,1.0,100.0,1,161.0,0.0,UPM,UPM,biomass;oil,steam,-33.116861,-58.259372,way/1047740633,Substation_W186713673,0.499
+134,0.0,0.0,0.115,-0.115,1.0,100.0,1,0.35,0.0,Mondelan S.A.,unknown,solar,solar,-33.385575,-56.555291,way/1047740637,Substation_W1290701357,5.466
+116,0.0,0.0,0.082,-0.082,1.0,100.0,1,0.25,0.0,Hikari,Miem-UTE,solar,solar,-34.429639,-55.207448,way/1047740638,Substation_W1167863209,5.667
+83,0.0,0.0,9.87,-9.87,1.0,100.0,1,30.0,0.0,Parque Fotovoltaico Punta del Tigre,UTE,solar,solar,-34.751238,-56.553627,way/1246972844,San José Substation,1.073
+115,0.0,0.0,,,1.0,100.0,1,,,UPM Paso de los Toros power station,unknown,biomass,steam,-32.862663,-56.536838,way/1333534274,Substation_W1074833054,0.675
+113,0.0,0.0,0.0,-0.0,1.0,100.0,1,0.0,0.0,[unnamed way/1459077039],unknown,hydro,hydro,-31.523075,-55.593553,way/1459077039,Substation_W1047740625,8.751

@@ -1,0 +1,5 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+1,2,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Salto Substation_500kV,Salto Substation_150kV,0.0,,transformer
+6,7,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,San Carlos Substation_500kV,San Carlos Substation_150kV,0.0,,transformer
+9,10,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Montevideo Substation_500kV,Montevideo Substation_150kV,0.0,,transformer
+28,29,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Soriano Substation_500kV,Soriano Substation_150kV,0.0,,transformer

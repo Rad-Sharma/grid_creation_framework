@@ -1,0 +1,40 @@
+bus,Pg,Qg,Qmax,Qmin,Vg,mBase,status,Pmax,Pmin,generator_name,operator,source,genfuel,latitude,longitude,osm_id,bus_name,bus_distance_km
+64,0.0,0.0,443.52,-50.688,1.0,100.0,1,792.0,0.0,Takoradi CCGT Power Plant,Volta River Authority VRA,oil,gas_turbine,4.972664,-1.658344,way/170872587,Substation_W1246063586,0.165
+66,0.0,0.0,285.04,-62.16,1.0,100.0,1,560.0,0.0,Sunon Asogli Power Plant,Sunon Asogli Power (Ghana) Ltd,gas,gas,5.68075,0.04716,way/256777446,Substation_W1246170585,0.097
+60,0.0,0.0,128.268,-27.972,1.0,100.0,1,252.0,0.0,Tema Cenit & Tema Thermal Power Plants,unknown,gas;oil,gas,5.674003,0.012208,way/256779004,Smelter 2,0.186
+5,0.0,0.0,61.44,-7.84,1.0,100.0,1,160.0,0.0,Kpong Power Station,Volta River Authority,hydro,hydro,6.119254,0.124255,way/302127338,Kpong Generating Station,0.288
+32,0.0,0.0,153.6,-19.6,1.0,100.0,1,400.0,0.0,Bui Hydropower Plant,unknown,hydro,hydro,8.279136,-2.235482,way/407081343,Bui Hydro Substation,0.346
+77,0.0,0.0,0.658,-0.658,1.0,100.0,1,2.0,0.0,University of Ghana,unknown,solar,solar,5.633503,-0.181397,way/444487572,Substation_W1393656611,2.406
+39,0.0,0.0,0.047,-0.012,1.0,100.0,1,0.1,0.0,Safi Sana Ghana Limited,Safi Sana Ghana,waste,steam,5.684031,-0.048976,way/479861255,Substation_W605954253,1.701
+55,0.0,0.0,63.625,-13.875,1.0,100.0,1,125.0,0.0,Osagyefo Barge,Ghana National Petroleum Corporation,gas,gas,5.080286,-3.03885,way/507400869,Substation_W674068904,39.316
+43,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,Gomoa Onyaadze,Meinergy,solar,solar,5.344329,-0.703467,way/636838998,Substation_W667708204,8.053
+57,0.0,0.0,190.4,-21.76,1.0,100.0,1,340.0,0.0,Kpone Independent Power Plant,Cenpower,oil;gas,gas_turbine,5.680222,0.041638,way/695710257,Substation_W695710253,0.447
+48,0.0,0.0,25.45,-5.55,1.0,100.0,1,50.0,0.0,Vpower Power plant,unknown,gas,gas,5.677073,0.014107,way/791950855,Substation_W672628320,0.194
+72,0.0,0.0,111.98,-24.42,1.0,100.0,1,220.0,0.0,Kpone Thermal Power Station I,Volta River Authority,gas;oil,gas,5.733488,0.009943,way/826311725,Kpone,0.224
+4,0.0,0.0,391.68,-49.98,1.0,100.0,1,1020.0,0.0,Akosombo Hydroelectric Power Plant,Volta River Authority,hydro,hydro,6.298821,0.055764,way/826311727,Substation_W236316930,0.399
+65,0.0,0.0,101.8,-22.2,1.0,100.0,1,200.0,0.0,Amandi Energy power plant,Amandi Energy Limited,gas,gas,4.968713,-1.666779,way/954729945,Substation_W1246063599,0.209
+42,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1021746811],unknown,biogas,gas,5.826626,-0.359855,way/1021746811,Substation_W666445031,21.176
+47,0.0,0.0,,,1.0,100.0,1,,,RMU Solar Farm,unknown,solar,solar,5.608655,-0.065013,way/1079543440,Substation_W672567165,6.803
+67,0.0,0.0,,,1.0,100.0,1,,,Bridge Power Station,unknown,unknown,unknown,5.677508,0.019129,way/1090281209,Substation_W1246170591,0.164
+20,0.0,0.0,1.908,-1.908,1.0,100.0,1,5.8,0.0,Nadowli-Kaleo District solar project,unknown,solar,solar,10.172746,-2.533618,way/1133332174,Wa Substation,12.394
+20,0.0,0.0,4.935,-4.935,1.0,100.0,1,15.0,0.0,Kaleo Solar Farm - Phase I,unknown,solar,solar,10.18,-2.534218,way/1133332257,Wa Substation,13.162
+65,0.0,0.0,229.05,-49.95,1.0,100.0,1,450.0,0.0,Osman Khan Power Plant,Karpowership Ghana Company Limited,gas,gas,4.938406,-1.696519,way/1158032338,Substation_W1246063599,4.832
+44,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,BXC Oyandze,Beijing Xiaocheng Company,solar,solar,5.371149,-0.693135,way/1201725680,Winneba Substation,5.586
+46,0.0,0.0,,,1.0,100.0,1,,,Ameri Power Plant,unknown,https:;www.vra.com;media;2022;relocation of ameri power plant.php,https:,4.974202,-1.660353,way/1246063588,Aboadze Substation,0.122
+58,0.0,0.0,,,1.0,100.0,1,,,GPGC Power Plant,unknown,unknown,unknown,5.698228,0.023034,way/1246170595,Substation_W791947748,0.324
+68,0.0,0.0,207.2,-23.68,1.0,100.0,1,370.0,0.0,Aksa Ghana HFO power plant,unknown,oil,gas_turbine,5.693915,0.024927,way/1246170596,Substation_W1246170593,0.096
+80,0.0,0.0,16.797,-3.663,1.0,100.0,1,33.0,0.0,Chirano Plant,Genser Energy,gas,gas,6.291406,-2.373256,way/1254910749,Substation_W1413832435,0.449
+59,0.0,0.0,0.823,-0.823,1.0,100.0,1,2.5,0.0,Navrongo,unknown,solar,solar,10.923325,-1.055537,way/1284312136,Bolgatanga II Substation,5.225
+20,0.0,0.0,4.935,-4.935,1.0,100.0,1,15.0,0.0,Kaleo Solar Farm - Phase II,unknown,solar,solar,10.166599,-2.535346,way/1284321013,Wa Substation,11.852
+47,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1420859791],unknown,coal,steam,5.675413,-0.087753,way/1420859791,Substation_W672567165,3.483
+40,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,Yendi,Bui Power Authority,solar,solar,9.47402,-0.049335,way/1424431183,Yendi Substation,4.174
+51,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424431903],unknown,solar,solar,6.865081,-0.450437,way/1424431903,Nkawkaw Substation,49.347
+32,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,Bui Solar Farm,unknown,solar,solar,8.259855,-2.244423,way/1442128806,Bui Hydro Substation,2.309
+63,0.0,0.0,0.658,-0.658,1.0,100.0,1,2.0,0.0,Premium Foods - Kwaso,unknown,solar,solar,6.614608,-1.459958,way/1442129276,Substation_W1155380911,10.975
+20,0.0,0.0,2.139,-2.139,1.0,100.0,1,6.5,0.0,[unnamed way/1442129277],unknown,solar,solar,10.665687,-2.899873,way/1442129277,Wa Substation,80.032
+32,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Bui Floating Solar Farm,unknown,solar,solar,8.265388,-2.2533,way/1450979103,Bui Hydro Substation,2.597
+53,0.0,0.0,33.594,-7.326,1.0,100.0,1,66.0,0.0,Tarkwa Plant,Genser Energy,gas,gas,5.327175,-2.02662,way/1458096387,Substation_W673926575,0.112
+88,0.0,0.0,12.979,-2.83,1.0,100.0,1,25.5,0.0,Damang Plant,Genser Energy,gas,gas,5.521834,-1.85163,way/1458098307,Substation_W1458098308,0.196
+87,0.0,0.0,16.797,-3.663,1.0,100.0,1,33.0,0.0,Wassa Plant,Genser Energy,gas,gas,5.48266,-1.728594,way/1458099924,Akyempim,1.654
+16,0.0,0.0,16.797,-3.663,1.0,100.0,1,33.0,0.0,Edikan Plant,Genser Energy,gas,gas,5.95849,-1.931584,way/1458100137,GENSER,0.09
+32,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1511993253],unknown,solar,solar,8.265789,-2.256171,way/1511993253,Bui Hydro Substation,2.853

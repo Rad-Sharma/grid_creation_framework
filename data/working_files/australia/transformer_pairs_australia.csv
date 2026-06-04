@@ -1,0 +1,429 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+3,4,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Rocklea Substation_275kV,Rocklea Substation_110kV,0.0,,transformer
+5,6,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Keilor Terminal Station_500kV,Keilor Terminal Station_220kV,0.0,,transformer
+6,7,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Keilor Terminal Station_220kV,Keilor Terminal Station_66kV,0.0,,transformer
+8,9,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ashgrove West Substation_110kV,Ashgrove West Substation_33kV,0.0,,transformer
+11,12,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Creek Road Substation_110kV,Creek Road Substation_33kV,0.0,,transformer
+13,14,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Chapel Street Substation_220kV,Chapel Street Substation_110kV,0.0,,transformer
+14,15,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Chapel Street Substation_110kV,Chapel Street Substation_11kV,0.0,,transformer
+17,18,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Templestowe Terminal Station_220kV,Templestowe Terminal Station_66kV,0.0,,transformer
+19,20,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Thomastown Terminal Station_220kV,Thomastown Terminal Station_66kV,0.0,,transformer
+22,23,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Newcastle substation_330kV,Newcastle substation_132kV,0.0,,transformer
+24,25,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Eraring substation_500kV,Eraring substation_330kV,0.0,,transformer
+28,29,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ringwood Terminal Station_220kV,Ringwood Terminal Station_66kV,0.0,,transformer
+29,30,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ringwood Terminal Station_66kV,Ringwood Terminal Station_22kV,0.0,,transformer
+34,35,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Runcorn Substation_110kV,Runcorn Substation_33kV,0.0,,transformer
+36,37,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cleveland Substation_110kV,Cleveland Substation_33kV,0.0,,transformer
+37,38,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cleveland Substation_33kV,Cleveland Substation_11kV,0.0,,transformer
+42,43,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Malvern Terminal Station_220kV,Malvern Terminal Station_66kV,0.0,,transformer
+43,44,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Malvern Terminal Station_66kV,Malvern Terminal Station_22kV,0.0,,transformer
+48,49,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tennyson substation_110kV,Tennyson substation_33kV,0.0,,transformer
+50,51,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Richmond Terminal Station_220kV,Richmond Terminal Station_66kV,0.0,,transformer
+51,52,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Richmond Terminal Station_66kV,Richmond Terminal Station_22kV,0.0,,transformer
+54,55,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bibra Lake Substation_330kV,Bibra Lake Substation_132kV,0.0,,transformer
+61,62,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Brunswick Terminal Station_220kV,Brunswick Terminal Station_66kV,0.0,,transformer
+62,63,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Brunswick Terminal Station_66kV,Brunswick Terminal Station_22kV,0.0,,transformer
+66,67,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Victoria Park substation_110kV,Victoria Park substation_33kV,0.0,,transformer
+71,72,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Perth Substation_330kV,Perth Substation_132kV,0.0,,transformer
+74,75,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Murarrie Substation_275kV,Murarrie Substation_110kV,0.0,,transformer
+76,77,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lytton Bulk Supply Substation_110kV,Lytton Bulk Supply Substation_33kV,0.0,,transformer
+77,78,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lytton Bulk Supply Substation_33kV,Lytton Bulk Supply Substation_11kV,0.0,,transformer
+83,84,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mudgeeraba Substation_275kV,Mudgeeraba Substation_110kV,0.0,,transformer
+84,85,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mudgeeraba Substation_110kV,Mudgeeraba Substation_33kV,0.0,,transformer
+95,96,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,West Wetherill Park Zone Substation_132kV,West Wetherill Park Zone Substation_11kV,0.0,,transformer
+100,101,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Baulkham Hills Transmission Substation_132kV,Baulkham Hills Transmission Substation_33kV,0.0,,transformer
+102,103,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Warringah Subtransmission Station_132kV,Warringah Subtransmission Station_33kV,0.0,,transformer
+108,109,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hays Inlet substation_110kV,Hays Inlet substation_33kV,0.0,,transformer
+110,111,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kuringai Subtransmission Substation_132kV,Kuringai Subtransmission Substation_33kV,0.0,,transformer
+112,113,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Loganlea Substation_275kV,Loganlea Substation_110kV,0.0,,transformer
+114,115,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Algester Substation_110kV,Algester Substation_33kV,0.0,,transformer
+115,116,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Algester Substation_33kV,Algester Substation_11kV,0.0,,transformer
+118,119,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Goodna Substation_275kV,Goodna Substation_110kV,0.0,,transformer
+119,120,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Goodna Substation_110kV,Goodna Substation_33kV,0.0,,transformer
+121,122,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Stafford Zone Substation_110kV,Stafford Zone Substation_33kV,0.0,,transformer
+122,123,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Stafford Zone Substation_33kV,Stafford Zone Substation_11kV,0.0,,transformer
+129,130,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cranbourne Terminal Station_500kV,Cranbourne Terminal Station_220kV,0.0,,transformer
+130,131,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cranbourne Terminal Station_220kV,Cranbourne Terminal Station_66kV,0.0,,transformer
+132,133,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Moorabool Terminal Station_500kV,Moorabool Terminal Station_220kV,0.0,,transformer
+137,138,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Altona Terminal Station_220kV,Altona Terminal Station_66kV,0.0,,transformer
+140,141,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,North Katoomba Transmission Substation_132kV,North Katoomba Transmission Substation_66kV,0.0,,transformer
+142,143,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gladstone Substation_275kV,Gladstone Substation_132kV,0.0,,transformer
+150,151,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Trevallyn Substation_110kV,Trevallyn Substation_22kV,0.0,,transformer
+151,152,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Trevallyn Substation_22kV,Trevallyn Substation_11kV,0.0,,transformer
+156,157,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,South Morang Terminal Station_500kV,South Morang Terminal Station_330kV,0.0,,transformer
+157,158,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,South Morang Terminal Station_330kV,South Morang Terminal Station_220kV,0.0,,transformer
+158,159,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,South Morang Terminal Station_220kV,South Morang Terminal Station_66kV,0.0,,transformer
+170,171,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tailem Bend_275kV,Tailem Bend_132kV,0.0,,transformer
+181,182,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hadspen Substation_220kV,Hadspen Substation_110kV,0.0,,transformer
+182,183,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hadspen Substation_110kV,Hadspen Substation_22kV,0.0,,transformer
+184,185,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Sheffield Substation_220kV,Sheffield Substation_110kV,0.0,,transformer
+186,187,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,AusNet Ballarat Terminal Station_220kV,AusNet Ballarat Terminal Station_66kV,0.0,,transformer
+188,189,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Blackwater Transmission Substation_132kV,Blackwater Transmission Substation_66kV,0.0,,transformer
+192,193,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Molendinar Substation_275kV,Molendinar Substation_110kV,0.0,,transformer
+197,198,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Eraring STS_132kV,Eraring STS_33kV,0.0,,transformer
+199,200,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tamworth 330/132 subtransmission substation_330kV,Tamworth 330/132 subtransmission substation_132kV,0.0,,transformer
+205,206,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,George Town HVDC Converter station_400kV,George Town HVDC Converter station_220kV,0.0,,transformer
+212,213,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mount Beauty Terminal Station_220kV,Mount Beauty Terminal Station_66kV,0.0,,transformer
+215,216,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hume Power Station Switchyard_132kV,Hume Power Station Switchyard_66kV,0.0,,transformer
+224,225,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Moura Transmission Substation_132kV,Moura Transmission Substation_66kV,0.0,,transformer
+227,228,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Calvale Substation_275kV,Calvale Substation_132kV,0.0,,transformer
+229,230,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bungama Substation_275kV,Bungama Substation_132kV,0.0,,transformer
+230,231,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bungama Substation_132kV,Bungama Substation_33kV,0.0,,transformer
+234,235,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Port Macquarie STS_132kV,Port Macquarie STS_33kV,0.0,,transformer
+245,246,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Springvale Terminal Station_220kV,Springvale Terminal Station_66kV,0.0,,transformer
+248,249,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tyabb Terminal Station_220kV,Tyabb Terminal Station_66kV,0.0,,transformer
+250,251,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Spring Hill Transmission Station_132kV,Spring Hill Transmission Station_33kV,0.0,,transformer
+256,257,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Loy Yang HVDC Converter station_500kV,Loy Yang HVDC Converter station_400kV,0.0,,transformer
+262,263,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Goulburn 132_132kV,Goulburn 132_66kV,0.0,,transformer
+263,264,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Goulburn 132_66kV,Goulburn 132_33kV,0.0,,transformer
+271,272,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Terang Terminal Station_220kV,Terang Terminal Station_66kV,0.0,,transformer
+275,276,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Armidale Substation_330kV,Armidale Substation_132kV,0.0,,transformer
+276,277,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Armidale Substation_132kV,Armidale Substation_66kV,0.0,,transformer
+279,280,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Marulan_330kV,Marulan_132kV,0.0,,transformer
+282,283,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ourimbah STS_132kV,Ourimbah STS_66kV,0.0,,transformer
+283,284,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ourimbah STS_66kV,Ourimbah STS_33kV,0.0,,transformer
+285,286,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Griffith STS_132kV,Griffith STS_33kV,0.0,,transformer
+287,288,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Capital Hill Wind Farm Substation_330kV,Capital Hill Wind Farm Substation_33kV,0.0,,transformer
+289,290,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Barcaldine_132kV,Barcaldine_66kV,0.0,,transformer
+290,291,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Barcaldine_66kV,Barcaldine_22kV,0.0,,transformer
+296,297,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,South East Substation_275kV,South East Substation_132kV,0.0,,transformer
+302,303,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Robertstown Substation_275kV,Robertstown Substation_132kV,0.0,,transformer
+304,305,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cultana Substation_275kV,Cultana Substation_132kV,0.0,,transformer
+308,309,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Awaba STS_132kV,Awaba STS_33kV,0.0,,transformer
+310,311,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Beresfield STS_132kV,Beresfield STS_33kV,0.0,,transformer
+312,313,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Nebo Substation_275kV,Nebo Substation_132kV,0.0,,transformer
+314,315,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Causeway Switch Station_132kV,Causeway Switch Station_11kV,0.0,,transformer
+316,317,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wanniassa Zone Substation_132kV,Wanniassa Zone Substation_11kV,0.0,,transformer
+318,319,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Woden Substation_132kV,Woden Substation_11kV,0.0,,transformer
+320,321,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bayswater Substation_500kV,Bayswater Substation_330kV,0.0,,transformer
+323,324,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Burnie Substation_220kV,Burnie Substation_110kV,0.0,,transformer
+324,325,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Burnie Substation_110kV,Burnie Substation_11kV,0.0,,transformer
+329,330,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Morwell Terminal Station_220kV,Morwell Terminal Station_66kV,0.0,,transformer
+330,331,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Morwell Terminal Station_66kV,Morwell Terminal Station_22kV,0.0,,transformer
+333,334,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mount Piper Terminal_500kV,Mount Piper Terminal_330kV,0.0,,transformer
+334,335,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mount Piper Terminal_330kV,Mount Piper Terminal_132kV,0.0,,transformer
+336,337,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darlington Point STS_330kV,Darlington Point STS_220kV,0.0,,transformer
+337,338,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darlington Point STS_220kV,Darlington Point STS_132kV,0.0,,transformer
+340,341,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Heywood Terminal Station_500kV,Heywood Terminal Station_275kV,0.0,,transformer
+341,342,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Heywood Terminal Station_275kV,Heywood Terminal Station_22kV,0.0,,transformer
+344,345,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kerang Terminal Station_220kV,Kerang Terminal Station_66kV,0.0,,transformer
+345,346,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kerang Terminal Station_66kV,Kerang Terminal Station_22kV,0.0,,transformer
+347,348,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Balranald STS_220kV,Balranald STS_22kV,0.0,,transformer
+349,350,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Brinkworth Substation_275kV,Brinkworth Substation_132kV,0.0,,transformer
+350,351,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Brinkworth Substation_132kV,Brinkworth Substation_33kV,0.0,,transformer
+353,354,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dorrien_132kV,Dorrien_66kV,0.0,,transformer
+355,356,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Monash Murraylink Substation_150kV,Monash Murraylink Substation_132kV,0.0,,transformer
+357,358,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Monash Substation_132kV,Monash Substation_66kV,0.0,,transformer
+364,365,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mount Gunson_275kV,Mount Gunson_132kV,0.0,,transformer
+367,368,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,H018 Tarong Substation_275kV,H018 Tarong Substation_132kV,0.0,,transformer
+368,369,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,H018 Tarong Substation_132kV,H018 Tarong Substation_66kV,0.0,,transformer
+373,374,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Palmwoods Substation_275kV,Palmwoods Substation_132kV,0.0,,transformer
+374,375,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Palmwoods Substation_132kV,Palmwoods Substation_110kV,0.0,,transformer
+376,377,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Braemar Substation_330kV,Braemar Substation_275kV,0.0,,transformer
+378,379,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Woolooga Substation_275kV,Woolooga Substation_132kV,0.0,,transformer
+380,381,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Teebar Creek Substation_275kV,Teebar Creek Substation_132kV,0.0,,transformer
+383,384,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hudson Creek Substation_132kV,Hudson Creek Substation_66kV,0.0,,transformer
+385,386,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ross Substation_275kV,Ross Substation_132kV,0.0,,transformer
+387,388,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Alan Sherriff_132kV,Alan Sherriff_33kV,0.0,,transformer
+389,390,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dan Gleeson_132kV,Dan Gleeson_66kV,0.0,,transformer
+393,394,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bouldercombe Substation_275kV,Bouldercombe Substation_132kV,0.0,,transformer
+395,396,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Rockhampton Substation_132kV,Rockhampton Substation_66kV,0.0,,transformer
+397,398,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Biloela_132kV,Biloela_66kV,0.0,,transformer
+400,401,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Oakey Substation_110kV,Oakey Substation_33kV,0.0,,transformer
+403,404,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lismore 330/132 STS_330kV,Lismore 330/132 STS_132kV,0.0,,transformer
+405,406,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Terranora Substation_110kV,Terranora Substation_66kV,0.0,,transformer
+406,407,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Terranora Substation_66kV,Terranora Substation_11kV,0.0,,transformer
+408,409,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Nambour substation_132kV,Nambour substation_33kV,0.0,,transformer
+411,412,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Columboola_275kV,Columboola_132kV,0.0,,transformer
+412,413,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Columboola_132kV,Columboola_33kV,0.0,,transformer
+414,415,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Leigh Creek Coalfield_132kV,Leigh Creek Coalfield_33kV,0.0,,transformer
+416,417,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gin Gin Substation_275kV,Gin Gin Substation_132kV,0.0,,transformer
+418,419,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Strathmore Substation_275kV,Strathmore Substation_132kV,0.0,,transformer
+420,421,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Leigh Creek South Substation_132kV,Leigh Creek South Substation_33kV,0.0,,transformer
+421,422,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Leigh Creek South Substation_33kV,Leigh Creek South Substation_11kV,0.0,,transformer
+423,424,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lilyvale Substation_275kV,Lilyvale Substation_132kV,0.0,,transformer
+424,425,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lilyvale Substation_132kV,Lilyvale Substation_66kV,0.0,,transformer
+426,427,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Clare South_132kV,Clare South_66kV,0.0,,transformer
+428,429,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Pioneer Valley Substation_132kV,Pioneer Valley Substation_66kV,0.0,,transformer
+433,434,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Proserpine_132kV,Proserpine_66kV,0.0,,transformer
+437,438,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wagga 330 STS_330kV,Wagga 330 STS_132kV,0.0,,transformer
+439,440,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Townsville South Substation_132kV,Townsville South Substation_66kV,0.0,,transformer
+441,442,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Townsville Zinc_132kV,Townsville Zinc_33kV,0.0,,transformer
+445,446,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Magill Substation_275kV,Magill Substation_66kV,0.0,,transformer
+447,448,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cherry Gardens_275kV,Cherry Gardens_132kV,0.0,,transformer
+450,451,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ingleburn Bulk Supply Substation_330kV,Ingleburn Bulk Supply Substation_66kV,0.0,,transformer
+452,453,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dapto Bulk Supply Substation_330kV,Dapto Bulk Supply Substation_132kV,0.0,,transformer
+460,461,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Happy Valley_275kV,Happy Valley_66kV,0.0,,transformer
+463,464,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Middle Ridge Substation_330kV,Middle Ridge Substation_275kV,0.0,,transformer
+464,465,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Middle Ridge Substation_275kV,Middle Ridge Substation_110kV,0.0,,transformer
+466,467,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bulli Creek Substation_330kV,Bulli Creek Substation_132kV,0.0,,transformer
+469,470,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Inverell Subtransmission Station_132kV,Inverell Subtransmission Station_66kV,0.0,,transformer
+472,473,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Yarranlea_110kV,Yarranlea_33kV,0.0,,transformer
+474,475,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Jindera STS_330kV,Jindera STS_132kV,0.0,,transformer
+476,477,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bendigo Terminal Station_220kV,Bendigo Terminal Station_66kV,0.0,,transformer
+477,478,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bendigo Terminal Station_66kV,Bendigo Terminal Station_22kV,0.0,,transformer
+479,480,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Abermain Substation_275kV,Abermain Substation_110kV,0.0,,transformer
+480,481,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Abermain Substation_110kV,Abermain Substation_33kV,0.0,,transformer
+483,484,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Innisfail Transmission Substation_132kV,Innisfail Transmission Substation_22kV,0.0,,transformer
+485,486,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wellington Substation_132kV,Wellington Substation_66kV,0.0,,transformer
+487,488,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dubbo South Zone Substation_132kV,Dubbo South Zone Substation_11kV,0.0,,transformer
+489,490,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Waratah STS_132kV,Waratah STS_33kV,0.0,,transformer
+491,492,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Isis Zone substation_132kV,Isis Zone substation_66kV,0.0,,transformer
+494,495,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Parkes Substation_132kV,Parkes Substation_66kV,0.0,,transformer
+496,497,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Fosterville Terminal Station_220kV,Fosterville Terminal Station_11kV,0.0,,transformer
+498,499,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Horsham Terminal Station_220kV,Horsham Terminal Station_66kV,0.0,,transformer
+501,502,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tamworth 132/66 subtransmission substation_132kV,Tamworth 132/66 subtransmission substation_66kV,0.0,,transformer
+503,504,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,TransGrid Kemps Creek 330kV-500kV Substation_500kV,TransGrid Kemps Creek 330kV-500kV Substation_330kV,0.0,,transformer
+507,508,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wagga North STS_132kV,Wagga North STS_66kV,0.0,,transformer
+509,510,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wagga 132 STS_132kV,Wagga 132 STS_66kV,0.0,,transformer
+513,514,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Palmerston Substation_220kV,Palmerston Substation_110kV,0.0,,transformer
+514,515,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Palmerston Substation_110kV,Palmerston Substation_22kV,0.0,,transformer
+517,518,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Union Rd ZS_132kV,Union Rd ZS_22kV,0.0,,transformer
+520,521,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Murray Switching Station_330kV,Murray Switching Station_132kV,0.0,,transformer
+522,523,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Shepparton Terminal Station_220kV,Shepparton Terminal Station_66kV,0.0,,transformer
+524,525,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dubbo Zone Substation_132kV,Dubbo Zone Substation_66kV,0.0,,transformer
+525,526,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dubbo Zone Substation_66kV,Dubbo Zone Substation_11kV,0.0,,transformer
+527,528,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Clayton Zone Substation_132kV,Clayton Zone Substation_50kV,0.0,,transformer
+537,538,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bundamba Substation_110kV,Bundamba Substation_11kV,0.0,,transformer
+543,544,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Newlands_132kV,Newlands_66kV,0.0,,transformer
+550,551,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wodonga Terminal Station_330kV,Wodonga Terminal Station_66kV,0.0,,transformer
+551,552,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wodonga Terminal Station_66kV,Wodonga Terminal Station_22kV,0.0,,transformer
+553,554,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Sydney East Bulk Supply Substation_330kV,Sydney East Bulk Supply Substation_132kV,0.0,,transformer
+556,557,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Temora STS_132kV,Temora STS_66kV,0.0,,transformer
+570,571,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Waubra Terminal Station_220kV,Waubra Terminal Station_66kV,0.0,,transformer
+574,575,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cairns Substation_132kV,Cairns Substation_22kV,0.0,,transformer
+576,577,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Studland Bay Wind Farm Substation_110kV,Studland Bay Wind Farm Substation_22kV,0.0,,transformer
+578,579,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bluff Point Wind Farm Substation_110kV,Bluff Point Wind Farm Substation_22kV,0.0,,transformer
+580,581,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Edmonton_132kV,Edmonton_22kV,0.0,,transformer
+582,583,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Woree Substation_275kV,Woree Substation_132kV,0.0,,transformer
+584,585,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kareeya Power Station_132kV,Kareeya Power Station_22kV,0.0,,transformer
+586,587,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tully Substation_132kV,Tully Substation_22kV,0.0,,transformer
+588,589,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Chalumbin Substation_275kV,Chalumbin Substation_132kV,0.0,,transformer
+591,592,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cardwell_132kV,Cardwell_22kV,0.0,,transformer
+593,594,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ingham South_132kV,Ingham South_66kV,0.0,,transformer
+600,601,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Muswellbrook Substation_330kV,Muswellbrook Substation_132kV,0.0,,transformer
+602,603,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kemmis Substation_132kV,Kemmis Substation_66kV,0.0,,transformer
+604,605,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Burton Downs_132kV,Burton Downs_22kV,0.0,,transformer
+607,608,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Glenrowan Terminal Station_220kV,Glenrowan Terminal Station_66kV,0.0,,transformer
+611,612,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Port Lata Substation_110kV,Port Lata Substation_22kV,0.0,,transformer
+613,614,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,West Melbourne Terminal Station_220kV,West Melbourne Terminal Station_66kV,0.0,,transformer
+614,615,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,West Melbourne Terminal Station_66kV,West Melbourne Terminal Station_22kV,0.0,,transformer
+619,620,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Munyang Substation_132kV,Munyang Substation_33kV,0.0,,transformer
+620,621,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Munyang Substation_33kV,Munyang Substation_11kV,0.0,,transformer
+624,625,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Snowy Adit Substation_132kV,Snowy Adit Substation_66kV,0.0,,transformer
+625,626,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Snowy Adit Substation_66kV,Snowy Adit Substation_11kV,0.0,,transformer
+628,629,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Louisa Creek_132kV,Louisa Creek_33kV,0.0,,transformer
+632,633,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Adelaide Substation_275kV,Adelaide Substation_66kV,0.0,,transformer
+639,640,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,ERHE_220kV,ERHE_11kV,0.0,,transformer
+642,643,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Alligator Creek Substation_132kV,Alligator Creek Substation_33kV,0.0,,transformer
+649,650,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Merredin Substation_220kV,Merredin Substation_132kV,0.0,,transformer
+658,659,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Picton Substation_132kV,Picton Substation_66kV,0.0,,transformer
+663,664,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Pinjar Substation_330kV,Pinjar Substation_132kV,0.0,,transformer
+677,678,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Northam Substation_132kV,Northam Substation_66kV,0.0,,transformer
+680,681,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bellambi Transmission Substation_132kV,Bellambi Transmission Substation_33kV,0.0,,transformer
+682,683,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,MICC_220kV,MICC_132kV,0.0,,transformer
+686,687,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,City East Substation_132kV,City East Substation_11kV,0.0,,transformer
+688,689,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gilmore Zone Substation_132kV,Gilmore Zone Substation_11kV,0.0,,transformer
+690,691,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Canberra STS_330kV,Canberra STS_132kV,0.0,,transformer
+692,693,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Yallourn Power Station Substation_220kV,Yallourn Power Station Substation_66kV,0.0,,transformer
+697,698,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Panorama Substation_132kV,Panorama Substation_66kV,0.0,,transformer
+700,701,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Nepean Transmission Substation_132kV,Nepean Transmission Substation_66kV,0.0,,transformer
+701,702,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Nepean Transmission Substation_66kV,Nepean Transmission Substation_33kV,0.0,,transformer
+705,706,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Theodore Zone Substation_132kV,Theodore Zone Substation_11kV,0.0,,transformer
+707,708,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Williamsdale STS_330kV,Williamsdale STS_132kV,0.0,,transformer
+711,712,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Que Substation_110kV,Que Substation_22kV,0.0,,transformer
+714,715,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hampshire Substation_110kV,Hampshire Substation_11kV,0.0,,transformer
+717,718,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Yanco STS_132kV,Yanco STS_66kV,0.0,,transformer
+718,719,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Yanco STS_66kV,Yanco STS_33kV,0.0,,transformer
+720,721,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Glen Innes subtransmission station_132kV,Glen Innes subtransmission station_66kV,0.0,,transformer
+722,723,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Brooklyn Terminal Station_220kV,Brooklyn Terminal Station_66kV,0.0,,transformer
+723,724,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Brooklyn Terminal Station_66kV,Brooklyn Terminal Station_22kV,0.0,,transformer
+725,726,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Deer Park Terminal Station_220kV,Deer Park Terminal Station_66kV,0.0,,transformer
+733,734,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Coleambally STS_132kV,Coleambally STS_33kV,0.0,,transformer
+736,737,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tomago STS_132kV,Tomago STS_33kV,0.0,,transformer
+739,740,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Adamstown Zone Substation_132kV,Adamstown Zone Substation_33kV,0.0,,transformer
+740,741,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Adamstown Zone Substation_33kV,Adamstown Zone Substation_11kV,0.0,,transformer
+743,744,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,East Rowville Terminal Station_220kV,East Rowville Terminal Station_66kV,0.0,,transformer
+745,746,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wemen Terminal Station_220kV,Wemen Terminal Station_66kV,0.0,,transformer
+756,757,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mount Mercer Wind Farm Substation_132kV,Mount Mercer Wind Farm Substation_33kV,0.0,,transformer
+759,760,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kooragang STS_132kV,Kooragang STS_33kV,0.0,,transformer
+767,768,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Geelong Terminal Station_220kV,Geelong Terminal Station_66kV,0.0,,transformer
+774,775,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Blackstone Substation_275kV,Blackstone Substation_110kV,0.0,,transformer
+776,777,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Waddamana Substation_220kV,Waddamana Substation_110kV,0.0,,transformer
+777,778,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Waddamana Substation_110kV,Waddamana Substation_22kV,0.0,,transformer
+783,784,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Telopea Park Substation_132kV,Telopea Park Substation_11kV,0.0,,transformer
+785,786,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tuggerah BSP_330kV,Tuggerah BSP_132kV,0.0,,transformer
+786,787,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tuggerah BSP_132kV,Tuggerah BSP_11kV,0.0,,transformer
+789,790,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Jesmond Substation_132kV,Jesmond Substation_33kV,0.0,,transformer
+792,793,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Outer Harbour Transmission Substation_132kV,Outer Harbour Transmission Substation_33kV,0.0,,transformer
+796,797,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mount Terry Transmission Substation_132kV,Mount Terry Transmission Substation_33kV,0.0,,transformer
+799,800,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Crows Nest Zone Substation_132kV,Crows Nest Zone Substation_11kV,0.0,,transformer
+805,806,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mornington Substation_110kV,Mornington Substation_33kV,0.0,,transformer
+822,823,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Fairfax Lane Transmission Substation_132kV,Fairfax Lane Transmission Substation_33kV,0.0,,transformer
+824,825,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Shoalhaven Transmission Substation_132kV,Shoalhaven Transmission Substation_33kV,0.0,,transformer
+827,828,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Moranbah Substation_132kV,Moranbah Substation_66kV,0.0,,transformer
+832,833,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dederang Terminal Station_330kV,Dederang Terminal Station_220kV,0.0,,transformer
+835,836,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dysart_132kV,Dysart_66kV,0.0,,transformer
+840,841,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Richlands Substation_110kV,Richlands Substation_33kV,0.0,,transformer
+845,846,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Farrell Substation_220kV,Farrell Substation_110kV,0.0,,transformer
+848,849,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,HVDC Directlink - Mullumbimby Static Inverter Plant_132kV,HVDC Directlink - Mullumbimby Static Inverter Plant_80kV,0.0,,transformer
+859,860,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tarrone Terminal Station_500kV,Tarrone Terminal Station_132kV,0.0,,transformer
+862,863,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Macarthur Wind Farm Substation_132kV,Macarthur Wind Farm Substation_33kV,0.0,,transformer
+867,868,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Stroud STS_132kV,Stroud STS_33kV,0.0,,transformer
+890,891,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tenterfield subtransmission station_132kV,Tenterfield subtransmission station_22kV,0.0,,transformer
+895,896,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Elaine Terminal Station_220kV,Elaine Terminal Station_132kV,0.0,,transformer
+900,901,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Meeandah substation_110kV,Meeandah substation_33kV,0.0,,transformer
+906,907,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wallerawang 132/66kV Switchyard_132kV,Wallerawang 132/66kV Switchyard_66kV,0.0,,transformer
+910,911,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Murrumburrah STS_132kV,Murrumburrah STS_66kV,0.0,,transformer
+912,913,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Moree Substation_132kV,Moree Substation_66kV,0.0,,transformer
+914,915,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gunnedah subtransmission substation_132kV,Gunnedah subtransmission substation_66kV,0.0,,transformer
+916,917,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Narrabri subtransmission substation_132kV,Narrabri subtransmission substation_66kV,0.0,,transformer
+922,923,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mackay_132kV,Mackay_33kV,0.0,,transformer
+924,925,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Griffin Substation_110kV,Griffin Substation_33kV,0.0,,transformer
+926,927,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Vales Point Bulk Supply Substation_330kV,Vales Point Bulk Supply Substation_132kV,0.0,,transformer
+930,931,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Fishermans Bend Terminal Station_220kV,Fishermans Bend Terminal Station_66kV,0.0,,transformer
+935,936,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Musselroe Substation_110kV,Musselroe Substation_33kV,0.0,,transformer
+972,973,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Calliope River Substation_275kV,Calliope River Substation_132kV,0.0,,transformer
+976,977,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tungatinah Substation_110kV,Tungatinah Substation_22kV,0.0,,transformer
+977,978,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tungatinah Substation_22kV,Tungatinah Substation_11kV,0.0,,transformer
+992,993,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kumbarilla Park_275kV,Kumbarilla Park_132kV,0.0,,transformer
+997,998,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hay STS_132kV,Hay STS_33kV,0.0,,transformer
+1000,1001,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Queensland Substation_110kV,Queensland Substation_33kV,0.0,,transformer
+1015,1016,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Clermont_132kV,Clermont_66kV,0.0,,transformer
+1045,1046,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Neuroodla Substation_132kV,Neuroodla Substation_33kV,0.0,,transformer
+1050,1051,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hazelwood Terminal Station_500kV,Hazelwood Terminal Station_220kV,0.0,,transformer
+1052,1053,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Portland Windfarm Substation_220kV,Portland Windfarm Substation_66kV,0.0,,transformer
+1054,1055,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Alcoa Portland Aluminium Switchyard_500kV,Alcoa Portland Aluminium Switchyard_220kV,0.0,,transformer
+1055,1056,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Alcoa Portland Aluminium Switchyard_220kV,Alcoa Portland Aluminium Switchyard_33kV,0.0,,transformer
+1065,1066,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Eastern Creek Zone Substation_132kV,Eastern Creek Zone Substation_11kV,0.0,,transformer
+1074,1075,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Civic Zone Substation_132kV,Civic Zone Substation_11kV,0.0,,transformer
+1076,1077,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gadara Substation_132kV,Gadara Substation_11kV,0.0,,transformer
+1082,1083,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Forbes Substation_132kV,Forbes Substation_66kV,0.0,,transformer
+1090,1091,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Red Cliffs Terminal Station_220kV,Red Cliffs Terminal Station_66kV,0.0,,transformer
+1091,1092,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Red Cliffs Terminal Station_66kV,Red Cliffs Terminal Station_22kV,0.0,,transformer
+1095,1096,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,John Lysaght Substation_220kV,John Lysaght Substation_33kV,0.0,,transformer
+1100,1101,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Roma_132kV,Roma_66kV,0.0,,transformer
+1101,1102,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Roma_66kV,Roma_33kV,0.0,,transformer
+1104,1105,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Morven STS_132kV,Morven STS_66kV,0.0,,transformer
+1120,1121,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Garbutt Substation_132kV,Garbutt Substation_66kV,0.0,,transformer
+1122,1123,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wonthaggi Desalination Plant_220kV,Wonthaggi Desalination Plant_22kV,0.0,,transformer
+1124,1125,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Northern Reactive Compensation Station_220kV,Northern Reactive Compensation Station_22kV,0.0,,transformer
+1126,1127,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lindisfarne Substation_220kV,Lindisfarne Substation_110kV,0.0,,transformer
+1127,1128,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lindisfarne Substation_110kV,Lindisfarne Substation_33kV,0.0,,transformer
+1134,1135,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Heatherton Terminal Station_220kV,Heatherton Terminal Station_66kV,0.0,,transformer
+1148,1149,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gullen Range 330kV Substation_330kV,Gullen Range 330kV Substation_33kV,0.0,,transformer
+1153,1154,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Temco Substation_110kV,Temco Substation_22kV,0.0,,transformer
+1155,1156,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,George Town Substation_220kV,George Town Substation_110kV,0.0,,transformer
+1156,1157,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,George Town Substation_110kV,George Town Substation_22kV,0.0,,transformer
+1161,1162,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Egans Hill Substation_132kV,Egans Hill Substation_66kV,0.0,,transformer
+1164,1165,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Arthurs Lake Substation_110kV,Arthurs Lake Substation_6kV,0.0,,transformer
+1168,1169,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lake Echo Substation_110kV,Lake Echo Substation_11kV,0.0,,transformer
+1170,1171,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Liapootah Substation_220kV,Liapootah Substation_11kV,0.0,,transformer
+1172,1173,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Butlers Gorge Substation_110kV,Butlers Gorge Substation_11kV,0.0,,transformer
+1174,1175,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Repulse Substation_220kV,Repulse Substation_11kV,0.0,,transformer
+1178,1179,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Meadowbank Power Station Switchyard_110kV,Meadowbank Power Station Switchyard_11kV,0.0,,transformer
+1187,1188,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Townsville East_132kV,Townsville East_66kV,0.0,,transformer
+1195,1196,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gordon Substation_220kV,Gordon Substation_22kV,0.0,,transformer
+1196,1197,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Gordon Substation_22kV,Gordon Substation_18kV,0.0,,transformer
+1198,1199,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wandoan South_275kV,Wandoan South_132kV,0.0,,transformer
+1199,1200,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wandoan South_132kV,Wandoan South_66kV,0.0,,transformer
+1202,1203,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Eurombah_275kV,Eurombah_132kV,0.0,,transformer
+1205,1206,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Yuleba North_275kV,Yuleba North_132kV,0.0,,transformer
+1213,1214,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Risdon Substation_110kV,Risdon Substation_33kV,0.0,,transformer
+1214,1215,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Risdon Substation_33kV,Risdon Substation_11kV,0.0,,transformer
+1221,1222,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Huon River Substation_110kV,Huon River Substation_11kV,0.0,,transformer
+1224,1225,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wilmot Substation_220kV,Wilmot Substation_11kV,0.0,,transformer
+1227,1228,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lemonthyme Substation_220kV,Lemonthyme Substation_11kV,0.0,,transformer
+1232,1233,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mackintosh Power Station Switchyard_110kV,Mackintosh Power Station Switchyard_13kV,0.0,,transformer
+1234,1235,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Reece Substation_220kV,Reece Substation_13kV,0.0,,transformer
+1237,1238,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tribute Power Station Switchyard_220kV,Tribute Power Station Switchyard_13kV,0.0,,transformer
+1239,1240,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,John Butters Power Station Switchyard_220kV,John Butters Power Station Switchyard_13kV,0.0,,transformer
+1241,1242,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Newton Substation_110kV,Newton Substation_22kV,0.0,,transformer
+1242,1243,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Newton Substation_22kV,Newton Substation_11kV,0.0,,transformer
+1245,1246,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Brandy Hill STS_132kV,Brandy Hill STS_33kV,0.0,,transformer
+1251,1252,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ararat Wind Farm Substation_132kV,Ararat Wind Farm Substation_33kV,0.0,,transformer
+1254,1255,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Rowville Terminal Station_500kV,Rowville Terminal Station_220kV,0.0,,transformer
+1264,1265,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Barron Gorge Power Station_132kV,Barron Gorge Power Station_22kV,0.0,,transformer
+1266,1267,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cairns North_132kV,Cairns North_22kV,0.0,,transformer
+1269,1270,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Deniliquin STS_132kV,Deniliquin STS_66kV,0.0,,transformer
+1272,1273,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Finley STS_132kV,Finley STS_66kV,0.0,,transformer
+1277,1278,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hillston Zone Substation_132kV,Hillston Zone Substation_33kV,0.0,,transformer
+1289,1290,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cobar Substation_132kV,Cobar Substation_11kV,0.0,,transformer
+1291,1292,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Narromine Zone Substation_132kV,Narromine Zone Substation_22kV,0.0,,transformer
+1297,1298,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Pine Creek Substation_132kV,Pine Creek Substation_66kV,0.0,,transformer
+1320,1321,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Port Pirie Substation_132kV,Port Pirie Substation_33kV,0.0,,transformer
+1326,1327,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Snowtown 2 WF_275kV,Snowtown 2 WF_132kV,0.0,,transformer
+1332,1333,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Clare North_132kV,Clare North_33kV,0.0,,transformer
+1335,1336,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Berri Substation_132kV,Berri Substation_66kV,0.0,,transformer
+1347,1348,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kilburn_275kV,Kilburn_66kV,0.0,,transformer
+1357,1358,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cooma STS_132kV,Cooma STS_66kV,0.0,,transformer
+1359,1360,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Steeple Flat STS_132kV,Steeple Flat STS_66kV,0.0,,transformer
+1360,1361,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Steeple Flat STS_66kV,Steeple Flat STS_22kV,0.0,,transformer
+1361,1362,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Steeple Flat STS_22kV,Steeple Flat STS_11kV,0.0,,transformer
+1378,1379,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Invicta Mill Substation_132kV,Invicta Mill Substation_22kV,0.0,,transformer
+1380,1381,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Callide A Power Station_132kV,Callide A Power Station_22kV,0.0,,transformer
+1394,1395,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Boco Rock Wind Farm Substation_132kV,Boco Rock Wind Farm Substation_33kV,0.0,,transformer
+1422,1423,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bega 132_132kV,Bega 132_66kV,0.0,,transformer
+1434,1435,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Coopers Gap Substation_275kV,Coopers Gap Substation_33kV,0.0,,transformer
+1459,1460,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Balgowlah North Zone Substation_132kV,Balgowlah North Zone Substation_11kV,0.0,,transformer
+1482,1483,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,AirTrunk Data Centre Substation_132kV,AirTrunk Data Centre Substation_22kV,0.0,,transformer
+1484,1485,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Herons Creek 132/66kV STS_132kV,Herons Creek 132/66kV STS_66kV,0.0,,transformer
+1486,1487,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Hawks Nest STS_132kV,Hawks Nest STS_33kV,0.0,,transformer
+1493,1494,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Sapphire Switchyard_330kV,Sapphire Switchyard_33kV,0.0,,transformer
+1507,1508,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tailem Bend Substation_132kV,Tailem Bend Substation_33kV,0.0,,transformer
+1512,1513,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ararat Terminal Station_220kV,Ararat Terminal Station_132kV,0.0,,transformer
+1514,1515,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Crowlands Wind Farm Substation_220kV,Crowlands Wind Farm Substation_33kV,0.0,,transformer
+1518,1519,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,CEMI_220kV,CEMI_11kV,0.0,,transformer
+1521,1522,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Larcom Creek Transmission Substation_275kV,Larcom Creek Transmission Substation_132kV,0.0,,transformer
+1531,1532,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Merredin Substation_132kV,Merredin Substation_66kV,0.0,,transformer
+1574,1575,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mudgee Substation_132kV,Mudgee Substation_66kV,0.0,,transformer
+1575,1576,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mudgee Substation_66kV,Mudgee Substation_22kV,0.0,,transformer
+1580,1581,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Berrybank Wind Farm Substation_220kV,Berrybank Wind Farm Substation_33kV,0.0,,transformer
+1588,1589,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kidston Solar Farm_132kV,Kidston Solar Farm_22kV,0.0,,transformer
+1590,1591,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mount Emerald Wind Farm_275kV,Mount Emerald Wind Farm_33kV,0.0,,transformer
+1610,1611,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Broken Hill STS_220kV,Broken Hill STS_22kV,0.0,,transformer
+1631,1632,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Stockdill substation_330kV,Stockdill substation_132kV,0.0,,transformer
+1681,1682,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Dubbo West Zone Substation_132kV,Dubbo West Zone Substation_11kV,0.0,,transformer
+1688,1689,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Queensland Substation_275kV,Queensland Substation_33kV,0.0,,transformer
+1690,1691,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Springlands_132kV,Springlands_33kV,0.0,,transformer
+1697,1698,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Queensland Substation_132kV,Queensland Substation_33kV,0.0,,transformer
+1701,1702,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Yandin Wind Farm Substation_330kV,Yandin Wind Farm Substation_33kV,0.0,,transformer
+1705,1706,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Warradarge Wind Farm Substation_330kV,Warradarge Wind Farm Substation_33kV,0.0,,transformer
+1714,1715,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Singleton STS_132kV,Singleton STS_33kV,0.0,,transformer
+1814,1815,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Munmorah STS_132kV,Munmorah STS_33kV,0.0,,transformer
+1816,1817,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darlington Point Substation_132kV,Darlington Point Substation_33kV,0.0,,transformer
+1825,1826,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Charlestown Zone Substation_132kV,Charlestown Zone Substation_11kV,0.0,,transformer
+1844,1845,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Muswellbrook subtransmission substation_132kV,Muswellbrook subtransmission substation_33kV,0.0,,transformer
+1872,1873,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tasmania Substation_220kV,Tasmania Substation_33kV,0.0,,transformer
+1888,1889,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Toronto West Zone substation_132kV,Toronto West Zone substation_33kV,0.0,,transformer
+1892,1893,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Stanthorpe_110kV,Stanthorpe_33kV,0.0,,transformer
+1917,1918,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Lowmead Substation_132kV,Lowmead Substation_25kV,0.0,,transformer
+2009,2010,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Wandoan South BESS_132kV,Wandoan South BESS_33kV,0.0,,transformer
+2011,2012,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Avonlie Solar Farm Substation_132kV,Avonlie Solar Farm Substation_33kV,0.0,,transformer
+2014,2015,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Rye Park Wind Farm - Collector Substation_330kV,Rye Park Wind Farm - Collector Substation_33kV,0.0,,transformer
+2016,2017,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Rye Park Wind Farm_330kV,Rye Park Wind Farm_33kV,0.0,,transformer
+2048,2049,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Banana Bridge Substation_275kV,Banana Bridge Substation_33kV,0.0,,transformer
+2053,2054,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bundey_330kV,Bundey_275kV,0.0,,transformer
+2093,2094,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Logan City Substation_110kV,Logan City Substation_25kV,0.0,,transformer
+2155,2156,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tarong BESS Substation_275kV,Tarong BESS Substation_33kV,0.0,,transformer
+2165,2166,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Queensland Substation_275kV,Queensland Substation_33kV,0.0,,transformer
+2180,2181,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,New South Wales Substation_132kV,New South Wales Substation_33kV,0.0,,transformer
+2187,2188,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Cameby Substation_132kV,Cameby Substation_33kV,0.0,,transformer
+2194,2195,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Burra Substation_275kV,Burra Substation_33kV,0.0,,transformer
+2201,2202,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Ross River Solar Farm_132kV,Ross River Solar Farm_33kV,0.0,,transformer
+2257,2258,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darling Downs Solar Farm_275kV,Darling Downs Solar Farm_33kV,0.0,,transformer
+2320,2321,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kilkivan East Substation_132kV,Kilkivan East Substation_66kV,0.0,,transformer
+2321,2322,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kilkivan East Substation_66kV,Kilkivan East Substation_11kV,0.0,,transformer
+2343,2344,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Queensland Substation_275kV,Queensland Substation_33kV,0.0,,transformer
+2353,2354,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darling Downs Power Station_275kV,Darling Downs Power Station_33kV,0.0,,transformer
+2355,2356,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darling Downs Power Station_275kV,Darling Downs Power Station_33kV,0.0,,transformer
+2357,2358,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darling Downs Power Station_275kV,Darling Downs Power Station_33kV,0.0,,transformer
+2359,2360,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Darling Downs Power Station_275kV,Darling Downs Power Station_33kV,0.0,,transformer
+2361,2362,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Braemar Power Station_275kV,Braemar Power Station_22kV,0.0,,transformer
+2363,2364,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Braemar Power Station_275kV,Braemar Power Station_22kV,0.0,,transformer
+2365,2366,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Braemar Power Station_275kV,Braemar Power Station_22kV,0.0,,transformer
+2367,2368,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Braemar 2 Power Station_275kV,Braemar 2 Power Station_22kV,0.0,,transformer
+2369,2370,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Braemar 2 Power Station_275kV,Braemar 2 Power Station_22kV,0.0,,transformer
+2371,2372,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Braemar 2 Power Station_275kV,Braemar 2 Power Station_22kV,0.0,,transformer
+2391,2392,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Katherine substation_132kV,Katherine substation_22kV,0.0,,transformer
+2395,2396,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Melbourne Renewable Energy Hub_500kV,Melbourne Renewable Energy Hub_33kV,0.0,,transformer

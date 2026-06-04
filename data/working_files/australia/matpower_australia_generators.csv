@@ -1,0 +1,647 @@
+bus,Pg,Qg,Qmax,Qmin,Vg,mBase,status,Pmax,Pmin,generator_name,operator,source,genfuel,latitude,longitude,osm_id,bus_name,bus_distance_km
+1229,0.0,0.0,193.856,-50.752,1.0,100.0,1,416.0,0.0,Bluewaters Power Station,Kansai Electric Power and Sumitomo Corporation,coal,steam,-33.330601,116.227816,way/26592976,Western Australia Substation_330kV,0.571
+1229,0.0,0.0,158.44,-41.48,1.0,100.0,1,340.0,0.0,Collie Power Station,unknown,coal,steam,-33.342097,116.261439,way/26792398,Western Australia Substation_330kV,2.811
+572,0.0,0.0,397.964,-104.188,1.0,100.0,1,854.0,0.0,Muja Power Station,unknown,coal,steam,-33.450246,116.30482,way/32787295,Muja Switchyard_330kV,0.244
+65,0.0,0.0,101.8,-22.2,1.0,100.0,1,200.0,0.0,Kwinana Power Station,unknown,gas,gas,-32.198281,115.77559,way/37106534,Naval Base Substation_330kV,0.099
+1979,0.0,0.0,3.665,-0.799,1.0,100.0,1,7.2,0.0,FORMER Narre Warren Landfill Gas Fuelled Power Station,EDL LFG (VIC) P/L,biogas,gas,-38.00422,145.329435,way/48673917,Melbourne Substation,3.058
+333,0.0,0.0,615.12,-161.04,1.0,100.0,1,1320.0,0.0,Mount Piper Power Station,Energy Australia,coal,steam,-33.358121,150.032642,way/52050254,Mount Piper Terminal_500kV,0.884
+142,0.0,0.0,782.88,-204.96,1.0,100.0,1,1680.0,0.0,Gladstone Power Station,NRG Gladstone Operating Services,coal,steam,-23.853641,151.217515,way/54674805,Gladstone Substation_275kV,0.438
+1466,0.0,0.0,19.2,-2.45,1.0,100.0,1,50.0,0.0,Warragamba Power Station,unknown,hydro,hydro,-33.882862,150.596954,way/61093845,Warragamba Dam Bulk Supply Substation_132kV,0.04
+2100,0.0,0.0,3.686,-0.47,1.0,100.0,1,9.6,0.0,Rubicon Power Station,AGL Energy,hydro,hydro,-37.327154,145.860547,way/77342627,Victoria Substation,0.023
+2100,0.0,0.0,0.323,-0.041,1.0,100.0,1,0.84,0.0,Royston Power Station,AGL Energy,hydro,hydro,-37.373977,145.864788,way/77351112,Victoria Substation,5.226
+2100,0.0,0.0,0.1,-0.013,1.0,100.0,1,0.26,0.0,Rubicon Falls Power Station,AGL Energy,hydro,hydro,-37.340116,145.847808,way/77435806,Victoria Substation,1.849
+2101,0.0,0.0,1.056,-0.135,1.0,100.0,1,2.75,0.0,Lower Rubicon Power Station,AGL Energy,hydro,hydro,-37.30274,145.845836,way/77444784,Victoria Substation,0.016
+145,0.0,0.0,51.84,-6.615,1.0,100.0,1,135.0,0.0,Eildon Power Station,AGL Energy,hydro,hydro,-37.221982,145.921476,way/77455005,Eildon_220kV,0.247
+1902,0.0,0.0,246.865,-53.835,1.0,100.0,1,485.0,0.0,Pelican Point Power Station,unknown,gas,gas,-34.765325,138.505402,way/83656868,Pelican Point Substation_275kV,0.143
+1170,0.0,0.0,33.523,-4.278,1.0,100.0,1,87.3,0.0,Liapootah Power Station,Hydro Tasmania,hydro,hydro,-42.376279,146.510051,way/87324834,Liapootah Substation_220kV,0.136
+178,0.0,0.0,14.707,-1.877,1.0,100.0,1,38.3,0.0,Wayatinah Power Station,Hydro Tasmania,hydro,hydro,-42.427021,146.534643,way/87325630,Wayatinah Substation_220kV,0.135
+1167,0.0,0.0,18.432,-2.352,1.0,100.0,1,48.0,0.0,Catagunya Power Station,Hydro Tasmania,hydro,hydro,-42.452087,146.597787,way/87327101,Ouse Substation_220kV,0.093
+1168,0.0,0.0,12.518,-1.597,1.0,100.0,1,32.6,0.0,Lake Echo Power Station,Hydro Tasmania,hydro,hydro,-42.253643,146.620627,way/88199376,Lake Echo Substation_110kV,0.036
+965,0.0,0.0,0.345,-0.345,1.0,100.0,1,1.05,0.0,Kings Canyon Solar Farm,unknown,solar,solar,-24.250898,131.500667,way/93651158,Mpwetyerre Substation,250.151
+1629,0.0,0.0,,,1.0,100.0,1,,,Brooklyn Power Station,unknown,gas,gas,-37.819184,144.830947,way/94325438,Melbourne Substation,2.106
+1598,0.0,0.0,197.492,-43.068,1.0,100.0,1,388.0,0.0,Tamar Valley Power Station,Hydro Tasmania,gas,gas,-41.140348,146.904872,way/104749622,Tasmania Substation,0.286
+2098,0.0,0.0,28.416,-3.626,1.0,100.0,1,74.0,0.0,West Kiewa Power Station,AGL Energy,hydro,hydro,-36.759974,147.185812,way/107270533,West Kiewa_220kV,0.017
+215,0.0,0.0,22.272,-2.842,1.0,100.0,1,58.0,0.0,Hume Power Station,Trustpower,hydro,hydro,-36.106639,147.032526,way/108712267,Hume Power Station Switchyard_132kV,0.13
+227,0.0,0.0,717.64,-187.88,1.0,100.0,1,1540.0,0.0,Callide Power Stations B & C,unknown,coal,steam,-24.346016,150.61856,way/119995497,Calvale Substation_275kV,0.952
+692,0.0,0.0,675.7,-176.9,1.0,100.0,1,1450.0,0.0,Yallourn W Power Station,unknown,coal,steam,-38.177589,146.342556,way/133972914,Yallourn Power Station Substation_220kV,0.801
+259,0.0,0.0,1029.86,-269.62,1.0,100.0,1,2210.0,0.0,Loy Yang A Power Station,AGL Energy,coal,steam,-38.253534,146.574459,way/146581906,Loy Yang Power Station_500kV,0.384
+1597,0.0,0.0,223.96,-48.84,1.0,100.0,1,440.0,0.0,Jeeralang Power Station,Ecogen Energy,gas,gas,-38.275046,146.425572,way/146581917,Victoria Substation,0.086
+2149,0.0,0.0,652.4,-170.8,1.0,100.0,1,1400.0,0.0,Tarong Power Station,Stanwell,coal,steam,-26.784086,151.914537,way/160913416,Queensland Substation,0.266
+289,0.0,0.0,18.833,-4.107,1.0,100.0,1,37.0,0.0,Ergon Power Station,Ergon Energy,gas,gas,-23.552279,145.314856,way/164418529,Barcaldine_132kV,0.274
+2162,0.0,0.0,118.088,-25.752,1.0,100.0,1,232.0,0.0,Channel Island Power Station,Territory Generation,gas,gas,-12.554714,130.866127,way/171174741,Channel Island Substation_132kV,0.17
+399,0.0,0.0,176.114,-38.406,1.0,100.0,1,346.0,0.0,Oakey Power Station,ERM Power,gas,gas,-27.418268,151.680205,way/171575465,Oakey PS Substation_110kV,0.162
+411,0.0,0.0,71.26,-15.54,1.0,100.0,1,140.0,0.0,Condamine Power Station,unknown,gas,gas,-26.668181,150.270023,way/171582471,Columboola_275kV,2.326
+2270,0.0,0.0,1230.24,-322.08,1.0,100.0,1,2640.0,0.0,Bayswater Power Station,AGL,coal,steam,-32.394981,150.94949,way/171863884,Muswellbrook Substation_330kV,0.168
+436,0.0,0.0,325.76,-71.04,1.0,100.0,1,640.0,0.0,Uranquinty Power Station,Origin Energy,gas,gas,-35.180061,147.21567,way/172230180,Uranquity Switching Station_132kV,0.302
+2097,0.0,0.0,57.6,-7.35,1.0,100.0,1,150.0,0.0,McKay Creek Power Station,AGL Energy,hydro,hydro,-36.858282,147.234146,way/172236849,McKay Creek_220kV,0.022
+439,0.0,0.0,231.84,-26.496,1.0,100.0,1,414.0,0.0,Mount Stuart Power Station,Origin Energy,diesel,gas_turbine,-19.337807,146.850916,way/172246523,Townsville South Substation_132kV,1.494
+1614,0.0,0.0,407.2,-88.8,1.0,100.0,1,800.0,0.0,Torrens Island Power Station,AGL Energy,gas,gas,-34.80651,138.523127,way/172714953,Torrens Island Substation,0.12
+1349,0.0,0.0,116.561,-25.419,1.0,100.0,1,229.0,0.0,Quarantine Power Station,Origin Energy,gas,gas,-34.779339,138.522883,way/172714958,Torrens North,0.097
+1347,0.0,0.0,79.404,-17.316,1.0,100.0,1,156.0,0.0,Dry Creek Power Station,Synergen Power Pty Limited,gas,gas,-34.847703,138.5816,way/172715454,Kilburn_275kV,0.114
+2037,0.0,0.0,91.62,-19.98,1.0,100.0,1,180.0,0.0,Osborne Power Station,unknown,gas,gas,-34.797702,138.50779,way/172717085,Torrens Island Battery_275kV,1.2
+512,0.0,0.0,11.52,-1.47,1.0,100.0,1,30.0,0.0,Paloona Power Station,Hydro Tasmania,hydro,hydro,-41.282674,146.249036,way/174434679,Paloona Substation_110kV,0.056
+184,0.0,0.0,24.192,-3.087,1.0,100.0,1,63.0,0.0,Devils Gate Power Station,Hydro Tasmania,hydro,hydro,-41.350513,146.263394,way/174435064,Sheffield Substation_220kV,3.994
+520,0.0,0.0,211.2,-26.95,1.0,100.0,1,550.0,0.0,Murray 2 Power Station,Snowy Hydro,hydro,hydro,-36.242469,148.136395,way/174879638,Murray Switching Station_330kV,1.989
+520,0.0,0.0,364.8,-46.55,1.0,100.0,1,950.0,0.0,Murray 1 Power Station,Snowy Hydro,hydro,hydro,-36.24683,148.1902,way/174879640,Murray Switching Station_330kV,4.74
+1227,0.0,0.0,17.664,-2.254,1.0,100.0,1,46.0,0.0,Fisher Power Station,Hydro Tasmania,hydro,hydro,-41.673312,146.268511,way/183424318,Lemonthyme Substation_220kV,13.233
+372,0.0,0.0,397.032,-103.944,1.0,100.0,1,852.0,0.0,Millmerran Power Station,unknown,coal,steam,-27.961319,151.277699,way/186721091,Millmerran Substation_330kV,0.555
+1838,0.0,0.0,,,1.0,100.0,1,,,Lake Glenmaggie,unknown,hydro,hydro,-37.904412,146.800504,way/188687095,Heyfield Substation,9.184
+289,0.0,0.0,0.42,-0.048,1.0,100.0,1,0.75,0.0,Windorah Power Station,Ergon Energy,diesel,gas_turbine,-25.413738,142.660484,way/192815999,Barcaldine_132kV,338.95
+1518,0.0,0.0,,,1.0,100.0,1,,,Camooweal Power Station,Ergon Energy,diesel,gas_turbine,-19.921588,138.129995,way/193282535,CEMI_220kV,141.569
+965,0.0,0.0,,,1.0,100.0,1,,,Orrtipa-Thurra Power Station,unknown,diesel,gas_turbine,-22.787251,136.166499,way/193289923,Mpwetyerre Substation,254.116
+150,0.0,0.0,36.787,-4.694,1.0,100.0,1,95.8,0.0,Trevallyn Power Station,Hydro Tasmania,hydro,hydro,-41.42262,147.111785,way/194226014,Trevallyn Substation_110kV,0.1
+1116,0.0,0.0,53.76,-6.86,1.0,100.0,1,140.0,0.0,Bogong Power Station,AGL Energy,hydro,hydro,-36.805364,147.227969,way/202081250,Bogong_220kV,0.254
+773,0.0,0.0,,,1.0,100.0,1,,,Kalgoorlie West Power Plant,unknown,gas,gas,-30.781359,121.423904,way/207397140,Kalgoorlie Substation_132kV,5.54
+618,0.0,0.0,576.0,-73.5,1.0,100.0,1,1500.0,0.0,Tumut 3 Power Station,Snowy Hydro,hydro,hydro,-35.611138,148.29175,way/208357823,Lower Tumut Switching Station_330kV,0.584
+622,0.0,0.0,23.04,-2.94,1.0,100.0,1,60.0,0.0,Guthega Power Station,Snowy Hydro,hydro,hydro,-36.350097,148.413602,way/208498230,Guthega Substation_132kV,0.07
+979,0.0,0.0,34.56,-4.41,1.0,100.0,1,90.0,0.0,Tarraleah Power Station,Hydro Tasmania,hydro,hydro,-42.301224,146.457294,way/208526639,Tarraleah Substation_110kV,0.097
+976,0.0,0.0,48.0,-6.125,1.0,100.0,1,125.0,0.0,Tungatinah Power Station,Hydro Tasmania,hydro,hydro,-42.296802,146.456568,way/208526892,Tungatinah Substation_110kV,0.135
+935,0.0,0.0,1.68,-0.192,1.0,100.0,1,3.0,0.0,Flinders Island Power Station,Hydro Tasmania,diesel,gas_turbine,-40.116184,148.029067,way/209852608,Musselroe Substation_110kV,73.831
+1087,0.0,0.0,,,1.0,100.0,1,,,Wurreranginy Power Station,unknown,diesel,gas_turbine,-17.274388,128.050248,way/210580475,Western Australia Substation,72.557
+2279,0.0,0.0,96.0,-12.25,1.0,100.0,1,250.0,0.0,Kidston Pumped Hydro,Genex,hydro,hydro,-18.872497,144.155397,way/218593781,Einasleigh Substation_275kV,0.498
+1610,0.0,0.0,,,1.0,100.0,1,,,Broken Hill STS Power Plant,unknown,bing,bing,-31.986308,141.419374,way/219398853,Broken Hill STS_220kV,0.019
+965,0.0,0.0,,,1.0,100.0,1,,,Alice Springs Airport Solar Power Station,unknown,solar,solar,-23.796604,133.897157,way/220315767,Mpwetyerre Substation,9.805
+1400,0.0,0.0,157.79,-34.41,1.0,100.0,1,310.0,0.0,Kemerton Power Station,RATCH-Australia,gas,gas,-33.163352,115.780966,way/223946398,Wokalup Substation_132kV,1.74
+663,0.0,0.0,167.97,-36.63,1.0,100.0,1,330.0,0.0,Neerabup Power Station,unknown,gas,gas,-31.671138,115.802397,way/224224091,Pinjar Substation_330kV,2.16
+965,0.0,0.0,,,1.0,100.0,1,,,Ti Tree Power Station,Power and Water,diesel,gas_turbine,-22.123966,133.414674,way/226561270,Mpwetyerre Substation,182.817
+1506,0.0,0.0,5.599,-1.221,1.0,100.0,1,11.0,0.0,Yulara Power Station,Territory Generation,gas,gas,-25.232254,130.991454,way/227348373,Irrunytju Substation,226.601
+287,0.0,0.0,2.036,-0.444,1.0,100.0,1,4.0,0.0,Woodlawn Bioreactor,Veolia,biogas,gas,-35.06298,149.570198,way/229824066,Capital Hill Wind Farm Substation_330kV,14.477
+476,0.0,0.0,,,1.0,100.0,1,,,Silex Test Site,unknown,solar,solar,-36.613474,143.953475,way/230296678,Bendigo Terminal Station_220kV,32.808
+1234,0.0,0.0,91.392,-11.662,1.0,100.0,1,238.0,0.0,Reece Power Station,Hydro Tasmania,hydro,hydro,-41.723739,145.136012,way/230333200,Reece Substation_220kV,0.026
+845,0.0,0.0,31.104,-3.969,1.0,100.0,1,81.0,0.0,Bastyan Power Station,Hydro Tasmania,hydro,hydro,-41.736045,145.532064,way/230333203,Farrell Substation_220kV,0.171
+2111,0.0,0.0,297.256,-64.824,1.0,100.0,1,584.0,0.0,Mortlake Power Station,Origin Energy,gas,gas,-38.063237,142.668677,way/234560801,Victoria Substation_220kV,0.73
+137,0.0,0.0,162.88,-35.52,1.0,100.0,1,320.0,0.0,Laverton North Power Station,Snowy Hydro Limited,gas,gas,-37.841703,144.788796,way/235401746,Altona Terminal Station_220kV,0.326
+607,0.0,0.0,0.614,-0.078,1.0,100.0,1,1.6,0.0,William Hovell Power Station,Pacific Blue,hydro,hydro,-36.912899,146.392181,way/237753686,Glenrowan Terminal Station_220kV,52.07
+2099,0.0,0.0,69.12,-8.82,1.0,100.0,1,180.0,0.0,Dartmouth Power Station,AGL Energy,hydro,hydro,-36.556485,147.520456,way/239029214,Dartmouth_220kV,0.028
+738,0.0,0.0,13.234,-2.886,1.0,100.0,1,26.0,0.0,Cummins Power Generation,Cummins Power Generation,gas,gas,-32.836075,151.450438,way/239363933,Abermain Substation,0.08
+1659,0.0,0.0,11.147,-2.431,1.0,100.0,1,21.9,0.0,Tennant Creek Power Station,Territory Generation,gas;diesel,gas,-19.654768,134.176188,way/242194671,Tennant Creek Substation,0.062
+1439,0.0,0.0,86.53,-18.87,1.0,100.0,1,170.0,0.0,Somerton Power Station,AGL Energy,gas,gas,-37.631692,144.952802,way/242552875,Melbourne Substation,6.341
+1654,0.0,0.0,254.5,-55.5,1.0,100.0,1,500.0,0.0,Newport Power Station,Ecogen Energy,gas,gas,-37.841423,144.894923,way/243897689,Melbourne Substation,0.117
+885,0.0,0.0,90.602,-19.758,1.0,100.0,1,178.0,0.0,Newman Alinta Power Station,Alinta Energy,gas,gas,-23.344375,119.708616,way/257064279,Newman Alinta Substation_132kV,0.165
+885,0.0,0.0,78.386,-17.094,1.0,100.0,1,154.0,0.0,Yanimar BHP Power Station,unknown,gas,gas,-23.34293,119.710759,way/257064280,Newman Alinta Substation_132kV,0.364
+802,0.0,0.0,368.516,-80.364,1.0,100.0,1,724.0,0.0,Colongra Power Station,Snowy Hydro,gas,gas,-33.209801,151.544968,way/257571176,Colongra Substation,0.098
+513,0.0,0.0,120.0,-15.312,1.0,100.0,1,312.5,0.0,Poatina Power Station,Hydro Tasmania,hydro,hydro,-41.811531,146.919117,way/258724408,Palmerston Substation_220kV,6.484
+864,0.0,0.0,11.76,-1.344,1.0,100.0,1,21.0,0.0,Lonsdale Power Station,Snowy Hydro,diesel,gas_turbine,-35.109703,138.490992,way/261015393,Adelaide SVC+,1.668
+864,0.0,0.0,32.48,-3.712,1.0,100.0,1,58.0,0.0,Port Stanvac Power Station,Snowy Hydro,diesel,gas_turbine,-35.110332,138.49135,way/261015394,Adelaide SVC+,1.738
+1264,0.0,0.0,25.344,-3.234,1.0,100.0,1,66.0,0.0,Barron Gorge Hydro Station,CleanCo Queensland,hydro,hydro,-16.850852,145.646758,way/272496502,Barron Gorge Power Station_132kV,0.055
+1266,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/281808122],unknown,solar,solar,-16.87138,145.740754,way/281808122,Cairns North_132kV,4.827
+2024,0.0,0.0,218.88,-27.93,1.0,100.0,1,570.0,0.0,Wivenhoe Power Station,CleanCo,hydro,hydro,-27.372417,152.63203,way/286558016,Queensland Substation,0.023
+1172,0.0,0.0,4.685,-0.598,1.0,100.0,1,12.2,0.0,Butler Gorge Power Station,Hydro Tasmania,hydro,hydro,-42.266898,146.261823,way/302524456,Butlers Gorge Substation_110kV,0.035
+1227,0.0,0.0,20.736,-2.646,1.0,100.0,1,54.0,0.0,Lemonthyme Power Station,Hydro Tasmania,hydro,hydro,-41.603738,146.13894,way/303376717,Lemonthyme Substation_220kV,0.031
+965,0.0,0.0,22.905,-4.995,1.0,100.0,1,45.0,0.0,Ron Goodin Power Plant,Territory Generation,gas,gas,-23.70901,133.890948,way/311267740,Mpwetyerre Substation,0.078
+2391,0.0,0.0,18.324,-3.996,1.0,100.0,1,36.0,0.0,Katherine Power Station,Territory Generation,gas,gas,-14.459116,132.244697,way/317348505,Katherine substation_132kV,0.107
+1301,0.0,0.0,,,1.0,100.0,1,,,Minyerri Power Station,Power and Water,diesel,gas_turbine,-15.222758,134.077542,way/327344840,Mataranka Substation,114.246
+965,0.0,0.0,,,1.0,100.0,1,,,Wilora Power Station,Power and Water,diesel,gas_turbine,-21.740189,133.729965,way/333728840,Mpwetyerre Substation,219.499
+1894,0.0,0.0,3.36,-0.384,1.0,100.0,1,6.0,0.0,Norfolk Island Power House,Norfolk Island Electricity,diesel,gas_turbine,-29.034606,167.944319,way/334840671,Tweed Heads Substation,1409.119
+2159,0.0,0.0,195.965,-42.735,1.0,100.0,1,385.0,0.0,Swanbank E Power Station,Stanwell,gas,gas,-27.655138,152.817933,way/336346778,Ipswich Substation,0.015
+392,0.0,0.0,680.36,-178.12,1.0,100.0,1,1460.0,0.0,Stanwell Power Station,Stanwell,coal,steam,-23.507452,150.313355,way/340239643,Stanwell_275kV,1.143
+1388,0.0,0.0,106.89,-23.31,1.0,100.0,1,210.0,0.0,Port Hedland Power Station,unknown,gas,gas,-20.428193,118.550246,way/345239673,Western Australia Substation,0.655
+1883,0.0,0.0,1.92,-0.245,1.0,100.0,1,5.0,0.0,Nymboida Power Station,Essential Energy,hydro,hydro,-29.925729,152.741601,way/363537504,Grafton East STS_132kV,36.784
+1884,0.0,0.0,2.016,-0.257,1.0,100.0,1,5.25,0.0,Oaky Power Station,Essential Energy,hydro,hydro,-30.577308,152.060541,way/364194644,Metz STS_132kV,21.267
+469,0.0,0.0,8.64,-1.102,1.0,100.0,1,22.5,0.0,Copeton Dam power station,AGL Energy,hydro,hydro,-29.910174,150.92348,way/364498743,Inverell Subtransmission Station_132kV,26.633
+468,0.0,0.0,2.112,-0.269,1.0,100.0,1,5.5,0.0,Pindari Power Station,AGL Energy,hydro,hydro,-29.389265,151.245192,way/366249341,Dumaresq Switching Station_330kV,22.237
+1712,0.0,0.0,2.765,-0.353,1.0,100.0,1,7.2,0.0,Keepit Power Station,Trustpower,hydro,hydro,-30.879198,150.491443,way/366327512,New South Wales Substation_132kV,16.257
+383,0.0,0.0,5.09,-1.11,1.0,100.0,1,10.0,0.0,Berrimah Power Station,Territory Generation,gas,gas,-12.426152,130.919717,way/371924911,Hudson Creek Substation_132kV,3.883
+1297,0.0,0.0,17.693,-3.858,1.0,100.0,1,34.76,0.0,Pine Creek Power Station,Energy Development Limited (EDL),gas,gas,-13.785221,131.862335,way/371924912,Pine Creek Substation_132kV,3.741
+2162,0.0,0.0,65.661,-14.319,1.0,100.0,1,129.0,0.0,Weddell Power Station,Territory Generation,gas,gas,-12.577214,130.950003,way/371924913,Channel Island Substation_132kV,9.311
+916,0.0,0.0,8.144,-1.776,1.0,100.0,1,16.0,0.0,Wilga Park Power Station,Santos,gas,gas,-30.363284,149.677422,way/372238239,Narrabri subtransmission substation_132kV,12.64
+926,0.0,0.0,615.12,-161.04,1.0,100.0,1,1320.0,0.0,Vales Point Power Station,Sunset Power International Pty Ltd,coal,steam,-33.16078,151.543985,way/376493890,Vales Point Bulk Supply Substation_330kV,0.295
+1683,0.0,0.0,0.008,-0.001,1.0,100.0,1,0.02,0.0,Jenolan Dam Power Station,unknown,hydro,hydro,-33.821294,150.030974,way/383029863,Oberon 132 kV Substation_132kV,21.411
+1526,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,0.0,Greenough River Solar Farm,unknown,solar,solar,-28.903824,115.111592,way/384910156,Western Australia Substation_132kV,17.697
+752,0.0,0.0,43.774,-9.546,1.0,100.0,1,86.0,0.0,Karratha Power Plant,ATCO,gas,gas,-20.762348,116.836098,way/385346768,Horizon Power Substation,2.713
+1567,0.0,0.0,33.558,-33.558,1.0,100.0,1,102.0,0.0,Nyngan Solar Plant,AGL Energy,solar,solar,-31.555475,147.08622,way/392445480,Nyngan Substation_132kV,1.545
+1610,0.0,0.0,17.437,-17.437,1.0,100.0,1,53.0,0.0,Broken Hill Solar Plant,AGL,solar,solar,-31.987538,141.391994,way/392513578,Broken Hill STS_220kV,2.567
+24,0.0,0.0,1342.08,-351.36,1.0,100.0,1,2880.0,0.0,Eraring Power Station,Delta Electricity,coal,steam,-33.061039,151.51984,way/395531577,Eraring substation_500kV,0.401
+2099,0.0,0.0,4.685,-0.598,1.0,100.0,1,12.2,0.0,Banimboola Power Station,AGL Energy,hydro,hydro,-36.534342,147.45934,way/397386746,Dartmouth_220kV,6.015
+763,0.0,0.0,30.72,-3.92,1.0,100.0,1,80.0,0.0,Bendeela Pumping and Power Station,unknown,hydro,hydro,-34.733779,150.46702,way/400535892,Kangaroo Valley Transmission Station_330kV,1.746
+763,0.0,0.0,61.44,-7.84,1.0,100.0,1,160.0,0.0,Kangaroo Valley Pumping and Power Station,Origin Energy,hydro,hydro,-34.72309,150.4796,way/400535898,Kangaroo Valley Transmission Station_330kV,0.214
+1195,0.0,0.0,165.888,-21.168,1.0,100.0,1,432.0,0.0,Gordon Power Station Control Building,Hydro Tasmania,hydro,hydro,-42.740519,145.982796,way/404661179,Gordon Substation_220kV,0.06
+259,0.0,0.0,514.93,-134.81,1.0,100.0,1,1105.0,0.0,Loy Yang B Power Station,AGL Energy,coal,steam,-38.256446,146.584982,way/418338492,Loy Yang Power Station_500kV,0.927
+259,0.0,0.0,152.7,-33.3,1.0,100.0,1,300.0,0.0,Valley Power Peaking Facility,Snowy Hydro,gas,gas,-38.253709,146.588886,way/420651432,Loy Yang Power Station_500kV,1.318
+1838,0.0,0.0,47.846,-10.434,1.0,100.0,1,94.0,0.0,Bairnsdale Power Station,Alinta Energy,gas,gas,-37.842918,147.563855,way/429890045,Heyfield Substation,66.429
+1227,0.0,0.0,4.032,-0.514,1.0,100.0,1,10.5,0.0,Rowallan Power Station,Hydro Tasmania,hydro,hydro,-41.729547,146.217649,way/435724533,Lemonthyme Substation_220kV,15.411
+1224,0.0,0.0,12.288,-1.568,1.0,100.0,1,32.0,0.0,Wilmot Power Station,Hydro Tasmania,hydro,hydro,-41.483313,146.125013,way/435725671,Wilmot Substation_220kV,0.024
+1239,0.0,0.0,55.296,-7.056,1.0,100.0,1,144.0,0.0,John Butters Power Station,Hydro Tasmania,hydro,hydro,-42.154894,145.534508,way/435730139,John Butters Power Station Switchyard_220kV,0.03
+1172,0.0,0.0,0.845,-0.108,1.0,100.0,1,2.2,0.0,Nieterana Mini Hydro,Hydro Tasmania,hydro,hydro,-42.268675,146.262874,way/435741140,Butlers Gorge Substation_110kV,0.221
+984,0.0,0.0,30.72,-3.92,1.0,100.0,1,80.0,0.0,Blowering Power Station,Snowy Hydro,hydro,hydro,-35.398563,148.246201,way/439868270,Blowering Power Station Switchyard_132kV,0.075
+1648,0.0,0.0,,,1.0,100.0,1,,,Solar Power,unknown,solar,solar,-13.659142,134.30868,way/442897136,Jabiru Substation,194.003
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/446285233],unknown,solar,solar,-12.143948,134.52701,way/446285233,Jabiru Substation,191.848
+1648,0.0,0.0,,,1.0,100.0,1,,,Solar Panels,unknown,solar,solar,-12.055466,134.614936,way/446297235,Jabiru Substation,204.032
+965,0.0,0.0,,,1.0,100.0,1,,,Uterne Solar Power Plant,unknown,solar,solar,-23.768009,133.869347,way/448921551,Mpwetyerre Substation,6.936
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/449881658],unknown,solar,solar,-12.763782,133.844672,way/449881658,Jabiru Substation,109.511
+569,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/451470910],unknown,solar,solar,-16.487761,130.643461,way/451470910,Western Australia Substation,193.271
+1301,0.0,0.0,,,1.0,100.0,1,,,Ngukurr Power Station,Power and Water,diesel,gas_turbine,-14.727166,134.735436,way/456351230,Mataranka Substation,181.22
+2357,0.0,0.0,327.796,-71.484,1.0,100.0,1,644.0,0.0,Darling Downs Power Station,Origin Energy,gas,gas,-27.116855,150.894761,way/458399356,Darling Downs Power Station_275kV,0.008
+2369,0.0,0.0,264.171,-57.609,1.0,100.0,1,519.0,0.0,Braemar 2 Power Station,Arrow Energy,gas,gas,-27.112874,150.905442,way/458400909,Braemar 2 Power Station_275kV,0.092
+2361,0.0,0.0,255.518,-55.722,1.0,100.0,1,502.0,0.0,Braemar Power Station,Alinta Energy,gas,gas,-27.110488,150.905683,way/458400910,Braemar Power Station_275kV,0.073
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/458789546],unknown,solar,solar,-12.2024,136.295667,way/458789546,Jabiru Substation,378.562
+2039,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/478032009],unknown,solar,solar,-31.128237,138.395171,way/478032009,Leigh Creek Substation,59.527
+705,0.0,0.0,7.896,-7.896,1.0,100.0,1,24.0,0.0,Royalla Solar Farm,Fotowatio Renewable Ventures,solar,solar,-35.489826,149.142704,way/480673864,Theodore Zone Substation_132kV,4.077
+1078,0.0,0.0,9.984,-1.274,1.0,100.0,1,26.0,0.0,Burrinjuck Power Station,Meridian Energy,hydro,hydro,-35.003008,148.582864,way/480673874,Burrinjuck Substation,0.229
+747,0.0,0.0,,,1.0,100.0,1,8.0,0.0,Teralba Envirogen Power Station,Glencore,abandoned mine methane,abandoned mine methane,-32.945581,151.611963,way/488348079,Newcastle Substation,0.733
+1533,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/491608080],unknown,solar,solar,-32.317426,125.11294,way/491608080,Western Australia Substation_132kV,330.001
+301,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/495976731],unknown,solar,solar,-32.551491,137.843476,way/495976731,Davenport_275kV,3.329
+707,0.0,0.0,3.664,-3.664,1.0,100.0,1,11.1375,0.0,Williamsdale Solar Farm,Impact Investment Group,solar,solar,-35.570928,149.128426,way/499868652,Williamsdale STS_330kV,1.659
+1683,0.0,0.0,2.036,-0.444,1.0,100.0,1,4.0,0.0,Borg Manufacturing Pty Limited,Borg Manufacturing Pty Limited,gas,gas,-33.69537,149.857143,way/501516901,Oberon 132 kV Substation_132kV,0.143
+352,0.0,0.0,137.43,-29.97,1.0,100.0,1,270.0,0.0,Hallett Power Station,AGL,gas,gas,-33.349528,138.751607,way/505288449,Canowie_275kV,0.183
+1116,0.0,0.0,11.136,-1.421,1.0,100.0,1,29.0,0.0,Clover Flat Power Station Substation,AGL Energy,hydro,hydro,-36.785257,147.220466,way/506189906,Bogong_220kV,2.366
+569,0.0,0.0,,,1.0,100.0,1,,,Yarralin Power Station,Power and Water,diesel,gas_turbine,-16.440225,130.890571,way/506827865,Western Australia Substation,216.767
+2374,0.0,0.0,123.178,-26.862,1.0,100.0,1,242.0,0.0,Diamantina Power Station,APA Group,gas,gas,-20.783577,139.483175,way/510603771,DIPS_132kV,0.1
+2374,0.0,0.0,30.54,-6.66,1.0,100.0,1,60.0,0.0,Leichhardt Power Station,APA Group,gas,gas,-20.783656,139.486415,way/510603772,DIPS_132kV,0.254
+1528,0.0,0.0,0.728,-0.083,1.0,100.0,1,1.3,0.0,Mount Magnet Power Station,unknown,diesel,gas_turbine,-28.087135,117.832701,way/511046946,Yalgoo Substation_132kV,113.713
+1559,0.0,0.0,55.481,-12.099,1.0,100.0,1,109.0,0.0,Kwinana Swift Power Station,CTEC Pty Ltd,gas,gas,-32.224368,115.778586,way/516347766,Kwinana Beach Substation_132kV,0.087
+999,0.0,0.0,,,1.0,100.0,1,,,Dalby Bio-Refinery,unknown,biofuel,biofuel,-27.146062,151.241743,way/517547973,Dalby Substation_110kV,10.143
+795,0.0,0.0,223.96,-48.84,1.0,100.0,1,440.0,0.0,Tallawarra Power Station,TRUenergy,gas,gas,-34.522808,150.807237,way/535791203,Tallawarra Power Station_132kV,0.07
+289,0.0,0.0,18.095,-18.095,1.0,100.0,1,55.0,0.0,Barcaldine Solar Farm,Elecnor Australia,solar,solar,-23.547776,145.318817,way/545959604,Barcaldine_132kV,0.774
+1174,0.0,0.0,11.174,-1.426,1.0,100.0,1,29.1,0.0,Repulse Power Station,Hydro Tasmania,hydro,hydro,-42.507691,146.647,way/548367439,Repulse Substation_220kV,0.029
+533,0.0,0.0,7.142,-0.911,1.0,100.0,1,18.6,0.0,Cluny Power Station,Hydro Tasmania,hydro,hydro,-42.506442,146.68104,way/548367444,Cluny Substation_220kV,0.128
+1178,0.0,0.0,16.051,-2.048,1.0,100.0,1,41.8,0.0,Meadowbank Power Station,Hydro Tasmania,hydro,hydro,-42.611178,146.845687,way/548702984,Meadowbank Power Station Switchyard_110kV,0.023
+2248,0.0,0.0,0.099,-0.099,1.0,100.0,1,0.3,0.0,Marble Bar Power Station,Horizon Power,solar,solar,-21.164397,119.741316,way/550003920,Marble Bar Substation,73.654
+1226,0.0,0.0,38.4,-4.9,1.0,100.0,1,100.0,0.0,Cethana Power Station,Hydro Tasmania,hydro,hydro,-41.480804,146.134511,way/552021425,Cethana Substation_220kV,0.239
+1232,0.0,0.0,31.104,-3.969,1.0,100.0,1,81.0,0.0,Mackintosh Power Station,Hydro Tasmania,hydro,hydro,-41.69974,145.646154,way/557523518,Mackintosh Power Station Switchyard_110kV,0.026
+1237,0.0,0.0,32.256,-4.116,1.0,100.0,1,84.0,0.0,Tribute Power Station,Hydro Tasmania,hydro,hydro,-41.815832,145.650178,way/557883068,Tribute Power Station Switchyard_220kV,0.041
+578,0.0,0.0,3.416,-0.39,1.0,100.0,1,6.1,0.0,King Island Advanced Hybrid Power Station,Hydro Tasmania,diesel,gas_turbine,-39.938658,143.89223,way/568634860,Bluff Point Wind Farm Substation_110kV,110.379
+1279,0.0,0.0,122.16,-26.64,1.0,100.0,1,240.0,0.0,Yurralyi Maya Power Station,Rio Tinto,gas,gas,-20.762708,116.742142,way/583492109,Karratha Substation_220kV,0.065
+1299,0.0,0.0,17.815,-3.885,1.0,100.0,1,35.0,0.0,Yimuyn Manjerr (Mount Todd) Power Station,unknown,gas,gas,-14.195167,132.052924,way/591200204,Substation_W591209855,8.514
+1612,0.0,0.0,45.81,-9.99,1.0,100.0,1,90.0,0.0,Mintaro Power Station,Synergen Power Pty Limited,gas,gas,-33.903056,138.738162,way/598287982,Mintaro,0.041
+617,0.0,0.0,109.978,-14.034,1.0,100.0,1,286.4,0.0,Tumut 2 Power Station,Snowy Hydro,hydro,hydro,-35.883594,148.370149,way/598436254,Tumut 2 Cable Yard_330kV,0.36
+1312,0.0,0.0,126.72,-16.17,1.0,100.0,1,330.0,0.0,Tumut 1 Power Station,Snowy Hydro,hydro,hydro,-35.952003,148.367255,way/598436277,Tumut 1 Cable Yard_330kV,0.469
+306,0.0,0.0,40.88,-4.672,1.0,100.0,1,73.0,0.0,Port Lincoln Power Station,Synergen Power Pty Limited,diesel,gas_turbine,-34.700389,135.804384,way/598538099,Port Lincoln Terminal_132kV,0.096
+1317,0.0,0.0,1.974,-1.974,1.0,100.0,1,6.0,0.0,Whyalla Solar Farm Stage 1,unknown,solar,solar,-33.006805,137.557709,way/598924414,Whyalla Central Connection Point_132kV,0.631
+618,0.0,0.0,5.53,-0.706,1.0,100.0,1,14.4,0.0,Jounama Small Hydro Power Station,Snowy Hydro,hydro,hydro,-35.562015,148.305493,way/601184493,Lower Tumut Switching Station_330kV,5.184
+1388,0.0,0.0,76.35,-16.65,1.0,100.0,1,150.0,0.0,South Hedland Horizon Power Station,unknown,gas,gas,-20.431301,118.545746,way/611221499,Western Australia Substation,0.072
+1151,0.0,0.0,1.612,-1.612,1.0,100.0,1,4.9,0.0,Peterborough Solar Farm,unknown,solar,solar,-32.978959,138.815612,way/612106758,Mount Lock Substation_275kV,29.876
+1087,0.0,0.0,0.189,-0.022,1.0,100.0,1,0.337,0.0,Kundat Djaru Power Station,unknown,diesel,gas_turbine,-18.79782,128.616084,way/617619061,Western Australia Substation,232.541
+1527,0.0,0.0,57.008,-12.432,1.0,100.0,1,112.0,0.0,Mungarra Power Station,unknown,gas,gas,-28.889524,115.117946,way/618217271,Western Australia Substation_132kV,18.843
+1711,0.0,0.0,,,1.0,100.0,1,,,Sandstone Power Station,Horizon Power,diesel,gas_turbine,-27.985613,119.294862,way/631201148,Leinster Substation,119.828
+1517,0.0,0.0,80.605,-80.605,1.0,100.0,1,245.0,0.0,Bungala Solar Power Project,Enel Green Power,solar,solar,-32.415846,137.841225,way/635460074,Emeroo Substation_132kV,0.636
+1537,0.0,0.0,293.184,-63.936,1.0,100.0,1,576.0,0.0,Pinjar Power Station,unknown,gas,gas,-31.557738,115.820469,way/637325823,Muchea Substation_132kV,0.185
+912,0.0,0.0,18.424,-18.424,1.0,100.0,1,56.0,0.0,Moree Solar Farm,unknown,solar,solar,-29.569066,149.866721,way/658931246,Moree Substation_132kV,9.39
+494,0.0,0.0,21.714,-21.714,1.0,100.0,1,66.0,0.0,Parkes Solar Farm,Neoen,solar,solar,-33.117567,148.078825,way/658933071,Parkes Substation_132kV,1.676
+989,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/674422702],unknown,solar,solar,-34.787357,138.734989,way/674422702,Golden Grove Substation,2.715
+773,0.0,0.0,55.99,-12.21,1.0,100.0,1,110.0,0.0,Parkeston Power Station,TransAlta,gas,gas,-30.737642,121.50639,way/679545446,Kalgoorlie Substation_132kV,4.121
+57,0.0,0.0,0.197,-0.197,1.0,100.0,1,0.6,0.0,Rottnest Island Solar Farm,unknown,solar,solar,-32.003922,115.544667,way/685165840,Perth Substation_132kV,20.335
+2154,0.0,0.0,209.7,-54.9,1.0,100.0,1,450.0,0.0,Tarong North Power Station,Stanwell,coal,steam,-26.774391,151.914007,way/685339690,Queensland Substation,0.779
+965,0.0,0.0,39.193,-8.547,1.0,100.0,1,77.0,0.0,Owen Springs Power Station,Territory Generation,gas,gas,-23.863622,133.825224,way/686049728,Mpwetyerre Substation,18.46
+2318,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,White Rock Solar Farm,Goldwind Capital Australia Pty Ltd,solar,solar,-29.764429,151.553007,way/698045659,New South Wales Substation,7.187
+1359,0.0,0.0,1.901,-0.243,1.0,100.0,1,4.95,0.0,Brown Mountain Power Station,unknown,hydro,hydro,-36.595077,149.473934,way/699648342,Steeple Flat STS_132kV,9.733
+1816,0.0,0.0,90.475,-90.475,1.0,100.0,1,275.0,0.0,Darlington Point Solar Farm,Canadian Solar,solar,solar,-34.648971,146.061179,way/706999783,Darlington Point Substation_132kV,2.061
+1507,0.0,0.0,31.255,-31.255,1.0,100.0,1,95.0,0.0,Tailem Bend Solar Power Project,Vena Energy,solar,solar,-35.271346,139.488379,way/708047845,Tailem Bend Substation_132kV,0.108
+2200,0.0,0.0,65.8,-65.8,1.0,100.0,1,200.0,0.0,Sunraysia Solar Farm,AGL Energy,solar,solar,-34.804891,143.491185,way/710054263,Balranald Substation_220kV,2.391
+2214,0.0,0.0,102.977,-102.977,1.0,100.0,1,313.0,0.0,Limondale Solar Farm,Belectric,solar,solar,-34.771747,143.500494,way/710073323,Balranald Substation,1.535
+1330,0.0,0.0,,,1.0,100.0,1,30.0,0.0,Dalrymple BESS,AGL,battery,battery,-34.933952,137.743532,way/711568924,Dalrymple_132kV,0.239
+353,0.0,0.0,28.0,-3.2,1.0,100.0,1,50.0,0.0,Angaston Power Station,Snowy Hydro,diesel,gas_turbine,-34.503389,139.02458,way/715631438,Dorrien_132kV,5.487
+1501,0.0,0.0,,,1.0,100.0,1,25.0,0.0,Gannawarra Energy Storage System,unknown,battery,battery,-35.734223,143.780014,way/722260728,Victoria Substation,0.122
+1501,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,Gannawarra Solar Farm,Canadian Solar,solar,solar,-35.729012,143.783189,way/722260732,Victoria Substation,0.528
+2239,0.0,0.0,28.952,-28.952,1.0,100.0,1,88.0,0.0,Bannerton Solar Park,unknown,solar,solar,-34.687324,142.77895,way/723022474,Robinvale Substation,0.197
+2312,0.0,0.0,0.494,-0.494,1.0,100.0,1,1.5,0.0,Darwin Airport Solar Stage 2,unknown,solar,solar,-12.401061,130.87,way/724839915,Darwin Substation,2.525
+887,0.0,0.0,1.316,-1.316,1.0,100.0,1,4.0,0.0,Darwin Airport Solar Stage 1,unknown,solar,solar,-12.41551,130.890028,way/724839916,former Snell Street Zone substation,3.844
+1555,0.0,0.0,0.658,-0.658,1.0,100.0,1,2.0,0.0,Garden Island Microgrid,Carnegie,solar,solar,-32.239975,115.681578,way/727385872,Rockingham Substation_132kV,6.778
+1272,0.0,0.0,53.416,-53.416,1.0,100.0,1,162.36,0.0,Finley Solar Farm,unknown,solar,solar,-35.648941,145.50575,way/728782196,Finley STS_132kV,1.185
+186,0.0,0.0,,,1.0,100.0,1,30.0,0.0,Ballarat Energy Storage System,EnergyAustralia,battery,battery,-37.567603,143.919894,way/729800387,AusNet Ballarat Terminal Station_220kV,0.107
+1631,0.0,0.0,0.128,-0.128,1.0,100.0,1,0.39,0.0,Icon Water,Icon Water,solar,solar,-35.247765,148.97192,way/731995659,Stockdill substation_330kV,1.045
+1501,0.0,0.0,4.738,-4.738,1.0,100.0,1,14.4,0.0,Swan Hill Solar Farm,unknown,solar,solar,-35.341889,143.517524,way/733254929,Victoria Substation,49.581
+2355,0.0,0.0,36.19,-36.19,1.0,100.0,1,110.0,0.0,Darling Downs Solar Farm,unknown,solar,solar,-27.113797,150.879733,way/752967933,Darling Downs Power Station_275kV,1.525
+1264,0.0,0.0,4.014,-4.014,1.0,100.0,1,12.2,0.0,Lakeland Solar and Storage,unknown,solar;battery,solar,-15.868544,144.862074,way/752982718,Barron Gorge Power Station_132kV,137.574
+1538,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,Emu Downs Solar Farm,APA Group,solar,solar,-30.489226,115.416431,way/755426031,Badgingarra Substation_132kV,3.812
+1506,0.0,0.0,,,1.0,100.0,1,,,Pipalyatjara Power Station,unknown,diesel,gas_turbine,-26.159116,129.173546,way/759341226,Irrunytju Substation,25.957
+1530,0.0,0.0,41.738,-9.102,1.0,100.0,1,82.0,0.0,Merriden Power Station,Merriden Energy,gas,gas,-31.542681,118.22701,way/759936037,Merredin Substation_132kV,0.1
+966,0.0,0.0,61.08,-13.32,1.0,100.0,1,120.0,0.0,Cape Lambert Power Station,Rio Tinto,gas,gas,-20.649611,117.141422,way/762017450,Wickham Substation,0.088
+1311,0.0,0.0,0.329,-0.329,1.0,100.0,1,1.0,0.0,Coober Pedy Hybrid Renewable Power Station (Solar),EDL Energy,solar,solar,-29.028563,134.773347,way/764880347,Prominent Hill_132kV,109.137
+1583,0.0,0.0,4.935,-4.935,1.0,100.0,1,15.0,0.0,Sunshine Coast Solar Farm,unknown,solar,solar,-26.560094,153.02574,way/765593194,YDA,6.841
+1518,0.0,0.0,1.366,-0.156,1.0,100.0,1,2.44,0.0,Doomadgee Power Station,Ergon Energy,diesel,gas_turbine,-17.940899,138.826436,way/785299255,CEMI_220kV,90.957
+1241,0.0,0.0,3.226,-0.412,1.0,100.0,1,8.4,0.0,Lake Margaret Power Station,Hydro Tasmania,hydro,hydro,-42.004569,145.543698,way/792847201,Newton Substation_110kV,10.663
+1241,0.0,0.0,,,1.0,100.0,1,,,Lower Lake Margaret,unknown,hydro,hydro,-42.014872,145.526324,way/792848702,Newton Substation_110kV,12.102
+1588,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,Kidston Solar Farm,Genex Power,solar,solar,-18.889381,144.14246,way/798877583,Kidston Solar Farm_132kV,0.332
+399,0.0,0.0,26.32,-26.32,1.0,100.0,1,80.0,0.0,Oakey Solar Farm,Canadian Solar,solar,solar,-27.410516,151.652849,way/800721964,Oakey PS Substation_110kV,2.811
+1301,0.0,0.0,,,1.0,100.0,1,,,OLD Power Station,GEMCO,diesel,gas_turbine,-13.858547,136.420722,way/802897367,Mataranka Substation,380.543
+1506,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/805402710],unknown,solar,solar,-25.221721,130.973813,way/805402710,Irrunytju Substation,225.488
+1659,0.0,0.0,,,1.0,100.0,1,,,Elliott Power Station,Power and Water,gas,gas,-17.550448,133.539225,way/809024770,Tennant Creek Substation,243.374
+1301,0.0,0.0,,,1.0,100.0,1,,,Daly Waters Power Station,unknown,biofuel,biofuel,-16.269446,133.375667,way/809045886,Mataranka Substation,153.949
+1090,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/812876811],unknown,solar,solar,-34.354008,142.029948,way/812876811,Red Cliffs Terminal Station_220kV,20.346
+1510,0.0,0.0,,,1.0,100.0,1,,,Deakin University Solar Farm,unknown,solar,solar,-38.199853,144.28249,way/820382925,Geelong Substation,2.892
+2052,0.0,0.0,3.948,-3.948,1.0,100.0,1,12.0,0.0,Melbourne Airport Solar Farm,Melbourne Airport,solar,solar,-37.641376,144.831718,way/823066841,Melbourne Substation,5.332
+1087,0.0,0.0,14.0,-1.6,1.0,100.0,1,25.0,0.0,Argyle Power Station,D.E.S.S Power,diesel,gas_turbine,-16.716178,128.403032,way/830825356,Western Australia Substation,0.088
+2282,0.0,0.0,162.88,-35.52,1.0,100.0,1,320.0,0.0,NewGen Power Kwinana,NewGen Power Kwinana Pty Ltd,gas,gas,-32.202009,115.773434,way/830911260,Naval Base Substation,0.067
+1100,0.0,0.0,40.72,-8.88,1.0,100.0,1,80.0,0.0,Roma Power Station,Origin Energy,gas,gas,-26.577126,148.84009,way/831284063,Roma_132kV,0.123
+1350,0.0,0.0,40.72,-8.88,1.0,100.0,1,80.0,0.0,Ladbroke Grove Power Station,Origin Energy,gas,gas,-37.456341,140.782163,way/831284065,Penola West Substation_132kV,0.087
+97,0.0,0.0,62.607,-13.653,1.0,100.0,1,123.0,0.0,Smithfield Open Cycle Gas Turbine,Infigen Energy,gas,gas,-33.849945,150.94941,way/831284066,Guildford Transmission Substation_132kV,0.723
+1593,0.0,0.0,124.196,-27.084,1.0,100.0,1,244.0,0.0,Townsville Power Station,unknown,gas,gas,-19.201263,146.618564,way/831284069,Townsville Power Station_132kV,0.098
+1614,0.0,0.0,106.89,-23.31,1.0,100.0,1,210.0,0.0,Barker Inlet Power Station,AGL Energy,gas,gas,-34.803695,138.523864,way/831284070,Torrens Island Substation,0.299
+2108,0.0,0.0,3.648,-0.465,1.0,100.0,1,9.5,0.0,Yarrawonga Weir Power Station,AGL Energy,hydro,hydro,-36.009397,145.999485,way/835602089,Victoria Substation,37.177
+692,0.0,0.0,0.96,-0.122,1.0,100.0,1,2.5,0.0,Blue Rock Power Station,Pacific Energy,hydro,hydro,-38.079294,146.230211,way/840069487,Yallourn Power Station Substation_220kV,14.866
+1147,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,0.0,Gullen Solar Farm,unknown,solar,solar,-34.60967,149.475616,way/841600751,New South Wales Substation,1.577
+1659,0.0,0.0,,,1.0,100.0,1,,,Imangara Power Station,Power and Water,diesel,gas_turbine,-21.046702,134.675418,way/846106319,Tennant Creek Substation,163.346
+1654,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/846301015],unknown,solar,solar,-37.830194,144.894393,way/846301015,Melbourne Substation,1.149
+922,0.0,0.0,19.04,-2.176,1.0,100.0,1,34.0,0.0,Mackay Gas Turbine,Stanwell Corporation Limited (,oil,gas_turbine,-21.144595,149.158876,way/848671102,Mackay_132kV,0.064
+2243,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/848775043],unknown,solar,solar,-36.029342,146.895117,way/848775043,Albury Substation,5.632
+2391,0.0,0.0,8.225,-8.225,1.0,100.0,1,25.0,0.0,Katherine Solar Farm,ENI Australia,solar,solar,-14.42654,132.224383,way/849649148,Katherine substation_132kV,4.198
+814,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,0.0,Manton Solar Farm,ENI Australia,solar,solar,-12.884223,131.146516,way/849663762,Manton Substation_132kV,1.391
+383,0.0,0.0,3.027,-3.027,1.0,100.0,1,9.2,0.0,Robertson Barracks Solar Farm,unknown,solar,solar,-12.417116,130.96972,way/849676268,Hudson Creek Substation_132kV,6.202
+1264,0.0,0.0,,,1.0,100.0,1,,,Bamaga Power Station,unknown,gas,gas,-10.892681,142.394835,way/866255566,Barron Gorge Power Station_132kV,749.639
+1528,0.0,0.0,0.526,-0.526,1.0,100.0,1,1.6,0.0,Carnegie EMC,Carnegie EMC,solar,solar,-26.753622,116.658271,way/867883337,Yalgoo Substation_132kV,223.168
+1997,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/871495125],unknown,solar,solar,-35.315252,149.185238,way/871495125,EvoEnergy,1.623
+660,0.0,0.0,53.124,-13.908,1.0,100.0,1,114.0,0.0,Worsley Refinery Coal Power Station,unknown,coal,steam,-33.235792,116.068712,way/874624367,Western Australia Substation_132kV,0.852
+660,0.0,0.0,61.08,-13.32,1.0,100.0,1,120.0,0.0,Worsley Refinery Gas Power Station,unknown,gas,gas,-33.235964,116.069752,way/874624368,Western Australia Substation_132kV,0.944
+487,0.0,0.0,4.935,-4.935,1.0,100.0,1,15.0,0.0,Dubbo Solar Hub (Dubbo South Keswick Solar Farm),Bouygues Construction,solar,solar,-32.272801,148.659285,way/881597200,Dubbo South Zone Substation_132kV,2.805
+1291,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,0.0,Dubbo Solar Hub (Narromine Solar Farm),Bouygues Construction,solar,solar,-32.220895,148.255308,way/881601318,Narromine Zone Substation_132kV,1.86
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/887850601],unknown,solar,solar,-12.063642,134.234313,way/887850601,Jabiru Substation,165.177
+287,0.0,0.0,0.79,-0.79,1.0,100.0,1,2.4,0.0,Woodlawn Solar Farm,unknown,solar,solar,-35.059955,149.553911,way/888584901,Capital Hill Wind Farm Substation_330kV,14.443
+974,0.0,0.0,,,1.0,100.0,1,,,Eliwana Power Station,Fortescue,diesel,gas_turbine,-22.462598,116.829581,way/889073278,Old Substation,94.803
+1264,0.0,0.0,,,1.0,100.0,1,,,Thursday Island Power Station,unknown,oil,gas_turbine,-10.575017,142.219131,way/904224924,Barron Gorge Power Station_132kV,789.834
+1637,0.0,0.0,1.018,-0.222,1.0,100.0,1,2.0,0.0,Dakabin Waste Biogas Generator,City of Moreton Bay,biogas,gas,-27.225573,152.99196,way/906948204,Brisbane Substation,2.478
+31,0.0,0.0,1.018,-0.222,1.0,100.0,1,2.0,0.0,Caboolture Waste Biogas Generator,City of Moreton Bay,biogas,gas,-27.072451,152.992632,way/906948205,Caboolture Substation_110kV,3.039
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/909227655],unknown,solar,solar,-22.654376,130.551471,way/909227655,Mpwetyerre Substation,360.843
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/909284873],unknown,solar,solar,-22.242845,131.793158,way/909284873,Mpwetyerre Substation,269.543
+965,0.0,0.0,,,1.0,100.0,1,,,Yuendumu Power Station,Power and Water,diesel,gas_turbine,-22.252128,131.799081,way/909284885,Mpwetyerre Substation,268.43
+2201,0.0,0.0,38.164,-38.164,1.0,100.0,1,116.0,0.0,Ross River Solar Farm,Palisade Integrated Management Services,solar,solar,-19.42622,146.715299,way/910004403,Ross River Solar Farm_132kV,1.632
+2207,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/910032620],unknown,solar,solar,-22.142401,147.928736,way/910032620,Moranbah Substation_132kV,1.029
+2207,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/910032621],unknown,solar,solar,-22.128357,147.932594,way/910032621,Moranbah Substation_132kV,1.867
+1830,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Summerhill Solar Farm,Newcastle City Council,solar,solar,-32.891432,151.649439,way/911050589,Substation (closed),2.784
+964,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Schwartz Solar Farm,Schwartz Family Company,solar,solar,-32.771588,151.352276,way/911062725,Cessnock Substation,7.49
+2247,0.0,0.0,,,1.0,100.0,1,,,Sino Iron Thermal Power Plant,unknown,gas,gas,-21.076457,116.159105,way/915630855,Western Australia Substation,25.94
+647,0.0,0.0,193.42,-42.18,1.0,100.0,1,380.0,0.0,Wagerup Alinta Gas Power Station,unknown,gas,gas,-32.91546,115.917892,way/916049545,Western Australia Substation,0.381
+1548,0.0,0.0,142.52,-31.08,1.0,100.0,1,280.0,0.0,Pinjarra Power Station,unknown,gas,gas,-32.647459,115.946592,way/916053934,Western Australia Substation_132kV,0.155
+64,0.0,0.0,122.16,-26.64,1.0,100.0,1,240.0,0.0,Cockburn Power Station,Synergy,gas,gas,-32.200898,115.774617,way/918098849,Naval Base Substation_330kV,0.15
+117,0.0,0.0,0.509,-0.111,1.0,100.0,1,1.0,0.0,Bunya Biogas Generator,City of Moreton Bay,biogas,gas,-27.377937,152.940126,way/923994065,Bunyaville Transition Site_110kV,4.216
+1648,0.0,0.0,,,1.0,100.0,1,,,Gove Peninsula Power Plant,unknown,gas,gas,-12.188862,136.686536,way/926903512,Jabiru Substation,420.855
+236,0.0,0.0,,,1.0,100.0,1,,,Gold Coast Waterways Authority,Gold Coast Waterways Authority,solar,solar,-27.939564,153.426806,way/929024969,Gold Coast Substation,2.713
+2037,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/932291959],unknown,unknown,unknown,-34.805929,138.507567,way/932291959,Torrens Island Battery_275kV,1.133
+1082,0.0,0.0,0.362,-0.362,1.0,100.0,1,1.1,0.0,Jemalong CSP Pilot Plant,Vast Solar,solar,solar,-33.387701,147.669576,way/934627401,Forbes Substation_132kV,32.598
+1082,0.0,0.0,,,1.0,100.0,1,,,[10],unknown,solar,solar,-33.409099,147.655008,way/934993546,Forbes Substation_132kV,34.2
+1082,0.0,0.0,,,1.0,100.0,1,,,[9],unknown,solar,solar,-33.408506,147.650569,way/934993547,Forbes Substation_132kV,34.599
+1305,0.0,0.0,,,1.0,100.0,1,,,[8],unknown,solar,solar,-33.408679,147.646377,way/934993548,Lake Cowal Gold Mine Substation_132kV,34.85
+1082,0.0,0.0,,,1.0,100.0,1,,,[7],unknown,solar,solar,-33.406821,147.646612,way/934993549,Forbes Substation_132kV,34.938
+1305,0.0,0.0,,,1.0,100.0,1,,,[6],unknown,solar,solar,-33.405267,147.643962,way/934993550,Lake Cowal Gold Mine Substation_132kV,34.988
+1305,0.0,0.0,,,1.0,100.0,1,,,[5],unknown,solar,solar,-33.407935,147.640518,way/934993551,Lake Cowal Gold Mine Substation_132kV,34.554
+1305,0.0,0.0,,,1.0,100.0,1,,,[4],unknown,solar,solar,-33.40618,147.639746,way/934993552,Lake Cowal Gold Mine Substation_132kV,34.656
+1305,0.0,0.0,,,1.0,100.0,1,,,[3],unknown,solar,solar,-33.407207,147.635101,way/934993553,Lake Cowal Gold Mine Substation_132kV,34.291
+1305,0.0,0.0,,,1.0,100.0,1,,,[2],unknown,solar,solar,-33.404804,147.635071,way/934993554,Lake Cowal Gold Mine Substation_132kV,34.494
+1305,0.0,0.0,,,1.0,100.0,1,,,[1],unknown,solar,solar,-33.402177,147.635464,way/934993555,Lake Cowal Gold Mine Substation_132kV,34.742
+1301,0.0,0.0,0.215,-0.215,1.0,100.0,1,0.653,0.0,Borroloola Solar Farm,unknown,solar,solar,-16.053563,136.308134,way/943430789,Mataranka Substation,370.108
+2267,0.0,0.0,92.12,-92.12,1.0,100.0,1,280.0,0.0,Wollar Solar Farm,Wollar Solar,solar,solar,-32.416529,149.936579,way/946792950,New South Wales Substation_330kV,1.052
+1081,0.0,0.0,18.391,-18.391,1.0,100.0,1,55.9,0.0,Manildra Solar Farm,New Energy Solar,solar,solar,-33.172681,148.718175,way/948165030,Manildra Substation_132kV,0.808
+1685,0.0,0.0,36.519,-36.519,1.0,100.0,1,111.0,0.0,Beryl Solar Farm,New Energy Solar,solar,solar,-32.356446,149.470517,way/948166814,Gulgong Substation,1.135
+2208,0.0,0.0,49.35,-49.35,1.0,100.0,1,150.0,0.0,Suntop Solar Farm,unknown,solar,solar,-32.583514,148.826931,way/948170857,New South Wales Substation_132kV,0.713
+491,0.0,0.0,24.675,-24.675,1.0,100.0,1,75.0,0.0,Childers Solar Farm,ESCO Pacific,solar,solar,-25.305189,152.402663,way/948211610,Isis Zone substation_132kV,6.621
+1405,0.0,0.0,31.255,-31.255,1.0,100.0,1,95.0,0.0,Susan River Solar Farm,ESCO Pacific,solar,solar,-25.419331,152.741687,way/948214325,Mungar_132kV,24.859
+607,0.0,0.0,27.965,-27.965,1.0,100.0,1,85.0,0.0,Winton Solar Farm,unknown,solar,solar,-36.503538,146.124102,way/948218698,Glenrowan Terminal Station_220kV,1.331
+1364,0.0,0.0,11.186,-11.186,1.0,100.0,1,34.0,0.0,Middlemount Solar Farm,unknown,solar,solar,-22.823243,148.718008,way/948338587,Norwich Park_132kV,31.231
+1694,0.0,0.0,34.874,-34.874,1.0,100.0,1,106.0,0.0,Yatpool Solar Farm,unknown,solar,solar,-34.396363,142.173809,way/948341077,Victoria Substation_220kV,7.489
+494,0.0,0.0,22.948,-22.948,1.0,100.0,1,69.75,0.0,Goonumbla Solar Farm,Fotowatio Renewable Ventures (FRV),solar,solar,-33.109212,148.092982,way/948343172,Parkes Substation_132kV,1.822
+1895,0.0,0.0,34.545,-34.545,1.0,100.0,1,105.0,0.0,Nevertire Solar Farm,Atmos Renewables,solar,solar,-31.822603,147.703086,way/948343956,New South Wales Substation_132kV,0.693
+1406,0.0,0.0,78.386,-17.094,1.0,100.0,1,154.0,0.0,Yarwun Power Station,unknown,gas,gas,-23.8309,151.151136,way/948376685,Gladstone Substation_132kV,0.192
+1687,0.0,0.0,8.982,-8.982,1.0,100.0,1,27.3,0.0,Maryrorough Solar Farm,unknown,solar,solar,-27.708611,151.546202,way/948385222,Yarranlea North_110kV,1.992
+2068,0.0,0.0,0.509,-0.111,1.0,100.0,1,1.0,0.0,Wollert Waste to Energy Facility (ReWaste),Yarra Valley Water,biogas,gas,-37.61105,144.976138,way/948393159,Melbourne Substation,7.754
+1939,0.0,0.0,3.919,-0.855,1.0,100.0,1,7.7,0.0,Wollert Renewable Energy Hub (Landfill Gas),LMS Energy,biogas,gas,-37.583073,145.048357,way/948393160,Melbourne Substation,5.864
+2105,0.0,0.0,0.049,-0.049,1.0,100.0,1,0.15,0.0,Wollert Renewable Energy Hub (Solar),LMS Energy,solar,solar,-37.584206,145.047914,way/948393161,Melbourne Substation,5.815
+2250,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/948395166],unknown,solar,solar,-36.072175,145.420239,way/948395166,Numurkah Substation,9.531
+2250,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/948395167],unknown,solar,solar,-36.065589,145.44509,way/948395167,Numurkah Substation,10.804
+2250,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/948395168],unknown,solar,solar,-36.046234,145.453086,way/948395168,Numurkah Substation,13.073
+2250,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/948395169],unknown,solar,solar,-36.169231,145.426677,way/948395169,Numurkah Substation,2.467
+1690,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,Hayman Solar Farm,unknown,solar,solar,-20.510097,147.755711,way/948424266,Springlands_132kV,1.784
+1690,0.0,0.0,22.701,-22.701,1.0,100.0,1,69.0,0.0,Whitsunday Solar Farm,Edify Energy,solar,solar,-20.492712,147.756358,way/948424270,Springlands_132kV,1.575
+1692,0.0,0.0,,,1.0,100.0,1,25.0,0.0,Lake Bonney Battery,Infigen,battery,battery,-37.738979,140.38681,way/948580926,South Australia Substation,0.198
+1693,0.0,0.0,32.9,-32.9,1.0,100.0,1,100.0,0.0,Lilyvale Solar Farm,Fotowatio Renewable Ventures (FRV),solar,solar,-23.084225,148.425994,way/948582471,Queensland Substation_132kV,1.38
+946,0.0,0.0,,,1.0,100.0,1,,,Mallacoota Community Battery,AusNet Services,battery,battery,-37.546862,149.727752,way/948586724,Substation,15.224
+493,0.0,0.0,9.87,-9.87,1.0,100.0,1,30.0,0.0,Molong Solar Farm,Terrain Solar,solar,solar,-33.08981,148.912255,way/948634829,Molong Substation_132kV,1.286
+2187,0.0,0.0,6.547,-6.547,1.0,100.0,1,19.9,0.0,Chinchilla Baking Board Solar Farm,Diamond Energy,solar,solar,-26.720639,150.553781,way/948636951,Cameby Substation_132kV,5.931
+507,0.0,0.0,9.87,-9.87,1.0,100.0,1,30.0,0.0,Wagga Wagga Solar Farm,unknown,solar,solar,-35.070575,147.438807,way/948711059,Wagga North STS_132kV,1.614
+1694,0.0,0.0,28.294,-28.294,1.0,100.0,1,86.0,0.0,Karadoc Solar Farm,Atmos Renewables,solar,solar,-34.411851,142.250443,way/948942301,Victoria Substation_220kV,0.424
+2108,0.0,0.0,9.87,-9.87,1.0,100.0,1,30.0,0.0,Corowa Solar Farm,Terrain Solar,solar,solar,-35.979325,146.359356,way/948950448,Victoria Substation,4.785
+2196,0.0,0.0,65.8,-65.8,1.0,100.0,1,200.0,0.0,Kiamal Solar Farm (Stage 1),unknown,solar,solar,-35.02146,142.298234,way/948954306,Ouyen Substation_220kV,1.004
+466,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/949279936],unknown,solar,solar,-28.572383,150.756162,way/949279936,Bulli Creek Substation_330kV,72.932
+649,0.0,0.0,32.9,-32.9,1.0,100.0,1,100.0,0.0,Merredin Solar Farm,Risen Energy,solar,solar,-31.539824,118.238339,way/949348476,Merredin Substation_220kV,1.031
+1530,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/949348477],unknown,solar,solar,-31.540384,118.273506,way/949348477,Merredin Substation_132kV,4.359
+1538,0.0,0.0,5.758,-5.758,1.0,100.0,1,17.5,0.0,Badgingarra Solar Farm,APA Group,solar,solar,-30.457858,115.344389,way/949353348,Badgingarra Substation_132kV,4.58
+1696,0.0,0.0,32.9,-32.9,1.0,100.0,1,100.0,0.0,Haughton Solar Farm,Pacific Hydro,solar,solar,-19.750134,147.048103,way/949429977,Haughton River Substation_275kV,0.922
+289,0.0,0.0,4.935,-4.935,1.0,100.0,1,15.0,0.0,Longreach Solar Farm,Canadian Solar,solar,solar,-23.446178,144.35918,way/949567927,Barcaldine_132kV,97.899
+2031,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,Hughenden Solar Farm,unknown,solar,solar,-20.85484,144.186257,way/949579598,Cape River East_132kV,139.893
+2031,0.0,0.0,4.935,-4.935,1.0,100.0,1,15.0,0.0,Kennedy Energy Park Solar Farm,unknown,solar,solar,-20.874881,144.420658,way/949583032,Cape River East_132kV,117.687
+2031,0.0,0.0,,,1.0,100.0,1,2.0,0.0,Kennedy Energy Park Battery,unknown,battery,battery,-20.873798,144.412767,way/949583039,Cape River East_132kV,118.403
+1697,0.0,0.0,32.9,-32.9,1.0,100.0,1,100.0,0.0,Clare Solar Farm,Fotowatio Renewable Ventures (FRV),solar,solar,-19.839817,147.204884,way/949605278,Queensland Substation_132kV,0.619
+1345,0.0,0.0,4.52,-4.52,1.0,100.0,1,13.74,0.0,Murray Bridge-Onkaparinga Pipeline No. 2 Pump Solar Farm,SA Water,solar,solar,-35.096848,139.209527,way/949715785,Hahndorf Pump 2_132kV,0.384
+1087,0.0,0.0,2.036,-0.444,1.0,100.0,1,4.0,0.0,Halls Creek Power Station,Horizon Power,gas,gas,-18.232425,127.66199,way/949729349,Western Australia Substation,186.04
+1711,0.0,0.0,1.316,-1.316,1.0,100.0,1,4.0,0.0,Agnew Gold Mine Solar Farm,EDL Energy,solar,solar,-27.995489,120.511981,way/951977671,Leinster Substation,0.392
+1711,0.0,0.0,,,1.0,100.0,1,13.0,0.0,Agnew Gold Mine Battery,EDL Energy,battery,battery,-27.997308,120.513313,way/951977673,Leinster Substation,0.188
+1712,0.0,0.0,36.19,-36.19,1.0,100.0,1,110.0,0.0,Gunnedah Solar Farm,unknown,solar,solar,-30.937263,150.344174,way/953626573,New South Wales Substation_132kV,1.559
+1277,0.0,0.0,27.965,-27.965,1.0,100.0,1,85.0,0.0,Hillston Sun Farm,Amp Power,solar,solar,-33.531624,145.52242,way/954204783,Hillston Zone Substation_132kV,1.868
+755,0.0,0.0,,,1.0,100.0,1,,,Pluto Burrup Power Plant,unknown,gas,gas,-20.613864,116.764727,way/958297120,Dampier Substation,5.909
+2233,0.0,0.0,29.61,-29.61,1.0,100.0,1,90.0,0.0,Sebastopol Solar Farm,Fotowatio Renewable Ventures (FRV),solar,solar,-34.609386,147.557888,way/958397278,New South Wales Substation,0.729
+1344,0.0,0.0,4.516,-4.516,1.0,100.0,1,13.7256,0.0,Mannum PPS.3 solar farm,SA Water,solar,solar,-34.854044,139.189749,way/961320885,MA Pump 2_132kV,2.083
+1718,0.0,0.0,,,1.0,100.0,1,,,Mannum PPS.2 solar farm,SA Water,solar,solar,-34.861067,139.166833,way/961616613,Palmer Substation,0.371
+569,0.0,0.0,,,1.0,100.0,1,,,Pigeon Hole Power Station,Power and Water,diesel,gas_turbine,-16.818179,131.211531,way/965923819,Western Australia Substation,262.983
+132,0.0,0.0,,,1.0,100.0,1,300.0,0.0,Victoria Big Battery,Neoen Energy,battery,battery,-38.038278,144.290383,way/968682032,Moorabool Terminal Station_500kV,0.543
+1090,0.0,0.0,0.352,-0.352,1.0,100.0,1,1.07,0.0,Zilzie Wines Solar Farm,unknown,solar,solar,-34.343138,142.243929,way/971988574,Red Cliffs Terminal Station_220kV,5.633
+353,0.0,0.0,,,1.0,100.0,1,,,SA Water,SA Water,solar,solar,-34.501937,139.279985,way/972230014,Dorrien_132kV,28.762
+2263,0.0,0.0,,,1.0,100.0,1,,,Swan Reach Water Filtration Plant Solar panel project,SA Water,solar,solar,-34.497398,139.57009,way/973002127,Morgan Substation,52.372
+717,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/973205797],unknown,solar,solar,-34.568433,146.408876,way/973205797,Yanco STS_132kV,3.954
+1319,0.0,0.0,0.697,-0.697,1.0,100.0,1,2.12,0.0,Port Bonython Solar Farm,Santos,solar,solar,-32.985091,137.76694,way/974947037,Stony Point_132kV,0.701
+975,0.0,0.0,3.97,-0.866,1.0,100.0,1,7.8,0.0,Onslow Power Station,Horizon Power,gas,gas,-21.776342,115.08323,way/976639396,Pannawonica Substation,129.278
+975,0.0,0.0,0.329,-0.329,1.0,100.0,1,1.0,0.0,Onslow Solar Farm,Horizon Power,solar,solar,-21.77551,115.083267,way/976639420,Pannawonica Substation,129.264
+1301,0.0,0.0,,,1.0,100.0,1,,,Milyakburra Power Station,Power and Water,diesel,gas_turbine,-13.782209,136.193873,way/979925679,Mataranka Substation,360.333
+965,0.0,0.0,,,1.0,100.0,1,,,Hermannsburg Power Station,Power and Water,diesel,gas_turbine,-23.939378,132.773469,way/980438608,Mpwetyerre Substation,116.463
+965,0.0,0.0,,,1.0,100.0,1,,,Hermannsburg Solar Farm,unknown,solar,solar,-23.937304,132.772196,way/980438610,Mpwetyerre Substation,116.54
+1304,0.0,0.0,,,1.0,100.0,1,,,Peepimenarti Power Station,Power and Water,diesel,gas_turbine,-14.149186,130.08248,way/980497741,Substation_W595693182,163.677
+1518,0.0,0.0,,,1.0,100.0,1,,,Robinson River Power Station,Power and Water,diesel,gas_turbine,-16.756619,136.981902,way/980517828,CEMI_220kV,279.976
+1506,0.0,0.0,,,1.0,100.0,1,,,Kintore Power Station,unknown,diesel,gas_turbine,-23.272632,129.387592,way/980830681,Irrunytju Substation,314.751
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/980844970],unknown,solar,solar,-23.264543,131.278184,way/980844970,Mpwetyerre Substation,270.923
+1659,0.0,0.0,,,1.0,100.0,1,,,Willowra Power Station,unknown,diesel,gas_turbine,-21.24472,132.6117,way/981065558,Tennant Creek Substation,240.462
+1304,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/981082656],unknown,solar,solar,-13.721734,130.703918,way/981082656,Substation_W595693182,82.955
+965,0.0,0.0,,,1.0,100.0,1,,,Aputula Power Station,Power and Water,diesel,gas_turbine,-25.591897,134.580382,way/981909567,Mpwetyerre Substation,220.714
+1339,0.0,0.0,2.428,-2.428,1.0,100.0,1,7.38,0.0,Morgan-Whyalla Pipeline Pumping Station No 3 Solar Farm,SA Water,solar,solar,-33.973589,139.19359,way/983912336,MW Pumping Station 3,0.482
+1340,0.0,0.0,1.935,-1.935,1.0,100.0,1,5.88,0.0,Morgan-Whyalla Pipeline Pumping Station No 4 Solar Farm,SA Water,solar,solar,-33.961782,139.05192,way/983918316,MW Pumps 4,1.126
+1607,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/987946245],unknown,solar,solar,-27.395469,153.129553,way/987946245,Brisbane Substation,0.17
+1506,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/988232331],unknown,solar,solar,-24.877085,129.071292,way/988232331,Irrunytju Substation,133.693
+965,0.0,0.0,,,1.0,100.0,1,,,Imanpa Power Station,Power and Water,diesel,gas_turbine,-25.132046,132.569333,way/988249280,Mpwetyerre Substation,207.211
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/988518762],unknown,solar,solar,-12.121937,134.672455,way/988518762,Jabiru Substation,207.676
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/988525618],unknown,solar,solar,-12.106448,134.908778,way/988525618,Jabiru Substation,232.831
+1768,0.0,0.0,2.112,-0.269,1.0,100.0,1,5.5,0.0,Glenbawn Power Station,AGL Energy,hydro,hydro,-32.109655,150.998262,way/995973876,Aberdeen Substation,13.264
+1651,0.0,0.0,0.768,-0.098,1.0,100.0,1,2.0,0.0,Cairn Curran Power Station,AGL Energy,hydro,hydro,-36.988458,143.968229,way/996019839,Castlemaine Substation,23.272
+1777,0.0,0.0,7.296,-0.931,1.0,100.0,1,19.0,0.0,Burrendong Power Station,AGL Energy,hydro,hydro,-32.664624,149.107959,way/996021098,New South Wales Substation_132kV,0.098
+2026,0.0,0.0,57.904,-57.904,1.0,100.0,1,176.0,0.0,Woolooga Solar Farm,LightsourceBP,solar,solar,-26.075843,152.437448,way/996181578,Woolooga Solar Farm_132kV,1.028
+1518,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Normanton Solar Farm,Scouller Energy,solar,solar,-17.68092,141.049938,way/996517089,CEMI_220kV,282.343
+273,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1001028168],unknown,solar,solar,-34.960016,138.508295,way/1001028168,Adelaide Substation,2.096
+1410,0.0,0.0,1.629,-1.629,1.0,100.0,1,4.95,0.0,Kadina Solar Farm,unknown,solar,solar,-33.977954,137.72689,way/1005088488,Paskeville Substation,16.508
+57,0.0,0.0,,,1.0,100.0,1,,,Rottnest Island Power House,PFM,diesel,gas_turbine,-31.998465,115.539989,way/1006012501,Perth Substation_132kV,20.767
+2339,0.0,0.0,139.825,-139.825,1.0,100.0,1,425.0,0.0,Wellington North Solar Farm,Lightsource BP,solar,solar,-32.496071,148.956507,way/1010640605,Wellington Substation_330kV,3.512
+460,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1011375804],unknown,solar,solar,-35.056172,138.563924,way/1011375804,Happy Valley_275kV,1.251
+1506,0.0,0.0,,,1.0,100.0,1,,,Umuwa Central Power House,unknown,diesel,gas_turbine,-26.481299,132.018343,way/1013720771,Irrunytju Substation,311.05
+1506,0.0,0.0,0.987,-0.987,1.0,100.0,1,3.0,0.0,"Solar Systems, Umuwa",Solar Systems,solar,solar,-26.473549,132.01542,way/1013720772,Irrunytju Substation,310.647
+717,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,0.0,Leeton Fivebough Solar Farm,unknown,solar,solar,-34.548072,146.427637,way/1016445567,Yanco STS_132kV,6.691
+275,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,UNE Solar Farm,unknown,solar,solar,-30.480256,151.644042,way/1017040632,Armidale Substation_330kV,8.815
+2007,0.0,0.0,21.056,-21.056,1.0,100.0,1,64.0,0.0,Warwick Solar Farm,University of Queensland,solar,solar,-28.183037,152.071764,way/1020772874,MacIntyre Wind Farm - North Substation_330kV,45.87
+918,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1024109803],unknown,solar,solar,-31.528677,159.074338,way/1024109803,Nambucca Heads STS_132kV,591.063
+1492,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1028297049],unknown,solar,solar,-27.575097,153.186466,way/1028297049,Capalaba South,5.236
+1536,0.0,0.0,0.082,-0.082,1.0,100.0,1,0.25,0.0,ESTRACK,ESTRACK,solar,solar,-31.047739,116.191727,way/1033165336,Muchea Substation_132kV,45.779
+39,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1034620174],unknown,geothermal,steam,-32.048946,115.752878,way/1034620174,Fremantle Substation_132kV,1.161
+1593,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1035314635],unknown,solar,solar,-19.241759,146.666821,way/1035314635,Townsville Power Station_132kV,6.799
+2164,0.0,0.0,0.23,-0.029,1.0,100.0,1,0.6,0.0,Googong Dam Mini Hydro,Icon Water,hydro,hydro,-35.420309,149.261578,way/1036136934,Canberra Substation_132kV,10.149
+1310,0.0,0.0,0.284,-0.284,1.0,100.0,1,0.864,0.0,Redmud Green Energy - Site 65,Y.E.S. Energy,solar,solar,-34.160486,138.258414,way/1039243137,Hummocks_132kV,17.366
+1310,0.0,0.0,0.071,-0.071,1.0,100.0,1,0.216,0.0,Redmud Green Energy - Site 52,Y.E.S. Energy,solar,solar,-34.160533,138.259907,way/1039243138,Hummocks_132kV,17.49
+1506,0.0,0.0,,,1.0,100.0,1,,,Murputja Power Station,unknown,diesel,gas_turbine,-26.164228,130.18127,way/1043609471,Irrunytju Substation,125.142
+1518,0.0,0.0,0.1,-0.1,1.0,100.0,1,0.304,0.0,Doomadgee Solar Project Extension,Yurika,solar,solar,-17.935847,138.822868,way/1049592417,CEMI_220kV,91.412
+1317,0.0,0.0,0.658,-0.658,1.0,100.0,1,2.0,0.0,Tregalana Stage 1 Solar Farm,unknown,solar,solar,-33.003118,137.566307,way/1049617726,Whyalla Central Connection Point_132kV,0.809
+1186,0.0,0.0,23.688,-23.688,1.0,100.0,1,72.0,0.0,Emerald Solar Park,unknown,solar,solar,-23.507996,148.126404,way/1049622407,Queensland Substation,30.821
+2187,0.0,0.0,48.692,-48.692,1.0,100.0,1,148.0,0.0,Blue Grass Solar Farm,X-ELIO,solar,solar,-26.682643,150.504537,way/1049633704,Cameby Substation_132kV,1.122
+2233,0.0,0.0,9.87,-9.87,1.0,100.0,1,30.0,0.0,Junee Solar Farm,unknown,solar,solar,-34.814929,147.572334,way/1049653087,New South Wales Substation,23.541
+1337,0.0,0.0,1.316,-1.316,1.0,100.0,1,4.0,0.0,Morgan-Whyalla Pipeline Pumping Station No 1 Solar Farm,unknown,solar,solar,-34.018281,139.679081,way/1049854169,MW Pumping Station 1,0.816
+287,0.0,0.0,0.165,-0.165,1.0,100.0,1,0.5,0.0,Capital East Solar Farm,unknown,solar,solar,-35.180839,149.547487,way/1049860681,Capital Hill Wind Farm Substation_330kV,2.302
+173,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Mannum Solar Farm Stage 1,unknown,solar,solar,-35.086331,139.262234,way/1049867291,South Australia Substation,1.38
+1879,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1050581894],unknown,solar,solar,-34.284049,140.707514,way/1050581894,Lyrup Substation,0.243
+1733,0.0,0.0,2.698,-2.698,1.0,100.0,1,8.2,0.0,Stanhope Solar Project 4,unknown,solar,solar,-36.43538,145.01656,way/1050964706,Tatura Substation,18.752
+1733,0.0,0.0,2.698,-2.698,1.0,100.0,1,8.2,0.0,Stanhope Solar Project 3,unknown,solar,solar,-36.475947,144.97613,way/1050964707,Tatura Substation,22.782
+1733,0.0,0.0,,,1.0,100.0,1,,,Girgarre Solar Farm 2,unknown,solar,solar,-36.410415,144.986775,way/1050964708,Tatura Substation,21.619
+1733,0.0,0.0,,,1.0,100.0,1,,,Stanhope Solar Project 2,unknown,solar,solar,-36.49749,145.020233,way/1050964709,Tatura Substation,19.612
+1733,0.0,0.0,,,1.0,100.0,1,,,Girgarre Solar Farm 1,unknown,solar,solar,-36.424859,144.947228,way/1050964710,Tatura Substation,24.991
+1733,0.0,0.0,2.698,-2.698,1.0,100.0,1,8.2,0.0,Stanhope Solar Project 1,unknown,solar,solar,-36.478499,144.947632,way/1050964711,Tatura Substation,25.338
+688,0.0,0.0,4.277,-4.277,1.0,100.0,1,13.0,0.0,Mugga Lane Solar Farm,Maoneng,solar,solar,-35.399485,149.1454,way/1052560517,Gilmore Zone Substation_132kV,1.251
+1084,0.0,0.0,2.106,-2.106,1.0,100.0,1,6.4,0.0,Peak Hill Solar Farm,Tranexsolar,solar,solar,-32.741624,148.180861,way/1056811597,North Parkes Substation,22.872
+2239,0.0,0.0,3.093,-3.093,1.0,100.0,1,9.4,0.0,Robinvale Solar Farm,Suntech,solar,solar,-34.604182,142.768922,way/1059195123,Robinvale Substation,9.406
+1177,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1066021977],unknown,solar,solar,-27.560331,152.338648,way/1066021977,Queensland Substation,8.972
+1177,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1066021979],unknown,solar,solar,-27.559826,152.342566,way/1066021979,Queensland Substation,8.997
+1177,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1066021982],unknown,solar,solar,-27.561646,152.338855,way/1066021982,Queensland Substation,9.119
+1902,0.0,0.0,78.386,-17.094,1.0,100.0,1,154.0,0.0,Snapper Point Power Station,Nexif Energy,gas,gas,-34.764433,138.508149,way/1071991892,Pelican Point Substation_275kV,0.166
+2312,0.0,0.0,0.559,-0.559,1.0,100.0,1,1.7,0.0,Darwin Airport Solar,unknown,solar,solar,-12.400349,130.860216,way/1077553198,Darwin Substation,1.833
+2157,0.0,0.0,131.6,-131.6,1.0,100.0,1,400.0,0.0,Western Downs Green Power Hub,Neoen,solar,solar,-26.955534,150.67862,way/1088316972,Western Downs Battery Substation,1.394
+2023,0.0,0.0,53.298,-53.298,1.0,100.0,1,162.0,0.0,Columboola Solar Farm,unknown,solar,solar,-26.633781,150.298894,way/1088328773,Columboola Solar Farm_132kV,1.669
+2235,0.0,0.0,19.74,-19.74,1.0,100.0,1,60.0,0.0,Chichester Hub Solar Farm,unknown,solar,solar,-22.420252,119.748381,way/1089615800,Newman Substation_220kV,0.945
+885,0.0,0.0,,,1.0,100.0,1,11.0,0.0,[unnamed way/1089777091],unknown,battery,battery,-23.344223,119.707412,way/1089777091,Newman Alinta Substation_132kV,0.074
+982,0.0,0.0,0.136,-0.016,1.0,100.0,1,0.243,0.0,Gascoyne Junction Power Station,Horizon Power,diesel,gas_turbine,-25.055621,115.20827,way/1098716808,Paraburdoo Substation_220kV,317.932
+1528,0.0,0.0,7.889,-1.72,1.0,100.0,1,15.5,0.0,Deflector Power Station,Pacific Energy,gas,gas,-28.337939,116.683889,way/1098963125,Yalgoo Substation_132kV,51.808
+1658,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1099935647],unknown,hydro,hydro,-38.531774,143.71969,way/1099935647,Apollo Bay Substation,23.846
+1386,0.0,0.0,,,1.0,100.0,1,,,Telfer Gold Mine Power Station,unknown,gas,gas,-21.741469,122.182588,way/1100679078,Newman Substation_220kV,244.484
+1631,0.0,0.0,0.231,-0.231,1.0,100.0,1,0.7020000000000001,0.0,Icon Water,Icon Water,solar,solar,-35.245234,148.965118,way/1100984417,Stockdill substation_330kV,1.65
+318,0.0,0.0,,,1.0,100.0,1,,,Icon Water,Icon Water,solar,solar,-35.326496,149.000825,way/1100984418,Woden Substation_132kV,6.354
+1528,0.0,0.0,,,1.0,100.0,1,,,Cue Power Station,Horizon Power,diesel,gas_turbine,-27.421633,117.888627,way/1101027352,Yalgoo Substation_132kV,173.971
+47,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1101066144],unknown,solar,solar,-34.595234,138.735565,way/1101066144,Adelaide Substation,2.046
+819,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1103511170],unknown,gas,gas,-31.194525,136.813431,way/1103511170,Woomera Substation,0.083
+2229,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1103728225],unknown,gas,gas,-33.723411,151.086837,way/1103728225,Sydney Substation,0.482
+371,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1107922572],unknown,solar,solar,-27.554474,152.786127,way/1107922572,Blackwall Substation_275kV,1.464
+1972,0.0,0.0,,,1.0,100.0,1,,,Solomon Hub Mine Power Station,unknown,gas,gas,-22.147573,117.956937,way/1113456284,Western Australia Substation,0.145
+801,0.0,0.0,3.487,-3.487,1.0,100.0,1,10.6,0.0,DeGrussa Solar Farm,unknown,solar,solar,-25.55007,119.316047,way/1113556803,Newman Substation,246.069
+651,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1135903013],unknown,solar,solar,-33.101182,118.456926,way/1135903013,Kondinin Substation,74.002
+2224,0.0,0.0,,,1.0,100.0,1,850.0,0.0,Waratah Super Battery,unknown,battery,battery,-33.215276,151.543465,way/1148721358,Colongra Substation_330kV,0.161
+2011,0.0,0.0,80.605,-80.605,1.0,100.0,1,245.0,0.0,Avonlie Solar Farm,unknown,solar,solar,-34.913826,146.590545,way/1149136624,Avonlie Solar Farm Substation_132kV,1.763
+2286,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1149568095],unknown,solar,solar,-36.099434,146.823527,way/1149568095,West Wodonga Substation,2.335
+569,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1150613271],unknown,solar,solar,-17.439525,130.826803,way/1150613271,Western Australia Substation,264.097
+2305,0.0,0.0,,,1.0,100.0,1,,,533 Dookie Solar Array,University of Melbourne,solar,solar,-36.381051,145.705586,way/1153101879,Goorambat East Terminal Station,20.276
+2191,0.0,0.0,24.675,-24.675,1.0,100.0,1,75.0,0.0,Wyalong Solar Farm,Mytillneos,solar,solar,-33.887269,147.315314,way/1153618875,Wyalong Substation_132kV,0.641
+2081,0.0,0.0,1.316,-1.316,1.0,100.0,1,4.0,0.0,Esperance Solar Farm,Horizon Power,solar,solar,-33.758857,121.837784,way/1153919168,Esperance Substation,0.183
+393,0.0,0.0,,,1.0,100.0,1,50.0,0.0,Bouldercombe Battery,Genex,battery,battery,-23.535251,150.489057,way/1154174848,Bouldercombe Substation_275kV,0.292
+2247,0.0,0.0,,,1.0,100.0,1,,,Barrow Island LNG Power Plant,unknown,gas,gas,-20.791516,115.446496,way/1156465538,Western Australia Substation,79.903
+688,0.0,0.0,18.833,-4.107,1.0,100.0,1,37.0,0.0,Mugga Lane Landfill,LGI Limited,biogas,gas,-35.395092,149.145414,way/1156486321,Gilmore Zone Substation_132kV,1.725
+2037,0.0,0.0,,,1.0,100.0,1,250.0,0.0,Torrens Island Battery,AGL Energy,battery,battery,-34.802305,138.520262,way/1157816986,Torrens Island Battery_275kV,0.098
+1301,0.0,0.0,,,1.0,100.0,1,,,Rowell Highway Power Station,GEMCO,diesel,gas_turbine,-13.857541,136.430776,way/1158470212,Mataranka Substation,381.608
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1159891295],unknown,solar,solar,-24.68263,134.07887,way/1159891295,Mpwetyerre Substation,109.978
+1438,0.0,0.0,0.232,-0.232,1.0,100.0,1,0.704,0.0,Denham Hydrogen Demonstration Plant,Horizon Power,solar,solar,-25.915633,113.548932,way/1162630342,Geraldton Substation_132kV,330.145
+2131,0.0,0.0,,,1.0,100.0,1,,,Dajarra,Ergon Energy,diesel,gas_turbine,-21.694232,139.513123,way/1164296675,Queensland Substation,42.163
+1812,0.0,0.0,6.383,-6.383,1.0,100.0,1,19.4,0.0,Eastern Treatment Plant Solar Farm,Melbourne Water,solar,solar,-38.072678,145.16304,way/1169217662,Melbourne Substation,3.037
+584,0.0,0.0,33.792,-4.312,1.0,100.0,1,88.0,0.0,Kareeya Power Station,CleanCo,hydro,hydro,-17.767013,145.577993,way/1173672001,Kareeya Power Station_132kV,0.093
+1095,0.0,0.0,,,1.0,100.0,1,5.0,0.0,Phillip Island Battery,Mondo Power,battery,battery,-38.484903,145.238216,way/1180349950,John Lysaght Substation_220kV,22.688
+1775,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1185419283],unknown,solar,solar,-38.111066,145.495821,way/1185419283,Melbourne Substation,6.571
+1447,0.0,0.0,,,1.0,100.0,1,,,Jenema Gas Networks - Flemington,Jenema,gas,gas,-33.857236,151.067384,way/1187233450,Flemington Zone Substation_132kV,0.666
+1879,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1189421469],unknown,solar,solar,-34.414246,140.665017,way/1189421469,Lyrup Substation,14.886
+2200,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1194054256],unknown,solar,solar,-35.04087,143.287996,way/1194054256,Balranald Substation_220kV,34.337
+2293,0.0,0.0,16.776,-4.392,1.0,100.0,1,36.0,0.0,Kwinana Waste to Energy Plant,unknown,waste,steam,-32.210197,115.778503,way/1200039894,Kwinana Beach Substation,0.125
+1088,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1201010260],unknown,oil,gas_turbine,-15.779382,128.739157,way/1201010260,Kununurra Substation,0.138
+1694,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1201703259],unknown,solar,solar,-34.379294,142.18851,way/1201703259,Victoria Substation_220kV,7.084
+2061,0.0,0.0,2.961,-2.961,1.0,100.0,1,9.0,0.0,Winneke Solar Farm,Melbourne Water,solar,solar,-37.664839,145.305574,way/1203147185,Melbourne Substation,10.415
+2374,0.0,0.0,28.952,-28.952,1.0,100.0,1,88.0,0.0,Dugald River Solar Farm,APA Group,solar,solar,-20.811693,139.493282,way/1205366262,DIPS_132kV,3.224
+1089,0.0,0.0,11.52,-1.47,1.0,100.0,1,30.0,0.0,Ord River Hydro Power Station,unknown,hydro,hydro,-16.119973,128.738313,way/1206041875,Lake Argyle Substation,1.748
+1264,0.0,0.0,,,1.0,100.0,1,,,Lakefield Ranger Base Solar Power Plant,Queensland Parks and Wildlife Service,solar,solar,-14.925207,144.200586,way/1206779480,Barron Gorge Power Station_132kV,264.085
+1659,0.0,0.0,,,1.0,100.0,1,,,Sun Cable Powell Creek Solar Precinct,unknown,solar,solar,-18.195515,133.394964,way/1206868219,Tennant Creek Substation,181.823
+1669,0.0,0.0,,,1.0,100.0,1,50.0,0.0,Wallgrove Battery,TransGrid,battery,battery,-33.813917,150.830827,way/1207218272,Sydney West SVC_330kV,0.131
+909,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1211226620],unknown,solar,solar,-24.112953,152.71638,way/1211226620,Q - Substation,92.431
+1438,0.0,0.0,,,1.0,100.0,1,5.0,0.0,Kalbarri Battery Energy Storage System,unknown,battery,battery,-27.899457,114.194089,way/1211578902,Geraldton Substation_132kV,101.263
+1141,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1212412192],unknown,solar,solar,-38.062169,144.352763,way/1212412192,Geelong Substation,2.251
+1378,0.0,0.0,,,1.0,100.0,1,,,Invicta Sugar Mill Power Station,unknown,biomass,steam,-19.516878,147.106855,way/1213170811,Invicta Mill Substation_132kV,0.078
+2196,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1214099184],unknown,solar,solar,-35.278497,142.42629,way/1214099184,Ouyen Substation_220kV,30.157
+1088,0.0,0.0,0.672,-0.077,1.0,100.0,1,1.2,0.0,Kalumburu Power Station,Horizon Power,diesel,gas_turbine,-14.289902,126.634192,way/1215196128,Kununurra Substation,280.283
+275,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Petersons Solar Farm,unknown,solar,solar,-30.548489,151.67585,way/1216998989,Armidale Substation_330kV,3.958
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1220381143],unknown,solar,solar,-11.649093,133.383457,way/1220381143,Jabiru Substation,126.798
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1220381144],unknown,solar,solar,-11.144154,132.572684,way/1220381144,Jabiru Substation,170.901
+1711,0.0,0.0,3.52,-3.52,1.0,100.0,1,10.7,0.0,Leinster Solar Farm,BHP,solar,solar,-27.817022,120.747208,way/1221360219,Leinster Substation,30.378
+289,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1221393146],unknown,solar,solar,-23.538773,145.273183,way/1221393146,Barcaldine_132kV,4.232
+1846,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1221944212],unknown,solar,solar,-37.516602,143.813267,way/1221944212,Ballarat Substation,2.167
+1711,0.0,0.0,,,1.0,100.0,1,,,Mount Keith Power Station,unknown,gas;oil,gas,-27.215515,120.549008,way/1222311235,Leinster Substation,87.026
+1548,0.0,0.0,,,1.0,100.0,1,,,Pinjarra Refinery Power Station,unknown,gas,gas,-32.6463,115.94651,way/1223346499,Western Australia Substation_132kV,0.284
+2197,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1223481955],unknown,solar,solar,-36.270095,142.396308,way/1223481955,Victoria Substation_220kV,19.355
+301,0.0,0.0,1.448,-1.448,1.0,100.0,1,4.4,0.0,Northern Power Station Road Solar Farm,unknown,solar,solar,-32.519452,137.804544,way/1225127567,Davenport_275kV,2.027
+145,0.0,0.0,1.728,-0.22,1.0,100.0,1,4.5,0.0,Eildon Pondage Power Station,Pacific Blue,hydro,hydro,-37.243123,145.89735,way/1226453355,Eildon_220kV,2.974
+1593,0.0,0.0,,,1.0,100.0,1,5.0,0.0,Black River BESS,unknown,battery,battery,-19.232171,146.653627,way/1227534965,Townsville Power Station_132kV,5.059
+2324,0.0,0.0,45.731,-45.731,1.0,100.0,1,139.0,0.0,Everleigh Solar Park Project,Dream Project Incubators Pty Ltd,solar,solar,-26.944332,150.588216,way/1228359045,Queensland Substation_275kV,6.502
+2324,0.0,0.0,67.116,-67.116,1.0,100.0,1,204.0,0.0,Edenvale Solar Park,Sojitz Corporation;ENEOS Australia Pty Ltd,solar,solar,-26.931732,150.582727,way/1228359049,Queensland Substation_275kV,5.03
+2209,0.0,0.0,234.3,-158.4,1.0,100.0,1,1100.0,0.0,Theodore Wind Farm,RWE Renewables Australia,wind,wind,-24.937265,150.409265,way/1228359050,Queensland Substation,58.118
+1301,0.0,0.0,39.193,-8.547,1.0,100.0,1,77.0,0.0,McArthur River Mine Power Station,unknown,gas,gas,-16.434526,136.093503,way/1229151614,Mataranka Substation,365.779
+483,0.0,0.0,,,1.0,100.0,1,,,South Johnstone Mill Power Station,unknown,biomass,steam,-17.606456,145.991133,way/1229557500,Innisfail Transmission Substation_132kV,8.153
+1264,0.0,0.0,0.559,-0.559,1.0,100.0,1,1.7,0.0,Weipa Solar Farm,EDL,solar,solar,-12.64672,141.856056,way/1229842269,Barron Gorge Power Station_132kV,620.112
+2108,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1232861624],unknown,solar,solar,-35.985652,146.39721,way/1232861624,Victoria Substation,1.314
+773,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1234148892],unknown,solar,solar,-30.802384,121.375672,way/1234148892,Kalgoorlie Substation_132kV,10.561
+1023,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1236130525],unknown,solar,solar,-30.713071,134.568385,way/1236130525,South Australia Substation,78.573
+1510,0.0,0.0,0.987,-0.987,1.0,100.0,1,3.0,0.0,Black Rock Solar Farm,Barwon Water,solar,solar,-38.277017,144.416192,way/1238270995,Geelong Substation,13.966
+1070,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1241548554],unknown,solar,solar,-33.828111,151.027387,way/1241548554,Camellia Transmission Substation_132kV,0.361
+1463,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1241913562],unknown,solar,solar,-33.922674,151.165443,way/1241913562,Sydney Substation,1.202
+2197,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1251183643],unknown,solar,solar,-35.997498,142.013291,way/1251183643,Victoria Substation_220kV,55.64
+1648,0.0,0.0,1.283,-1.283,1.0,100.0,1,3.9,0.0,Jabiru Hybrid Renewable Power Station,EDL,solar,solar,-12.652989,132.855331,way/1271787801,Jabiru Substation,1.688
+2011,0.0,0.0,0.494,-0.494,1.0,100.0,1,1.5,0.0,Grong Grong Solar Farm,unknown,solar,solar,-34.725036,146.745292,way/1275269266,Avonlie Solar Farm Substation_132kV,24.501
+1264,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1276091024],unknown,solar,solar,-10.724239,142.464619,way/1276091024,Barron Gorge Power Station_132kV,762.874
+2136,0.0,0.0,7.635,-1.665,1.0,100.0,1,15.0,0.0,Hudson Creek Power Station,HCPS,gas,gas,-12.46031,130.931913,way/1281165379,Darwin Substation,0.05
+2155,0.0,0.0,,,1.0,100.0,1,300.0,0.0,Tarong BESS,Stanwell,battery,battery,-26.780561,151.910086,way/1285831905,Tarong BESS Substation_275kV,0.131
+2164,0.0,0.0,,,1.0,100.0,1,100.0,0.0,Capital Battery,Neoen,battery,battery,-35.338251,149.215529,way/1289037737,Canberra Substation_132kV,1.764
+1438,0.0,0.0,10.08,-1.152,1.0,100.0,1,18.0,0.0,Mungullah Power Station,Horizon Power,diesel;gas,gas_turbine,-24.891696,113.709197,way/1290568160,Geraldton Substation_132kV,435.911
+1438,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1290568162],unknown,solar,solar,-24.897183,113.673648,way/1290568162,Geraldton Substation_132kV,436.069
+1084,0.0,0.0,2.106,-2.106,1.0,100.0,1,6.4,0.0,Trundle Solar Farm,Tranexsolar,solar,solar,-32.933169,147.73175,way/1292209485,North Parkes Substation,30.026
+1264,0.0,0.0,,,1.0,100.0,1,,,Lockhart River Power Station,unknown,diesel,gas_turbine,-12.786822,143.340911,way/1292775014,Barron Gorge Power Station_132kV,515.334
+2082,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1292823938],unknown,solar,solar,-27.424807,151.90618,way/1292823938,Toowoomba Substation,3.398
+975,0.0,0.0,0.84,-0.096,1.0,100.0,1,1.5,0.0,Coral Bay Power Station,unknown,diesel,gas_turbine,-23.15222,113.776218,way/1293365723,Pannawonica Substation,311.205
+975,0.0,0.0,0.176,-0.119,1.0,100.0,1,0.8250000000000001,0.0,Coral Bay Wind Farm,unknown,wind,wind,-23.154711,113.772216,way/1293365724,Pannawonica Substation,311.699
+975,0.0,0.0,3.003,-0.655,1.0,100.0,1,5.9,0.0,Exmouth Power Station,Horizon Power,gas,gas,-21.946909,114.124922,way/1293367036,Pannawonica Substation,229.782
+57,0.0,0.0,0.128,-0.086,1.0,100.0,1,0.6,0.0,Rottnest Island Wind Farm,unknown,wind,wind,-31.993752,115.528918,way/1293776357,Perth Substation_132kV,21.817
+129,0.0,0.0,,,1.0,100.0,1,200.0,0.0,Rangebank BESS,unknown,battery,battery,-38.085056,145.259936,way/1294703081,Cranbourne Terminal Station_500kV,0.45
+2192,0.0,0.0,35.203,-35.203,1.0,100.0,1,107.0,0.0,West Wyalong Solar Farm,Lighthouse BP,solar,solar,-33.809655,147.325015,way/1301425139,Wyalong Substation_132kV,1.074
+1308,0.0,0.0,,,1.0,100.0,1,111.0,0.0,Templers BESS,unknown,battery,battery,-34.46293,138.764848,way/1301922802,Templers West_275kV,0.331
+2198,0.0,0.0,,,1.0,100.0,1,20.0,0.0,Bulgana Green Power Hub - BESS,unknown,battery,battery,-37.038163,142.98356,way/1302376631,Victoria Substation_220kV,0.113
+2199,0.0,0.0,,,1.0,100.0,1,125.0,0.0,Riverina Energy Storage System,unknown,battery,battery,-34.646349,146.035015,way/1302379772,Darlington Point Substation_132kV,0.099
+2199,0.0,0.0,,,1.0,100.0,1,25.0,0.0,Darlington Point Energy Storage System,unknown,battery,battery,-34.647016,146.035236,way/1302379773,Darlington Point Substation_132kV,0.091
+2222,0.0,0.0,,,1.0,100.0,1,,,Solar Power Station,unknown,solar,solar,-30.855706,143.088875,way/1302838532,Broken Hill Substation,198.338
+932,0.0,0.0,,,1.0,100.0,1,,,Energy Developments,Energy Developments,gas,gas,-18.195914,125.559548,way/1302843440,Derby Substation,225.469
+2209,0.0,0.0,36.19,-36.19,1.0,100.0,1,110.0,0.0,Moura Solar Farm,unknown,solar,solar,-24.515007,150.087256,way/1303186235,Queensland Substation,1.137
+2325,0.0,0.0,131.6,-131.6,1.0,100.0,1,400.0,0.0,Walla Walla Solar Farm,unknown,solar,solar,-35.747397,146.96666,way/1303191900,Walla Walla Substation,2.06
+1499,0.0,0.0,,,1.0,100.0,1,10.0,0.0,Lincoln Gap Wind Farm BESS,unknown,battery,battery,-32.564227,137.557669,way/1303395300,Lincoln Gap Wind Farm Substation_275kV,0.061
+540,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1303489889],unknown,solar,solar,-34.806483,138.618298,way/1303489889,Adelaide Substation,2.94
+229,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Bungama 2 Solar Farm,unknown,solar,solar,-33.199188,138.064196,way/1304017920,Bungama Substation_275kV,0.556
+229,0.0,0.0,,,1.0,100.0,1,,,Bungama 1 Solar Farm,unknown,solar,solar,-33.204727,138.069607,way/1304018289,Bungama Substation_275kV,1.124
+229,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1304018335],unknown,solar,solar,-33.221638,138.108512,way/1304018335,Bungama Substation_275kV,4.868
+1313,0.0,0.0,1.02,-1.02,1.0,100.0,1,3.1,0.0,Streaky Bay Solar Farm,unknown,solar,solar,-32.798151,134.270783,way/1304030567,Wudinna_132kV,113.853
+146,0.0,0.0,32.9,-32.9,1.0,100.0,1,100.0,0.0,Cunderdin Solar Farm,unknown,solar,solar,-31.656115,117.276303,way/1304058312,Cunderdin Substation,3.105
+2026,0.0,0.0,39.48,-39.48,1.0,100.0,1,120.0,0.0,Munna Creek Solar Farm,unknown,solar,solar,-25.875326,152.435409,way/1304062723,Woolooga Solar Farm_132kV,23.262
+2325,0.0,0.0,115.15,-115.15,1.0,100.0,1,350.0,0.0,Culcairn Solar Farm,unknown,solar,solar,-35.702717,146.963901,way/1304066718,Walla Walla Substation,4.44
+909,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1305800076],unknown,solar,solar,-24.816691,152.391665,way/1305800076,Q - Substation,8.071
+610,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1306363921],unknown,solar,solar,-34.528461,138.683969,way/1306363921,Wasleys Substation,6.369
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1312172270],unknown,solar,solar,-22.091482,134.773565,way/1312172270,Mpwetyerre Substation,201.297
+814,0.0,0.0,,,1.0,100.0,1,,,Batchelor Solar Farm,ENI Australia,solar,solar,-13.050323,131.048369,way/1312716446,Manton Substation_132kV,19.924
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1312741127],unknown,solar,solar,-12.328589,133.044417,way/1312741127,Jabiru Substation,42.83
+898,0.0,0.0,,,1.0,100.0,1,150.0,0.0,Hazlewood BESS,unknown,battery,battery,-38.267845,146.390293,way/1315306569,Hazelwood Switchyard_220kV,0.7
+2255,0.0,0.0,,,1.0,100.0,1,200.0,0.0,Kwinana BESS 2,Synergy,battery,battery,-32.202465,115.778452,way/1315308558,Naval Base Substation_330kV,0.335
+1610,0.0,0.0,,,1.0,100.0,1,50.0,0.0,Broken Hill Battery,unknown,battery,battery,-31.986306,141.422951,way/1315310426,Broken Hill STS_220kV,0.356
+389,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1319395718],unknown,battery,battery,-19.299011,146.692781,way/1319395718,Dan Gleeson_132kV,3.573
+2180,0.0,0.0,8.448,-1.078,1.0,100.0,1,22.0,0.0,Wyangala Power Station B,Snowy Hydro,hydro,hydro,-33.968824,148.948823,way/1329316523,New South Wales Substation_132kV,51.076
+1711,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1330071054],unknown,solar,solar,-26.594387,118.483463,way/1330071054,Leinster Substation,254.255
+1529,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1330729798],unknown,solar,solar,-30.785394,121.459376,way/1330729798,Boulder Substation_132kV,3.316
+1079,0.0,0.0,6.39,-4.32,1.0,100.0,1,30.0,0.0,Cullerin Range Wind Farm,EDL,wind,wind,-34.809208,149.399185,way/1331938712,Cullerin Wind Farm_132kV,1.552
+1413,0.0,0.0,9.905,-6.696,1.0,100.0,1,46.5,0.0,Gunning Wind Farm,Acciona Energy,wind,wind,-34.691531,149.373013,way/1331938715,Gunning Wind Farm_132kV,1.044
+2211,0.0,0.0,48.308,-32.659,1.0,100.0,1,226.8,0.0,Collector Wind Farm,RATCH-Australia,wind,wind,-34.862066,149.388245,way/1331938742,Collector Wind Farm_330kV,4.253
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1333763457],unknown,solar,solar,-24.33952,133.46989,way/1333763457,Mpwetyerre Substation,82.122
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1333767776],unknown,solar,solar,-23.863721,133.824192,way/1333767776,Mpwetyerre Substation,18.508
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1334676701],unknown,solar,solar,-22.974266,134.937275,way/1334676701,Mpwetyerre Substation,134.513
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1335590756],unknown,solar,solar,-12.209231,136.229812,way/1335590756,Jabiru Substation,371.369
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1335590980],unknown,solar,solar,-12.410911,136.38783,way/1335590980,Jabiru Substation,385.985
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1335597175],unknown,solar,solar,-12.504687,135.814848,way/1335597175,Jabiru Substation,323.203
+932,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1336634581],unknown,solar,solar,-17.803805,122.310365,way/1336634581,Derby Substation,151.448
+752,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1337201959],unknown,solar,solar,-20.705961,116.777002,way/1337201959,Horizon Power Substation,6.091
+1388,0.0,0.0,,,1.0,100.0,1,35.0,0.0,Port Hedland Battery,APA Group,battery,battery,-20.42925,118.550394,way/1340188674,Western Australia Substation,0.606
+1388,0.0,0.0,14.805,-14.805,1.0,100.0,1,45.0,0.0,Port Hedland Solar,APA Group,solar,solar,-20.438134,118.560066,way/1340188688,Western Australia Substation,1.706
+1024,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1341450256],unknown,solar,solar,-30.900363,132.20701,way/1341450256,South Australia Substation,302.503
+1338,0.0,0.0,1.974,-1.974,1.0,100.0,1,6.0,0.0,Morgan-Whyalla Pipeline Pumping Station No 2 Solar Farm,unknown,solar,solar,-33.968675,139.42905,way/1344906488,MW Pumping Station 2,0.602
+677,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,0.0,Northam Solar Farm,unknown,solar,solar,-31.652044,116.711222,way/1344907059,Northam Substation_132kV,1.104
+1317,0.0,0.0,,,1.0,100.0,1,,,Tregalana Stage 2 Solar Farm,unknown,solar,solar,-33.004658,137.566151,way/1344918155,Whyalla Central Connection Point_132kV,0.645
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1347172053],unknown,solar,solar,-34.680638,142.773406,way/1347172053,Robinvale Substation,1.08
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1347172054],unknown,solar,solar,-34.68939,142.765458,way/1347172054,Robinvale Substation,1.41
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1347172055],unknown,solar,solar,-34.686217,142.748816,way/1347172055,Robinvale Substation,2.934
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1347172056],unknown,solar,solar,-34.686741,142.737172,way/1347172056,Robinvale Substation,3.994
+2395,0.0,0.0,,,1.0,100.0,1,600.0,0.0,Melbourne Renewable Energy Hub,GreenPoint Energy,battery,battery,-37.669159,144.733731,way/1352805396,Melbourne Renewable Energy Hub_500kV,0.222
+1510,0.0,0.0,0.013,-0.009,1.0,100.0,1,0.06,0.0,Barwon Water,Barwon Water,wind,wind,-38.279217,144.421104,way/1352887094,Geelong Substation,14.458
+1087,0.0,0.0,,,1.0,100.0,1,,,Halls Creek Proposed Solar Farm,Horizon Power,solar,solar,-18.243674,127.648615,way/1354130166,Western Australia Substation,187.774
+1264,0.0,0.0,,,1.0,100.0,1,,,Coen Power Station,Ergon Energy,oil,gas_turbine,-13.94508,143.201484,way/1356063113,Barron Gorge Power Station_132kV,416.004
+2250,0.0,0.0,,,1.0,100.0,1,,,Wunghnu Solar Farm,unknown,solar,solar,-36.164639,145.394245,way/1360858893,Numurkah Substation,1.221
+344,0.0,0.0,,,1.0,100.0,1,,,Kerang Green Switch Solar Power,unknown,solar,solar,-35.778117,143.940273,way/1360860740,Kerang Terminal Station_220kV,0.93
+2252,0.0,0.0,20.36,-4.44,1.0,100.0,1,40.0,0.0,West Angelas power station,Rio Tinto Australia Pty Ltd,gas,gas,-23.154432,118.72452,way/1361428718,Newman Substation,0.072
+2255,0.0,0.0,,,1.0,100.0,1,100.0,0.0,Kwinana BESS 1,Synergy,battery,battery,-32.19855,115.778521,way/1363502077,Naval Base Substation_330kV,0.1
+180,0.0,0.0,,,1.0,100.0,1,500.0,0.0,Collie Battery,Synergy,battery,battery,-33.336691,116.261109,way/1363506366,Western Australia Substation_330kV,2.488
+1847,0.0,0.0,6.617,-1.443,1.0,100.0,1,13.0,0.0,Glennies Creek Power Station,EDL,gas,gas,-32.459876,151.128697,way/1365860022,New South Wales Substation,6.519
+1438,0.0,0.0,197.4,-197.4,1.0,100.0,1,600.0,0.0,Solex Solar Farm,Solex,solar,solar,-24.876235,113.700142,way/1368995583,Geraldton Substation_132kV,437.782
+132,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1369022927],unknown,solar,solar,-37.984323,144.357522,way/1369022927,Moorabool Terminal Station_500kV,7.948
+1506,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1369595827],unknown,solar,solar,-25.24269,130.98223,way/1369595827,Irrunytju Substation,225.273
+1664,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1370740314],unknown,wind,wind,-33.413128,138.845663,way/1370740314,South Australia Substation_275kV,6.122
+1592,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1370829162],unknown,solar,solar,-16.864205,144.879528,way/1370829162,Walkamin Substation_275kV,64.038
+910,0.0,0.0,,,1.0,100.0,1,,,Cootamundra Solar Farm,Flow Power,solar,solar,-34.648595,148.026406,way/1371661299,Murrumburrah STS_132kV,28.819
+607,0.0,0.0,19.082,-19.082,1.0,100.0,1,58.0,0.0,Mokoan Solar Farm,Lightsource BP,solar,solar,-36.488648,146.124498,way/1373586887,Glenrowan Terminal Station_220kV,0.883
+607,0.0,0.0,19.082,-19.082,1.0,100.0,1,58.0,0.0,Mokoan Solar Farm,Lightsource BP,solar,solar,-36.489246,146.128325,way/1373586888,Glenrowan Terminal Station_220kV,0.594
+607,0.0,0.0,19.082,-19.082,1.0,100.0,1,58.0,0.0,Mokoan Solar Farm,Lightsource BP,solar,solar,-36.486754,146.119876,way/1373586889,Glenrowan Terminal Station_220kV,1.341
+607,0.0,0.0,19.082,-19.082,1.0,100.0,1,58.0,0.0,Mokoan Solar Farm,Lightsource BP,solar,solar,-36.484863,146.118937,way/1373586890,Glenrowan Terminal Station_220kV,1.534
+593,0.0,0.0,0.099,-0.099,1.0,100.0,1,0.3,0.0,Orpheus Island Solar Farm,unknown,solar,solar,-18.63398,146.502389,way/1374067530,Ingham South_132kV,36.613
+340,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1374087541],unknown,solar,solar,-38.074746,141.786608,way/1374087541,Heywood Terminal Station_500kV,17.588
+912,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1374437392],unknown,solar,solar,-29.12272,150.309353,way/1374437392,Moree Substation_132kV,59.669
+912,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1374437393],unknown,solar,solar,-29.122811,150.309316,way/1374437393,Moree Substation_132kV,59.659
+1521,0.0,0.0,125.02,-125.02,1.0,100.0,1,380.0,0.0,Aldoga Solar Farm,Acciona,solar,solar,-23.815177,151.05811,way/1378855127,Larcom Creek Transmission Substation_275kV,1.471
+494,0.0,0.0,31.913,-31.913,1.0,100.0,1,97.0,0.0,Quorn Park Solar Farm,Potentia Energy,solar,solar,-33.079713,148.091909,way/1378872767,Parkes Substation_132kV,3.019
+2253,0.0,0.0,,,1.0,100.0,1,,,Kingaroy Solar Farm,unknown,solar,solar,-26.538639,151.881271,way/1384729011,Kingaroy Substation,0.597
+466,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1385081408],unknown,solar,solar,-28.545815,150.279013,way/1385081408,Bulli Creek Substation_330kV,88.783
+466,0.0,0.0,1.569,-1.569,1.0,100.0,1,4.77,0.0,Goondiwindi Solar Farm,unknown,solar,solar,-28.545962,150.281883,way/1385081409,Bulli Creek Substation_330kV,88.621
+287,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1386094603],unknown,solar,solar,-35.180433,149.546153,way/1386094603,Capital Hill Wind Farm Substation_330kV,2.203
+1719,0.0,0.0,2.257,-2.257,1.0,100.0,1,6.86,0.0,Mannum Solar Farm,Epic Energy,solar,solar,-34.915015,139.268703,way/1388680382,MA Pump 1_132kV,3.534
+1719,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1391357699],unknown,solar,solar,-34.503161,139.567189,way/1391357699,MA Pump 1_132kV,52.02
+809,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1392664423],unknown,solar,solar,-35.123151,138.473223,way/1392664423,Adelaide Substation,2.392
+1959,0.0,0.0,0.559,-0.559,1.0,100.0,1,1.7,0.0,DHL HP8 Solar,unknown,solar,solar,-33.840061,150.81168,way/1392902432,South Erskine Park Zone Substation_132kV,1.385
+1719,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1392996015],unknown,solar,solar,-34.914145,139.273153,way/1392996015,MA Pump 1_132kV,3.149
+1711,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1415296821],unknown,solar,solar,-27.206676,120.562139,way/1415296821,Leinster Substation,88.066
+1562,0.0,0.0,18.324,-3.996,1.0,100.0,1,36.0,0.0,Kwinana Tiwest Cogen power station,unknown,gas,gas,-32.22762,115.773435,way/1419039109,Kwinana Beach Substation_132kV,0.076
+909,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424646947],unknown,solar,solar,-24.857289,152.373011,way/1424646947,Q - Substation,3.963
+2248,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1431694705],unknown,solar,solar,-21.078727,118.885203,way/1431694705,Marble Bar Substation,25.954
+1542,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1431807538],unknown,solar,solar,-33.560467,120.018675,way/1431807538,Hyden Substation_132kV,163.536
+2305,0.0,0.0,,,1.0,100.0,1,,,Goorambat East Ssolar Farm,unknown,solar,solar,-36.434304,145.923113,way/1441528831,Goorambat East Terminal Station,0.724
+1090,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1441735537],unknown,solar,solar,-34.345773,142.078222,way/1441735537,Red Cliffs Terminal Station_220kV,15.875
+1090,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1442551619],unknown,solar,solar,-34.344031,142.088305,way/1442551619,Red Cliffs Terminal Station_220kV,14.944
+2196,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1444129589],unknown,solar,solar,-35.608378,142.580467,way/1444129589,Ouyen Substation_220kV,69.387
+395,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1444717483],unknown,solar,solar,-23.317375,150.486121,way/1444717483,Rockhampton Substation_132kV,5.901
+1090,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1444820675],unknown,solar,solar,-34.330715,142.076939,way/1444820675,Red Cliffs Terminal Station_220kV,15.446
+522,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,Pine Lodge Solar Farm,unknown,solar,solar,-36.41182,145.548412,way/1446392217,Shepparton Terminal Station_220kV,14.243
+2159,0.0,0.0,,,1.0,100.0,1,,,Swanbank BESS,CleanCo,battery,battery,-27.659909,152.814783,way/1451028355,Ipswich Substation,0.628
+1296,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1458187408],unknown,solar,solar,-34.279314,141.598333,way/1458187408,Cardross Substation,11.857
+1648,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1458388790],unknown,solar,solar,-12.259556,136.82851,way/1458388790,Jabiru Substation,435.227
+2331,0.0,0.0,1.448,-1.448,1.0,100.0,1,4.4,0.0,USCAWRC Solar Farm,unknown,solar,solar,-33.855733,150.773087,way/1459522003,Sydney Substation,2.188
+2035,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1459813818],unknown,solar,solar,-42.941374,147.782794,way/1459813818,Hobart Substation,29.316
+1311,0.0,0.0,0.187,-0.187,1.0,100.0,1,0.5690000000000001,0.0,Oodnadatta Renewable Power Station,unknown,solar,solar,-27.555946,135.43971,way/1462503270,Prominent Hill_132kV,242.198
+436,0.0,0.0,2.698,-2.698,1.0,100.0,1,8.2,0.0,Uranquinty Solar Farm,CleanPeak Energy,solar,solar,-35.206173,147.263917,way/1468351706,Uranquity Switching Station_132kV,5.445
+232,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1469427100],unknown,solar,solar,-27.726863,153.109764,way/1469427100,Logan City Substation,6.276
+1390,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1471629733],unknown,solar,solar,-25.264495,122.044825,way/1471629733,Newman Substation_132kV,292.617
+1401,0.0,0.0,,,1.0,100.0,1,,,Tesla Kemerton power station,Tesla Kemerton Pty Ltd,diesel,gas_turbine,-33.211771,115.760522,way/1472071376,Bunbury Substation,0.429
+1672,0.0,0.0,5.6,-0.64,1.0,100.0,1,10.0,0.0,Tesla Geraldton power station,Tesla Geraldton Pty Ltd,diesel,gas_turbine,-28.79096,114.691957,way/1472093996,Geraldton Substation,2.654
+2200,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1472637667],unknown,solar,solar,-34.776445,143.249887,way/1472637667,Balranald Substation_220kV,24.136
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1473562654],unknown,solar,solar,-34.717122,143.146297,way/1473562654,Robinvale Substation,33.565
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1474465790],unknown,solar,solar,-34.702296,143.094636,way/1474465790,Robinvale Substation,28.733
+2214,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1474744322],unknown,solar,solar,-34.720049,143.167826,way/1474744322,Balranald Substation,32.374
+759,0.0,0.0,,,1.0,100.0,1,,,Cargill Solar,Cargill,solar,solar,-32.88148,151.767787,way/1476497707,Kooragang STS_132kV,0.233
+965,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1479476933],unknown,solar,solar,-24.301096,131.600813,way/1479476933,Mpwetyerre Substation,241.706
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1480016178],unknown,solar,solar,-34.697217,142.856028,way/1480016178,Robinvale Substation,6.949
+229,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1481618586],unknown,solar,solar,-33.185855,138.080656,way/1481618586,Bungama Substation_275kV,1.605
+1518,0.0,0.0,,,1.0,100.0,1,,,Ergon Energy,Ergon Energy,diesel,gas_turbine,-17.740151,139.546213,way/1483426135,CEMI_220kV,147.779
+1518,0.0,0.0,,,1.0,100.0,1,,,Ergon Energy,Ergon Energy,diesel,gas_turbine,-16.66479,139.177782,way/1483426136,CEMI_220kV,237.668
+2186,0.0,0.0,,,1.0,100.0,1,,,Ergon Energy,Ergon Energy,diesel,gas_turbine,-20.034327,140.034753,way/1483426143,Cloncurry Substation_220kV,27.242
+2131,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1483426150],unknown,solar,solar,-22.896478,139.907866,way/1483426150,Queensland Substation,125.431
+289,0.0,0.0,,,1.0,100.0,1,,,Ergon Energy,Ergon Energy,diesel,gas_turbine,-23.636051,146.566875,way/1483426152,Barcaldine_132kV,128.182
+2131,0.0,0.0,,,1.0,100.0,1,,,Ergon Energy,Ergon Energy,geothermal,steam,-25.897456,139.351688,way/1483426156,Queensland Substation,462.662
+2131,0.0,0.0,,,1.0,100.0,1,,,Ergon Energy,Ergon Energy,diesel,gas_turbine,-25.888132,139.349769,way/1483426157,Queensland Substation,461.658
+289,0.0,0.0,,,1.0,100.0,1,,,Windorah Solar Farm,Ergon Energy,solar,solar,-25.412675,142.660741,way/1483426158,Barcaldine_132kV,338.858
+2283,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1483969561],unknown,solar,solar,-27.648803,152.740455,way/1483969561,Ipswich Substation,3.975
+2239,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1484502539],unknown,solar,solar,-34.69426,142.723026,way/1484502539,Robinvale Substation,5.326
+403,0.0,0.0,0.033,-0.033,1.0,100.0,1,0.1,0.0,[unnamed way/1494562723],unknown,solar,solar,-28.844166,153.288354,way/1494562723,Lismore 330/132 STS_330kV,10.995
+2250,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1494785369],unknown,solar,solar,-36.053365,145.468365,way/1494785369,Numurkah Substation,12.885
+1506,0.0,0.0,,,1.0,100.0,1,,,Eucla Remote Area Power Supply,Telstra,solar,solar,-31.676512,128.886543,way/1496150403,Irrunytju Substation,623.117
+964,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1496828692],unknown,solar,solar,-32.769992,151.341794,way/1496828692,Cessnock Substation,7.732
+902,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1497658911],unknown,solar,solar,-38.200122,145.868787,way/1497658911,Southern Reactive Compensation Station_220kV,31.075
+902,0.0,0.0,0.115,-0.115,1.0,100.0,1,0.35000000000000003,0.0,[unnamed way/1497659200],unknown,solar,solar,-38.137932,145.835742,way/1497659200,Southern Reactive Compensation Station_220kV,32.828
+1840,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1497801797],unknown,solar,solar,-37.853396,145.318851,way/1497801797,Melbourne Substation,3.567
+1840,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1497801798],unknown,solar,solar,-37.854702,145.319859,way/1497801798,Melbourne Substation,3.509
+1711,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1499011428],unknown,solar,solar,-26.592054,120.218649,way/1499011428,Leinster Substation,159.011
+1711,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1499011429],unknown,solar,solar,-26.592061,120.218371,way/1499011429,Leinster Substation,159.015
+870,0.0,0.0,,,1.0,100.0,1,,,Energex,Energex,battery,battery,-27.07758,152.955491,way/1503504617,Brisbane Substation_110kV,1.163
+1301,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1504435735],unknown,solar,solar,-14.722033,134.734788,way/1504435735,Mataranka Substation,181.221
+607,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1516994456],unknown,solar,solar,-36.47815,146.185276,way/1516994456,Glenrowan Terminal Station_220kV,5.037
+1659,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1520222987],unknown,solar,solar,-18.232053,133.366813,way/1520222987,Tennant Creek Substation,179.587
+1659,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1520222988],unknown,solar,solar,-18.232312,133.366861,way/1520222988,Tennant Creek Substation,179.559
+1659,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1520222989],unknown,solar,solar,-18.232517,133.366654,way/1520222989,Tennant Creek Substation,179.55
+1659,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1520222990],unknown,solar,solar,-18.23267,133.367017,way/1520222990,Tennant Creek Substation,179.516
+1659,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1520222991],unknown,solar,solar,-18.232932,133.366621,way/1520222991,Tennant Creek Substation,179.511
+169,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1525471546],unknown,solar,solar,-35.054448,139.365026,way/1525471546,MBH Pumping Station 1,8.404

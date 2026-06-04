@@ -1,0 +1,46 @@
+generator_name,bus,source,genfuel,curve_type,Pmax,model,startup,shutdown,n,c2,c1,c0
+Aguirre Power Plant,1,oil,gas_turbine,gt_petroleum,1534.0,2,0.0,0.0,3,5.28486,291.4024,17076.036
+Central Palo Seco,98,oil,gas_turbine,gt_petroleum,728.0,2,0.0,0.0,3,2.47192,147.4508,8206.812
+Central Cambalache,17,oil,gas_turbine,gt_petroleum,247.0,2,0.0,0.0,3,0.79323,61.5442,2913.888
+Central Termoeléctrica de San Juan,36,oil,gas_turbine,gt_petroleum,840.0,2,0.0,0.0,3,2.8628,167.454,9439.26
+EcoEléctrica Natural Gas Power Plant,58,gas,gas,cc_gas,510.0,2,0.0,0.0,3,0.030204,14.0667,1400.08
+Costa Sur Power Plant,57,oil,gas_turbine,gt_petroleum,990.0,2,0.0,0.0,3,3.3863,194.244,11089.86
+Caribbean Medical Center Powe,70,oil,gas_turbine,gt_petroleum,2.1,2,0.0,0.0,3,0.0,17.80506,219.0084
+AES Ilumina Solar Park,25,solar,solar,renewable,20.0,2,0.0,0.0,3,0.0,0.0,0.0
+Central Mayagüez Power Plant,66,oil,gas_turbine,gt_petroleum,220.0,2,0.0,0.0,3,0.699,56.722,2616.78
+[unnamed way/529074900],154,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/529269945],62,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Medtronic Solar Farm,65,solar,solar,renewable,7.5,2,0.0,0.0,3,0.0,0.0,0.0
+Toro Negro Hydro Station,48,hydro,hydro,hydro,8.5,2,0.0,0.0,3,0.000123,14.0,9.1545
+Garzas Hydro,147,hydro,hydro,hydro,12.2,2,0.0,0.0,3,0.00018,14.0,13.2874
+LUMA Energy,75,oil,gas_turbine,gt_petroleum,42.0,2,0.0,0.0,3,0.07778,24.9312,658.068
+Oriana 2 Solar Farm,166,solar,solar,renewable,58.0,2,0.0,0.0,3,0.0,0.0,0.0
+Oriana Solar Farm,165,solar,solar,renewable,,2,0.0,0.0,3,,,
+Parque Solar La Cometa - Fase 1,128,solar,solar,renewable,46.73,2,0.0,0.0,3,0.0,0.0,0.0
+Parque Solar La Cometa - Fase 2,128,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/541829186],128,solar,solar,renewable,0.648,2,0.0,0.0,3,0.0,0.0,0.0
+Parque Solar San Fermín,108,solar,solar,renewable,27.0,2,0.0,0.0,3,0.0,0.0,0.0
+Salinas Solar Park,20,solar,solar,renewable,16.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/542055644],75,solar,solar,renewable,,2,0.0,0.0,3,,,
+Dos Bocas Dam Hydro,52,hydro,hydro,hydro,15.0,2,0.0,0.0,3,0.000223,14.0,16.415
+Parque Solar de Filtración de Arecibo,116,solar,solar,renewable,1.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1039196849],61,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1102156075],34,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1150325802],110,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1155295445],34,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1155295483],34,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1155295536],110,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1159500036],155,solar,solar,renewable,,2,0.0,0.0,3,,,
+Yauco Hydroelectric Station,146,hydro,hydro,hydro,34.0,2,0.0,0.0,3,0.000516,14.0,37.638
+Caonillas Dam Hydro,127,hydro,hydro,hydro,22.0,2,0.0,0.0,3,0.000331,14.0,24.234
+Horizon Energy (PR) Hybrid,20,solar,solar,renewable,15.0,2,0.0,0.0,3,0.0,0.0,0.0
+AES - Guayama,25,coal,steam,steam_coal,510.0,2,0.0,0.0,3,0.027852,13.3884,837.72
+Daguao Power Plant,46,oil,gas_turbine,gt_petroleum,42.0,2,0.0,0.0,3,0.07778,24.9312,658.068
+Puerto Rico Electric Power Authority,61,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+[unnamed way/1322799427],31,solar,solar,renewable,,2,0.0,0.0,3,,,
+Parque Solar Eaton,116,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1381521654],70,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1388058176],20,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1388058177],20,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1423610100],70,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1432465697],48,solar,solar,renewable,,2,0.0,0.0,3,,,

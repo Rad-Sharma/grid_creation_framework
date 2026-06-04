@@ -1,0 +1,2190 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-02T04:34:56Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/180080438",
+        "frequency": "50",
+        "landuse": "industrial",
+        "name": "Central Térmica José Batlle y Ordóñez",
+        "name:en": "Jose Batlle y Ordonez Thermal Power Plant",
+        "operator": "UTE",
+        "plant:method": "combustion",
+        "plant:output:electricity": "70 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "start_date": "01/06/1931",
+        "wikidata": "Q11979305"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.2001282,
+              -34.8821067
+            ],
+            [
+              -56.2001411,
+              -34.8821408
+            ],
+            [
+              -56.1999112,
+              -34.8823579
+            ],
+            [
+              -56.1995532,
+              -34.8827388
+            ],
+            [
+              -56.1993938,
+              -34.8828983
+            ],
+            [
+              -56.1991974,
+              -34.8830947
+            ],
+            [
+              -56.1989064,
+              -34.8833801
+            ],
+            [
+              -56.198864,
+              -34.8834244
+            ],
+            [
+              -56.1988064,
+              -34.8834551
+            ],
+            [
+              -56.1984317,
+              -34.8838528
+            ],
+            [
+              -56.1982126,
+              -34.8841553
+            ],
+            [
+              -56.1980824,
+              -34.884456
+            ],
+            [
+              -56.1980173,
+              -34.884844
+            ],
+            [
+              -56.1978537,
+              -34.8865076
+            ],
+            [
+              -56.1978275,
+              -34.8867731
+            ],
+            [
+              -56.1978069,
+              -34.8869829
+            ],
+            [
+              -56.195848,
+              -34.886853
+            ],
+            [
+              -56.1959586,
+              -34.8859437
+            ],
+            [
+              -56.1960367,
+              -34.8855504
+            ],
+            [
+              -56.1961387,
+              -34.8852106
+            ],
+            [
+              -56.1963296,
+              -34.8848475
+            ],
+            [
+              -56.1968003,
+              -34.8842283
+            ],
+            [
+              -56.1972777,
+              -34.8835838
+            ],
+            [
+              -56.1974085,
+              -34.8834264
+            ],
+            [
+              -56.1980023,
+              -34.8827118
+            ],
+            [
+              -56.1989264,
+              -34.8816761
+            ],
+            [
+              -56.1996467,
+              -34.8818255
+            ],
+            [
+              -56.2001282,
+              -34.8821067
+            ]
+          ]
+        ]
+      },
+      "id": "way/180080438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/180080441",
+        "alt_name": "Central Térmica de Respaldo;CTR",
+        "name": "Central Térmica \"La Tablada\"",
+        "operator": "UTE",
+        "plant:method": "combustion",
+        "plant:output:electricity": "212 MW",
+        "plant:source": "gas",
+        "power": "plant",
+        "source": "https://portal.ute.com.uy/institucional/infraestructura/fuentes-de-generacion",
+        "start_date": "1992",
+        "website": "http://www.ute.com.uy/empresa/lineas/generacion/central_ter_tablada.htm",
+        "wikidata": "Q11982886"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.235426,
+              -34.826481
+            ],
+            [
+              -56.2355336,
+              -34.8264974
+            ],
+            [
+              -56.2356648,
+              -34.8264256
+            ],
+            [
+              -56.2356629,
+              -34.8263525
+            ],
+            [
+              -56.2370058,
+              -34.8255556
+            ],
+            [
+              -56.2379131,
+              -34.8266256
+            ],
+            [
+              -56.237473,
+              -34.8268859
+            ],
+            [
+              -56.2378824,
+              -34.8273647
+            ],
+            [
+              -56.2365045,
+              -34.8274994
+            ],
+            [
+              -56.2363886,
+              -34.8275634
+            ],
+            [
+              -56.2353896,
+              -34.8276632
+            ],
+            [
+              -56.2352491,
+              -34.8275358
+            ],
+            [
+              -56.2352063,
+              -34.8274938
+            ],
+            [
+              -56.2348629,
+              -34.8270676
+            ],
+            [
+              -56.2347175,
+              -34.8269037
+            ],
+            [
+              -56.235426,
+              -34.826481
+            ]
+          ]
+        ]
+      },
+      "id": "way/180080441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/224812627",
+        "frequency": "50",
+        "landuse": "industrial",
+        "name": "Central Térmica \"Punta del Tigre\"",
+        "name:en": "Punta del Tigre Power Plant",
+        "operator": "UTE",
+        "plant:method": "combustion",
+        "plant:output:electricity": "882.22 MW",
+        "plant:source": "gas",
+        "power": "plant",
+        "source": "UTE - 2022 - https://apps.ute.com.uy/sge/portal/nucleo/paginas/portal_utei.aspx?c=GerEyM_MapaGeneradores",
+        "wikidata": "Q30973056"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.5425464,
+              -34.7491793
+            ],
+            [
+              -56.5424149,
+              -34.749319
+            ],
+            [
+              -56.5463374,
+              -34.7518048
+            ],
+            [
+              -56.5456266,
+              -34.7526087
+            ],
+            [
+              -56.5440766,
+              -34.7543608
+            ],
+            [
+              -56.5431625,
+              -34.7538443
+            ],
+            [
+              -56.5424989,
+              -34.7533903
+            ],
+            [
+              -56.5422779,
+              -34.7535859
+            ],
+            [
+              -56.5411934,
+              -34.7532621
+            ],
+            [
+              -56.5406359,
+              -34.7518278
+            ],
+            [
+              -56.5406882,
+              -34.7517646
+            ],
+            [
+              -56.5411662,
+              -34.7512343
+            ],
+            [
+              -56.5414204,
+              -34.751389
+            ],
+            [
+              -56.5417362,
+              -34.7509991
+            ],
+            [
+              -56.5415319,
+              -34.7508779
+            ],
+            [
+              -56.5414155,
+              -34.7506432
+            ],
+            [
+              -56.5414959,
+              -34.7505638
+            ],
+            [
+              -56.5406072,
+              -34.750036
+            ],
+            [
+              -56.5402005,
+              -34.7499465
+            ],
+            [
+              -56.5401189,
+              -34.7496968
+            ],
+            [
+              -56.540762,
+              -34.7490242
+            ],
+            [
+              -56.5413528,
+              -34.7493479
+            ],
+            [
+              -56.5418485,
+              -34.7487792
+            ],
+            [
+              -56.5420041,
+              -34.7488635
+            ],
+            [
+              -56.542275,
+              -34.7485682
+            ],
+            [
+              -56.542519,
+              -34.7487181
+            ],
+            [
+              -56.5422669,
+              -34.7490178
+            ],
+            [
+              -56.5425464,
+              -34.7491793
+            ]
+          ]
+        ]
+      },
+      "id": "way/224812627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/352197632",
+        "building": "yes",
+        "landuse": "industrial",
+        "name": "Galofer",
+        "operator": "Galofer S.A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "12.5 MW",
+        "plant:source": "biomass",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -54.4021276,
+              -33.2508872
+            ],
+            [
+              -54.4016972,
+              -33.2505431
+            ],
+            [
+              -54.4019037,
+              -33.2503625
+            ],
+            [
+              -54.4023341,
+              -33.2507066
+            ],
+            [
+              -54.4021276,
+              -33.2508872
+            ]
+          ]
+        ]
+      },
+      "id": "way/352197632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/585413683",
+        "landuse": "industrial",
+        "name": "La Jacinta",
+        "operator": "Jacinta Solar Farm S.R.L.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "50 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "start_date": "2015",
+        "voltage": "150000"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.9072085,
+              -31.4237297
+            ],
+            [
+              -57.912838,
+              -31.4269002
+            ],
+            [
+              -57.9128954,
+              -31.4268356
+            ],
+            [
+              -57.9151916,
+              -31.4281321
+            ],
+            [
+              -57.9144828,
+              -31.4290791
+            ],
+            [
+              -57.9144358,
+              -31.4299223
+            ],
+            [
+              -57.9148014,
+              -31.4317614
+            ],
+            [
+              -57.9143113,
+              -31.434447
+            ],
+            [
+              -57.9136708,
+              -31.4363461
+            ],
+            [
+              -57.9129404,
+              -31.4373039
+            ],
+            [
+              -57.9093746,
+              -31.4373953
+            ],
+            [
+              -57.9056828,
+              -31.4355263
+            ],
+            [
+              -57.9040026,
+              -31.4347065
+            ],
+            [
+              -57.9040457,
+              -31.434604
+            ],
+            [
+              -57.9007964,
+              -31.432951
+            ],
+            [
+              -57.9007679,
+              -31.4328068
+            ],
+            [
+              -57.9072085,
+              -31.4237297
+            ]
+          ]
+        ]
+      },
+      "id": "way/585413683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591445991",
+        "barrier": "fence",
+        "fixme": "Add more data. Agregar mas datos",
+        "landuse": "industrial",
+        "name": "Fenima / Dicano / Petilcoran",
+        "note": "There are 3 power plants in this area",
+        "operator": "Fenima S.A.;Petilcoran S. A.;Dicano S.A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "30.25 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "source": "UTE - 2022 - https://apps.ute.com.uy/sge/portal/nucleo/paginas/portal_utei.aspx?c=GerEyM_MapaGeneradores",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.0322877,
+              -32.2884251
+            ],
+            [
+              -58.0296364,
+              -32.2889624
+            ],
+            [
+              -58.0295464,
+              -32.2889806
+            ],
+            [
+              -58.0298629,
+              -32.2902232
+            ],
+            [
+              -58.029407,
+              -32.2910644
+            ],
+            [
+              -58.0258369,
+              -32.2917401
+            ],
+            [
+              -58.0253541,
+              -32.2905655
+            ],
+            [
+              -58.0267355,
+              -32.2896019
+            ],
+            [
+              -58.0267543,
+              -32.28945
+            ],
+            [
+              -58.0249196,
+              -32.2899896
+            ],
+            [
+              -58.0248794,
+              -32.2899601
+            ],
+            [
+              -58.0241928,
+              -32.2871734
+            ],
+            [
+              -58.0251342,
+              -32.2871666
+            ],
+            [
+              -58.0238789,
+              -32.2841826
+            ],
+            [
+              -58.0243617,
+              -32.283457
+            ],
+            [
+              -58.0247802,
+              -32.2830511
+            ],
+            [
+              -58.0286989,
+              -32.2830511
+            ],
+            [
+              -58.0291307,
+              -32.2840896
+            ],
+            [
+              -58.0297074,
+              -32.284203
+            ],
+            [
+              -58.0310243,
+              -32.2854343
+            ],
+            [
+              -58.0322877,
+              -32.2884251
+            ]
+          ]
+        ]
+      },
+      "id": "way/591445991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591446003",
+        "landuse": "industrial",
+        "name": "Casalko",
+        "operator": "Casalko S.A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "1.75 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "15000"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.0053274,
+              -32.208521
+            ],
+            [
+              -58.00658,
+              -32.209886
+            ],
+            [
+              -58.0053771,
+              -32.2108301
+            ],
+            [
+              -58.0035304,
+              -32.2091746
+            ],
+            [
+              -58.0053274,
+              -32.208521
+            ]
+          ]
+        ]
+      },
+      "id": "way/591446003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591446018",
+        "barrier": "fence",
+        "landuse": "industrial",
+        "name": "Raditon",
+        "operator": "Raditon S. A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "8 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.1335437,
+              -32.3843852
+            ],
+            [
+              -58.1363574,
+              -32.3880522
+            ],
+            [
+              -58.1350297,
+              -32.3886865
+            ],
+            [
+              -58.1344423,
+              -32.387828
+            ],
+            [
+              -58.1314248,
+              -32.3889537
+            ],
+            [
+              -58.1297404,
+              -32.3857284
+            ],
+            [
+              -58.1326506,
+              -32.3846548
+            ],
+            [
+              -58.1329188,
+              -32.3846208
+            ],
+            [
+              -58.1335437,
+              -32.3843852
+            ]
+          ]
+        ]
+      },
+      "id": "way/591446018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591446629",
+        "landuse": "industrial",
+        "name": "ALUR",
+        "operator": "Alcoholes del Uruguay S. A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "10 MW",
+        "plant:source": "biomass",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.6226207,
+              -30.3297462
+            ],
+            [
+              -57.6227854,
+              -30.3301118
+            ],
+            [
+              -57.6223882,
+              -30.3302451
+            ],
+            [
+              -57.6222235,
+              -30.3298795
+            ],
+            [
+              -57.6226207,
+              -30.3297462
+            ]
+          ]
+        ]
+      },
+      "id": "way/591446629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591446630",
+        "landuse": "industrial",
+        "name": "Alto Cielo",
+        "operator": "Alto Cielo S. A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "20 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.466178,
+              -30.4191886
+            ],
+            [
+              -57.4619347,
+              -30.4225599
+            ],
+            [
+              -57.4608243,
+              -30.4229299
+            ],
+            [
+              -57.4601805,
+              -30.4231103
+            ],
+            [
+              -57.4594456,
+              -30.4232769
+            ],
+            [
+              -57.45767,
+              -30.4235497
+            ],
+            [
+              -57.4538022,
+              -30.4215977
+            ],
+            [
+              -57.4581045,
+              -30.4151351
+            ],
+            [
+              -57.466178,
+              -30.4191886
+            ]
+          ]
+        ]
+      },
+      "id": "way/591446630"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591450822",
+        "landuse": "industrial",
+        "name": "El Naranjal",
+        "operator": "Colidim S.A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "50 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "150000"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.8805792,
+              -31.2617234
+            ],
+            [
+              -57.8807616,
+              -31.2619092
+            ],
+            [
+              -57.8779265,
+              -31.2635508
+            ],
+            [
+              -57.8778568,
+              -31.2639451
+            ],
+            [
+              -57.8698182,
+              -31.2685006
+            ],
+            [
+              -57.8640998,
+              -31.2645939
+            ],
+            [
+              -57.8641158,
+              -31.2629363
+            ],
+            [
+              -57.863338,
+              -31.2623608
+            ],
+            [
+              -57.8633018,
+              -31.2598456
+            ],
+            [
+              -57.8709233,
+              -31.2545697
+            ],
+            [
+              -57.8792274,
+              -31.2601001
+            ],
+            [
+              -57.8805792,
+              -31.2617234
+            ]
+          ]
+        ]
+      },
+      "id": "way/591450822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591450827",
+        "landuse": "industrial",
+        "name": "ASAHI",
+        "operator": "MIEM + UTE",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "500 kW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "15000"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.9179331,
+              -31.2803762
+            ],
+            [
+              -57.9178512,
+              -31.2808845
+            ],
+            [
+              -57.9163908,
+              -31.2808833
+            ],
+            [
+              -57.9162126,
+              -31.2807172
+            ],
+            [
+              -57.9162131,
+              -31.2806508
+            ],
+            [
+              -57.9162134,
+              -31.2806216
+            ],
+            [
+              -57.9162148,
+              -31.2804523
+            ],
+            [
+              -57.9164055,
+              -31.2803413
+            ],
+            [
+              -57.9177744,
+              -31.2803422
+            ],
+            [
+              -57.9179331,
+              -31.2803762
+            ]
+          ]
+        ]
+      },
+      "id": "way/591450827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591450831",
+        "name": "Arapey Solar",
+        "operator": "Giacotte S. A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "10 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.4562752,
+              -30.8753261
+            ],
+            [
+              -57.4524356,
+              -30.8753434
+            ],
+            [
+              -57.4524048,
+              -30.8682469
+            ],
+            [
+              -57.4534509,
+              -30.8685001
+            ],
+            [
+              -57.4545506,
+              -30.8693105
+            ],
+            [
+              -57.4562994,
+              -30.871569
+            ],
+            [
+              -57.4562752,
+              -30.8753261
+            ]
+          ]
+        ]
+      },
+      "id": "way/591450831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591456831",
+        "landuse": "industrial",
+        "name": "Del Litoral",
+        "operator": "Jolipark S. A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "16 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.8698797,
+              -31.4412647
+            ],
+            [
+              -57.8586549,
+              -31.442939
+            ],
+            [
+              -57.8584671,
+              -31.4422067
+            ],
+            [
+              -57.8591591,
+              -31.441955
+            ],
+            [
+              -57.85932,
+              -31.4417261
+            ],
+            [
+              -57.8589338,
+              -31.4401883
+            ],
+            [
+              -57.8620344,
+              -31.4397123
+            ],
+            [
+              -57.8633702,
+              -31.4369295
+            ],
+            [
+              -57.8675598,
+              -31.4386688
+            ],
+            [
+              -57.869888,
+              -31.4387283
+            ],
+            [
+              -57.870117,
+              -31.4394871
+            ],
+            [
+              -57.8698797,
+              -31.4412647
+            ]
+          ]
+        ]
+      },
+      "id": "way/591456831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591466440",
+        "name": "Cerros de Vera",
+        "operator": "UTE",
+        "operator:wikidata": "Q1665583",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "50 kW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.8121639,
+              -31.6009911
+            ],
+            [
+              -56.8124933,
+              -31.6017436
+            ],
+            [
+              -56.8122221,
+              -31.6018297
+            ],
+            [
+              -56.8118927,
+              -31.6010772
+            ],
+            [
+              -56.8121639,
+              -31.6009911
+            ]
+          ]
+        ]
+      },
+      "id": "way/591466440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591472217",
+        "name": "Ponlar",
+        "operator": "Ponlar S. A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "7 MW",
+        "plant:source": "biomass",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -55.7553151,
+              -31.0764294
+            ],
+            [
+              -55.7552286,
+              -31.0770027
+            ],
+            [
+              -55.7548813,
+              -31.0769642
+            ],
+            [
+              -55.7549679,
+              -31.076391
+            ],
+            [
+              -55.7553151,
+              -31.0764294
+            ]
+          ]
+        ]
+      },
+      "id": "way/591472217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591474235",
+        "barrier": "fence",
+        "landuse": "industrial",
+        "name": "Fenirol",
+        "operator": "Fenirol S. A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "10 MW",
+        "plant:source": "biomass",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -55.935865,
+              -31.6966197
+            ],
+            [
+              -55.9361547,
+              -31.6982902
+            ],
+            [
+              -55.9354627,
+              -31.6992099
+            ],
+            [
+              -55.9357631,
+              -31.6999652
+            ],
+            [
+              -55.9360421,
+              -31.7004262
+            ],
+            [
+              -55.931949,
+              -31.7012386
+            ],
+            [
+              -55.9308895,
+              -31.6972884
+            ],
+            [
+              -55.9310585,
+              -31.6971925
+            ],
+            [
+              -55.934827,
+              -31.6964234
+            ],
+            [
+              -55.9349316,
+              -31.6968068
+            ],
+            [
+              -55.9355754,
+              -31.6966745
+            ],
+            [
+              -55.935865,
+              -31.6966197
+            ]
+          ]
+        ]
+      },
+      "id": "way/591474235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/591474238",
+        "name": "Uruply",
+        "operator": "Uruply S. A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "12 MW",
+        "plant:source": "biomass",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -55.9016675,
+              -31.6405094
+            ],
+            [
+              -55.9019873,
+              -31.6409943
+            ],
+            [
+              -55.9013699,
+              -31.6412895
+            ],
+            [
+              -55.9010501,
+              -31.6408046
+            ],
+            [
+              -55.9016675,
+              -31.6405094
+            ]
+          ]
+        ]
+      },
+      "id": "way/591474238"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/597470246",
+        "landuse": "industrial",
+        "name": "Liderdat",
+        "operator": "Liderdat S.A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "5 MW",
+        "plant:source": "biomass",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.0891844,
+              -32.303411
+            ],
+            [
+              -58.0886715,
+              -32.3034619
+            ],
+            [
+              -58.0886096,
+              -32.3030169
+            ],
+            [
+              -58.0891226,
+              -32.302966
+            ],
+            [
+              -58.0891844,
+              -32.303411
+            ]
+          ]
+        ]
+      },
+      "id": "way/597470246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623126161",
+        "frequency": "50",
+        "name": "Natelu",
+        "operator": "Natelu S.A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "9.5 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.99236,
+              -33.2578461
+            ],
+            [
+              -57.992658,
+              -33.2585258
+            ],
+            [
+              -57.9918064,
+              -33.2587052
+            ],
+            [
+              -57.9919486,
+              -33.2591784
+            ],
+            [
+              -57.9922879,
+              -33.2591078
+            ],
+            [
+              -57.9924622,
+              -33.2596786
+            ],
+            [
+              -57.9930443,
+              -33.2595104
+            ],
+            [
+              -57.9942807,
+              -33.2630464
+            ],
+            [
+              -57.9907553,
+              -33.2639568
+            ],
+            [
+              -57.9888346,
+              -33.2587566
+            ],
+            [
+              -57.99236,
+              -33.2578461
+            ]
+          ]
+        ]
+      },
+      "id": "way/623126161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623127729",
+        "frequency": "50",
+        "name": "Yarnel",
+        "operator": "Yarnel S.A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "9.5 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.6061553,
+              -32.6835233
+            ],
+            [
+              -57.6065335,
+              -32.6846908
+            ],
+            [
+              -57.606938,
+              -32.6845851
+            ],
+            [
+              -57.6073478,
+              -32.6844781
+            ],
+            [
+              -57.6083887,
+              -32.6842292
+            ],
+            [
+              -57.6099237,
+              -32.6879246
+            ],
+            [
+              -57.6018119,
+              -32.6888886
+            ],
+            [
+              -57.601144,
+              -32.6848478
+            ],
+            [
+              -57.6033059,
+              -32.6845927
+            ],
+            [
+              -57.6033508,
+              -32.6847964
+            ],
+            [
+              -57.6033886,
+              -32.6847928
+            ],
+            [
+              -57.6034494,
+              -32.6847869
+            ],
+            [
+              -57.6033431,
+              -32.6841588
+            ],
+            [
+              -57.6061553,
+              -32.6835233
+            ]
+          ]
+        ]
+      },
+      "id": "way/623127729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623168796",
+        "frequency": "50",
+        "landuse": "industrial",
+        "name": "Manafra Solar",
+        "operator": "Giacote S.A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "20 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -57.4422527,
+              -32.6070366
+            ],
+            [
+              -57.4429902,
+              -32.6086069
+            ],
+            [
+              -57.4426228,
+              -32.608738
+            ],
+            [
+              -57.4421427,
+              -32.6090226
+            ],
+            [
+              -57.4417108,
+              -32.6091763
+            ],
+            [
+              -57.4406514,
+              -32.6091831
+            ],
+            [
+              -57.4406647,
+              -32.610428
+            ],
+            [
+              -57.4326557,
+              -32.6104845
+            ],
+            [
+              -57.4326584,
+              -32.6061599
+            ],
+            [
+              -57.4344179,
+              -32.6061667
+            ],
+            [
+              -57.434434,
+              -32.6047048
+            ],
+            [
+              -57.4372798,
+              -32.6046913
+            ],
+            [
+              -57.4411154,
+              -32.6066502
+            ],
+            [
+              -57.4422527,
+              -32.6070366
+            ]
+          ]
+        ]
+      },
+      "id": "way/623168796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/691696283",
+        "barrier": "fence",
+        "fixme": "Add more data. Agregar mas datos",
+        "landuse": "industrial",
+        "name": "Vignano / TS / Abril",
+        "note": "There are 3 power plants in this area, each with 1MW output",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "3 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "voltage": "31500"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.0258423,
+              -32.293402
+            ],
+            [
+              -58.0261813,
+              -32.2946599
+            ],
+            [
+              -58.0264136,
+              -32.295522
+            ],
+            [
+              -58.0262634,
+              -32.295819
+            ],
+            [
+              -58.0248231,
+              -32.2960933
+            ],
+            [
+              -58.0238467,
+              -32.296277
+            ],
+            [
+              -58.0220041,
+              -32.2966216
+            ],
+            [
+              -58.0217117,
+              -32.2955673
+            ],
+            [
+              -58.0229482,
+              -32.2953383
+            ],
+            [
+              -58.0229378,
+              -32.2948284
+            ],
+            [
+              -58.0229348,
+              -32.2946808
+            ],
+            [
+              -58.0224896,
+              -32.2946763
+            ],
+            [
+              -58.0224761,
+              -32.2935449
+            ],
+            [
+              -58.0234337,
+              -32.2935403
+            ],
+            [
+              -58.0239728,
+              -32.2939893
+            ],
+            [
+              -58.0245119,
+              -32.2937693
+            ],
+            [
+              -58.0246621,
+              -32.293529
+            ],
+            [
+              -58.0254883,
+              -32.2935222
+            ],
+            [
+              -58.0254963,
+              -32.293402
+            ],
+            [
+              -58.0258423,
+              -32.293402
+            ]
+          ]
+        ]
+      },
+      "id": "way/691696283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/879828336",
+        "operator": "Aeropuerto de Carrasco",
+        "plant:output:electricity": "500 W",
+        "plant:source": "solar",
+        "power": "plant",
+        "start_date": "2018"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.0132924,
+              -34.8356235
+            ],
+            [
+              -56.0132884,
+              -34.8345943
+            ],
+            [
+              -56.0140568,
+              -34.8342761
+            ],
+            [
+              -56.0140676,
+              -34.8353197
+            ],
+            [
+              -56.0132924,
+              -34.8356235
+            ]
+          ]
+        ]
+      },
+      "id": "way/879828336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/925290959",
+        "name": "Central Eléctrica Montes del Plata",
+        "name:en": "Montes del Plata Power Station",
+        "operator": "Celulosa y Energia Punta Pereira S.A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "180 MW",
+        "plant:source": "biomass",
+        "power": "plant",
+        "source": "UTE - 2022 - https://apps.ute.com.uy/sge/portal/nucleo/paginas/portal_utei.aspx?c=GerEyM_MapaGeneradores",
+        "voltage": "150000",
+        "wikidata": "Q111466599"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.0599154,
+              -34.2257495
+            ],
+            [
+              -58.0584102,
+              -34.227249
+            ],
+            [
+              -58.0589567,
+              -34.2276215
+            ],
+            [
+              -58.0576738,
+              -34.2288425
+            ],
+            [
+              -58.057124,
+              -34.228459
+            ],
+            [
+              -58.0564566,
+              -34.2291107
+            ],
+            [
+              -58.056247,
+              -34.2291163
+            ],
+            [
+              -58.0527951,
+              -34.2266668
+            ],
+            [
+              -58.056068,
+              -34.223482
+            ],
+            [
+              -58.0565307,
+              -34.223772
+            ],
+            [
+              -58.0570924,
+              -34.2237295
+            ],
+            [
+              -58.0599154,
+              -34.2257495
+            ]
+          ]
+        ]
+      },
+      "id": "way/925290959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1022135455",
+        "landuse": "industrial",
+        "name": "Las Rosas",
+        "operator": "Aborgama",
+        "plant:method": "combustion",
+        "plant:output:electricity": "1.2 MW",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -54.9703053,
+              -34.8174868
+            ],
+            [
+              -54.9703,
+              -34.8177982
+            ],
+            [
+              -54.9702922,
+              -34.8182609
+            ],
+            [
+              -54.9698483,
+              -34.8182558
+            ],
+            [
+              -54.9698532,
+              -34.8179615
+            ],
+            [
+              -54.9698612,
+              -34.8174817
+            ],
+            [
+              -54.9703053,
+              -34.8174868
+            ]
+          ]
+        ]
+      },
+      "id": "way/1022135455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1022138508",
+        "name": "Turbuna Rio Branco",
+        "operator": "UTE",
+        "plant:method": "combustion",
+        "plant:output:electricity": "4.3 MW",
+        "plant:source": "gas",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -53.3366154,
+              -32.6574693
+            ],
+            [
+              -53.3361018,
+              -32.6582438
+            ],
+            [
+              -53.3351804,
+              -32.6578283
+            ],
+            [
+              -53.3356686,
+              -32.6570289
+            ],
+            [
+              -53.3366154,
+              -32.6574693
+            ]
+          ]
+        ]
+      },
+      "id": "way/1022138508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1022371628",
+        "name": "Arboreto",
+        "operator": "Lanas Trinidad S.A.",
+        "plant:method": "combustion",
+        "plant:output:electricity": "500 kW",
+        "plant:source": "biomass",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.8898026,
+              -33.5057401
+            ],
+            [
+              -56.8898381,
+              -33.5060243
+            ],
+            [
+              -56.8896865,
+              -33.5060375
+            ],
+            [
+              -56.889651,
+              -33.5057532
+            ],
+            [
+              -56.8898026,
+              -33.5057401
+            ]
+          ]
+        ]
+      },
+      "id": "way/1022371628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1047740632",
+        "name": "Central Eléctrica San Gregorio",
+        "operator": "UTE",
+        "plant:method": "combustion",
+        "plant:output:electricity": "1.44 MW",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -55.834532,
+              -32.6132292
+            ],
+            [
+              -55.8346062,
+              -32.6136042
+            ],
+            [
+              -55.8341468,
+              -32.6136687
+            ],
+            [
+              -55.8340726,
+              -32.6132938
+            ],
+            [
+              -55.834532,
+              -32.6132292
+            ]
+          ]
+        ]
+      },
+      "id": "way/1047740632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1047740633",
+        "name": "UPM",
+        "operator": "UPM",
+        "plant:method": "combustion",
+        "plant:output:electricity": "161 MW",
+        "plant:source": "biomass;oil",
+        "power": "plant",
+        "source": "UTE - 2022 - https://apps.ute.com.uy/sge/portal/nucleo/paginas/portal_utei.aspx?c=GerEyM_MapaGeneradores",
+        "wikidata": "Q111466667"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -58.2603883,
+              -33.1171629
+            ],
+            [
+              -58.2600486,
+              -33.1173178
+            ],
+            [
+              -58.2582931,
+              -33.116914
+            ],
+            [
+              -58.2584733,
+              -33.1163642
+            ],
+            [
+              -58.2604975,
+              -33.1168294
+            ],
+            [
+              -58.2603883,
+              -33.1171629
+            ]
+          ]
+        ]
+      },
+      "id": "way/1047740633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1047740637",
+        "name": "Mondelan S.A.",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "0.35 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "source": "UTE - 2022 - https://apps.ute.com.uy/sge/portal/nucleo/paginas/portal_utei.aspx?c=GerEyM_MapaGeneradores"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.5554661,
+              -33.3849166
+            ],
+            [
+              -56.5556924,
+              -33.3856476
+            ],
+            [
+              -56.5555671,
+              -33.3856528
+            ],
+            [
+              -56.5556213,
+              -33.3858474
+            ],
+            [
+              -56.5557086,
+              -33.3858443
+            ],
+            [
+              -56.5557416,
+              -33.3861648
+            ],
+            [
+              -56.5555139,
+              -33.3862778
+            ],
+            [
+              -56.5551446,
+              -33.3862667
+            ],
+            [
+              -56.5547875,
+              -33.3849413
+            ],
+            [
+              -56.5554661,
+              -33.3849166
+            ]
+          ]
+        ]
+      },
+      "id": "way/1047740637"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1047740638",
+        "name": "Hikari",
+        "operator": "Miem-UTE",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "0.25 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "source": "UTE - 2022 - https://apps.ute.com.uy/sge/portal/nucleo/paginas/portal_utei.aspx?c=GerEyM_MapaGeneradores",
+        "voltage": "15000"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -55.2083731,
+              -34.4304124
+            ],
+            [
+              -55.2063339,
+              -34.4290597
+            ],
+            [
+              -55.2065232,
+              -34.4288656
+            ],
+            [
+              -55.2085624,
+              -34.4302183
+            ],
+            [
+              -55.2083731,
+              -34.4304124
+            ]
+          ]
+        ]
+      },
+      "id": "way/1047740638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1246972844",
+        "name": "Parque Fotovoltaico Punta del Tigre",
+        "note": "The \"MWp\" unit is not a typo. The power output unit is MWp, not MW.",
+        "operator": "UTE",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "30 MWp",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.5536529,
+              -34.7445174
+            ],
+            [
+              -56.5612221,
+              -34.7557966
+            ],
+            [
+              -56.5591622,
+              -34.7563254
+            ],
+            [
+              -56.5551925,
+              -34.7567221
+            ],
+            [
+              -56.5529823,
+              -34.7560169
+            ],
+            [
+              -56.55074,
+              -34.7545977
+            ],
+            [
+              -56.5463305,
+              -34.7482685
+            ],
+            [
+              -56.5536529,
+              -34.7445174
+            ]
+          ]
+        ]
+      },
+      "id": "way/1246972844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1333534274",
+        "landuse": "industrial",
+        "name:en": "UPM Paso de los Toros power station",
+        "plant:source": "biomass",
+        "power": "plant",
+        "source": "https://www.gem.wiki/UPM_Paso_de_los_Toros_power_station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -56.5377873,
+              -32.8623613
+            ],
+            [
+              -56.5372039,
+              -32.8634581
+            ],
+            [
+              -56.5358896,
+              -32.862965
+            ],
+            [
+              -56.5364729,
+              -32.8618681
+            ],
+            [
+              -56.5377873,
+              -32.8623613
+            ]
+          ]
+        ]
+      },
+      "id": "way/1333534274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1459077039",
+        "building": "yes",
+        "disused": "yes",
+        "plant:output:electricity": "0",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "1882"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -55.5935994,
+              -31.5230305
+            ],
+            [
+              -55.5935966,
+              -31.5231051
+            ],
+            [
+              -55.593547,
+              -31.5231406
+            ],
+            [
+              -55.5935102,
+              -31.5231051
+            ],
+            [
+              -55.5935124,
+              -31.5230222
+            ],
+            [
+              -55.5935994,
+              -31.5230305
+            ]
+          ]
+        ]
+      },
+      "id": "way/1459077039"
+    }
+  ]
+}

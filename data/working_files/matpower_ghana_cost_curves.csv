@@ -1,0 +1,40 @@
+generator_name,bus,source,genfuel,curve_type,Pmax,model,startup,shutdown,n,c2,c1,c0
+Takoradi CCGT Power Plant,64,oil,gas_turbine,gt_petroleum,792.0,2,0.0,0.0,3,2.69528,158.8812,8911.068
+Sunon Asogli Power Plant,66,gas,gas,cc_gas,560.0,2,0.0,0.0,3,0.033184,14.1752,1519.48
+Tema Cenit & Tema Thermal Power Plants,60,gas;oil,gas,cc_gas,252.0,2,0.0,0.0,3,0.014827,13.50684,783.976
+Kpong Power Station,5,hydro,hydro,hydro,160.0,2,0.0,0.0,3,0.002456,14.0,178.38
+Bui Hydropower Plant,32,hydro,hydro,hydro,400.0,2,0.0,0.0,3,0.006152,14.0,446.46
+University of Ghana,77,solar,solar,renewable,2.0,2,0.0,0.0,3,0.0,0.0,0.0
+Safi Sana Ghana Limited,39,waste,steam,steam_wood,0.1,2,0.0,0.0,3,0.0,31.54229,6.0618
+Osagyefo Barge,55,gas,gas,cc_gas,125.0,2,0.0,0.0,3,0.007258,13.23125,480.7
+Gomoa Onyaadze,43,solar,solar,renewable,20.0,2,0.0,0.0,3,0.0,0.0,0.0
+Kpone Independent Power Plant,57,oil;gas,gas_turbine,gt_petroleum,340.0,2,0.0,0.0,3,1.1178,78.154,3937.26
+Vpower Power plant,48,gas,gas,cc_gas,50.0,2,0.0,0.0,3,0.002788,13.0685,301.6
+Kpone Thermal Power Station I,72,gas;oil,gas,cc_gas,220.0,2,0.0,0.0,3,0.01292,13.4374,707.56
+Akosombo Hydroelectric Power Plant,4,hydro,hydro,hydro,1020.0,2,0.0,0.0,3,0.0157,14.0,1139.0
+Amandi Energy power plant,65,gas,gas,cc_gas,200.0,2,0.0,0.0,3,0.011728,13.394,659.8
+[unnamed way/1021746811],42,biogas,gas,gt_biomass,,2,0.0,0.0,3,,,
+RMU Solar Farm,47,solar,solar,renewable,,2,0.0,0.0,3,,,
+Bridge Power Station,67,unknown,unknown,cc_gas,,2,0.0,0.0,3,,,
+Nadowli-Kaleo District solar project,20,solar,solar,renewable,5.8,2,0.0,0.0,3,0.0,0.0,0.0
+Kaleo Solar Farm - Phase I,20,solar,solar,renewable,15.0,2,0.0,0.0,3,0.0,0.0,0.0
+Osman Khan Power Plant,65,gas,gas,cc_gas,450.0,2,0.0,0.0,3,0.026628,13.9365,1256.8
+BXC Oyandze,44,solar,solar,renewable,20.0,2,0.0,0.0,3,0.0,0.0,0.0
+Ameri Power Plant,46,https:;www.vra.com;media;2022;relocation of ameri power plant.php,https:,cc_gas,,2,0.0,0.0,3,,,
+GPGC Power Plant,58,unknown,unknown,cc_gas,,2,0.0,0.0,3,,,
+Aksa Ghana HFO power plant,68,oil,gas_turbine,gt_petroleum,370.0,2,0.0,0.0,3,1.2225,83.512,4267.38
+Chirano Plant,80,gas,gas,cc_gas,33.0,2,0.0,0.0,3,0.001775,13.03161,261.004
+Navrongo,59,solar,solar,renewable,2.5,2,0.0,0.0,3,0.0,0.0,0.0
+Kaleo Solar Farm - Phase II,20,solar,solar,renewable,15.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1420859791],47,coal,steam,steam_coal,,2,0.0,0.0,3,,,
+Yendi,40,solar,solar,renewable,50.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424431903],51,solar,solar,renewable,,2,0.0,0.0,3,,,
+Bui Solar Farm,32,solar,solar,renewable,50.0,2,0.0,0.0,3,0.0,0.0,0.0
+Premium Foods - Kwaso,63,solar,solar,renewable,2.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1442129277],20,solar,solar,renewable,6.5,2,0.0,0.0,3,0.0,0.0,0.0
+Bui Floating Solar Farm,32,solar,solar,renewable,5.0,2,0.0,0.0,3,0.0,0.0,0.0
+Tarkwa Plant,53,gas,gas,cc_gas,66.0,2,0.0,0.0,3,0.003742,13.10322,339.808
+Damang Plant,88,gas,gas,cc_gas,25.5,2,0.0,0.0,3,0.001328,13.015335,243.094
+Wassa Plant,87,gas,gas,cc_gas,33.0,2,0.0,0.0,3,0.001775,13.03161,261.004
+Edikan Plant,16,gas,gas,cc_gas,33.0,2,0.0,0.0,3,0.001775,13.03161,261.004
+[unnamed way/1511993253],32,solar,solar,renewable,,2,0.0,0.0,3,,,
