@@ -1,0 +1,76 @@
+bus,Pg,Qg,Qmax,Qmin,Vg,mBase,status,Pmax,Pmin,generator_name,operator,source,genfuel,latitude,longitude,osm_id,bus_name,bus_distance_km
+10,0.0,0.0,86.4,-11.025,1.0,100.0,1,225.0,0.0,Gitaru Hydro Power Station,KenGen,hydro,hydro,-0.794926,37.752713,way/209568337,Mbeere South Substation,0.037
+29,0.0,0.0,15.821,-2.019,1.0,100.0,1,41.2,0.0,Masinga Power Station,KenGen,hydro,hydro,-0.879008,37.589011,way/209568339,Masinga Central ward Substation,0.048
+63,0.0,0.0,0.154,-0.02,1.0,100.0,1,0.4,0.0,Sosiani Power station,KenGen,hydro,hydro,0.547621,35.177007,way/209675482,Eldoret Substation,10.074
+48,0.0,0.0,0.768,-0.098,1.0,100.0,1,2.0,0.0,Gogo Power Station,KenGen,hydro,hydro,-0.909423,34.3479,way/209806584,Central Sakwa ward Substation 2,19.725
+60,0.0,0.0,0.165,-0.021,1.0,100.0,1,0.43,0.0,Mesco Power Station,KenGen,hydro,hydro,-0.754799,37.148683,way/209961440,Sagana Substation,12.07
+30,0.0,0.0,0.576,-0.074,1.0,100.0,1,1.5,0.0,Sagana Falls Power Station,KenGen,hydro,hydro,-0.475475,37.052387,way/209961620,kiganjo/mathari ward Substation,5.53
+60,0.0,0.0,9.869,-1.259,1.0,100.0,1,25.7,0.0,Tana power station,KenGen,hydro,hydro,-0.7855,37.265417,way/209961690,Sagana Substation,14.48
+60,0.0,0.0,2.842,-0.363,1.0,100.0,1,7.4,0.0,Wanjii power station,KenGen,hydro,hydro,-0.749349,37.174705,way/209962134,Sagana Substation,10.087
+53,0.0,0.0,0.768,-0.098,1.0,100.0,1,2.0,0.0,Ndula,KenGen,hydro,hydro,-1.019841,37.260232,way/210621521,Hospital ward Substation,20.186
+22,0.0,0.0,69.9,-18.3,1.0,100.0,1,150.0,0.0,Olkaria III Generation Plant,Ormat Technologies,geothermal,steam,-0.888665,36.255248,way/238279769,Maiella ward Substation,0.203
+42,0.0,0.0,48.697,-12.749,1.0,100.0,1,104.5,0.0,Olkaria II Geothermal Power Station,KenGen,geothermal,steam,-0.864736,36.299501,way/255555404,Olkaria ward Substation 4,3.002
+5,0.0,0.0,50.4,-5.76,1.0,100.0,1,90.0,0.0,Rabai Power Plant,Rabai Power,oil,gas_turbine,-3.933469,39.56239,way/362429315,Mariakani,0.181
+82,0.0,0.0,23.309,-2.974,1.0,100.0,1,60.7,0.0,Sondu Miriu Hydroelectric Power Station,KenGen,hydro,hydro,-0.342795,34.851664,way/374036051,Kisumu Substation 2,30.021
+47,0.0,0.0,8.141,-1.039,1.0,100.0,1,21.2,0.0,Sang'oro Hydroelectric Power Station,KenGen,hydro,hydro,-0.353916,34.81314,way/444000639,Abyssinia substation,30.965
+64,0.0,0.0,40.704,-5.194,1.0,100.0,1,106.0,0.0,Turkwel Hydro Power Station,KenGen,hydro,hydro,1.912958,35.356691,way/448329460,Sebit Substation,51.661
+36,0.0,0.0,64.512,-8.232,1.0,100.0,1,168.0,0.0,Kiambere Hydro Power Station,KenGen,hydro,hydro,-0.599874,37.888408,way/578920143,Mbeere North Substation 2,12.888
+9,0.0,0.0,0.327,-0.042,1.0,100.0,1,0.852,0.0,Tagabi 1 Hydro Power Plant,Unilever Tea,hydro,hydro,-0.45145,35.219525,way/594647336,Chemosit substation,7.373
+75,0.0,0.0,,,1.0,100.0,1,,,Marsabit,unknown,diesel,gas_turbine,2.332006,37.985907,way/623440570,Isiolo east Substation,226.96
+18,0.0,0.0,41.16,-4.704,1.0,100.0,1,73.5,0.0,Kipevu I power plant,KenGen,oil,gas_turbine,-4.039825,39.635571,way/657067240,Kipevu ward Substation 1,0.115
+40,0.0,0.0,46.48,-5.312,1.0,100.0,1,83.0,0.0,Triumph Power Plant,Triumph Power,oil,gas_turbine,-1.461454,36.95406,way/665372426,Athi River ward Substation 2,0.251
+11,0.0,0.0,36.173,-4.616,1.0,100.0,1,94.2,0.0,Kamburu Hydro Power Station,KenGen,hydro,hydro,-0.806471,37.686076,way/669537263,Kamburu 220 / 132kV Transmission Substation_220kV,0.356
+37,0.0,0.0,16.45,-16.45,1.0,100.0,1,50.0,0.0,Garissa Solar Power Station,unknown,solar,solar,-0.335064,39.605931,way/696704118,Shabah Substation,0.835
+22,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/753235590],unknown,solar,solar,-0.867078,36.27165,way/753235590,Maiella ward Substation,3.073
+17,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/808553626],unknown,solar,solar,-1.349004,36.702243,way/808553626,Ngong Wind Power Project,8.23
+10,0.0,0.0,27.648,-3.528,1.0,100.0,1,72.0,0.0,Kindaruma Hydro Power Station,KenGen,hydro,hydro,-0.810006,37.812731,way/846596010,Mbeere South Substation,6.895
+9,0.0,0.0,33.6,-3.84,1.0,100.0,1,60.0,0.0,Muhoroni power plant,KenGen,oil,gas_turbine,-0.210554,35.151348,way/846600562,Chemosit substation,31.001
+19,0.0,0.0,67.2,-7.68,1.0,100.0,1,120.0,0.0,Kipevu III power plant,KenGen,oil,gas_turbine,-4.03789,39.633395,way/846602535,Kipevu ward Substation 2,0.201
+40,0.0,0.0,44.979,-5.14,1.0,100.0,1,80.32,0.0,Gulf Energy Power Station,Gulf Power,oil,gas_turbine,-1.45854,37.004332,way/846697014,Athi River ward Substation 2,5.552
+41,0.0,0.0,69.853,-18.288,1.0,100.0,1,149.9,0.0,Olkaria IV Geothermal Power Station,KenGen,geothermal,steam,-0.917851,36.334551,way/846713552,Olkaria ward Substation 2_132kV,3.971
+41,0.0,0.0,80.292,-21.021,1.0,100.0,1,172.3,0.0,Olkaria V Geothermal Power Station,KenGen,geothermal,steam,-0.900016,36.351371,way/846713576,Olkaria ward Substation 2_132kV,4.817
+3,0.0,0.0,29.4,-3.36,1.0,100.0,1,52.5,0.0,Iberafrica Power Station,Iberafrica,oil,gas_turbine,-1.300653,36.884178,way/871517823,Embakasi SS,4.542
+76,0.0,0.0,2.15,-0.274,1.0,100.0,1,5.6,0.0,Metumi,KTDA,hydro,hydro,-0.63148,36.901465,way/968874277,Githambo substation_132kV,9.274
+53,0.0,0.0,48.72,-5.568,1.0,100.0,1,87.0,0.0,Thika (MELEC) MSD Power Plant,Thika Power,diesel,gas_turbine,-1.060623,37.050858,way/1004203458,Hospital ward Substation,3.886
+63,0.0,0.0,14.476,-14.476,1.0,100.0,1,44.0,0.0,Alten Solar Power Station,unknown,solar,solar,0.403614,35.374863,way/1141854126,Eldoret Substation,18.212
+63,0.0,0.0,13.16,-13.16,1.0,100.0,1,40.0,0.0,Radiant Solar Power Station,unknown,solar,solar,0.419758,35.360922,way/1141854128,Eldoret Substation,15.841
+63,0.0,0.0,13.16,-13.16,1.0,100.0,1,40.0,0.0,Eldosol Solar Power Station,unknown,solar,solar,0.414003,35.35952,way/1141854129,Eldoret Substation,16.217
+6,0.0,0.0,13.16,-13.16,1.0,100.0,1,40.0,0.0,Malindi Solar Power Station,unknown,solar,solar,-3.201629,39.751978,way/1141873295,Kilifi,48.149
+64,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1204267825],unknown,solar,solar,3.740313,34.813676,way/1204267825,Sebit Substation,262.04
+9,0.0,0.0,0.18,-0.023,1.0,100.0,1,0.47000000000000003,0.0,Kerenga 1 & 2,Unilever Tea,hydro,hydro,-0.41706,35.235945,way/1213886814,Chemosit substation,11.245
+9,0.0,0.0,0.922,-0.118,1.0,100.0,1,2.4,0.0,Kapsongoi,James Findlay Tea,hydro,hydro,-0.409847,35.251991,way/1213890260,Chemosit substation,13.089
+9,0.0,0.0,0.12,-0.015,1.0,100.0,1,0.313,0.0,Jamji 1,Unilever Tea,hydro,hydro,-0.468399,35.18922,way/1213903874,Chemosit substation,3.547
+9,0.0,0.0,0.12,-0.015,1.0,100.0,1,0.313,0.0,Jamji 2,Unilever Tea,hydro,hydro,-0.468795,35.189045,way/1213903877,Chemosit substation,3.504
+9,0.0,0.0,0.204,-0.204,1.0,100.0,1,0.619,0.0,Jamji Solar Plant,Unilever Tea,solar,solar,-0.469941,35.181929,way/1213903885,Chemosit substation,2.845
+61,0.0,0.0,0.346,-0.044,1.0,100.0,1,0.9,0.0,Imenti Tea,KTDA,hydro,hydro,-0.04787,37.593141,way/1213917819,Meru Substation,12.428
+67,0.0,0.0,0.384,-0.049,1.0,100.0,1,1.0,0.0,Chania,KTDA,hydro,hydro,-0.857065,36.809294,way/1214001720,Kiganjo ward Substation,15.624
+30,0.0,0.0,2.227,-0.284,1.0,100.0,1,5.8,0.0,Gura,KTDA,hydro,hydro,-0.500286,36.881016,way/1214008286,kiganjo/mathari ward Substation,18.075
+37,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1369665610],unknown,solar,solar,2.820482,40.921716,way/1369665610,Shabah Substation,380.936
+37,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1369683259],unknown,solar,solar,3.550741,40.874123,way/1369683259,Shabah Substation,455.256
+88,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1395060855],unknown,solar,solar,0.254592,35.081944,way/1395060855,Lessos substation,23.917
+88,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1395060856],unknown,solar,solar,0.258186,35.083041,way/1395060856,Lessos substation,23.865
+35,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1395074730],unknown,solar,solar,-1.139818,36.922769,way/1395074730,Biashara ward Substation,3.952
+35,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1395074731],unknown,solar,solar,-1.139147,36.922899,way/1395074731,Biashara ward Substation,3.96
+5,0.0,0.0,,,1.0,100.0,1,,,Standard Rolling Mills,unknown,solar,solar,-3.924151,39.529968,way/1409736972,Mariakani,3.562
+14,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1422787168],unknown,solar,solar,0.068176,35.745905,way/1422787168,Soilo,50.629
+30,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424432979],unknown,solar,solar,-0.196631,36.830876,way/1424432979,kiganjo/mathari ward Substation,34.16
+7,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424433491],unknown,solar,solar,-3.912406,39.768208,way/1424433491,Junju ward Substation 1,13.107
+9,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424433639],unknown,solar,solar,-0.54391,35.048269,way/1424433639,Chemosit substation,14.331
+18,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424434508],unknown,solar,solar,-3.989265,39.728321,way/1424434508,Kipevu ward Substation 1,11.629
+18,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424434509],unknown,solar,solar,-3.982448,39.729239,way/1424434509,Kipevu ward Substation 1,12.101
+7,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424434522],unknown,solar,solar,-3.92626,39.756786,way/1424434522,Junju ward Substation 1,14.831
+18,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424434537],unknown,solar,solar,-4.021923,39.718775,way/1424434537,Kipevu ward Substation 1,9.332
+82,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424434698],unknown,solar,solar,0.155027,34.928043,way/1424434698,Kisumu Substation 2,28.133
+5,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424434858],unknown,solar,solar,-3.918905,39.581094,way/1424434858,Mariakani,2.751
+86,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424434944],unknown,solar,solar,-0.665321,36.401264,way/1424434944,Olkaria ward Substation 5,19.761
+35,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424444955],unknown,solar,solar,-1.114935,36.909216,way/1424444955,Biashara ward Substation,6.583
+9,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424445067],unknown,solar,solar,-0.43352,35.264339,way/1424445067,Chemosit substation,12.664
+6,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424445339],unknown,solar,solar,-3.03559,40.139057,way/1424445339,Kilifi,73.055
+40,0.0,0.0,1.645,-1.645,1.0,100.0,1,5.0,0.0,[unnamed way/1424445579],unknown,solar,solar,-1.423262,36.949234,way/1424445579,Athi River ward Substation 2,4.039
+14,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1424445691],unknown,solar,solar,-0.231963,35.879219,way/1424445691,Soilo,18.463
+9,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1426603147],unknown,solar,solar,-0.482403,35.223533,way/1426603147,Chemosit substation,6.562
+37,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1426610903],unknown,solar,solar,2.821391,40.922122,way/1426610903,Shabah Substation,381.046
+9,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1426610905],unknown,solar,solar,-0.374595,35.32289,way/1426610905,Chemosit substation,21.692
+68,0.0,0.0,0.106,-0.106,1.0,100.0,1,0.322,0.0,Kilaguni Serena Safari Lodge,unknown,solar,solar,-2.905944,38.06242,way/1431984217,Loitokitok 132/33kV - KETRACO Substation_132kV,59.745
+90,0.0,0.0,,,1.0,100.0,1,,,[unnamed way/1473012259],unknown,solar,solar,3.838354,39.869772,way/1473012259,Ethiopia,415.75
+86,0.0,0.0,0.023,-0.023,1.0,100.0,1,0.069,0.0,[unnamed way/1497614688],unknown,solar,solar,-0.657377,36.472567,way/1497614688,Olkaria ward Substation 5,23.603

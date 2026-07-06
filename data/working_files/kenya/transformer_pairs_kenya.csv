@@ -1,0 +1,10 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+1,2,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Embakasi Sub-Station_220kV,Embakasi Sub-Station_132kV,0.0,,transformer
+19,20,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kamburu 220 / 132kV Transmission Substation_220kV,Kamburu 220 / 132kV Transmission Substation_132kV,0.0,,transformer
+25,26,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,132 kV Mang'u Substation_220kV,132 kV Mang'u Substation_132kV,0.0,,transformer
+45,46,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Suswa Substation 1_500kV,Suswa Substation 1_400kV,0.0,,transformer
+46,47,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Suswa Substation 1_400kV,Suswa Substation 1_220kV,0.0,,transformer
+49,50,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Isinya Substation_400kV,Isinya Substation_220kV,0.0,,transformer
+77,78,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kitale substation_220kV,Kitale substation_132kV,0.0,,transformer
+116,117,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Kibos Substation (KETRACO)_220kV,Kibos Substation (KETRACO)_132kV,0.0,,transformer
+224,225,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Mariakani Substation 2_400kV,Mariakani Substation 2_220kV,0.0,,transformer

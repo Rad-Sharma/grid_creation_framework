@@ -1,0 +1,4152 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2026-06-17T04:49:45Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209568337",
+        "building": "industrial",
+        "location": "underground",
+        "name": "Gitaru Hydro Power Station",
+        "operator": "KenGen",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "225 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "wikidata": "Q5565067",
+        "wikipedia": "en:Gitaru Hydroelectric Power Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.7524816,
+              -0.794908
+            ],
+            [
+              37.7527004,
+              -0.7951115
+            ],
+            [
+              37.7529458,
+              -0.7948476
+            ],
+            [
+              37.7528486,
+              -0.7947572
+            ],
+            [
+              37.7527028,
+              -0.7949139
+            ],
+            [
+              37.7525812,
+              -0.7948009
+            ],
+            [
+              37.7524816,
+              -0.794908
+            ]
+          ]
+        ]
+      },
+      "id": "way/209568337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209568339",
+        "name": "Masinga Power Station",
+        "operator": "KenGen",
+        "plant:method": "water-storage",
+        "plant:output:electricity": "41.2 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "wikidata": "Q17382021",
+        "wikipedia": "en:Masinga Hydroelectric Power Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.5889384,
+              -0.878822
+            ],
+            [
+              37.5888207,
+              -0.8789464
+            ],
+            [
+              37.589083,
+              -0.8791947
+            ],
+            [
+              37.5892008,
+              -0.8790703
+            ],
+            [
+              37.5889384,
+              -0.878822
+            ]
+          ]
+        ]
+      },
+      "id": "way/209568339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209675482",
+        "building": "industrial",
+        "landuse": "industrial",
+        "name": "Sosiani Power station",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "0.4 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://kengen.co.ke/index.php/index.php?option=com_content&view=article&id=205:sosiani&catid=33:power-stations"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.1769696,
+              0.5476935
+            ],
+            [
+              35.176927,
+              0.5476369
+            ],
+            [
+              35.1770448,
+              0.5475481
+            ],
+            [
+              35.1770874,
+              0.5476047
+            ],
+            [
+              35.1769696,
+              0.5476935
+            ]
+          ]
+        ]
+      },
+      "id": "way/209675482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209806584",
+        "building": "industrial",
+        "name": "Gogo Power Station",
+        "operator": "KenGen",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "2 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://kengen.co.ke/index.php/index.php?option=com_content&view=article&id=204:gogo&catid=33:power-stations"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.347819,
+              -0.909335
+            ],
+            [
+              34.3478982,
+              -0.909543
+            ],
+            [
+              34.3479801,
+              -0.9095118
+            ],
+            [
+              34.3479008,
+              -0.9093038
+            ],
+            [
+              34.347819,
+              -0.909335
+            ]
+          ]
+        ]
+      },
+      "id": "way/209806584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209961440",
+        "building": "industrial",
+        "name": "Mesco Power Station",
+        "operator": "KenGen",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "0.43 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://kengen.co.ke/index.php/index.php?option=com_content&view=article&id=200:mesco&catid=33:power-stations"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.148714,
+              -0.7548218
+            ],
+            [
+              37.1487103,
+              -0.7547715
+            ],
+            [
+              37.1486513,
+              -0.7547759
+            ],
+            [
+              37.148655,
+              -0.7548262
+            ],
+            [
+              37.148714,
+              -0.7548218
+            ]
+          ]
+        ]
+      },
+      "id": "way/209961440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209961620",
+        "building": "industrial",
+        "name": "Sagana Falls Power Station",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "1.5 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://kengen.co.ke/index.php/index.php?option=com_content&view=article&id=199:sagana-power-station&catid=33:power-stations",
+        "start_date": "1952"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.0525142,
+              -0.4753909
+            ],
+            [
+              37.0524396,
+              -0.475332
+            ],
+            [
+              37.0522599,
+              -0.47556
+            ],
+            [
+              37.0523345,
+              -0.4756189
+            ],
+            [
+              37.0525142,
+              -0.4753909
+            ]
+          ]
+        ]
+      },
+      "id": "way/209961620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209961690",
+        "building": "industrial",
+        "name": "Tana power station",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "25.7 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "wikidata": "Q24038039"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.2654244,
+              -0.7851846
+            ],
+            [
+              37.2653731,
+              -0.7852425
+            ],
+            [
+              37.2653057,
+              -0.7853186
+            ],
+            [
+              37.2652593,
+              -0.7853709
+            ],
+            [
+              37.2651725,
+              -0.78547
+            ],
+            [
+              37.2653482,
+              -0.7856251
+            ],
+            [
+              37.2653174,
+              -0.7856599
+            ],
+            [
+              37.2655899,
+              -0.7859003
+            ],
+            [
+              37.2656546,
+              -0.785827
+            ],
+            [
+              37.2653925,
+              -0.7855956
+            ],
+            [
+              37.2656104,
+              -0.7853487
+            ],
+            [
+              37.2654244,
+              -0.7851846
+            ]
+          ]
+        ]
+      },
+      "id": "way/209961690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/209962134",
+        "building": "industrial",
+        "name": "Wanjii power station",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "7.4 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "1955",
+        "wikidata": "Q24236466"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.1745045,
+              -0.7494889
+            ],
+            [
+              37.1746488,
+              -0.749587
+            ],
+            [
+              37.1749052,
+              -0.7492099
+            ],
+            [
+              37.1747609,
+              -0.7491118
+            ],
+            [
+              37.17469,
+              -0.7492161
+            ],
+            [
+              37.1746379,
+              -0.7492928
+            ],
+            [
+              37.1745967,
+              -0.7493533
+            ],
+            [
+              37.1745403,
+              -0.7494363
+            ],
+            [
+              37.1745045,
+              -0.7494889
+            ]
+          ]
+        ]
+      },
+      "id": "way/209962134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/210621521",
+        "building": "yes",
+        "disused:power": "plant",
+        "end_date": "2010",
+        "name": "Ndula",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "2 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://www.esi-africa.com/regional-news/east-africa/kengen-soon-to-open-electric-power-production-museum/",
+        "start_date": "1924"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.2601714,
+              -1.0197384
+            ],
+            [
+              37.2601206,
+              -1.0197991
+            ],
+            [
+              37.260212,
+              -1.0198756
+            ],
+            [
+              37.2602929,
+              -1.0199432
+            ],
+            [
+              37.2603437,
+              -1.0198825
+            ],
+            [
+              37.2601714,
+              -1.0197384
+            ]
+          ]
+        ]
+      },
+      "id": "way/210621521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/238279769",
+        "alt_name": "OrPower 4",
+        "landuse": "industrial",
+        "name": "Olkaria III Generation Plant",
+        "operator": "Ormat Technologies",
+        "plant:output:electricity": "150 MW",
+        "plant:source": "geothermal",
+        "power": "plant",
+        "source": "https://www.ormat.com/en/renewables/geothermal/main/",
+        "wikidata": "Q16896123"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.2550512,
+              -0.886644
+            ],
+            [
+              36.2543822,
+              -0.8876233
+            ],
+            [
+              36.2535194,
+              -0.8870055
+            ],
+            [
+              36.2520387,
+              -0.8893837
+            ],
+            [
+              36.2523768,
+              -0.8897334
+            ],
+            [
+              36.2526216,
+              -0.8895936
+            ],
+            [
+              36.2528665,
+              -0.8897568
+            ],
+            [
+              36.2524351,
+              -0.890293
+            ],
+            [
+              36.2550235,
+              -0.8922166
+            ],
+            [
+              36.2559213,
+              -0.8909809
+            ],
+            [
+              36.2555015,
+              -0.8906544
+            ],
+            [
+              36.2556293,
+              -0.8904105
+            ],
+            [
+              36.2558863,
+              -0.88992
+            ],
+            [
+              36.2560728,
+              -0.8900366
+            ],
+            [
+              36.2564304,
+              -0.8895375
+            ],
+            [
+              36.2568428,
+              -0.8898014
+            ],
+            [
+              36.2573164,
+              -0.8894336
+            ],
+            [
+              36.2575916,
+              -0.8892689
+            ],
+            [
+              36.2578283,
+              -0.8892834
+            ],
+            [
+              36.2581035,
+              -0.8894276
+            ],
+            [
+              36.2583146,
+              -0.8898919
+            ],
+            [
+              36.2584549,
+              -0.8898032
+            ],
+            [
+              36.2586657,
+              -0.8892887
+            ],
+            [
+              36.2587039,
+              -0.8887786
+            ],
+            [
+              36.2587933,
+              -0.8886269
+            ],
+            [
+              36.2579785,
+              -0.8880822
+            ],
+            [
+              36.2571061,
+              -0.8874799
+            ],
+            [
+              36.256902,
+              -0.8873343
+            ],
+            [
+              36.2567626,
+              -0.8869802
+            ],
+            [
+              36.2567559,
+              -0.8869286
+            ],
+            [
+              36.2575628,
+              -0.8863259
+            ],
+            [
+              36.2579911,
+              -0.8858022
+            ],
+            [
+              36.2576265,
+              -0.8853259
+            ],
+            [
+              36.2574032,
+              -0.8855909
+            ],
+            [
+              36.2570961,
+              -0.8857471
+            ],
+            [
+              36.2561673,
+              -0.8862975
+            ],
+            [
+              36.2560001,
+              -0.8863195
+            ],
+            [
+              36.2557884,
+              -0.8858362
+            ],
+            [
+              36.2555631,
+              -0.8856887
+            ],
+            [
+              36.2549864,
+              -0.8855412
+            ],
+            [
+              36.2549408,
+              -0.88545
+            ],
+            [
+              36.2543266,
+              -0.885509
+            ],
+            [
+              36.2540745,
+              -0.8860373
+            ],
+            [
+              36.2550512,
+              -0.886644
+            ]
+          ]
+        ]
+      },
+      "id": "way/238279769"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/255555404",
+        "landuse": "industrial",
+        "name": "Olkaria II Geothermal Power Station",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:output:electricity": "104.5 MW",
+        "plant:source": "geothermal",
+        "power": "plant",
+        "wikidata": "Q7088234",
+        "wikipedia": "en:Olkaria II Geothermal Power Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.297436,
+              -0.8638611
+            ],
+            [
+              36.2991799,
+              -0.8666245
+            ],
+            [
+              36.3000025,
+              -0.8661254
+            ],
+            [
+              36.3001751,
+              -0.8665475
+            ],
+            [
+              36.3004154,
+              -0.8669634
+            ],
+            [
+              36.3012935,
+              -0.8668124
+            ],
+            [
+              36.3006341,
+              -0.8653676
+            ],
+            [
+              36.300705,
+              -0.8653121
+            ],
+            [
+              36.3007481,
+              -0.8651797
+            ],
+            [
+              36.3011271,
+              -0.8648932
+            ],
+            [
+              36.2997345,
+              -0.8625087
+            ],
+            [
+              36.297436,
+              -0.8638611
+            ]
+          ]
+        ]
+      },
+      "id": "way/255555404"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/362429315",
+        "landuse": "industrial",
+        "name": "Rabai Power Plant",
+        "operator": "Rabai Power",
+        "plant:method": "combustion",
+        "plant:output:electricity": "90 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "source": "https://rabaipower.com/",
+        "website": "https://rabaipower.com/",
+        "wikidata": "Q24236359"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.5623755,
+              -3.9318836
+            ],
+            [
+              39.5615559,
+              -3.9322482
+            ],
+            [
+              39.5621691,
+              -3.9332583
+            ],
+            [
+              39.5619902,
+              -3.934026
+            ],
+            [
+              39.5612757,
+              -3.9344581
+            ],
+            [
+              39.5615875,
+              -3.9350126
+            ],
+            [
+              39.5635494,
+              -3.9338182
+            ],
+            [
+              39.5629175,
+              -3.9328116
+            ],
+            [
+              39.5623755,
+              -3.9318836
+            ]
+          ]
+        ]
+      },
+      "id": "way/362429315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/374036051",
+        "name": "Sondu Miriu Hydroelectric Power Station",
+        "operator": "KenGen",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "60.7 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://www.kengen.co.ke/index.php/business/power-generation/kenya-power-plants.html",
+        "wikidata": "Q24039555"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.8523197,
+              -0.3418852
+            ],
+            [
+              34.8512714,
+              -0.3423368
+            ],
+            [
+              34.8510207,
+              -0.3423101
+            ],
+            [
+              34.8505262,
+              -0.3425237
+            ],
+            [
+              34.8510288,
+              -0.3437008
+            ],
+            [
+              34.8512877,
+              -0.3436822
+            ],
+            [
+              34.8528278,
+              -0.3429007
+            ],
+            [
+              34.8524634,
+              -0.3421193
+            ],
+            [
+              34.8523197,
+              -0.3418852
+            ]
+          ]
+        ]
+      },
+      "id": "way/374036051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/444000639",
+        "building": "yes",
+        "name": "Sang'oro Hydroelectric Power Station",
+        "operator": "KenGen",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "21.2 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://www.kengen.co.ke/index.php/business/power-generation/kenya-power-plants.html",
+        "wikidata": "Q24037383"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.8131623,
+              -0.3536313
+            ],
+            [
+              34.812879,
+              -0.3540304
+            ],
+            [
+              34.8131185,
+              -0.3542004
+            ],
+            [
+              34.8134018,
+              -0.3538012
+            ],
+            [
+              34.8131623,
+              -0.3536313
+            ]
+          ]
+        ]
+      },
+      "id": "way/444000639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/448329460",
+        "building": "industrial",
+        "name": "Turkwel Hydro Power Station",
+        "operator": "KenGen",
+        "plant:method": "water-storage",
+        "plant:output:electricity": "106 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "wikidata": "Q2460864",
+        "wikipedia": "en:Turkwel Hydroelectric Power Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3566166,
+              1.9127529
+            ],
+            [
+              35.3567631,
+              1.9127521
+            ],
+            [
+              35.3567653,
+              1.913163
+            ],
+            [
+              35.3566188,
+              1.9131638
+            ],
+            [
+              35.3566166,
+              1.9127529
+            ]
+          ]
+        ]
+      },
+      "id": "way/448329460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/578920143",
+        "location": "underground",
+        "name": "Kiambere Hydro Power Station",
+        "operator": "KenGen",
+        "plant:method": "water-storage",
+        "plant:output:electricity": "168 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "wikidata": "Q6403729",
+        "wikipedia": "en:Kiambere Hydroelectric Power Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.8873664,
+              -0.5996773
+            ],
+            [
+              37.8876681,
+              -0.6001325
+            ],
+            [
+              37.8879773,
+              -0.6005991
+            ],
+            [
+              37.8882623,
+              -0.6010291
+            ],
+            [
+              37.88959,
+              -0.6001413
+            ],
+            [
+              37.8894853,
+              -0.5999375
+            ],
+            [
+              37.8893271,
+              -0.5997095
+            ],
+            [
+              37.8891045,
+              -0.5994789
+            ],
+            [
+              37.8890026,
+              -0.5993769
+            ],
+            [
+              37.8888174,
+              -0.5992268
+            ],
+            [
+              37.8887123,
+              -0.5991744
+            ],
+            [
+              37.8882429,
+              -0.5989052
+            ],
+            [
+              37.8879484,
+              -0.5987467
+            ],
+            [
+              37.8873664,
+              -0.5996773
+            ]
+          ]
+        ]
+      },
+      "id": "way/578920143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/594647336",
+        "name": "Tagabi 1 Hydro Power Plant",
+        "operator": "Unilever Tea",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "0.852MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "1988"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.2195793,
+              -0.4513721
+            ],
+            [
+              35.2194707,
+              -0.4514404
+            ],
+            [
+              35.2194307,
+              -0.4514656
+            ],
+            [
+              35.2194705,
+              -0.4515289
+            ],
+            [
+              35.2196191,
+              -0.4514354
+            ],
+            [
+              35.2195793,
+              -0.4513721
+            ]
+          ]
+        ]
+      },
+      "id": "way/594647336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/623440570",
+        "addr:city": "Marsabit",
+        "addr:street": "Marsabit-Moyale road",
+        "landuse": "industrial",
+        "name": "Marsabit",
+        "plant:source": "diesel",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.9849663,
+              2.3321492
+            ],
+            [
+              37.98603,
+              2.3311809
+            ],
+            [
+              37.9861168,
+              2.3311018
+            ],
+            [
+              37.9868588,
+              2.3319129
+            ],
+            [
+              37.9856545,
+              2.3328905
+            ],
+            [
+              37.9849663,
+              2.3321492
+            ]
+          ]
+        ]
+      },
+      "id": "way/623440570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/657067240",
+        "landuse": "industrial",
+        "name": "Kipevu I power plant",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "combustion",
+        "plant:output:electricity": "73.5 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "source": "https://www.kplc.co.ke/AR2018/KPLC%20Annual%20Report%2017_12_2018_Wed.pdf",
+        "wikidata": "Q116743795"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.6361282,
+              -4.0405972
+            ],
+            [
+              39.6361377,
+              -4.0399342
+            ],
+            [
+              39.6360949,
+              -4.0398488
+            ],
+            [
+              39.6361011,
+              -4.0390687
+            ],
+            [
+              39.6360755,
+              -4.0390239
+            ],
+            [
+              39.6351367,
+              -4.0390105
+            ],
+            [
+              39.6350482,
+              -4.0390372
+            ],
+            [
+              39.6350173,
+              -4.0406288
+            ],
+            [
+              39.6361282,
+              -4.0405972
+            ]
+          ]
+        ]
+      },
+      "id": "way/657067240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/665372426",
+        "alt_name": "Athi River Power Plant",
+        "barrier": "fence",
+        "name": "Triumph Power Plant",
+        "operator": "Triumph Power",
+        "plant:method": "combustion",
+        "plant:output:electricity": "83 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "source": "http://www.triumphpower.co.ke/",
+        "start_date": "2016",
+        "website": "http://www.triumphpower.co.ke/",
+        "wikidata": "Q116743948"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.955909,
+              -1.4614696
+            ],
+            [
+              36.9528804,
+              -1.4599343
+            ],
+            [
+              36.952573,
+              -1.4604939
+            ],
+            [
+              36.9527728,
+              -1.4605909
+            ],
+            [
+              36.9527265,
+              -1.4606847
+            ],
+            [
+              36.9523148,
+              -1.4615173
+            ],
+            [
+              36.9536726,
+              -1.462218
+            ],
+            [
+              36.9550669,
+              -1.4629377
+            ],
+            [
+              36.955909,
+              -1.4614696
+            ]
+          ]
+        ]
+      },
+      "id": "way/665372426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/669537263",
+        "building": "industrial",
+        "location": "underground",
+        "name": "Kamburu Hydro Power Station",
+        "operator": "KenGen",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "94.2 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "wikidata": "Q6356428"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.6859821,
+              -0.8064025
+            ],
+            [
+              37.6860016,
+              -0.8064206
+            ],
+            [
+              37.6858742,
+              -0.8065576
+            ],
+            [
+              37.6860641,
+              -0.8067342
+            ],
+            [
+              37.686144,
+              -0.8066482
+            ],
+            [
+              37.6860896,
+              -0.8065976
+            ],
+            [
+              37.6860828,
+              -0.8066049
+            ],
+            [
+              37.6860259,
+              -0.806552
+            ],
+            [
+              37.6860801,
+              -0.8064936
+            ],
+            [
+              37.6861202,
+              -0.8065309
+            ],
+            [
+              37.6862798,
+              -0.8063592
+            ],
+            [
+              37.6861417,
+              -0.8062308
+            ],
+            [
+              37.6859821,
+              -0.8064025
+            ]
+          ]
+        ]
+      },
+      "id": "way/669537263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/696704118",
+        "barrier": "wall",
+        "name": "Garissa Solar Power Station",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "50 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "wikidata": "Q28223317",
+        "wikipedia": "en:Garissa Solar Power Station"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.5983107,
+              -0.3380435
+            ],
+            [
+              39.5999303,
+              -0.3400257
+            ],
+            [
+              39.6000317,
+              -0.3401552
+            ],
+            [
+              39.600057,
+              -0.3401875
+            ],
+            [
+              39.6001279,
+              -0.3402781
+            ],
+            [
+              39.6011521,
+              -0.34148
+            ],
+            [
+              39.6134011,
+              -0.3323405
+            ],
+            [
+              39.6106696,
+              -0.328542
+            ],
+            [
+              39.6032629,
+              -0.3342628
+            ],
+            [
+              39.6033059,
+              -0.3343184
+            ],
+            [
+              39.6030046,
+              -0.3345511
+            ],
+            [
+              39.6029617,
+              -0.3344955
+            ],
+            [
+              39.5983107,
+              -0.3380435
+            ]
+          ]
+        ]
+      },
+      "id": "way/696704118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/753235590",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.27085,
+              -0.8665431
+            ],
+            [
+              36.2716252,
+              -0.8677955
+            ],
+            [
+              36.2723708,
+              -0.8673772
+            ],
+            [
+              36.271888,
+              -0.8665753
+            ],
+            [
+              36.27085,
+              -0.8665431
+            ]
+          ]
+        ]
+      },
+      "id": "way/753235590"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/808553626",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.7021975,
+              -1.3489501
+            ],
+            [
+              36.7021843,
+              -1.3490404
+            ],
+            [
+              36.7022878,
+              -1.3490588
+            ],
+            [
+              36.7023027,
+              -1.3489659
+            ],
+            [
+              36.7021975,
+              -1.3489501
+            ]
+          ]
+        ]
+      },
+      "id": "way/808553626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/846596010",
+        "building": "industrial",
+        "layer": "1",
+        "name": "Kindaruma Hydro Power Station",
+        "operator": "KenGen",
+        "plant:output:electricity": "72 MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "source": "https://www.kengen.co.ke/index.php/business/power-generation/kenya-power-plants.html",
+        "wikidata": "Q16893451"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.8128317,
+              -0.8103178
+            ],
+            [
+              37.8128745,
+              -0.8102872
+            ],
+            [
+              37.812859,
+              -0.8102655
+            ],
+            [
+              37.8129103,
+              -0.8102288
+            ],
+            [
+              37.8128976,
+              -0.8102111
+            ],
+            [
+              37.8129326,
+              -0.810186
+            ],
+            [
+              37.812928,
+              -0.8101795
+            ],
+            [
+              37.8129392,
+              -0.8101714
+            ],
+            [
+              37.8129068,
+              -0.8101263
+            ],
+            [
+              37.8129159,
+              -0.8101198
+            ],
+            [
+              37.8126356,
+              -0.8097287
+            ],
+            [
+              37.8125032,
+              -0.8098235
+            ],
+            [
+              37.8128343,
+              -0.8102854
+            ],
+            [
+              37.8128173,
+              -0.8102976
+            ],
+            [
+              37.8128317,
+              -0.8103178
+            ]
+          ]
+        ]
+      },
+      "id": "way/846596010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/846600562",
+        "landuse": "industrial",
+        "name": "Muhoroni power plant",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "combustion",
+        "plant:output:electricity": "60 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "source": "https://www.gem.wiki/Muhoroni_power_station",
+        "wikidata": "Q116743912"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.1514498,
+              -0.2110852
+            ],
+            [
+              35.1523179,
+              -0.2109472
+            ],
+            [
+              35.1521704,
+              -0.210046
+            ],
+            [
+              35.1502284,
+              -0.2103223
+            ],
+            [
+              35.1502405,
+              -0.2109302
+            ],
+            [
+              35.1513932,
+              -0.2107381
+            ],
+            [
+              35.1514498,
+              -0.2110852
+            ]
+          ]
+        ]
+      },
+      "id": "way/846600562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/846602535",
+        "landuse": "industrial",
+        "name": "Kipevu III power plant",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "combustion",
+        "plant:output:electricity": "120 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "source": "https://www.kplc.co.ke/AR2018/KPLC%20Annual%20Report%2017_12_2018_Wed.pdf",
+        "wikidata": "Q116743797"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.6341524,
+              -4.0387269
+            ],
+            [
+              39.6344313,
+              -4.0383469
+            ],
+            [
+              39.6335542,
+              -4.0373704
+            ],
+            [
+              39.6324196,
+              -4.0370306
+            ],
+            [
+              39.6322775,
+              -4.0371376
+            ],
+            [
+              39.6322158,
+              -4.0372607
+            ],
+            [
+              39.6322707,
+              -4.0373382
+            ],
+            [
+              39.6323124,
+              -4.0373971
+            ],
+            [
+              39.6325189,
+              -4.0375068
+            ],
+            [
+              39.6336293,
+              -4.0387162
+            ],
+            [
+              39.6341524,
+              -4.0387269
+            ]
+          ]
+        ]
+      },
+      "id": "way/846602535"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/846697014",
+        "barrier": "fence",
+        "landuse": "industrial",
+        "name": "Gulf Energy Power Station",
+        "operator": "Gulf Power",
+        "plant:method": "combustion",
+        "plant:output:electricity": "80.32 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "source": "https://www.kplc.co.ke/AR2018/KPLC%20Annual%20Report%2017_12_2018_Wed.pdf",
+        "start_date": "2016",
+        "wikidata": "Q61014565"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.004571,
+              -1.4598381
+            ],
+            [
+              37.0054454,
+              -1.4586315
+            ],
+            [
+              37.0051396,
+              -1.4583661
+            ],
+            [
+              37.004748,
+              -1.4579934
+            ],
+            [
+              37.004182,
+              -1.4571782
+            ],
+            [
+              37.0032406,
+              -1.4583822
+            ],
+            [
+              37.0043993,
+              -1.4597148
+            ],
+            [
+              37.004571,
+              -1.4598381
+            ]
+          ]
+        ]
+      },
+      "id": "way/846697014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/846713552",
+        "landuse": "industrial",
+        "name": "Olkaria IV Geothermal Power Station",
+        "operator": "KenGen",
+        "plant:method": "thermal",
+        "plant:output:electricity": "149.9 MW",
+        "plant:source": "geothermal",
+        "power": "plant",
+        "wikidata": "Q25387983"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.3335328,
+              -0.9180074
+            ],
+            [
+              36.3345304,
+              -0.9188009
+            ],
+            [
+              36.3347214,
+              -0.9189525
+            ],
+            [
+              36.3357779,
+              -0.9175653
+            ],
+            [
+              36.3354471,
+              -0.9175634
+            ],
+            [
+              36.3354456,
+              -0.9175276
+            ],
+            [
+              36.3354441,
+              -0.9174918
+            ],
+            [
+              36.3353385,
+              -0.9174919
+            ],
+            [
+              36.3345873,
+              -0.9168445
+            ],
+            [
+              36.3338712,
+              -0.9173165
+            ],
+            [
+              36.3333857,
+              -0.9178448
+            ],
+            [
+              36.3335328,
+              -0.9180074
+            ]
+          ]
+        ]
+      },
+      "id": "way/846713552"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/846713576",
+        "landuse": "industrial",
+        "name": "Olkaria V Geothermal Power Station",
+        "operator": "KenGen",
+        "operator:wikidata": "Q1525124",
+        "plant:method": "thermal",
+        "plant:output:electricity": "172.3 MW",
+        "plant:source": "geothermal",
+        "power": "plant",
+        "wikidata": "Q48784352"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.352542,
+              -0.8999407
+            ],
+            [
+              36.3514423,
+              -0.898935
+            ],
+            [
+              36.3504047,
+              -0.8989973
+            ],
+            [
+              36.3503253,
+              -0.8990021
+            ],
+            [
+              36.3503703,
+              -0.9001111
+            ],
+            [
+              36.3502568,
+              -0.9001851
+            ],
+            [
+              36.3498692,
+              -0.9001928
+            ],
+            [
+              36.3498024,
+              -0.9001566
+            ],
+            [
+              36.3498012,
+              -0.9002048
+            ],
+            [
+              36.349805,
+              -0.9002597
+            ],
+            [
+              36.3498081,
+              -0.9003143
+            ],
+            [
+              36.3501903,
+              -0.9002948
+            ],
+            [
+              36.3502165,
+              -0.9003277
+            ],
+            [
+              36.3502129,
+              -0.9006024
+            ],
+            [
+              36.3508031,
+              -0.9006297
+            ],
+            [
+              36.3511575,
+              -0.9006661
+            ],
+            [
+              36.3514701,
+              -0.9007269
+            ],
+            [
+              36.3518055,
+              -0.9011458
+            ],
+            [
+              36.3519934,
+              -0.9012161
+            ],
+            [
+              36.3521987,
+              -0.9011851
+            ],
+            [
+              36.3524884,
+              -0.9009115
+            ],
+            [
+              36.352542,
+              -0.8999407
+            ]
+          ]
+        ]
+      },
+      "id": "way/846713576"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/871517823",
+        "name": "Iberafrica Power Station",
+        "operator": "Iberafrica",
+        "plant:method": "combustion",
+        "plant:output:electricity": "52.5 MW",
+        "plant:source": "oil",
+        "power": "plant",
+        "website": "https://iberafrica.co.ke",
+        "wikidata": "Q56373799"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.8851567,
+              -1.3010188
+            ],
+            [
+              36.8854649,
+              -1.3005208
+            ],
+            [
+              36.8849752,
+              -1.3005971
+            ],
+            [
+              36.8848235,
+              -1.299623
+            ],
+            [
+              36.8833051,
+              -1.2998256
+            ],
+            [
+              36.8835872,
+              -1.3018765
+            ],
+            [
+              36.8844496,
+              -1.3017571
+            ],
+            [
+              36.8843758,
+              -1.3011176
+            ],
+            [
+              36.8851567,
+              -1.3010188
+            ]
+          ]
+        ]
+      },
+      "id": "way/871517823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/968874277",
+        "building": "yes",
+        "name": "Metumi",
+        "operator": "KTDA",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "5.6MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "2019"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.9013896,
+              -0.6313001
+            ],
+            [
+              36.9013179,
+              -0.6313707
+            ],
+            [
+              36.9013809,
+              -0.6314346
+            ],
+            [
+              36.901342,
+              -0.6314729
+            ],
+            [
+              36.9013671,
+              -0.6314984
+            ],
+            [
+              36.901407,
+              -0.6315389
+            ],
+            [
+              36.9014629,
+              -0.6315957
+            ],
+            [
+              36.9015147,
+              -0.6316483
+            ],
+            [
+              36.9016253,
+              -0.6315395
+            ],
+            [
+              36.9013896,
+              -0.6313001
+            ]
+          ]
+        ]
+      },
+      "id": "way/968874277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1004203458",
+        "addr:city": "Thika",
+        "addr:street": "Thika Road",
+        "landuse": "industrial",
+        "name": "Thika (MELEC) MSD Power Plant",
+        "operator": "Thika Power",
+        "owner": "KPLC (Kenya Power and Lighting Company);Melec PowerGen Inc. (MPG)",
+        "plant:method": "combustion",
+        "plant:output:electricity": "87 MW",
+        "plant:source": "diesel",
+        "power": "plant",
+        "ref": "L.R No. 8380/2",
+        "source": "https://www.kplc.co.ke/AR2018/KPLC%20Annual%20Report%2017_12_2018_Wed.pdf",
+        "start_date": "2013-08-19",
+        "wikidata": "Q116743946"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.0508508,
+              -1.0618094
+            ],
+            [
+              37.0507638,
+              -1.0617019
+            ],
+            [
+              37.0509297,
+              -1.0615629
+            ],
+            [
+              37.0512383,
+              -1.0612819
+            ],
+            [
+              37.0514797,
+              -1.0610701
+            ],
+            [
+              37.051373,
+              -1.0609486
+            ],
+            [
+              37.0515981,
+              -1.0607516
+            ],
+            [
+              37.0519876,
+              -1.0612131
+            ],
+            [
+              37.0520425,
+              -1.0611566
+            ],
+            [
+              37.0518827,
+              -1.0603881
+            ],
+            [
+              37.0518696,
+              -1.06034
+            ],
+            [
+              37.0518382,
+              -1.0602955
+            ],
+            [
+              37.0512417,
+              -1.0596102
+            ],
+            [
+              37.0508108,
+              -1.0591152
+            ],
+            [
+              37.0500104,
+              -1.0606697
+            ],
+            [
+              37.0499615,
+              -1.0607633
+            ],
+            [
+              37.0497854,
+              -1.0611002
+            ],
+            [
+              37.0499566,
+              -1.0612968
+            ],
+            [
+              37.0505902,
+              -1.0620241
+            ],
+            [
+              37.050668,
+              -1.0619599
+            ],
+            [
+              37.0508508,
+              -1.0618094
+            ]
+          ]
+        ]
+      },
+      "id": "way/1004203458"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1141854126",
+        "barrier": "fence",
+        "name": "Alten Solar Power Station",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "44MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "wikidata": "Q60569535"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3696895,
+              0.4034063
+            ],
+            [
+              35.3696787,
+              0.4002118
+            ],
+            [
+              35.3799087,
+              0.3978462
+            ],
+            [
+              35.3805149,
+              0.4057987
+            ],
+            [
+              35.3734258,
+              0.4057692
+            ],
+            [
+              35.3734285,
+              0.4061877
+            ],
+            [
+              35.3743941,
+              0.4083307
+            ],
+            [
+              35.3744075,
+              0.4126087
+            ],
+            [
+              35.3728357,
+              0.4124639
+            ],
+            [
+              35.3706211,
+              0.4060882
+            ],
+            [
+              35.3696895,
+              0.4034063
+            ]
+          ]
+        ]
+      },
+      "id": "way/1141854126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1141854128",
+        "alt_name": "Selenkei Solar Farm",
+        "barrier": "fence",
+        "name": "Radiant Solar Power Station",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "40 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "wikidata": "Q63442596"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3644243,
+              0.4172273
+            ],
+            [
+              35.3646295,
+              0.4172783
+            ],
+            [
+              35.3646509,
+              0.4175291
+            ],
+            [
+              35.3663662,
+              0.417348
+            ],
+            [
+              35.3673479,
+              0.4192979
+            ],
+            [
+              35.3675759,
+              0.4218017
+            ],
+            [
+              35.3552458,
+              0.4228491
+            ],
+            [
+              35.3547791,
+              0.4174634
+            ],
+            [
+              35.363979,
+              0.4166802
+            ],
+            [
+              35.3644243,
+              0.4172273
+            ]
+          ]
+        ]
+      },
+      "id": "way/1141854128"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1141854129",
+        "alt_name": "Cedate Solar Farm",
+        "barrier": "fence",
+        "name": "Eldosol Solar Power Station",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "40 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "wikidata": "Q63442603"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3645705,
+              0.4162041
+            ],
+            [
+              35.3645852,
+              0.4164844
+            ],
+            [
+              35.354366,
+              0.417348
+            ],
+            [
+              35.353851,
+              0.4113079
+            ],
+            [
+              35.3611855,
+              0.4106641
+            ],
+            [
+              35.3612452,
+              0.4113286
+            ],
+            [
+              35.3649661,
+              0.4115546
+            ],
+            [
+              35.3659827,
+              0.4154531
+            ],
+            [
+              35.3651485,
+              0.4155309
+            ],
+            [
+              35.3652196,
+              0.4161196
+            ],
+            [
+              35.3645705,
+              0.4162041
+            ]
+          ]
+        ]
+      },
+      "id": "way/1141854129"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1141873295",
+        "name": "Malindi Solar Power Station",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "40 MW",
+        "plant:source": "solar",
+        "power": "plant",
+        "wikidata": "Q64216398"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.7434363,
+              -3.2089467
+            ],
+            [
+              39.7566462,
+              -3.2026989
+            ],
+            [
+              39.7609259,
+              -3.200732
+            ],
+            [
+              39.7607653,
+              -3.1942713
+            ],
+            [
+              39.7566408,
+              -3.1962208
+            ],
+            [
+              39.7433183,
+              -3.2022544
+            ],
+            [
+              39.7431412,
+              -3.2090726
+            ],
+            [
+              39.7434363,
+              -3.2089467
+            ]
+          ]
+        ]
+      },
+      "id": "way/1141873295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1204267825",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.8134463,
+              3.7402875
+            ],
+            [
+              34.8138005,
+              3.7401184
+            ],
+            [
+              34.8139042,
+              3.7403384
+            ],
+            [
+              34.8135515,
+              3.740507
+            ],
+            [
+              34.8134463,
+              3.7402875
+            ]
+          ]
+        ]
+      },
+      "id": "way/1204267825"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1213886814",
+        "fixme": "Is this the Unilever Tea hydroelectric plant?",
+        "name": "Kerenga 1 & 2",
+        "operator": "Unilever Tea",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "470kW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "1929"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.2359544,
+              -0.4169439
+            ],
+            [
+              35.2358568,
+              -0.417137
+            ],
+            [
+              35.235934,
+              -0.4171776
+            ],
+            [
+              35.2360128,
+              -0.4170217
+            ],
+            [
+              35.2360336,
+              -0.4169805
+            ],
+            [
+              35.2359544,
+              -0.4169439
+            ]
+          ]
+        ]
+      },
+      "id": "way/1213886814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1213890260",
+        "name": "Kapsongoi",
+        "operator": "James Findlay Tea",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "2.4MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "1934"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.2520271,
+              -0.4097618
+            ],
+            [
+              35.2518979,
+              -0.4098698
+            ],
+            [
+              35.2519563,
+              -0.4099335
+            ],
+            [
+              35.2520189,
+              -0.4098778
+            ],
+            [
+              35.2520837,
+              -0.4098202
+            ],
+            [
+              35.2520271,
+              -0.4097618
+            ]
+          ]
+        ]
+      },
+      "id": "way/1213890260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1213903874",
+        "name": "Jamji 1",
+        "operator": "Unilever Tea",
+        "plant:method": "water-storage",
+        "plant:output:electricity": "313kw",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "1948"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.1892166,
+              -0.4683121
+            ],
+            [
+              35.1891466,
+              -0.4683547
+            ],
+            [
+              35.1891927,
+              -0.4684335
+            ],
+            [
+              35.1892241,
+              -0.4684873
+            ],
+            [
+              35.1892917,
+              -0.4684448
+            ],
+            [
+              35.1892567,
+              -0.4683797
+            ],
+            [
+              35.1892166,
+              -0.4683121
+            ]
+          ]
+        ]
+      },
+      "id": "way/1213903874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1213903877",
+        "name": "Jamji 2",
+        "operator": "Unilever Tea",
+        "plant:output:electricity": "313kW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "1948"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.188922,
+              -0.4687374
+            ],
+            [
+              35.1889903,
+              -0.4687204
+            ],
+            [
+              35.1890134,
+              -0.4687782
+            ],
+            [
+              35.189032,
+              -0.4688247
+            ],
+            [
+              35.1890016,
+              -0.4688323
+            ],
+            [
+              35.1890453,
+              -0.468965
+            ],
+            [
+              35.1891439,
+              -0.4689252
+            ],
+            [
+              35.1890548,
+              -0.4686388
+            ],
+            [
+              35.1889068,
+              -0.46869
+            ],
+            [
+              35.188922,
+              -0.4687374
+            ]
+          ]
+        ]
+      },
+      "id": "way/1213903877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1213903885",
+        "name": "Jamji Solar Plant",
+        "operator": "Unilever Tea",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "0.619MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.1812387,
+              -0.4695724
+            ],
+            [
+              35.1812481,
+              -0.4703195
+            ],
+            [
+              35.1825323,
+              -0.4703195
+            ],
+            [
+              35.1826397,
+              -0.4701
+            ],
+            [
+              35.1826211,
+              -0.4696564
+            ],
+            [
+              35.1824996,
+              -0.4695583
+            ],
+            [
+              35.1812387,
+              -0.4695724
+            ]
+          ]
+        ]
+      },
+      "id": "way/1213903885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1213917819",
+        "name": "Imenti Tea",
+        "operator": "KTDA",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "0.9MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "2009"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              37.5930823,
+              -0.0478271
+            ],
+            [
+              37.5930925,
+              -0.04788
+            ],
+            [
+              37.5931047,
+              -0.0479328
+            ],
+            [
+              37.5932002,
+              -0.0479145
+            ],
+            [
+              37.5931905,
+              -0.0478676
+            ],
+            [
+              37.5931779,
+              -0.0478068
+            ],
+            [
+              37.5930823,
+              -0.0478271
+            ]
+          ]
+        ]
+      },
+      "id": "way/1213917819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1214001720",
+        "name": "Chania",
+        "operator": "KTDA",
+        "plant:method": "run-of-the-river",
+        "plant:output:electricity": "1MW",
+        "plant:source": "hydro",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.8092847,
+              -0.8569821
+            ],
+            [
+              36.8092334,
+              -0.857121
+            ],
+            [
+              36.8093046,
+              -0.8571478
+            ],
+            [
+              36.8093536,
+              -0.8570077
+            ],
+            [
+              36.8092847,
+              -0.8569821
+            ]
+          ]
+        ]
+      },
+      "id": "way/1214001720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1214008286",
+        "name": "Gura",
+        "operator": "KTDA",
+        "plant:output:electricity": "5.8MW",
+        "plant:source": "hydro",
+        "power": "plant",
+        "start_date": "2022"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.8808599,
+              -0.5002646
+            ],
+            [
+              36.8810316,
+              -0.5004416
+            ],
+            [
+              36.8811739,
+              -0.5003049
+            ],
+            [
+              36.880994,
+              -0.5001305
+            ],
+            [
+              36.8808599,
+              -0.5002646
+            ]
+          ]
+        ]
+      },
+      "id": "way/1214008286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1335970357",
+        "landuse": "industrial",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.9937721,
+              -0.4075253
+            ],
+            [
+              36.9942738,
+              -0.4073093
+            ],
+            [
+              36.9941558,
+              -0.4070351
+            ],
+            [
+              36.993654,
+              -0.4072512
+            ],
+            [
+              36.9937721,
+              -0.4075253
+            ]
+          ]
+        ]
+      },
+      "id": "way/1335970357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1369665610",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              40.9216113,
+              2.8206177
+            ],
+            [
+              40.9215738,
+              2.8203913
+            ],
+            [
+              40.9218299,
+              2.8203511
+            ],
+            [
+              40.9218541,
+              2.8205721
+            ],
+            [
+              40.9216113,
+              2.8206177
+            ]
+          ]
+        ]
+      },
+      "id": "way/1369665610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1369683259",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              40.874045,
+              3.5509702
+            ],
+            [
+              40.8740445,
+              3.5505122
+            ],
+            [
+              40.8741965,
+              3.5504691
+            ],
+            [
+              40.8741979,
+              3.5510116
+            ],
+            [
+              40.874045,
+              3.5509702
+            ]
+          ]
+        ]
+      },
+      "id": "way/1369683259"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1395060855",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.0819672,
+              0.2547406
+            ],
+            [
+              35.0818033,
+              0.2545408
+            ],
+            [
+              35.0819109,
+              0.2544389
+            ],
+            [
+              35.0820909,
+              0.2546444
+            ],
+            [
+              35.0819672,
+              0.2547406
+            ]
+          ]
+        ]
+      },
+      "id": "way/1395060855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1395060856",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.0828098,
+              0.2581383
+            ],
+            [
+              35.0829405,
+              0.258039
+            ],
+            [
+              35.0829828,
+              0.2581034
+            ],
+            [
+              35.0831216,
+              0.2580236
+            ],
+            [
+              35.0832725,
+              0.2582382
+            ],
+            [
+              35.083137,
+              0.2583301
+            ],
+            [
+              35.0830934,
+              0.258267
+            ],
+            [
+              35.0829627,
+              0.2583508
+            ],
+            [
+              35.0828098,
+              0.2581383
+            ]
+          ]
+        ]
+      },
+      "id": "way/1395060856"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1395074730",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.9224887,
+              -1.1394855
+            ],
+            [
+              36.9223157,
+              -1.1398127
+            ],
+            [
+              36.9230492,
+              -1.1401492
+            ],
+            [
+              36.9232249,
+              -1.1398274
+            ],
+            [
+              36.9224887,
+              -1.1394855
+            ]
+          ]
+        ]
+      },
+      "id": "way/1395074730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1395074731",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.9227361,
+              -1.1388989
+            ],
+            [
+              36.922602,
+              -1.1391825
+            ],
+            [
+              36.9230452,
+              -1.1393903
+            ],
+            [
+              36.9230781,
+              -1.1393005
+            ],
+            [
+              36.9231331,
+              -1.1393226
+            ],
+            [
+              36.9231773,
+              -1.1392153
+            ],
+            [
+              36.9231331,
+              -1.1391899
+            ],
+            [
+              36.9231793,
+              -1.139102
+            ],
+            [
+              36.9227361,
+              -1.1388989
+            ]
+          ]
+        ]
+      },
+      "id": "way/1395074731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1409736972",
+        "name": "Standard Rolling Mills",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.5292485,
+              -3.9232447
+            ],
+            [
+              39.5290902,
+              -3.9237104
+            ],
+            [
+              39.5291315,
+              -3.9238306
+            ],
+            [
+              39.5292431,
+              -3.923903
+            ],
+            [
+              39.529404,
+              -3.9239994
+            ],
+            [
+              39.5295324,
+              -3.9243053
+            ],
+            [
+              39.5296383,
+              -3.9245576
+            ],
+            [
+              39.5296937,
+              -3.9246897
+            ],
+            [
+              39.5298144,
+              -3.92477
+            ],
+            [
+              39.5300639,
+              -3.9249306
+            ],
+            [
+              39.5310053,
+              -3.9245024
+            ],
+            [
+              39.5304099,
+              -3.923903
+            ],
+            [
+              39.5292485,
+              -3.9232447
+            ]
+          ]
+        ]
+      },
+      "id": "way/1409736972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1422787168",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.7457772,
+              0.0679613
+            ],
+            [
+              35.7461574,
+              0.0681571
+            ],
+            [
+              35.7460623,
+              0.0683417
+            ],
+            [
+              35.7460473,
+              0.068334
+            ],
+            [
+              35.7460313,
+              0.0683651
+            ],
+            [
+              35.7459459,
+              0.0683211
+            ],
+            [
+              35.7459331,
+              0.0683461
+            ],
+            [
+              35.7458301,
+              0.068293
+            ],
+            [
+              35.7458207,
+              0.0683113
+            ],
+            [
+              35.7458338,
+              0.0683181
+            ],
+            [
+              35.7458259,
+              0.0683333
+            ],
+            [
+              35.7457287,
+              0.0682833
+            ],
+            [
+              35.7457644,
+              0.0682139
+            ],
+            [
+              35.7456717,
+              0.0681662
+            ],
+            [
+              35.7457772,
+              0.0679613
+            ]
+          ]
+        ]
+      },
+      "id": "way/1422787168"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424432979",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.8301362,
+              -0.1959672
+            ],
+            [
+              36.8309569,
+              -0.1976248
+            ],
+            [
+              36.8316382,
+              -0.1972278
+            ],
+            [
+              36.8307316,
+              -0.1956292
+            ],
+            [
+              36.8301362,
+              -0.1959672
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424432979"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424433491",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.7676727,
+              -3.9119603
+            ],
+            [
+              39.7676861,
+              -3.9128862
+            ],
+            [
+              39.7687402,
+              -3.9128514
+            ],
+            [
+              39.7687349,
+              -3.9119282
+            ],
+            [
+              39.7676727,
+              -3.9119603
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424433491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424433639",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.0477332,
+              -0.5435361
+            ],
+            [
+              35.0476661,
+              -0.5441758
+            ],
+            [
+              35.0488523,
+              -0.5442482
+            ],
+            [
+              35.0488725,
+              -0.5436763
+            ],
+            [
+              35.0477332,
+              -0.5435361
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424433639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424434508",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.7286063,
+              -3.9861105
+            ],
+            [
+              39.7285876,
+              -3.9878256
+            ],
+            [
+              39.7279787,
+              -3.9890297
+            ],
+            [
+              39.727461,
+              -3.9901214
+            ],
+            [
+              39.7263077,
+              -3.9925188
+            ],
+            [
+              39.7265786,
+              -3.9930192
+            ],
+            [
+              39.7272733,
+              -3.9924439
+            ],
+            [
+              39.7296229,
+              -3.9881869
+            ],
+            [
+              39.7296604,
+              -3.9874216
+            ],
+            [
+              39.7299045,
+              -3.9868891
+            ],
+            [
+              39.7299153,
+              -3.9862844
+            ],
+            [
+              39.7297141,
+              -3.9860998
+            ],
+            [
+              39.7286063,
+              -3.9861105
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424434508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424434509",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.7296229,
+              -3.9797128
+            ],
+            [
+              39.7280431,
+              -3.982517
+            ],
+            [
+              39.7276783,
+              -3.9844248
+            ],
+            [
+              39.7300494,
+              -3.9844703
+            ],
+            [
+              39.7304088,
+              -3.9797155
+            ],
+            [
+              39.7296229,
+              -3.9797128
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424434509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424434522",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.7562908,
+              -3.9262244
+            ],
+            [
+              39.7565415,
+              -3.9267127
+            ],
+            [
+              39.7572872,
+              -3.9262926
+            ],
+            [
+              39.7570203,
+              -3.9258083
+            ],
+            [
+              39.7562908,
+              -3.9262244
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424434522"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424434537",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.7185776,
+              -4.0228152
+            ],
+            [
+              39.718937,
+              -4.0227564
+            ],
+            [
+              39.7187304,
+              -4.021737
+            ],
+            [
+              39.7195914,
+              -4.0215791
+            ],
+            [
+              39.7194895,
+              -4.0213276
+            ],
+            [
+              39.7186741,
+              -4.0214694
+            ],
+            [
+              39.7186446,
+              -4.0213811
+            ],
+            [
+              39.718304,
+              -4.0214453
+            ],
+            [
+              39.7185776,
+              -4.0228152
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424434537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424434698",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.9274415,
+              0.1554285
+            ],
+            [
+              34.9278599,
+              0.1542912
+            ],
+            [
+              34.9284607,
+              0.1544843
+            ],
+            [
+              34.9285519,
+              0.1549081
+            ],
+            [
+              34.9282783,
+              0.1557557
+            ],
+            [
+              34.9274415,
+              0.1554285
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424434698"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424434858",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.581168,
+              -3.9180735
+            ],
+            [
+              39.580543,
+              -3.9193981
+            ],
+            [
+              39.5807335,
+              -3.9194891
+            ],
+            [
+              39.5806423,
+              -3.9197326
+            ],
+            [
+              39.58083,
+              -3.9197995
+            ],
+            [
+              39.5809615,
+              -3.9195426
+            ],
+            [
+              39.5811146,
+              -3.9195887
+            ],
+            [
+              39.5816696,
+              -3.9182983
+            ],
+            [
+              39.581168,
+              -3.9180735
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424434858"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424434944",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.4007628,
+              -0.6646714
+            ],
+            [
+              36.4008647,
+              -0.6660472
+            ],
+            [
+              36.4016908,
+              -0.6660231
+            ],
+            [
+              36.4017418,
+              -0.6647786
+            ],
+            [
+              36.4015943,
+              -0.6647599
+            ],
+            [
+              36.4015487,
+              -0.6645265
+            ],
+            [
+              36.4013663,
+              -0.6645238
+            ],
+            [
+              36.4013556,
+              -0.6646526
+            ],
+            [
+              36.4007628,
+              -0.6646714
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424434944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424444955",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.9094494,
+              -1.1158414
+            ],
+            [
+              36.9098737,
+              -1.1142559
+            ],
+            [
+              36.9090377,
+              -1.1140123
+            ],
+            [
+              36.908519,
+              -1.1155768
+            ],
+            [
+              36.9094494,
+              -1.1158414
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424444955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424445067",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.2637449,
+              -0.4327891
+            ],
+            [
+              35.2637556,
+              -0.4342562
+            ],
+            [
+              35.2649331,
+              -0.4342535
+            ],
+            [
+              35.2649224,
+              -0.432781
+            ],
+            [
+              35.2637449,
+              -0.4327891
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424445067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424445339",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              40.1395449,
+              -3.0353092
+            ],
+            [
+              40.1395369,
+              -3.0349932
+            ],
+            [
+              40.138818,
+              -3.03502
+            ],
+            [
+              40.1388153,
+              -3.035261
+            ],
+            [
+              40.1384854,
+              -3.0352744
+            ],
+            [
+              40.1385123,
+              -3.0361155
+            ],
+            [
+              40.1395905,
+              -3.0360887
+            ],
+            [
+              40.1395449,
+              -3.0353092
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424445339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424445579",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "5 MW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.9478503,
+              -1.4215322
+            ],
+            [
+              36.9480273,
+              -1.422216
+            ],
+            [
+              36.9482955,
+              -1.422838
+            ],
+            [
+              36.9489741,
+              -1.4240178
+            ],
+            [
+              36.9494596,
+              -1.4245568
+            ],
+            [
+              36.9498807,
+              -1.4249215
+            ],
+            [
+              36.9508436,
+              -1.4255489
+            ],
+            [
+              36.9510367,
+              -1.4253719
+            ],
+            [
+              36.9506988,
+              -1.4249054
+            ],
+            [
+              36.9496071,
+              -1.4230794
+            ],
+            [
+              36.9487622,
+              -1.4211729
+            ],
+            [
+              36.9478503,
+              -1.4215322
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424445579"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1424445691",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.8787332,
+              -0.2318508
+            ],
+            [
+              35.8782823,
+              -0.2320217
+            ],
+            [
+              35.8780449,
+              -0.2325344
+            ],
+            [
+              35.879094,
+              -0.2331088
+            ],
+            [
+              35.8793504,
+              -0.2325581
+            ],
+            [
+              35.8798108,
+              -0.232392
+            ],
+            [
+              35.8803188,
+              -0.2313191
+            ],
+            [
+              35.8792602,
+              -0.2308017
+            ],
+            [
+              35.8787332,
+              -0.2318508
+            ]
+          ]
+        ]
+      },
+      "id": "way/1424445691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1426603147",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.222294,
+              -0.4822206
+            ],
+            [
+              35.2243835,
+              -0.483221
+            ],
+            [
+              35.2243432,
+              -0.4821884
+            ],
+            [
+              35.2239275,
+              -0.4819578
+            ],
+            [
+              35.223662,
+              -0.4819175
+            ],
+            [
+              35.2234447,
+              -0.4819765
+            ],
+            [
+              35.2231926,
+              -0.4819846
+            ],
+            [
+              35.2230477,
+              -0.4819524
+            ],
+            [
+              35.2227044,
+              -0.4819014
+            ],
+            [
+              35.2225783,
+              -0.4819283
+            ],
+            [
+              35.2224442,
+              -0.4819953
+            ],
+            [
+              35.2223021,
+              -0.4820302
+            ],
+            [
+              35.222294,
+              -0.4822206
+            ]
+          ]
+        ]
+      },
+      "id": "way/1426603147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1426610903",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              40.9218004,
+              2.8208467
+            ],
+            [
+              40.9227124,
+              2.8211843
+            ],
+            [
+              40.9224254,
+              2.821937
+            ],
+            [
+              40.9215429,
+              2.8216022
+            ],
+            [
+              40.9218004,
+              2.8208467
+            ]
+          ]
+        ]
+      },
+      "id": "way/1426610903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1426610905",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "yes",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.3222841,
+              -0.3759116
+            ],
+            [
+              35.3235018,
+              -0.3749487
+            ],
+            [
+              35.3234965,
+              -0.3732643
+            ],
+            [
+              35.322268,
+              -0.3742674
+            ],
+            [
+              35.3222841,
+              -0.3759116
+            ]
+          ]
+        ]
+      },
+      "id": "way/1426610905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1431984217",
+        "name": "Kilaguni Serena Safari Lodge",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "322kW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              38.0620428,
+              -2.905632
+            ],
+            [
+              38.0619444,
+              -2.9060551
+            ],
+            [
+              38.0627971,
+              -2.9062616
+            ],
+            [
+              38.0628888,
+              -2.905824
+            ],
+            [
+              38.0620428,
+              -2.905632
+            ]
+          ]
+        ]
+      },
+      "id": "way/1431984217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1473012259",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              39.8697596,
+              3.8385483
+            ],
+            [
+              39.869599,
+              3.8382866
+            ],
+            [
+              39.869782,
+              3.8381548
+            ],
+            [
+              39.8699446,
+              3.8384286
+            ],
+            [
+              39.8697596,
+              3.8385483
+            ]
+          ]
+        ]
+      },
+      "id": "way/1473012259"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1497614688",
+        "floating": "yes",
+        "plant:method": "photovoltaic",
+        "plant:output:electricity": "69 kW",
+        "plant:source": "solar",
+        "power": "plant"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              36.4724135,
+              -0.657342
+            ],
+            [
+              36.4725364,
+              -0.6575311
+            ],
+            [
+              36.4727197,
+              -0.6574121
+            ],
+            [
+              36.4725968,
+              -0.657223
+            ],
+            [
+              36.4724135,
+              -0.657342
+            ]
+          ]
+        ]
+      },
+      "id": "way/1497614688"
+    }
+  ]
+}

@@ -21,7 +21,6 @@ Pipeline:
   10. Output MATPOWER branch CSV (topology; R/X/B/ratings to be added later)
         – includes substation names, distances, and removes same-bus loops
   11. Output island buses CSV (buses with no lines connected)
-  12. Plot topology for visual sanity check
 
 NOTE: Run create_buses_new.py before this script.  The enriched bus CSV it
 produces (matpower_{region}_buses.csv) must contain 'voltage_tag' and
@@ -73,43 +72,6 @@ SOUTHMOST_LAT = config.REGION_BBOX[1]  # southernmost latitude  (lower edge of b
 WESTMOST_LON  = config.REGION_BBOX[0]  # westernmost longitude  (left  edge of bbox)
 EASTMOST_LON  = config.REGION_BBOX[2]  # easternmost longitude  (right edge of bbox)
 
-# --------------- Bus-assignment distance threshold -----------
-# Geodesic distance (km) within which a line endpoint must fall to be
-# assigned a bus.  Endpoints farther than this get bus = None (cross-border
-# or no matching substation in the model).
-#
-# Physical rationale: OSM tower locations are typically within a few
-# hundred metres of the real substation centroid; imagery offsets add
-# further error.  5 km captures legitimate connections while avoiding
-# false matches to distant substations 
-# (Typical inter-substation spacing is typically 30–100 km on the 161/330 kV backbone).
-#
-# Tune upward (~10 km) if many endpoints go unmatched;
-# tune downward (~2 km) if you see too many false matches.
-BUS_ASSIGN_THRESHOLD_KM = 5.0
-
-
-
-# --------------- Segment merge tolerances --------------------
-# Two OSM segment endpoints are treated as "the same node" if they are
-# within MERGE_TOLERANCE_DEG degrees of each other.
-#
-# We use a larger tolerance (0.005° ≈ 550 m) because different OSM
-# contributors sometimes place the shared node of two adjacent ways at
-# slightly different coordinates.  A naïve 0.001° tolerance misses many
-# of these.
-#
-# Why this is now safe to increase:
-#   The merge step runs AFTER a preliminary bus-assignment pass (Step 6)
-#   that identifies which junction points are at substations.  The merge
-#   algorithm refuses to merge two segments whose shared junction is a
-#   known substation, so raising the tolerance can no longer accidentally
-#   join AB + BC into AC when B is a substation.
-#
-# Tune higher (e.g. 0.01°) if chains of short OSM ways still go unmerged;
-# tune lower if unrelated nearby segments are being merged by mistake.
-MERGE_TOLERANCE_DEG = 0.01   # 0.01° ≈ 1.1 km
-
 # --------------- Junction detection threshold ----------------
 # Used ONLY in Step 7 (preliminary pass) to decide whether a line endpoint
 # is truly at a substation.  This is kept intentionally tight so that
@@ -132,6 +94,42 @@ MERGE_TOLERANCE_DEG = 0.01   # 0.01° ≈ 1.1 km
 # centroid, so they are correctly left un-flagged.
 JUNCTION_DETECTION_THRESHOLD_KM = 0.5  # 0.5 km
 
+# --------------- Segment merge tolerances --------------------
+# Two OSM segment endpoints are treated as "the same node" if they are
+# within MERGE_TOLERANCE_DEG degrees of each other.
+#
+# We use a larger tolerance (0.005° ≈ 550 m) because different OSM
+# contributors sometimes place the shared node of two adjacent ways at
+# slightly different coordinates.  A naïve 0.001° tolerance misses many
+# of these.
+#
+# Why this is now safe to increase:
+#   The merge step runs AFTER a preliminary bus-assignment pass (Step 6)
+#   that identifies which junction points are at substations.  The merge
+#   algorithm refuses to merge two segments whose shared junction is a
+#   known substation, so raising the tolerance can no longer accidentally
+#   join AB + BC into AC when B is a substation.
+#
+# Tune higher (e.g. 0.01°) if chains of short OSM ways still go unmerged;
+# tune lower if unrelated nearby segments are being merged by mistake.
+MERGE_TOLERANCE_DEG = 0.01   # 0.005° ≈ 0.55 km
+
+# --------------- Bus-assignment distance threshold -----------
+# Geodesic distance (km) within which a line endpoint must fall to be
+# assigned a bus.  Endpoints farther than this get bus = None (cross-border
+# or no matching substation in the model).
+#
+# Physical rationale: OSM tower locations are typically within a few
+# hundred metres of the real substation centroid; imagery offsets add
+# further error.  5 km captures legitimate connections while avoiding
+# false matches to distant substations 
+# (Typical inter-substation spacing is typically 30–100 km on the 161/330 kV backbone).
+#
+# Tune upward (~10 km) if many endpoints go unmatched;
+# tune downward (~2 km) if you see too many false matches.
+BUS_ASSIGN_THRESHOLD_KM = 10.0
+
+
 # --------------- Trajectory extrapolation parameters --------
 # Used as a secondary assignment pass when proximity-only matching fails.
 # The line's approach bearing is projected forward and nearby buses are scored
@@ -140,7 +138,6 @@ JUNCTION_DETECTION_THRESHOLD_KM = 0.5  # 0.5 km
 # TRAJECTORY_N_TAIL: tail/head coordinates averaged for bearing estimation.
 #   5 points span ~0.5–3 km of tower spacing, giving a stable bearing while
 #   capturing local curvature near the endpoint.
-#   [cf. Matisziw & Murray 2009, "Modeling network interdependencies"]
 #
 # TRAJECTORY_SEARCH_RADIUS_KM: candidate bus search radius.
 #   10 km covers the typical GPS offset and right-of-way meander for HV lines
@@ -156,11 +153,23 @@ JUNCTION_DETECTION_THRESHOLD_KM = 0.5  # 0.5 km
 #   from the line centreline.  Buses > 5 km cross-track are rejected.
 TRAJECTORY_N_TAIL           = 5      # tail coordinates for bearing estimation
 TRAJECTORY_SEARCH_RADIUS_KM = 10.0   # candidate search radius (km)
-PROJECTION_KM               = 150.0  # projected ray length (km)
+PROJECTION_KM               = 20.0  # projected ray length (km)
 CROSS_TRACK_THRESHOLD_KM    = 5.0    # max cross-track deviation to auto-accept
 
 # Attribute columns that must agree (when both are non-null) before two
 # adjacent OSM segments are merged into one.
+# --------------- Parallel-line merge guard -------------------------
+# When two segments meet at a junction, compute the bearing change between
+# A's approach direction and B's departure direction.  If the change is
+# less than MERGE_ANGLE_MIN_DEG (lines are heading in the same direction),
+# the merge is rejected because the segments may be separate parallel
+# circuits rather than a single split line.
+#
+# Note: a valid forward chain also has a small bearing change on straight
+# sections.  Tune this threshold upward if too many real chains go unmerged;
+# the unmatched segments can always be joined manually in resolve_unmatched.py.
+MERGE_ANGLE_MIN_DEG = 0.0   # degrees
+
 MERGE_MATCH_COLS = ["voltage", "operator", "cables", "circuits", "frequency"]
 
 # Informational columns used to detect "junk" rows in Step 3.
@@ -176,7 +185,6 @@ INFO_COLS = ["cables", "voltage", "circuits", "frequency", "operator", "source"]
 # Default = 5.  Set higher if your data has genuinely short parallel segments
 # that should still be deduplicated.
 MAX_DEDUP_COORDS = 5
-
 
 # ============================================================
 # HELPER FUNCTIONS
@@ -211,6 +219,23 @@ def attrs_compatible(row_a: pd.Series, row_b: pd.Series) -> bool:
         if not a_null and not b_null and str(a).strip() != str(b).strip():
             return False
     return True
+
+
+def _junction_angle(a_coords: list, b_coords: list) -> float:
+    """Angle (0–180°) between A's approach bearing and B's departure bearing.
+
+    A small value means the two segments are heading in the same direction
+    (potentially parallel circuits). A large value means they connect at
+    a corner or reversed junction.
+    """
+    if len(a_coords) < 2 or len(b_coords) < 2:
+        return 180.0  # can't compute; default to allowing the merge
+    a_bear = _compute_bearing(a_coords[-2][0], a_coords[-2][1],
+                               a_coords[-1][0], a_coords[-1][1])
+    b_bear = _compute_bearing(b_coords[0][0], b_coords[0][1],
+                               b_coords[1][0], b_coords[1][1])
+    diff = abs(a_bear - b_bear) % 360
+    return min(diff, 360 - diff)
 
 
 def run_merge_pass(gdf: gpd.GeoDataFrame,
@@ -292,6 +317,10 @@ def run_merge_pass(gdf: gpd.GeoDataFrame,
             # Hash-collision guard: verify the junction is actually close
             if not coords_match(a_used[-1], b_used[0]):
                 continue
+            # Parallel-line guard: if both segments head in nearly the same
+            # direction they may be separate parallel circuits, not a chain.
+            if _junction_angle(a_used, b_used) < MERGE_ANGLE_MIN_DEG:
+                continue
             if not attrs_compatible(row_a, row_b):
                 continue
 
@@ -365,17 +394,16 @@ def find_nearest_bus(endpoint_lonlat: tuple,
     -------------------
     1. Geodesic distance ≤ threshold_km.
     2. Voltage match: if BOTH the line voltage and the bus voltage are known,
-       the two voltage lists must share at least one level.  This handles
-       transformer buses (e.g. a bus tagged '161000;330000' matches a 161 kV
-       or 330 kV line).  If either voltage is unknown, only proximity matters.
+       the bus voltage (single value in Volts from base_kV) must appear in
+       the line's voltage list.  If either is unknown, only proximity matters.
 
     Why None for unmatched endpoints?
     ----------------------------------
     If no qualifying bus is found within threshold_km the endpoint is either
-    cross-border or belongs to a substation not yet in the dataset.  The
-    caller handles these cases explicitly via reverse geocoding.
+    cross-border or belongs to a substation not yet in the dataset.
     """
-    line_v_list = parse_voltage_tag(line_voltage_tag)
+    line_v_list  = parse_voltage_tag(line_voltage_tag)
+    line_v_known = len(line_v_list) > 0
 
     best_pos      = None
     best_dist_km  = float("inf")
@@ -392,12 +420,12 @@ def find_nearest_bus(endpoint_lonlat: tuple,
         if dist_km > threshold_km:
             continue
 
-        bv_list      = parse_voltage_tag(bv)
-        bv_known     = len(bv_list) > 0
-        line_v_known = len(line_v_list) > 0
-
+        # Each bus has a single voltage (base_kV * 1000, in Volts).
+        bv_known = (bv is not None
+                    and not (isinstance(bv, float) and np.isnan(bv))
+                    and float(bv) > 0)
         if bv_known and line_v_known:
-            if not set(line_v_list).intersection(bv_list):
+            if int(float(bv)) not in set(line_v_list):
                 continue
 
         if dist_km < best_dist_km:
@@ -517,9 +545,12 @@ def _trajectory_match(
         dist_km = geodesic((ep[1], ep[0]), (bcoord[1], bcoord[0])).km
         if dist_km > TRAJECTORY_SEARCH_RADIUS_KM:
             continue
-        bv_list = parse_voltage_tag(bv)
-        if bv_list and line_v_list and not set(line_v_list).intersection(bv_list):
-            continue
+        bv_known = (bv is not None
+                    and not (isinstance(bv, float) and np.isnan(bv))
+                    and float(bv) > 0)
+        if bv_known and line_v_list:
+            if int(float(bv)) not in set(line_v_list):
+                continue
         bc = (float(bcoord[0]), float(bcoord[1]))
         if not _is_ahead(ep, proj, bc):
             continue
@@ -649,15 +680,10 @@ data_buses = pd.read_csv(WORK_DIR / f"matpower_{region}_buses.csv")
 # Parse bus coordinates: stored as the string "(lon, lat)" in the CSV.
 bus_coords = [np.array(eval(c)) for c in data_buses["coordinates"]]
 
-# Use the compound voltage_tag column (produced by create_buses_new.py) for
-# voltage matching.  This correctly handles transformer substations tagged
-# '330000;161000': a 161 kV line will match such a bus even though its
-# base_kV (primary voltage) is 330000.
-# Fall back to base_kV if voltage_tag is not present (older bus CSV).
-if "voltage_tag" in data_buses.columns:
-    bus_voltages = data_buses["voltage_tag"].values
-else:
-    bus_voltages = data_buses["base_kV"].values
+# Each bus has a single voltage level (create_buses_new.py splits
+# transformer substations into one bus per voltage).  Use base_kV * 1000
+# to get Volts for comparison with OSM line voltage tags.
+bus_voltages = (data_buses["base_kV"].values * 1000.0)
 
 # Load substation names for annotating the MATPOWER branch output.
 # Falls back gracefully if the column is absent.
@@ -740,7 +766,7 @@ print("=" * 60)
 drop_junk = []
 for idx, row in data_lines.iterrows():
     coords = list(row.geometry.coords)
-    if all_info_null(row) and len(coords) <= 3:
+    if all_info_null(row) and len(coords) < 3:
         drop_junk.append(idx)
         print(f"  [DROP] idx={idx}  id={row['id']}  "
               f"({len(coords)} pts, all attributes null)")
@@ -851,8 +877,8 @@ print("=" * 60)
 # physically inside a substation compound OR within JUNCTION_DETECTION_THRESHOLD_KM
 # (0.5 km) of the centroid of any substation (polygon or point-node).
 # We deliberately avoid the broad BUS_ASSIGN_THRESHOLD_KM here because using
-# a 5 km radius would flag almost every mid-line OSM split point in southern
-# Ghana as a "substation", blocking legitimate merges.
+# a 5 km radius would flag almost every mid-line OSM split point in densely packed
+# cities as a "substation", blocking legitimate merges.
 #
 # Two-tier detection:
 #   Tier 1 – Polygon containment (most reliable)
@@ -965,9 +991,8 @@ print("=" * 60)
 #
 # For each endpoint we search for the nearest bus that satisfies:
 #   1. Distance ≤ BUS_ASSIGN_THRESHOLD_KM
-#   2. Voltage compatibility: the bus voltage_tag and line voltage must share
-#      at least one level when both are known.  This handles transformer buses
-#      (e.g. a bus tagged '330000;161000' matches a 161 kV or 330 kV line).
+#   2. Voltage match: the bus's base_kV (in Volts) must appear in the line's
+#      voltage list when both are known.  Each bus has a single voltage level.
 #
 # If no qualifying bus exists within the threshold, bus = None.
 # Expected for cross-border interconnects or substations not yet in dataset.
@@ -1189,8 +1214,6 @@ print("=" * 60)
 
 # A bus is 'islanded' if no branch in the final output uses it as a from-bus
 # or to-bus.  Common causes:
-#   • All lines near that substation were removed by the voltage or busbar
-#     filters in Steps 4–5.
 #   • The substation serves only distribution-level lines not captured in
 #     the high-voltage OSM dataset.
 #   • The substation is planned / under construction in OSM but not yet

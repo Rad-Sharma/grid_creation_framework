@@ -63,7 +63,7 @@ def clean_label(name: str) -> str:
 
 # ── Voltage class helpers ─────────────────────────────────────────────────────
 
-_PALETTE = ["#C0392B","#E67E22","#2980B9","#27AE60","#8E44AD","#95A5A6"]
+_PALETTE = ["#2980B9","#C0392B","#27AE60","#E67E22","#8E44AD","#95A5A6"]
 
 
 def _kv_class(voltage_volts: float) -> int:
@@ -108,13 +108,13 @@ def build_voltage_styles(kv_classes: list) -> tuple[dict, dict]:
     markers = ["o","D","s","^","P","X"]
     for i, kv in enumerate(classes):
         color = _PALETTE[min(i, len(_PALETTE)-1)]
-        lw    = max(0.5, 2.0 - 0.3*i)
+        lw    = max(0.2, 0.8 - 0.1*i)   # thin lines suit poster scale
         ls    = "--" if kv == 0 else "-"
         line_styles[kv] = dict(color=color, lw=lw, zorder=len(classes)-i+1,
                                 label=f"{kv} kV", ls=ls)
         bus_styles[kv]  = dict(marker=markers[i % len(markers)], c=color,
-                                s=max(20, 90-15*i), zorder=len(classes)-i+5,
-                                linewidths=0.6, edgecolors="white")
+                                s=max(4, 20-3*i), zorder=len(classes)-i+5,
+                                linewidths=0.5, edgecolors="white")
     return line_styles, bus_styles
 
 
@@ -127,13 +127,13 @@ def add_scale_bar(ax, length_deg=1.0, location=(0.07, 0.06)):
         ax.plot(xs, ys, color="black", lw=2.5, solid_capstyle="butt",
                 transform=ax.transData, clip_on=False)
     ax.text((x0+x1)/2, y0-.14, f"≈ {int(length_deg*111)} km",
-            ha="center", va="top", fontsize=7.5, transform=ax.transData)
+            ha="center", va="top", fontsize=5.5, transform=ax.transData)
 
 
 def add_north_arrow(ax, location=(0.95, 0.10), size=0.045):
     x, y = location
     ax.annotate("N", xy=(x, y+size), xycoords="axes fraction",
-                fontsize=9, fontweight="bold", ha="center", va="bottom")
+                fontsize=7, fontweight="bold", ha="center", va="bottom")
     ax.annotate("", xy=(x, y+size*.9), xytext=(x, y),
                 xycoords="axes fraction", textcoords="axes fraction",
                 arrowprops=dict(arrowstyle="-|>", color="black", lw=1.5))
@@ -227,19 +227,35 @@ kv_draw_order = sorted(LINE_STYLES.keys())
 
 # ── Figure ────────────────────────────────────────────────────────────────────
 
+# ── Font: prefer fonts with broad Unicode/CJK coverage so non-Latin labels
+# (e.g. Chinese, Japanese, Korean substation names) render correctly.
+# Matplotlib falls through the list and uses the first available font.
 plt.rcParams.update({
-    "font.family":"serif","font.size":9,"axes.linewidth":0.8,
-    "xtick.direction":"in","ytick.direction":"in",
-    "xtick.major.size":4,"ytick.major.size":4,
+    "font.family":     "sans-serif",
+    "font.sans-serif": [
+        "Noto Sans CJK TC", "Noto Sans CJK JP", "Noto Sans CJK KR",
+        "Noto Sans", "Arial Unicode MS", "Microsoft YaHei",
+        "DejaVu Sans", "sans-serif",
+    ],
+    "axes.unicode_minus": False,   # prevents minus sign rendering issues
+    "font.size":        8,
+    "axes.linewidth":   0.5,
+    "xtick.direction":  "in",
+    "ytick.direction":  "in",
+    "xtick.major.size": 3,
+    "ytick.major.size": 3,
 })
 
-fig, ax = plt.subplots(figsize=(7.5, 9.5), dpi=300)
+# ── Figure size: large enough to print at poster scale (A0 ≈ 33×47 in).
+# Elements are sized to look correct at that print size — thin lines and
+# small markers that appear fine at 300 dpi on a large sheet.
+fig, ax = plt.subplots(figsize=(6, 8), dpi=300)
 fig.patch.set_facecolor("#D6EAF8")
 ax.set_facecolor("#D6EAF8")
 
 if not neighbours.empty:
-    neighbours.plot(ax=ax, color="#E8E8E8", edgecolor="#AAAAAA", linewidth=0.5, zorder=0)
-target.plot(ax=ax, color="#F5F0E8", edgecolor="black", linewidth=1.0, zorder=1)
+    neighbours.plot(ax=ax, color="#E8E8E8", edgecolor="#AAAAAA", linewidth=2.0, zorder=0)
+target.plot(ax=ax, color="#F5F0E8", edgecolor="black", linewidth=2.0, zorder=1)
 
 
 # ── Draw lines using actual OSM geometry where available ─────────────────────
@@ -294,9 +310,9 @@ for _, row in buses_df[buses_df["label"] != ""].iterrows():
     ax.annotate(
         row["label"],
         xy=(row["longitude"], row["latitude"]),
-        xytext=(3, 3), textcoords="offset points",
-        fontsize=4.5, color="#1A1A1A",
-        fontfamily="sans-serif", zorder=9, clip_on=True,
+        xytext=(2, 2), textcoords="offset points",
+        fontsize=3.5, color="#1A1A1A",
+        zorder=9, clip_on=True,
     )
 
 
@@ -306,10 +322,10 @@ ax.set_xlim(extent[0], extent[1])
 ax.set_ylim(extent[2], extent[3])
 ax.xaxis.set_major_locator(MultipleLocator(1))
 ax.yaxis.set_major_locator(MultipleLocator(1))
-ax.set_xlabel("Longitude (°E)", fontsize=9)
-ax.set_ylabel("Latitude (°N)",  fontsize=9)
+ax.set_xlabel("Longitude (°E)", fontsize=8)
+ax.set_ylabel("Latitude (°N)",  fontsize=8)
 ax.set_title(f"{SHAPE_FILE_NAME} High-Voltage Transmission Network",
-             fontsize=12, fontweight="bold", pad=8)
+             fontsize=10, fontweight="bold", pad=6)
 
 
 # ── Legend — line voltages only ───────────────────────────────────────────────
@@ -322,9 +338,9 @@ line_handles = [
     for kv in sorted(LINE_STYLES, reverse=True) if kv > 0
 ]
 ax.legend(handles=line_handles, title="Line voltage",
-          title_fontsize=8, fontsize=7.5, loc="upper left",
+          title_fontsize=6, fontsize=5.5, loc="upper left",
           framealpha=0.92, edgecolor="#CCCCCC",
-          handlelength=2.4, borderpad=0.8)
+          handlelength=2.0, borderpad=0.6)
 
 
 # ── Scale bar & north arrow ───────────────────────────────────────────────────
@@ -335,4 +351,4 @@ add_north_arrow(ax, location=(0.945, 0.09))
 plt.tight_layout(pad=0.5)
 plt.savefig(OUTPUT, dpi=300, bbox_inches="tight", facecolor=fig.get_facecolor())
 print(f"Saved → {OUTPUT}")
-plt.show()
+# plt.show()

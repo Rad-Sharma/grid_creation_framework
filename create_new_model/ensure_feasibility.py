@@ -632,12 +632,12 @@ def write_matpower(data: dict, out_path: Path, label: str):
         f"%   When publishing results using this data, please cite:\n"
         f"%   R. Asiamah, R. Sharma, C. Merkt, S. Talkington, J. Watson, and D. Molzahn,\n"
         f"%   \"A Framework for the Creation of Highly Realistic International Synthetic\n"
-        f"%   Grid Models,\" to appear in IEEE Transactions on Energy Markets, Policy\n"
-        f"%   and Regulation, Jun. 2025.\n"
+        f"%   Grid Models,\" in preparation for submission to IEEE Transactions on Energy\n"
+        f"%   Markets, Policy and Regulation, Jun. 2025.\n"
         f"%\n"
         f"%   Contact: Richard Asiamah (asiamah@gatech.edu)\n"
-        f"%   Grid Optimization and Algorithms Lab, Georgia Institute of Technology\n"
-        f"%\n"
+        f"%   Grid Optimization and Algorithms Lab\n"
+        f"%   Georgia Institute of Technology\n"
     )
 
     names_block  = "\n".join(meta["bus_names"])  if meta["bus_names"]  else "\t% (none)"

@@ -76,10 +76,16 @@ OFFSET_DEG       = 0.005   # ~0.5 km angular offset for co-located markers
 # Formulae: value = a * V^b (per km for R, X, B; total MVA for rateA)
 #
 # Coefficients are derived from typical global overhead-line parameters:
-#   - R, X sourced from IEC 60287 / Glover-Sarma-Overbye transmission-line tables
-#     covering ACSR conductors at 69–765 kV common in international grids.
-#   - B (shunt susceptance) from typical bundled conductor capacitance values.
-#   - MVA thermal rating from IEEE Std 738 conductor ampacity at 75 °C / 25 °C ambient.
+# Bergen, Arthur R. and Vittal, Vijay, “Power Systems
+# Analysis.” January 2000.
+# OPAL-RT Technologies, “Typical Electrical Parameters.” 2025.
+#  A. B. Birchfield, E. Schweitzer, M. H. Athari, T. Xu, T. J.
+# Overbye, A. Scaglione, and Z. Wang, “A Metric-Based
+# Validation Process to Assess the Realism of Synthetic
+# Power Grids,” Energies, vol. 10, no. 8, 2017.
+# A. Birchfield, “Geographic coordinate validation and
+# assignment using an edge-constrained layout,” Journal
+# of Engineering and Applied Science, vol. 71, 05 2024.
 # These represent representative values for standard ACSR/AAAC conductors; adjust
 # if conductor specifications for the target region are known.
 _COEFF = {

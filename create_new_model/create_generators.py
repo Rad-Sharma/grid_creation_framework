@@ -51,18 +51,17 @@ MIN_CAPACITY_MW = 0.0
 # CONSTANTS
 # ============================================================
 
-# Reactive power coefficients (Qmax factor, MVAr range factor) per technology.
-# Qmax  =  qmax_factor  * Pmax
-# Qmin  =  Qmax - (range_factor * Pmax)
-# Source: Anderson & Fouad (2003), IEEE Std 1110 typical machine data.
+# Reactive power scaling factors per technology.
+# Qmax = qmax_factor * Pmax
+# Qmin = qmin_factor * Pmax   (qmin_factor is negative)
 REACTIVE_LIMIT_COEFFICIENTS = {
-    "steam":       (0.466, 0.588),
-    "gas":         (0.509, 0.620),
-    "gas_turbine": (0.560, 0.624),
-    "hydro":       (0.384, 0.433),
-    "nuclear":     (0.368, 0.450),
-    "wind":        (0.213, 0.357),
-    "solar":       (0.329, 0.658),
+    "steam":       ( 0.466, -0.122),
+    "gas":         ( 0.509, -0.111),
+    "gas_turbine": ( 0.560, -0.064),
+    "hydro":       ( 0.384, -0.049),
+    "nuclear":     ( 0.368, -0.082),
+    "wind":        ( 0.213, -0.144),
+    "solar":       ( 0.329, -0.329),
 }
 
 # OSM fuel/source labels → generator technology category.
@@ -535,10 +534,9 @@ print("STEP 8: Computing MATPOWER generator limits")
 print("=" * 60)
 
 # Pmax = rated capacity (MW) from OSM; Pmin = 0 (conservative default, no OSM data).
-# Qmax and Qmin are derived from Pmax and the technology-specific reactive limit
-# coefficients in REACTIVE_LIMIT_COEFFICIENTS:
-#   Qmax =  qmax_factor  * Pmax
-#   Qmin =  Qmax - (range_factor * Pmax)
+# Qmax and Qmin are derived from Pmax by direct multiplication:
+#   Qmax = qmax_factor * Pmax
+#   Qmin = qmin_factor * Pmax   (qmin_factor is negative)
 # Plants with no capacity leave all limits blank. Plants with capacity but an
 # unrecognized fuel source get P limits only; Q limits are left blank for manual review.
 
@@ -569,9 +567,9 @@ for _, row in gdf.iterrows():
         qmin_vals.append(np.nan)
         n_no_source += 1
     else:
-        qf, rf = REACTIVE_LIMIT_COEFFICIENTS[cat]
-        qmax_vals.append(round(qf * pmax, 3))
-        qmin_vals.append(round((qf - rf) * pmax, 3))
+        qmax_f, qmin_f = REACTIVE_LIMIT_COEFFICIENTS[cat]
+        qmax_vals.append(round(qmax_f * pmax, 3))
+        qmin_vals.append(round(qmin_f * pmax, 3))
 
 gdf["Pmax"]    = pmax_vals
 gdf["Pmin"]    = pmin_vals

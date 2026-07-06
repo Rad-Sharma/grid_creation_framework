@@ -271,9 +271,9 @@ coord_block  = "\n".join(bus_coords)
 
 matpower_text = f"""%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%                                                                  %%%%%
-%%%%       Synthetic Electric Grid for {config.SHAPE_FILE_NAME:<30} %%%%%
+%%%%       Synthetic Electric Grid for {config.SHAPE_FILE_NAME:<30}  %%%%%
 %%%%                                                                  %%%%%
-%%%%                          {today}                          %%%%%
+%%%%                          {today}                              %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -288,11 +288,12 @@ matpower_text = f"""%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   When publishing results using this data, please cite:
 %   R. Asiamah, R. Sharma, C. Merkt, S. Talkington, J. Watson, and D. Molzahn,
 %   "A Framework for the Creation of Highly Realistic International Synthetic
-%   Grid Models," to appear in IEEE Transactions on Energy Markets, Policy and
-%   Regulation, Jun. 2025.
+%   Grid Models," in preparation for submission to IEEE Transactions on Energy 
+%   Markets, Policy and Regulation.
 %
 %   Contact: Richard Asiamah (asiamah@gatech.edu)
-%   Grid Optimization and Algorithms Lab, Georgia Institute of Technology
+%   Grid Optimization and Algorithms Lab, 
+%   Georgia Institute of Technology
 %
 %% MATPOWER Case Format : Version 2
 function mpc = {func_name}

@@ -1,0 +1,149 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,fbus_dist_km,tbus_dist_km,f_crossborder,t_crossborder,length_km,voltage_V,osm_id
+52.0,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kinondo ward Substation,Galu,0.0121,0.0386,False,False,13.967,132000,way/578818098
+203.0,207.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sultan Ketraco Substation,Imbrikani/Eselelnkei ward Substation,0.0273,0.0297,False,False,41.5483,,way/1367158358
+203.0,136.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sultan Ketraco Substation,Wote Power Sub station,0.0317,0.028,False,False,41.3381,132000,way/1361233331
+82.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere North Substation 2,Kathungure Substation,0.0326,0.0293,False,False,26.7057,,way/1367198607
+133.0,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Central Sakwa ward Substation 2,Kisii Substation 1_132kV,0.0413,0.029,False,False,43.5965,132000,way/1353476827
+207.0,206.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Imbrikani/Eselelnkei ward Substation,Loitokitok 132/33kV - KETRACO Substation_132kV,0.0383,0.034,False,False,66.205,132000,way/1367078565
+133.0,134.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Central Sakwa ward Substation 2,Kabuoch North ward Substation,0.0416,0.0425,False,False,37.3302,,way/1353476826
+133.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Central Sakwa ward Substation 2,Masaba ward Substation,0.1039,0.024,False,False,28.5863,,way/1367196075
+210.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Matinyani ward Substation,Mwingi,0.0282,0.1109,False,False,45.315,,way/1367183623
+27.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Makindu ward Substation,Mariakani,0.0376,0.1254,False,False,299.4122,132000,way/266439954+way/578575694
+8.0,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Galu,0.1654,0.0231,False,False,47.4238,132000,way/374695014
+8.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Junju ward Substation 1,0.1506,0.0675,False,False,50.5171,132000,way/361010721+way/578818100
+53.0,29.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jomvu Kuu ward Substation 1,Kipevu ward Substation 1,0.1799,0.0445,False,False,7.2476,132000,way/578818101
+53.0,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jomvu Kuu ward Substation 1,Kipevu ward Substation 2,0.1799,0.0672,False,False,7.0772,132000,way/578818103
+49.0,208.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,Namanga Substation,0.29,0.0407,False,False,94.6326,400000,way/1353787680
+98.0,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Olkaria ward Substation 2_132kV,0.0337,0.2972,False,False,1.3848,132000,way/665334162
+8.0,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Jomvu Kuu ward Substation 1,0.1345,0.4878,False,False,9.7829,132000,way/180034495
+53.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jomvu Kuu ward Substation 1,Mariakani,0.4878,0.1495,False,False,9.9334,132000,way/180045084
+63.0,249.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,kiganjo/mathari ward Substation,Gakawa ward Substation,0.1276,0.7948,False,False,51.6059,132000,way/179998382
+112.0,68.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 7,Nairobi Substation 2,0.0172,1.1271,False,False,19.0425,220000,way/1004203459
+14.0,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nakuru Substation,Soilo,0.0433,1.1434,False,False,14.234,132000,way/579310372
+29.0,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kipevu ward Substation 1,Kipevu ward Substation 2,0.0689,1.3559,False,False,1.1697,,way/1421714071
+68.0,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 2,Nairobi Substation 5,0.8544,0.7018,False,False,1.3557,132000,way/180021147
+68.0,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 2,Nairobi Substation 5,0.8534,0.7035,False,False,1.3582,132000,way/180021145
+49.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,Isinya Substation_220kV,0.3213,1.2957,False,False,1.4421,400000,way/1425464798
+68.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 2,Embakasi SS,1.7863,0.0996,False,False,11.9095,220000,way/180021133
+69.0,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Nairobi Substation 5,1.45,0.7196,False,False,8.1704,132000,way/180021127
+53.0,103.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jomvu Kuu ward Substation 1,Jomvu Kuu ward Substation 2,0.1799,2.4743,False,False,0.3373,132000,way/578818102
+8.0,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Jomvu Kuu ward Substation 1,0.1161,2.6294,False,False,12.967,132000,way/578818106
+230.0,234.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mwavumbo ward Substation 1,Mwavumbo ward Substation 2,0.036,3.093,False,False,2.2473,132000,way/1409737833
+38.0,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Maiella ward Substation,Olkaria ward Substation 4,0.0567,3.0948,False,False,6.6953,220000,way/308163287
+24.0,175.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Roysambu,Nairobi Substation 13,0.0684,3.1509,False,False,1.553,,way/578015307
+69.0,68.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Nairobi Substation 2,1.45,1.7863,False,False,5.9602,220000,way/180021126
+19.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 220 / 132kV Transmission Substation_220kV,Kamburu 220 / 132kV Transmission Substation_132kV,2.1522,1.3311,False,False,1.5175,220000,way/650734616
+68.0,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 2,Nairobi Substation 5,1.7863,1.6977,False,False,0.7964,220000,way/180021148|way/180021130|way/180021135
+152.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Hospital ward Substation,Kiganjo ward Substation,3.9723,0.0252,False,False,28.4211,132000,way/578140329
+241.0,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Murinduko ward Substation,Sagana Substation,0.0897,4.1128,False,False,21.4628,132000,way/1463070981
+15.0,216.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chemosit substation,Kenya Power Matutu Sub Station,0.0581,4.745,False,False,26.7528,132000,way/696520897
+72.0,112.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Biashara ward Substation,Nairobi Substation 7,0.7776,4.2711,False,False,2.4371,,way/1500286017+way/1500286013+way/1500286014
+54.0,84.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mwingi,Shabah Substation,0.1099,4.9654,False,False,204.2458,132000,way/1275719788+way/696704121
+201.0,181.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sebit Substation,Kitale Substation,0.0549,5.0816,False,False,70.2411,220000,way/696445755
+93.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Athi River ward Substation 2,Embakasi SS,0.0886,5.4365,False,False,11.625,220000,way/578064868
+231.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mwihoko ward Substation,Ruai,2.7728,3.1035,False,False,0.0434,,way/1298988097
+226.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Githambo substation_132kV,Juja ward Substation,0.0365,6.2858,False,False,42.6853,132000,way/1390432741
+69.0,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Makindu ward Substation,6.4138,0.0376,False,False,141.1556,132000,way/180021154+way/578575695
+178.0,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Cianda ward Substation,Nairobi North 220Kv Substation_220kV,3.2348,3.5179,False,False,1.2555,220000,way/773903301
+118.0,245.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Abyssinia substation,Kisumu Substation 2,2.2288,4.7414,False,False,9.0969,132000,way/1115312337
+54.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mwingi,Mbeere South Substation,0.0819,6.9501,False,False,29.3275,132000,way/578920146
+41.0,202.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KPLC Sub Stattion,Kaputiei North ward Substation 1,7.0344,0.0818,False,False,16.7778,400000,way/1361202727
+98.0,139.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Narok Town ward Substation 2,1.4501,5.7928,False,False,62.5133,132000,way/1027098824
+41.0,235.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KPLC Sub Stattion,Kalama ward Substation,7.0514,0.1961,False,False,37.5494,400000,way/1425464802
+98.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Maiella ward Substation,1.6358,5.6531,False,False,2.6515,132000,way/293403693
+41.0,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KPLC Sub Stattion,Athi River ward Substation 2,7.2184,0.1017,False,False,44.5294,220000,way/578140340
+98.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Maiella ward Substation,1.4287,6.1318,False,False,0.038,132000,way/293403695
+98.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Maiella ward Substation,1.4287,6.1369,False,False,0.0425,132000,way/293403694
+63.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,kiganjo/mathari ward Substation,Mbeere South Substation,0.0619,7.5415,False,False,99.0484,132000,way/579310398+way/220541897
+98.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Maiella ward Substation,1.4287,6.1748,False,False,1.0601,132000,way/669510372
+87.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 5,Mbeere South Substation,0.73,6.9025,False,False,118.1771,132000,way/180021152+way/457973269
+176.0,112.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kihara ward Substation,Nairobi Substation 7,7.7262,0.0308,False,False,27.1409,220000,way/180021134
+181.0,198.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kitale Substation,Eldoret Substation,5.2046,2.6603,False,False,65.2222,132000,way/696515807
+250.0,193.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nanyuki Substation,Rumuruti Substation,4.3021,3.5857,False,False,70.4092,132000,way/579310384+way/1011586726+way/1011586727+way/1011586843+way/1011586920+way/1011587007+way/1011587008+way/1011587009+way/1011587027+way/1011587028+way/1011587029+way/1011587030+way/1011587010+way/1011587011+way/1011587019+way/1011587020+way/1011587021+way/1011587024+way/1011587025+way/1011587026
+210.0,160.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Matinyani ward Substation,KPLC Kitui Substation,0.0571,7.9725,False,False,1.1469,,way/1442611299
+18.0,68.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,Nairobi Substation 2,7.2245,0.9982,False,False,110.9856,220000,way/578064859
+68.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 2,Mbeere South Substation,1.0881,7.2106,False,False,107.6585,220000,way/578064866
+98.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Maiella ward Substation,2.919,5.6253,False,False,0.1181,220000,way/669510378|way/678140050
+21.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Junju ward Substation 2,Junju ward Substation 1,8.5431,0.0675,False,False,11.5464,132000,way/578818095
+9.0,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kilifi,Junju ward Substation 2,0.0599,8.5652,False,False,15.4899,132000,way/180034500
+98.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Maiella ward Substation,2.919,5.9331,False,False,3.0458,220000,way/669510379
+8.0,234.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Mwavumbo ward Substation 2,0.1703,8.9299,False,False,23.9357,220000,way/1353799764
+249.0,250.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Gakawa ward Substation,Nanyuki Substation,0.7637,8.4492,False,False,0.0696,132000,way/696306312|way/696306313
+109.0,28.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KIMUKA 230KV Substation_230kV,Ngong Wind Power Project,0.0821,9.1768,False,False,3.8083,230000,way/1353743700
+152.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Hospital ward Substation,Juja ward Substation,3.8909,6.1577,False,False,0.0966,132000,way/1004816755|way/1004816756|way/1004816757|way/1004816758|way/1004816759|way/1004816760
+249.0,221.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Gakawa ward Substation,Isiolo east Substation,0.7878,9.681,False,False,70.7058,132000,way/579310402
+69.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Mwihoko ward Substation,6.4138,4.3481,False,False,5.0088,220000;132000,way/578064856
+216.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kenya Power Matutu Sub Station,Bomet Substation,4.7341,6.3029,False,False,25.4445,132000,way/696520896
+216.0,248.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kenya Power Matutu Sub Station,Kisii Central ward Substation,4.7171,6.5063,False,False,32.282,132000,way/457763292
+235.0,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kalama ward Substation,Mumbuni North ward Substation,7.5928,4.9118,False,False,11.6628,132000,way/578575697
+98.0,261.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Olkaria ward Substation 5,6.2081,6.8748,False,False,0.0477,220000,way/1394941663|way/1394941664
+98.0,261.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Olkaria ward Substation 5,6.6896,6.8951,False,False,1.3748,220000,way/969560630
+98.0,261.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Olkaria ward Substation 5,6.0604,8.2883,False,False,1.6901,220000,way/846716534
+98.0,261.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Olkaria ward Substation 5,5.3105,9.4563,False,False,0.1181,220000,way/1373881334|way/1395075085|way/1395075086|way/1373881333|way/1395075072|way/1395075073
+18.0,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,Meru Substation,7.5415,7.723,False,False,117.9841,132000,way/318010718
+98.0,261.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,Olkaria ward Substation 5,6.0604,9.5595,False,False,4.1334,220000,way/969561348
+41.0,234.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KPLC Sub Stattion,Mwavumbo ward Substation 2,7.2669,9.1465,False,False,405.3241,400000,way/578140336
+221.0,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isiolo east Substation,Meru Substation,9.629,7.7295,False,False,25.985,132000,way/1020270265
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.3837,220000,way/579310364|way/669513701
+,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Olkaria ward Substation 4,,1.7315,False,False,21.5279,132000,way/1442604356
+8.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,,0.1511,,False,False,447.148,220000,way/266435362
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0886,220000,way/678141819|way/678141820|way/678141821
+18.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,,0.0723,,False,False,7.4864,220000,way/220540553
+18.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,,7.5023,,False,False,0.2493,132000,way/220540549|way/220540551
+18.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,,7.5023,,False,False,0.2286,132000,way/578920154|way/669537269
+18.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,,7.479,,False,False,7.5857,132000,way/220540552
+41.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KPLC Sub Stattion,,6.8929,,False,False,0.1496,400000,way/1425454173|way/1425454174|way/1425464800|way/1425464801
+,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Kihara ward Substation,,7.766,False,False,44.2712,220000,way/180021136
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.4292,132000,way/180998872|way/180998874+way/180999915|way/180999916
+69.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,,6.4138,,False,False,137.7832,220000,way/180021155
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.5615,,way/1136175537+way/1136177228
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.8278,,way/1136166879+way/1136175538
+89.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Hindi ward Substation,,0.0505,,False,False,3.8726,,way/803479166+way/803479168
+98.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,,3.025,,False,False,27.4687,220000,way/669510377+way/678141823|way/678141824
+41.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KPLC Sub Stattion,,7.1586,,False,False,0.1185,400000,way/1279912446|way/1279912447|way/1425454172|way/1108959038|way/1108959039|way/1108959040|way/1425454178
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,398.4555,400000,way/665668831+way/846589474
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,209.915,220000,way/181000287
+87.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi Substation 5,,0.7267,,False,False,76.5719,132000,way/184370161
+22.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Soilo,,0.084,,False,False,53.5534,132000,way/230147787+way/1329200739
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,114.3201,132000,way/181010220+way/1270177000
+,198.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Eldoret Substation,,2.6648,False,False,88.8663,132000,way/180998542+way/181000286
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,98.6546,132000,way/180995663+way/180995659
+,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Mbeere South Substation,,7.199,False,False,35.8258,220000,way/220540548
+8.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,,0.0823,,False,False,121.6454,220000,way/578575691+way/1104102138
+,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Nakuru Substation,,0.05,False,False,69.2986,132000,way/1431584700
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,96.4191,220000,way/659874581
+41.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KPLC Sub Stattion,,7.0429,,False,False,1.1617,400000,way/1425464797
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,16.4117,132000,way/579310360
+98.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,,3.0743,,False,False,229.3618,400000,way/1016604844
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,71.4755,132000,way/579310362
+,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Kilifi,,7.9133,False,False,4.1208,,way/955378095
+201.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sebit Substation,,0.0555,,False,False,67.8958,220000,way/579310366
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,True,False,1059.4349,500000,way/797700141+way/832179801+way/1329193191+way/1080627698
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,27.1946,132000,way/579310359
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,4.8927,132000,way/579310370
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0812,220000,way/678141822
+18.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,,7.5415,,False,False,0.0469,132000,way/669537268
+18.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,,7.5415,,False,False,0.0458,132000,way/669537267
+,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Olkaria ward Substation 4,,5.2271,False,False,18.2296,220000,way/669510380
+,65.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Mumias Sugar's Rang'ala Power Substation,,0.0206,False,False,31.5948,132000,way/579549263
+98.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria ward Substation 4,,1.3909,,False,False,25.1641,220000,way/669510371
+22.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Soilo,,0.0962,,False,False,12.4396,132000,way/579310376
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,68.7847,132000,way/304014426
+245.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kisumu Substation 2,,4.7682,,False,False,70.8801,220000,way/1115552102
+,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,KPLC Sub Stattion,,6.8929,False,False,208.0192,400000,way/1138329786
+15.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chemosit substation,,0.0503,,False,False,30.9094,132000,way/457763293
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,35.3077,400000,way/563813240
+,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,KPLC Sub Stattion,,7.1586,False,False,102.3543,400000,way/569997181
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,105.8162,220000,way/659878572
+,152.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Hospital ward Substation,,3.8049,False,False,14.7775,132000,way/578920149
+18.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mbeere South Substation,,6.8938,,False,False,15.6013,132000,way/578920151
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0265,,way/1136166878
+57.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Masinga Central ward Substation,,0.0177,,False,False,2.6307,132000,way/578920152
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,16.0506,,way/1275426576
+70.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Garsen substation_220kV,,0.0382,,False,False,17.2189,220000,way/1275425759
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0376,,way/1213160871
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.3083,,way/1210716935
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.4657,,way/1203087332
+115.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,AEZ,,0.0738,,False,False,1.4859,220000,way/1141854127
+214.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Musikoma ward Substation,,7.6188,,False,False,26.3103,220000,way/579310350
+84.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Shabah Substation,,4.9828,,False,False,5.3845,132000,way/696704119

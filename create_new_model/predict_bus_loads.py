@@ -2,19 +2,15 @@
 predict_bus_loads.py — Apply the trained model to transmission buses in the target region.
 
 Pipeline:
-  1. Load the trained model bundle (model_bundle_v5.pkl from train_model.py).
-  2. Load bus features ({region}_features_with_industrial.csv from build_region_features.py).
-  3. Pin each bus's lat/lon from matpower_{region}_buses.csv.
-  4. Apply the Ridge model per bus (raw, unclustered prediction).
-  5. Re-aggregate buses into city clusters (mirrors the training aggregation),
-     predict cluster-level MW, then disaggregate back to individual buses.
-  6. Add bottom-up industrial addons for signals not present in NZ/GB training
-     (aluminum smelters, copper smelters, major ports, etc.).
-  7. Apply a captive-power discount to buses with confirmed unregistered generators
-     and no nearby utility power plant.
-  8. Pin generation station buses to a small constant load.
-  9. Scale all domestic bus predictions so they sum to COUNTRY_DEMAND_MW.
- 10. Add NATIONAL_EXPORT_MW load distributed equally across external/cross-border buses.
+  1. Per-bus Ridge prediction (raw, unclustered).
+  2. City-cluster rescaling (mirrors training aggregation; disaggregates back to buses).
+  3. Bottom-up industrial addons (smelters, ports, etc. not in NZ/GB training data).
+  4. Captive-power discount for buses with unregistered on-site generators.
+  5. National scaling: auto-detect cross-border buses from NaturalEarth geometry;
+     scale all domestic buses so Pd sums to COUNTRY_DEMAND_MW.
+  6. Assign NATIONAL_EXPORT_MW equally across external/cross-border buses.
+  7. Zero out load on all buses above the network's minimum voltage level
+     (load is served only at the lowest voltage tier).
 
 Output:
   data/bus_data/processed/{region}_substation_predictions_v4.csv
@@ -29,6 +25,7 @@ import pandas as pd
 import joblib
 from pathlib import Path
 
+
 # ---------------------------------------------------------------------------
 # Import shared constants via importlib so joblib-pickled NNRidge can resolve
 # ---------------------------------------------------------------------------
@@ -38,13 +35,19 @@ _constants_mod = importlib.util.module_from_spec(_spec)
 sys.modules["constants"] = _constants_mod
 _spec.loader.exec_module(_constants_mod)
 
+
+# Thresholds and NNRidge class are defined in config.py.
+
+
 import config
 
-region               = config.region
+region                  = config.region
 NTL_CAPTIVE_THRESHOLD   = _constants_mod.NTL_CAPTIVE_THRESHOLD
 CITY_CLUSTER_RADIUS_DEG = _constants_mod.CITY_CLUSTER_RADIUS_DEG
+MEGA_CITY_CAP_MW        = _constants_mod.MEGA_CITY_CAP_MW
 COUNTRY_DEMAND_MW       = _constants_mod.COUNTRY_DEMAND_MW
 NATIONAL_EXPORT_MW      = _constants_mod.NATIONAL_EXPORT_MW
+SHAPE_FILE_NAME         = config.SHAPE_FILE_NAME
 NNRidge                 = _constants_mod.NNRidge
 
 warnings.filterwarnings("ignore")
@@ -77,45 +80,50 @@ CAPTIVE_WRI_THRESHOLD_MW = 100.0
 CAPTIVE_DISCOUNT         = 0.5
 
 # ---------------------------------------------------------------------------
-# Cross-border buses
-# ---------------------------------------------------------------------------
-# Buses that connect to neighbouring countries carry international exchange
-# power, not domestic load. They are excluded from national scaling.
-# Update this list for your target region.
-CROSS_BORDER_BUSES = [
-    "OuagaSud", "Zagtouli", "Kodeni",
-    "Kara", "Davie", "LomeAflao", "Aflao",
-    "Abobo", "Bingerville", "Riviera",
-    "Moyassue", "Sinkasse",
-]
-
-
-# ---------------------------------------------------------------------------
-# Generation bus detection
+# Cross-border bus auto-detection
 # ---------------------------------------------------------------------------
 
-def build_generation_buses(feat_df,
-                            wri_threshold_mw=400.0,
-                            pop_threshold=600.0,
-                            pin_mw=15.0):
-    """Identify generation station buses using only satellite/registry features.
-
-    Rule: wri_capacity_mw_voronoi > wri_threshold AND pop_density < pop_threshold.
-    Generation buses are pinned to a small constant load (they export much more
-    than they consume locally) and excluded from city-cluster aggregation.
+def detect_cross_border_buses(feat_df: pd.DataFrame,
+                               shape_file_name: str) -> set:
+    """Return a set of bus_name values whose coordinates fall outside the
+    country boundary (NaturalEarth 110 m).  These buses carry international
+    exchange flows and must not receive domestic load.
     """
-    result = {}
-    wri_col = feat_df.get(
-        "wri_capacity_mw_voronoi",
-        pd.Series(0.0, index=feat_df.index)).fillna(0)
-    pop_col = feat_df.get(
-        "pop_density",
-        pd.Series(9999.0, index=feat_df.index)).fillna(9999)
+    try:
+        import geopandas as gpd
+        from shapely.geometry import Point
 
-    for idx, row in feat_df.iterrows():
-        if wri_col[idx] > wri_threshold_mw and pop_col[idx] < pop_threshold:
-            result[row["bus_name"]] = pin_mw
-    return result
+        try:
+            import pyogrio
+            _ne = (str(pyogrio.__file__).replace("__init__.py", "")
+                   + "tests/fixtures/naturalearth_lowres/naturalearth_lowres.shp")
+            world = gpd.read_file(_ne)
+        except Exception:
+            world = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+
+        country = world[world["name"] == shape_file_name]
+        if country.empty:
+            print(f"  [cross-border] '{shape_file_name}' not found in NaturalEarth "
+                  f"— cross-border detection disabled.")
+            return set()
+
+        country_geom = country.geometry.union_all()
+        outside = set()
+        for _, row in feat_df.iterrows():
+            lat = row.get("lat")
+            lon = row.get("lon")
+            if pd.isna(lat) or pd.isna(lon):
+                continue
+            if not country_geom.contains(Point(float(lon), float(lat))):
+                outside.add(row["bus_name"])
+
+        print(f"  [cross-border] Detected {len(outside)} external bus(es) "
+              f"outside '{shape_file_name}' boundary.")
+        return outside
+
+    except Exception as exc:
+        print(f"  [cross-border] Detection failed ({exc}) — no buses excluded.")
+        return set()
 
 
 # ---------------------------------------------------------------------------
@@ -323,12 +331,10 @@ def main():
     if "ghsl_built_km2" in feat_df.columns:
         feat_df["ghsl_pct"] = feat_df["ghsl_built_km2"].fillna(0) / area * 100
 
-    # Detect generation buses
-    GENERATION_BUSES = build_generation_buses(feat_df)
-    print(f"\n  Generation buses detected: {list(GENERATION_BUSES.keys())}")
-
-    # Step 1: Per-bus Ridge prediction (unclustered)
-    print("\nApplying Ridge model per bus (unclustered) ...")
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 1: Per-bus Ridge prediction (unclustered)")
+    print("=" * 60)
     X_raw = np.zeros((len(feat_df), len(features_r)))
     for j, feat in enumerate(features_r):
         if feat in feat_df.columns:
@@ -342,8 +348,10 @@ def main():
     feat_df["predicted_mw_raw"] = bus_mw
     print(f"  Range: {bus_mw.min():.1f} – {bus_mw.max():.1f} MW  sum={bus_mw.sum():.0f} MW")
 
-    # Step 2: City-cluster rescaling
-    print("\nApplying city-cluster rescaling ...")
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 2: City-cluster rescaling")
+    print("=" * 60)
     cluster_rescaled, cluster_ids = cluster_predict_region(
         feat_df,
         features_r=features_r,
@@ -351,13 +359,15 @@ def main():
         imputer_r=imputer_r,
         radius_deg=CITY_CLUSTER_RADIUS_DEG,
         ntl_threshold=NTL_CAPTIVE_THRESHOLD,
-        generation_bus_keys=list(GENERATION_BUSES.keys()),
+        generation_bus_keys=[],
     )
     feat_df["_cluster"]         = cluster_ids
     feat_df["predicted_mw_raw"] = cluster_rescaled
 
-    # Step 3: Bottom-up industrial addon
-    print("\nComputing industrial addons ...")
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 3: Bottom-up industrial addons")
+    print("=" * 60)
     ntl_binary = (ntl_g >= NTL_CAPTIVE_THRESHOLD).astype(float)
 
     icmm_al  = feat_df.get("icmm_al_mw_est",   z).fillna(0).clip(lower=0)
@@ -379,10 +389,12 @@ def main():
     industrial_addon = (al_addon + cu_addon + zn_addon + ni_addon +
                         cement_addon + chem_addon + port_addon)
     feat_df["industrial_addon_mw"] = industrial_addon.values
-    feat_df["predicted_mw_raw"] = (feat_df["predicted_mw_raw"] + industrial_addon).values
+    feat_df["predicted_mw_raw"]    = (feat_df["predicted_mw_raw"] + industrial_addon).values
 
-    # Step 4: Captive-power discount
-    print("\nChecking for captive-power buses ...")
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 4: Captive-power discount")
+    print("=" * 60)
     n_osm_col   = feat_df.get("n_osm_generators_voronoi", z).fillna(0)
     wri_cap_col = feat_df.get("wri_capacity_mw_voronoi",  z).fillna(0)
     captive_flag = (
@@ -399,65 +411,62 @@ def main():
     else:
         print("  No captive-power buses detected")
 
-    # Step 5: Pin generation buses (before national scaling)
-    gen_pinned_list = []
-    for gen_kw, pin_mw in GENERATION_BUSES.items():
-        gm = feat_df["bus_name"].str.contains(gen_kw, case=False, na=False)
-        if gm.any():
-            feat_df.loc[gm, "predicted_mw_raw"] = pin_mw
-            gen_pinned_list.append(f"{feat_df.loc[gm, 'bus_name'].iloc[0]}→{pin_mw} MW")
-    if gen_pinned_list:
-        print(f"\n  Pinned generation buses: {', '.join(gen_pinned_list)}")
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 5: National scaling")
+    print("=" * 60)
+    # Detect cross-border buses automatically from their geographic coordinates.
+    # External buses are excluded from national demand scaling and receive 0 load
+    # (or NATIONAL_EXPORT_MW if scheduled exports are defined).
+    cross_border_names = detect_cross_border_buses(feat_df, SHAPE_FILE_NAME)
+    cb_mask = feat_df["bus_name"].isin(cross_border_names)
 
-    # Step 6: National scaling
-    # Scale domestic (non-cross-border, non-generation) buses so their sum equals
-    # COUNTRY_DEMAND_MW minus generation bus pins.
-    cb_mask      = feat_df["bus_name"].apply(
-        lambda n: any(cb in n for cb in CROSS_BORDER_BUSES))
-    gen_mask_all = feat_df["bus_name"].apply(
-        lambda n: any(gk in n for gk in GENERATION_BUSES))
-    excl_mask = cb_mask | gen_mask_all
+    domestic_sum = feat_df.loc[~cb_mask, "predicted_mw_raw"].sum()
+    scale_f      = COUNTRY_DEMAND_MW / domestic_sum if domestic_sum > 0 else 1.0
 
-    gen_pinned_sum = sum(
-        pin_mw for gen_kw, pin_mw in GENERATION_BUSES.items()
-        if feat_df["bus_name"].str.contains(gen_kw, case=False, na=False).any()
-        and not any(
-            any(cb in name for cb in CROSS_BORDER_BUSES)
-            for name in feat_df.loc[
-                feat_df["bus_name"].str.contains(gen_kw, case=False, na=False), "bus_name"
-            ]
-        )
-    )
-    scale_target = COUNTRY_DEMAND_MW - gen_pinned_sum
+    feat_df["predicted_mw"]          = feat_df["predicted_mw_raw"] * scale_f
+    feat_df.loc[cb_mask, "predicted_mw"] = 0.0
 
-    domestic_sum = feat_df.loc[~excl_mask, "predicted_mw_raw"].sum()
-    scale_f      = scale_target / domestic_sum if domestic_sum > 0 else 1.0
-
-    feat_df["predicted_mw"] = feat_df["predicted_mw_raw"] * scale_f
-    for gen_kw, pin_mw in GENERATION_BUSES.items():
-        gm = feat_df["bus_name"].str.contains(gen_kw, case=False, na=False)
-        if gm.any():
-            feat_df.loc[gm, "predicted_mw"] = pin_mw
-
-    print(f"\n  Cross-border buses excluded from scaling : {cb_mask.sum()}")
-    print(f"  Generation buses pinned                  : {gen_mask_all.sum()}")
-    print(f"  Scale target                             : {scale_target:.0f} MW")
-    print(f"  Raw domestic sum before scaling          : {domestic_sum:.0f} MW")
-    print(f"  Scale factor                             : {scale_f:.4f}")
-    print(f"  Domestic total after scaling             : "
+    print(f"  Cross-border buses excluded : {cb_mask.sum()}")
+    print(f"  Raw domestic sum            : {domestic_sum:.0f} MW")
+    print(f"  Scale factor                : {scale_f:.4f}")
+    print(f"  Domestic total after scaling: "
           f"{feat_df.loc[~cb_mask, 'predicted_mw'].sum():.0f} MW")
 
-    # Step 7: Assign national export load to cross-border buses
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 6: Assign national export load to cross-border buses")
+    print("=" * 60)
     # NATIONAL_EXPORT_MW (from config) is split equally among all cross-border buses.
-    # This represents scheduled export flow that the cross-border buses must carry.
     if NATIONAL_EXPORT_MW > 0 and cb_mask.sum() > 0:
         export_per_bus = NATIONAL_EXPORT_MW / cb_mask.sum()
         feat_df.loc[cb_mask, "predicted_mw"] = export_per_bus
-        print(f"\n  National export {NATIONAL_EXPORT_MW:.0f} MW split among "
+        print(f"  {NATIONAL_EXPORT_MW:.0f} MW split among "
               f"{cb_mask.sum()} cross-border bus(es): {export_per_bus:.1f} MW each")
     else:
-        print(f"\n  NATIONAL_EXPORT_MW = {NATIONAL_EXPORT_MW:.0f} MW  "
+        print(f"  NATIONAL_EXPORT_MW = {NATIONAL_EXPORT_MW:.0f} MW  "
               f"(cross-border buses carry no export load)")
+
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 7: Restrict load to lowest-voltage buses")
+    print("=" * 60)
+    # Load should only be assigned to the lowest voltage level in the network.
+    # High-voltage transmission buses do not serve customer load directly.
+    _bus_kv_map = (_csv_buses.set_index("bus_i")["base_kV"].to_dict()
+                   if _csv_buses_path.exists()
+                   else {})
+    feat_df["_base_kV"] = feat_df["bus_idx"].map(_bus_kv_map)
+    min_kv = feat_df["_base_kV"].dropna().min()
+    if not pd.isna(min_kv):
+        high_v_mask = feat_df["_base_kV"].fillna(float("inf")) > min_kv
+        n_zeroed = int(high_v_mask.sum())
+        feat_df.loc[high_v_mask, "predicted_mw"] = 0.0
+        print(f"  Minimum voltage in network : {min_kv:.1f} kV")
+        print(f"  Buses above minimum zeroed : {n_zeroed}  "
+              f"({int((~high_v_mask).sum())} load buses remain)")
+    else:
+        print("  Bus voltage data unavailable — skipping voltage filter")
 
     # Build output matching matpower_{region}_buses.csv format with Pd/Qd filled in
     _PF      = 0.95

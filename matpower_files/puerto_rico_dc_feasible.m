@@ -2,7 +2,7 @@
 %%%%                                                                  %%%%%
 %%%%   Synthetic Electric Grid for Puerto Rico                    %%%%%
 %%%%   DC_feasible                                                    %%%%%
-%%%%   2026-06-04                                                     %%%%%
+%%%%   2026-06-16                                                     %%%%%
 %%%%                                                                  %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -650,21 +650,21 @@ function mpc = Puerto_RicoGrid_DC_feasible
     %% bus names
     mpc.bus_name = {
 	'Subestación Aguirre 1_230kV_230kV' %1
-	'Subestación Viaducto I_115kV' %2
-	'Subestación Hato Rey 1420_115kV' %3
+	'Subestación Viaducto I_nankV' %2
+	'Subestación Hato Rey 1420_nankV' %3
 	'Subestación Manatí_230kV_230kV' %4
 	'Subestación Manatí_115kV_115kV' %5
 	'Aguas Buenas TC_230kV_230kV' %6
-	'Río Piedras Substation 1_115kV' %7
-	'Subestación Aguas Buenas_115kV' %8
+	'Río Piedras Substation 1_nankV' %7
+	'Subestación Aguas Buenas_nankV' %8
 	'Subestación Monacillos_115kV_115kV' %9
-	'Arecibo Substation 1_115kV' %10
-	'Subestación Quebrada Negrito_115kV' %11
-	'Trujillo Alto Substation 1_115kV' %12
-	'Subestación Rexville_115kV' %13
+	'Arecibo Substation 1_nankV' %10
+	'Subestación Quebrada Negrito_nankV' %11
+	'Trujillo Alto Substation 1_nankV' %12
+	'Subestación Rexville_nankV' %13
 	'Subestación Bayamón 1_230kV_230kV' %14
 	'Subestación Bayamón 1_115kV_115kV' %15
-	'Hatillo TC_115kV' %16
+	'Hatillo TC_nankV' %16
 	'Subestación Cambalache (Arecibo)_230kV_230kV' %17
 	'Subestación Cambalache (Arecibo)_115kV_115kV' %18
 	'Arecibo Substation 2_115kV_115kV' %19
@@ -673,154 +673,262 @@ function mpc = Puerto_RicoGrid_DC_feasible
 	'San Germán Substation 1_230kV_230kV' %22
 	'Ponce TC_115kV_115kV' %23
 	'Subestación Sabana Llana II_230kV_230kV' %24
-	'A.E.S., Guayama_230kV_230kV' %25
-	'Yabucoa T.C._115kV_115kV' %26
-	'Mayagüez TC_230kV_230kV' %27
-	'Guánica TC_230kV_230kV' %28
-	'Subestación Cañas_115kV_115kV' %29
-	'Subestación Martín Peña_115kV' %30
-	'Subestación de Juana Díaz_115kV_115kV' %31
-	'Subestación UPR - Bayamón_230kV' %32
-	'Subestación Viaducto II_115kV' %33
-	'Subestación Cataño_230kV' %34
-	'Subestación Parques y Recreos_115kV' %35
-	'Pueblo Viejo Substation 1_115kV' %36
-	'Subestación Río Bayamón_115kV' %37
-	'Subestación Egozcue_115kV' %38
-	'Subestación Tres Monjitas - 1414_115kV' %39
-	'Subestación San Antón_115kV' %40
-	'Subestación Sabana Llana I_230kV' %41
-	'Subestación Venezuela_115kV' %42
-	'Subestación Campo Llano_115kV' %43
-	'Subestación Rincón_115kV' %44
-	'Subestación Los Frailes_115kV' %45
-	'Subestación Candelero_230kV_230kV' %46
-	'Subestación Guaynabo Pueblo_115kV' %47
-	'Subestación Hidroeléctrica Toro Negro_115kV_115kV' %48
-	'Subestación Barranquitas_115kV_115kV' %49
-	'Guayanilla Substation 1_115kV_115kV' %50
-	'Guayanilla Substation 2_230kV_230kV' %51
-	'Subestación Hidroeléctrica Dos Bocas_115kV_115kV' %52
-	'Subestación Guerrero_115kV' %53
-	'Subestación Victoria_230kV' %54
-	'Subestación Caimital Bajo_115kV' %55
-	'Subestación Mogote_115kV_115kV' %56
-	'Guayanilla Substation 3_230kV' %57
-	'Peñuelas Substation 1_230kV_230kV' %58
-	'Subestación Vega Redonda_115kV' %59
-	'Subestación Hidroeléctrica de Río Blanco_115kV' %60
-	'Subestación Quebrada Seca (Ceiba)_115kV' %61
-	'Subestación Caimital_230kV' %62
-	'Subestación Río_115kV' %63
-	'Subestación Mameyes 2_115kV' %64
-	'Subestación Juncos_230kV' %65
-	'Mayagüez Substation 1_230kV' %66
-	'Subestación Santa Isabel_115kV_115kV' %67
-	'Aguadilla Substation_115kV' %68
-	'Subestación Éolica de Naguabo_115kV_115kV' %69
-	'Subestación Fajardo_115kV_115kV' %70
-	'Aguada Substation_115kV' %71
-	'Río Grande Substation_115kV' %72
-	'Subestación Conquistador_115kV' %73
-	'Collores Substation_115kV' %74
-	'Vega Baja Substation_115kV' %75
-	'Arecibo Substation 3_115kV' %76
-	'Florida Substation_230kV' %77
-	'Bartolo Substation_115kV' %78
-	'Subestación Dominguito_115kV' %79
-	'San Germán Substation 2_115kV' %80
-	'Subestación Centro Médico_115kV' %81
-	'Morovis Substation_115kV' %82
-	'Barceloneta Substation 1_115kV' %83
-	'Subestación de Hatillo_115kV' %84
-	'Subestación Puerta de Tierra_115kV' %85
-	'Santa Isabel Substation 1_115kV_115kV' %86
-	'Santa Isabel Substation 2_115kV_115kV' %87
-	'Caguas Substation 1_115kV' %88
-	'Barceloneta Substation 2_115kV' %89
-	'Subestación Bayamón 2_115kV' %90
-	'Dorado Substation 2_115kV' %91
-	'Caguas Substation 2_115kV' %92
-	'Arecibo Substation 4_115kV' %93
-	'Subestación Las Carolinas_115kV' %94
-	'Río Piedras Substation 7_115kV' %95
-	'Río Piedras Substation 8_115kV' %96
-	'Subestación Bayamón Pueblo_115kV' %97
-	'Subestación Palo Seco_230kV_230kV' %98
-	'Subestación Palo Seco_115kV_115kV' %99
-	'Manatí Substation 1_115kV_115kV' %100
-	'Subestación Juan Domingo_230kV' %101
-	'Subestación Puerto Nuevo_115kV' %102
-	'Subestación Río Grande Pueblo_115kV' %103
-	'Subestación Las Monjas_115kV' %104
-	'Subestación Summit Hills I_115kV' %105
-	'Subestación Summit Hills II_115kV' %106
-	'Subestación Villas Prades_115kV' %107
-	'Subestación Solar San Fermín_115kV' %108
-	'Loíza Substation_115kV' %109
-	'Subestación Caparra_115kV' %110
-	'Subestación Crematorio_115kV' %111
-	'Subestación Río Grande Estates_115kV' %112
-	'Subestación Bayview_115kV' %113
-	'Bayamón Substation 2_230kV' %114
-	'Subestación Añasco Arriba_230kV' %115
-	'Subestación Factor_115kV' %116
-	'Subestación San Lorenzo I_115kV' %117
-	'Subestación Barrazas_115kV' %118
-	'Vega Alta Substation 1_115kV' %119
-	'Subestación Mayagüez Pueblo_230kV' %120
-	'Subestación Arecibo Pueblo_230kV' %121
-	'Trujillo Alto Substation 2_115kV' %122
-	'Trujillo Alto Substation 4_115kV' %123
-	'Bayamón Substation 4_115kV' %124
-	'Bayamón Substation 6_115kV' %125
-	'Pueblo Viejo Substation 3_115kV' %126
-	'Don Alonso Substation_115kV_115kV' %127
-	'Humacao Substation 1_115kV_115kV' %128
-	'Humacao Substation 2_115kV' %129
-	'Moca Substation 2_115kV' %130
-	'Subestación Comerío_115kV' %131
-	'Pueblo Viejo Substation 4_115kV' %132
-	'Pueblo Viejo Substation 5_115kV' %133
-	'Añasco Substation_115kV' %134
-	'Subestación Buena Vista_115kV' %135
-	'Subestación Canóvanas Pueblo_115kV' %136
-	'Barceloneta Substation 3_115kV' %137
-	'Río Piedras Substation 9_115kV' %138
-	'San Juan Substation 4_115kV' %139
-	'Subeatacióon Los Ángeles_115kV' %140
-	'Subestación 11 de Agosto_115kV' %141
-	'Rincón Substation 1_115kV' %142
-	'Mayagüez Substation 2_230kV' %143
-	'Mayagüez Substation 3_230kV' %144
-	'Mayagüez Substation 7_115kV' %145
-	'Indiera Alta Substation_115kV' %146
-	'Peñuelas Substation 3_115kV' %147
-	'Caguas Substation 4_115kV' %148
-	'Manatí Substation 2_115kV' %149
-	'Manatí Substation 3_115kV' %150
-	'Puerto Nuevo Substation_115kV' %151
-	'Toa Baja Substation_115kV' %152
-	'Río Piedras Substation 14_115kV' %153
-	'Trujillo Alto Substation 5_115kV' %154
-	'Juncos Substation_230kV' %155
-	'Coamo Substation_115kV' %156
-	'Ponce Substation 9_115kV' %157
-	'Ponce Substation 10_115kV' %158
-	'Ponce Substation 14_115kV' %159
-	'Ponce Substation 15_115kV' %160
-	'Adjuntas Substation_115kV' %161
-	'Arecibo Substation 6_115kV' %162
-	'Naranjito Substation_115kV' %163
-	'Isabela Substation 1_115kV' %164
-	'Isabela Substation 2_115kV' %165
-	'Isabela Substation 3_115kV' %166
-	'Jobos Substation_115kV' %167
-	'Rincón Substation 2_115kV' %168
-	'Maricao Substation_115kV' %169
-	'Guayama Substation 2_115kV' %170
-	'Cabo Rojo DR_230kV' %171
-	'Toa Vaca Dam_115kV' %172
+	'Subestación Cacao_nankV' %25
+	'A.E.S., Guayama_230kV_230kV' %26
+	'Maunabo T.C._115kV_115kV' %27
+	'Yabucoa T.C._115kV_115kV' %28
+	'Mayagüez TC_230kV_230kV' %29
+	'Guánica TC_230kV_230kV' %30
+	'Subestación Cañas_115kV_115kV' %31
+	'Subestación Santurce_nankV' %32
+	'Subestación Martín Peña_nankV' %33
+	'Subestación de Juana Díaz_115kV_115kV' %34
+	'Subestación UPR - Bayamón_nankV' %35
+	'Subestación Minillas - 1114_nankV' %36
+	'Subestación Viaducto II_nankV' %37
+	'San Juan Substation 1_nankV' %38
+	'Subestación Cataño_nankV' %39
+	'Subestación Condado - 1133_nankV' %40
+	'Subestación Fonalleda_nankV' %41
+	'Subestación Parques y Recreos_nankV' %42
+	'Subestación Taft_nankV' %43
+	'Río Piedras Substation 2_nankV' %44
+	'Río Piedras Substation 3_nankV' %45
+	'Pueblo Viejo Substation 1_nankV' %46
+	'Subestación Fátima_nankV' %47
+	'Subestación Río Bayamón_nankV' %48
+	'Subestación Egozcue_nankV' %49
+	'Subestación Tres Monjitas - 1414_nankV' %50
+	'Subestación San Antón_nankV' %51
+	'Subestación Sabana Llana I_nankV' %52
+	'Subestación Venezuela_nankV' %53
+	'Subestación Campo Llano_nankV' %54
+	'Río Piedras Substation 4_nankV' %55
+	'Subestación Villamil_nankV' %56
+	'Subestación Hato Rey 1404_nankV' %57
+	'Subestación Universidad_nankV' %58
+	'Subestación Miramar 1107_nankV' %59
+	'Subestación Rincón_nankV' %60
+	'Subestación Los Frailes_nankV' %61
+	'Subestación Candelero_230kV_230kV' %62
+	'Subestación Guaynabo Pueblo_nankV' %63
+	'Subestación Hidroeléctrica Toro Negro_115kV_115kV' %64
+	'Subestación Barranquitas_115kV_115kV' %65
+	'Guayanilla Substation 1_115kV_115kV' %66
+	'Guayanilla Substation 2_230kV_230kV' %67
+	'Subestación Hidroeléctrica Dos Bocas_115kV_115kV' %68
+	'Subestación Guerrero_nankV' %69
+	'Subestación Victoria_nankV' %70
+	'Subestación Caimital Bajo_nankV' %71
+	'Subestación Mogote_115kV_115kV' %72
+	'Guayanilla Substation 3_nankV' %73
+	'Peñuelas Substation 1_230kV_230kV' %74
+	'Subestación Vega Redonda_nankV' %75
+	'Subestación Hidroeléctrica de Río Blanco_nankV' %76
+	'Subestación Quebrada Seca (Ceiba)_nankV' %77
+	'Subestación Caimital_nankV' %78
+	'Subestación Río_nankV' %79
+	'Subestación Mameyes 2_nankV' %80
+	'Subestación Juncos_nankV' %81
+	'Mayagüez Substation 1_nankV' %82
+	'Subestación Santa Isabel_115kV_115kV' %83
+	'Subestación Hidroeléctrica Carite 1_nankV' %84
+	'Aguadilla Substation_nankV' %85
+	'Subestación Éolica de Naguabo_115kV_115kV' %86
+	'San Lorenzo Substation 1_nankV' %87
+	'Subestación Fajardo_115kV_115kV' %88
+	'Aguada Substation_nankV' %89
+	'Maleza Baja Substation 1_nankV' %90
+	'Moca Substation 1_nankV' %91
+	'Subestación Caguax_nankV' %92
+	'Río Grande Substation_nankV' %93
+	'Subestación Base Muñiz_nankV' %94
+	'San Lorenzo Substation 2_nankV' %95
+	'Subestación Conquistador_nankV' %96
+	'Collores Substation_nankV' %97
+	'Vega Baja Substation_nankV' %98
+	'Arecibo Substation 3_nankV' %99
+	'San Lorenzo Substation 3_nankV' %100
+	'Florida Substation_nankV' %101
+	'Ponce Substation 1_nankV' %102
+	'Bartolo Substation_nankV' %103
+	'Subestación Dominguito_nankV' %104
+	'San Germán Substation 2_nankV' %105
+	'Subestación Aeropuerto_nankV' %106
+	'San Germán Substation 3_nankV' %107
+	'Dorado Substation 1_nankV' %108
+	'Río Piedras Substation 5_nankV' %109
+	'Subestación Centro Médico_nankV' %110
+	'Morovis Substation_nankV' %111
+	'Barceloneta Substation 1_nankV' %112
+	'Aibonito Substation_nankV' %113
+	'Gurabo Substation 1_nankV' %114
+	'Subestación de Hatillo_nankV' %115
+	'Arecibo Substation 4_nankV' %116
+	'Subestación Puerta de Tierra_nankV' %117
+	'Santa Isabel Substation 1_115kV_115kV' %118
+	'Santa Isabel Substation 2_115kV_115kV' %119
+	'Planas Substation_nankV' %120
+	'Caguas Substation 1_nankV' %121
+	'Subestación Naranjito_nankV' %122
+	'Barceloneta Substation 2_nankV' %123
+	'Guayama Substation 1_nankV' %124
+	'Ceiba Substation 1_nankV' %125
+	'Río Piedras Substation 6_nankV' %126
+	'Subestación Bayamón 2_nankV' %127
+	'Dorado Substation 2_nankV' %128
+	'Subestación Capuchino_nankV' %129
+	'Caguas Substation 2_nankV' %130
+	'Subestación Carolina Pueblo_nankV' %131
+	'Subestación Fajardo 2_nankV' %132
+	'Bayamón Substation 1_nankV' %133
+	'Arecibo Substation 5_nankV' %134
+	'Subestación Las Carolinas_nankV' %135
+	'Río Piedras Substation 7_nankV' %136
+	'Río Piedras Substation 8_nankV' %137
+	'Subestación Bayamón Pueblo_nankV' %138
+	'Subestación Palo Seco_230kV_230kV' %139
+	'Subestación Palo Seco_115kV_115kV' %140
+	'Manatí Substation 1_115kV_115kV' %141
+	'Subestación Las Lomas_nankV' %142
+	'Subestación Juan Domingo_nankV' %143
+	'Subestación Luis Llorens Torres_nankV' %144
+	'Subestación Bairoa_nankV' %145
+	'Subestación Puerto Nuevo_nankV' %146
+	'Subestación Tapia_nankV' %147
+	'Subestación Hato Tejas_nankV' %148
+	'Subestación Vega Alta_nankV' %149
+	'Subestación Río Grande Pueblo_nankV' %150
+	'Subestación Las Monjas_nankV' %151
+	'Subestación Vistamar_nankV' %152
+	'Subestación Manatí Pueblo_nankV' %153
+	'Subestación Isla Grande_nankV' %154
+	'Subestación Covadonga GIS_nankV' %155
+	'Subestación San Fernando_nankV' %156
+	'Subestación Summit Hills I_nankV' %157
+	'Subestación Summit Hills II_nankV' %158
+	'Subestación Villas Prades_nankV' %159
+	'Subestación Solar San Fermín_nankV' %160
+	'Loíza Substation_nankV' %161
+	'Subestación Caparra_nankV' %162
+	'Subestación Crematorio_nankV' %163
+	'Subestación Río Grande Estates_nankV' %164
+	'Subestación Bayview_nankV' %165
+	'Dorado Substation 3_nankV' %166
+	'Subestación Luquillo Pueblo_nankV' %167
+	'Bayamón Substation 2_nankV' %168
+	'Subestación Guaraguao_nankV' %169
+	'Subestación Añasco Arriba_nankV' %170
+	'Arecibo Substation 6_nankV' %171
+	'Ponce Substation 2_nankV' %172
+	'Bayamón Substation 3_nankV' %173
+	'Subestación Factor_nankV' %174
+	'Camuy Substation_nankV' %175
+	'Subestación San Lorenzo I_nankV' %176
+	'Subestación Barrazas_nankV' %177
+	'Vega Alta Substation 1_nankV' %178
+	'Subestación Toa Alta Pueblo_nankV' %179
+	'Peñuelas Substation 2_nankV' %180
+	'Subestación Mayagüez Pueblo_nankV' %181
+	'Utuado Substation_nankV' %182
+	'Subestación Arecibo Pueblo_nankV' %183
+	'Trujillo Alto Substation 2_nankV' %184
+	'Trujillo Alto Substation 3_nankV' %185
+	'Trujillo Alto Substation 4_nankV' %186
+	'Bayamón Substation 4_nankV' %187
+	'Bayamón Substation 5_nankV' %188
+	'Bayamón Substation 6_nankV' %189
+	'Pueblo Viejo Substation 2_nankV' %190
+	'Aguacate Substation_nankV' %191
+	'Subestación Reparto Metro_nankV' %192
+	'Carolina Substation 1_nankV' %193
+	'Subestación Jardines Metropolitanos AEE_nankV' %194
+	'Carolina Substation 2_nankV' %195
+	'Pueblo Viejo Substation 3_nankV' %196
+	'Don Alonso Substation_115kV_115kV' %197
+	'Humacao Substation 1_115kV_115kV' %198
+	'Humacao Substation 2_nankV' %199
+	'Barrio Pueblo Substation_nankV' %200
+	'Subestación Jájome_nankV' %201
+	'Moca Substation 2_nankV' %202
+	'Subestación Comerío_nankV' %203
+	'Subestación Las Piedras_nankV' %204
+	'Pueblo Viejo Substation 4_nankV' %205
+	'Pueblo Viejo Substation 5_nankV' %206
+	'San Juan Substation 2_nankV' %207
+	'Añasco Substation_nankV' %208
+	'Subestación Buena Vista_nankV' %209
+	'Subestación Canóvanas Pueblo_nankV' %210
+	'Barceloneta Substation 3_nankV' %211
+	'San Juan Substation 3_nankV' %212
+	'Río Piedras Substation 9_nankV' %213
+	'San Juan Substation 4_nankV' %214
+	'Río Piedras Substation 10_nankV' %215
+	'Carolina Substation 3_nankV' %216
+	'Subeatacióon Los Ángeles_nankV' %217
+	'Subestación 11 de Agosto_nankV' %218
+	'Rincón Substation 1_nankV' %219
+	'Mayagüez Substation 2_nankV' %220
+	'Mayagüez Substation 3_nankV' %221
+	'Mayagüez Substation 4_nankV' %222
+	'Mayagüez Substation 5_nankV' %223
+	'Mayagüez Substation 6_nankV' %224
+	'Mayagüez Substation 7_nankV' %225
+	'Mayagüez Substation 8_nankV' %226
+	'Indiera Alta Substation_nankV' %227
+	'San Germán Substation 4_nankV' %228
+	'Yauco Substation_nankV' %229
+	'Guayanilla Substation 4_nankV' %230
+	'Peñuelas Substation 3_nankV' %231
+	'Quebrada Vueltas Substation_nankV' %232
+	'Ceiba Substation 2_nankV' %233
+	'Caguas Substation 3_nankV' %234
+	'Caguas Substation 4_nankV' %235
+	'Manatí Substation 2_nankV' %236
+	'Manatí Substation 3_nankV' %237
+	'Puerto Nuevo Substation_nankV' %238
+	'Vega Alta Substation 2_nankV' %239
+	'Toa Baja Substation_nankV' %240
+	'Bayamón Substation 7_nankV' %241
+	'San Juan Substation 5_nankV' %242
+	'Río Piedras Substation 11_nankV' %243
+	'Río Piedras Substation 12_nankV' %244
+	'Río Piedras Substation 13_nankV' %245
+	'Río Piedras Substation 14_nankV' %246
+	'Trujillo Alto Substation 5_nankV' %247
+	'Gurabo Substation 2_nankV' %248
+	'Juncos Substation_nankV' %249
+	'Peña Pobre Substation_nankV' %250
+	'Patillas Substation_nankV' %251
+	'Santa Isabel Substation 3_nankV' %252
+	'Santa Isabel Substation 4_nankV' %253
+	'Coamo Substation_nankV' %254
+	'Ponce Substation 3_nankV' %255
+	'Ponce Substation 4_nankV' %256
+	'Ponce Substation 5_nankV' %257
+	'Ponce Substation 6_nankV' %258
+	'Ponce Substation 7_nankV' %259
+	'Ponce Substation 8_nankV' %260
+	'Ponce Substation 9_nankV' %261
+	'Ponce Substation 10_nankV' %262
+	'Ponce Substation 11_nankV' %263
+	'Ponce Substation 12_nankV' %264
+	'Ponce Substation 13_nankV' %265
+	'Ponce Substation 14_nankV' %266
+	'Ponce Substation 15_nankV' %267
+	'Adjuntas Substation_nankV' %268
+	'Arecibo Substation 7_nankV' %269
+	'Arecibo Substation 8_nankV' %270
+	'Naranjito Substation_nankV' %271
+	'Isabela Substation 1_nankV' %272
+	'Isabela Substation 2_nankV' %273
+	'Isabela Substation 3_nankV' %274
+	'Jobos Substation_nankV' %275
+	'Ceiba Baja Substation_nankV' %276
+	'Maleza Baja Substation 2_nankV' %277
+	'Rincón Substation 2_nankV' %278
+	'Maricao Substation_nankV' %279
+	'Guayama Substation 2_nankV' %280
     };
 
     %% generator names
@@ -947,18 +1055,29 @@ function mpc = Puerto_RicoGrid_DC_feasible
 	'18.075061, -67.009219'
 	'18.000689, -66.612118'
 	'18.395253, -65.981015'
+	'18.457130, -66.934518'
 	'17.947394, -66.149408'
+	'18.011491, -65.904329'
 	'18.048421, -65.851573'
 	'18.237292, -67.147155'
 	'17.965948, -66.897503'
 	'18.012880, -66.639103'
+	'18.454191, -66.076071'
 	'18.434486, -66.060236'
 	'18.059834, -66.551397'
 	'18.373488, -66.143316'
+	'18.450827, -66.069070'
 	'18.446627, -66.077873'
+	'18.454179, -66.086728'
 	'18.423435, -66.139952'
+	'18.452161, -66.066975'
+	'18.407087, -66.067950'
 	'18.462105, -66.090188'
+	'18.450917, -66.060717'
+	'18.401266, -66.047488'
+	'18.401275, -66.047559'
 	'18.426967, -66.104462'
+	'18.412423, -66.057178'
 	'18.381667, -66.126000'
 	'18.440889, -66.068715'
 	'18.422386, -66.067561'
@@ -966,6 +1085,11 @@ function mpc = Puerto_RicoGrid_DC_feasible
 	'18.394386, -65.980750'
 	'18.397078, -66.055759'
 	'18.410268, -66.011254'
+	'18.422577, -66.070245'
+	'18.450563, -66.072991'
+	'18.426898, -66.060082'
+	'18.406049, -66.047449'
+	'18.450016, -66.082615'
 	'18.344393, -67.255421'
 	'18.369751, -66.111976'
 	'18.106163, -65.824155'
@@ -990,31 +1114,56 @@ function mpc = Puerto_RicoGrid_DC_feasible
 	'18.226997, -65.915485'
 	'18.219298, -67.160039'
 	'18.021988, -66.369616'
+	'18.044830, -66.105839'
 	'18.460888, -67.147950'
 	'18.209304, -65.702645'
+	'18.183746, -65.957694'
 	'18.329468, -65.645942'
 	'18.382676, -67.192519'
+	'18.486933, -67.147182'
+	'18.370912, -67.049867'
+	'18.240682, -66.016437'
 	'18.379916, -65.846781'
+	'18.437778, -65.986838'
+	'18.109319, -66.050528'
 	'18.343578, -66.012612'
 	'18.106578, -66.537459'
 	'18.469234, -66.396088'
 	'18.371547, -66.625251'
+	'18.120037, -65.989129'
 	'18.363956, -66.569561'
+	'17.975896, -66.690353'
 	'18.188334, -66.849190'
 	'18.419704, -66.764047'
 	'18.149700, -66.993315'
+	'18.436535, -66.009696'
+	'18.082961, -67.052721'
+	'18.433606, -66.302372'
+	'18.399119, -66.072083'
 	'18.392331, -66.072986'
 	'18.317461, -66.407748'
 	'18.452526, -66.543012'
+	'18.130701, -66.276199'
+	'18.224892, -66.007509'
 	'18.482136, -66.827436'
+	'18.478531, -66.768453'
 	'18.464390, -66.100839'
 	'17.985229, -66.398131'
 	'18.021020, -66.411331'
+	'18.396130, -66.926322'
 	'18.218013, -66.005116'
+	'18.300164, -66.241634'
 	'18.428346, -66.570598'
+	'17.979064, -66.086325'
+	'18.230375, -65.616974'
+	'18.415219, -66.049751'
 	'18.171152, -66.106178'
 	'18.460224, -66.270009'
+	'18.395923, -66.043480'
 	'18.217637, -66.040917'
+	'18.379113, -65.960518'
+	'18.331316, -65.660995'
+	'18.385000, -66.180671'
 	'18.429054, -66.696203'
 	'18.249602, -66.072898'
 	'18.389003, -66.075424'
@@ -1023,10 +1172,21 @@ function mpc = Puerto_RicoGrid_DC_feasible
 	'18.454338, -66.148802'
 	'18.454338, -66.148802'
 	'18.429506, -66.465846'
+	'18.389893, -66.094418'
 	'18.399585, -66.122331'
+	'18.446408, -66.044533'
+	'18.261765, -66.039627'
 	'18.416177, -66.079561'
+	'18.446898, -66.052640'
+	'18.406755, -66.183097'
+	'18.414544, -66.331203'
 	'18.377163, -65.832208'
 	'18.427235, -66.049420'
+	'18.422408, -65.988051'
+	'18.430999, -66.491801'
+	'18.451042, -66.091092'
+	'18.465508, -66.107071'
+	'18.414389, -66.088614'
 	'18.398081, -66.099066'
 	'18.398468, -66.099038'
 	'18.404322, -66.018855'
@@ -1036,63 +1196,119 @@ function mpc = Puerto_RicoGrid_DC_feasible
 	'18.429773, -66.083538'
 	'18.378645, -65.791504'
 	'18.449811, -66.138364'
+	'18.455028, -66.285005'
+	'18.379429, -65.720510'
 	'18.377119, -66.139678'
+	'18.378185, -66.143875'
 	'18.274163, -67.149454'
+	'18.460001, -66.741503'
+	'17.979523, -66.666486'
+	'18.415236, -66.136418'
 	'18.442358, -66.637960'
+	'18.476929, -66.848401'
 	'18.191288, -65.964144'
 	'18.323324, -65.939000'
 	'18.414388, -66.307123'
+	'18.385747, -66.252786'
+	'18.051986, -66.721650'
 	'18.203316, -67.145496'
+	'18.283172, -66.702453'
 	'18.471128, -66.715538'
 	'18.368763, -66.021480'
+	'18.371156, -66.023874'
 	'18.368974, -66.012054'
 	'18.371412, -66.166453'
+	'18.382657, -66.156575'
 	'18.416991, -66.194945'
+	'18.408330, -66.116105'
+	'18.497341, -67.131452'
+	'18.400910, -66.078759'
+	'18.441576, -66.016735'
+	'18.401066, -66.062889'
+	'18.440569, -66.024919'
 	'18.417568, -66.109428'
 	'18.296363, -66.643367'
 	'18.135943, -65.822999'
 	'18.140130, -65.822684'
+	'18.335678, -65.655995'
+	'18.071559, -66.144984'
 	'18.396904, -67.112269'
 	'18.222437, -66.223187'
+	'18.179594, -65.871097'
 	'18.427048, -66.105170'
 	'18.423812, -66.103647'
+	'18.451523, -66.095291'
 	'18.296722, -67.142282'
 	'18.325178, -66.204084'
 	'18.380351, -65.901158'
 	'18.430974, -66.563003'
+	'18.432854, -66.086661'
 	'18.394019, -66.059639'
 	'18.445918, -66.073226'
+	'18.423540, -66.046984'
+	'18.439344, -66.025487'
 	'18.431422, -66.007006'
 	'18.200880, -67.132998'
 	'18.366100, -67.234956'
 	'18.249959, -67.155393'
 	'18.160636, -67.150110'
+	'18.178182, -67.152130'
+	'18.180685, -67.155082'
+	'18.198924, -67.144207'
 	'18.198476, -67.143993'
+	'18.191030, -67.144441'
 	'18.160098, -66.879879'
+	'18.089879, -67.037823'
+	'18.026640, -66.859910'
+	'18.022185, -66.792006'
 	'18.006646, -66.741109'
+	'18.299332, -65.657524'
+	'18.253508, -65.648681'
+	'18.216168, -66.058515'
 	'18.225376, -66.039376'
 	'18.433017, -66.486048'
 	'18.456402, -66.468080'
 	'18.481558, -66.405530'
+	'18.449488, -66.349203'
 	'18.409888, -66.256554'
+	'18.392762, -66.169981'
+	'18.443407, -66.055864'
+	'18.398453, -66.023278'
+	'18.415048, -66.036560'
+	'18.410565, -66.043405'
 	'18.370782, -66.059086'
 	'18.328072, -66.017155'
+	'18.250660, -65.961877'
 	'18.247231, -65.950734'
+	'18.220021, -65.833261'
+	'17.998272, -66.005225'
+	'17.979282, -66.415615'
+	'17.983234, -66.399831'
 	'18.050704, -66.412774'
+	'18.045573, -66.577408'
+	'17.974832, -66.615088'
+	'17.968248, -66.619474'
+	'17.967370, -66.612046'
+	'17.980786, -66.599374'
+	'17.993055, -66.604359'
 	'17.995145, -66.604163'
 	'17.995837, -66.606675'
+	'17.994276, -66.608417'
+	'17.993716, -66.608728'
+	'18.006783, -66.616300'
 	'17.993148, -66.628021'
 	'18.005813, -66.649085'
 	'18.165123, -66.728759'
 	'18.465350, -66.732060'
+	'18.472110, -66.757131'
 	'18.441318, -66.799849'
 	'18.497076, -67.015684'
 	'18.472846, -67.044184'
 	'18.489985, -67.046927'
 	'18.487160, -67.072213'
+	'18.452974, -67.089672'
+	'18.495304, -67.142823'
 	'18.366100, -67.234956'
 	'18.182975, -66.982138'
 	'17.947852, -66.141928'
-	'18.128912, -67.134768'
-	'18.099178, -66.490319'
     };
