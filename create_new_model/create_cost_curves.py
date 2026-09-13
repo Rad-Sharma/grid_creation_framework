@@ -67,6 +67,8 @@ def _coeffs(category: str, p: float) -> tuple[float, float, float]:
         "steam_oil":      (5.947*p + 115.2,      0.0210*p  + 66.52,    3.73e-4*p  - 5.85e-4),
         "steam_gas":      (2.570*p + 13.61,      0.00684*p + 18.86,    1.22e-4*p  - 7.34e-4),
         "steam_wood":     (4.118*p + 5.65,       0.0229*p  + 31.54,    1.59e-3*p  - 0.0118),
+        "steam_landfill": (8.174*p - 15.0, 58.0, .0056*p - .0188),
+        "steam_petcoke":  (2.242*p + 17.47, .0074*p + 17.80, 1.15e-4*p - .00111),
         "free_steam":     (0.0,                  0.0,                   0.0),         # nuclear/geothermal/MSW
         # ── Gas turbine units ──────────────────────────────────
         "gt_gas":         (7.913*p - 23.26,      0.0366*p  + 1.27,     9.45e-4*p  - 0.0184),
@@ -75,6 +77,13 @@ def _coeffs(category: str, p: float) -> tuple[float, float, float]:
         # ── Combined cycle units ───────────────────────────────
         "cc_gas":         (2.388*p + 182.2,      0.00217*p + 12.96,    5.96e-5*p  - 1.92e-4),
         "cc_petroleum":   (39.10*p + 10.0,       0.0353*p  + 51.29,    3.88e-3*p  - 0.0076),
+        "cc_coal":        (992.0, 9.0, .01),
+        "cc_landfill":    (27.40*p - 18.0, 37.0, .0090*p),
+        "cc_petcoke":     (1207.0, 14.0, .018),
+        "cc_wood":        (554.0, 22.0, .09),
+        "ic_gas":         (.506*p - 1.12, .00556*p + 5.89, 6.67e-4*p - .00333),
+        "ic_petroleum":   (1.607*p - 9.14, .00196*p + 24.96, 5.68e-4*p - .00136),
+        "ic_landfill":    (53.0, 25.0, .3),
         # ── Hydro units ────────────────────────────────────────
         "hydro":          (1.117*p - 0.34,       14.0,                  1.54e-5*p  - 8.0e-6),
         # ── Renewables / zero-cost ─────────────────────────────
@@ -126,7 +135,10 @@ SOURCE_TO_CATEGORY = {
     "wind":        "renewable",
     "nuclear":     "free_steam",
     "geothermal":  "free_steam",
-    "waste":       "steam_wood",
+    "waste":       "free_steam",
+    "wood":        "steam_wood",
+    "landfill gas": "steam_landfill",
+    "petroleum coke": "steam_petcoke",
     "diesel":      "gt_petroleum",
     "gasoline":    "gt_petroleum",
     "steam":       "steam_gas",      # generic steam tag → steam/gas
@@ -143,8 +155,23 @@ GENFUEL_TO_CATEGORY = {
 }
 
 
-def map_to_category(primary_source: str, genfuel: str) -> str:
+def map_to_category(primary_source: str, genfuel: str, method: str = "") -> str:
     """Resolve (primary_source, genfuel) → cost curve category key."""
+    method = str(method).lower().replace("_", " ").replace("-", " ")
+    fuel = {"gas": "gas", "natural gas": "gas", "oil": "petroleum",
+            "diesel": "petroleum", "gasoline": "petroleum", "coal": "coal",
+            "landfill gas": "landfill", "biogas": "landfill",
+            "petroleum coke": "petcoke", "wood": "wood", "waste wood": "wood"}.get(primary_source)
+    prefix = None
+    if "combined cycle" in method: prefix = "cc"
+    elif "internal combustion" in method or "combustion engine" in method: prefix = "ic"
+    elif "gas turbine" in method or "combustion turbine" in method: prefix = "gt"
+    elif "steam" in method: prefix = "steam"
+    valid = {"steam": {"coal", "oil", "gas", "wood", "landfill", "petcoke"},
+             "cc": {"gas", "petroleum", "coal", "landfill", "petcoke", "wood"},
+             "ic": {"gas", "petroleum", "landfill"}, "gt": {"gas", "petroleum"}}
+    if prefix == "steam" and fuel == "petroleum": fuel = "oil"
+    if prefix and fuel in valid[prefix]: return f"{prefix}_{fuel}"
     cat = SOURCE_TO_CATEGORY.get(primary_source)
     if cat:
         return cat
@@ -174,135 +201,140 @@ def compute_polynomial_coeffs(pmax: float, category: str) -> tuple[float, float,
 # ============================================================
 # STEP 1 – LOAD GENERATOR CSV
 # ============================================================
-print("=" * 60)
-print("STEP 1: Loading generator CSV")
-print("=" * 60)
+def main():
+    print("=" * 60)
+    print("STEP 1: Loading generator CSV")
+    print("=" * 60)
 
-gen = pd.read_csv(WORK_DIR / f"matpower_{region}_generators.csv")
+    gen = pd.read_csv(WORK_DIR / f"matpower_{region}_generators.csv")
 
-print(f"  Loaded {len(gen)} generator rows")
-n_no_pmax = gen["Pmax"].isna().sum()
-print(f"  Rows with no Pmax (cost curve cannot be computed): {n_no_pmax}")
-
-
-# ============================================================
-# STEP 2 – EXTRACT PRIMARY SOURCE LABEL
-# ============================================================
-print("\n" + "=" * 60)
-print("STEP 2: Extracting primary fuel source")
-print("=" * 60)
-
-# The OSM 'source' tag sometimes contains multiple semicolon-separated
-# fuels (e.g. 'gas;oil'). We use the first label as the primary fuel.
-# Garbled entries such as URLs are treated as unknown.
-
-gen["primary_source"] = gen["source"].apply(extract_primary_source)
-
-source_counts = gen["primary_source"].value_counts()
-print("  Primary source distribution:")
-for src, count in source_counts.items():
-    print(f"    {src:20s}: {count}")
+    print(f"  Loaded {len(gen)} generator rows")
+    n_no_pmax = gen["Pmax"].isna().sum()
+    print(f"  Rows with no Pmax (cost curve cannot be computed): {n_no_pmax}")
 
 
-# ============================================================
-# STEP 3 – MAP TO COST CURVE CATEGORY
-# ============================================================
-print("\n" + "=" * 60)
-print("STEP 3: Mapping generators to cost curve categories")
-print("=" * 60)
+    # ============================================================
+    # STEP 2 – EXTRACT PRIMARY SOURCE LABEL
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 2: Extracting primary fuel source")
+    print("=" * 60)
 
-gen["curve_type"] = gen.apply(
-    lambda r: map_to_category(r["primary_source"], r["genfuel"]), axis=1
-)
+    # The OSM 'source' tag sometimes contains multiple semicolon-separated
+    # fuels (e.g. 'gas;oil'). We use the first label as the primary fuel.
+    # Garbled entries such as URLs are treated as unknown.
 
-print(f"  {'Generator':<45} {'Primary Source':<18} {'Curve Type'}")
-print(f"  {'-'*45} {'-'*18} {'-'*40}")
-for _, row in gen.iterrows():
-    label = CATEGORY_LABELS.get(row["curve_type"], row["curve_type"])
-    print(f"  {row['generator_name'][:44]:<45} {row['primary_source']:<18} {label}")
+    gen["primary_source"] = gen["source"].apply(extract_primary_source)
 
-
-# ============================================================
-# STEP 4 – COMPUTE POLYNOMIAL COEFFICIENTS
-# ============================================================
-print("\n" + "=" * 60)
-print("STEP 4: Computing polynomial cost coefficients")
-print("=" * 60)
-
-# For each generator with a known Pmax, evaluate A(Pmax), B(Pmax), C(Pmax)
-# from the table to produce the three MATPOWER gencost coefficients:
-#   c2 = C(Pmax)  [$/MWh²]  – quadratic term
-#   c1 = B(Pmax)  [$/MWh]   – linear term (marginal cost)
-#   c0 = A(Pmax)  [$/h]     – constant term (no-load cost)
-# Coefficients are clamped at 0; regression fits can produce small negative
-# values for plants below the original table's training range.
-# Generators with no Pmax receive blank cost fields.
-
-c2_vals, c1_vals, c0_vals = [], [], []
-n_computed = 0
-n_skipped  = 0
-
-for _, row in gen.iterrows():
-    pmax = row["Pmax"]
-
-    if pd.isna(pmax):
-        c2_vals.append(np.nan)
-        c1_vals.append(np.nan)
-        c0_vals.append(np.nan)
-        n_skipped += 1
-        continue
-
-    c2, c1, c0 = compute_polynomial_coeffs(float(pmax), row["curve_type"])
-    c2_vals.append(c2)
-    c1_vals.append(c1)
-    c0_vals.append(c0)
-    n_computed += 1
-
-gen["c2"] = c2_vals
-gen["c1"] = c1_vals
-gen["c0"] = c0_vals
-
-print(f"  Coefficients computed: {n_computed}")
-print(f"  Skipped (no Pmax):     {n_skipped}")
+    source_counts = gen["primary_source"].value_counts()
+    print("  Primary source distribution:")
+    for src, count in source_counts.items():
+        print(f"    {src:20s}: {count}")
 
 
-# ============================================================
-# STEP 5 – BUILD MATPOWER GENCOST TABLE AND SAVE
-# ============================================================
-print("\n" + "=" * 60)
-print("STEP 5: Building MATPOWER gencost table")
-print("=" * 60)
+    # ============================================================
+    # STEP 3 – MAP TO COST CURVE CATEGORY
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 3: Mapping generators to cost curve categories")
+    print("=" * 60)
 
-# MATPOWER mpc.gencost convention (MODEL=2, polynomial, N=3 coefficients):
-#   [model, startup, shutdown, n, c2, c1, c0]
-# startup and shutdown costs are set to 0 (not available from OSM data).
-# model = 2  (polynomial)
-# n     = 3  (quadratic: c2·p² + c1·p + c0)
-#
-# Reference columns are kept for verification and are not part of the
-# MATPOWER matrix; they are included so the CSV can be reviewed before
-# the gencost matrix is assembled in MATLAB/Octave.
+    gen["curve_type"] = gen.apply(
+        lambda r: map_to_category(r["primary_source"], r["genfuel"], r.get("method", "")), axis=1
+    )
 
-cost_out = pd.DataFrame({
-    "generator_name": gen["generator_name"],
-    "bus":            gen["bus"],
-    "source":         gen["source"],
-    "genfuel":        gen["genfuel"],
-    "curve_type":     gen["curve_type"],
-    "Pmax":           gen["Pmax"],
-    "model":          2,
-    "startup":        0.0,
-    "shutdown":       0.0,
-    "n":              3,
-    "c2":             gen["c2"],
-    "c1":             gen["c1"],
-    "c0":             gen["c0"],
-})
+    print(f"  {'Generator':<45} {'Primary Source':<18} {'Curve Type'}")
+    print(f"  {'-'*45} {'-'*18} {'-'*40}")
+    for _, row in gen.iterrows():
+        label = CATEGORY_LABELS.get(row["curve_type"], row["curve_type"])
+        print(f"  {row['generator_name'][:44]:<45} {row['primary_source']:<18} {label}")
 
-out_path = WORK_DIR / f"matpower_{region}_cost_curves.csv"
-cost_out.to_csv(out_path, index=False)
-print(f"  Saved {len(cost_out)} cost curve rows → {out_path}")
-print()
-print(cost_out[["generator_name", "Pmax", "curve_type", "c2", "c1", "c0"]].to_string(index=False))
 
-print("\nDone.")
+    # ============================================================
+    # STEP 4 – COMPUTE POLYNOMIAL COEFFICIENTS
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 4: Computing polynomial cost coefficients")
+    print("=" * 60)
+
+    # For each generator with a known Pmax, evaluate A(Pmax), B(Pmax), C(Pmax)
+    # from the table to produce the three MATPOWER gencost coefficients:
+    #   c2 = C(Pmax)  [$/MWh²]  – quadratic term
+    #   c1 = B(Pmax)  [$/MWh]   – linear term (marginal cost)
+    #   c0 = A(Pmax)  [$/h]     – constant term (no-load cost)
+    # Coefficients are clamped at 0; regression fits can produce small negative
+    # values for plants below the original table's training range.
+    # Generators with no Pmax receive blank cost fields.
+
+    c2_vals, c1_vals, c0_vals = [], [], []
+    n_computed = 0
+    n_skipped  = 0
+
+    for _, row in gen.iterrows():
+        pmax = row["Pmax"]
+
+        if pd.isna(pmax):
+            c2_vals.append(np.nan)
+            c1_vals.append(np.nan)
+            c0_vals.append(np.nan)
+            n_skipped += 1
+            continue
+
+        c2, c1, c0 = compute_polynomial_coeffs(float(pmax), row["curve_type"])
+        c2_vals.append(c2)
+        c1_vals.append(c1)
+        c0_vals.append(c0)
+        n_computed += 1
+
+    gen["c2"] = c2_vals
+    gen["c1"] = c1_vals
+    gen["c0"] = c0_vals
+
+    print(f"  Coefficients computed: {n_computed}")
+    print(f"  Skipped (no Pmax):     {n_skipped}")
+
+
+    # ============================================================
+    # STEP 5 – BUILD MATPOWER GENCOST TABLE AND SAVE
+    # ============================================================
+    print("\n" + "=" * 60)
+    print("STEP 5: Building MATPOWER gencost table")
+    print("=" * 60)
+
+    # MATPOWER mpc.gencost convention (MODEL=2, polynomial, N=3 coefficients):
+    #   [model, startup, shutdown, n, c2, c1, c0]
+    # startup and shutdown costs are set to 0 (not available from OSM data).
+    # model = 2  (polynomial)
+    # n     = 3  (quadratic: c2·p² + c1·p + c0)
+    #
+    # Reference columns are kept for verification and are not part of the
+    # MATPOWER matrix; they are included so the CSV can be reviewed before
+    # the gencost matrix is assembled in MATLAB/Octave.
+
+    cost_out = pd.DataFrame({
+        "generator_name": gen["generator_name"],
+        "bus":            gen["bus"],
+        "source":         gen["source"],
+        "genfuel":        gen["genfuel"],
+        "curve_type":     gen["curve_type"],
+        "Pmax":           gen["Pmax"],
+        "model":          2,
+        "startup":        0.0,
+        "shutdown":       0.0,
+        "n":              3,
+        "c2":             gen["c2"],
+        "c1":             gen["c1"],
+        "c0":             gen["c0"],
+    })
+
+    out_path = WORK_DIR / f"matpower_{region}_cost_curves.csv"
+    cost_out.to_csv(out_path, index=False)
+    print(f"  Saved {len(cost_out)} cost curve rows → {out_path}")
+    print()
+    print(cost_out[["generator_name", "Pmax", "curve_type", "c2", "c1", "c0"]].to_string(index=False))
+
+    print("\nDone.")
+
+
+if __name__ == "__main__":
+    main()

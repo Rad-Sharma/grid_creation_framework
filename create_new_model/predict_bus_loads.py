@@ -1,18 +1,21 @@
 """
 predict_bus_loads.py — Apply the trained model to transmission buses in the target region.
 
-Pipeline:
+Default paper_huber mode uses six measured log predictors, a provenance-bearing
+Huber artifact, national demand scaling and power factor 0.95. It writes
+{region}_substation_predictions_paper.csv. See PAPER_ALIGNMENT.md for inputs.
+
+Legacy Ridge pipeline (LOAD_MODEL_METHOD="legacy_ridge"):
   1. Per-bus Ridge prediction (raw, unclustered).
   2. City-cluster rescaling (mirrors training aggregation; disaggregates back to buses).
   3. Bottom-up industrial addons (smelters, ports, etc. not in NZ/GB training data).
   4. Captive-power discount for buses with unregistered on-site generators.
-  5. National scaling: auto-detect cross-border buses from NaturalEarth geometry;
+  5. Filter eligible domestic voltage tiers before national scaling: auto-detect cross-border buses from NaturalEarth geometry;
      scale all domestic buses so Pd sums to COUNTRY_DEMAND_MW.
   6. Assign NATIONAL_EXPORT_MW equally across external/cross-border buses.
-  7. Zero out load on all buses above the network's minimum voltage level
-     (load is served only at the lowest voltage tier).
+  Domestic demand is preserved; exports are exempt from voltage filtering.
 
-Output:
+Legacy output:
   data/bus_data/processed/{region}_substation_predictions_v4.csv
 """
 
@@ -40,6 +43,7 @@ _spec.loader.exec_module(_constants_mod)
 
 
 import config
+from pipeline_integrity import allocate_loads
 
 region                  = config.region
 NTL_CAPTIVE_THRESHOLD   = _constants_mod.NTL_CAPTIVE_THRESHOLD
@@ -93,13 +97,10 @@ def detect_cross_border_buses(feat_df: pd.DataFrame,
         import geopandas as gpd
         from shapely.geometry import Point
 
-        try:
-            import pyogrio
-            _ne = (str(pyogrio.__file__).replace("__init__.py", "")
-                   + "tests/fixtures/naturalearth_lowres/naturalearth_lowres.shp")
-            world = gpd.read_file(_ne)
-        except Exception:
-            world = gpd.read_file(gpd.datasets.get_path("naturalearth_lowres"))
+        world = gpd.read_file(
+            "https://naturalearth.s3.amazonaws.com/110m_cultural/ne_110m_admin_0_countries.zip"
+        )
+        world = world.rename(columns={"NAME": "name"})
 
         country = world[world["name"] == shape_file_name]
         if country.empty:
@@ -259,6 +260,17 @@ def cluster_predict_region(feat_df, features_r, model_r, imputer_r,
 # ---------------------------------------------------------------------------
 
 def main():
+    if config.LOAD_MODEL_METHOD == "paper_huber":
+        from paper_load_model import run_prediction
+        return run_prediction(
+            FEAT_DIR / f"{region}_paper_features.csv",
+            WORK_DIR / f"matpower_{region}_buses.csv",
+            MODEL_DIR / config.PAPER_HUBER_MODEL,
+            PROC_DIR / f"{region}_substation_predictions_paper.csv",
+            COUNTRY_DEMAND_MW, NATIONAL_EXPORT_MW, detect_cross_border_buses, SHAPE_FILE_NAME,
+        )
+    if config.LOAD_MODEL_METHOD != "legacy_ridge":
+        raise ValueError("LOAD_MODEL_METHOD must be paper_huber or legacy_ridge")
     print(f"=== predict_bus_loads.py: {region} prediction ===\n")
 
     # Load model bundle
@@ -316,6 +328,7 @@ def main():
     ntl_g = feat_df["ntl_mean"].fillna(0).clip(lower=0) if "ntl_mean" in feat_df.columns else z
 
     NZ_NTL_FLOOR = NTL_CAPTIVE_THRESHOLD + 0.735
+    ntl_observed = ntl_g.copy()
     ntl_g = ntl_g.clip(lower=NZ_NTL_FLOOR)
     ntl_guard_g = (ntl_g - NTL_CAPTIVE_THRESHOLD).clip(lower=0)
 
@@ -368,7 +381,7 @@ def main():
     print("\n" + "=" * 60)
     print("STEP 3: Bottom-up industrial addons")
     print("=" * 60)
-    ntl_binary = (ntl_g >= NTL_CAPTIVE_THRESHOLD).astype(float)
+    ntl_binary = (ntl_observed >= NTL_CAPTIVE_THRESHOLD).astype(float)
 
     icmm_al  = feat_df.get("icmm_al_mw_est",   z).fillna(0).clip(lower=0)
     fp_al_mw = feat_df.get("fp_aluminum_count", z).fillna(0).clip(lower=0) * ALUMINUM_MW_PER * ntl_binary
@@ -421,52 +434,15 @@ def main():
     cross_border_names = detect_cross_border_buses(feat_df, SHAPE_FILE_NAME)
     cb_mask = feat_df["bus_name"].isin(cross_border_names)
 
-    domestic_sum = feat_df.loc[~cb_mask, "predicted_mw_raw"].sum()
-    scale_f      = COUNTRY_DEMAND_MW / domestic_sum if domestic_sum > 0 else 1.0
-
-    feat_df["predicted_mw"]          = feat_df["predicted_mw_raw"] * scale_f
-    feat_df.loc[cb_mask, "predicted_mw"] = 0.0
-
-    print(f"  Cross-border buses excluded : {cb_mask.sum()}")
-    print(f"  Raw domestic sum            : {domestic_sum:.0f} MW")
-    print(f"  Scale factor                : {scale_f:.4f}")
-    print(f"  Domestic total after scaling: "
-          f"{feat_df.loc[~cb_mask, 'predicted_mw'].sum():.0f} MW")
-
-    # ============================================================
-    print("\n" + "=" * 60)
-    print("STEP 6: Assign national export load to cross-border buses")
-    print("=" * 60)
-    # NATIONAL_EXPORT_MW (from config) is split equally among all cross-border buses.
-    if NATIONAL_EXPORT_MW > 0 and cb_mask.sum() > 0:
-        export_per_bus = NATIONAL_EXPORT_MW / cb_mask.sum()
-        feat_df.loc[cb_mask, "predicted_mw"] = export_per_bus
-        print(f"  {NATIONAL_EXPORT_MW:.0f} MW split among "
-              f"{cb_mask.sum()} cross-border bus(es): {export_per_bus:.1f} MW each")
-    else:
-        print(f"  NATIONAL_EXPORT_MW = {NATIONAL_EXPORT_MW:.0f} MW  "
-              f"(cross-border buses carry no export load)")
-
-    # ============================================================
-    print("\n" + "=" * 60)
-    print("STEP 7: Restrict load to lowest-voltage buses")
-    print("=" * 60)
-    # Load should only be assigned to the lowest voltage level in the network.
-    # High-voltage transmission buses do not serve customer load directly.
-    _bus_kv_map = (_csv_buses.set_index("bus_i")["base_kV"].to_dict()
-                   if _csv_buses_path.exists()
-                   else {})
-    feat_df["_base_kV"] = feat_df["bus_idx"].map(_bus_kv_map)
-    min_kv = feat_df["_base_kV"].dropna().min()
-    if not pd.isna(min_kv):
-        high_v_mask = feat_df["_base_kV"].fillna(float("inf")) > min_kv
-        n_zeroed = int(high_v_mask.sum())
-        feat_df.loc[high_v_mask, "predicted_mw"] = 0.0
-        print(f"  Minimum voltage in network : {min_kv:.1f} kV")
-        print(f"  Buses above minimum zeroed : {n_zeroed}  "
-              f"({int((~high_v_mask).sum())} load buses remain)")
-    else:
-        print("  Bus voltage data unavailable — skipping voltage filter")
+    if not _csv_buses_path.exists():
+        raise FileNotFoundError(f"{_csv_buses_path} not found")
+    voltage = feat_df["bus_idx"].map(_csv_buses.set_index("bus_i")["base_kV"])
+    feat_df["predicted_mw"] = allocate_loads(
+        feat_df["predicted_mw_raw"], voltage, cb_mask,
+        COUNTRY_DEMAND_MW, NATIONAL_EXPORT_MW,
+    )
+    print(f"  Domestic total: {feat_df.loc[~cb_mask, 'predicted_mw'].sum():.4f} MW")
+    print(f"  Export total: {feat_df.loc[cb_mask, 'predicted_mw'].sum():.4f} MW")
 
     # Build output matching matpower_{region}_buses.csv format with Pd/Qd filled in
     _PF      = 0.95

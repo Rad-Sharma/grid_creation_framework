@@ -26,6 +26,7 @@ import numpy as np
 from pathlib import Path
 
 import config
+from pipeline_integrity import TRANSFORMER_COLUMNS
 
 region                     = config.region
 MIN_TRANSMISSION_VOLTAGE_V = config.MIN_TRANSMISSION_VOLTAGE_V
@@ -354,7 +355,7 @@ for hi, lo in transformer_pairs:
         "osm_id":      "transformer",
     })
 
-xfmr_df = pd.DataFrame(xfmr_rows)
+xfmr_df = pd.DataFrame(xfmr_rows, columns=TRANSFORMER_COLUMNS)
 xfmr_path = WORK_DIR / f"transformer_pairs_{region}.csv"
 xfmr_df.to_csv(xfmr_path, index=False)
 print(f"  Saved {len(xfmr_df)} transformer pairs → {xfmr_path}")
