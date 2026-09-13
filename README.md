@@ -51,6 +51,15 @@ grid_creation_framework/
 
 ---
 
+## Manuscript alignment
+
+The default configuration now selects the manuscript Huber path. See
+[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md) for implemented equations, required
+measured inputs, and unresolved calibration details. The published slopes alone
+are insufficient to reconstruct the fitted model because its intercept is absent.
+The old Ridge approximation remains available through the explicit
+`LOAD_MODEL_METHOD = "legacy_ridge"` setting.
+
 ## Required Inputs
 
 ### 1. OpenStreetMap GeoJSON exports
@@ -66,11 +75,15 @@ using the queries described in the accompanying paper. Save them to:
 
 Replace `{region}` with the lowercase name set in `config.py` (e.g. `ghana`).
 
-### 2. Trained load model bundle
+### 2. Load model and industrial features
 
-Place `data/bus_data/models/model_bundle_v5.pkl` in the models directory.
-This file contains the trained Ridge regression model, imputer, and feature
-list used by `predict_bus_loads.py`.
+Paper mode requires `data/bus_data/models/model_huber_paper.json`, measured VIIRS
+radiance, and normalized steel/gold facility data described in
+[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md). These complete calibration inputs are
+not bundled. Missing inputs stop the paper path with a diagnostic.
+
+Legacy mode uses `data/bus_data/models/model_bundle_v5.pkl`, the earlier Ridge
+model, imputer and feature list.
 
 ### 3. Region configuration (`config.py`)
 
@@ -174,7 +187,11 @@ After manual review the script:
 2. Computes R, X, B, rateA from empirical power-law fits.
 3. **Fills missing bus voltages** from connected line voltages.
 4. **Assigns the most common regional voltage** to any buses still unassigned.
-5. **Removes island buses** (no remaining line connections) and re-numbers.
+5. **Removes unconnected buses**, considering both lines and transformers, and
+   applies the same bus renumbering to both branch tables.
+
+The `new` command stores voltages in volts internally. An optional secondary
+voltage creates a separate bus and an explicit transformer connection.
 
 ---
 
@@ -182,7 +199,8 @@ After manual review the script:
 
 **Input:** `data/working_files/{region}/matpower_{region}_buses.csv`
 
-**Output:** `data/bus_data/features/{region}_features_with_industrial.csv`
+**Output:** `data/bus_data/features/{region}_paper_features.csv` (paper mode),
+or `{region}_features_with_industrial.csv` (legacy mode).
 
 Builds a Voronoi tessellation over bus coordinates clipped to the country
 boundary, then extracts:
@@ -191,7 +209,8 @@ boundary, then extracts:
 - **OSM industrial polygons** (Overpass API; auto-cached)
 - **OSM road length** (motorway + trunk)
 - **OSM commercial nodes** (shops, banks, marketplaces)
-- **NTL / GHSL** via NZ-proxy Ridge regression (overridden by GEE cache if available)
+- **Industrial VIIRS features, steel MW and gold sites** in paper mode.
+- **NTL / GHSL** via a GEE cache or NZ proxy in legacy mode.
 
 To add known industrial sites with incomplete OSM coverage, populate
 `KNOWN_REGIONAL_INDUSTRIAL` in this script with
@@ -203,14 +222,21 @@ To add known industrial sites with incomplete OSM coverage, populate
 
 **Input:** Bus feature CSV, model bundle, `data/working_files/{region}/matpower_{region}_buses.csv`
 
-**Output:** `data/bus_data/processed/{region}_substation_predictions_v4.csv`
+**Output:** `data/bus_data/processed/{region}_substation_predictions_paper.csv`
+(paper mode), or `{region}_substation_predictions_v4.csv` (legacy mode).
+
+Paper mode uses the six Huber features and polygon-level industrial guards, then
+scales all represented domestic substations and assigns exports separately.
 
 Predicts per-bus active load (Pd) and reactive load (Qd = Pd × tan(arccos(0.95))).
-Pipeline: Ridge prediction → city-cluster rescaling → industrial addons →
-captive-power discount → generation bus pinning → national scaling →
-national export distribution across cross-border buses.
+Pipeline: Legacy mode: Ridge prediction → city-cluster rescaling → industrial addons →
+captive-power discount → generation bus pinning → lowest-voltage domestic bus selection → national scaling →
+national export distribution across cross-border buses. Domestic demand is
+preserved after voltage selection; export buses are exempt from that filter.
 
-Update `CROSS_BORDER_BUSES` for your target region.
+Cross-border buses are detected from the NaturalEarth country boundary.
+Positive configured exports with no detected external buses cause an error
+instead of silently omitting the export demand.
 
 ---
 
@@ -263,10 +289,11 @@ are appended to the branch matrix automatically.
 **Input:** `data/working_files/{region}/{region}_synthetic_grid.m`
 
 **Outputs:**
-- `data/working_files/{region}/{region}_dc_feasible.m`
-- `data/working_files/{region}/{region}_ac_feasible.m`
+- `matpower_files/{region}_dc_feasible.m`
+- `matpower_files/{region}_ac_feasible.m`
 
-Produces two feasibility-guaranteed model variants:
+Attempts two feasibility relaxations and exports a variant only when the
+solver succeeds and the resulting case passes independent residual checks:
 
 **DC relaxation** (`eq:slack_dcopf`):
 Solves a DC OPF with slack variables on line thermal limits. The penalty term
@@ -275,8 +302,8 @@ Pg values are set to the optimal DC dispatch; Qg = 0.
 
 **AC relaxation** (`eq:shunt_acopf`):
 Solves an AC OPF with additional shunt susceptance variables at each bus.
-The penalty term M·Σ|B_sh| (l1 norm) minimises the *number* of buses that
-receive shunts — one large shunt per bus is preferred over many small ones.
+The penalty term M·Σ(B_sh²) follows manuscript equation (5a). It reduces
+shunt magnitudes but does not directly minimise the number of shunt devices.
 Generator Pg and Qg are set to the optimal AC dispatch values.
 
 Run directly:
@@ -325,5 +352,42 @@ Python 3.10+ is required.
 1. Edit `config.py` with the region name, ISO code, bounding box,
    NaturalEarth country name, total demand, and net export.
 2. Download the three Overpass GeoJSON files to `data/OSM_extracts/`.
-3. Update `CROSS_BORDER_BUSES` in `predict_bus_loads.py`.
+3. Verify the region boundary and the detected cross-border buses.
 4. Run Steps 1–10 in order.
+
+## Correctness checks and regression tests
+
+Use Python 3.10+ and an isolated environment. From the repository root on Windows:
+
+```powershell
+py -3.10 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-test.txt
+.\.venv\Scripts\python.exe -m pytest -q
+```
+
+The tests cover bus/transformer renumbering, transformer-only connections,
+manual voltage tiers, empty transformer files, demand/export conservation,
+nighttime-light gating, CSV-to-MATPOWER assembly, failed solver rejection,
+and DC/AC solutions. Network admittances and solved AC balances are compared
+against PYPOWER, including a standard nine-bus case. Test fixtures and outputs
+are written to temporary directories.
+
+The feasibility solver enforces balance at every bus, uses one reference angle
+per connected component, and includes taps, phase shifts, charging, existing
+bus shunts, thermal limits, and branch angle limits. It stores dispatch and
+shunts in MATPOWER MW/MVAr units. Solver iteration limits are failures, not
+convergence. Returned cases must pass a 0.0001 MVA balance/thermal tolerance;
+voltage and angle bounds use a 1e-7 tolerance. Export retains sufficient numeric
+precision for round-trip validation.
+
+**Previously generated files are not repaired automatically.** Some checked-in
+regional transformer tables contain stale IDs or name/ID mismatches. Rebuild
+steps 1–8 in order from the OSM inputs and repeat any manual endpoint review
+before running feasibility. Do not mix new tables with older predictions,
+generator assignments, or cost curves. Unknown or stale transformer endpoints
+now stop assembly instead of silently producing an incorrect network.
+
+The SLSQP implementation still uses dense matrices and is intended for modest
+networks. Passing these tests does not establish convergence or performance for
+a statewide Texas case, or validate the geographic/load assumptions. A large
+regional case may require a sparse OPF solver and further data calibration.

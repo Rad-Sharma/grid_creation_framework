@@ -32,6 +32,7 @@ from pathlib import Path
 from datetime import date
 
 import config
+from pipeline_integrity import read_transformers, validate_endpoints
 
 region = config.region
 
@@ -77,7 +78,10 @@ print(f"Assembling MATPOWER case for: {region}")
 print("=" * 60)
 
 # Buses — predictions CSV has Pd/Qd; base CSV has the updated bus types
-bus_pred_path = PROC_DIR / f"{region}_substation_predictions_v4.csv"
+prediction_suffix = "paper" if config.LOAD_MODEL_METHOD == "paper_huber" else "v4"
+bus_pred_path = PROC_DIR / f"{region}_substation_predictions_{prediction_suffix}.csv"
+if config.LOAD_MODEL_METHOD == "paper_huber" and not bus_pred_path.exists():
+    raise FileNotFoundError(f"{bus_pred_path} missing; run paper feature extraction and Huber prediction first")
 bus_base_path = WORK_DIR / f"matpower_{region}_buses.csv"
 
 if bus_pred_path.exists():
@@ -108,11 +112,14 @@ print(f"  Transmission lines: {len(lines)} rows")
 # Transformer pairs (intra-substation connections from compound-voltage splits)
 xfmr_path = WORK_DIR / f"transformer_pairs_{region}.csv"
 if xfmr_path.exists():
-    xfmrs = pd.read_csv(xfmr_path)
+    xfmrs = read_transformers(xfmr_path)
     print(f"  Transformer pairs: {len(xfmrs)} rows")
 else:
-    xfmrs = pd.DataFrame()
+    xfmrs = read_transformers(xfmr_path)
     print("  Transformer pairs CSV not found — no intra-substation transformers added")
+
+validate_endpoints(buses, lines, check_names=False)
+validate_endpoints(buses, xfmrs)
 
 # Generators
 gen_path = WORK_DIR / f"matpower_{region}_generators.csv"
@@ -127,6 +134,15 @@ if not cost_path.exists():
     raise FileNotFoundError(f"{cost_path} not found. Run create_cost_curves.py first.")
 costs = pd.read_csv(cost_path)
 print(f"  Cost curves: {len(costs)} rows")
+if len(costs) != len(gens):
+    raise ValueError("Generator and cost tables have different row counts; regenerate costs")
+for column in ("generator_name", "bus"):
+    if not costs[column].equals(gens[column]):
+        raise ValueError(f"Generator/cost {column} ordering differs; regenerate costs")
+# Apply the same mask to dispatch and costs so MATPOWER rows stay aligned.
+valid_gen = gens["bus"].notna()
+costs = costs.loc[valid_gen].reset_index(drop=True)
+gens = gens.loc[valid_gen].reset_index(drop=True)
 
 
 # ============================================================
@@ -257,7 +273,7 @@ for _, r in buses.iterrows():
 # WRITE MATPOWER .m FILE
 # ============================================================
 
-func_name    = f"{config.SHAPE_FILE_NAME.replace(' ','_')}Grid"
+func_name    = f"{region}_synthetic_grid"
 today        = date.today().strftime("%Y-%m-%d")
 
 buses_block  = "\n".join(bus_rows)
@@ -350,7 +366,7 @@ function mpc = {func_name}
 """
 
 out_path = WORK_DIR / f"{region}_synthetic_grid.m"
-out_path.write_text(matpower_text)
+out_path.write_text(matpower_text, encoding="utf-8")
 print(f"\nSaved MATPOWER case → {out_path}")
 print(f"  Buses: {len(bus_rows)}  |  Branches: {len(branch_rows)}  "
       f"({n_xfmr_added} transformers)  |  Generators: {len(gen_rows)}")

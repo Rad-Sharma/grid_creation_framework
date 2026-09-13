@@ -6,7 +6,11 @@ matpower_{region}_buses.csv, then extracts the same feature set used for
 NZ/GB model training: WorldPop population, OSM industrial polygons, road
 density, amenity counts, and WRI power plant data.
 
-NTL (VIIRS Nighttime Light) and GHSL (Built-up Area) are fetched
+Paper mode requires a measured VIIRS raster and normalized steel facilities;
+it measures industrial footprints and writes {region}_paper_features.csv.
+See PAPER_ALIGNMENT.md for required inputs and interpretation choices.
+
+In legacy_ridge mode, NTL (VIIRS Nighttime Light) and GHSL (Built-up Area) are fetched
 automatically from Google Earth Engine if the earthengine-api package is
 installed and authenticated. Otherwise they are proxied from NZ GXP data.
 
@@ -22,7 +26,7 @@ Inputs (auto-downloaded if earthengine-api is available):
 Inputs (optional fallback for NTL proxy):
   data/bus_data/features/nz_transmission_features.csv
 
-Outputs:
+Legacy output:
   data/bus_data/features/{region}_features_with_industrial.csv
 
 GEE setup (one-time, if not already done):
@@ -632,6 +636,17 @@ def download_gee_features(voronoi_gdf, bus_df, out_csv: Path) -> bool:
 # ---------------------------------------------------------------------------
 
 def main():
+    paper_mode = config.LOAD_MODEL_METHOD == "paper_huber"
+    if paper_mode:
+        from paper_features import read_steel, read_gold, industrial_features
+        viirs_path = RAW_DIR / config.VIIRS_RASTER_NAME
+        if not viirs_path.exists():
+            raise FileNotFoundError(f"Paper mode requires measured VIIRS raster: {viirs_path}")
+        steel_sites = read_steel(RAW_DIR / config.STEEL_FACILITIES_NAME)
+        gold_path = RAW_DIR / config.GOLD_FACILITIES_NAME
+        if not gold_path.exists():
+            gold_path = RAW_DIR / "gem" / "fineprint_mine_production.zip"
+        gold_sites = read_gold(gold_path)
     print(f"=== build_region_features.py: {region} feature extraction ===\n")
 
     # Load bus coordinates from working_files
@@ -642,6 +657,10 @@ def main():
 
     raw_buses = pd.read_csv(csv_path)
     raw_buses["base_kV"] = pd.to_numeric(raw_buses["base_kV"], errors="coerce")
+    if paper_mode:
+        # One service area per physical substation. Assign its demand to the
+        # lowest modeled voltage tier, preserving other tiers for transmission.
+        raw_buses = raw_buses.sort_values(["base_kV", "bus_i"]).drop_duplicates(["latitude", "longitude"])
     # All buses in this CSV already passed the MIN_TRANSMISSION_VOLTAGE_V filter in
     # create_buses.py; include them all for load feature extraction.
     min_kv = config.MIN_TRANSMISSION_VOLTAGE_V / 1000.0
@@ -883,49 +902,50 @@ out body;
             cnt = jn.groupby("poc_code").size().to_dict()
             bus_df["num_commercial_nodes"] = bus_df["poc_code"].map(cnt).fillna(0).astype(int)
 
-    # NTL/GHSL: try GEE first, fall back to NZ proxy
-    gee_cache = RAW_DIR / f"gee_features_{region}_matpower.csv"
+    if not paper_mode:
+        # NTL/GHSL: try GEE first, fall back to NZ proxy
+        gee_cache = RAW_DIR / f"gee_features_{region}_matpower.csv"
 
-    if not gee_cache.exists():
-        print("\n[GEE] Satellite feature cache not found — attempting download …")
-        gee_ok = download_gee_features(voronoi_gdf, bus_df, gee_cache)
-        if not gee_ok:
-            print("  [GEE] Download skipped. Falling back to NZ proxy for NTL/GHSL.")
-            print("  NTL/GHSL proxy accuracy is lower than real satellite values.")
+        if not gee_cache.exists():
+            print("\n[GEE] Satellite feature cache not found — attempting download …")
+            gee_ok = download_gee_features(voronoi_gdf, bus_df, gee_cache)
+            if not gee_ok:
+                print("  [GEE] Download skipped. Falling back to NZ proxy for NTL/GHSL.")
+                print("  NTL/GHSL proxy accuracy is lower than real satellite values.")
 
-    if gee_cache.exists():
-        print(f"\n[GEE] Loading satellite features from {gee_cache.name} …")
-        gee_df   = pd.read_csv(gee_cache)
-        gee_cols = ["ntl_sum","ntl_mean","ntl_max","ntl_std",
-                    "ghsl_built_km2","era5_temp_c","built_up_pct","cropland_pct","tree_cover_pct"]
-        gee_cols_present = [c for c in gee_cols if c in gee_df.columns]
+        if gee_cache.exists():
+            print(f"\n[GEE] Loading satellite features from {gee_cache.name} …")
+            gee_df   = pd.read_csv(gee_cache)
+            gee_cols = ["ntl_sum","ntl_mean","ntl_max","ntl_std",
+                        "ghsl_built_km2","era5_temp_c","built_up_pct","cropland_pct","tree_cover_pct"]
+            gee_cols_present = [c for c in gee_cols if c in gee_df.columns]
 
-        if "poc_code" in gee_df.columns:
-            # Preferred path: merge on poc_code (always unique)
-            merged = bus_df.merge(
-                gee_df[["poc_code"] + gee_cols_present],
-                on="poc_code", how="left", suffixes=("", "_gee")
-            )
-            for col in gee_cols_present:
-                bus_df[col] = merged[col].fillna(bus_df.get(col, 0.0)).values
+            if "poc_code" in gee_df.columns:
+                # Preferred path: merge on poc_code (always unique)
+                merged = bus_df.merge(
+                    gee_df[["poc_code"] + gee_cols_present],
+                    on="poc_code", how="left", suffixes=("", "_gee")
+                )
+                for col in gee_cols_present:
+                    bus_df[col] = merged[col + "_gee"].fillna(bus_df.get(col, 0.0)).values
+            else:
+                # Legacy fallback: name-based lookup; deduplicate first to avoid the
+                # InvalidIndexError that occurs when two buses share the same name.
+                if gee_df["name"].duplicated().any():
+                    n_dup = int(gee_df["name"].duplicated().sum())
+                    print(f"  [GEE] {n_dup} duplicate bus names — aggregating by mean.")
+                    gee_df = gee_df.groupby("name", as_index=False)[gee_cols_present].mean(
+                        numeric_only=True)
+                gee_idx = gee_df.set_index("name")
+                for col in gee_cols_present:
+                    mapped = bus_df["bus_name"].map(gee_idx[col])
+                    bus_df[col] = mapped.where(mapped.notna(), bus_df.get(col, 0.0))
+
+            n_nonzero = (bus_df["ntl_sum"] > 0).sum()
+            print(f"  Applied NTL/GHSL: {n_nonzero}/{len(bus_df)} buses with ntl_sum > 0")
         else:
-            # Legacy fallback: name-based lookup; deduplicate first to avoid the
-            # InvalidIndexError that occurs when two buses share the same name.
-            if gee_df["name"].duplicated().any():
-                n_dup = int(gee_df["name"].duplicated().sum())
-                print(f"  [GEE] {n_dup} duplicate bus names — aggregating by mean.")
-                gee_df = gee_df.groupby("name", as_index=False)[gee_cols_present].mean(
-                    numeric_only=True)
-            gee_idx = gee_df.set_index("name")
-            for col in gee_cols_present:
-                mapped = bus_df["bus_name"].map(gee_idx[col])
-                bus_df[col] = mapped.where(mapped.notna(), bus_df.get(col, 0.0))
-
-        n_nonzero = (bus_df["ntl_sum"] > 0).sum()
-        print(f"  Applied NTL/GHSL: {n_nonzero}/{len(bus_df)} buses with ntl_sum > 0")
-    else:
-        print("\nApplying NTL/GHSL proxy from NZ data (GEE not available) …")
-        bus_df = proxy_ntl_ghsl_from_nz(bus_df)
+            print("\nApplying NTL/GHSL proxy from NZ data (GEE not available) …")
+            bus_df = proxy_ntl_ghsl_from_nz(bus_df)
 
     # Compute derived density features
     area_s = bus_df["area_km2"].clip(lower=1.0)
@@ -936,7 +956,12 @@ out body;
     bus_df["commercial_intensity"] = bus_df["num_commercial_nodes"] / area_s
     bus_df["log_area_km2"]         = np.log1p(bus_df["area_km2"])
 
-    out_path = FEAT_DIR / f"{region}_features_with_industrial.csv"
+    if paper_mode:
+        guarded = industrial_features(voronoi_gdf, way_rows, steel_sites, gold_sites, viirs_path)
+        replaced = [c for c in guarded if c != "poc_code" and c in bus_df]
+        bus_df = bus_df.drop(columns=replaced).merge(guarded, on="poc_code", validate="one_to_one")
+    suffix = "paper_features" if paper_mode else "features_with_industrial"
+    out_path = FEAT_DIR / f"{region}_{suffix}.csv"
     bus_df.to_csv(out_path, index=False)
     print(f"\nSaved → {out_path}  ({len(bus_df)} rows × {bus_df.shape[1]} cols)")
     print("\nNext step: python predict_bus_loads.py")

@@ -60,6 +60,8 @@ from shapely import wkt as shapely_wkt
 
 from pathlib import Path
 import config
+from pipeline_integrity import (clean_bus_tables, read_transformers, manual_bus,
+                                manual_transformer, validate_endpoints)
 
 region = config.region
 
@@ -89,9 +91,9 @@ OFFSET_DEG       = 0.005   # ~0.5 km angular offset for co-located markers
 # These represent representative values for standard ACSR/AAAC conductors; adjust
 # if conductor specifications for the target region are known.
 _COEFF = {
-    "MVA": (0.0184,       1.8998),
-    "R":   (1115.415476, -2.9870),
-    "X":   (80.978419,   -2.1092),
+    "MVA": (0.018429,     1.8998),
+    "R":   (1115.0,      -2.9870),
+    "X":   (52.86,       -2.0342),
     "B":   (0.000049,     0.6896),
 }
 
@@ -386,7 +388,7 @@ def run_pass1(
 
     if not unmatched_rows:
         print("  No endpoints left for manual review.")
-        return df
+        return df, bus_df
 
     print(f"\n  Building Folium map for {len(unmatched_rows)} endpoint(s)…")
     handled_seqs:  set = set()   # seq indices definitively resolved (not skipped)
@@ -477,46 +479,42 @@ def run_pass1(
                     try:
                         sub_kv_1 = float(
                             input("  Primary voltage (kV, e.g. 161): ").strip())
+                        if not math.isfinite(sub_kv_1) or sub_kv_1 <= 0:
+                            raise ValueError("Voltage must be positive")
                         break
                     except ValueError:
-                        print("  Enter a numeric kV value (e.g. 161).")
+                        print("  Enter a positive numeric kV value (e.g. 161).")
 
-                sec_raw = input(
-                    "  Secondary voltage (kV) for transformer bus, "
-                    "or press Enter to skip: ").strip()
-                if sec_raw:
+                while True:
+                    sec_raw = input("  Secondary voltage (kV), or Enter for none: ").strip()
                     try:
-                        sub_kv_2 = float(sec_raw)
-                        voltage_tag_str = (f"{int(sub_kv_1 * 1000)}"
-                                           f";{int(sub_kv_2 * 1000)}")
-                        kv_display = f"{sub_kv_1:.0f} / {sub_kv_2:.0f} kV"
+                        sub_kv_2 = float(sec_raw) if sec_raw else None
+                        if sub_kv_2 is not None and (not math.isfinite(sub_kv_2) or sub_kv_2 <= 0 or sub_kv_2 == sub_kv_1):
+                            raise ValueError("Secondary voltage must be positive and distinct")
+                        break
                     except ValueError:
-                        sub_kv_2 = None
-                        voltage_tag_str = str(int(sub_kv_1 * 1000))
-                        kv_display = f"{sub_kv_1:.0f} kV"
-                else:
-                    sub_kv_2 = None
-                    voltage_tag_str = str(int(sub_kv_1 * 1000))
-                    kv_display = f"{sub_kv_1:.0f} kV"
-
-                new_bus_i     = int(bus_df["bus_i"].max()) + 1
-                new_coord_str = f"({ep_w[0]}, {ep_w[1]})"
-                new_row       = {col: np.nan for col in bus_df.columns}
-                new_row["bus_i"]       = new_bus_i
-                new_row["coordinates"] = new_coord_str
-                new_row["longitude"]   = ep_w[0]
-                new_row["latitude"]    = ep_w[1]
-                new_row["base_kV"]     = sub_kv_1
-                new_row["voltage_tag"] = voltage_tag_str
-                new_row["name"]        = sub_name
-                bus_df = pd.concat(
-                    [bus_df, pd.DataFrame([new_row])], ignore_index=True)
-                bus_coords_l.append(np.array([ep_w[0], ep_w[1]]))
-                bus_voltages_l.append(voltage_tag_str)
-                valid_bus_i_set.add(new_bus_i)
+                        print("  Enter a distinct positive voltage, or leave blank.")
+                new_bus_i = int(bus_df["bus_i"].max()) + 1
+                name = f"{sub_name}_{sub_kv_1:g}kV" if sub_kv_2 else sub_name
+                new_row = manual_bus(new_bus_i, name, ep_w, sub_kv_1, bus_df.columns)
+                new_rows = [new_row]
+                if sub_kv_2 is not None:
+                    secondary = manual_bus(new_bus_i + 1, f"{sub_name}_{sub_kv_2:g}kV",
+                                           ep_w, sub_kv_2, bus_df.columns)
+                    new_rows.append(secondary)
+                    xfmr_path = WORK_DIR / f"transformer_pairs_{region}.csv"
+                    transformers = read_transformers(xfmr_path)
+                    transformers = pd.concat([transformers, pd.DataFrame([
+                        manual_transformer(new_row, secondary)])], ignore_index=True)
+                    transformers.to_csv(xfmr_path, index=False)
+                bus_df = pd.concat([bus_df, pd.DataFrame(new_rows)], ignore_index=True)
+                for added in new_rows:
+                    bus_coords_l.append(np.array([ep_w[0], ep_w[1]]))
+                    bus_voltages_l.append(added["voltage_tag"])
+                    valid_bus_i_set.add(added["bus_i"])
                 bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
-                print(f"  Added bus {new_bus_i} ({sub_name}, {kv_display})"
-                      f"  → saved matpower_{region}_buses.csv")
+                sub_name = new_row["name"]
+                print(f"  Added {len(new_rows)} voltage-tier bus(es), assigned bus {new_bus_i}")
 
                 df.at[df_i, which_w]                   = new_bus_i
                 df.at[df_i, f"{which_w}_name"]         = sub_name
@@ -679,233 +677,220 @@ def run_pass1(
 # MAIN
 # ============================================================
 
-print("=" * 60)
-print("Loading data")
-print("=" * 60)
+def main():
+    print("=" * 60)
+    print("Loading data")
+    print("=" * 60)
 
-lines_df = pd.read_csv(WORK_DIR / f"matpower_{region}_lines.csv")
-bus_df   = pd.read_csv(WORK_DIR / f"matpower_{region}_buses.csv")
-proc_df  = pd.read_csv(WORK_DIR / f"processed_{region}_lines.csv")
+    lines_df = pd.read_csv(WORK_DIR / f"matpower_{region}_lines.csv")
+    bus_df   = pd.read_csv(WORK_DIR / f"matpower_{region}_buses.csv")
+    proc_df  = pd.read_csv(WORK_DIR / f"processed_{region}_lines.csv")
+    validate_endpoints(bus_df, read_transformers(WORK_DIR / f"transformer_pairs_{region}.csv"))
 
-bus_coords   = [np.array(eval(c)) for c in bus_df["coordinates"]]
-bus_voltages = list(bus_df["voltage_tag"].values
-                    if "voltage_tag" in bus_df.columns
-                    else bus_df["base_kV"].values)
+    bus_coords   = [np.array(eval(c)) for c in bus_df["coordinates"]]
+    bus_voltages = list(bus_df["voltage_tag"].values
+                        if "voltage_tag" in bus_df.columns
+                        else bus_df["base_kV"].values)
 
-geom_lookup: dict = {}
-for _, prow in proc_df.iterrows():
-    raw_geom = prow.get("geometry", None)
-    if not raw_geom or (isinstance(raw_geom, float) and np.isnan(raw_geom)):
-        continue
-    try:
-        geom   = shapely_wkt.loads(str(raw_geom))
-        coords = list(geom.coords)
-        geom_lookup[str(prow["id"])] = coords
-    except Exception:
-        pass
-
-n_unmatched_f = int(lines_df["fbus"].isna().sum())
-n_unmatched_t = int(lines_df["tbus"].isna().sum())
-print(f"  {len(lines_df)} lines loaded")
-print(f"  {n_unmatched_f} lines missing fbus,  {n_unmatched_t} missing tbus")
-
-# ── Pass 1: Interactive review ───────────────────────────────
-print("\n" + "=" * 60)
-print("PASS 1 – Interactive manual review")
-print("=" * 60)
-lines_df, bus_df = run_pass1(
-    lines_df, geom_lookup, bus_df, bus_coords, bus_voltages)
-
-# ── Delete still-unmatched lines ────────────────────────────
-print("\n" + "=" * 60)
-print("Removing still-unmatched lines")
-print("=" * 60)
-
-unmatched_mask = lines_df["fbus"].isna() | lines_df["tbus"].isna()
-n_drop = int(unmatched_mask.sum())
-lines_df = lines_df[~unmatched_mask].reset_index(drop=True)
-print(f"  Removed {n_drop} still-unmatched line(s).")
-
-# ── Compute R, X, B, rateA ──────────────────────────────────
-print("\n" + "=" * 60)
-print("Computing R, X, B, rateA from power-law fits")
-print("=" * 60)
-
-def _apply_rxb(df, i, V_kv, L_km):
-    """Write R/X/B/rateA for row i given voltage in kV and length in km."""
-    a_mva, b_mva = _COEFF["MVA"]
-    mva = a_mva * V_kv ** b_mva
-    df.at[i, "r"]     = round(_COEFF["R"][0] * V_kv ** _COEFF["R"][1] * L_km, 6)
-    df.at[i, "x"]     = round(_COEFF["X"][0] * V_kv ** _COEFF["X"][1] * L_km, 6)
-    df.at[i, "b"]     = round(_COEFF["B"][0] * V_kv ** _COEFF["B"][1] * L_km, 6)
-    df.at[i, "rateA"] = round(mva, 2)
-    df.at[i, "rateB"] = round(mva, 2)
-    df.at[i, "rateC"] = round(mva, 2)
-
-
-# Bus voltage lookup (post-fill, so all buses should have a voltage now)
-# Use pd.to_numeric to handle values that may have been read back as strings.
-bus_df["base_kV"] = pd.to_numeric(bus_df["base_kV"], errors="coerce")
-bus_kv_lookup = {int(r["bus_i"]): float(r["base_kV"])
-                 for _, r in bus_df.iterrows()
-                 if not is_null(r["base_kV"]) and float(r["base_kV"]) > 0}
-
-n_computed = 0
-n_inferred = 0
-
-for i, row in lines_df.iterrows():
-    L = float(row.get("length_km", 0) or 0)
-    if L <= 0:
-        continue
-
-    # Pass 1: use the line's own voltage_V tag
-    v_list = parse_voltage_tag(row.get("voltage_V", None))
-    if v_list:
-        _apply_rxb(lines_df, i, v_list[0] / 1000.0, L)
-        n_computed += 1
-        continue
-
-    # Pass 2: infer from connected bus voltage (now filled for all buses)
-    inferred_v = None
-    for end in ("fbus", "tbus"):
-        b = row.get(end)
-        if is_null(b):
+    geom_lookup: dict = {}
+    for _, prow in proc_df.iterrows():
+        raw_geom = prow.get("geometry", None)
+        if not raw_geom or (isinstance(raw_geom, float) and np.isnan(raw_geom)):
             continue
-        bkv = bus_kv_lookup.get(int(b))
-        if bkv and bkv > 0:
-            inferred_v = bkv
-            break
+        try:
+            geom   = shapely_wkt.loads(str(raw_geom))
+            coords = list(geom.coords)
+            geom_lookup[str(prow["id"])] = coords
+        except Exception:
+            pass
 
-    if inferred_v:
-        lines_df.at[i, "voltage_V"] = int(inferred_v)
-        _apply_rxb(lines_df, i, inferred_v / 1000.0, L)
-        n_inferred += 1
-        n_computed += 1
+    n_unmatched_f = int(lines_df["fbus"].isna().sum())
+    n_unmatched_t = int(lines_df["tbus"].isna().sum())
+    print(f"  {len(lines_df)} lines loaded")
+    print(f"  {n_unmatched_f} lines missing fbus,  {n_unmatched_t} missing tbus")
 
-# Pass 3: lines still without voltage → use the regional mode voltage
-still_no_v = lines_df["r"].isna() | (lines_df["r"] == 0)
-if still_no_v.any():
-    # voltage_V may be stored as strings in the CSV; coerce to numeric first
-    known_v = pd.to_numeric(lines_df["voltage_V"], errors="coerce").dropna()
-    known_v = known_v[known_v > 0]
-    if len(known_v) > 0:
-        mode_v = float(known_v.mode()[0])
-        n_mode = 0
-        for i in lines_df[still_no_v].index:
-            L = float(lines_df.at[i, "length_km"] or 0)
-            if L <= 0:
-                continue
-            lines_df.at[i, "voltage_V"] = int(mode_v)
-            _apply_rxb(lines_df, i, mode_v / 1000.0, L)
-            n_mode += 1
+    # ── Pass 1: Interactive review ───────────────────────────────
+    print("\n" + "=" * 60)
+    print("PASS 1 – Interactive manual review")
+    print("=" * 60)
+    lines_df, bus_df = run_pass1(
+        lines_df, geom_lookup, bus_df, bus_coords, bus_voltages)
+
+    # ── Delete still-unmatched lines ────────────────────────────
+    print("\n" + "=" * 60)
+    print("Removing still-unmatched lines")
+    print("=" * 60)
+
+    unmatched_mask = lines_df["fbus"].isna() | lines_df["tbus"].isna()
+    n_drop = int(unmatched_mask.sum())
+    lines_df = lines_df[~unmatched_mask].reset_index(drop=True)
+    print(f"  Removed {n_drop} still-unmatched line(s).")
+
+    # ── Compute R, X, B, rateA ──────────────────────────────────
+    print("\n" + "=" * 60)
+    print("Computing R, X, B, rateA from power-law fits")
+    print("=" * 60)
+
+    def _apply_rxb(df, i, V_kv, L_km):
+        """Write R/X/B/rateA for row i given voltage in kV and length in km."""
+        a_mva, b_mva = _COEFF["MVA"]
+        mva = a_mva * V_kv ** b_mva
+        df.at[i, "r"]     = round(_COEFF["R"][0] * V_kv ** _COEFF["R"][1] * L_km, 6)
+        df.at[i, "x"]     = round(_COEFF["X"][0] * V_kv ** _COEFF["X"][1] * L_km, 6)
+        df.at[i, "b"]     = round(_COEFF["B"][0] * V_kv ** _COEFF["B"][1] * L_km, 6)
+        df.at[i, "rateA"] = round(mva, 2)
+        df.at[i, "rateB"] = round(mva, 2)
+        df.at[i, "rateC"] = round(mva, 2)
+
+
+    # Bus voltage lookup (post-fill, so all buses should have a voltage now)
+    # Use pd.to_numeric to handle values that may have been read back as strings.
+    bus_df["base_kV"] = pd.to_numeric(bus_df["base_kV"], errors="coerce")
+    bus_kv_lookup = {int(r["bus_i"]): float(r["base_kV"])
+                     for _, r in bus_df.iterrows()
+                     if not is_null(r["base_kV"]) and float(r["base_kV"]) > 0}
+
+    n_computed = 0
+    n_inferred = 0
+
+    for i, row in lines_df.iterrows():
+        L = float(row.get("length_km", 0) or 0)
+        if L <= 0:
+            continue
+
+        # Pass 1: use the line's own voltage_V tag
+        v_list = parse_voltage_tag(row.get("voltage_V", None))
+        if v_list:
+            _apply_rxb(lines_df, i, v_list[0] / 1000.0, L)
             n_computed += 1
-        if n_mode:
+            continue
+
+        # Pass 2: infer from connected bus voltage (now filled for all buses)
+        inferred_v = None
+        for end in ("fbus", "tbus"):
+            b = row.get(end)
+            if is_null(b):
+                continue
+            bkv = bus_kv_lookup.get(int(b))
+            if bkv and bkv > 0:
+                inferred_v = bkv
+                break
+
+        if inferred_v:
+            lines_df.at[i, "voltage_V"] = int(inferred_v)
+            _apply_rxb(lines_df, i, inferred_v / 1000.0, L)
+            n_inferred += 1
+            n_computed += 1
+
+    # Pass 3: lines still without voltage → use the regional mode voltage
+    still_no_v = lines_df["r"].isna() | (lines_df["r"] == 0)
+    if still_no_v.any():
+        # voltage_V may be stored as strings in the CSV; coerce to numeric first
+        known_v = pd.to_numeric(lines_df["voltage_V"], errors="coerce").dropna()
+        known_v = known_v[known_v > 0]
+        if len(known_v) > 0:
+            mode_v = float(known_v.mode()[0])
+            n_mode = 0
+            for i in lines_df[still_no_v].index:
+                L = float(lines_df.at[i, "length_km"] or 0)
+                if L <= 0:
+                    continue
+                lines_df.at[i, "voltage_V"] = int(mode_v)
+                _apply_rxb(lines_df, i, mode_v / 1000.0, L)
+                n_mode += 1
+                n_computed += 1
+            if n_mode:
+                kv = int(mode_v) // 1000
+                print(f"  Assigned mode voltage {kv} kV to {n_mode} line(s) with no voltage tag.")
+
+    print(f"  R/X/B computed: {n_computed} line(s)  "
+          f"({n_inferred} inferred from bus voltage).")
+
+    # ── Save ────────────────────────────────────────────────────
+    out_path = WORK_DIR / f"matpower_{region}_lines_resolved.csv"
+    lines_df.to_csv(out_path, index=False)
+    bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
+    print(f"\nSaved → {out_path}")
+    print(f"Saved → {WORK_DIR / f'matpower_{region}_buses.csv'}")
+
+    still_f = int(lines_df["fbus"].isna().sum())
+    still_t = int(lines_df["tbus"].isna().sum())
+    print(f"Remaining unmatched: {still_f} fbus,  {still_t} tbus")
+    print(f"Total lines in output: {len(lines_df)}")
+
+
+    # ── POST-PROCESSING 1: Fill missing bus voltages from connected lines ─────────
+    # After manual review some buses may still lack a base_kV value (voltage_tag
+    # was absent in OSM). We estimate their voltage from the lines connected to them
+    # — a bus inherits the voltage of any line that terminates at it.
+    print("\n" + "=" * 60)
+    print("POST-PROCESSING 1: Filling missing bus voltages from line connections")
+    print("=" * 60)
+
+    bus_df         = pd.read_csv(WORK_DIR / f"matpower_{region}_buses.csv")
+    lines_resolved = pd.read_csv(WORK_DIR / f"matpower_{region}_lines_resolved.csv")
+
+    # Step A: fill from connected lines
+    n_filled = 0
+    for _, lrow in lines_resolved.iterrows():
+        v_raw  = lrow.get("voltage_V", None)
+        v_list = parse_voltage_tag(v_raw)
+        if not v_list:
+            continue
+        v_volts = max(v_list)
+        for end in ("fbus", "tbus"):
+            b = lrow.get(end)
+            if is_null(b):
+                continue
+            bi   = int(b)
+            mask = bus_df["bus_i"] == bi
+            if not mask.any():
+                continue
+            idx      = bus_df[mask].index[0]
+            existing = bus_df.at[idx, "base_kV"]
+            if is_null(existing) or float(existing) == 0:
+                bus_df.at[idx, "base_kV"] = float(v_volts)
+                if is_null(bus_df.at[idx, "voltage_tag"]):
+                    bus_df.at[idx, "voltage_tag"] = str(v_volts)
+                n_filled += 1
+
+    print(f"  Filled base_kV for {n_filled} bus(es) inferred from connected line voltages.")
+
+    # Step B: assign the most common voltage to any still-unassigned buses
+    still_missing = bus_df["base_kV"].isna() | (bus_df["base_kV"] == 0)
+    if still_missing.any():
+        assigned = bus_df.loc[~still_missing, "base_kV"].dropna()
+        assigned = assigned[assigned > 0]
+        if len(assigned) > 0:
+            mode_v = float(assigned.mode()[0])
+            bus_df.loc[still_missing, "base_kV"]     = mode_v
+            bus_df.loc[still_missing, "voltage_tag"] = str(int(mode_v))
             kv = int(mode_v) // 1000
-            print(f"  Assigned mode voltage {kv} kV to {n_mode} line(s) with no voltage tag.")
+            # Update bus names to include kV suffix if not already present
+            for idx in bus_df[still_missing].index:
+                name = str(bus_df.at[idx, "name"])
+                if f"_{kv}kV" not in name:
+                    bus_df.at[idx, "name"] = f"{name}_{kv}kV"
+            n_mode = int(still_missing.sum())
+            print(f"  Assigned mode voltage {mode_v:.0f} V ({kv} kV) to {n_mode} remaining bus(es).")
 
-print(f"  R/X/B computed: {n_computed} line(s)  "
-      f"({n_inferred} inferred from bus voltage).")
-
-# ── Save ────────────────────────────────────────────────────
-out_path = WORK_DIR / f"matpower_{region}_lines_resolved.csv"
-lines_df.to_csv(out_path, index=False)
-bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
-print(f"\nSaved → {out_path}")
-print(f"Saved → {WORK_DIR / f'matpower_{region}_buses.csv'}")
-
-still_f = int(lines_df["fbus"].isna().sum())
-still_t = int(lines_df["tbus"].isna().sum())
-print(f"Remaining unmatched: {still_f} fbus,  {still_t} tbus")
-print(f"Total lines in output: {len(lines_df)}")
+    bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
+    print(f"  Updated buses → {WORK_DIR / f'matpower_{region}_buses.csv'}")
 
 
-# ── POST-PROCESSING 1: Fill missing bus voltages from connected lines ─────────
-# After manual review some buses may still lack a base_kV value (voltage_tag
-# was absent in OSM). We estimate their voltage from the lines connected to them
-# — a bus inherits the voltage of any line that terminates at it.
-print("\n" + "=" * 60)
-print("POST-PROCESSING 1: Filling missing bus voltages from line connections")
-print("=" * 60)
+    # ── POST-PROCESSING 2: Remove island buses that remain unconnected ────────────
+    print("\n" + "=" * 60)
+    print("POST-PROCESSING 2: Removing remaining island buses")
+    print("=" * 60)
 
-bus_df         = pd.read_csv(WORK_DIR / f"matpower_{region}_buses.csv")
-lines_resolved = pd.read_csv(WORK_DIR / f"matpower_{region}_lines_resolved.csv")
-
-# Step A: fill from connected lines
-n_filled = 0
-for _, lrow in lines_resolved.iterrows():
-    v_raw  = lrow.get("voltage_V", None)
-    v_list = parse_voltage_tag(v_raw)
-    if not v_list:
-        continue
-    v_volts = max(v_list)
-    for end in ("fbus", "tbus"):
-        b = lrow.get(end)
-        if is_null(b):
-            continue
-        bi   = int(b)
-        mask = bus_df["bus_i"] == bi
-        if not mask.any():
-            continue
-        idx      = bus_df[mask].index[0]
-        existing = bus_df.at[idx, "base_kV"]
-        if is_null(existing) or float(existing) == 0:
-            bus_df.at[idx, "base_kV"] = float(v_volts)
-            if is_null(bus_df.at[idx, "voltage_tag"]):
-                bus_df.at[idx, "voltage_tag"] = str(v_volts)
-            n_filled += 1
-
-print(f"  Filled base_kV for {n_filled} bus(es) inferred from connected line voltages.")
-
-# Step B: assign the most common voltage to any still-unassigned buses
-still_missing = bus_df["base_kV"].isna() | (bus_df["base_kV"] == 0)
-if still_missing.any():
-    assigned = bus_df.loc[~still_missing, "base_kV"].dropna()
-    assigned = assigned[assigned > 0]
-    if len(assigned) > 0:
-        mode_v = float(assigned.mode()[0])
-        bus_df.loc[still_missing, "base_kV"]     = mode_v
-        bus_df.loc[still_missing, "voltage_tag"] = str(int(mode_v))
-        kv = int(mode_v) // 1000
-        # Update bus names to include kV suffix if not already present
-        for idx in bus_df[still_missing].index:
-            name = str(bus_df.at[idx, "name"])
-            if f"_{kv}kV" not in name:
-                bus_df.at[idx, "name"] = f"{name}_{kv}kV"
-        n_mode = int(still_missing.sum())
-        print(f"  Assigned mode voltage {mode_v:.0f} V ({kv} kV) to {n_mode} remaining bus(es).")
-
-bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
-print(f"  Updated buses → {WORK_DIR / f'matpower_{region}_buses.csv'}")
-
-
-# ── POST-PROCESSING 2: Remove island buses that remain unconnected ────────────
-print("\n" + "=" * 60)
-print("POST-PROCESSING 2: Removing remaining island buses")
-print("=" * 60)
-
-connected_set: set = set()
-for fb, tb in zip(lines_resolved["fbus"], lines_resolved["tbus"]):
-    if not is_null(fb):
-        connected_set.add(int(fb))
-    if not is_null(tb):
-        connected_set.add(int(tb))
-
-island_mask = ~bus_df["bus_i"].isin(connected_set)
-n_islands   = int(island_mask.sum())
-if n_islands:
-    print(f"  Removing {n_islands} island bus(es):")
-    print(bus_df[island_mask][["bus_i", "name", "base_kV"]].to_string(index=False))
-    bus_df     = bus_df[~island_mask].reset_index(drop=True)
-    old_to_new = {old: new for new, old in enumerate(bus_df["bus_i"], start=1)}
-    bus_df["bus_i"] = range(1, len(bus_df) + 1)
-    lines_resolved["fbus"] = lines_resolved["fbus"].apply(
-        lambda b: old_to_new.get(int(b), np.nan) if not is_null(b) else np.nan)
-    lines_resolved["tbus"] = lines_resolved["tbus"].apply(
-        lambda b: old_to_new.get(int(b), np.nan) if not is_null(b) else np.nan)
+    xfmr_path = WORK_DIR / f"transformer_pairs_{region}.csv"
+    transformers = read_transformers(xfmr_path)
+    bus_df, lines_resolved, transformers = clean_bus_tables(bus_df, lines_resolved, transformers)
     lines_resolved.to_csv(WORK_DIR / f"matpower_{region}_lines_resolved.csv", index=False)
-    print(f"  Updated line bus numbers → {WORK_DIR / f'matpower_{region}_lines_resolved.csv'}")
-else:
-    print("  No island buses remaining.")
+    transformers.to_csv(xfmr_path, index=False)
+    bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
+    print(f"  Final bus count: {len(bus_df)}")
 
-bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
-print(f"  Final bus count: {len(bus_df)}")
+
+if __name__ == "__main__":
+    main()

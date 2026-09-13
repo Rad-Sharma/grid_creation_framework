@@ -51,6 +51,16 @@ NATIONAL_EXPORT_MW = 4.91
 # where 69 kV is considered transmission, or 132000 for UK-style networks.
 MIN_TRANSMISSION_VOLTAGE_V = 115000   # Volts (110000 for 110 kV, 69000 for 69 kV, 132000 for UK-style networks)
 
+# Manuscript-aligned load path. "legacy_ridge" explicitly selects the previous
+# approximation. Paper mode requires measured industrial VIIRS data and a Huber
+# artifact; it never silently substitutes Ridge, proxy light, or missing features.
+LOAD_MODEL_METHOD = "paper_huber"
+PAPER_HUBER_MODEL = "model_huber_paper.json"
+VIIRS_RASTER_NAME = f"viirs_{region}.tif"
+STEEL_FACILITIES_NAME = "steel_facilities_mw.geojson"
+GOLD_FACILITIES_NAME = "gold_facilities.geojson"
+PLANT_NAME_SEARCH_RADIUS_M = 1000
+
 
 # ===========================================================================
 # PREDICT BUS LOADS THRESHOLDS — edit these to tune load prediction

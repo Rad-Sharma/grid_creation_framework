@@ -35,6 +35,7 @@ import numpy as np
 
 from pathlib import Path
 import config
+from plant_names import nearby_plant_name
 
 region    = config.region
 PROJ_ROOT = Path(__file__).parent.parent
@@ -370,7 +371,17 @@ def extract_name(row: pd.Series) -> str:
     return f"[unnamed {osm_id}]" if osm_id else "[unnamed]"
 
 
-gdf["plant_name"]   = gdf.apply(extract_name, axis=1)
+gdf["plant_name"] = gdf.apply(extract_name, axis=1)
+gdf["inferred_name_osm_id"] = ""
+for idx in gdf.index[gdf["plant_name"].str.startswith("[unnamed")]:
+    lat, lon = gdf.at[idx, "latitude"], gdf.at[idx, "longitude"]
+    if pd.isna(lat) or pd.isna(lon):
+        continue
+    name, reference = nearby_plant_name(lat, lon, PROJ_ROOT / "data/bus_data/raw/plant_names",
+                                        config.PLANT_NAME_SEARCH_RADIUS_M)
+    if name:
+        gdf.at[idx, "plant_name"] = name
+        gdf.at[idx, "inferred_name_osm_id"] = reference
 gdf["capacity_raw"] = gdf.apply(lambda r: first_present(r, CAPACITY_KEYS), axis=1)
 gdf["source_raw"]   = gdf.apply(lambda r: first_present(r, SOURCE_KEYS), axis=1)
 gdf["operator_out"] = gdf.apply(lambda r: first_present(r, ["operator", "owner"]), axis=1)
@@ -618,9 +629,11 @@ gen_out = pd.DataFrame({
     "Pmax":            gdf["Pmax"],
     "Pmin":            gdf["Pmin"],
     "generator_name":  gdf["plant_name"],
+    "inferred_name_osm_id": gdf["inferred_name_osm_id"],
     "operator":        gdf["operator_out"].replace("", "unknown"),
     "source":          gdf["source"],
     "genfuel":         gdf["genfuel"],
+    "method":          gdf.apply(lambda r: first_present(r, METHOD_KEYS), axis=1),
     "latitude":        gdf["latitude"].round(6),
     "longitude":       gdf["longitude"].round(6),
     "osm_id":          osm_id_col,
