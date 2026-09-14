@@ -45,6 +45,7 @@ from geopy.distance import geodesic
 
 from pathlib import Path
 import config
+from grid_topology import normally_open, mixed_interconnection_circuits
 
 region                     = config.region
 MIN_TRANSMISSION_VOLTAGE_V = config.MIN_TRANSMISSION_VOLTAGE_V
@@ -675,6 +676,9 @@ print("STEP 1: Loading data")
 print("=" * 60)
 
 data_lines = gpd.read_file(PROJ_ROOT / "data" / "OSM_extracts" / f"export_{region}_lines.geojson")
+excluded = data_lines.apply(lambda row: normally_open(row.to_dict()) or mixed_interconnection_circuits(row.to_dict()),axis=1)
+data_lines.loc[excluded].drop(columns='geometry').to_csv(WORK_DIR / f'excluded_connections_{region}.csv',index=False)
+data_lines = data_lines.loc[~excluded].copy()
 data_buses = pd.read_csv(WORK_DIR / f"matpower_{region}_buses.csv")
 
 # Parse bus coordinates: stored as the string "(lon, lat)" in the CSV.

@@ -1,13 +1,20 @@
 # Synthetic Electric Grid Creation Framework
 
-A Python pipeline for building highly realistic synthetic electric grid models
+A Python pipeline for building exploratory synthetic electric grid models
 from openly available geospatial data (OpenStreetMap, WorldPop, WRI Global
 Power Plant Database, NaturalEarth).
 
-The framework produces MATPOWER Version 2 case files — including a base model,
-a DC-feasible relaxation, and an AC-feasible relaxation — that accurately
-represent the topology and scale of a target country's high-voltage
-transmission network.
+The framework produces MATPOWER Version 2 cases and validation reports.
+Geographic coverage, inferred equipment, and operating feasibility are separate
+questions; solver convergence alone does not establish real-grid accuracy.
+
+For new regional or country builds, use the shared topology engine and explicit
+scenario/dispatch workflow in [MODEL_QUALITY.md](MODEL_QUALITY.md). It preserves
+station sections around conflicting connections, requires reviewed transformer
+inputs by default, and never expands equipment limits to obtain an AC solution.
+The older numbered CSV pipeline remains a compatibility workflow and does not
+provide the full station-section model. Its automatic transformer inference now
+requires `INFER_TRANSFORMERS_FROM_VOLTAGE = True` explicitly.
 
 ---
 
