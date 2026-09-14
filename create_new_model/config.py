@@ -125,3 +125,4 @@ class NNRidge:
 
     def predict(self, X):
         return X @ self.coef_ + self.intercept_
+INFER_TRANSFORMERS_FROM_VOLTAGE = False  # Legacy compatibility opt-in; prefer reviewed equipment.

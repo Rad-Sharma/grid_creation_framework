@@ -282,7 +282,8 @@ for feat_idx, row in data_sub.iterrows():
 
         # Add transformer pairs between consecutive voltage levels
         for k in range(len(split_ids) - 1):
-            transformer_pairs.append((split_ids[k], split_ids[k + 1]))
+            if getattr(config, 'INFER_TRANSFORMERS_FROM_VOLTAGE', False):
+                transformer_pairs.append((split_ids[k], split_ids[k + 1]))
 
     else:
         # Single voltage (or unknown)
