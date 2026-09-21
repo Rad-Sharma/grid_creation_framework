@@ -16,7 +16,7 @@ Choose a projected CRS appropriate to your region; EPSG:32630 above is only an
 example. The input OSM JSON must preserve node identities (`out body geom`).
 These outputs are topology tables, not a complete operating case.
 
-Pass `--min-kv` to set the manuscript's MIN_TRANSMISSION_VOLTAGE (Table VI) in kV;
+Pass `--min-kv` to set the Automate Grid Creation paper's MIN_TRANSMISSION_VOLTAGE (Table VI) in kV;
 it defaults to 69. Following Sec. IV.B.1 Step 3, a line is excluded only when its
 voltage tag is known and below that threshold. Untagged lines are retained at the
 region's modal voltage and each one is listed in `topology_uncertainty.csv`.
@@ -184,7 +184,7 @@ many islands even while the implementation passes its software tests.
 generation, geographic benchmarking, and operating feasibility. Coverage fractions
 remain unknown until compared with an independent inventory. Fixed-dispatch diagnostics must be reported separately from AC-OPF results.
 
-The numbered country CSV pipeline is the manuscript's published method and is
+The numbered country CSV pipeline is the Automate Grid Creation paper's published method and is
 documented in [README.md](README.md); it reproduces the paper's Kenya model
 exactly. It shares normally-open/mixed-circuit filtering, and it creates
 voltage-tier transformers by default because Sec. III.B requires them. It has not

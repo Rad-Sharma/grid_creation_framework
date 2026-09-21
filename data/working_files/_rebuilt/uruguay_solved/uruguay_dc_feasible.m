@@ -588,98 +588,98 @@ function mpc = uruguay_dc_feasible
 
     %% bus names
     mpc.bus_name = {
-	'Salto Substation 1_500kV_500kV' %1
-	'Salto Substation 1_150kV_150kV' %2
+	'Salto Substation 1_500kV' %1
+	'Salto Substation 1_150kV' %2
 	'Aguas Corrientes Substation_150kV' %3
 	'Bifurcación_150kV' %4
-	'San Carlos Substation 1_500kV_500kV' %5
-	'San Carlos Substation 1_150kV_150kV' %6
+	'San Carlos Substation 1_500kV' %5
+	'San Carlos Substation 1_150kV' %6
 	'Pan de Azucar Substation_150kV' %7
-	'La Paz Substation 1_500kV_500kV' %8
-	'La Paz Substation 1_150kV_150kV' %9
-	'La Paz Substation 2_150kV_150kV' %10
-	'Paso de Carrasco Substation 1_150kV_150kV' %11
+	'La Paz Substation 1_500kV' %8
+	'La Paz Substation 1_150kV' %9
+	'La Paz Substation 2_150kV' %10
+	'Paso de Carrasco Substation 1_150kV' %11
 	'Montevideo Substation 2_150kV' %12
 	'Belen Substation_150kV' %13
 	'Tomas Gomensoro Substation 1_150kV' %14
 	'San Ramon Substation_150kV' %15
 	'Colonia Nicolich Substation 1_150kV' %16
 	'Pando Substation 1_150kV' %17
-	'Subestación Norte 150kV_150kV_150kV' %18
-	'Fray Bentos Substation 1_150kV_150kV' %19
-	'Fray Bentos Substation 2_150kV_150kV' %20
-	'Enrique Martínez_150kV_150kV' %21
+	'Subestación Norte 150kV_150kV' %18
+	'Fray Bentos Substation 1_150kV' %19
+	'Fray Bentos Substation 2_150kV' %20
+	'Enrique Martínez_150kV' %21
 	'Puntas de Valdez Substation 1_150kV' %22
 	'Rocha Substation 1_150kV' %23
-	'San Javier Substation_150kV_150kV' %24
-	'Young Substation 1_500kV_500kV' %25
-	'Young Substation 1_150kV_150kV' %26
+	'San Javier Substation_150kV' %24
+	'Young Substation 1_500kV' %25
+	'Young Substation 1_150kV' %26
 	'Ecilda Paullier Substation_150kV' %27
-	'Brujas 500kV_500kV_500kV' %28
+	'Brujas 500kV_500kV' %28
 	'Carmelo Substation 1_150kV' %29
-	'Jose Batlle y Ordonez Substation 1_150kV_150kV' %30
+	'Jose Batlle y Ordonez Substation 1_150kV' %30
 	'Villa Sara Substation_150kV' %31
 	'Vergara Substation 1_150kV' %32
-	'Estación Trinidad_150kV_150kV' %33
+	'Estación Trinidad_150kV' %33
 	'Carmelo Substation 2_150kV' %34
 	'Durazno Substation 1_150kV' %35
 	'Mercedes Substation_150kV' %36
-	'Young Substation 2_500kV_500kV' %37
-	'Subestación Rivera_150kV_150kV' %38
-	'Convertidor Rivera_150kV_150kV' %39
+	'Young Substation 2_500kV' %37
+	'Subestación Rivera_150kV' %38
+	'Convertidor Rivera_150kV' %39
 	'Colonia del Sacramento Substation 1_150kV' %40
 	'Rodriguez Substation 1_150kV' %41
-	'Estación de Transmisión de Punta del Tigre_500kV_500kV' %42
+	'Estación de Transmisión de Punta del Tigre_500kV' %42
 	'Melo Substation 1_150kV' %43
 	'Punta del Este Substation 2_150kV' %44
 	'Reductora_150kV' %45
-	'Vichadero Substation 1_150kV_150kV' %46
-	'Florida Substation 1_150kV_150kV' %47
-	'Young Substation 3_150kV_150kV' %48
+	'Vichadero Substation 1_150kV' %46
+	'Florida Substation 1_150kV' %47
+	'Young Substation 3_150kV' %48
 	'Paso de Carrasco Substation 2_150kV' %49
 	'Cardal Substation 1_150kV' %50
 	'Rosario Substation_150kV' %51
 	'Vergara Substation 2_150kV' %52
 	'Santiago Vazquez Substation_150kV' %53
-	'Artigas Substation 1_150kV_150kV' %54
+	'Artigas Substation 1_150kV' %54
 	'Tacuarembo Substation 1_150kV' %55
 	'Sub Estación UTE 2_150kV' %56
-	'Paso de los Toros Substation 1_150kV_150kV' %57
+	'Paso de los Toros Substation 1_150kV' %57
 	'Rodriguez Substation 2_150kV' %58
-	'Melo HVDC_150kV_150kV' %59
-	'Salto Substation 2_150kV_150kV' %60
+	'Melo HVDC_150kV' %59
+	'Salto Substation 2_150kV' %60
 	'Juan L. Lacaze Substation_150kV' %61
 	'Paso de Carrasco Substation 3_150kV' %62
 	'Sarandi del Yi Substation_150kV' %63
 	'Estación 4018 Rincón de la Bolsa_150kV' %64
-	'Paso de los Toros Substation 2_150kV_150kV' %65
+	'Paso de los Toros Substation 2_150kV' %65
 	'Nueva Helvecia Substation_150kV' %66
 	'Colonia Nicolich Substation 2_150kV' %67
 	'Toledo Substation_150kV' %68
-	'Tarariras Substation_150kV_150kV' %69
-	'Estación Cerro Colorado_150kV_150kV' %70
-	'Villa Constitucion Substation 1_150kV_150kV' %71
-	'Paso de los Toros Substation 3_150kV_150kV' %72
-	'Sarandi Grande Substation 1_150kV_150kV' %73
-	'Libertad Substation 1_132kV_132kV' %74
-	'Subestación Francisco Veira_150kV_150kV' %75
-	'Minas Substation 1_150kV_150kV' %76
-	'Florida Substation 2_150kV_150kV' %77
-	'Aigua Substation_150kV_150kV' %78
-	'Puntas de Valdez Substation 2_150kV_150kV' %79
+	'Tarariras Substation_150kV' %69
+	'Estación Cerro Colorado_150kV' %70
+	'Villa Constitucion Substation 1_150kV' %71
+	'Paso de los Toros Substation 3_150kV' %72
+	'Sarandi Grande Substation 1_150kV' %73
+	'Libertad Substation 1_132kV' %74
+	'Subestación Francisco Veira_150kV' %75
+	'Minas Substation 1_150kV' %76
+	'Florida Substation 2_150kV' %77
+	'Aigua Substation_150kV' %78
+	'Puntas de Valdez Substation 2_150kV' %79
 	'Progreso Substation 1_150kV' %80
 	'Tomas Gomensoro Substation 2_150kV' %81
-	'Sarandi Grande Substation 2_150kV_150kV' %82
-	'Salto Substation 3_150kV_150kV' %83
-	'Paysandu Substation 1_132kV_132kV' %84
+	'Sarandi Grande Substation 2_150kV' %82
+	'Salto Substation 3_150kV' %83
+	'Paysandu Substation 1_132kV' %84
 	'Dolores_150kV' %85
-	'Artigas Substation 2_150kV_150kV' %86
-	'Salto Substation 4_150kV_150kV' %87
-	'Melo Substation 2_150kV_150kV' %88
+	'Artigas Substation 2_150kV' %86
+	'Salto Substation 4_150kV' %87
+	'Melo Substation 2_150kV' %88
 	'Las Piedras Substation 1_150kV' %89
-	'Trinidad Substation 1_150kV_150kV' %90
+	'Trinidad Substation 1_150kV' %90
 	'San Jose de Mayo Substation 2_150kV' %91
-	'Libertad Substation 2_132kV_132kV' %92
+	'Libertad Substation 2_132kV' %92
 	'Rafael Perazza Substation 1_150kV' %93
 	'Rafael Perazza Substation 2_150kV' %94
 	'Canelones Substation 1_150kV' %95
@@ -691,35 +691,35 @@ function mpc = uruguay_dc_feasible
 	'Blanquillo Substation_150kV' %101
 	'Baltasar Brum Substation 1_150kV' %102
 	'Rocha Substation 2_150kV' %103
-	'Salto Substation 5_132kV_132kV' %104
+	'Salto Substation 5_132kV' %104
 	'Dolores Substation_150kV' %105
 	'Young Substation 4_150kV' %106
-	'La Paz Substation 3_150kV_150kV' %107
-	'Delta del Tigre Substation_150kV_150kV' %108
+	'La Paz Substation 3_150kV' %107
+	'Delta del Tigre Substation_150kV' %108
 	'Colonia del Sacramento Substation 2_150kV' %109
-	'Sarandi Grande Substation 3_150kV_150kV' %110
+	'Sarandi Grande Substation 3_150kV' %110
 	'Cardona Substation 1_150kV' %111
 	'La Paloma Substation_150kV' %112
 	'Tacuarembo Substation 2_150kV' %113
 	'Melo Substation 3_150kV' %114
-	'Salto Substation 6_132kV_132kV' %115
-	'Paso de los Toros Substation 4_150kV_150kV' %116
-	'Colonia del Sacramento Substation 3_150kV_150kV' %117
-	'Melo Substation 4_150kV_150kV' %118
-	'Paso de los Toros Substation 5_150kV_150kV' %119
-	'Young Substation 5_150kV_150kV' %120
+	'Salto Substation 6_132kV' %115
+	'Paso de los Toros Substation 4_150kV' %116
+	'Colonia del Sacramento Substation 3_150kV' %117
+	'Melo Substation 4_150kV' %118
+	'Paso de los Toros Substation 5_150kV' %119
+	'Young Substation 5_150kV' %120
 	'Minas de Corrales Substation 1_150kV' %121
-	'Minas de Corrales Substation 2_150kV_150kV' %122
-	'Trinidad Substation 2_150kV_150kV' %123
+	'Minas de Corrales Substation 2_150kV' %122
+	'Trinidad Substation 2_150kV' %123
 	'Paso de los Toros Substation 6_150kV' %124
-	'Paysandu Substation 2_132kV_132kV' %125
+	'Paysandu Substation 2_132kV' %125
 	'Minas Substation 2_150kV' %126
 	'Colonia del Sacramento Substation 4_150kV' %127
 	'Tacuarembo Substation 3_150kV' %128
 	'Tacuarembo Substation 4_150kV' %129
 	'Solis de Mataojo Substation 1_150kV' %130
 	'Melo Substation 5_150kV' %131
-	'Salto Substation 7_150kV_150kV' %132
+	'Salto Substation 7_150kV' %132
 	'Estacion 11_150kV' %133
 	'Cardona Substation 2_150kV' %134
 	'UTE 2_150kV' %135
@@ -749,32 +749,32 @@ function mpc = uruguay_dc_feasible
 	'Bella Union Substation 1_150kV' %159
 	'Bella Union Substation 2_150kV' %160
 	'Tomas Gomensoro Substation 3_150kV' %161
-	'Reductora UTE_150kV_150kV' %162
+	'Reductora UTE_150kV' %162
 	'La Paz Substation 6_150kV' %163
 	'Solis de Mataojo Substation 2_150kV' %164
 	'Pando Substation 2_150kV' %165
-	'La Paz Substation 1_500kV_500kV' %166
-	'La Paz Substation 2_500kV_500kV' %167
-	'Paso de Carrasco Substation 1_500kV_500kV' %168
-	'San Javier Substation_500kV_500kV' %169
-	'Convertidor Rivera_230kV_230kV' %170
-	'Vichadero Substation 1_500kV_500kV' %171
-	'Melo HVDC_500kV_500kV' %172
-	'Libertad Substation 1_150kV_150kV' %173
-	'Libertad Substation 1_500kV_500kV' %174
-	'Subestación Francisco Veira_500kV_500kV' %175
-	'Paysandu Substation 1_150kV_150kV' %176
-	'Trinidad Substation 1_500kV_500kV' %177
-	'Libertad Substation 2_150kV_150kV' %178
-	'Salto Substation 5_500kV_500kV' %179
-	'Delta del Tigre Substation_500kV_500kV' %180
-	'Salto Substation 6_150kV_150kV' %181
-	'Young Substation 5_500kV_500kV' %182
-	'Minas de Corrales Substation 2_230kV_230kV' %183
-	'Paysandu Substation 2_150kV_150kV' %184
-	'Paysandu Substation 2_500kV_500kV' %185
-	'Salto Substation 7_500kV_500kV' %186
-	'Reductora UTE_500kV_500kV' %187
+	'La Paz Substation 1_500kV' %166
+	'La Paz Substation 2_500kV' %167
+	'Paso de Carrasco Substation 1_500kV' %168
+	'San Javier Substation_500kV' %169
+	'Convertidor Rivera_230kV' %170
+	'Vichadero Substation 1_500kV' %171
+	'Melo HVDC_500kV' %172
+	'Libertad Substation 1_150kV' %173
+	'Libertad Substation 1_500kV' %174
+	'Subestación Francisco Veira_500kV' %175
+	'Paysandu Substation 1_150kV' %176
+	'Trinidad Substation 1_500kV' %177
+	'Libertad Substation 2_150kV' %178
+	'Salto Substation 5_500kV' %179
+	'Delta del Tigre Substation_500kV' %180
+	'Salto Substation 6_150kV' %181
+	'Young Substation 5_500kV' %182
+	'Minas de Corrales Substation 2_230kV' %183
+	'Paysandu Substation 2_150kV' %184
+	'Paysandu Substation 2_500kV' %185
+	'Salto Substation 7_500kV' %186
+	'Reductora UTE_500kV' %187
     };
 
     %% generator names

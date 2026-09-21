@@ -27,7 +27,7 @@ AC formulation  (eq:shunt_acopf)
        θ_ij^min ≤ θ_i − θ_j ≤ θ_ij^max
        B_i^sh,min ≤ B_i^sh ≤ B_i^sh,max
 
-  The quadratic penalty follows manuscript equation (5a). It reduces shunt
+  The quadratic penalty follows Automate Grid Creation equation (5a). It reduces shunt
   magnitudes but does not directly minimise the number of installed devices.
 
 Outputs
@@ -142,7 +142,12 @@ def _load_metadata():
             kv   = r.get("base_kV", 0) or 0
             kv   = float(kv) / 1000.0 if float(kv) > 1000 else float(kv)
             label = name if name and name.lower() != "nan" else f"Bus_{int(r['bus_i'])}"
-            meta["bus_names"].append(f"\t{_cell(f'{label}_{kv:.0f}kV')} %{int(r['bus_i'])}")
+            # resolve_unmatched may already have suffixed the name with its kV,
+            # and "Konongo Substation_161kV_161kV" helps nobody.
+            suffix = f"_{kv:.0f}kV"
+            if not label.endswith(suffix):
+                label += suffix
+            meta["bus_names"].append(f"\t{_cell(label)} %{int(r['bus_i'])}")
             lat = r.get("latitude", 0.0)
             lon = r.get("longitude", 0.0)
             lat = 0.0 if (lat is None or str(lat) == "nan") else float(lat)

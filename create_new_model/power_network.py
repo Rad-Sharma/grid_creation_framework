@@ -3,7 +3,7 @@
 Network admittances and solver power variables use per unit. CSV/MATPOWER
 dispatch, demand, ratings and bus shunts use MW/MVAr on the case baseMVA.
 
-Manuscript equation (4) is a convex QP and is solved as one: HiGHS settles
+Automate Grid Creation equation (4) is a convex QP and is solved as one: HiGHS settles
 feasibility exactly and warm-starts a trust-region solve on analytic derivatives.
 Equation (5) is non-convex, so it is solved through PyPOWER's own AC OPF with a
 reactive source at each candidate bus, then converted to the shunts the equation
@@ -218,7 +218,9 @@ def _assign_bus_types(data):
 
 
 def _dc_program(data):
-    """Linear system behind manuscript equation (4): A, bounds and variable layout.
+    """Linear system behind Automate Grid Creation equation (4).
+
+    Holds A, the bounds and the variable layout.
 
     Variables are [Pg (per unit), theta (rad), extra line capacity (per unit)].
     """
@@ -326,7 +328,9 @@ def island_labels_from_case(data):
 
 
 def _solve_dc(data, penalty):
-    """Manuscript equation (4): least extra line capacity that makes DCOPF feasible.
+    """Automate Grid Creation equation (4).
+
+    The least extra line capacity that makes DCOPF feasible.
 
     HiGHS answers feasibility exactly and warm-starts the convex QP that the
     equation actually states, which a trust-region method then solves.
@@ -493,7 +497,9 @@ def _relieve_thermal(data, allowance, margin=1e-3, steps=8):
 
 
 def _solve_ac(data, max_bsh, rounds=20, headroom=1e-3):
-    """Manuscript equation (5): fewest shunt devices that make the ACOPF feasible.
+    """Automate Grid Creation equation (5).
+
+    The fewest shunt devices that make the ACOPF feasible.
 
     The shunt of (5d) is stood in for by a reactive source at each bus, because
     PyPOWER can optimise a generator's Q but not a bus susceptance. The sources

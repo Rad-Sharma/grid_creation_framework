@@ -1,8 +1,7 @@
 # Rebuild status and open threads
 
-Working notes from the session that realigned the pipeline with the manuscript
-and got it producing cases again. `PAPER_ALIGNMENT.md` holds the durable
-methodology findings; this file holds what is *in progress* and what to do next.
+Working notes from the sessions that got the pipeline producing cases again:
+what is *in progress*, what was fixed, and what to do next.
 
 ## Defects fixed in this pass
 
@@ -91,7 +90,7 @@ Generator counts match Table VII exactly for all three (75 / 45 / 35).
 ## Four cases that run
 
 All four were built from the OSM extracts already in the repository, using only
-the manuscript's steps. Step 3 was answered by `auto_review.py assisted`, so
+the Automate Grid Creation paper's steps. Step 3 was answered by `auto_review.py assisted`, so
 none is a *reviewed* model.
 
 | | Ghana | Uruguay | Puerto Rico | Kenya |
@@ -166,17 +165,13 @@ Puerto Rico's voltage mismatches went with the `create_lines.py` unit error.
    neither is present, so all four cases above were built with
    `LOAD_MODEL_METHOD = "legacy_ridge"`. The gold Fineprint archive *is*
    present. Legacy Ridge runs fully offline for Kenya, Puerto Rico, Uruguay and
-   Ghana. **Nothing above demonstrates the manuscript's Eq. (1) load model**,
+   Ghana. **Nothing above demonstrates the Automate Grid Creation paper's Eq. (1) load model**,
    only that the rest of the pipeline works around it.
-4. **Eq. (3c)'s susceptance exponent is dimensionally wrong** and needs R, X and
-   B refitted together per voltage class. Left as published; see
-   `PAPER_ALIGNMENT.md`. It did not stop any of the four cases solving, but it
-   is why Kenya's eq. (5) installs a shunt at nearly every bus.
-5. **The Huber intercept matters less than it appears.** After national scaling,
+4. **The Huber intercept matters less than it appears.** After national scaling,
    `alpha_0` above about 1 changes scaled demands by under 4 % and asymptotes;
    only negative values swing them (340 % at -4). The real blocker is the
-   missing *features*, not `alpha_0`. See `PAPER_ALIGNMENT.md`.
-6. **Taiwan builds and connects but equation (5) fails on it.** A full build
+   missing *features*, not `alpha_0`.
+5. **Taiwan builds and connects but equation (5) fails on it.** A full build
    gives **392 buses, 807 branches (87 transformers), 443 generators and one
    island**, and DC feasibility passes, but the AC step ends with
    `AC feasibility relaxation produced shunts the OPF cannot use` - the shunt
@@ -187,12 +182,12 @@ Puerto Rico's voltage mismatches went with the `create_lines.py` unit error.
    the repaired equation (5), so it says something the four working cases do
    not. Colombia and Australia remain untried.
 
-7. **None of the four cases is a reviewed model.** Step 3 was answered by
+6. **None of the four cases is a reviewed model.** Step 3 was answered by
    `auto_review.py assisted`, which takes the pipeline's own nearest
    voltage-compatible candidate and accepts every proposed island connection.
    Sec. IV.B.3 puts a human there. The journals are recorded and replayable, so
    a reviewer can start from these rather than from scratch.
-8. **Rebuilding cannot reproduce the original reviews.** The checked-in regions
+7. **Rebuilding cannot reproduce the original reviews.** The checked-in regions
    have no review journal, so their decisions are unrecoverable; the first
    rebuild of each is a fresh review. From now on the journal makes it
    repeatable.
@@ -202,5 +197,5 @@ Puerto Rico's voltage mismatches went with the `create_lines.py` unit error.
 `tests/test_paper_methodology.py::test_kenya_case_reproduces_table_vii` pins the
 published 92 / 75 / 143. A correctly rebuilt Kenya will most likely **not** hit
 those numbers, because the published case contains the defects above. When that
-test fails after a genuine rebuild, that is a finding about the manuscript, not a
+test fails after a genuine rebuild, that is a finding about the Automate Grid Creation paper, not a
 regression - decide deliberately whether to update or retire the test.

@@ -13,13 +13,13 @@ from shapely.strtree import STRtree
 from interconnection_rules import mixed_interconnection_circuits, line_interconnection, normally_open
 
 MAX_AC_KV = 765.          # highest AC transmission voltage in service worldwide
-DEFAULT_MIN_KV = 69.      # manuscript Table VI default when none is supplied
+DEFAULT_MIN_KV = 69.      # Automate Grid Creation Table VI default when none is supplied
 
 
 def voltages(value, min_kv=DEFAULT_MIN_KV):
     """Parse an OSM voltage tag into kV levels at or above the region threshold.
 
-    min_kv is the user-supplied MIN_TRANSMISSION_VOLTAGE of manuscript Table VI;
+    min_kv is the user-supplied MIN_TRANSMISSION_VOLTAGE of Automate Grid Creation Table VI;
     it is not a fixed constant. Values above MAX_AC_KV are rejected as tag errors.
     """
     result = []
@@ -36,7 +36,7 @@ def voltages(value, min_kv=DEFAULT_MIN_KV):
 def has_voltage_tag(tags):
     """True when OSM records any voltage, even one below the threshold.
 
-    Manuscript Sec. IV.B.1 Step 3 removes a line only when its voltage is known
+    Automate Grid Creation Sec. IV.B.1 Step 3 removes a line only when its voltage is known
     and sub-transmission. An absent tag is missing attribution, not evidence of
     a distribution line, so those lines are retained.
     """
@@ -63,7 +63,7 @@ def element_geometry(e):
 
 
 def line_parameters(kv, km, circuits=1):
-    """Manuscript Eq. 3 on 100 MVA; parallel circuits form one equivalent."""
+    """Automate Grid Creation Eq. 3 on 100 MVA; parallel circuits form one equivalent."""
     return (1115 * kv**-2.9870 * km / circuits,
             52.86 * kv**-2.0342 * km / circuits,
             .000049 * kv**.6896 * km * circuits,

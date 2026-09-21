@@ -3,7 +3,7 @@ predict_bus_loads.py — Apply the trained model to transmission buses in the ta
 
 Default paper_huber mode uses six measured log predictors, a provenance-bearing
 Huber artifact, national demand scaling and power factor 0.95. It writes
-{region}_substation_predictions_paper.csv. See PAPER_ALIGNMENT.md for inputs.
+{region}_substation_predictions_paper.csv. See README.md for inputs.
 
 Legacy Ridge pipeline (LOAD_MODEL_METHOD="legacy_ridge"):
   1. Per-bus Ridge prediction (raw, unclustered).

@@ -76,9 +76,9 @@ COUNTRY_CAPACITY_MW = 0
 MIN_TRANSMISSION_VOLTAGE_V = 115000   # Volts (110000 for 110 kV, 69000 for 69 kV, 132000 for UK-style networks)
 
 # Fuel-price basis for the Table V generator cost curves.
-#   "us"     - reproduces the published Table V coefficients (manuscript default)
+#   "us"     - reproduces the published Table V coefficients (paper default)
 #   "global" - rescales each curve by the Table IV global/US price ratio for its
-#              fuel. The manuscript never states how to apply the global column,
+#              fuel. The paper never states how to apply the global column,
 #              but reference [48] builds $/h as heat_rate x P x fuel_price and
 #              fits (a, b, c) by least squares, so all three scale exactly with
 #              fuel price. Hydro is excluded (its curve was copied from CCGT
@@ -88,7 +88,7 @@ MIN_TRANSMISSION_VOLTAGE_V = 115000   # Volts (110000 for 110 kV, 69000 for 69 k
 #              "global" still depart from the published Table V numbers.
 FUEL_COST_BASIS = "us"
 
-# Manuscript-aligned load path. "legacy_ridge" explicitly selects the previous
+# Automate Grid Creation load path. "legacy_ridge" explicitly selects the previous
 # approximation. Paper mode requires measured industrial VIIRS data and a Huber
 # artifact; it never silently substitutes Ridge, proxy light, or missing features.
 LOAD_MODEL_METHOD = "paper_huber"
@@ -180,7 +180,7 @@ class NNRidge:
 
     def predict(self, X):
         return X @ self.coef_ + self.intercept_
-# Manuscript Sec. III.B: a substation with a compound voltage tag (e.g.
+# Automate Grid Creation Sec. III.B: a substation with a compound voltage tag (e.g.
 # "330000;161000") is split into one bus per voltage level. Those buses are
 # co-located in one physical switchyard, so the pipeline connects consecutive
 # tiers with a transformer branch (1.6 % impedance on 1000 MVA, X/R = 80).

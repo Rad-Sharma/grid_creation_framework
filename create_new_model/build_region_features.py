@@ -8,7 +8,7 @@ density, amenity counts, and WRI power plant data.
 
 Paper mode requires a measured VIIRS raster and normalized steel facilities;
 it measures industrial footprints and writes {region}_paper_features.csv.
-See PAPER_ALIGNMENT.md for required inputs and interpretation choices.
+See README.md for required inputs and interpretation choices.
 
 In legacy_ridge mode, NTL (VIIRS Nighttime Light) and GHSL (Built-up Area) are fetched
 automatically from Google Earth Engine if the earthengine-api package is

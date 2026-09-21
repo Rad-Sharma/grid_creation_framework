@@ -1,8 +1,8 @@
-"""Regressions pinning the implementation to the manuscript's methodology.
+"""Regressions pinning the implementation to the Automate Grid Creation paper's methodology.
 
 Reference: "A Framework for the Creation of Highly Realistic International
 Synthetic Electric Grid Models". Section/equation/table numbers below refer to
-that manuscript. These tests guard the places where later safeguard work has
+that paper. These tests guard the places where later safeguard work has
 previously drifted away from the published method.
 """
 import re

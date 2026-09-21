@@ -20,7 +20,7 @@ def main():
     p.add_argument('--evidence', type=Path)
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--min-kv', type=float, default=69.,
-                   help='MIN_TRANSMISSION_VOLTAGE in kV (manuscript Table VI)')
+                   help='MIN_TRANSMISSION_VOLTAGE in kV (Automate Grid Creation Table VI)')
     args = p.parse_args()
     boundary = gpd.read_file(args.boundary).to_crs(4326).geometry.union_all()
     evidence = json.loads(args.evidence.read_text()) if args.evidence else {}

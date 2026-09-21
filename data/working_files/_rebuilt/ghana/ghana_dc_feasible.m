@@ -458,100 +458,100 @@ function mpc = ghana_dc_feasible
 
     %% bus names
     mpc.bus_name = {
-	'Konongo Substation_161kV_161kV' %1
-	'Ahafo Site_161kV_161kV' %2
-	'Buipe Substation_161kV_161kV' %3
-	'Akropong Substation_161kV_161kV' %4
+	'Konongo Substation_161kV' %1
+	'Ahafo Site_161kV' %2
+	'Buipe Substation_161kV' %3
+	'Akropong Substation_161kV' %4
 	'Kpong Generating Station_161kV' %5
-	'Techiman Substation_161kV_161kV' %6
+	'Techiman Substation_161kV' %6
 	'Kpong_161kV' %7
-	'Tema Substation 1_330kV_330kV' %8
-	'Tema Substation 1_161kV_161kV' %9
+	'Tema Substation 1_330kV' %8
+	'Tema Substation 1_161kV' %9
 	'Station B Korlebu_161kV' %10
 	'Station D_161kV' %11
 	'Volta River Authority_161kV' %12
-	'Obuasi Substation_161kV_161kV' %13
-	'Akwatia Substation_161kV_161kV' %14
-	'Asawinso Substation_161kV_161kV' %15
-	'GENSER_161kV_161kV' %16
-	'Dunkwa_161kV_161kV' %17
-	'Kumasi Substation_161kV_161kV' %18
-	'Tafo Substation_161kV_161kV' %19
-	'Wa Substation_161kV_161kV' %20
-	'Zebilla Substation_161kV_161kV' %21
+	'Obuasi Substation_161kV' %13
+	'Akwatia Substation_161kV' %14
+	'Asawinso Substation_161kV' %15
+	'GENSER_161kV' %16
+	'Dunkwa_161kV' %17
+	'Kumasi Substation_161kV' %18
+	'Tafo Substation_161kV' %19
+	'Wa Substation_161kV' %20
+	'Zebilla Substation_161kV' %21
 	'Bolgatanga Substation 1_161kV' %22
-	'Bolgatanga Substation 2_161kV_161kV' %23
-	'Tarkwa Substation 1_161kV_161kV' %24
-	'Sawla Substation_161kV_161kV' %25
-	'Gridco Substation Tamale_161kV_161kV' %26
-	'Leo Substation_161kV_161kV' %27
-	'Lome Substation_161kV_161kV' %28
-	'GRIDCo Prestea Substation_161kV_161kV' %29
+	'Bolgatanga Substation 2_161kV' %23
+	'Tarkwa Substation 1_161kV' %24
+	'Sawla Substation_161kV' %25
+	'Gridco Substation Tamale_161kV' %26
+	'Leo Substation_161kV' %27
+	'Lome Substation_161kV' %28
+	'GRIDCo Prestea Substation_161kV' %29
 	'Aboso Substation 1_161kV' %30
-	'Bui Hydro Substation_161kV_161kV' %31
-	'Aflao Sub Station_161kV_161kV' %32
+	'Bui Hydro Substation_161kV' %31
+	'Aflao Sub Station_161kV' %32
 	'Elmina Substation_161kV' %33
 	'Saltpond Substation_161kV' %34
 	'Mamponteng Substation 1_161kV' %35
 	'Aburi Substation_161kV' %36
-	'Tema Substation 2_161kV_161kV' %37
-	'Yendi Substation_161kV_161kV' %38
-	'Winneba Substation_161kV_161kV' %39
-	'Takoradi Sub-Station_161kV_161kV' %40
-	'Aboadze Substation_330kV_330kV' %41
-	'Aboadze Substation_161kV_161kV' %42
-	'Medina Estates Substation 1_161kV_161kV' %43
-	'Gbawe Substation_161kV_161kV' %44
-	'Bawku Substation_161kV_161kV' %45
-	'Nkawkaw Substation_161kV_161kV' %46
-	'Prestea Substation_161kV_161kV' %47
-	'Tarkwa Substation 2_161kV_161kV' %48
-	'Cape Coast Substation 1_161kV_161kV' %49
-	'Mafere Substation_225kV_225kV' %50
-	'Essiama Substation_161kV_161kV' %51
-	'Tema Substation 3_330kV_330kV' %52
-	'Tema Substation 3_161kV_161kV' %53
-	'Tema Substation 4_161kV_161kV' %54
-	'Bolgatanga II Substation_330kV_330kV' %55
-	'Bolgatanga II Substation_225kV_225kV' %56
-	'Bolgatanga II Substation_161kV_161kV' %57
-	'Smelter 2_161kV_161kV' %58
-	'Tamale Substation_330kV_330kV' %59
-	'Tamale Substation_161kV_161kV' %60
-	'ECG Substation_161kV_161kV' %61
-	'Mamponteng Substation 2_330kV_330kV' %62
-	'Mamponteng Substation 2_161kV_161kV' %63
+	'Tema Substation 2_161kV' %37
+	'Yendi Substation_161kV' %38
+	'Winneba Substation_161kV' %39
+	'Takoradi Sub-Station_161kV' %40
+	'Aboadze Substation_330kV' %41
+	'Aboadze Substation_161kV' %42
+	'Medina Estates Substation 1_161kV' %43
+	'Gbawe Substation_161kV' %44
+	'Bawku Substation_161kV' %45
+	'Nkawkaw Substation_161kV' %46
+	'Prestea Substation_161kV' %47
+	'Tarkwa Substation 2_161kV' %48
+	'Cape Coast Substation 1_161kV' %49
+	'Mafere Substation_225kV' %50
+	'Essiama Substation_161kV' %51
+	'Tema Substation 3_330kV' %52
+	'Tema Substation 3_161kV' %53
+	'Tema Substation 4_161kV' %54
+	'Bolgatanga II Substation_330kV' %55
+	'Bolgatanga II Substation_225kV' %56
+	'Bolgatanga II Substation_161kV' %57
+	'Smelter 2_161kV' %58
+	'Tamale Substation_330kV' %59
+	'Tamale Substation_161kV' %60
+	'ECG Substation_161kV' %61
+	'Mamponteng Substation 2_330kV' %62
+	'Mamponteng Substation 2_161kV' %63
 	'Shama Junction Substation_330kV' %64
 	'Tema Substation 5_161kV' %65
-	'Mim Substation_161kV_161kV' %66
+	'Mim Substation_161kV' %66
 	'Berekum Substation_161kV' %67
-	'Juabeso Substation_161kV_161kV' %68
+	'Juabeso Substation_161kV' %68
 	'Kpone_161kV' %69
-	'Kasoa_161kV_161kV' %70
+	'Kasoa_161kV' %70
 	'Kpeve Substation_161kV' %71
-	'Navrongo Substation_161kV_161kV' %72
+	'Navrongo Substation_161kV' %72
 	'Medina Estates Substation 2_161kV' %73
 	'Kasoa Substation_161kV' %74
 	'Cape Coast Substation 2_161kV' %75
 	'Bibiani Substation_161kV' %76
-	'Savelugu Substation 1_161kV_161kV' %77
+	'Savelugu Substation 1_161kV' %77
 	'Savelugu Substation 2_161kV' %78
-	'Asiekpe Substaion_161kV_161kV' %79
+	'Asiekpe Substaion_161kV' %79
 	'Tema Substation 6_161kV' %80
-	'Kintampo Substation_161kV_161kV' %81
+	'Kintampo Substation_161kV' %81
 	'Akyempim_161kV' %82
 	'Aboso Substation 2_161kV' %83
 	'Duayaw Nkwanta Substation_161kV' %84
-	'Lome Substation_330kV_330kV' %85
-	'GRIDCo Prestea Substation_225kV_225kV' %86
-	'Bui Hydro Substation_330kV_330kV' %87
-	'Tema Substation 2_330kV_330kV' %88
-	'Aboadze Substation_330kV_330kV' %89
-	'Tema Substation 4_330kV_330kV' %90
-	'ECG Substation_330kV_330kV' %91
-	'Navrongo Substation_330kV_330kV' %92
-	'Savelugu Substation 1_330kV_330kV' %93
-	'Kintampo Substation_330kV_330kV' %94
+	'Lome Substation_330kV' %85
+	'GRIDCo Prestea Substation_225kV' %86
+	'Bui Hydro Substation_330kV' %87
+	'Tema Substation 2_330kV' %88
+	'Aboadze Substation_330kV' %89
+	'Tema Substation 4_330kV' %90
+	'ECG Substation_330kV' %91
+	'Navrongo Substation_330kV' %92
+	'Savelugu Substation 1_330kV' %93
+	'Kintampo Substation_330kV' %94
     };
 
     %% generator names
