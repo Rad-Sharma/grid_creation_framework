@@ -508,95 +508,95 @@ function mpc = kenya_ac_feasible
 
     %% bus names
     mpc.bus_name = {
-	'Embakasi Sub-Station_220kV_220kV' %1
-	'Embakasi Sub-Station_132kV_132kV' %2
+	'Embakasi Sub-Station_220kV' %1
+	'Embakasi Sub-Station_132kV' %2
 	'Embakasi SS_220kV' %3
-	'Nairobi North 220Kv Substation_220kV_220kV' %4
-	'Pumwani Substation 1_132kV_132kV' %5
-	'Mariakani_132kV_132kV' %6
+	'Nairobi North 220Kv Substation_220kV' %4
+	'Pumwani Substation 1_132kV' %5
+	'Mariakani_132kV' %6
 	'Kilifi_132kV' %7
 	'Takaungu Substation 1_132kV' %8
-	'Muhoroni Substation_132kV_132kV' %9
-	'Sondu_132kV_132kV' %10
-	'Eldoret substation_132kV_132kV' %11
+	'Muhoroni Substation_132kV' %9
+	'Sondu_132kV' %10
+	'Eldoret substation_132kV' %11
 	'Nakuru Substation 1_132kV' %12
 	'Chemosit substation_132kV' %13
-	'Kamburu 132 kV Substation_132kV_132kV' %14
-	'Mwingi Substation_132kV_132kV' %15
-	'Kamburu 220 / 132kV Transmission Substation_220kV_220kV' %16
-	'Kamburu 220 / 132kV Transmission Substation_132kV_132kV' %17
+	'Kamburu 132 kV Substation_132kV' %14
+	'Mwingi Substation_132kV' %15
+	'Kamburu 220 / 132kV Transmission Substation_220kV' %16
+	'Kamburu 220 / 132kV Transmission Substation_132kV' %17
 	'Soilo_132kV' %18
-	'Amudat Substation_220kV_220kV' %19
+	'Amudat Substation_220kV' %19
 	'Roysambu_132kV' %20
-	'132 kV Mang''u Substation_220kV_220kV' %21
-	'132 kV Mang''u Substation_132kV_132kV' %22
+	'132 kV Mang''u Substation_220kV' %21
+	'132 kV Mang''u Substation_132kV' %22
 	'Makueni Substation 1_132kV' %23
 	'Ngong Wind Power Project_230kV' %24
 	'Mombasa Substation 1_132kV' %25
 	'Galu_132kV' %26
-	'Kisii Substation 1_132kV_132kV' %27
-	'Olkaria II Substation_220kV_220kV' %28
+	'Kisii Substation 1_132kV' %27
+	'Olkaria II Substation_220kV' %28
 	'Naivasha Substation 1_220kV' %29
 	'KPLC Sub Stattion_400kV' %30
-	'Loiyangalani Substaton_400kV_400kV' %31
-	'Suswa Substation 1_500kV_500kV' %32
-	'Suswa Substation 1_400kV_400kV' %33
-	'Suswa Substation 1_220kV_220kV' %34
-	'Isinya Substation_400kV_400kV' %35
-	'Isinya Substation_220kV_220kV' %36
-	'Machakos_132kV_132kV' %37
+	'Loiyangalani Substaton_400kV' %31
+	'Suswa Substation 1_500kV' %32
+	'Suswa Substation 1_400kV' %33
+	'Suswa Substation 1_220kV' %34
+	'Isinya Substation_400kV' %35
+	'Isinya Substation_220kV' %36
+	'Machakos_132kV' %37
 	'Gazi Substation_132kV' %38
 	'Mombasa Substation 2_132kV' %39
 	'Mwingi_132kV' %40
-	'Kindaruma_132kV_132kV' %41
+	'Kindaruma_132kV' %41
 	'Embu Substation 1_132kV' %42
-	'Meru_132kV_132kV' %43
-	'Webuye substation_132kV_132kV' %44
-	'Sang''oro Substation_132kV_132kV' %45
-	'Menengai_132kV_132kV' %46
+	'Meru_132kV' %43
+	'Webuye substation_132kV' %44
+	'Sang''oro Substation_132kV' %45
+	'Menengai_132kV' %46
 	'Nyeri Substation 1_132kV' %47
-	'Nanyuki substation_132kV_132kV' %48
+	'Nanyuki substation_132kV' %48
 	'Mumias Sugar''s Rang''ala Power Substation_132kV' %49
-	'Webuye_132kV_132kV' %50
-	'Kakamega substation_132kV_132kV' %51
+	'Webuye_132kV' %50
+	'Kakamega substation_132kV' %51
 	'Pumwani Substation 2_220kV' %52
-	'Ruai_132kV_132kV' %53
-	'Garsen substation_220kV_220kV' %54
-	'Lamu substation_220kV_220kV' %55
+	'Ruai_132kV' %53
+	'Garsen substation_220kV' %54
+	'Lamu substation_220kV' %55
 	'Kiambu Substation 2_132kV' %56
-	'Athi River to Embakasi 220kV Transition Substation_220kV_220kV' %57
-	'Naivasha Substation 2_220kV_220kV' %58
-	'Olkaria IV Substation_220kV_220kV' %59
-	'Chuka Substation 1_220kV_220kV' %60
-	'Kitale substation_220kV_220kV' %61
-	'Kitale substation_132kV_132kV' %62
-	'Bomet substation_132kV_132kV' %63
-	'Sotik substation_132kV_132kV' %64
-	'Garissa substation_132kV_132kV' %65
+	'Athi River to Embakasi 220kV Transition Substation_220kV' %57
+	'Naivasha Substation 2_220kV' %58
+	'Olkaria IV Substation_220kV' %59
+	'Chuka Substation 1_220kV' %60
+	'Kitale substation_220kV' %61
+	'Kitale substation_132kV' %62
+	'Bomet substation_132kV' %63
+	'Sotik substation_132kV' %64
+	'Garissa substation_132kV' %65
 	'Chuka Substation 2_132kV' %66
 	'Garissa Substation_132kV' %67
 	'Lamu Substation_220kV' %68
 	'Athi River Substation 1_220kV' %69
-	'Naivasha Substation 3_132kV_132kV' %70
-	'Olkaria V Substation_220kV_220kV' %71
-	'Naivasha Substation 4_220kV_220kV' %72
-	'Naivasha Substation 5_132kV_132kV' %73
+	'Naivasha Substation 3_132kV' %70
+	'Olkaria V Substation_220kV' %71
+	'Naivasha Substation 4_220kV' %72
+	'Naivasha Substation 5_132kV' %73
 	'Thika Substation 1_132kV' %74
 	'Mombasa Substation 4_132kV' %75
-	'Mariakani Substation 3_400kV_400kV' %76
-	'Mariakani Substation 3_220kV_220kV' %77
-	'KIMUKA 230KV Substation_230kV_230kV' %78
-	'Malindi Substation_220kV_220kV' %79
-	'Kiambu Substation 4_132kV_132kV' %80
-	'Isiolo Substation 1_132kV_132kV' %81
-	'AEZ_132kV_132kV' %82
-	'Kibos Substation (KETRACO)_220kV_220kV' %83
-	'Kibos Substation (KETRACO)_132kV_132kV' %84
+	'Mariakani Substation 3_400kV' %76
+	'Mariakani Substation 3_220kV' %77
+	'KIMUKA 230KV Substation_230kV' %78
+	'Malindi Substation_220kV' %79
+	'Kiambu Substation 4_132kV' %80
+	'Isiolo Substation 1_132kV' %81
+	'AEZ_132kV' %82
+	'Kibos Substation (KETRACO)_220kV' %83
+	'Kibos Substation (KETRACO)_132kV' %84
 	'Abyssinia substation_132kV' %85
-	'Takaungu Substation 3_132kV_132kV' %86
-	'Kabarnet Substation_132kV_132kV' %87
-	'Londiani Substation 1_132kV_132kV' %88
-	'Narok Substation 1_132kV_132kV' %89
+	'Takaungu Substation 3_132kV' %86
+	'Kabarnet Substation_132kV' %87
+	'Londiani Substation 1_132kV' %88
+	'Narok Substation 1_132kV' %89
 	'Migori Substation 3_132kV' %90
 	'Homa Bay Substation 1_132kV' %91
 	'Wote Power Sub station_132kV' %92
@@ -611,41 +611,41 @@ function mpc = kenya_ac_feasible
 	'Sagana Substation_132kV' %101
 	'Eldoret Substation 1_220kV' %102
 	'Rumuruti Substation_132kV' %103
-	'Suswa Substation 2_132kV_132kV' %104
+	'Suswa Substation 2_132kV' %104
 	'Chepareria Substation_220kV' %105
 	'Kajiado Substation_400kV' %106
 	'Sultan Ketraco Substation_132kV' %107
 	'Kiambu Substation 8_132kV' %108
-	'Loitokitok 132/33kV - KETRACO Substation_132kV_132kV' %109
+	'Loitokitok 132/33kV - KETRACO Substation_132kV' %109
 	'Makueni Substation 3_132kV' %110
 	'Namanga Substation_400kV' %111
 	'Kitui Substation_132kV' %112
-	'Nandi Hills Substation_132kV_132kV' %113
+	'Nandi Hills Substation_132kV' %113
 	'Bungoma Substation 1_220kV' %114
 	'Kihancha Substation_132kV' %115
 	'Chuka Substation 4_132kV' %116
 	'Busia Substation_132kV' %117
-	'Githambo substation_132kV_132kV' %118
+	'Githambo substation_132kV' %118
 	'Mariakani Substation 4_132kV' %119
-	'Pumwani Substation 11_132kV_132kV' %120
+	'Pumwani Substation 11_132kV' %120
 	'Mariakani Substation 5_132kV' %121
-	'Konza Substation_132kV_132kV' %122
+	'Konza Substation_132kV' %122
 	'Kijabe Substation_220kV' %123
 	'Embu Substation 4_132kV' %124
 	'Nanyuki Substation 2_132kV' %125
 	'Nanyuki Substation 3_132kV' %126
-	'Mariakani_220kV_220kV' %127
-	'Mwingi Substation_220kV_220kV' %128
-	'Kamburu 220 / 132kV Transmission Substation_220kV_220kV' %129
-	'Isinya Substation_400kV_400kV' %130
-	'Ruai_220kV_220kV' %131
-	'Naivasha Substation 5_400kV_400kV' %132
-	'Kiambu Substation 4_220kV_220kV' %133
-	'AEZ_220kV_220kV' %134
-	'Nandi Hills Substation_220kV_220kV' %135
-	'Nandi Hills Substation_400kV_400kV' %136
-	'Pumwani Substation 11_220kV_220kV' %137
-	'Konza Substation_400kV_400kV' %138
+	'Mariakani_220kV' %127
+	'Mwingi Substation_220kV' %128
+	'Kamburu 220 / 132kV Transmission Substation_220kV' %129
+	'Isinya Substation_400kV' %130
+	'Ruai_220kV' %131
+	'Naivasha Substation 5_400kV' %132
+	'Kiambu Substation 4_220kV' %133
+	'AEZ_220kV' %134
+	'Nandi Hills Substation_220kV' %135
+	'Nandi Hills Substation_400kV' %136
+	'Pumwani Substation 11_220kV' %137
+	'Konza Substation_400kV' %138
     };
 
     %% generator names

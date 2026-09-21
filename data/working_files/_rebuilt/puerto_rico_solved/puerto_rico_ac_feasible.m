@@ -772,77 +772,77 @@ function mpc = puerto_rico_ac_feasible
 
     %% bus names
     mpc.bus_name = {
-	'Subestación Aguirre_230kV_230kV' %1
+	'Subestación Aguirre_230kV' %1
 	'Subestación Viaducto I_115kV' %2
 	'Subestación Hato Rey 1420_115kV' %3
-	'Subestación Manatí_230kV_230kV' %4
-	'Subestación Manatí_115kV_115kV' %5
-	'Aguas Buenas TC_230kV_230kV' %6
+	'Subestación Manatí_230kV' %4
+	'Subestación Manatí_115kV' %5
+	'Aguas Buenas TC_230kV' %6
 	'Trujillo Alto Substation 1_115kV' %7
 	'Subestación Aguas Buenas_115kV' %8
-	'Subestación Monacillos_115kV_115kV' %9
-	'Arecibo Substation 1_115kV_115kV' %10
-	'Subestación Quebrada Negrito_115kV_115kV' %11
-	'Trujillo Alto Substation 2_115kV_115kV' %12
+	'Subestación Monacillos_115kV' %9
+	'Arecibo Substation 1_115kV' %10
+	'Subestación Quebrada Negrito_115kV' %11
+	'Trujillo Alto Substation 2_115kV' %12
 	'Subestación Rexville_115kV' %13
-	'Subestación Bayamón 1_230kV_230kV' %14
-	'Subestación Bayamón 1_115kV_115kV' %15
+	'Subestación Bayamón 1_230kV' %14
+	'Subestación Bayamón 1_115kV' %15
 	'Hatillo TC_115kV' %16
-	'Subestación Cambalache (Arecibo)_230kV_230kV' %17
-	'Subestación Cambalache (Arecibo)_115kV_115kV' %18
-	'Bufalo Substation 1_115kV_115kV' %19
-	'Jobos T.C._115kV_115kV' %20
-	'San German Substation 1_230kV_230kV' %21
-	'Ponce TC_115kV_115kV' %22
-	'Subestación Sabana Llana II_230kV_230kV' %23
+	'Subestación Cambalache (Arecibo)_230kV' %17
+	'Subestación Cambalache (Arecibo)_115kV' %18
+	'Bufalo Substation 1_115kV' %19
+	'Jobos T.C._115kV' %20
+	'San German Substation 1_230kV' %21
+	'Ponce TC_115kV' %22
+	'Subestación Sabana Llana II_230kV' %23
 	'Subestación Cacao_115kV' %24
-	'A.E.S., Guayama_115kV_115kV' %25
-	'Yabucoa T.C._115kV_115kV' %26
-	'Mayagüez TC_230kV_230kV' %27
-	'Guánica TC_230kV_230kV' %28
-	'Subestación Cañas_115kV_115kV' %29
+	'A.E.S., Guayama_115kV' %25
+	'Yabucoa T.C._115kV' %26
+	'Mayagüez TC_230kV' %27
+	'Guánica TC_230kV' %28
+	'Subestación Cañas_115kV' %29
 	'Subestación Martín Peña_115kV' %30
-	'Subestación de Juana Díaz_115kV_115kV' %31
-	'Subestación UPR - Bayamón_115kV_115kV' %32
+	'Subestación de Juana Díaz_115kV' %31
+	'Subestación UPR - Bayamón_115kV' %32
 	'Subestación Viaducto II_115kV' %33
-	'Subestación Cataño_115kV_115kV' %34
+	'Subestación Cataño_115kV' %34
 	'Subestación Parques y Recreos_115kV' %35
 	'Catano Substation 1_115kV' %36
-	'Subestación Río Bayamón_115kV_115kV' %37
+	'Subestación Río Bayamón_115kV' %37
 	'Subestación Egozcue_115kV' %38
 	'Subestación Tres Monjitas - 1414_115kV' %39
-	'Subestación San Antón_115kV_115kV' %40
-	'Subestación Sabana Llana I_115kV_115kV' %41
+	'Subestación San Antón_115kV' %40
+	'Subestación Sabana Llana I_115kV' %41
 	'Subestación Venezuela_115kV' %42
 	'Subestación Campo Llano_115kV' %43
 	'Subestación Hato Rey 1404_115kV' %44
 	'Subestación Rincón_115kV' %45
 	'Subestación Los Frailes_115kV' %46
-	'Subestación Candelero_230kV_230kV' %47
+	'Subestación Candelero_230kV' %47
 	'Subestación Guaynabo Pueblo_115kV' %48
-	'Subestación Hidroeléctrica Toro Negro_115kV_115kV' %49
-	'Subestación Barranquitas_115kV_115kV' %50
-	'Magas Arriba Substation 1_115kV_115kV' %51
-	'Magas Arriba Substation 2_230kV_230kV' %52
-	'Subestación Hidroeléctrica Dos Bocas_115kV_115kV' %53
-	'Subestación Guerrero_115kV_115kV' %54
-	'Subestación Victoria_115kV_115kV' %55
-	'Subestación Caimital Bajo_115kV_115kV' %56
-	'Subestación Mogote_115kV_115kV' %57
-	'Magas Arriba Substation 3_230kV_230kV' %58
+	'Subestación Hidroeléctrica Toro Negro_115kV' %49
+	'Subestación Barranquitas_115kV' %50
+	'Magas Arriba Substation 1_115kV' %51
+	'Magas Arriba Substation 2_230kV' %52
+	'Subestación Hidroeléctrica Dos Bocas_115kV' %53
+	'Subestación Guerrero_115kV' %54
+	'Subestación Victoria_115kV' %55
+	'Subestación Caimital Bajo_115kV' %56
+	'Subestación Mogote_115kV' %57
+	'Magas Arriba Substation 3_230kV' %58
 	'Subestación Vega Redonda_115kV' %59
 	'Subestación Hidroeléctrica de Río Blanco_115kV' %60
 	'Subestación Quebrada Seca (Ceiba)_115kV' %61
-	'Subestación Caimital_115kV_115kV' %62
+	'Subestación Caimital_115kV' %62
 	'Subestación Río_115kV' %63
 	'Subestación Mameyes 2_115kV' %64
-	'Subestación Juncos_115kV_115kV' %65
+	'Subestación Juncos_115kV' %65
 	'Mayagueez Substation 1_230kV' %66
-	'Subestación Santa Isabel_115kV_115kV' %67
-	'Caban Substation 1_115kV_115kV' %68
-	'Subestación Éolica de Naguabo_115kV_115kV' %69
-	'Subestación Fajardo_115kV_115kV' %70
-	'Aguada Substation_115kV_115kV' %71
+	'Subestación Santa Isabel_115kV' %67
+	'Caban Substation 1_115kV' %68
+	'Subestación Éolica de Naguabo_115kV' %69
+	'Subestación Fajardo_115kV' %70
+	'Aguada Substation_115kV' %71
 	'Moca Substation 1_115kV' %72
 	'La Dolores Substation_115kV' %73
 	'Subestación Conquistador_115kV' %74
@@ -854,12 +854,12 @@ function mpc = puerto_rico_ac_feasible
 	'Maricao Substation 1_115kV' %80
 	'Guaynabo Substation 1_115kV' %81
 	'Subestación Centro Médico_115kV' %82
-	'Morovis Substation_115kV_115kV' %83
+	'Morovis Substation_115kV' %83
 	'Barceloneta Substation_115kV' %84
 	'Subestación de Hatillo_115kV' %85
 	'Subestación Puerta de Tierra_115kV' %86
-	'El Ojo Substation_115kV_115kV' %87
-	'Las Ollas Substation_115kV_115kV' %88
+	'El Ojo Substation_115kV' %87
+	'Las Ollas Substation_115kV' %88
 	'Cacao Substation_115kV' %89
 	'Caguas Substation 2_115kV' %90
 	'Subestación Naranjito_115kV' %91
@@ -868,11 +868,11 @@ function mpc = puerto_rico_ac_feasible
 	'Dorado Substation 1_115kV' %94
 	'Caguas Substation 3_115kV' %95
 	'Bajadero Substation_115kV' %96
-	'Subestación Las Carolinas_115kV_115kV' %97
+	'Subestación Las Carolinas_115kV' %97
 	'Subestación Bayamón Pueblo_115kV' %98
-	'Subestación Palo Seco_230kV_230kV' %99
-	'Subestación Palo Seco_115kV_115kV' %100
-	'Coto Norte Substation_115kV_115kV' %101
+	'Subestación Palo Seco_230kV' %99
+	'Subestación Palo Seco_115kV' %100
+	'Coto Norte Substation_115kV' %101
 	'Subestación Juan Domingo_230kV' %102
 	'Subestación Puerto Nuevo_115kV' %103
 	'Subestación Vega Alta_115kV' %104
@@ -889,11 +889,11 @@ function mpc = puerto_rico_ac_feasible
 	'Subestación Río Grande Estates_115kV' %115
 	'Subestación Bayview_115kV' %116
 	'Subestación Luquillo Pueblo_115kV' %117
-	'Subestación Guaraguao_115kV_115kV' %118
-	'Subestación Añasco Arriba_115kV_115kV' %119
+	'Subestación Guaraguao_115kV' %118
+	'Subestación Añasco Arriba_115kV' %119
 	'Subestación Factor_115kV' %120
 	'Subestación San Lorenzo I_115kV' %121
-	'Subestación Barrazas_115kV_115kV' %122
+	'Subestación Barrazas_115kV' %122
 	'Penuelas Substation_115kV' %123
 	'Subestación Mayagüez Pueblo_230kV' %124
 	'Utuado Substation 1_115kV' %125
@@ -902,9 +902,9 @@ function mpc = puerto_rico_ac_feasible
 	'Trujillo Alto Substation 5_115kV' %128
 	'Sabana Seca Substation_115kV' %129
 	'Catano Substation 4_115kV' %130
-	'Utuado Substation 2_115kV_115kV' %131
-	'Humacao Substation_115kV_115kV' %132
-	'Moca Substation 2_115kV_115kV' %133
+	'Utuado Substation 2_115kV' %131
+	'Humacao Substation_115kV' %132
+	'Moca Substation 2_115kV' %133
 	'Subestación Comerío_115kV' %134
 	'Subestación Las Piedras_115kV' %135
 	'Las Marias Substation_115kV' %136
@@ -915,14 +915,14 @@ function mpc = puerto_rico_ac_feasible
 	'Subeatacióon Los Ángeles_115kV' %141
 	'Subestación 11 de Agosto_115kV' %142
 	'Rincon Substation_115kV' %143
-	'Anasco Substation_115kV_115kV' %144
-	'Hormigueros Substation_115kV_115kV' %145
+	'Anasco Substation_115kV' %144
+	'Hormigueros Substation_115kV' %145
 	'Mayagueez Substation 2_230kV' %146
 	'Mayagueez Substation 3_115kV' %147
 	'Maricao Substation 2_115kV' %148
-	'Yauco Substation_115kV_115kV' %149
+	'Yauco Substation_115kV' %149
 	'Guayanilla Substation_115kV' %150
-	'Tallaboa Substation 3_115kV_115kV' %151
+	'Tallaboa Substation 3_115kV' %151
 	'Caguas Substation 5_115kV' %152
 	'Manati Substation_115kV' %153
 	'Tierras Nuevas Poniente Substation_115kV' %154
@@ -937,51 +937,51 @@ function mpc = puerto_rico_ac_feasible
 	'Ponce Substation 5_115kV' %163
 	'Ponce Substation 6_115kV' %164
 	'Ponce Substation 7_115kV' %165
-	'Ponce Substation 8_115kV_115kV' %166
+	'Ponce Substation 8_115kV' %166
 	'Adjuntas Substation_115kV' %167
 	'Arecibo Substation 3_115kV' %168
 	'Rafael Gonzalez Substation_115kV' %169
 	'Isabela Substation 1_115kV' %170
-	'Mora Substation_115kV_115kV' %171
+	'Mora Substation_115kV' %171
 	'Isabela Substation 2_115kV' %172
 	'Rafael Hernandez Substation 1_115kV' %173
 	'Maricao Substation 3_115kV' %174
-	'Jobos Substation_115kV_115kV' %175
-	'Subestación Manatí_230kV_230kV' %176
-	'Arecibo Substation 1_230kV_230kV' %177
-	'Subestación Quebrada Negrito_230kV_230kV' %178
-	'Trujillo Alto Substation 2_230kV_230kV' %179
-	'Subestación Bayamón 1_230kV_230kV' %180
-	'Subestación Cambalache (Arecibo)_230kV_230kV' %181
-	'Jobos T.C._230kV_230kV' %182
-	'A.E.S., Guayama_230kV_230kV' %183
-	'Subestación UPR - Bayamón_230kV_230kV' %184
-	'Subestación Cataño_230kV_230kV' %185
-	'Subestación Río Bayamón_230kV_230kV' %186
-	'Subestación San Antón_230kV_230kV' %187
-	'Subestación Sabana Llana I_230kV_230kV' %188
-	'Subestación Guerrero_230kV_230kV' %189
-	'Subestación Victoria_230kV_230kV' %190
-	'Subestación Caimital Bajo_230kV_230kV' %191
-	'Subestación Caimital_230kV_230kV' %192
-	'Subestación Juncos_230kV_230kV' %193
-	'Subestación Santa Isabel_230kV_230kV' %194
-	'Caban Substation 1_230kV_230kV' %195
-	'Aguada Substation_230kV_230kV' %196
-	'Morovis Substation_230kV_230kV' %197
-	'Las Ollas Substation_230kV_230kV' %198
-	'Subestación Las Carolinas_230kV_230kV' %199
-	'Subestación Guaraguao_230kV_230kV' %200
-	'Subestación Añasco Arriba_230kV_230kV' %201
-	'Subestación Barrazas_230kV_230kV' %202
-	'Moca Substation 2_230kV_230kV' %203
-	'Anasco Substation_230kV_230kV' %204
-	'Hormigueros Substation_230kV_230kV' %205
-	'Yauco Substation_230kV_230kV' %206
-	'Tallaboa Substation 3_230kV_230kV' %207
-	'Ponce Substation 8_230kV_230kV' %208
-	'Mora Substation_230kV_230kV' %209
-	'Jobos Substation_230kV_230kV' %210
+	'Jobos Substation_115kV' %175
+	'Subestación Manatí_230kV' %176
+	'Arecibo Substation 1_230kV' %177
+	'Subestación Quebrada Negrito_230kV' %178
+	'Trujillo Alto Substation 2_230kV' %179
+	'Subestación Bayamón 1_230kV' %180
+	'Subestación Cambalache (Arecibo)_230kV' %181
+	'Jobos T.C._230kV' %182
+	'A.E.S., Guayama_230kV' %183
+	'Subestación UPR - Bayamón_230kV' %184
+	'Subestación Cataño_230kV' %185
+	'Subestación Río Bayamón_230kV' %186
+	'Subestación San Antón_230kV' %187
+	'Subestación Sabana Llana I_230kV' %188
+	'Subestación Guerrero_230kV' %189
+	'Subestación Victoria_230kV' %190
+	'Subestación Caimital Bajo_230kV' %191
+	'Subestación Caimital_230kV' %192
+	'Subestación Juncos_230kV' %193
+	'Subestación Santa Isabel_230kV' %194
+	'Caban Substation 1_230kV' %195
+	'Aguada Substation_230kV' %196
+	'Morovis Substation_230kV' %197
+	'Las Ollas Substation_230kV' %198
+	'Subestación Las Carolinas_230kV' %199
+	'Subestación Guaraguao_230kV' %200
+	'Subestación Añasco Arriba_230kV' %201
+	'Subestación Barrazas_230kV' %202
+	'Moca Substation 2_230kV' %203
+	'Anasco Substation_230kV' %204
+	'Hormigueros Substation_230kV' %205
+	'Yauco Substation_230kV' %206
+	'Tallaboa Substation 3_230kV' %207
+	'Ponce Substation 8_230kV' %208
+	'Mora Substation_230kV' %209
+	'Jobos Substation_230kV' %210
     };
 
     %% generator names
