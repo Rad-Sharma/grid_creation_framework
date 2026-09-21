@@ -186,11 +186,13 @@ def map_to_category(primary_source: str, genfuel: str, method: str = "") -> str:
 # ============================================================
 # TABLE IV – FUEL COSTS BY FUEL TYPE ($/MBTU)
 # ============================================================
-# The manuscript reports a US and a global price for each fuel. The Table V
+# The Automate Grid Creation paper reports a US and a global price for each
+# fuel. The Table V
 # curve coefficients are derived from [48], which prices fuel at the US EIA
 # values, so "us" reproduces Table V exactly and is the default.
 #
-# The manuscript prints the global column but never states how to apply it.
+# The Automate Grid Creation paper prints the global column but never states
+# how to apply it.
 # Reference [48] (Babaeinejadsarookolaee, "Synthetic Power System, Generator Cost
 # Curves", 2018) does, and it makes the scaling exact rather than a guess for
 # most categories. There, $/h at 40/60/80/100 % of capacity is computed as

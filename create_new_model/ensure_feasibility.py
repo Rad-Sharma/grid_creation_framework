@@ -27,7 +27,7 @@ AC formulation  (eq:shunt_acopf)
        θ_ij^min ≤ θ_i − θ_j ≤ θ_ij^max
        B_i^sh,min ≤ B_i^sh ≤ B_i^sh,max
 
-  The quadratic penalty follows manuscript equation (5a). It reduces shunt
+  The quadratic penalty follows Automate Grid Creation equation (5a). It reduces shunt
   magnitudes but does not directly minimise the number of installed devices.
 
 Outputs

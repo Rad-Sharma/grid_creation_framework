@@ -146,7 +146,7 @@ def test_huber_refit_and_prediction_preserve_provenance(tmp_path):
     frame.to_csv(path, index=False)
     artifact = train([path], output)
     assert artifact['model_type'] == 'huber' and artifact['epsilon'] == 1.1
-    assert artifact['provenance']['kind'] == 'new_refit_not_manuscript_artifact'
+    assert artifact['provenance']['kind'] == 'new_refit_not_published_artifact'
     np.testing.assert_allclose(artifact['coefficients'], lm.PUBLISHED_COEFFICIENTS, atol=.03)
     loaded = lm.load_model(output)
     predicted = lm.predict(frame, loaded)

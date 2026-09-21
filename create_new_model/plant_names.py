@@ -104,7 +104,8 @@ def nearest_named(latitude, longitude, candidates, radius_m=1000):
 def nearby_plant_name(latitude, longitude, cache_dir, radius_m=1000, session=requests):
     """Return (bracketed name, OSM reference), or leave the plant unnamed.
 
-    The manuscript does not specify the search radius or ranking. We use the
+    The Automate Grid Creation paper does not specify the search radius or
+    ranking. We use the
     closest named plant/generator/substation within a configurable radius and
     record its ID. Inference never fills capacity or fuel from another plant.
     """

@@ -3,7 +3,7 @@
 Example: python train_paper_load_model.py prepared_nz.csv prepared_gb.csv
 The old feature tables are not sufficient: their industrial light columns are
 placeholders. They must be regenerated using paper feature extraction first.
-This creates a new refit, not a claim to recover the manuscript's exact fit.
+This creates a new refit, not a claim to recover the paper's exact fit.
 """
 import argparse
 import hashlib
@@ -37,8 +37,9 @@ def train(paths, output):
                     feature_contract=FEATURE_CONTRACT, intercept=float(model.intercept_),
                     coefficients=model.coef_.tolist(), training_n=len(frame),
                     published_coefficients=PUBLISHED_COEFFICIENTS,
-                    provenance={"kind": "new_refit_not_manuscript_artifact", "alpha": 0.,
-                                "note": "Manuscript omits intercept, regularization, and full GB correction/aggregation recipe.",
+                    provenance={"kind": "new_refit_not_published_artifact", "alpha": 0.,
+                                "note": ("the paper omits intercept, regularization and "
+                                         "the full GB correction/aggregation recipe."),
                                 "inputs": [{"file": Path(p).name, "sha256": hashlib.sha256(Path(p).read_bytes()).hexdigest()}
                                            for p in paths]})
     Path(output).parent.mkdir(parents=True, exist_ok=True)

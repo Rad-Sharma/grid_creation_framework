@@ -90,7 +90,7 @@ Generator counts match Table VII exactly for all three (75 / 45 / 35).
 ## Four cases that run
 
 All four were built from the OSM extracts already in the repository, using only
-the manuscript's steps. Step 3 was answered by `auto_review.py assisted`, so
+the Automate Grid Creation paper's steps. Step 3 was answered by `auto_review.py assisted`, so
 none is a *reviewed* model.
 
 | | Ghana | Uruguay | Puerto Rico | Kenya |
@@ -165,7 +165,7 @@ Puerto Rico's voltage mismatches went with the `create_lines.py` unit error.
    neither is present, so all four cases above were built with
    `LOAD_MODEL_METHOD = "legacy_ridge"`. The gold Fineprint archive *is*
    present. Legacy Ridge runs fully offline for Kenya, Puerto Rico, Uruguay and
-   Ghana. **Nothing above demonstrates the manuscript's Eq. (1) load model**,
+   Ghana. **Nothing above demonstrates the Automate Grid Creation paper's Eq. (1) load model**,
    only that the rest of the pipeline works around it.
 4. **The Huber intercept matters less than it appears.** After national scaling,
    `alpha_0` above about 1 changes scaled demands by under 4 % and asymptotes;
@@ -197,5 +197,5 @@ Puerto Rico's voltage mismatches went with the `create_lines.py` unit error.
 `tests/test_paper_methodology.py::test_kenya_case_reproduces_table_vii` pins the
 published 92 / 75 / 143. A correctly rebuilt Kenya will most likely **not** hit
 those numbers, because the published case contains the defects above. When that
-test fails after a genuine rebuild, that is a finding about the manuscript, not a
+test fails after a genuine rebuild, that is a finding about the Automate Grid Creation paper, not a
 regression - decide deliberately whether to update or retire the test.

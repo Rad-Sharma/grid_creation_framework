@@ -8,7 +8,7 @@ The framework produces MATPOWER Version 2 cases and validation reports.
 Geographic coverage, inferred equipment, and operating feasibility are separate
 questions; solver convergence alone does not establish real-grid accuracy.
 
-**The numbered pipeline in `create_new_model/` is the manuscript's method.**
+**The numbered pipeline in `create_new_model/` is the Automate Grid Creation paper's method.**
 Figures 2, 4 and 7 of the paper map onto `create_buses.py`, `create_lines.py` and
 `create_generators.py` respectively, and its Kenya case reproduces Table VII
 exactly. Follow [Pipeline Steps](#pipeline-steps) for a build intended to match
@@ -63,22 +63,6 @@ grid_creation_framework/
 
 ---
 
-## Manuscript alignment
-
-**This repository does not reproduce the manuscript's numerical results out of
-the box.** Choose the load-model path before starting the numbered pipeline:
-
-| Setting in `create_new_model/config.py` | Purpose | Additional inputs |
-|---|---|---|
-| `LOAD_MODEL_METHOD = "paper_huber"` (default) | Implemented manuscript equations; exact fitted calibration is unavailable | Measured VIIRS, normalized steel/gold facilities, fitted Huber artifact |
-| `LOAD_MODEL_METHOD = "legacy_ridge"` | Earlier exploratory approximation; not manuscript reproduction | Bundled `model_bundle_v5.pkl`; regional inputs and feature extraction still required |
-
-The default configuration now selects the manuscript Huber path. The published
-slopes alone are insufficient to reconstruct the fitted model because its
-intercept is absent.
-The old Ridge approximation remains available through the explicit
-`LOAD_MODEL_METHOD = "legacy_ridge"` setting.
-
 ## Required Inputs
 
 ### 1. OpenStreetMap GeoJSON exports
@@ -96,9 +80,19 @@ Replace `{region}` with the lowercase name set in `config.py` (e.g. `ghana`).
 
 ### 2. Load model and industrial features
 
+Choose the load-model path before starting the numbered pipeline. **Neither path
+runs out of the box without the inputs in its last column.**
+
+| Setting in `create_new_model/config.py` | Purpose | Additional inputs |
+|---|---|---|
+| `LOAD_MODEL_METHOD = "paper_huber"` (default) | The published load equations; the exact fitted calibration is unavailable | Measured VIIRS, normalized steel/gold facilities, fitted Huber artifact |
+| `LOAD_MODEL_METHOD = "legacy_ridge"` | Earlier exploratory approximation | Bundled `model_bundle_v5.pkl`; regional inputs and feature extraction still required |
+
 Paper mode requires `data/bus_data/models/model_huber_paper.json`, measured VIIRS
 radiance, and normalized steel/gold facility data. These complete calibration
-inputs are not bundled. Missing inputs stop the paper path with a diagnostic.
+inputs are not bundled, and the published slopes alone cannot reconstruct the
+fitted model because its intercept is absent. Missing inputs stop the paper path
+with a diagnostic.
 
 Legacy mode uses `data/bus_data/models/model_bundle_v5.pkl`, the earlier Ridge
 model, imputer and feature list.
@@ -123,13 +117,13 @@ changed, instead of silently mixing settings into one model. A region built
 before that file existed adopts the current settings with a warning that they
 were never checked against Step 1.
 
-These seven settings are the user inputs of the manuscript's Table VI. Two further
-settings control manuscript behaviour and should normally be left alone:
+These seven settings are the user inputs of the Automate Grid Creation paper's Table VI. Two further
+settings control Automate Grid Creation paper behaviour and should normally be left alone:
 
 | Setting | Default | Effect |
 |---|---|---|
 | `INFER_TRANSFORMERS_FROM_VOLTAGE` | `True` | Sec. III.B. Joins the buses of a compound-voltage substation with a transformer. Setting this `False` splits the buses but omits the transformer, stranding every upper tier as an island — Kenya drops from 143 branches to 134 and no longer matches Table VII. |
-| `FUEL_COST_BASIS` | `"us"` | Table IV. `"us"` reproduces the published Table V coefficients. `"global"` rescales each curve by that fuel's global/US price ratio; the manuscript prints the global column but never states how to apply it, so results using it must be reported as departing from Table V. |
+| `FUEL_COST_BASIS` | `"us"` | Table IV. `"us"` reproduces the published Table V coefficients. `"global"` rescales each curve by that fuel's global/US price ratio; the Automate Grid Creation paper prints the global column but never states how to apply it, so results using it must be reported as departing from Table V. |
 
 ---
 
@@ -247,7 +241,7 @@ The `new` command stores voltages in volts internally. An optional secondary
 voltage creates a separate bus and an explicit transformer connection.
 
 This is the human-in-the-loop stage of Sec. IV.B.3; candidate buses are listed
-within the manuscript's 80 km radius.
+within the Automate Grid Creation paper's 80 km radius.
 
 Two rules the automated passes enforce now apply to manual picks as well: a bus
 already used as the line's other endpoint is refused, because that would be a
@@ -355,8 +349,9 @@ plants, assigns each to its nearest bus, then assigns MATPOWER bus types:
 
 **Output:** `data/working_files/{region}/matpower_{region}_cost_curves.csv`
 
-Computes MATPOWER polynomial cost curves (MODEL=2, n=3) per generator using the
-manuscript's Table V, parameterised by fuel type and Pmax (Snodgrass et al. 2021).
+Computes MATPOWER polynomial cost curves (MODEL=2, n=3) per generator using
+Table V of the Automate Grid Creation paper, parameterised by fuel type and Pmax
+(Snodgrass et al. 2021).
 Zero-cost fuels (solar, wind, nuclear, geothermal) receive c0 = c1 = c2 = 0.
 
 Table IV's fuel prices are selected by `FUEL_COST_BASIS`. The default `"us"`
@@ -399,7 +394,7 @@ Pg values are set to the optimal DC dispatch; Qg = 0.
 
 **AC relaxation** (`eq:shunt_acopf`):
 Solves an AC OPF with additional shunt susceptance variables at each bus.
-The penalty term M·Σ(B_sh²) follows manuscript equation (5a). It reduces
+The penalty term M·Σ(B_sh²) follows equation (5a) of the Automate Grid Creation paper. It reduces
 shunt magnitudes but does not directly minimise the number of shunt devices.
 Generator Pg and Qg are set to the optimal AC dispatch values.
 
@@ -486,7 +481,7 @@ py -3.10 -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-`tests/test_paper_methodology.py` pins the implementation to the manuscript:
+`tests/test_paper_methodology.py` pins the implementation to the Automate Grid Creation paper:
 Table VII's Kenya counts, the Sec. III.B compound-voltage transformer, the
 Table V coefficients, the Table IV price ratios, and the Sec. IV.B.1 Step 3
 voltage-filter rules.
