@@ -1,0 +1,19 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+1,2,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,El Tarter Substation 1_500kV,El Tarter Substation 1_150kV,0.0,,transformer
+5,6,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,San Carlos Substation_500kV,San Carlos Substation_150kV,0.0,,transformer
+8,9,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,El Tarter Substation 5_500kV,El Tarter Substation 5_150kV,0.0,,transformer
+24,25,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,El Tarter Substation 20_500kV,El Tarter Substation 20_150kV,0.0,,transformer
+10,145,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 6_150kV,El Tarter Substation 6_500kV,0.0,150000;500000,way/180076126
+11,146,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 7_150kV,El Tarter Substation 7_500kV,0.0,150000;500000,way/180076128
+23,147,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 19_150kV,El Tarter Substation 19_500kV,0.0,150000;500000,way/190845501
+60,148,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 69_150kV,El Tarter Substation 69_500kV,0.0,150000;500000,way/534542024
+61,149,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Francisco Veira_150kV,Subestación Francisco Veira_500kV,0.0,150000;500000,way/534551365
+68,150,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 81_132kV,El Tarter Substation 81_150kV,0.0,132000;150000,way/591450812
+71,151,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 86_150kV,El Tarter Substation 86_500kV,0.0,150000;500000,way/626917784
+72,152,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 87_132kV,El Tarter Substation 87_150kV,0.0,132000;150000,way/626917791
+86,153,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 101_132kV,El Tarter Substation 101_150kV,0.0,132000;150000,way/655475401
+92,154,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 111_132kV,El Tarter Substation 111_500kV,0.0,132000;500000,way/670664429
+98,155,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 127_150kV,El Tarter Substation 127_500kV,0.0,150000;500000,way/1025884702
+128,156,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 170_150kV,El Tarter Substation 170_500kV,0.0,150000;500000,way/1309396895
+140,157,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Reductora UTE_150kV,Reductora UTE_500kV,0.0,150000;500000,way/1432335935
+141,158,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 185_150kV,El Tarter Substation 185_500kV,0.0,150000;500000,way/1433443840

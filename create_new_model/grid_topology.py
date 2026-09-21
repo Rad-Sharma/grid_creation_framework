@@ -12,16 +12,35 @@ from shapely.ops import transform, unary_union, polygonize
 from shapely.strtree import STRtree
 from interconnection_rules import mixed_interconnection_circuits, line_interconnection, normally_open
 
-def voltages(value):
+MAX_AC_KV = 765.          # highest AC transmission voltage in service worldwide
+DEFAULT_MIN_KV = 69.      # manuscript Table VI default when none is supplied
+
+
+def voltages(value, min_kv=DEFAULT_MIN_KV):
+    """Parse an OSM voltage tag into kV levels at or above the region threshold.
+
+    min_kv is the user-supplied MIN_TRANSMISSION_VOLTAGE of manuscript Table VI;
+    it is not a fixed constant. Values above MAX_AC_KV are rejected as tag errors.
+    """
     result = []
     for part in str(value or '').split(';'):
         try:
             v = float(part)
-            if 69000 <= v <= 765000:
+            if min_kv * 1000 <= v <= MAX_AC_KV * 1000:
                 result.append(v / 1000)
         except ValueError:
             pass
     return result
+
+
+def has_voltage_tag(tags):
+    """True when OSM records any voltage, even one below the threshold.
+
+    Manuscript Sec. IV.B.1 Step 3 removes a line only when its voltage is known
+    and sub-transmission. An absent tag is missing attribution, not evidence of
+    a distribution line, so those lines are retained.
+    """
+    return bool(str(tags.get('voltage') or '').strip())
 
 
 def element_geometry(e):
@@ -59,7 +78,7 @@ def asynchronous_station(tags):
 
 
 def network(elements, boundary, snap_m=150., *, evidence=None, transformer_policy="reviewed",
-            switchable_stations=None, metric_crs=5070):
+            switchable_stations=None, metric_crs=5070, min_kv=DEFAULT_MIN_KV):
     """Only shared OSM vertices and nearby compatible station footprints connect.
 
     Geometric line crossings are not connections. Unknown-voltage lines are
@@ -76,25 +95,17 @@ def network(elements, boundary, snap_m=150., *, evidence=None, transformer_polic
         raise ValueError("Unknown transformer policy")
     border = transform(FORWARD, boundary)
     stations, omitted, segments = [], [], []
-    station_relations = [e for e in elements if e['type'] == 'relation' and e.get('tags', {}).get('power') == 'substation']
-    member_ids = {m['ref'] for e in station_relations for m in e.get('members', []) if m['type'] == 'way'}
-    for e in elements:
+    from substation_audit import collect_substations
+    for record in collect_substations(elements,boundary,metric_crs,min_kv=min_kv):
+        if not record['eligible'] or record['parent_relations']:
+            continue
+        e = record['element']
         tags = e.get('tags', {})
-        if tags.get('power') != 'substation' or (e['type'] == 'way' and e['id'] in member_ids):
-            continue
-        geom = element_geometry(e)
-        if geom is None or not boundary.covers(geom.representative_point()):
-            continue
-        vs = sorted(set(voltages(tags.get('voltage'))))
-        if not vs and tags.get('voltage'):
-            continue
-        if not vs and tags.get('substation') in ('distribution', 'minor_distribution'):
-            continue
-        stations.append(dict(osm_id=f'{e["type"]}/{e["id"]}',
+        stations.append(dict(osm_id=record['osm_id'],
                              name=tags.get('name') or tags.get('ref') or f'OSM {e["id"]}',
-                             kv=vs, asynchronous=asynchronous_station(tags),
-                             switchable=f'{e["type"]}/{e["id"]}' in switchable_stations,
-                             geometry=transform(FORWARD, geom)))
+                             kv=record['voltage_kv'], asynchronous=asynchronous_station(tags),
+                             switchable=record['osm_id'] in switchable_stations,
+                             geometry=record['geometry']))
     tree = STRtree([s['geometry'] for s in stations])
     print('Candidate substations:', len(stations), flush=True)
     buses, bus_keys, attached = [], {}, defaultdict(set)
@@ -150,12 +161,12 @@ def network(elements, boundary, snap_m=150., *, evidence=None, transformer_polic
     # Split at explicit shared OSM nodes, including interior nodes of ways.
     node_uses = Counter()
     node_systems = defaultdict(set)
-    lines = []
+    lines, untagged = [], []
     for e in elements:
         tags = e.get('tags', {})
         if e['type'] != 'way' or tags.get('power') not in ('line', 'cable'):
             continue
-        levels = voltages(tags.get('voltage'))
+        levels = voltages(tags.get('voltage'), min_kv)
         reason = None
         if normally_open(tags):
             reason = 'explicitly normally-open connection; excluded from base topology'
@@ -163,8 +174,9 @@ def network(elements, boundary, snap_m=150., *, evidence=None, transformer_polic
             reason = 'DC line requires explicit converter/interconnection model'
         elif mixed_interconnection_circuits(tags):
             reason = 'mixed ERCOT/Eastern circuits: withheld until circuit-specific connectivity is available'
-        elif not levels:
-            reason = 'unknown or below-69-kV voltage'
+        elif has_voltage_tag(tags) and not levels:
+            # Sec. IV.B.1 Step 3: a known sub-transmission voltage is removed.
+            reason = f'voltage tag below the {min_kv:g} kV transmission threshold'
         if reason:
             if normally_open(tags):
                 for p in (e.get('geometry', [])[:1] + e.get('geometry', [])[-1:]):
@@ -175,17 +187,41 @@ def network(elements, boundary, snap_m=150., *, evidence=None, transformer_polic
             omitted.append(dict(osm_id=f'way/{e["id"]}', reason=reason, voltage=tags.get('voltage', '')))
             continue
         lines.append(e)
+        if not levels:
+            untagged.append(e)
         node_uses.update(set(e.get('nodes', [])))
         system = line_interconnection(tags)
         if system:
             for node in e.get('nodes', []):
                 node_systems[node].add(system)
+    # Sec. IV.B.1 Step 3 keeps untagged lines; Eq. (3) still needs a voltage.
+    # The numbered pipeline assigns the most common regional voltage, so the
+    # shared engine does the same and records every affected way in the audit.
+    tagged_levels = Counter()
+    for e in lines:
+        tagged_levels.update(voltages(e.get('tags', {}).get('voltage'), min_kv))
+    inferred_kv = tagged_levels.most_common(1)[0][0] if tagged_levels else None
+    for e in untagged:
+        if inferred_kv is None:
+            continue
+        omitted.append(dict(osm_id=f'way/{e["id"]}',
+            reason=f'no voltage tag; retained at the regional modal {inferred_kv:g} kV (Sec. IV.B.1 Step 3)',
+            voltage=''))
+    if inferred_kv is None and untagged:
+        for e in untagged:
+            omitted.append(dict(osm_id=f'way/{e["id"]}',
+                reason='no voltage tag and no tagged line in region to infer from', voltage=''))
+        untagged_ids = {e['id'] for e in untagged}
+        lines = [e for e in lines if e['id'] not in untagged_ids]
+
     for number, e in enumerate(lines):
         pts = [(p['lon'], p['lat']) for p in e['geometry']]
         if len(pts) < 2:
             continue
         cuts = [0] + [i for i, node in enumerate(e['nodes'][1:-1], 1) if node_uses[node] > 1] + [len(pts)-1]
-        counts = Counter(voltages(e['tags'].get('voltage')))
+        counts = Counter(voltages(e['tags'].get('voltage'), min_kv))
+        if not counts and inferred_kv is not None:
+            counts = Counter([inferred_kv])
         if len(counts) == 1:
             # Explicit circuits or cable count can describe repeated same-voltage circuits.
             try:

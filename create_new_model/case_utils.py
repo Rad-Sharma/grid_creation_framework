@@ -2,7 +2,7 @@
 import numpy as np
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import connected_components
-from power_network import validate_case
+from power_network import reference_buses, validate_case
 
 def islands(case):
     ids = {int(v): i for i, v in enumerate(case['bus'][:, 0])}
@@ -26,6 +26,10 @@ def island_case(case, labels, label):
     sub['gen'][:, 0] = [mapping[int(v)] for v in sub['gen'][:, 0]]
     for col in (0, 1):
         sub['branch'][:, col] = [mapping[int(v)] for v in sub['branch'][:, col]]
+    # Every island needs its own reference angle; the full-case slack sits in
+    # whichever island contains it, leaving the rest without one.
+    if not (sub['bus'][:, 1] == 3).any():
+        sub['bus'][reference_buses(sub)[0], 1] = 3
     return sub, ids, np.flatnonzero(bm), np.flatnonzero(gm)
 
 

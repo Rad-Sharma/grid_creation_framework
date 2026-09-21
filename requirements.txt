@@ -1,0 +1,15 @@
+numpy
+pandas
+scipy
+shapely>=2
+geopandas
+pyproj
+geopy
+folium
+matplotlib
+requests
+rasterio
+scikit-learn
+joblib
+pypower
+openpyxl

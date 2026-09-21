@@ -1,0 +1,46 @@
+bus,Pg,Qg,Qmax,Qmin,Vg,mBase,status,Pmax,capacity_assumed,Pmin,generator_name,inferred_name_osm_id,operator,source,genfuel,method,latitude,longitude,osm_id,bus_name,bus_distance_km
+1,0.0,0.0,859.04,-98.176,1.0,100.0,1,1534.0,False,0.0,Aguirre Power Plant,,Puerto Rico Electric Power Authority,oil,gas_turbine,combustion,17.950669,-66.231966,way/60141569,Subestación Aguirre_230kV,0.192
+99,0.0,0.0,407.68,-46.592,1.0,100.0,1,728.0,False,0.0,Central Palo Seco,,LUMA Energy,oil,gas_turbine,combustion,18.45571,-66.148698,way/84567357,Subestación Palo Seco_230kV,0.153
+17,0.0,0.0,138.32,-15.808,1.0,100.0,1,247.0,False,0.0,Central Cambalache,,Autoridad de Energía Eléctrica,oil,gas_turbine,combustion,18.470751,-66.699676,way/204304151,Subestación Cambalache (Arecibo)_230kV,0.347
+36,0.0,0.0,470.4,-53.76,1.0,100.0,1,840.0,False,0.0,Central Termoeléctrica de San Juan,,Autoridad de Energía Eléctrica de Puerto Rico,oil,gas_turbine,combustion,18.426745,-66.104495,way/448221263,Catano Substation 1,0.025
+58,0.0,0.0,259.59,-56.61,1.0,100.0,1,510.0,False,0.0,EcoEléctrica Natural Gas Power Plant,,unknown,gas,gas,combustion,17.979303,-66.757392,way/521687481,Magas Arriba Substation 3_230kV,0.103
+52,0.0,0.0,554.4,-63.36,1.0,100.0,1,990.0,False,0.0,Costa Sur Power Plant,,Autoridad de Energía Eléctrica,oil,gas_turbine,combustion,18.000746,-66.752857,way/521687482,Magas Arriba Substation 2_230kV,0.333
+70,0.0,0.0,1.176,-0.134,1.0,100.0,1,2.1,False,0.0,Caribbean Medical Center Powe,,Hospital Caribbean Medical Center,oil,gas_turbine,combustion,18.331721,-65.649865,way/528753700,Subestación Fajardo_115kV,0.484
+25,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,False,0.0,AES Ilumina Solar Park,,AES Corporation,solar,solar,photovoltaic,17.947703,-66.159106,way/529053916,"A.E.S., Guayama_115kV",1.027
+66,0.0,0.0,123.2,-14.08,1.0,100.0,1,220.0,False,0.0,Central Mayagüez Power Plant,,Puerto Rico Electric Power Authority,oil,gas_turbine,combustion,18.218896,-67.159343,way/529066615,Mayagueez Substation 1,0.086
+159,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/529074900],,unknown,hydro,hydro,,18.328194,-66.016399,way/529074900,Trujillo Alto Substation 9,0.081
+62,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/529269945],,unknown,hydro,hydro,,18.017581,-66.019029,way/529269945,Subestación Caimital_115kV,10.344
+65,0.0,0.0,2.468,-2.468,1.0,100.0,1,7.5,False,0.0,Medtronic Solar Farm,,unknown,solar,solar,photovoltaic,18.236504,-65.911757,way/530726803,Subestación Juncos_115kV,1.128
+49,0.0,0.0,3.264,-0.417,1.0,100.0,1,8.5,False,0.0,Toro Negro Hydro Station,,Puerto Rico Electric Power Authority,hydro,hydro,water-storage,18.131606,-66.487738,way/531059055,Subestación Hidroeléctrica Toro Negro_115kV,0.045
+123,0.0,0.0,4.685,-0.598,1.0,100.0,1,12.2,False,0.0,Garzas Hydro,,Puerto Rico Electric Power Authority,hydro,hydro,water-storage,18.073326,-66.730185,way/532318588,Penuelas Substation,2.539
+76,0.0,0.0,23.52,-2.688,1.0,100.0,1,42.0,False,0.0,LUMA Energy,,LUMA Energy,oil,gas_turbine,combustion,18.446189,-66.391198,way/533670872,Vega Baja Substation 1,2.614
+172,0.0,0.0,19.082,-19.082,1.0,100.0,1,58.0,False,0.0,Oriana 2 Solar Farm,,"Oriana Energy (subsidiary of Sonnedix Group), and Yarotek",solar,solar,photovoltaic,18.495331,-67.050647,way/541789535,Isabela Substation 2,0.712
+171,0.0,0.0,,,1.0,100.0,1,,False,,Oriana Solar Farm,,"Oriana Energy LLC (subsidiary of Sonnedix Group), and Yarotek",solar,solar,photovoltaic,18.474375,-67.047393,way/541790549,Mora Substation_115kV,0.379
+132,0.0,0.0,15.374,-15.374,1.0,100.0,1,46.73,False,0.0,Parque Solar La Cometa - Fase 1,,Renden Solar aka Fonroche Solaire,solar,solar,photovoltaic,18.133197,-65.819951,way/541825926,Humacao Substation_115kV,0.444
+132,0.0,0.0,,,1.0,100.0,1,,False,,Parque Solar La Cometa - Fase 2,,Renden Solar aka Fonroche Solaire,solar,solar,photovoltaic,18.136239,-65.814742,way/541828820,Humacao Substation_115kV,0.873
+132,0.0,0.0,0.213,-0.213,1.0,100.0,1,0.648,False,0.0,[unnamed way/541829186],,unknown,solar,solar,photovoltaic,18.130304,-65.789887,way/541829186,Humacao Substation_115kV,3.555
+111,0.0,0.0,8.883,-8.883,1.0,100.0,1,27.0,False,0.0,Parque Solar San Fermín,,TSK,solar,solar,photovoltaic,18.412493,-65.90363,way/541849035,Subestación Solar San Fermín,0.891
+1,0.0,0.0,5.264,-5.264,1.0,100.0,1,16.0,False,0.0,Salinas Solar Park,,Sonnedix,solar,solar,photovoltaic,18.011842,-66.276578,way/541868972,Subestación Aguirre_230kV,8.238
+156,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/542055644],,unknown,solar,solar,photovoltaic,18.451318,-66.352187,way/542055644,Ceiba Substation,0.375
+53,0.0,0.0,5.76,-0.735,1.0,100.0,1,15.0,False,0.0,Dos Bocas Dam Hydro,,Puerto Rico Electric Power Authority,hydro,hydro,water-storage,18.336318,-66.666661,way/751271782,Subestación Hidroeléctrica Dos Bocas_115kV,0.085
+120,0.0,0.0,0.329,-0.329,1.0,100.0,1,1.0,False,0.0,Parque Solar de Filtración de Arecibo,,"PV Properties, Inc.",solar,solar,photovoltaic,18.426614,-66.632197,way/1030695144,Subestación Factor,1.853
+61,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1039196849],,unknown,solar,solar,photovoltaic,18.120853,-65.414945,way/1039196849,Subestación Quebrada Seca (Ceiba),29.404
+34,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1102156075],,unknown,solar,solar,photovoltaic,18.414945,-66.13445,way/1102156075,Subestación Cataño_115kV,1.108
+113,0.0,0.0,,,1.0,100.0,1,,False,,[Vergnet GEV MP 275/32],node/10744001230,unknown,solar,solar,photovoltaic,18.4089,-66.114347,way/1150325802,Subestación Caparra,0.743
+34,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1155295445],,unknown,solar,solar,water-storage,18.415639,-66.128671,way/1155295445,Subestación Cataño_115kV,1.472
+34,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1155295483],,unknown,solar,solar,photovoltaic,18.416675,-66.125525,way/1155295483,Subestación Cataño_115kV,1.697
+113,0.0,0.0,,,1.0,100.0,1,,False,,[Subestación Caparra],way/1082585704,unknown,solar,solar,photovoltaic,18.411724,-66.112319,way/1155295536,Subestación Caparra,0.57
+160,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1159500036],,unknown,solar,solar,photovoltaic,18.24699,-65.954009,way/1159500036,Gurabo Substation 2,0.347
+148,0.0,0.0,13.056,-1.666,1.0,100.0,1,34.0,False,0.0,Yauco Hydroelectric Station,,Puerto Rico Electric Power Authority,hydro,hydro,water-storage,18.110361,-66.871097,way/1243424911,Maricao Substation 2,5.608
+131,0.0,0.0,8.448,-1.078,1.0,100.0,1,22.0,False,0.0,Caonillas Dam Hydro,,Puerto Rico Electric Power Authority,hydro,hydro,water-storage,18.296244,-66.643252,way/1243652147,Utuado Substation 2_115kV,0.018
+1,0.0,0.0,4.935,-4.935,1.0,100.0,1,15.0,False,0.0,Horizon Energy (PR) Hybrid,,Horizon Energy LLC,solar,solar,photovoltaic,17.978681,-66.220603,way/1245374218,Subestación Aguirre_230kV,3.161
+25,0.0,0.0,237.66,-62.22,1.0,100.0,1,510.0,False,0.0,AES - Guayama,,AES Puerto Rico LP,coal,steam,combustion,17.946121,-66.151521,way/1245374227,"A.E.S., Guayama_115kV",0.265
+47,0.0,0.0,23.52,-2.688,1.0,100.0,1,42.0,False,0.0,Daguao Power Plant,,Puerto Rico Electric Power Authority,oil,gas_turbine,combustion,18.105944,-65.823208,way/1245603843,Subestación Candelero_230kV,0.103
+61,0.0,0.0,,,1.0,100.0,1,,False,,Puerto Rico Electric Power Authority,,Puerto Rico Electric Power Authority,oil,gas_turbine,combustion,18.232064,-65.667332,way/1245603880,Subestación Quebrada Seca (Ceiba),0.052
+31,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1322799427],,unknown,solar,solar,photovoltaic,18.007438,-66.496222,way/1322799427,Subestación de Juana Díaz_115kV,8.245
+120,0.0,0.0,,,1.0,100.0,1,,False,,Parque Solar Eaton,,unknown,solar,solar,photovoltaic,18.447861,-66.658837,way/1379173675,Subestación Factor,2.286
+70,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1381521654],,unknown,solar,solar,photovoltaic,18.280303,-65.64098,way/1381521654,Subestación Fajardo_115kV,5.492
+1,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1388058176],,unknown,solar,solar,photovoltaic,17.989631,-66.22558,way/1388058176,Subestación Aguirre_230kV,4.226
+1,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1388058177],,unknown,solar,solar,photovoltaic,17.99191,-66.236426,way/1388058177,Subestación Aguirre_230kV,4.485
+70,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1423610100],,unknown,solar,solar,,18.316904,-65.278594,way/1423610100,Subestación Fajardo_115kV,38.801
+49,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1432465697],,unknown,solar,solar,photovoltaic,18.195466,-66.46119,way/1432465697,Subestación Hidroeléctrica Toro Negro_115kV,7.65

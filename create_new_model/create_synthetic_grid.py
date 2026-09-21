@@ -174,21 +174,45 @@ print(f"\n  Bus matrix: {len(bus_rows)} rows")
 # MATPOWER GENERATOR MATRIX
 # ============================================================
 
+# A plant whose capacity OSM does not record has no limits (create_generators.py
+# leaves them blank) and _fmt would write it as an in-service 0 MW unit. That is
+# not a generator: it contributes nothing, it turns its bus into a phantom PV bus,
+# and Pmin == Pmax == Qmin == Qmax == 0 is a degenerate box that stalls the
+# interior point OPF. Sec. V-B-2 asks for a manual lookup of such plants, or for
+# treating them as too small to matter, so until that happens they stay offline.
 gen_rows = []
+uncapacitated = []
 for _, r in gens.iterrows():
     if pd.isna(r.get("bus")):
         continue
+    pmax = r.get("Pmax")
+    in_service = _int(r.get("status", 1))
+    if pd.isna(pmax) or float(pmax) <= 0.0:
+        if in_service:
+            uncapacitated.append(str(r.get("generator_name", "?")).strip())
+        in_service = 0
     gen_rows.append(
         f"\t{_int(r['bus'])}\t"
         f"{_fmt(r.get('Pg',0.0),4)}\t{_fmt(r.get('Qg',0.0),4)}\t"
         f"{_fmt(r.get('Qmax',0.0),4)}\t{_fmt(r.get('Qmin',0.0),4)}\t"
         f"{_fmt(r.get('Vg',1.0),4)}\t"
         f"{_fmt(r.get('mBase',BASE_MVA),1)}\t"
-        f"{_int(r.get('status', 1))}\t"
+        f"{in_service}\t"
         f"{_fmt(r.get('Pmax',0.0),4)}\t{_fmt(r.get('Pmin',0.0),4)}"
     )
 
 print(f"  Generator matrix: {len(gen_rows)} rows")
+if uncapacitated:
+    capacity = pd.to_numeric(gens["Pmax"], errors="coerce").fillna(0.).clip(lower=0.).sum()
+    print(f"  WARNING: {len(uncapacitated)} of {len(gen_rows)} generators have no "
+          f"capacity in OSM and were written out of service (status 0), leaving "
+          f"{capacity:.0f} MW of dispatchable capacity against "
+          f"{buses['Pd'].sum():.0f} MW of demand.")
+    print("           Sec. V-B-2 asks for a manual lookup of these plants:")
+    for name in uncapacitated[:15]:
+        print(f"             - {name}")
+    if len(uncapacitated) > 15:
+        print(f"             ... and {len(uncapacitated) - 15} more")
 
 
 # ============================================================
@@ -246,18 +270,30 @@ print(f"  Gencost matrix: {len(cost_rows)} rows")
 # METADATA BLOCKS
 # ============================================================
 
+def _cell(value) -> str:
+    """Quote a string for a MATLAB cell array.
+
+    A real substation name can carry an apostrophe - Kenya has "Mang'u" - and
+    written straight into a single-quoted cell it ends the string early, so the
+    case stops parsing in MATLAB, Octave and PowerModels alike. MATLAB escapes a
+    quote by doubling it. A semicolon would end the cell row, and a newline the
+    row itself, so neither can survive inside a name either.
+    """
+    text = " ".join(str(value).split())
+    return "'" + text.replace("'", "''").replace(";", ",") + "'"
+
+
 bus_names = []
 for _, r in buses.iterrows():
     name = str(r.get("name", "")).strip()
     if not name or name.lower() in ("nan", ""):
         kv = _basekv_kv(r.get("base_kV", 0.0))
         name = f"Bus_{int(r['bus_i'])}_{kv:.0f}kV"
-    bus_names.append(f"\t'{name}' %{int(r['bus_i'])}")
+    bus_names.append(f"\t{_cell(name)} %{int(r['bus_i'])}")
 
 gen_valid  = gens[~gens["bus"].isna()]
-gen_names  = [f"\t'{str(r.get('generator_name','?')).strip()}'"
-              for _, r in gen_valid.iterrows()]
-gen_fuels  = [f"\t'{str(r.get('source','unknown')).split(';')[0].strip()}'"
+gen_names  = [f"\t{_cell(r.get('generator_name', '?'))}" for _, r in gen_valid.iterrows()]
+gen_fuels  = [f"\t{_cell(str(r.get('source', 'unknown')).split(';')[0])}"
               for _, r in gen_valid.iterrows()]
 
 bus_coords = []

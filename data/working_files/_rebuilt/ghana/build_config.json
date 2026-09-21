@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "region": "ghana",
+    "COUNTRY_ISO3": "GHA",
+    "REGION_BBOX": [
+      -3.26,
+      4.71,
+      1.19,
+      11.17
+    ],
+    "SHAPE_FILE_NAME": "Ghana",
+    "MIN_TRANSMISSION_VOLTAGE_V": 115000,
+    "COUNTRY_DEMAND_MW": 2000,
+    "NATIONAL_EXPORT_MW": 100.0,
+    "LOAD_MODEL_METHOD": "legacy_ridge",
+    "INFER_TRANSFORMERS_FROM_VOLTAGE": true,
+    "FUEL_COST_BASIS": "us",
+    "PLANT_NAME_SEARCH_RADIUS_M": 1000
+  },
+  "steps": [
+    {
+      "step": "create_buses",
+      "at": "2026-09-20T04:45:43.742774+00:00"
+    },
+    {
+      "step": "create_lines",
+      "at": "2026-09-20T04:45:57.825475+00:00"
+    },
+    {
+      "step": "resolve_unmatched",
+      "at": "2026-09-20T04:46:41.657566+00:00"
+    }
+  ],
+  "inputs": {
+    "export_ghana_buses.geojson": "20517176ed7a29189b2d7b676bedcb56bd9b7cff56e477a0ccb443a2822e980c"
+  }
+}

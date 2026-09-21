@@ -1,0 +1,27 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+1,2,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Salto Substation 1_500kV,Salto Substation 1_150kV,0.0,,transformer
+5,6,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,San Carlos Substation 1_500kV,San Carlos Substation 1_150kV,0.0,,transformer
+8,9,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,La Paz Substation 1_500kV,La Paz Substation 1_150kV,0.0,,transformer
+25,26,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Young Substation 1_500kV,Young Substation 1_150kV,0.0,,transformer
+9,166,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,La Paz Substation 1_150kV,La Paz Substation 1_500kV,0.0,150000;500000,way/180076104
+10,167,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,La Paz Substation 2_150kV,La Paz Substation 2_500kV,0.0,150000;500000,way/180076126
+11,168,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Paso de Carrasco Substation 1_150kV,Paso de Carrasco Substation 1_500kV,0.0,150000;500000,way/180076128
+24,169,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,San Javier Substation_150kV,San Javier Substation_500kV,0.0,150000;500000,way/190845501
+39,170,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Convertidor Rivera_150kV,Convertidor Rivera_230kV,0.0,150000;230000,way/204496579
+46,171,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Vichadero Substation 1_150kV,Vichadero Substation 1_500kV,0.0,150000;500000,way/232953367
+59,172,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Melo HVDC_150kV,Melo HVDC_500kV,0.0,150000;500000,way/376921907
+74,173,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Libertad Substation 1_132kV,Libertad Substation 1_150kV,0.0,132000;150000,way/534542024
+173,174,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Libertad Substation 1_150kV,Libertad Substation 1_500kV,0.0,150000;500000,way/534542024
+75,175,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Francisco Veira_150kV,Subestación Francisco Veira_500kV,0.0,150000;500000,way/534551365
+84,176,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Paysandu Substation 1_132kV,Paysandu Substation 1_150kV,0.0,132000;150000,way/585751341
+90,177,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Trinidad Substation 1_150kV,Trinidad Substation 1_500kV,0.0,150000;500000,way/626917784
+92,178,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Libertad Substation 2_132kV,Libertad Substation 2_150kV,0.0,132000;150000,way/626917798
+104,179,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Salto Substation 5_132kV,Salto Substation 5_500kV,0.0,132000;500000,way/655475401
+108,180,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Delta del Tigre Substation_150kV,Delta del Tigre Substation_500kV,0.0,150000;500000,way/667700060
+115,181,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Salto Substation 6_132kV,Salto Substation 6_150kV,0.0,132000;150000,way/1017382776
+120,182,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Young Substation 5_150kV,Young Substation 5_500kV,0.0,150000;500000,way/1025884702
+122,183,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Minas de Corrales Substation 2_150kV,Minas de Corrales Substation 2_230kV,0.0,150000;230000,way/1047740625
+125,184,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Paysandu Substation 2_132kV,Paysandu Substation 2_150kV,0.0,132000;150000,way/1078816361
+184,185,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Paysandu Substation 2_150kV,Paysandu Substation 2_500kV,0.0,150000;500000,way/1078816361
+132,186,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Salto Substation 7_150kV,Salto Substation 7_500kV,0.0,150000;500000,way/1229743629
+162,187,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Reductora UTE_150kV,Reductora UTE_500kV,0.0,150000;500000,way/1432335935

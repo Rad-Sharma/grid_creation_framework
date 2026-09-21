@@ -26,10 +26,12 @@ import numpy as np
 from pathlib import Path
 
 import config
-from pipeline_integrity import TRANSFORMER_COLUMNS
+from pipeline_integrity import TRANSFORMER_COLUMNS, merge_duplicate_substations
+import build_provenance
 
 region                     = config.region
 MIN_TRANSMISSION_VOLTAGE_V = config.MIN_TRANSMISSION_VOLTAGE_V
+SUBSTATION_MERGE_RADIUS_M  = config.SUBSTATION_MERGE_RADIUS_M
 
 PROJ_ROOT = Path(__file__).parent.parent
 WORK_DIR  = PROJ_ROOT / "data" / "working_files" / region
@@ -51,8 +53,16 @@ try:
     import reverse_geocoder as _rg
 
     def _batch_city_lookup(lons, lats):
-        """Batch reverse-geocode using offline GeoNames database (very fast)."""
-        results = _rg.search(list(zip(lats, lons)), mode=2)
+        """Batch reverse-geocode using the offline GeoNames database.
+
+        mode=2 farms the search out with multiprocessing, and because this file
+        is a script rather than a module, every worker re-imports __main__ and
+        runs the whole pipeline step again. On Windows that spawns recursively
+        and the lookup dies, leaving every unnamed substation to be named after
+        whichever place the failed search happened to return. mode=1 does the
+        same search in this process.
+        """
+        results = _rg.search(list(zip(lats, lons)), mode=1)
         return [r.get("name", "") for r in results]
 
     print("[Geocoder] Using fast offline reverse_geocoder (GeoNames)")
@@ -174,6 +184,26 @@ print(f"  Polygon features: {data_sub['polygon_wkt'].notna().sum()}  "
 
 
 # ============================================================
+# STEP 3b – MERGE DUPLICATE SUBSTATION RECORDS
+# ============================================================
+# OSM maps large sites more than once: a named polygon beside an unnamed one, or
+# the same substation drawn twice under the same name. Left alone, the copies
+# become separate buses, the lines attach to whichever copy is nearest, and the
+# other is stranded - which is how a connected national grid ends up in pieces.
+# Sec. V-B-1 states this duplicate rule for power plants; it applies just as much
+# to substations.
+print("\n" + "=" * 60)
+print("STEP 3b: Merging duplicate substation records")
+print("=" * 60)
+
+before = len(data_sub)
+data_sub, n_merged = merge_duplicate_substations(
+    data_sub, radius_km=SUBSTATION_MERGE_RADIUS_M / 1000.0)
+print(f"  Merged {n_merged} duplicate record(s) within "
+      f"{SUBSTATION_MERGE_RADIUS_M:.0f} m. {len(data_sub)} of {before} remaining.")
+
+
+# ============================================================
 # STEP 4 – DERIVE SUBSTATION BASE NAMES  (fast geocoding)
 # ============================================================
 print("\n" + "=" * 60)
@@ -282,7 +312,7 @@ for feat_idx, row in data_sub.iterrows():
 
         # Add transformer pairs between consecutive voltage levels
         for k in range(len(split_ids) - 1):
-            if getattr(config, 'INFER_TRANSFORMERS_FROM_VOLTAGE', False):
+            if getattr(config, 'INFER_TRANSFORMERS_FROM_VOLTAGE', True):
                 transformer_pairs.append((split_ids[k], split_ids[k + 1]))
 
     else:
@@ -357,6 +387,11 @@ for hi, lo in transformer_pairs:
     })
 
 xfmr_df = pd.DataFrame(xfmr_rows, columns=TRANSFORMER_COLUMNS)
+build_provenance.record(config, WORK_DIR, "create_buses",
+                        inputs=[PROJ_ROOT / "data" / "OSM_extracts" /
+                                f"export_{region}_buses.geojson"])
+print(f"  Recorded build settings → {WORK_DIR / build_provenance.FILENAME}")
+
 xfmr_path = WORK_DIR / f"transformer_pairs_{region}.csv"
 xfmr_df.to_csv(xfmr_path, index=False)
 print(f"  Saved {len(xfmr_df)} transformer pairs → {xfmr_path}")

@@ -1,0 +1,142 @@
+{
+  "case_sha256": "c32183331909119cd3c8f7486209a0361231813c2768550f8d2fe1b428e734fc",
+  "full_case_validated": false,
+  "equipment_relaxed": false,
+  "load_reduced": false,
+  "limitation": "Timeout or solver failure is not an infeasibility proof; feasibility is not geographic accuracy",
+  "islands": [
+    {
+      "component": 0,
+      "buses": 2,
+      "demand_mw": 39.1529,
+      "passes": false,
+      "status": "no_generation"
+    },
+    {
+      "component": 1,
+      "buses": 111,
+      "demand_mw": 1645.4827,
+      "solver_success": false,
+      "feasibility_tolerance": 1e-06,
+      "warnings": [],
+      "passes": false,
+      "status": "solver_or_validation_failed"
+    },
+    {
+      "component": 2,
+      "buses": 2,
+      "demand_mw": 0.0,
+      "passes": false,
+      "status": "no_generation"
+    },
+    {
+      "component": 3,
+      "buses": 2,
+      "demand_mw": 101.1413,
+      "passes": false,
+      "status": "no_generation"
+    },
+    {
+      "component": 4,
+      "buses": 2,
+      "demand_mw": 8.5521,
+      "solver_success": true,
+      "feasibility_tolerance": 1e-08,
+      "warnings": [],
+      "residual_mva": 7.124719947639788e-06,
+      "thermal_mva": 0.0,
+      "voltage_pu": 0.0,
+      "pg_mw": 0.0,
+      "qg_mvar": 0.0,
+      "offline_generation_mva": 0.0,
+      "angle_deg": 0.0,
+      "passes": true,
+      "status": "validated"
+    },
+    {
+      "component": 5,
+      "buses": 2,
+      "demand_mw": 0.0,
+      "solver_success": false,
+      "feasibility_tolerance": 1e-06,
+      "warnings": [
+        "Matrix is exactly singular"
+      ],
+      "passes": false,
+      "status": "solver_or_validation_failed"
+    },
+    {
+      "component": 6,
+      "buses": 4,
+      "demand_mw": 113.33510000000001,
+      "passes": false,
+      "status": "active_capacity_shortfall"
+    },
+    {
+      "component": 7,
+      "buses": 2,
+      "demand_mw": 25.6977,
+      "passes": false,
+      "status": "no_generation"
+    },
+    {
+      "component": 8,
+      "buses": 2,
+      "demand_mw": 9.424700000000001,
+      "passes": false,
+      "status": "no_generation"
+    },
+    {
+      "component": 9,
+      "buses": 5,
+      "demand_mw": 114.9569,
+      "passes": false,
+      "status": "active_capacity_shortfall"
+    },
+    {
+      "component": 10,
+      "buses": 2,
+      "demand_mw": 26.9209,
+      "passes": false,
+      "status": "active_capacity_shortfall"
+    },
+    {
+      "component": 11,
+      "buses": 4,
+      "demand_mw": 141.531,
+      "passes": false,
+      "status": "active_capacity_shortfall"
+    },
+    {
+      "component": 12,
+      "buses": 2,
+      "demand_mw": 0.0,
+      "passes": false,
+      "status": "no_generation"
+    },
+    {
+      "component": 13,
+      "buses": 2,
+      "demand_mw": 15.7148,
+      "solver_success": true,
+      "feasibility_tolerance": 1e-08,
+      "warnings": [],
+      "residual_mva": 2.7377723613211484e-09,
+      "thermal_mva": 0.0,
+      "voltage_pu": 0.0,
+      "pg_mw": 0.0,
+      "qg_mvar": 0.0,
+      "offline_generation_mva": 0.0,
+      "angle_deg": 0.0,
+      "passes": true,
+      "status": "validated"
+    },
+    {
+      "component": 14,
+      "buses": 2,
+      "demand_mw": 0.0,
+      "passes": false,
+      "status": "no_generation"
+    }
+  ]
+}

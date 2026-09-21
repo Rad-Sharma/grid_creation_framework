@@ -1,0 +1,6 @@
+{
+  "region": "puerto_rico",
+  "review_policy": "assisted",
+  "assumptions": "NONE beyond the pipeline defaults. COUNTRY_CAPACITY_MW=0. Settings: COUNTRY_DEMAND_MW=2300, NATIONAL_EXPORT_MW=0 (no interconnection), MIN_TRANSMISSION_VOLTAGE_V=115000, LOAD_MODEL_METHOD=legacy_ridge.",
+  "result": "210 buses, 422 branches (39 transformers), 45 generators, ONE island. Demand 2300 MW, capacity 5949 MW (margin 2.59). DC and AC feasible. AC power flow converges (Vmin 0.945, Vmax 1.100, losses 53.5 MW). full_case_validated: true."
+}

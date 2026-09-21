@@ -6,6 +6,7 @@ from pypower.ext2int import ext2int
 from pypower.makeYbus import makeYbus
 from pypower.makeBdc import makeBdc
 from pypower.case9 import case9
+from pypower.case30 import case30
 
 import power_network as pn
 import ensure_feasibility as ef
@@ -49,11 +50,13 @@ def test_admittance_matches_pypower_with_tap_shift_charging_and_shunts():
     expected = ext2int(dict(data, version='2'))
     reference = makeYbus(data['baseMVA'], expected['bus'], expected['branch'])
     for actual, ref in zip(pn.admittance_matrices(data), reference):
-        np.testing.assert_allclose(actual, ref.toarray(), atol=1e-12)
+        # Both are sparse; compare densely so a differing sparsity pattern with
+        # explicit zeros still passes.
+        np.testing.assert_allclose(actual.toarray(), ref.toarray(), atol=1e-12)
     incidence, bf, shift = pn.dc_matrices(data)
     bbus, bref, pbus, pref = makeBdc(data['baseMVA'], expected['bus'], expected['branch'])
-    np.testing.assert_allclose(bf, bref.toarray(), atol=1e-12)
-    np.testing.assert_allclose(incidence.T @ bf, bbus.toarray(), atol=1e-12)
+    np.testing.assert_allclose(bf.toarray(), bref.toarray(), atol=1e-12)
+    np.testing.assert_allclose((incidence.T @ bf).toarray(), bbus.toarray(), atol=1e-12)
     np.testing.assert_allclose(shift, pref, atol=1e-12)
     np.testing.assert_allclose(incidence.T @ shift, pbus, atol=1e-12)
 
@@ -115,19 +118,35 @@ def test_invalid_bus_reference_is_rejected():
         ef.solve_dc_feasibility(data)
 
 
-def test_iteration_limit_is_failure(monkeypatch):
-    def fail(fun, x0, **kwargs):
-        return SimpleNamespace(x=x0, success=False, status=9, message='Iteration limit reached')
-    monkeypatch.setattr(pn, 'minimize', fail)
-    with pytest.raises(RuntimeError, match='status 9'):
-        ef.solve_dc_feasibility(two_bus())
+def test_unrepairable_case_names_the_reason(monkeypatch):
+    """Extra line capacity cannot fix a shortfall, and the message must say so."""
+    data = two_bus()
+    data['gen'][0, 8] = 10
+    with pytest.raises(RuntimeError, match='No DC dispatch exists'):
+        ef.solve_dc_feasibility(data)
+
+
+def test_dc_falls_back_to_the_verified_point(monkeypatch):
+    """A failed refinement must not discard the feasible point HiGHS already found."""
+    def useless(fun, x0, **kwargs):
+        return SimpleNamespace(x=np.full_like(x0, 1e6), success=False, status=9,
+                               constr_violation=1e3, message='refinement failed')
+    monkeypatch.setattr(pn, 'minimize', useless)
+    result = ef.solve_dc_feasibility(two_bus())
+    pn.check_solution(result)
+    np.testing.assert_allclose(result['gen'][:, 1].sum(), result['bus'][:, 2].sum(), atol=1e-4)
 
 
 def test_false_success_is_rejected(monkeypatch):
-    def fail(fun, x0, **kwargs):
-        return SimpleNamespace(x=x0, success=True, status=0, message='Success')
-    monkeypatch.setattr(pn, 'minimize', fail)
-    with pytest.raises(RuntimeError, match='constraint-violating'):
+    """A solver that claims success with a wrong dispatch must not produce a case."""
+    def wrong(case):
+        solved = dict(case)
+        solved['gen'] = case['gen'].copy()
+        solved['bus'] = case['bus'].copy()
+        solved['gen'][:, 1:3] = 0.
+        return solved
+    monkeypatch.setattr(pn, '_run_opf', wrong)
+    with pytest.raises(ValueError, match='balance|bound'):
         ef.solve_ac_feasibility(two_bus())
 
 
@@ -142,6 +161,19 @@ def test_standard_case9():
     data = case9()
     result = ef.solve_ac_feasibility(ef.solve_dc_feasibility(data))
     independent_ac_check(result)
+
+
+def test_relaxations_barely_touch_an_already_feasible_case():
+    """case30 solves as published, so equations (4) and (5) should add next to nothing."""
+    data = case30()
+    original = {k: np.array(v, float) for k, v in data.items() if k != 'baseMVA'}
+    result = ef.solve_ac_feasibility(ef.solve_dc_feasibility(data))
+    independent_ac_check(result)
+    extra = result['branch'][:, 5] - original['branch'][:, 5]
+    assert extra.sum() < 1., f'added {extra.sum():.3f} MVA of line capacity'
+    # Only the two buses that already carried a shunt may end up with one.
+    touched = np.abs(result['bus'][:, 5] - original['bus'][:, 5]) > 1e-6
+    assert touched.sum() <= (original['bus'][:, 5] != 0).sum()
 
 
 def test_matpower_parser_handles_semicolons():

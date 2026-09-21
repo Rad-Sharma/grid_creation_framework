@@ -927,7 +927,15 @@ out body;
                     on="poc_code", how="left", suffixes=("", "_gee")
                 )
                 for col in gee_cols_present:
-                    bus_df[col] = merged[col + "_gee"].fillna(bus_df.get(col, 0.0)).values
+                    # pandas only appends the suffix when the column collides with
+                    # one already in bus_df. A GEE column that bus_df does not have
+                    # (era5_temp_c, for one) merges under its plain name, so look
+                    # for the suffixed form first and fall back to the plain one.
+                    source = col + "_gee" if col + "_gee" in merged.columns else col
+                    values = merged[source].to_numpy(dtype=float, na_value=np.nan)
+                    prior = (bus_df[col].to_numpy(dtype=float)
+                             if col in bus_df.columns else 0.0)
+                    bus_df[col] = np.where(np.isnan(values), prior, values)
             else:
                 # Legacy fallback: name-based lookup; deduplicate first to avoid the
                 # InvalidIndexError that occurs when two buses share the same name.

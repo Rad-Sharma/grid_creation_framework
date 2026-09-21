@@ -54,6 +54,9 @@ PROJ_ROOT = Path(__file__).parent.parent
 WORK_DIR  = PROJ_ROOT / "data" / "working_files" / region
 WORK_DIR.mkdir(parents=True, exist_ok=True)
 
+import build_provenance
+build_provenance.verify(config, WORK_DIR, "create_lines")
+
 # --------------- Geographic bounding box ---------------------
 # Lines whose ANY coordinate falls outside this box are dropped.
 # Set these to the true extreme points of your study region so that
@@ -684,10 +687,15 @@ data_buses = pd.read_csv(WORK_DIR / f"matpower_{region}_buses.csv")
 # Parse bus coordinates: stored as the string "(lon, lat)" in the CSV.
 bus_coords = [np.array(eval(c)) for c in data_buses["coordinates"]]
 
-# Each bus has a single voltage level (create_buses_new.py splits
-# transformer substations into one bus per voltage).  Use base_kV * 1000
-# to get Volts for comparison with OSM line voltage tags.
-bus_voltages = (data_buses["base_kV"].values * 1000.0)
+# Each bus has a single voltage level (create_buses.py splits compound-voltage
+# substations into one bus per level). base_kV is stored in Volts despite its
+# name -- create_buses.py writes the raw OSM tag and create_synthetic_grid's
+# _basekv_kv converts it down for MATPOWER -- so it needs no scaling to compare
+# against an OSM line voltage tag. Multiplying by 1000 here made every
+# voltage-tagged bus incompatible with every voltage-tagged line, which left the
+# named substations with no lines at all and pushed the network into islands.
+_bus_basekv = pd.to_numeric(data_buses["base_kV"], errors="coerce").values
+bus_voltages = np.where(_bus_basekv > 1000.0, _bus_basekv, _bus_basekv * 1000.0)
 
 # Load substation names for annotating the MATPOWER branch output.
 # Falls back gracefully if the column is absent.
@@ -1156,8 +1164,8 @@ matpower_lines = pd.DataFrame({
     "ratio":             0,      # 0 = transmission line, not transformer
     "angle":             0,      # phase-shift angle (degrees)
     "status":            1,      # 1 = in-service
-    "angmin":           -60,
-    "angmax":            60,
+    "angmin":           -config.BRANCH_ANGLE_LIMIT_DEG,
+    "angmax":            config.BRANCH_ANGLE_LIMIT_DEG,
     # ----- extra reference columns (strip before loading into MATPOWER) -----
     "fbus_name":         f_bus_names,    # substation name or geocoded city
     "tbus_name":         t_bus_names,

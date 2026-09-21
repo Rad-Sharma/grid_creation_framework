@@ -87,6 +87,31 @@ CAPTIVE_DISCOUNT         = 0.5
 # Cross-border bus auto-detection
 # ---------------------------------------------------------------------------
 
+NATURAL_EARTH_URL = ("https://naturalearth.s3.amazonaws.com/110m_cultural/"
+                     "ne_110m_admin_0_countries.zip")
+
+
+def _country_boundaries():
+    """Local copy of the NaturalEarth 110 m countries, fetched once.
+
+    This used to be downloaded on every run with no cache and no timeout, so a
+    slow or blocked network left the step hanging on the critical path instead of
+    either working offline or failing quickly.
+    """
+    cache = PROJ_ROOT / "data" / "boundaries" / "ne_110m_admin_0_countries.zip"
+    if cache.is_file() and cache.stat().st_size > 0:
+        return cache
+    import urllib.request
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    request = urllib.request.Request(NATURAL_EARTH_URL,
+                                     headers={"User-Agent": "grid-creation-framework"})
+    with urllib.request.urlopen(request, timeout=60) as response:
+        payload = response.read()
+    cache.write_bytes(payload)
+    print(f"  [cross-border] Cached country boundaries → {cache}")
+    return cache
+
+
 def detect_cross_border_buses(feat_df: pd.DataFrame,
                                shape_file_name: str) -> set:
     """Return a set of bus_name values whose coordinates fall outside the
@@ -97,9 +122,7 @@ def detect_cross_border_buses(feat_df: pd.DataFrame,
         import geopandas as gpd
         from shapely.geometry import Point
 
-        world = gpd.read_file(
-            "https://naturalearth.s3.amazonaws.com/110m_cultural/ne_110m_admin_0_countries.zip"
-        )
+        world = gpd.read_file(_country_boundaries())
         world = world.rename(columns={"NAME": "name"})
 
         country = world[world["name"] == shape_file_name]
@@ -436,10 +459,15 @@ def main():
 
     if not _csv_buses_path.exists():
         raise FileNotFoundError(f"{_csv_buses_path} not found")
-    voltage = feat_df["bus_idx"].map(_csv_buses.set_index("bus_i")["base_kV"])
+    indexed = _csv_buses.set_index("bus_i")
+    voltage = feat_df["bus_idx"].map(indexed["base_kV"])
+    # Tiers split from one OSM substation share its ID, which is what identifies
+    # the physical site whose load belongs on its lowest modelled voltage.
+    site = (feat_df["bus_idx"].map(indexed["osm_id"])
+            if "osm_id" in indexed.columns else None)
     feat_df["predicted_mw"] = allocate_loads(
         feat_df["predicted_mw_raw"], voltage, cb_mask,
-        COUNTRY_DEMAND_MW, NATIONAL_EXPORT_MW,
+        COUNTRY_DEMAND_MW, NATIONAL_EXPORT_MW, site=site,
     )
     print(f"  Domestic total: {feat_df.loc[~cb_mask, 'predicted_mw'].sum():.4f} MW")
     print(f"  Export total: {feat_df.loc[cb_mask, 'predicted_mw'].sum():.4f} MW")

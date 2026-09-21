@@ -207,3 +207,43 @@ def test_csv_assembly_and_solver_roundtrip(tmp_path, monkeypatch):
     path = work / 'test_ac.m'
     ef.write_matpower(ac, path, 'AC_feasible')
     check_solution(ef.load_matpower(path), ac=True)
+
+
+def test_generator_without_capacity_is_written_out_of_service(tmp_path, monkeypatch):
+    """Sec. V-B-2: a plant OSM records no capacity for is not a dispatchable unit.
+
+    Writing it in service would make its bus a phantom PV bus and hand the OPF a
+    generator pinned at Pmin == Pmax == Qmin == Qmax == 0.
+    """
+    monkeypatch.setattr(config, 'LOAD_MODEL_METHOD', 'legacy_ridge')
+    monkeypatch.setattr(config, 'region', 'test')
+    import ensure_feasibility as ef
+    work = tmp_path / 'data/working_files/test'
+    work.mkdir(parents=True)
+    script = tmp_path / 'create_new_model/create_synthetic_grid.py'
+    script.parent.mkdir()
+    shutil.copyfile(Path(__file__).resolve().parents[1] / 'create_new_model/create_synthetic_grid.py', script)
+    buses = pd.DataFrame([manual_bus(1, 'A', (-95, 30), 138, []),
+                          manual_bus(2, 'B', (-94, 30), 138, [])])
+    buses.loc[0, 'type'] = 3
+    buses.loc[1, ['Pd', 'Qd']] = [20, 5]
+    buses.to_csv(work / 'matpower_test_buses.csv', index=False)
+    pd.DataFrame([dict(fbus=1, tbus=2, r=.01, x=.1, b=0., rateA=100,
+                       rateB=100, rateC=100)]).to_csv(work / 'matpower_test_lines_resolved.csv', index=False)
+    (work / 'transformer_pairs_test.csv').write_text('\n')
+    pd.DataFrame([
+        dict(bus=1, generator_name='Known', source='gas', Pg=0., Qg=0., Qmax=50.,
+             Qmin=-50., Vg=1., mBase=100., status=1, Pmax=100., Pmin=0.),
+        dict(bus=2, generator_name='[unnamed way/1]', source='', Pg=0., Qg=0.,
+             Qmax=float('nan'), Qmin=float('nan'), Vg=1., mBase=100., status=1,
+             Pmax=float('nan'), Pmin=float('nan')),
+    ]).to_csv(work / 'matpower_test_generators.csv', index=False)
+    pd.DataFrame([dict(bus=1, generator_name='Known', model=2, n=3, c2=.01, c1=10., c0=0.),
+                  dict(bus=2, generator_name='[unnamed way/1]', model=2, n=3, c2=0., c1=0., c0=0.)]).to_csv(
+        work / 'matpower_test_cost_curves.csv', index=False)
+    runpy.run_path(str(script), run_name='__main__')
+    case = ef.load_matpower(work / 'test_synthetic_grid.m')
+    status = case['gen'][:, 7]
+    assert status.tolist() == [1., 0.], 'the uncapacitated plant must be offline'
+    # The case still solves, which it would not with a degenerate online unit.
+    ef.solve_ac_feasibility(ef.solve_dc_feasibility(case))

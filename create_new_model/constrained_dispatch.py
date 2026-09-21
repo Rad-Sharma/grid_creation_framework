@@ -54,16 +54,40 @@ def assess(case):
     return metrics
 
 
+# MATPOWER version 2 gen width; pypower reads a narrower gen matrix as version 1
+# and then silently replaces the branch angle limits with +/-360.
+GEN_COLS_V2 = 21
+# PIPS reports failure whenever it cannot reach its feasibility tolerance, even
+# after the objective, gradient and complementarity conditions have all
+# converged, and the floor it can reach depends on the case. Ask for the tightest
+# first, since assess() rejects anything above 1e-4 MVA, then settle for less
+# rather than throwing away a converged answer.
+FEASIBILITY_TOLERANCES = (1e-8, 1e-7, 1e-6)
+
+
 def solve_island(case):
     candidate = {k:v.copy() if isinstance(v,np.ndarray) else v for k,v in case.items()}
-    with warnings.catch_warnings(record=True) as notes:
-        warnings.simplefilter('always')
-        solved = runopf(candidate, ppoption(VERBOSE=0,OUT_ALL=0,OPF_ALG=560,
-                        PDIPM_MAX_IT=100,OPF_VIOLATION=1e-8,PDIPM_FEASTOL=1e-8))
-    report = dict(solver_success=bool(solved['success']),
-                  warnings=list(dict.fromkeys(str(w.message) for w in notes))[:5])
-    if not solved['success']:
+    widths = {k:candidate[k].shape[1] for k in ('bus','gen','branch')}
+    pad = GEN_COLS_V2 - widths['gen']
+    if pad > 0:
+        candidate['gen'] = np.hstack([candidate['gen'], np.zeros((len(candidate['gen']), pad))])
+    report, solved = dict(solver_success=False, warnings=[]), None
+    for tolerance in FEASIBILITY_TOLERANCES:
+        with warnings.catch_warnings(record=True) as notes:
+            warnings.simplefilter('always')
+            attempt = runopf(dict(candidate), ppoption(VERBOSE=0,OUT_ALL=0,OPF_ALG=560,
+                             PDIPM_MAX_IT=200,OPF_VIOLATION=tolerance,PDIPM_FEASTOL=tolerance))
+        report = dict(solver_success=bool(attempt['success']), feasibility_tolerance=tolerance,
+                      warnings=list(dict.fromkeys(str(w.message) for w in notes))[:5])
+        if attempt['success']:
+            solved = attempt
+            break
+    if solved is None:
         return None, dict(report, passes=False)
+    # Drop the multiplier columns pypower appends, so the solved case keeps the
+    # input's shape for comparison and export.
+    for key, width in widths.items():
+        solved[key] = solved[key][:, :width]
     report.update(assess(solved))
     # Independently ensure an optimizer never changed the physical problem.
     for key, cols in [('bus',[2,3,4,5,11,12]),('gen',[3,4,7,8,9]),('branch',list(range(13)))]:

@@ -1,0 +1,6 @@
+{
+  "region": "uruguay",
+  "review_policy": "assisted",
+  "assumptions": "NONE beyond the pipeline defaults. COUNTRY_CAPACITY_MW=0 (only 2 of 35 plants lack an OSM capacity). Settings: COUNTRY_DEMAND_MW=1300, NATIONAL_EXPORT_MW=50, MIN_TRANSMISSION_VOLTAGE_V=115000, LOAD_MODEL_METHOD=legacy_ridge.",
+  "result": "187 buses, 281 branches (26 transformers), 35 generators, ONE island. Demand 1350 MW, capacity 1828 MW (margin 1.35). DC and AC feasible. AC power flow converges (Vmin 0.900, Vmax 1.067, losses 50.6 MW). full_case_validated: true."
+}
