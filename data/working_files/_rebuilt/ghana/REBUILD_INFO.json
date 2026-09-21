@@ -1,0 +1,7 @@
+{
+  "region": "ghana",
+  "review_policy": "assisted",
+  "note": "Built from data/OSM_extracts/export_ghana_*.geojson with the current pipeline, Steps 1-9. NOT a reviewed model: Step 3 was answered automatically under the assisted policy, which also accepted every proposed connection in POST-PROCESSING 3. Settings: COUNTRY_DEMAND_MW=2000, NATIONAL_EXPORT_MW=100, MIN_TRANSMISSION_VOLTAGE_V=115000, LOAD_MODEL_METHOD=legacy_ridge (paper mode still needs viirs_ghana.tif).",
+  "result": "94 buses, 236 branches (17 transformers), 39 generators, one island. DC and AC feasible. AC power flow converges (Vmin 0.964, Vmax 1.015, losses 33.9 MW). constrained_dispatch.py reports full_case_validated: true.",
+  "not_a_reproduction_of": "GhanaGrid.m in Haddoww/ORS-Ghana-Power, which was built from utility data."
+}

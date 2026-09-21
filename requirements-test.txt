@@ -1,14 +1,2 @@
-numpy
-pandas
-scipy
-shapely
-geopandas
-geopy
-folium
-requests
-rasterio
-scikit-learn
-joblib
+-r requirements.txt
 pytest
-pypower
-openpyxl

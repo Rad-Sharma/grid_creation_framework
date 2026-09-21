@@ -1,0 +1,36 @@
+generator_name,bus,source,genfuel,curve_type,Pmax,model,startup,shutdown,n,c2,c1,c0
+Central Térmica José Batlle y Ordóñez,18,oil,gas_turbine,gt_petroleum,70.0,2,0.0,0.0,3,0.1755,29.932,966.18
+"Central Térmica ""La Tablada""",107,gas,gas,cc_gas,212.0,2,0.0,0.0,3,0.012443,13.42004,688.456
+"Central Térmica ""Punta del Tigre""",42,gas,gas,cc_gas,882.22,2,0.0,0.0,3,0.052388,14.874417,2288.9414
+Galofer,31,biomass,steam,gt_biomass,12.5,2,0.0,0.0,3,0.0,0.0,0.0
+La Jacinta,83,solar,solar,renewable,50.0,2,0.0,0.0,3,0.0,0.0,0.0
+Fenima / Dicano / Petilcoran,84,solar,solar,renewable,30.25,2,0.0,0.0,3,0.0,0.0,0.0
+Casalko,84,solar,solar,renewable,1.75,2,0.0,0.0,3,0.0,0.0,0.0
+Raditon,125,solar,solar,renewable,8.0,2,0.0,0.0,3,0.0,0.0,0.0
+ALUR,160,biomass,steam,gt_biomass,10.0,2,0.0,0.0,3,0.0,0.0,0.0
+Alto Cielo,81,solar,solar,renewable,20.0,2,0.0,0.0,3,0.0,0.0,0.0
+El Naranjal,87,solar,solar,renewable,50.0,2,0.0,0.0,3,0.0,0.0,0.0
+ASAHI,1,solar,solar,renewable,0.5,2,0.0,0.0,3,0.0,0.0,0.0
+Arapey Solar,13,solar,solar,renewable,10.0,2,0.0,0.0,3,0.0,0.0,0.0
+Del Litoral,115,solar,solar,renewable,16.0,2,0.0,0.0,3,0.0,0.0,0.0
+Cerros de Vera,156,solar,solar,renewable,0.05,2,0.0,0.0,3,0.0,0.0,0.0
+Ponlar,39,biomass,steam,gt_biomass,7.0,2,0.0,0.0,3,0.0,0.0,0.0
+Fenirol,128,biomass,steam,gt_biomass,10.0,2,0.0,0.0,3,0.0,0.0,0.0
+Uruply,129,biomass,steam,gt_biomass,12.0,2,0.0,0.0,3,0.0,0.0,0.0
+Liderdat,125,biomass,steam,gt_biomass,5.0,2,0.0,0.0,3,0.0,0.0,0.0
+Natelu,36,solar,solar,renewable,9.5,2,0.0,0.0,3,0.0,0.0,0.0
+Yarnel,48,solar,solar,renewable,9.5,2,0.0,0.0,3,0.0,0.0,0.0
+Manafra Solar,48,solar,solar,renewable,20.0,2,0.0,0.0,3,0.0,0.0,0.0
+Vignano / TS / Abril,84,solar,solar,renewable,3.0,2,0.0,0.0,3,0.0,0.0,0.0
+Aeropuerto de Carrasco,62,solar,solar,renewable,0.0005,2,0.0,0.0,3,0.0,0.0,0.0
+Central Eléctrica Montes del Plata,117,biomass,steam,gt_biomass,180.0,2,0.0,0.0,3,0.0,0.0,0.0
+Las Rosas,56,gas,gas,cc_gas,1.2,2,0.0,0.0,3,0.0,12.962604,185.0656
+Turbuna Rio Branco,52,gas,gas,cc_gas,4.3,2,0.0,0.0,3,6.4e-05,12.969331,192.4684
+Arboreto,33,biomass,steam,gt_biomass,0.5,2,0.0,0.0,3,0.0,0.0,0.0
+Central Eléctrica San Gregorio,101,unknown,unknown,cc_gas,1.44,2,0.0,0.0,3,0.0,12.963125,185.6387
+UPM,20,biomass;oil,steam,gt_biomass,161.0,2,0.0,0.0,3,0.0,0.0,0.0
+Mondelan S.A.,145,solar,solar,renewable,0.35,2,0.0,0.0,3,0.0,0.0,0.0
+Hikari,126,solar,solar,renewable,0.25,2,0.0,0.0,3,0.0,0.0,0.0
+Parque Fotovoltaico Punta del Tigre,42,solar,solar,renewable,30.0,2,0.0,0.0,3,0.0,0.0,0.0
+UPM Paso de los Toros power station,124,biomass,steam,gt_biomass,,2,0.0,0.0,3,,,
+[unnamed way/1459077039],122,hydro,hydro,hydro,0.0,2,0.0,0.0,3,0.0,14.0,0.0

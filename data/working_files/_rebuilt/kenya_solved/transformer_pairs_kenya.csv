@@ -1,0 +1,22 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+1,2,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Embakasi Sub-Station_220kV,Embakasi Sub-Station_132kV,0.0,,transformer
+16,17,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Kamburu 220 / 132kV Transmission Substation_220kV,Kamburu 220 / 132kV Transmission Substation_132kV,0.0,,transformer
+21,22,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,132 kV Mang'u Substation_220kV,132 kV Mang'u Substation_132kV,0.0,,transformer
+32,33,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Suswa Substation 1_500kV,Suswa Substation 1_400kV,0.0,,transformer
+33,34,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Suswa Substation 1_400kV,Suswa Substation 1_220kV,0.0,,transformer
+35,36,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Isinya Substation_400kV,Isinya Substation_220kV,0.0,,transformer
+61,62,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Kitale substation_220kV,Kitale substation_132kV,0.0,,transformer
+76,77,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Mariakani Substation 3_400kV,Mariakani Substation 3_220kV,0.0,,transformer
+83,84,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Kibos Substation (KETRACO)_220kV,Kibos Substation (KETRACO)_132kV,0.0,,transformer
+6,127,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Mariakani_132kV,Mariakani_220kV,0.0,132000;220000,way/180034502
+15,128,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Mwingi Substation_132kV,Mwingi Substation_220kV,0.0,132000;220000,way/210619103
+17,129,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Kamburu 220 / 132kV Transmission Substation_132kV,Kamburu 220 / 132kV Transmission Substation_220kV,0.0,132000;220000,way/220540545
+36,130,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Isinya Substation_220kV,Isinya Substation_400kV,0.0,220000;400000,way/578140339
+53,131,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Ruai_132kV,Ruai_220kV,0.0,132000;220000,way/659379440
+73,132,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Naivasha Substation 5_132kV,Naivasha Substation 5_400kV,0.0,132000;400000,way/846716530
+80,133,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Kiambu Substation 4_132kV,Kiambu Substation 4_220kV,0.0,132000;220000,way/980927045
+82,134,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,AEZ_132kV,AEZ_220kV,0.0,132000;220000,way/1062083578
+113,135,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Nandi Hills Substation_132kV,Nandi Hills Substation_220kV,0.0,132000;220000,way/1367185581
+135,136,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Nandi Hills Substation_220kV,Nandi Hills Substation_400kV,0.0,220000;400000,way/1367185581
+120,137,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Pumwani Substation 11_132kV,Pumwani Substation 11_220kV,0.0,132000;220000,way/1411841839
+122,138,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Konza Substation_132kV,Konza Substation_400kV,0.0,132000;400000,way/1426610904

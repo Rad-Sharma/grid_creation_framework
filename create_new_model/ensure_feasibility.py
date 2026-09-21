@@ -50,6 +50,8 @@ import pandas as pd
 from power_network import solve_feasibility, check_solution
 
 import config
+from pipeline_integrity import (dispatchability_report,
+                                describe_dispatchability)
 
 warnings.filterwarnings("ignore")
 
@@ -115,6 +117,19 @@ def solve_ac_feasibility(data: dict) -> dict:
 # WRITE MATPOWER .m FILE  (full descriptive format)
 # ============================================================
 
+def _cell(value) -> str:
+    """Quote a string for a MATLAB cell array.
+
+    A real substation name can carry an apostrophe - Kenya has "Mang'u" - and
+    written straight into a single-quoted cell it ends the string early, so the
+    case stops parsing in MATLAB, Octave and PowerModels alike. MATLAB escapes a
+    quote by doubling it. A semicolon would end the cell row, and a newline the
+    row itself, so neither can survive inside a name either.
+    """
+    text = " ".join(str(value).split())
+    return "'" + text.replace("'", "''").replace(";", ",") + "'"
+
+
 def _load_metadata():
     """Load bus/generator metadata from the working-files CSVs for annotation blocks."""
     buses_csv = WORK_DIR / f"matpower_{region}_buses.csv"
@@ -127,7 +142,7 @@ def _load_metadata():
             kv   = r.get("base_kV", 0) or 0
             kv   = float(kv) / 1000.0 if float(kv) > 1000 else float(kv)
             label = name if name and name.lower() != "nan" else f"Bus_{int(r['bus_i'])}"
-            meta["bus_names"].append(f"\t'{label}_{kv:.0f}kV' %{int(r['bus_i'])}")
+            meta["bus_names"].append(f"\t{_cell(f'{label}_{kv:.0f}kV')} %{int(r['bus_i'])}")
             lat = r.get("latitude", 0.0)
             lon = r.get("longitude", 0.0)
             lat = 0.0 if (lat is None or str(lat) == "nan") else float(lat)
@@ -136,9 +151,9 @@ def _load_metadata():
     if gens_csv.exists():
         gdf = pd.read_csv(gens_csv).dropna(subset=["bus"])
         for _, r in gdf.iterrows():
-            meta["gen_names"].append(f"\t'{str(r.get('generator_name','?')).strip()}'")
-            meta["gen_fuels"].append(
-                f"\t'{str(r.get('source','unknown')).split(';')[0].strip()}'")
+            meta["gen_names"].append(f"\t{_cell(r.get('generator_name', '?'))}")
+            fuel = str(r.get("source", "unknown")).split(";")[0]
+            meta["gen_fuels"].append(f"\t{_cell(fuel)}")
     return meta
 
 
@@ -246,6 +261,12 @@ if __name__ == "__main__":
     print(f"  Buses: {len(data['bus'])}  "
           f"Branches: {len(data['branch'])}  "
           f"Generators: {len(data['gen'])}")
+
+    report = dispatchability_report(data['bus'], data['branch'], data['gen'])
+    advice = describe_dispatchability(report)
+    if advice:
+        print()
+        raise SystemExit(advice)
 
     # ── DC feasibility ────────────────────────────────────────
     print("\n" + "=" * 60)

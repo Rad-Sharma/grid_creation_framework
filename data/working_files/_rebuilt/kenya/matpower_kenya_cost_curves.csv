@@ -1,0 +1,76 @@
+generator_name,bus,source,genfuel,curve_type,Pmax,model,startup,shutdown,n,c2,c1,c0
+Gitaru Hydro Power Station,13,hydro,hydro,hydro,225.0,2,0.0,0.0,3,0.003457,14.0,250.985
+Masinga Power Station,40,hydro,hydro,hydro,41.2,2,0.0,0.0,3,0.000626,14.0,45.6804
+Sosiani Power station,96,hydro,hydro,hydro,0.4,2,0.0,0.0,3,0.0,14.0,0.1068
+Gogo Power Station,77,hydro,hydro,hydro,2.0,2,0.0,0.0,3,2.3e-05,14.0,1.894
+Mesco Power Station,92,hydro,hydro,hydro,0.43,2,0.0,0.0,3,0.0,14.0,0.1403
+Sagana Falls Power Station,45,hydro,hydro,hydro,1.5,2,0.0,0.0,3,1.5e-05,14.0,1.3355
+Tana power station,92,hydro,hydro,hydro,25.7,2,0.0,0.0,3,0.000388,14.0,28.3669
+Wanjii power station,92,hydro,hydro,hydro,7.4,2,0.0,0.0,3,0.000106,14.0,7.9258
+Ndula,84,hydro,hydro,hydro,2.0,2,0.0,0.0,3,2.3e-05,14.0,1.894
+Olkaria III Generation Plant,28,geothermal,steam,free_steam,150.0,2,0.0,0.0,3,0.0,0.0,0.0
+Olkaria II Geothermal Power Station,64,geothermal,steam,free_steam,104.5,2,0.0,0.0,3,0.0,0.0,0.0
+Rabai Power Plant,5,oil,gas_turbine,gt_petroleum,90.0,2,0.0,0.0,3,0.2453,33.504,1186.26
+Sondu Miriu Hydroelectric Power Station,9,hydro,hydro,hydro,60.7,2,0.0,0.0,3,0.000927,14.0,67.4619
+Sang'oro Hydroelectric Power Station,43,hydro,hydro,hydro,21.2,2,0.0,0.0,3,0.000318,14.0,23.3404
+Turkwel Hydro Power Station,18,hydro,hydro,hydro,106.0,2,0.0,0.0,3,0.001624,14.0,118.062
+Kiambere Hydro Power Station,54,hydro,hydro,hydro,168.0,2,0.0,0.0,3,0.002579,14.0,187.316
+Tagabi 1 Hydro Power Plant,11,hydro,hydro,hydro,0.852,2,0.0,0.0,3,5e-06,14.0,0.6117
+Marsabit,30,diesel,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Kipevu I power plant,24,oil,gas_turbine,gt_petroleum,73.5,2,0.0,0.0,3,0.187715,30.5571,1004.694
+Triumph Power Plant,62,oil,gas_turbine,gt_petroleum,83.0,2,0.0,0.0,3,0.22087,32.2538,1109.232
+Kamburu Hydro Power Station,12,hydro,hydro,hydro,94.2,2,0.0,0.0,3,0.001443,14.0,104.8814
+Garissa Solar Power Station,59,solar,solar,renewable,50.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/753235590],28,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/808553626],23,solar,solar,renewable,,2,0.0,0.0,3,,,
+Kindaruma Hydro Power Station,39,hydro,hydro,hydro,72.0,2,0.0,0.0,3,0.001101,14.0,80.084
+Muhoroni power plant,8,oil,gas_turbine,gt_petroleum,60.0,2,0.0,0.0,3,0.1406,28.146,856.14
+Kipevu III power plant,25,oil,gas_turbine,gt_petroleum,120.0,2,0.0,0.0,3,0.35,38.862,1516.38
+Gulf Energy Power Station,62,oil,gas_turbine,gt_petroleum,80.32,2,0.0,0.0,3,0.211517,31.775152,1079.7413
+Olkaria IV Geothermal Power Station,63,geothermal,steam,free_steam,149.9,2,0.0,0.0,3,0.0,0.0,0.0
+Olkaria V Geothermal Power Station,63,geothermal,steam,free_steam,172.3,2,0.0,0.0,3,0.0,0.0,0.0
+Iberafrica Power Station,3,oil,gas_turbine,gt_petroleum,52.5,2,0.0,0.0,3,0.114425,26.8065,773.61
+Metumi,115,hydro,hydro,hydro,5.6,2,0.0,0.0,3,7.8e-05,14.0,5.9152
+Thika (MELEC) MSD Power Plant,20,diesel,gas_turbine,gt_petroleum,87.0,2,0.0,0.0,3,0.23483,32.9682,1153.248
+Alten Solar Power Station,70,solar,solar,renewable,44.0,2,0.0,0.0,3,0.0,0.0,0.0
+Radiant Solar Power Station,70,solar,solar,renewable,40.0,2,0.0,0.0,3,0.0,0.0,0.0
+Eldosol Solar Power Station,70,solar,solar,renewable,40.0,2,0.0,0.0,3,0.0,0.0,0.0
+Malindi Solar Power Station,68,solar,solar,renewable,40.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1204267825],18,solar,solar,renewable,,2,0.0,0.0,3,,,
+Kerenga 1 & 2,11,hydro,hydro,hydro,0.47,2,0.0,0.0,3,0.0,14.0,0.185
+Kapsongoi,11,hydro,hydro,hydro,2.4,2,0.0,0.0,3,2.9e-05,14.0,2.3408
+Jamji 1,11,hydro,hydro,hydro,0.313,2,0.0,0.0,3,0.0,14.0,0.0096
+Jamji 2,11,hydro,hydro,hydro,0.313,2,0.0,0.0,3,0.0,14.0,0.0096
+Jamji Solar Plant,11,solar,solar,renewable,0.619,2,0.0,0.0,3,0.0,0.0,0.0
+Imenti Tea,93,hydro,hydro,hydro,0.9,2,0.0,0.0,3,6e-06,14.0,0.6653
+Chania,101,hydro,hydro,hydro,1.0,2,0.0,0.0,3,7e-06,14.0,0.777
+Gura,45,hydro,hydro,hydro,5.8,2,0.0,0.0,3,8.1e-05,14.0,6.1386
+[unnamed way/1369665610],59,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1369683259],59,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1395060855],106,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1395060856],106,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1395074730],53,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1395074731],53,solar,solar,renewable,,2,0.0,0.0,3,,,
+Standard Rolling Mills,5,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1422787168],76,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424432979],45,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424433491],7,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424433639],11,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424434508],24,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424434509],24,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424434522],7,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424434537],24,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424434698],71,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424434858],5,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424434944],97,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424444955],53,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424445067],11,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424445339],68,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424445579],62,solar,solar,renewable,5.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424445691],17,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1426603147],11,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1426610903],59,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1426610905],11,solar,solar,renewable,,2,0.0,0.0,3,,,
+Kilaguni Serena Safari Lodge,102,solar,solar,renewable,0.322,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1473012259],30,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1497614688],97,solar,solar,renewable,0.069,2,0.0,0.0,3,0.0,0.0,0.0

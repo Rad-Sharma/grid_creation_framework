@@ -1,0 +1,42 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+4,5,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Subestación Manatí_230kV,Subestación Manatí_115kV,0.0,,transformer
+14,15,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Subestación Bayamón 1_230kV,Subestación Bayamón 1_115kV,0.0,,transformer
+17,18,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Subestación Cambalache (Arecibo)_230kV,Subestación Cambalache (Arecibo)_115kV,0.0,,transformer
+88,89,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Subestación Palo Seco_230kV,Subestación Palo Seco_115kV,0.0,,transformer
+8,175,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Aguas Buenas_115kV,Subestación Aguas Buenas_230kV,0.0,115000;230000,way/84319195
+10,176,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 2_115kV,El Tarter Substation 2_230kV,0.0,115000;230000,way/84502189
+11,177,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Quebrada Negrito_115kV,Subestación Quebrada Negrito_230kV,0.0,115000;230000,way/85437006
+12,178,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 3_115kV,El Tarter Substation 3_230kV,0.0,115000;230000,way/85473157
+28,179,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación UPR - Bayamón_115kV,Subestación UPR - Bayamón_230kV,0.0,115000;230000,way/288788380
+30,180,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Cataño_115kV,Subestación Cataño_230kV,0.0,115000;230000,way/318984563
+33,181,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Río Bayamón_115kV,Subestación Río Bayamón_230kV,0.0,115000;230000,way/368758848
+36,182,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación San Antón_115kV,Subestación San Antón_230kV,0.0,115000;230000,way/376698037
+37,183,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Sabana Llana I_115kV,Subestación Sabana Llana I_230kV,0.0,115000;230000,way/376698039
+45,184,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Guerrero_115kV,Subestación Guerrero_230kV,0.0,115000;230000,way/502777097
+46,185,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Victoria_115kV,Subestación Victoria_230kV,0.0,115000;230000,way/502972253
+47,186,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Caimital Bajo_115kV,Subestación Caimital Bajo_230kV,0.0,115000;230000,way/502972261
+48,187,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 13_115kV,El Tarter Substation 13_230kV,0.0,115000;230000,way/503447116
+52,188,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Caimital_115kV,Subestación Caimital_230kV,0.0,115000;230000,way/507412291
+55,189,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Juncos_115kV,Subestación Juncos_230kV,0.0,115000;230000,way/508042957
+58,190,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 16_115kV,El Tarter Substation 16_230kV,0.0,115000;230000,way/512187568
+59,191,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 18_115kV,El Tarter Substation 18_230kV,0.0,115000;230000,way/518670043
+84,192,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Las Carolinas_115kV,Subestación Las Carolinas_230kV,0.0,115000;230000,way/886497379
+87,193,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Bayamón Pueblo_115kV,Subestación Bayamón Pueblo_230kV,0.0,115000;230000,way/984781778
+91,194,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Juan Domingo_115kV,Subestación Juan Domingo_230kV,0.0,115000;230000,way/1037802967
+104,195,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Bayview_115kV,Subestación Bayview_230kV,0.0,115000;230000,way/1084316615
+106,196,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 56_115kV,El Tarter Substation 56_230kV,0.0,115000;230000,way/1086286572
+107,197,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Añasco Arriba_115kV,Subestación Añasco Arriba_230kV,0.0,115000;230000,way/1087763403
+111,198,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Barrazas_115kV,Subestación Barrazas_230kV,0.0,115000;230000,way/1134956269
+115,199,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Subestación Arecibo Pueblo_115kV,Subestación Arecibo Pueblo_230kV,0.0,115000;230000,way/1152577276
+120,200,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 77_115kV,El Tarter Substation 77_230kV,0.0,115000;230000,way/1246024382
+123,201,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 79_115kV,El Tarter Substation 79_230kV,0.0,115000;230000,way/1377063071
+137,202,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 91_115kV,El Tarter Substation 91_230kV,0.0,115000;230000,way/1492875701
+138,203,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 92_115kV,El Tarter Substation 92_230kV,0.0,115000;230000,way/1492875703
+143,204,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 100_115kV,El Tarter Substation 100_230kV,0.0,115000;230000,way/1492875712
+145,205,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 102_115kV,El Tarter Substation 102_230kV,0.0,115000;230000,way/1492875714
+149,206,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 108_115kV,El Tarter Substation 108_230kV,0.0,115000;230000,way/1492875722
+157,207,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 124_115kV,El Tarter Substation 124_230kV,0.0,115000;230000,way/1492875739
+158,208,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 125_115kV,El Tarter Substation 125_230kV,0.0,115000;230000,way/1492875740
+165,209,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 138_115kV,El Tarter Substation 138_230kV,0.0,115000;230000,way/1492875753
+169,210,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 144_115kV,El Tarter Substation 144_230kV,0.0,115000;230000,way/1492875760
+174,211,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 151_115kV,El Tarter Substation 151_230kV,0.0,115000;230000,way/1495722941

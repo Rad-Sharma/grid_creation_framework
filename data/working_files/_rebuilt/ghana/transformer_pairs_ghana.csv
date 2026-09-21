@@ -1,0 +1,18 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+8,9,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Tema Substation 1_330kV,Tema Substation 1_161kV,0.0,,transformer
+41,42,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Aboadze Substation_330kV,Aboadze Substation_161kV,0.0,,transformer
+52,53,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Tema Substation 3_330kV,Tema Substation 3_161kV,0.0,,transformer
+55,56,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Bolgatanga II Substation_330kV,Bolgatanga II Substation_225kV,0.0,,transformer
+56,57,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Bolgatanga II Substation_225kV,Bolgatanga II Substation_161kV,0.0,,transformer
+59,60,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Tamale Substation_330kV,Tamale Substation_161kV,0.0,,transformer
+62,63,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Mamponteng Substation 2_330kV,Mamponteng Substation 2_161kV,0.0,,transformer
+28,85,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Lome Substation_161kV,Lome Substation_330kV,0.0,161000;330000,way/363240240
+29,86,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,GRIDCo Prestea Substation_161kV,GRIDCo Prestea Substation_225kV,0.0,161000;225000,way/420931503
+31,87,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Bui Hydro Substation_161kV,Bui Hydro Substation_330kV,0.0,161000;330000,way/509571188
+37,88,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Tema Substation 2_161kV,Tema Substation 2_330kV,0.0,161000;330000,way/605954253
+42,89,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Aboadze Substation_161kV,Aboadze Substation_330kV,0.0,161000;330000,way/672526714
+54,90,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Tema Substation 4_161kV,Tema Substation 4_330kV,0.0,161000;330000,way/791947748
+61,91,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,ECG Substation_161kV,ECG Substation_330kV,0.0,161000;330000,way/1095650797
+72,92,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Navrongo Substation_161kV,Navrongo Substation_330kV,0.0,161000;330000,way/1376393083
+77,93,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Savelugu Substation 1_161kV,Savelugu Substation 1_330kV,0.0,161000;330000,way/1422444879
+81,94,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Kintampo Substation_161kV,Kintampo Substation_330kV,0.0,161000;330000,way/1443884398

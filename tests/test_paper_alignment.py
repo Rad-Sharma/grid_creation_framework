@@ -4,6 +4,7 @@ from types import SimpleNamespace
 
 import geopandas as gpd
 import numpy as np
+import requests
 import pandas as pd
 import pytest
 import rasterio
@@ -16,7 +17,7 @@ import paper_features as pf
 import paper_load_model as lm
 import power_network as pn
 import resolve_unmatched as review
-from plant_names import nearby_plant_name
+from plant_names import MAX_CONSECUTIVE_FAILURES, nearby_plant_name, reset_failure_count
 from train_paper_load_model import train
 from test_power_network import two_bus
 
@@ -27,18 +28,24 @@ def test_line_coefficients_match_equations_3a_to_3d():
     assert review._COEFF == expected
 
 
-def test_ac_objective_is_quadratic_not_absolute(monkeypatch):
-    measured = {}
-    def capture(fun, x0, **kwargs):
-        # Added shunts are the last n entries in the AC decision vector.
-        x1, x2 = x0.copy(), x0.copy()
-        x1[-1], x2[-1] = .2, .4
-        measured['ratio'] = (fun(x2) - fun(x0)) / (fun(x1) - fun(x0))
-        return SimpleNamespace(success=False, status=9, message='test interception', x=x0)
-    monkeypatch.setattr(pn, 'minimize', capture)
-    with pytest.raises(RuntimeError):
-        pn.solve_feasibility(two_bus(), ac=True)
-    assert measured['ratio'] == pytest.approx(4.)
+def test_ac_relaxation_installs_no_shunt_it_does_not_need():
+    """Section VI-B states the aim as the fewest individual shunt devices.
+
+    The reactive source stands in for B_i^sh, so a case the generators can
+    already support must come back with no shunt installed at all.
+    """
+    solved = pn.solve_feasibility(pn.solve_feasibility(two_bus(qload=60.)), ac=True)
+    assert not (np.abs(solved['bus'][:, 5]) > 1e-6).any()
+    assert solved['gen'][0, 2] == pytest.approx(65.68, abs=1.)
+
+
+def test_ac_relaxation_installs_a_shunt_when_generation_cannot_cover_it():
+    """Past the generators' reactive limit a shunt has to appear, and only there."""
+    data = two_bus(qload=120.)
+    solved = pn.solve_feasibility(pn.solve_feasibility(data), ac=True)
+    assert (np.abs(solved['bus'][:, 5]) > 1e-6).any()
+    assert solved['gen'][0, 2] <= data['gen'][0, 3] + 1e-4
+    pn.check_solution(solved, ac=True)
 
 
 @pytest.mark.parametrize('category, expected', [
@@ -193,3 +200,42 @@ def test_plant_name_inference_is_bracketed_nearest_and_cached(tmp_path):
     assert nearby_plant_name(30, -95, tmp_path, session=Session()) == ('[Near]', 'node/1')
     assert nearby_plant_name(30, -95, tmp_path, session=Session()) == ('[Near]', 'node/1')
     assert len(calls) == 1
+
+def test_untagged_plants_are_sized_to_the_national_capacity():
+    """COUNTRY_CAPACITY_MW closes the Sec. V-B-2 gap the way Sec. III-C-6 scales demand.
+
+    Weight by the median capacity of the tagged plants on the same fuel, then
+    scale so the national total is matched. Nothing is assumed when the setting
+    is left at 0.
+    """
+    tagged = pd.DataFrame(dict(genfuel=['hydro', 'hydro', 'solar'], Pmax=[100., 300., 20.]))
+    untagged_fuels = ['hydro', 'solar', 'wind']
+    by_fuel = tagged.groupby('genfuel')['Pmax'].median()
+    fallback = float(tagged['Pmax'].median())
+    weights = pd.Series(untagged_fuels).map(by_fuel).fillna(fallback).astype(float)
+    shortfall = 1000. - tagged['Pmax'].sum()
+    sized = weights * (shortfall / weights.sum())
+    assert sized.sum() == pytest.approx(shortfall)
+    # A fuel OSM tags well sets the scale; an untagged fuel falls back to the median.
+    assert sized.iloc[0] > sized.iloc[1]
+    assert sized.iloc[2] == pytest.approx(sized[weights == fallback].iloc[0])
+
+
+def test_plant_name_lookup_gives_up_after_repeated_failures(tmp_path):
+    """Overpass rate-limits, and a region can have hundreds of unnamed plants.
+
+    Once it has clearly stopped answering, every remaining answer is None either
+    way, so the run must not spend a request timeout per plant proving it.
+    """
+    class Refusing:
+        calls = 0
+        def post(self, *args, **kwargs):
+            Refusing.calls += 1
+            raise requests.RequestException("429 Too Many Requests")
+    reset_failure_count()
+    session = Refusing()
+    with pytest.warns(UserWarning):
+        for _ in range(200):
+            assert nearby_plant_name(30, -95, tmp_path, session=session) == (None, None)
+    assert Refusing.calls == MAX_CONSECUTIVE_FAILURES
+    reset_failure_count()

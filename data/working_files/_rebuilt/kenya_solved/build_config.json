@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "region": "kenya",
+    "COUNTRY_ISO3": "KEN",
+    "REGION_BBOX": [
+      33.89,
+      -4.68,
+      41.86,
+      5.51
+    ],
+    "SHAPE_FILE_NAME": "Kenya",
+    "MIN_TRANSMISSION_VOLTAGE_V": 115000,
+    "COUNTRY_DEMAND_MW": 2237,
+    "NATIONAL_EXPORT_MW": 4.91,
+    "LOAD_MODEL_METHOD": "legacy_ridge",
+    "INFER_TRANSFORMERS_FROM_VOLTAGE": true,
+    "FUEL_COST_BASIS": "us",
+    "PLANT_NAME_SEARCH_RADIUS_M": 1000
+  },
+  "steps": [
+    {
+      "step": "create_buses",
+      "at": "2026-09-20T13:17:18.037631+00:00"
+    },
+    {
+      "step": "create_lines",
+      "at": "2026-09-20T13:17:20.760132+00:00"
+    },
+    {
+      "step": "resolve_unmatched",
+      "at": "2026-09-20T13:18:25.702747+00:00"
+    }
+  ],
+  "inputs": {
+    "export_kenya_buses.geojson": "b3a39d98ea22561642e588057360474b3177ef9c34b1668ccf6c897c3292ff3f"
+  }
+}

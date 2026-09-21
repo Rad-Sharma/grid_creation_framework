@@ -1,0 +1,1816 @@
+{
+  "region": "ghana",
+  "recorded_at": "2026-09-20T04:46:49.080913+00:00",
+  "answers": [
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/1241667293",
+        "endpoint": "tbus",
+        "lon": -2.5341176,
+        "lat": 10.1704179
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/1241667293",
+        "endpoint": "tbus",
+        "lon": -2.5341176,
+        "lat": 10.1704179
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "31",
+      "context": {
+        "osm_id": "way/1166002693",
+        "endpoint": "fbus",
+        "lon": -1.7046699,
+        "lat": 8.0887309
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "83",
+      "context": {
+        "osm_id": "way/1166002693",
+        "endpoint": "tbus",
+        "lon": -1.5631277,
+        "lat": 8.5839068
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032303",
+        "endpoint": "tbus",
+        "lon": -0.9618489,
+        "lat": 5.2723873
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "76",
+      "context": {
+        "osm_id": "way/674032303",
+        "endpoint": "tbus",
+        "lon": -0.9618489,
+        "lat": 5.2723873
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674066013",
+        "endpoint": "tbus",
+        "lon": -0.6449814,
+        "lat": 5.3889326
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "71",
+      "context": {
+        "osm_id": "way/674066013",
+        "endpoint": "tbus",
+        "lon": -0.6449814,
+        "lat": 5.3889326
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/725923037",
+        "endpoint": "fbus",
+        "lon": -0.1316808,
+        "lat": 8.2074455
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/725923037",
+        "endpoint": "tbus",
+        "lon": -0.1336598,
+        "lat": 8.2011368
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/930744194",
+        "endpoint": "tbus",
+        "lon": -1.6399019,
+        "lat": 12.3095693
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "85",
+      "context": {
+        "osm_id": "way/961897364",
+        "endpoint": "fbus",
+        "lon": -1.9133203,
+        "lat": 5.4522435
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "30",
+      "context": {
+        "osm_id": "way/961897364",
+        "endpoint": "fbus",
+        "lon": -1.9133203,
+        "lat": 5.4522435
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "25",
+      "context": {
+        "osm_id": "way/1101598632",
+        "endpoint": "fbus",
+        "lon": -2.4619756,
+        "lat": 9.655623
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "25",
+      "context": {
+        "osm_id": "way/1101598632",
+        "endpoint": "tbus",
+        "lon": -2.4609563,
+        "lat": 9.6516066
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/1101598632",
+        "endpoint": "tbus",
+        "lon": -2.4609563,
+        "lat": 9.6516066
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636442",
+        "endpoint": "fbus",
+        "lon": -2.0192306,
+        "lat": 6.7061559
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636442",
+        "endpoint": "tbus",
+        "lon": -1.7100865,
+        "lat": 6.5903567
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/695636442",
+        "endpoint": "tbus",
+        "lon": -1.7100865,
+        "lat": 6.5903567
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032300",
+        "endpoint": "fbus",
+        "lon": -0.9545271,
+        "lat": 5.2740285
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032300",
+        "endpoint": "tbus",
+        "lon": -0.8939937,
+        "lat": 5.3033645
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032300",
+        "endpoint": "tbus",
+        "lon": -0.8939937,
+        "lat": 5.3033645
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/340024643",
+        "endpoint": "tbus",
+        "lon": -3.9397118,
+        "lat": 5.3882503
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/302155699",
+        "endpoint": "tbus",
+        "lon": -2.5020493,
+        "lat": 10.0850102
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/302155699",
+        "endpoint": "tbus",
+        "lon": -2.5020493,
+        "lat": 10.0850102
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "46",
+      "context": {
+        "osm_id": "way/302155695",
+        "endpoint": "fbus",
+        "lon": 0.1899165,
+        "lat": 10.8915194
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "21",
+      "context": {
+        "osm_id": "way/302155695",
+        "endpoint": "fbus",
+        "lon": 0.1899165,
+        "lat": 10.8915194
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "4",
+      "context": {
+        "osm_id": "way/672503074",
+        "endpoint": "tbus",
+        "lon": 0.0607074,
+        "lat": 6.2938297
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "7",
+      "context": {
+        "osm_id": "way/672503074",
+        "endpoint": "tbus",
+        "lon": 0.0607074,
+        "lat": 6.2938297
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "38",
+      "context": {
+        "osm_id": "way/629958928",
+        "endpoint": "tbus",
+        "lon": 0.2960217,
+        "lat": 9.7059466
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/629958928",
+        "endpoint": "tbus",
+        "lon": 0.2960217,
+        "lat": 9.7059466
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "38",
+      "context": {
+        "osm_id": "way/629958930",
+        "endpoint": "tbus",
+        "lon": 0.2509559,
+        "lat": 9.3090644
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/629958930",
+        "endpoint": "tbus",
+        "lon": 0.2509559,
+        "lat": 9.3090644
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/577192402",
+        "endpoint": "tbus",
+        "lon": -1.6921038,
+        "lat": 6.1853341
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "17",
+      "context": {
+        "osm_id": "way/577192402",
+        "endpoint": "tbus",
+        "lon": -1.6921038,
+        "lat": 6.1853341
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "16",
+      "context": {
+        "osm_id": "way/302127321",
+        "endpoint": "tbus",
+        "lon": -1.8988604,
+        "lat": 5.9765282
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "17",
+      "context": {
+        "osm_id": "way/302127321",
+        "endpoint": "tbus",
+        "lon": -1.8988604,
+        "lat": 5.9765282
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "6",
+      "context": {
+        "osm_id": "way/258689063",
+        "endpoint": "tbus",
+        "lon": -1.7067271,
+        "lat": 8.0884468
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "7",
+      "context": {
+        "osm_id": "way/282576407",
+        "endpoint": "tbus",
+        "lon": -0.0719409,
+        "lat": 6.2176389
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "21",
+      "context": {
+        "osm_id": "way/302155689",
+        "endpoint": "tbus",
+        "lon": -0.4363231,
+        "lat": 11.0347646
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "46",
+      "context": {
+        "osm_id": "way/302155689",
+        "endpoint": "tbus",
+        "lon": -0.4363231,
+        "lat": 11.0347646
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "52",
+      "context": {
+        "osm_id": "way/302127342",
+        "endpoint": "fbus",
+        "lon": -3.0381724,
+        "lat": 5.0796489
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "52",
+      "context": {
+        "osm_id": "way/302127342",
+        "endpoint": "tbus",
+        "lon": -2.6442853,
+        "lat": 5.1323658
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "29",
+      "context": {
+        "osm_id": "way/302127342",
+        "endpoint": "tbus",
+        "lon": -2.6442853,
+        "lat": 5.1323658
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "33",
+      "context": {
+        "osm_id": "way/302155669",
+        "endpoint": "tbus",
+        "lon": -1.4903218,
+        "lat": 5.0885658
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "4",
+      "context": {
+        "osm_id": "way/302127335",
+        "endpoint": "tbus",
+        "lon": 0.068667,
+        "lat": 6.2970342
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "7",
+      "context": {
+        "osm_id": "way/302127335",
+        "endpoint": "tbus",
+        "lon": 0.068667,
+        "lat": 6.2970342
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "32",
+      "context": {
+        "osm_id": "way/557271380",
+        "endpoint": "tbus",
+        "lon": 1.1992076,
+        "lat": 6.1672756
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "28",
+      "context": {
+        "osm_id": "way/557271380",
+        "endpoint": "tbus",
+        "lon": 1.1992076,
+        "lat": 6.1672756
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/673456723",
+        "endpoint": "fbus",
+        "lon": -1.6341908,
+        "lat": 6.3788505
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/673456723",
+        "endpoint": "tbus",
+        "lon": -1.6349097,
+        "lat": 6.3846681
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456723",
+        "endpoint": "tbus",
+        "lon": -1.6349097,
+        "lat": 6.3846681
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "33",
+      "context": {
+        "osm_id": "way/673959967",
+        "endpoint": "fbus",
+        "lon": -1.4841038,
+        "lat": 5.0885397
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "43",
+      "context": {
+        "osm_id": "way/673959967",
+        "endpoint": "fbus",
+        "lon": -1.4841038,
+        "lat": 5.0885397
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "50",
+      "context": {
+        "osm_id": "way/674032285",
+        "endpoint": "tbus",
+        "lon": -1.2436438,
+        "lat": 5.1184961
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "76",
+      "context": {
+        "osm_id": "way/674032285",
+        "endpoint": "tbus",
+        "lon": -1.2436438,
+        "lat": 5.1184961
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032286",
+        "endpoint": "tbus",
+        "lon": -0.6459618,
+        "lat": 5.3884586
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "71",
+      "context": {
+        "osm_id": "way/674032286",
+        "endpoint": "tbus",
+        "lon": -0.6459618,
+        "lat": 5.3884586
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032293",
+        "endpoint": "fbus",
+        "lon": -0.8152185,
+        "lat": 5.3230995
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032293",
+        "endpoint": "tbus",
+        "lon": -0.7518668,
+        "lat": 5.3347634
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032293",
+        "endpoint": "tbus",
+        "lon": -0.7518668,
+        "lat": 5.3347634
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032297",
+        "endpoint": "fbus",
+        "lon": -0.886163,
+        "lat": 5.3071689
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032297",
+        "endpoint": "tbus",
+        "lon": -0.8258535,
+        "lat": 5.3215358
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "7",
+      "context": {
+        "osm_id": "way/672686496",
+        "endpoint": "fbus",
+        "lon": -0.077017,
+        "lat": 6.2074717
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "47",
+      "context": {
+        "osm_id": "way/673224382",
+        "endpoint": "tbus",
+        "lon": -0.7758142,
+        "lat": 6.5603656
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "1",
+      "context": {
+        "osm_id": "way/673224382",
+        "endpoint": "tbus",
+        "lon": -0.7758142,
+        "lat": 6.5603656
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "47",
+      "context": {
+        "osm_id": "way/672951921",
+        "endpoint": "fbus",
+        "lon": -0.6780007,
+        "lat": 6.4911253
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "47",
+      "context": {
+        "osm_id": "way/672951921",
+        "endpoint": "tbus",
+        "lon": -0.5937137,
+        "lat": 6.443242
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "19",
+      "context": {
+        "osm_id": "way/672951921",
+        "endpoint": "tbus",
+        "lon": -0.5937137,
+        "lat": 6.443242
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "47",
+      "context": {
+        "osm_id": "way/672951920",
+        "endpoint": "fbus",
+        "lon": -0.6889871,
+        "lat": 6.498029
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "19",
+      "context": {
+        "osm_id": "way/672951920",
+        "endpoint": "fbus",
+        "lon": -0.6889871,
+        "lat": 6.498029
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "47",
+      "context": {
+        "osm_id": "way/672951918",
+        "endpoint": "fbus",
+        "lon": -0.5723043,
+        "lat": 6.4162981
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "47",
+      "context": {
+        "osm_id": "way/672951918",
+        "endpoint": "tbus",
+        "lon": -0.5688939,
+        "lat": 6.410938
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "19",
+      "context": {
+        "osm_id": "way/672951918",
+        "endpoint": "tbus",
+        "lon": -0.5688939,
+        "lat": 6.410938
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "19",
+      "context": {
+        "osm_id": "way/672951917",
+        "endpoint": "tbus",
+        "lon": -0.3725937,
+        "lat": 6.2124727
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "36",
+      "context": {
+        "osm_id": "way/672951917",
+        "endpoint": "tbus",
+        "lon": -0.3725937,
+        "lat": 6.2124727
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456726",
+        "endpoint": "fbus",
+        "lon": -1.6367309,
+        "lat": 6.4607965
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456726",
+        "endpoint": "tbus",
+        "lon": -1.6376804,
+        "lat": 6.4835539
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/673456726",
+        "endpoint": "tbus",
+        "lon": -1.6376804,
+        "lat": 6.4835539
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/673456729",
+        "endpoint": "fbus",
+        "lon": -1.6387627,
+        "lat": 6.4158557
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456729",
+        "endpoint": "tbus",
+        "lon": -1.6386373,
+        "lat": 6.4269637
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/673456722",
+        "endpoint": "fbus",
+        "lon": -1.6596839,
+        "lat": 6.2749867
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/673456722",
+        "endpoint": "tbus",
+        "lon": -1.6552864,
+        "lat": 6.2862244
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "17",
+      "context": {
+        "osm_id": "way/673456722",
+        "endpoint": "tbus",
+        "lon": -1.6552864,
+        "lat": 6.2862244
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "17",
+      "context": {
+        "osm_id": "way/673695266",
+        "endpoint": "tbus",
+        "lon": -1.7796001,
+        "lat": 5.9632034
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "16",
+      "context": {
+        "osm_id": "way/673695266",
+        "endpoint": "tbus",
+        "lon": -1.7796001,
+        "lat": 5.9632034
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "22",
+      "context": {
+        "osm_id": "way/1474350305",
+        "endpoint": "fbus",
+        "lon": -0.649047,
+        "lat": 10.6562209
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "23",
+      "context": {
+        "osm_id": "way/1474350305",
+        "endpoint": "fbus",
+        "lon": -0.649047,
+        "lat": 10.6562209
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/1279120937",
+        "endpoint": "tbus",
+        "lon": -2.8193906,
+        "lat": 10.6584913
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/1279120937",
+        "endpoint": "tbus",
+        "lon": -2.8193906,
+        "lat": 10.6584913
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "15",
+      "context": {
+        "osm_id": "way/1279202193",
+        "endpoint": "tbus",
+        "lon": -2.2262902,
+        "lat": 6.2445039
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "77",
+      "context": {
+        "osm_id": "way/1279202193",
+        "endpoint": "tbus",
+        "lon": -2.2262902,
+        "lat": 6.2445039
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "72",
+      "context": {
+        "osm_id": "way/1318482070",
+        "endpoint": "tbus",
+        "lon": 0.3340582,
+        "lat": 6.6924893
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "81",
+      "context": {
+        "osm_id": "way/1318482070",
+        "endpoint": "tbus",
+        "lon": 0.3340582,
+        "lat": 6.6924893
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "6",
+      "context": {
+        "osm_id": "way/1323912800",
+        "endpoint": "tbus",
+        "lon": -1.9941075,
+        "lat": 7.4808827
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "86",
+      "context": {
+        "osm_id": "way/1323912800",
+        "endpoint": "tbus",
+        "lon": -1.9941075,
+        "lat": 7.4808827
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/1422444881",
+        "endpoint": "fbus",
+        "lon": -2.7484884,
+        "lat": 10.64344
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/1422444881",
+        "endpoint": "tbus",
+        "lon": -2.736395,
+        "lat": 10.6998674
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/1422444881",
+        "endpoint": "tbus",
+        "lon": -2.736395,
+        "lat": 10.6998674
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/577192403|way/577192404",
+        "endpoint": "tbus",
+        "lon": -1.6888234,
+        "lat": 6.167777
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "17",
+      "context": {
+        "osm_id": "way/577192403|way/577192404",
+        "endpoint": "tbus",
+        "lon": -1.6888234,
+        "lat": 6.167777
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "60",
+      "context": {
+        "osm_id": "way/1166190789|way/1166190790",
+        "endpoint": "tbus",
+        "lon": -0.9467983,
+        "lat": 9.3271211
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "78",
+      "context": {
+        "osm_id": "way/1166190789|way/1166190790",
+        "endpoint": "tbus",
+        "lon": -0.9467983,
+        "lat": 9.3271211
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636435|way/695636437",
+        "endpoint": "fbus",
+        "lon": -1.702854,
+        "lat": 6.5897583
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636435|way/695636437",
+        "endpoint": "tbus",
+        "lon": -1.7100865,
+        "lat": 6.5903567
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/695636435|way/695636437",
+        "endpoint": "tbus",
+        "lon": -1.7100865,
+        "lat": 6.5903567
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032302|way/674032304",
+        "endpoint": "tbus",
+        "lon": -1.0887811,
+        "lat": 5.2214559
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "76",
+      "context": {
+        "osm_id": "way/674032302|way/674032304",
+        "endpoint": "tbus",
+        "lon": -1.0887811,
+        "lat": 5.2214559
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032299|way/674032301",
+        "endpoint": "fbus",
+        "lon": -0.9618489,
+        "lat": 5.2723873
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032299|way/674032301",
+        "endpoint": "tbus",
+        "lon": -0.9545271,
+        "lat": 5.2740285
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "76",
+      "context": {
+        "osm_id": "way/674032299|way/674032301",
+        "endpoint": "tbus",
+        "lon": -0.9545271,
+        "lat": 5.2740285
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "76",
+      "context": {
+        "osm_id": "way/674032306|way/674032307",
+        "endpoint": "tbus",
+        "lon": -1.1575268,
+        "lat": 5.1885528
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032306|way/674032307",
+        "endpoint": "tbus",
+        "lon": -1.1575268,
+        "lat": 5.1885528
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636441|way/695636443",
+        "endpoint": "fbus",
+        "lon": -2.0255683,
+        "lat": 6.709433
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636441|way/695636443",
+        "endpoint": "tbus",
+        "lon": -2.0192306,
+        "lat": 6.7061559
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/695636441|way/695636443",
+        "endpoint": "tbus",
+        "lon": -2.0192306,
+        "lat": 6.7061559
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "2",
+      "context": {
+        "osm_id": "way/695636438|way/695636440",
+        "endpoint": "fbus",
+        "lon": -2.2930068,
+        "lat": 6.9095542
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "2",
+      "context": {
+        "osm_id": "way/695636438|way/695636440",
+        "endpoint": "tbus",
+        "lon": -2.2883636,
+        "lat": 6.905189
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "67",
+      "context": {
+        "osm_id": "way/695636438|way/695636440",
+        "endpoint": "tbus",
+        "lon": -2.2883636,
+        "lat": 6.905189
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "14",
+      "context": {
+        "osm_id": "way/672696986|way/672696987",
+        "endpoint": "tbus",
+        "lon": -0.8226298,
+        "lat": 6.0136118
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "19",
+      "context": {
+        "osm_id": "way/672696986|way/672696987",
+        "endpoint": "tbus",
+        "lon": -0.8226298,
+        "lat": 6.0136118
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "2",
+      "context": {
+        "osm_id": "way/673459117|way/673459118",
+        "endpoint": "tbus",
+        "lon": -2.341425,
+        "lat": 7.0276533
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "67",
+      "context": {
+        "osm_id": "way/673459117|way/673459118",
+        "endpoint": "tbus",
+        "lon": -2.341425,
+        "lat": 7.0276533
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "50",
+      "context": {
+        "osm_id": "way/673959965|way/674032284",
+        "endpoint": "tbus",
+        "lon": -1.2449232,
+        "lat": 5.1185589
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "76",
+      "context": {
+        "osm_id": "way/673959965|way/674032284",
+        "endpoint": "tbus",
+        "lon": -1.2449232,
+        "lat": 5.1185589
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "33",
+      "context": {
+        "osm_id": "way/673959966|way/673959968",
+        "endpoint": "tbus",
+        "lon": -1.3977689,
+        "lat": 5.1051598
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "50",
+      "context": {
+        "osm_id": "way/673959966|way/673959968",
+        "endpoint": "tbus",
+        "lon": -1.3977689,
+        "lat": 5.1051598
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "33",
+      "context": {
+        "osm_id": "way/673959970|way/673959975",
+        "endpoint": "fbus",
+        "lon": -1.4903218,
+        "lat": 5.0885658
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "33",
+      "context": {
+        "osm_id": "way/673959970|way/673959975",
+        "endpoint": "tbus",
+        "lon": -1.4841038,
+        "lat": 5.0885397
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "43",
+      "context": {
+        "osm_id": "way/673959970|way/673959975",
+        "endpoint": "tbus",
+        "lon": -1.4841038,
+        "lat": 5.0885397
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032288|way/674032289",
+        "endpoint": "tbus",
+        "lon": -0.6758899,
+        "lat": 5.3716258
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "71",
+      "context": {
+        "osm_id": "way/674032288|way/674032289",
+        "endpoint": "tbus",
+        "lon": -0.6758899,
+        "lat": 5.3716258
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032290|way/674032292",
+        "endpoint": "fbus",
+        "lon": -0.7518668,
+        "lat": 5.3347634
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032290|way/674032292",
+        "endpoint": "tbus",
+        "lon": -0.7452102,
+        "lat": 5.3367063
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032290|way/674032292",
+        "endpoint": "tbus",
+        "lon": -0.7452102,
+        "lat": 5.3367063
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032294|way/674032295",
+        "endpoint": "fbus",
+        "lon": -0.8258535,
+        "lat": 5.3215358
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032294|way/674032295",
+        "endpoint": "tbus",
+        "lon": -0.8152185,
+        "lat": 5.3230995
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032294|way/674032295",
+        "endpoint": "tbus",
+        "lon": -0.8152185,
+        "lat": 5.3230995
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032296|way/674032298",
+        "endpoint": "fbus",
+        "lon": -0.8939937,
+        "lat": 5.3033645
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032296|way/674032298",
+        "endpoint": "tbus",
+        "lon": -0.886163,
+        "lat": 5.3071689
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032296|way/674032298",
+        "endpoint": "tbus",
+        "lon": -0.886163,
+        "lat": 5.3071689
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/1380104395",
+        "endpoint": "fbus",
+        "lon": -2.7214581,
+        "lat": 10.4187563
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/1380104395",
+        "endpoint": "tbus",
+        "lon": -2.7197844,
+        "lat": 10.4193615
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/1380104395",
+        "endpoint": "tbus",
+        "lon": -2.7197844,
+        "lat": 10.4193615
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "38",
+      "context": {
+        "osm_id": "way/1376393082",
+        "endpoint": "fbus",
+        "lon": -0.0028566,
+        "lat": 8.8116773
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "38",
+      "context": {
+        "osm_id": "way/1376393082",
+        "endpoint": "tbus",
+        "lon": 0.0474724,
+        "lat": 8.8529732
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "skip",
+      "context": {
+        "osm_id": "way/1376393082",
+        "endpoint": "tbus",
+        "lon": 0.0474724,
+        "lat": 8.8529732
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "5",
+      "context": {
+        "osm_id": "way/672613748+way/672613749",
+        "endpoint": "tbus",
+        "lon": 0.0375461,
+        "lat": 6.0568257
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "47",
+      "context": {
+        "osm_id": "way/672964208+way/673224383",
+        "endpoint": "fbus",
+        "lon": -0.9953061,
+        "lat": 6.3777629
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "5",
+      "context": {
+        "osm_id": "way/169866146+way/672613754",
+        "endpoint": "tbus",
+        "lon": 0.0369101,
+        "lat": 6.0379565
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "52",
+      "context": {
+        "osm_id": "way/185079299+way/674074972",
+        "endpoint": "fbus",
+        "lon": -2.7510425,
+        "lat": 5.282465
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "29",
+      "context": {
+        "osm_id": "way/185079299+way/674074972",
+        "endpoint": "fbus",
+        "lon": -2.7510425,
+        "lat": 5.282465
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "82",
+      "context": {
+        "osm_id": "way/256217659+way/672613757",
+        "endpoint": "fbus",
+        "lon": 0.0273608,
+        "lat": 5.9237072
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "82",
+      "context": {
+        "osm_id": "way/672613752+way/672613758",
+        "endpoint": "fbus",
+        "lon": 0.0282675,
+        "lat": 5.936491
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456730+way/673456732",
+        "endpoint": "fbus",
+        "lon": -1.6386373,
+        "lat": 6.4269637
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456730+way/673456732",
+        "endpoint": "tbus",
+        "lon": -1.6386373,
+        "lat": 6.4269637
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/673456730+way/673456732",
+        "endpoint": "tbus",
+        "lon": -1.6386373,
+        "lat": 6.4269637
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636439+way/186450384",
+        "endpoint": "tbus",
+        "lon": -2.0255683,
+        "lat": 6.709433
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "40",
+      "context": {
+        "osm_id": "way/674032291+way/674032287",
+        "endpoint": "fbus",
+        "lon": -0.7452102,
+        "lat": 5.3367063
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "34",
+      "context": {
+        "osm_id": "way/674032291+way/674032287",
+        "endpoint": "fbus",
+        "lon": -0.7452102,
+        "lat": 5.3367063
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456731+way/673456733",
+        "endpoint": "fbus",
+        "lon": -1.6376804,
+        "lat": 6.4835539
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/673456731+way/673456733",
+        "endpoint": "tbus",
+        "lon": -1.6376804,
+        "lat": 6.4835539
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/673456731+way/673456733",
+        "endpoint": "tbus",
+        "lon": -1.6376804,
+        "lat": 6.4835539
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "18",
+      "context": {
+        "osm_id": "way/695636436+way/673456734",
+        "endpoint": "fbus",
+        "lon": -1.702854,
+        "lat": 6.5897583
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "62",
+      "context": {
+        "osm_id": "way/695636436+way/673456734",
+        "endpoint": "fbus",
+        "lon": -1.702854,
+        "lat": 6.5897583
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "83",
+      "context": {
+        "osm_id": "way/1069597791+way/943966114",
+        "endpoint": "tbus",
+        "lon": -1.5349451,
+        "lat": 8.6422227
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "31",
+      "context": {
+        "osm_id": "way/1165939810+way/1166002692",
+        "endpoint": "tbus",
+        "lon": -1.7054075,
+        "lat": 8.0867685
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/577192405+way/673456721",
+        "endpoint": "tbus",
+        "lon": -1.6703819,
+        "lat": 6.2280073
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "17",
+      "context": {
+        "osm_id": "way/577192405+way/673456721",
+        "endpoint": "tbus",
+        "lon": -1.6703819,
+        "lat": 6.2280073
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "82",
+      "context": {
+        "osm_id": "way/672613751|way/672613753+way/672613755|way/672613756",
+        "endpoint": "fbus",
+        "lon": 0.0282675,
+        "lat": 5.936491
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "82",
+      "context": {
+        "osm_id": "way/672613751|way/672613753+way/672613755|way/672613756",
+        "endpoint": "tbus",
+        "lon": 0.0273608,
+        "lat": 5.9237072
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "36",
+      "context": {
+        "osm_id": "way/672613751|way/672613753+way/672613755|way/672613756",
+        "endpoint": "tbus",
+        "lon": 0.0273608,
+        "lat": 5.9237072
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "6",
+      "context": {
+        "osm_id": "way/673458921+way/258689058+way/1323912799",
+        "endpoint": "tbus",
+        "lon": -1.9833765,
+        "lat": 7.4865753
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "28",
+      "context": {
+        "osm_id": "way/672625377+way/696787050+way/672504029+way/672635540",
+        "endpoint": "tbus",
+        "lon": 1.1876366,
+        "lat": 6.3922663
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "85",
+      "context": {
+        "osm_id": "way/961975078+way/170132846+way/961975077",
+        "endpoint": "fbus",
+        "lon": -1.9137537,
+        "lat": 5.4566939
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/673456724+way/673456727+way/673456725+way/673456728",
+        "endpoint": "fbus",
+        "lon": -1.6552864,
+        "lat": 6.2862244
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "13",
+      "context": {
+        "osm_id": "way/673456724+way/673456727+way/673456725+way/673456728",
+        "endpoint": "tbus",
+        "lon": -1.6552864,
+        "lat": 6.2862244
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "17",
+      "context": {
+        "osm_id": "way/673456724+way/673456727+way/673456725+way/673456728",
+        "endpoint": "tbus",
+        "lon": -1.6552864,
+        "lat": 6.2862244
+      }
+    },
+    {
+      "prompt": "Enter bus_i for fbus  (skip / delete / new / merge <N>):",
+      "answer": "5",
+      "context": {
+        "osm_id": "way/672613759|way/672613760+way/672613761|way/672613762+way/672613764|way/672613765",
+        "endpoint": "fbus",
+        "lon": 0.0369101,
+        "lat": 6.0379565
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "5",
+      "context": {
+        "osm_id": "way/672613759|way/672613760+way/672613761|way/672613762+way/672613764|way/672613765",
+        "endpoint": "tbus",
+        "lon": 0.0375461,
+        "lat": 6.0568257
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "7",
+      "context": {
+        "osm_id": "way/672613759|way/672613760+way/672613761|way/672613762+way/672613764|way/672613765",
+        "endpoint": "tbus",
+        "lon": 0.0375461,
+        "lat": 6.0568257
+      }
+    }
+  ]
+}

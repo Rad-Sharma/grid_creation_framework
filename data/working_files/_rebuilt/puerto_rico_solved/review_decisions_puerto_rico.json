@@ -1,0 +1,307 @@
+{
+  "region": "puerto_rico",
+  "recorded_at": "2026-09-21T02:09:20.311588+00:00",
+  "answers": [
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/157600960",
+        "endpoint": "tbus",
+        "lon": -66.2302917,
+        "lat": 17.9961842
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "189",
+      "context": {
+        "osm_id": "way/22168095+way/22169893+way/22170094+way/22170973",
+        "endpoint": "tbus",
+        "lon": -66.588057,
+        "lat": 18.22332
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "175",
+      "context": {
+        "osm_id": "way/22168095+way/22169893+way/22170094+way/22170973",
+        "endpoint": "tbus",
+        "lon": -66.588057,
+        "lat": 18.22332
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "107",
+      "context": {
+        "osm_id": "way/535068068",
+        "endpoint": "tbus",
+        "lon": -66.3926205,
+        "lat": 18.3432984
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "143",
+      "context": {
+        "osm_id": "way/535068068",
+        "endpoint": "tbus",
+        "lon": -66.3926205,
+        "lat": 18.3432984
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "1",
+      "context": {
+        "osm_id": "way/529223928",
+        "endpoint": "tbus",
+        "lon": -66.2389675,
+        "lat": 17.9835268
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "25",
+      "context": {
+        "osm_id": "way/529223928",
+        "endpoint": "tbus",
+        "lon": -66.2389675,
+        "lat": 17.9835268
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "107",
+      "context": {
+        "osm_id": "way/535337617",
+        "endpoint": "tbus",
+        "lon": -66.409282,
+        "lat": 18.328533
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "4",
+      "context": {
+        "osm_id": "way/535337617",
+        "endpoint": "tbus",
+        "lon": -66.409282,
+        "lat": 18.328533
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "107",
+      "context": {
+        "osm_id": "way/536578643",
+        "endpoint": "tbus",
+        "lon": -66.4100119,
+        "lat": 18.3017822
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "143",
+      "context": {
+        "osm_id": "way/536578643",
+        "endpoint": "tbus",
+        "lon": -66.4100119,
+        "lat": 18.3017822
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "107",
+      "context": {
+        "osm_id": "way/536640150",
+        "endpoint": "tbus",
+        "lon": -66.4065707,
+        "lat": 18.3177151
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "143",
+      "context": {
+        "osm_id": "way/536640150",
+        "endpoint": "tbus",
+        "lon": -66.4065707,
+        "lat": 18.3177151
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "20",
+      "context": {
+        "osm_id": "way/157600965",
+        "endpoint": "tbus",
+        "lon": -66.2302917,
+        "lat": 17.9961842
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "189",
+      "context": {
+        "osm_id": "way/22168044",
+        "endpoint": "tbus",
+        "lon": -66.571605,
+        "lat": 18.265244
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "97",
+      "context": {
+        "osm_id": "way/22168044",
+        "endpoint": "tbus",
+        "lon": -66.571605,
+        "lat": 18.265244
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "245",
+      "context": {
+        "osm_id": "way/22085312",
+        "endpoint": "tbus",
+        "lon": -66.7455706,
+        "lat": 18.1825965
+      }
+    },
+    {
+      "prompt": "Enter bus_i for tbus  (skip / delete / new / merge <N>):",
+      "answer": "99",
+      "context": {
+        "osm_id": "way/22085312",
+        "endpoint": "tbus",
+        "lon": -66.7455706,
+        "lat": 18.1825965
+      }
+    },
+    {
+      "prompt": "Add a 230 kV line to join the 5-bus network \u2014 bus 146 (Mayagueez Substation 2) to bus 124 (Subestaci\u00f3n Mayag\u00fcez Pueblo), 2.87 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 5,
+        "fbus": 146,
+        "tbus": 124,
+        "gap_km": 2.866,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 3-bus network \u2014 bus 156 (Ceiba Substation) to bus 104 (Subestaci\u00f3n Vega Alta), 4.31 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 3,
+        "fbus": 156,
+        "tbus": 104,
+        "gap_km": 4.306,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 3-bus network \u2014 bus 167 (Adjuntas Substation) to bus 123 (Penuelas Substation), 12.53 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 3,
+        "fbus": 167,
+        "tbus": 123,
+        "gap_km": 12.532,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 35 (Subestaci\u00f3n Parques y Recreos) to bus 33 (Subestaci\u00f3n Viaducto II), 2.15 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 35,
+        "tbus": 33,
+        "gap_km": 2.149,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 140 (Guaynabo Substation 2) to bus 82 (Subestaci\u00f3n Centro M\u00e9dico), 1.42 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 140,
+        "tbus": 82,
+        "gap_km": 1.422,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 105 (Subestaci\u00f3n R\u00edo Grande Pueblo) to bus 115 (Subestaci\u00f3n R\u00edo Grande Estates), 4.30 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 105,
+        "tbus": 115,
+        "gap_km": 4.303,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 127 (Trujillo Alto Substation 4) to bus 128 (Trujillo Alto Substation 5), 1.00 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 127,
+        "tbus": 128,
+        "gap_km": 0.996,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 174 (Maricao Substation 3) to bus 148 (Maricao Substation 2), 11.11 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 174,
+        "tbus": 148,
+        "gap_km": 11.108,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 90 (Caguas Substation 2) to bus 152 (Caguas Substation 5), 3.71 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 90,
+        "tbus": 152,
+        "gap_km": 3.713,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 103 (Subestaci\u00f3n Puerto Nuevo) to bus 107 (Subestaci\u00f3n San Fernando), 0.98 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 103,
+        "tbus": 107,
+        "gap_km": 0.976,
+        "voltage_compatible": true
+      }
+    },
+    {
+      "prompt": "Add a 115 kV line to join the 2-bus network \u2014 bus 172 (Isabela Substation 2) to bus 171 (Mora Substation_115kV), 1.92 km?  (y / skip):",
+      "answer": "y",
+      "context": {
+        "island_buses": 2,
+        "fbus": 172,
+        "tbus": 171,
+        "gap_km": 1.917,
+        "voltage_compatible": true
+      }
+    }
+  ]
+}

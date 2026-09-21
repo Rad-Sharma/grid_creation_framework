@@ -1,0 +1,254 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,fbus_dist_km,tbus_dist_km,f_crossborder,t_crossborder,length_km,voltage_V,osm_id
+214.0,212.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 184,El Tarter Substation 182,0.0098,0.0063,False,False,3.3326,,way/1390515244
+146.0,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 119,El Tarter Substation 159,0.0114,0.0102,False,False,56.5085,,way/998457092+way/1290670716
+126.0,191.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 100,El Tarter Substation 161,0.0128,0.0103,False,False,13.7968,,way/1290675104
+57.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 41,El Tarter Substation 33,0.0131,0.011,False,False,12.8597,,way/1237658625
+80.0,124.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 58,El Tarter Substation 98,0.009,0.0182,False,False,28.1551,150000,way/483089893
+83.0,72.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 60,El Tarter Substation 53,0.009,0.0185,False,False,23.1693,150000,way/497758646
+156.0,155.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 129,El Tarter Substation 128,0.009,0.0191,False,False,17.321,,way/1047740624
+197.0,198.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 167,El Tarter Substation 168,0.0176,0.0125,False,False,22.0875,,way/1120683373+way/1303510462
+199.0,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 169,El Tarter Substation 10,0.005,0.027,False,False,33.8348,,way/182128737
+166.0,165.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 139,El Tarter Substation 138,0.0049,0.0307,False,False,7.9024,,way/591474237
+208.0,171.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 178,El Tarter Substation 144,0.0319,0.0098,False,False,51.0233,,way/1375997392
+36.0,194.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 26,El Tarter Substation 164,0.0266,0.0186,False,False,24.6409,,way/531469664+way/1290698362
+26.0,144.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 18,El Tarter Substation 117,0.0328,0.0178,False,False,22.3083,,way/1290675105
+205.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 175,El Tarter Substation 34,0.0037,0.0471,False,False,0.401,,way/1352515904
+119.0,120.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 93,El Tarter Substation 94,0.0206,0.0344,False,False,8.4394,,way/626917814
+214.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 184,El Tarter Substation 11,0.0055,0.0498,False,False,17.6483,,way/1390515247
+93.0,115.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 69,El Tarter Substation 89,0.0493,0.0067,False,False,1.8565,,way/626917807
+120.0,99.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 94,El Tarter Substation 74,0.0344,0.0221,False,False,11.9519,,way/536969349
+93.0,114.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 69,El Tarter Substation 88,0.0351,0.022,False,False,32.0716,,way/626917795
+83.0,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 60,El Tarter Substation 42,0.0172,0.0402,False,False,8.6401,,way/497760362
+14.0,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,El Tarter Substation 14,0.0333,0.0242,False,False,23.8116,150000,way/217382063
+34.0,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 24,El Tarter Substation 28,0.0382,0.0195,False,False,36.9501,150000,way/202864597
+162.0,190.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 135,El Tarter Substation 160,0.0534,0.0063,False,False,50.9777,,way/816603544+way/1290672208
+206.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 176,El Tarter Substation 24,0.0152,0.049,False,False,18.4325,,way/1059983253+way/1290704117
+107.0,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 77_150kV,0.0167,0.0513,False,False,0.0766,150000,way/591450810
+48.0,146.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,El Tarter Substation 119,0.0552,0.0137,False,False,39.9942,,way/626722949+way/998457094
+148.0,159.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 121_150kV,El Tarter Substation 132,0.0571,0.0143,False,False,10.8876,150000,way/1074867871
+118.0,122.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 92,El Tarter Substation 96,0.0468,0.0252,False,False,23.0058,,way/624595883
+99.0,110.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 74,El Tarter Substation 84,0.0225,0.0506,False,False,6.0522,,way/536969346
+55.0,131.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 39_150kV,El Tarter Substation 105,0.0724,0.0009,False,False,5.9647,150000,way/429698220
+95.0,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 70_150kV,Subestación Francisco Veira_150kV,0.0431,0.0308,False,False,40.1728,150000,way/1227191399
+53.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 37,El Tarter Substation 34,0.0313,0.0434,False,False,109.4703,,way/300794121+way/480641060
+117.0,116.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 91,El Tarter Substation 90,0.0633,0.0116,False,False,7.0625,,way/626917801
+93.0,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 69,El Tarter Substation 32,0.0165,0.059,False,False,122.7798,150000,way/494560909
+5.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Bifurcación,El Tarter Substation 4,0.0519,0.0256,False,False,38.9177,150000,way/177189110
+180.0,215.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,UTE 2,Reductora UTE,0.0304,0.0487,False,False,9.709,,way/487762180
+35.0,193.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 25_150kV,El Tarter Substation 163,0.073,0.009,False,False,25.5662,150000,way/1290698358
+16.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 11,El Tarter Substation 99,0.0745,0.0097,False,False,29.2894,,way/627042399
+15.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 10,El Tarter Substation 11,0.036,0.0489,False,False,55.0962,150000,way/182129565
+130.0,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 104,El Tarter Substation 30,0.0312,0.0557,False,False,35.1774,150000,way/241168938
+169.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 142,Bifurcación,0.0149,0.0723,False,False,14.4967,,way/1468089792
+45.0,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 32,El Tarter Substation 28,0.0685,0.0191,False,False,32.7355,150000,way/239697646+way/1047740642
+36.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 26,El Tarter Substation 34,0.0536,0.0352,False,False,104.922,150000,way/376921908
+51.0,215.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 36,Reductora UTE,0.0333,0.0578,False,False,4.0709,,way/487762182
+8.0,215.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 4,Reductora UTE,0.0356,0.0559,False,False,36.8165,150000,way/183784021
+184.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 154,Bifurcación,0.0259,0.067,False,False,11.7955,,way/1267212349
+209.0,210.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 179,El Tarter Substation 180,0.0241,0.0746,False,False,44.0973,,way/1381135913
+104.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Dolores,El Tarter Substation 24,0.0712,0.04,False,False,37.0162,150000,way/660480675
+85.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 62,El Tarter Substation 13,0.0763,0.0398,False,False,11.7402,,way/180076097
+41.0,104.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 30,Dolores,0.0485,0.0712,False,False,36.3111,150000,way/200661288
+215.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Reductora UTE,El Tarter Substation 18,0.0652,0.0577,False,False,79.0386,150000,way/178743149+way/187354146
+5.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Bifurcación,El Tarter Substation 9,0.0297,0.1,False,False,57.3928,150000,way/177189109
+80.0,123.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 58,El Tarter Substation 97,0.0127,0.1199,False,False,33.5587,150000,way/483089884
+36.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 26,El Tarter Substation 181,0.0903,0.0428,False,False,24.3114,,way/1381262046
+14.0,217.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,El Tarter Substation 186,0.1377,0.0022,False,False,4.0307,,way/575993911
+41.0,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 30,El Tarter Substation 19,0.0287,0.112,False,False,90.3097,150000,way/186713671+way/190845498
+15.0,209.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 10,El Tarter Substation 179,0.1214,0.0258,False,False,53.4606,,way/1072364747+way/1381122434
+16.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 11,El Tarter Substation 183,0.143,0.0068,False,False,22.392,,way/1390515246
+40.0,195.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 29,El Tarter Substation 165,0.1448,0.0137,False,False,16.9679,,way/1267212334+way/1290701356
+12.0,56.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 7,El Tarter Substation 40,0.1391,0.0277,False,False,6.0982,,way/381398705
+12.0,85.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 7,El Tarter Substation 62,0.1226,0.1095,False,False,6.4147,,way/180076134+way/519102210
+14.0,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,Estacion 11,0.2104,0.027,False,False,9.5746,,way/575993910
+58.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 42,El Tarter Substation 51,0.1503,0.1084,False,False,73.8026,150000,way/662441087
+137.0,113.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 111,El Tarter Substation 87,0.1617,0.1524,False,False,0.1185,132000,way/670664420|way/670664421|way/670664423|way/670664424|way/670664425|way/670664426|way/670664427|way/670664432
+12.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 7,El Tarter Substation 6,0.1927,0.1299,False,False,19.4557,500000,way/180076119
+93.0,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 69,El Tarter Substation 109,0.0289,0.2954,False,False,25.1719,150000,way/626917793
+159.0,82.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 132,El Tarter Substation 59_150kV,0.107,0.2208,False,False,11.013,150000,way/1074867872
+198.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 168,El Tarter Substation 181,0.2977,0.0409,False,False,20.7038,,way/1381262045
+145.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 118,Melo HVDC,0.0703,0.2702,False,False,211.8684,150000,way/998457089+way/993454480+way/992780102+way/1229094285
+25.0,117.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 17,El Tarter Substation 91,0.292,0.0633,False,False,9.5525,,way/626917803
+99.0,121.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 74,El Tarter Substation 95,0.3519,0.0164,False,False,0.3851,,way/626917815
+99.0,121.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 74,El Tarter Substation 95,0.0175,0.3904,False,False,0.3619,,way/536969347|way/626917817
+163.0,136.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 136,El Tarter Substation 110,0.2705,0.2074,False,False,0.37,,way/924973499
+60.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 44,El Tarter Substation 8,0.4342,0.119,False,False,10.872,150000,way/667694924
+135.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 109,Estación 4018 Rincón de la Bolsa,0.2954,0.318,False,False,1.3981,150000,way/667700061
+186.0,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 156,Estación de Transmisión de Punta del Tigre_500kV,0.1947,0.4318,False,False,54.4696,500000,way/1270712115
+13.0,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 8,El Tarter Substation 157,0.0428,0.6161,False,False,0.1445,150000,way/667694922|way/667694923
+62.0,44.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 46,Convertidor Rivera,0.0276,0.7035,False,False,106.9969,150000,way/265654643
+60.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 44,Estación 4018 Rincón de la Bolsa,0.0786,0.6851,False,False,3.4237,150000,way/667694926
+136.0,163.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 110,El Tarter Substation 136,0.4123,0.4256,False,False,0.1494,,way/924973501|way/924973498
+135.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 109,Estación 4018 Rincón de la Bolsa,0.0017,1.1295,False,False,0.2973,150000,way/667700058
+45.0,136.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 32,El Tarter Substation 110,0.0857,1.0827,False,False,7.3317,150000,way/924418525
+14.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,El Tarter Substation 6,0.0416,1.1665,False,False,0.8058,150000,way/184698742|way/180076137|way/188168815|way/662892832|way/662895096|way/662895097
+85.0,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 62,Estacion 11,0.1095,1.1025,False,False,0.084,,way/1187977727|way/1187977726|way/1187977728|way/1187977729
+62.0,52.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 46,Reductora,0.0343,1.6935,False,False,59.2967,,way/1182045891
+135.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 109,Estación 4018 Rincón de la Bolsa,0.3817,1.4136,False,False,0.536,,way/667700059
+70.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo HVDC,El Tarter Substation 143,0.2922,1.6088,False,False,3.6851,150000,way/993454481
+81.0,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación 4018 Rincón de la Bolsa,El Tarter Substation 109,0.6851,1.2172,False,False,0.6545,,way/667700062
+166.0,165.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 139,El Tarter Substation 138,0.0235,1.9081,False,False,6.0718,,way/1182069847
+51.0,215.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 36,Reductora UTE,0.0069,1.9757,False,False,2.0761,,way/427808500
+69.0,207.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 51,El Tarter Substation 177,0.0133,2.0715,False,False,30.0826,,way/203194189+way/203194186
+27.0,154.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 19,El Tarter Substation 127,0.1153,1.9833,False,False,80.2184,500000,way/190845499
+122.0,111.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 96,El Tarter Substation 85,0.0252,2.0901,False,False,1.4271,,way/626917819
+81.0,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación 4018 Rincón de la Bolsa,El Tarter Substation 109,0.318,1.8623,False,False,0.4796,150000;?,way/667700063
+154.0,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 127,El Tarter Substation 19,2.1343,0.1091,False,False,77.69,500000,way/190857326
+69.0,207.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 51,El Tarter Substation 177,0.0633,2.2022,False,False,0.1405,150000,way/662441089|way/662441090
+170.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 143,Melo HVDC,1.9452,0.3341,False,False,3.7586,,way/1390784682
+154.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 127,El Tarter Substation 6,2.1395,0.1647,False,False,228.8217,500000,way/188168812
+104.0,130.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Dolores,El Tarter Substation 104,0.0373,2.4031,False,False,0.0731,150000,way/660480673|way/660480674
+22.0,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 15_150kV,El Tarter Substation 16_150kV,0.0447,2.6516,False,False,3.0578,150000,way/186713676
+136.0,163.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 110,El Tarter Substation 136,2.2387,0.5106,False,False,2.1872,,way/790234603+way/924973502
+187.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 157,El Tarter Substation 9,2.6622,0.1014,False,False,11.119,150000,way/180076096+way/180076136
+200.0,110.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 170,El Tarter Substation 84,2.7395,0.0388,False,False,7.013,150000,way/244134171
+200.0,110.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 170,El Tarter Substation 84,0.0301,2.7841,False,False,1.5189,,way/1309396894
+85.0,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 62,Estacion 11,0.0267,2.8067,False,False,3.6172,,way/519102208
+200.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 170,El Tarter Substation 8,2.819,0.0651,False,False,15.4836,150000,way/667694920
+11.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 6,El Tarter Substation 170,0.1204,2.9175,False,False,9.8145,500000,way/180076111
+172.0,173.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estacion 11,El Tarter Substation 145,0.0452,3.0561,False,False,3.1727,,way/640398731
+107.0,103.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 78,3.2898,0.0557,False,False,105.3639,150000,way/422481263
+21.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación No. 25,El Tarter Substation 9,3.3636,0.0467,False,False,5.281,150000,way/184698745
+87.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 64,El Tarter Substation 9,2.588,0.8461,False,False,6.9649,,way/184698741+way/354507046
+87.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 64,El Tarter Substation 9,3.494,0.1492,False,False,4.9456,,way/443701672
+171.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 144,El Tarter Substation 52_150kV,0.0091,3.6765,False,False,1.5933,150000,way/1375997389
+14.0,181.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,El Tarter Substation 151,0.1343,3.7471,False,False,14.5194,150000,way/662892831
+212.0,214.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 182,El Tarter Substation 184,0.0097,3.9515,False,False,0.6172,,way/1390515242
+154.0,112.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 127,El Tarter Substation 86,2.1744,1.8486,False,False,40.0519,150000,way/662429750
+170.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 143,Melo HVDC,0.0048,4.1139,False,False,1.5934,,way/1229094282
+213.0,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 183,El Tarter Substation 75,2.4533,1.7849,False,False,20.4699,,way/1023803577
+136.0,163.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 110,El Tarter Substation 136,1.9945,2.2901,False,False,0.2034,,way/924519608
+219.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 188,El Tarter Substation 13,1.4511,2.8655,False,False,1.7096,,way/1489503893
+60.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 44,Estación 4018 Rincón de la Bolsa,0.0572,4.2617,False,False,0.3943,150000,way/180076143
+60.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 44,Estación 4018 Rincón de la Bolsa,0.4342,3.8889,False,False,0.3977,150000,way/667694925
+218.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 187,Bifurcación,0.6302,3.8334,False,False,0.7463,,way/1468089791
+217.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 186,El Tarter Substation 170,1.8822,2.7612,False,False,4.4151,150000,way/180076139
+93.0,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 69,El Tarter Substation 17,0.0449,4.7641,False,False,6.8495,,way/626917806
+56.0,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 40,El Tarter Substation 55,2.3397,2.5382,False,False,0.3444,,way/797149625
+107.0,127.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 101,0.1732,4.7978,False,False,3.1436,150000,way/1047740641
+83.0,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 60,El Tarter Substation 21,5.083,0.0247,False,False,16.6591,,way/194821826
+165.0,62.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 138,El Tarter Substation 46,0.0079,5.339,False,False,2.4591,,way/1182045888+way/1182069845
+172.0,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estacion 11,El Tarter Substation 64,2.8067,2.588,False,False,0.3478,,way/1201169020|way/1201169021
+187.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 157,El Tarter Substation 8,2.6622,3.0624,False,False,0.1157,150000,way/579239660|way/579239661
+44.0,43.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,Subestación Rivera_150kV,2.0042,3.7482,False,False,1.6989,150000,way/1167768292
+41.0,131.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 30,El Tarter Substation 105,0.0503,5.7929,False,False,77.2251,150000,way/237321265
+103.0,131.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 78,El Tarter Substation 105,0.0366,5.8651,False,False,60.0216,150000,way/237321264
+216.0,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 185,El Tarter Substation 10,5.8936,0.0104,False,False,58.9485,150000,way/554576101+way/662904841
+27.0,216.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 19,El Tarter Substation 185,0.1621,5.9143,False,False,145.4632,500000,way/190845503
+113.0,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 87,El Tarter Substation 109,0.0643,6.1481,False,False,13.232,,way/508774214+way/670679148
+93.0,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 69,Estación de Transmisión de Punta del Tigre_500kV,0.0403,6.2718,False,False,13.041,500000,way/626917797
+165.0,62.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 138,El Tarter Substation 46,3.3259,3.0942,False,False,0.3808,,way/1483672971
+117.0,116.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 91,El Tarter Substation 90,0.0633,6.9936,False,False,0.0581,,way/626917800
+9.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 5_500kV,El Tarter Substation 5_150kV,4.1683,3.3655,False,False,0.8242,500000,way/442072254
+200.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 170,El Tarter Substation 2,2.8043,5.3493,False,False,25.1753,150000,way/662895100+way/662436619
+3.0,118.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 2,El Tarter Substation 92,0.101,8.219,False,False,3.7735,,way/205077266+way/626917811
+200.0,217.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 170,El Tarter Substation 186,2.786,5.5893,False,False,0.0932,150000,way/662895098|way/199941469|way/662895099|way/662895101
+58.0,83.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 42,El Tarter Substation 60,0.0361,8.3507,False,False,0.1154,150000,way/187598159|way/662441088
+160.0,103.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 133,El Tarter Substation 78,2.2854,6.1142,False,False,0.3872,,way/1079070568
+200.0,217.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 170,El Tarter Substation 186,2.8275,5.6287,False,False,0.1264,150000,way/180076138|way/667694921
+202.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 172,El Tarter Substation 2,8.853,0.0224,False,False,133.0721,150000,way/662431160+way/244134170
+140.0,202.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 114,El Tarter Substation 172,0.0287,8.9027,False,False,21.1037,150000,way/744554441
+137.0,128.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 111,El Tarter Substation 102,0.4029,8.7612,False,False,19.5391,500000,way/224812648
+6.0,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Carlos Substation_500kV,Subestación Francisco Veira_150kV,0.1543,9.1455,False,False,16.177,500000,way/178742371
+107.0,216.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 185,3.4073,5.9724,False,False,13.2228,150000,way/202463318
+145.0,62.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 118,El Tarter Substation 46,0.0764,9.3733,False,False,8.2657,150000,way/998457090
+19.0,119.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 14,El Tarter Substation 93,1.2731,8.5885,False,False,1.4058,,way/354504342
+25.0,117.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 17,El Tarter Substation 91,0.292,9.6631,False,False,0.2836,,way/626917802
+154.0,128.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 127,El Tarter Substation 102,2.1591,8.7588,False,False,204.8994,500000,way/184857389
+6.0,215.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Carlos Substation_500kV,Reductora UTE,4.7195,6.8167,False,False,5.8576,500000,way/1291625519
+128.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 102,El Tarter Substation 170,8.5626,2.9813,False,False,15.2266,500000,way/224812647
+182.0,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 152,El Tarter Substation 153,5.4744,6.0981,False,False,128.5525,150000,way/626917825+way/626917821
+112.0,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 86,El Tarter Substation 31_500kV,7.027,4.8071,False,False,31.7503,500000,way/432145535+way/431483766
+159.0,148.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 132,El Tarter Substation 121_150kV,6.0193,6.0199,False,False,0.5688,150000,way/795036295
+25.0,117.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 17,El Tarter Substation 91,4.7118,9.4562,False,False,5.9959,,way/626917804+way/626917805
+127.0,107.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 101,El Tarter Substation 81,6.7559,7.5953,False,False,8.2782,132000,way/389805829
+182.0,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 152,El Tarter Substation 153,5.5209,9.697,False,False,4.6139,150000,way/626917820
+36.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 26,,0.0512,,False,False,64.6811,150000,way/201054293
+,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 26,,0.0489,False,False,62.6454,150000,way/200977116
+154.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 127,,1.9195,,False,False,3.2163,500000,way/184857395
+,59.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 43,,0.0258,False,False,32.5848,150000,way/186843386
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,144.2615,150000,way/184239913
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,40.8152,,way/182958845
+64.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sub Estación UTE 2,,5.5296,,False,False,8.7953,150000,way/200633134
+,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 29,,0.0656,False,False,64.1258,150000,way/184239921
+12.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 7,,0.1971,,False,False,124.1754,500000,way/180076113
+216.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 185,,5.9185,,False,False,3.8082,500000,way/186421241
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,5.9815,150000,way/591456827
+113.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 87,,0.0165,,False,False,25.5337,150000,way/593969196
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0319,150000,way/591448093
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,9.058,,way/531299567
+,159.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 132,,9.1678,False,False,1.8406,,way/496740813
+,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 19,,0.1163,False,False,23.4737,500000,way/190845502
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,4.8443,150000,way/186713669
+44.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,,0.0811,,False,False,0.7376,150000,way/204188410
+44.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,,0.0844,,False,False,11.181,230000,way/221918266
+,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 29,,0.0537,False,False,55.3562,150000,way/201213387
+16.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 11,,0.0205,,False,False,91.1491,150000,way/257932974
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,11.582,150000,way/244146779
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,38.8598,150000,way/231405916
+58.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 42,,0.0305,,False,False,23.0557,150000,way/239697643
+,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Melo HVDC,,0.2333,False,False,283.3598,500000,way/376555076
+,103.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 78,,0.0413,False,False,34.3142,132000,way/261599785
+48.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,,0.0471,,False,False,56.3015,,way/273134449
+182.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 152,,5.5038,,False,False,31.1014,150000,way/310056967
+44.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,,0.1628,,False,False,144.6148,150000,way/805446863
+140.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 114,,0.2696,,False,False,0.1903,150000,way/744554439
+40.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 29,,0.0537,,False,False,64.1452,150000,way/667687808
+,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 32,,0.0666,False,False,25.443,150000,way/662395427
+,131.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 105,,5.8743,False,False,114.5579,150000,way/662886532
+123.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 97,,0.1199,,False,False,0.1038,150000,way/662886533
+,152.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 125,,3.7928,False,False,28.269,150000,way/662903155
+40.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 29,,0.0656,,False,False,55.2994,150000,way/667687807
+,123.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 97,,0.1199,False,False,19.4003,150000,way/626921290
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,23.5583,150000,way/579426095
+,140.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 114,,0.1246,False,False,26.7895,150000,way/578215072
+,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Melo HVDC,,0.351,False,False,65.1351,500000,way/536956450
+112.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 86,,3.5803,,False,False,3.8085,,way/626917785
+26.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 18,,0.0499,,False,False,39.209,150000,way/626722941
+182.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 152,,5.5386,,False,False,28.158,150000,way/955327346
+15.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 10,,4.0642,,False,False,4.2273,,way/1024002901
+90.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 66_150kV,,9.8759,,False,False,2.7163,150000,way/1024002897
+152.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 125,,0.0949,,False,False,4.6668,150000,way/1022397173
+39.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 28,,6.9327,,False,False,5.7095,150000,way/1022121453
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0767,150000,way/1022082412
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,1.4019,150000,way/995906959
+216.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 185,,5.8624,,False,False,6.2709,150000,way/1018873576
+70.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo HVDC,,0.2702,,False,False,23.9491,150000,way/993454482
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,2.0293,150000,way/995667160
+156.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 129,,0.1736,,False,False,0.168,,way/1087106585
+41.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 30,,0.1837,,False,False,3.5032,,way/1200028385
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.1472,150000,way/1047740631
+,202.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 172,,9.0109,False,False,45.3618,150000,way/1047740634
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.2135,,way/1072335602
+34.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 24,,0.0364,,False,False,15.0897,,way/1076061080
+,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 152,,5.4802,False,False,28.0212,150000,way/955327347
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,14.8515,150000,way/955327349
+,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 38_150kV,,0.0862,False,False,15.5474,150000,way/1395554244
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,11.4156,,way/1396101672
+17.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 12,,0.1411,,False,False,10.6521,,way/1267212355
+175.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 147,,0.0427,,False,False,0.3461,,way/1236622549
+194.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 164,,0.0205,,False,False,10.0551,,way/1290698360
+193.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 163,,0.0057,,False,False,48.9328,,way/1290698357
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,1.1841,,way/1306275458
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,4.6146,,way/1363447186
+140.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 114,,0.0059,,False,False,0.1218,150000,way/744554438|way/578215062|way/744554442
+202.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 172,,8.9812,,False,False,0.2366,150000,way/199941470|way/662431174
+154.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 127,,2.0786,,False,False,0.1149,150000,way/184857393|way/662429752
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0705,150000,way/655220222|way/655220223
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.1031,150000,way/662429747|way/662429749
+202.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 172,,8.952,,False,False,0.0689,150000,way/662429753|way/662429754|way/662431154|way/662431157
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.066,150000,way/662888670|way/662888671
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.1412,150000,way/662888672|way/662888673
+154.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 127,,1.9625,,False,False,6.7074,500000,way/184857394+way/184857392
+,62.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 46,,0.0299,False,False,137.1418,150000,way/184239928+way/232926451
+216.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 185,,5.8971,,False,False,2.6837,500000,way/180612084+way/180612085
+216.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 185,,5.8371,,False,False,2.4962,500000,way/180612086+way/180612087
+40.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 29,,0.0383,,False,False,0.0802,150000,way/667687806|way/667687809
+90.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 66_150kV,,0.1228,,False,False,0.1732,150000,way/995673295|way/995673296
+112.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 86,,2.0626,,False,False,0.4019,150000,way/200968025+way/244134168|way/244134169
+,202.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 172,,9.0031,False,False,96.683,150000,way/200968026+way/244134167
+59.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 43,,0.0233,,False,False,34.4282,150000,way/626722948+way/998457087
+,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 169,,7.5344,False,False,11.3425,,way/1024002899+way/1024002898
+,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 10,,0.0729,False,False,34.5905,,way/1072335596+way/1072335601
+40.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 29,,0.0741,,False,False,47.7007,,way/1267212339+way/1290701355
+204.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 174,,0.0388,,False,False,15.156,150000,way/1351687862+way/582266093
