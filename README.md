@@ -12,8 +12,7 @@ questions; solver convergence alone does not establish real-grid accuracy.
 Figures 2, 4 and 7 of the paper map onto `create_buses.py`, `create_lines.py` and
 `create_generators.py` respectively, and its Kenya case reproduces Table VII
 exactly. Follow [Pipeline Steps](#pipeline-steps) for a build intended to match
-the paper, and see [PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md) for the clause-by-clause
-mapping and the one outstanding calibration gap.
+the paper.
 
 The shared topology engine and the scenario/dispatch workflow in
 [MODEL_QUALITY.md](MODEL_QUALITY.md) are a separate, stricter track: they preserve
@@ -74,10 +73,9 @@ the box.** Choose the load-model path before starting the numbered pipeline:
 | `LOAD_MODEL_METHOD = "paper_huber"` (default) | Implemented manuscript equations; exact fitted calibration is unavailable | Measured VIIRS, normalized steel/gold facilities, fitted Huber artifact |
 | `LOAD_MODEL_METHOD = "legacy_ridge"` | Earlier exploratory approximation; not manuscript reproduction | Bundled `model_bundle_v5.pkl`; regional inputs and feature extraction still required |
 
-The default configuration now selects the manuscript Huber path. See
-[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md) for implemented equations, required
-measured inputs, and unresolved calibration details. The published slopes alone
-are insufficient to reconstruct the fitted model because its intercept is absent.
+The default configuration now selects the manuscript Huber path. The published
+slopes alone are insufficient to reconstruct the fitted model because its
+intercept is absent.
 The old Ridge approximation remains available through the explicit
 `LOAD_MODEL_METHOD = "legacy_ridge"` setting.
 
@@ -99,9 +97,8 @@ Replace `{region}` with the lowercase name set in `config.py` (e.g. `ghana`).
 ### 2. Load model and industrial features
 
 Paper mode requires `data/bus_data/models/model_huber_paper.json`, measured VIIRS
-radiance, and normalized steel/gold facility data described in
-[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md). These complete calibration inputs are
-not bundled. Missing inputs stop the paper path with a diagnostic.
+radiance, and normalized steel/gold facility data. These complete calibration
+inputs are not bundled. Missing inputs stop the paper path with a diagnostic.
 
 Legacy mode uses `data/bus_data/models/model_bundle_v5.pkl`, the earlier Ridge
 model, imputer and feature list.
@@ -163,8 +160,7 @@ python create_new_model/check_inputs.py
 It reports all missing local prerequisites together and exits with status 1 if
 any are absent. It does not validate file contents or guarantee a successful run.
 The default paper path will report missing inputs in a fresh checkout; supply
-them as described in [PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md), or explicitly
-choose the legacy approximation if that matches your purpose.
+them, or explicitly choose the legacy approximation if that matches your purpose.
 
 Then run the numbered scripts from the `create_new_model/` directory:
 
@@ -368,7 +364,7 @@ reproduces Table V exactly. `"global"` multiplies all three coefficients of a
 generator's curve by that fuel's global/US price ratio, which reference [48]'s
 heat-rate construction makes exact. Hydro and the zero-cost categories are never
 rescaled; internal combustion is rescaled but flagged approximate because [48]
-built it from ERCOT bids. See PAPER_ALIGNMENT.md for the derivation.
+built it from ERCOT bids.
 
 ---
 

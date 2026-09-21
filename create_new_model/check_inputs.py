@@ -22,7 +22,7 @@ def required_inputs(root, settings, stage="start"):
         required.append(("bus table from Steps 1–3", [
             data / "working_files" / region / f"matpower_{region}_buses.csv"]))
     if method == "paper_huber":
-        required.append(("fitted Huber artifact (PAPER_ALIGNMENT.md)", [models / settings.PAPER_HUBER_MODEL]))
+        required.append(("fitted Huber artifact (see README.md)", [models / settings.PAPER_HUBER_MODEL]))
         if stage != "5":
             required.extend([
                 ("measured VIIRS radiance", [raw / settings.VIIRS_RASTER_NAME]),
@@ -59,7 +59,7 @@ def main(argv=None):
             print(f"OK {purpose}: {found}")
     print("Availability check only: contents, calibration, network services and solver success are not validated.")
     if missing:
-        print(f"{missing} required input(s) missing. See README.md and PAPER_ALIGNMENT.md before proceeding.")
+        print(f"{missing} required input(s) missing. See README.md before proceeding.")
     return 1 if missing else 0
 
 
