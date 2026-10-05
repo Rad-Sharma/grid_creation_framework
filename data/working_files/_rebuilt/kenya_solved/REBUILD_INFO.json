@@ -1,0 +1,7 @@
+{
+  "region": "kenya",
+  "review_policy": "assisted",
+  "supersedes": "../kenya/ (built before the fragmentation, naming and load-allocation fixes)",
+  "assumptions": "COUNTRY_CAPACITY_MW = 3200 distributes 912 MW over the 30 plants OSM gives no capacity for, weighted by the median capacity of tagged plants on the same fuel. Those capacities are assumed, not measured; matpower_kenya_generators.csv flags them with capacity_assumed. LOAD_MODEL_METHOD=legacy_ridge. Everything else is pipeline default, including the +/-60 deg branch angle limit.",
+  "result": "138 buses, 170 branches (21 transformers), 75 generators, ONE island. DC and AC feasible. AC power flow converges (Vmin 1.034, Vmax 1.100, all buses in band, losses 159.3 MW). AC OPF solves. constrained_dispatch.py reports full_case_validated: true."
+}

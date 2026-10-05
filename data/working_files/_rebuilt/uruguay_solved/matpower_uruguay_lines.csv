@@ -1,0 +1,254 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,fbus_dist_km,tbus_dist_km,f_crossborder,t_crossborder,length_km,voltage_V,osm_id
+202.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tomas Gomensoro Substation 3,Bella Union Substation 1,0.0098,0.0063,False,False,3.3326,,way/1390515244
+138.0,178.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo Substation 3,Vichadero Substation 2,0.0114,0.0102,False,False,56.5085,,way/998457092+way/1290670716
+122.0,180.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rocha Substation 2,Rocha Substation 3,0.0128,0.0103,False,False,13.7968,,way/1290675104
+56.0,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Cardal Substation 1,Rodriguez Substation 1,0.0131,0.011,False,False,12.8597,,way/1237658625
+79.0,120.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sarandi del Yi Substation,Blanquillo Substation,0.009,0.0182,False,False,28.1551,150000,way/483089893
+82.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nueva Helvecia Substation,Juan L. Lacaze Substation,0.009,0.0185,False,False,23.1693,150000,way/497758646
+147.0,146.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Minas de Corrales Substation 2,Minas de Corrales Substation 1,0.009,0.0191,False,False,17.321,,way/1047740624
+186.0,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Lascano Substation,Jose Pedro Varela Substation 1,0.0176,0.0125,False,False,22.0875,,way/1120683373+way/1303510462
+188.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Constitucion Substation 2,Belen Substation,0.005,0.027,False,False,33.8348,,way/182128737
+156.0,155.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 4,Tacuarembo Substation 3,0.0049,0.0307,False,False,7.9024,,way/591474237
+23.0,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Enrique Martínez_150kV,Vergara Substation 2,0.0152,0.0258,False,False,32.5848,150000,way/186843386
+196.0,161.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Constitucion Substation 3,Salto Substation 7,0.0319,0.0098,False,False,51.0233,,way/1375997392
+81.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 2_150kV,Jose Batlle y Ordonez Substation 1_150kV,0.0345,0.0078,False,False,144.2615,150000,way/184239913
+134.0,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sarandi Grande Substation 3_150kV,Florida Substation 1_150kV,0.0267,0.0163,False,False,28.0212,150000,way/955327347
+35.0,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Sara Substation,Treinta y Tres Substation,0.0266,0.0186,False,False,24.6409,,way/531469664+way/1290698362
+25.0,136.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rocha Substation 1,La Paloma Substation,0.0328,0.0178,False,False,22.3083,,way/1290675105
+115.0,116.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Joaquin Suarez Substation,Sauce Substation,0.0206,0.0344,False,False,8.4394,,way/626917814
+202.0,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tomas Gomensoro Substation 3,Tomas Gomensoro Substation 1,0.0055,0.0498,False,False,17.6483,,way/1390515247
+92.0,111.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Libertad Substation 1,Libertad Substation 2,0.0493,0.0067,False,False,1.8565,,way/626917807
+116.0,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sauce Substation,Progreso Substation 1,0.0344,0.0221,False,False,11.9519,,way/536969349
+92.0,110.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Libertad Substation 1,San Jose de Mayo Substation 2,0.0351,0.022,False,False,32.0716,,way/626917795
+82.0,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nueva Helvecia Substation,Rosario Substation,0.0172,0.0402,False,False,8.6401,,way/497760362
+33.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Carmelo Substation 1,Carmelo Substation 2,0.0382,0.0195,False,False,36.9501,150000,way/202864597
+152.0,179.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Minas Substation 2,Mariscala Substation,0.0534,0.0063,False,False,50.9777,,way/816603544+way/1290672208
+66.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 1_150kV,Paso de los Toros Substation 2_150kV,0.0442,0.0161,False,False,38.8598,150000,way/231405916
+81.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 2_150kV,Tacuarembo Substation 1,0.032,0.0299,False,False,137.1418,150000,way/184239928+way/232926451
+61.0,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 1,Subestación Rivera_150kV,0.0276,0.0353,False,False,106.9969,150000,way/265654643
+194.0,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Carmelo Substation 4,Carmelo Substation 1,0.0152,0.049,False,False,18.4325,,way/1059983253+way/1290704117
+35.0,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Sara Substation,Enrique Martínez_150kV,0.0512,0.0147,False,False,64.6811,150000,way/201054293
+21.0,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Fray Bentos Substation 1_150kV,Fray Bentos Substation 2_150kV,0.0415,0.0251,False,False,4.8443,150000,way/186713669
+15.0,60.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tomas Gomensoro Substation 1,Artigas Substation 1_150kV,0.0205,0.047,False,False,91.1491,150000,way/257932974
+144.0,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 5_150kV,Paso de los Toros Substation 3_150kV,0.0177,0.0507,False,False,4.6668,150000,way/1022397173
+47.0,138.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo Substation 1,Melo Substation 3,0.0552,0.0137,False,False,39.9942,,way/626722949+way/998457094
+91.0,134.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sarandi Grande Substation 1_150kV,Sarandi Grande Substation 3_150kV,0.0581,0.0126,False,False,14.8515,150000,way/955327349
+140.0,149.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 4_150kV,Paso de los Toros Substation 6,0.0571,0.0143,False,False,10.8876,150000,way/1074867871
+114.0,118.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Canelones Substation 1,Las Piedras Substation 2,0.0468,0.0252,False,False,23.0058,,way/624595883
+98.0,108.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Progreso Substation 1,Las Piedras Substation 1,0.0225,0.0506,False,False,6.0522,,way/536969346
+54.0,127.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 3_150kV,Young Substation 4,0.0724,0.0009,False,False,5.9647,150000,way/429698220
+81.0,140.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 2_150kV,Paso de los Toros Substation 4_150kV,0.0451,0.0285,False,False,1.4019,150000,way/995906959
+94.0,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Minas Substation 1_150kV,Subestación Francisco Veira_150kV,0.0431,0.0308,False,False,40.1728,150000,way/1227191399
+140.0,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 4_150kV,Paso de los Toros Substation 3_150kV,0.0214,0.0529,False,False,28.269,150000,way/662903155
+52.0,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Vichadero Substation 1,Melo Substation 1,0.0313,0.0434,False,False,109.4703,,way/300794121+way/480641060
+113.0,112.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rafael Perazza Substation 2,Rafael Perazza Substation 1,0.0633,0.0116,False,False,7.0625,,way/626917801
+102.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paysandu Substation 1,Young Substation 3_150kV,0.0366,0.0387,False,False,60.0216,150000,way/237321264
+92.0,44.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Libertad Substation 1,Colonia del Sacramento Substation 1,0.0165,0.059,False,False,122.7798,150000,way/494560909
+57.0,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rosario Substation,Tarariras Substation_150kV,0.0305,0.0455,False,False,23.0557,150000,way/239697643
+5.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Bifurcación,Pan de Azucar Substation,0.0519,0.0256,False,False,38.9177,150000,way/177189110
+169.0,203.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,UTE 2,Reductora UTE,0.0304,0.0487,False,False,9.709,,way/487762180
+34.0,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jose Batlle y Ordonez Substation 1_150kV,Jose Batlle y Ordonez Substation 2,0.073,0.009,False,False,25.5662,150000,way/1290698358
+15.0,121.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tomas Gomensoro Substation 1,Baltasar Brum Substation 1,0.0745,0.0097,False,False,29.2894,,way/627042399
+14.0,15.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Belen Substation,Tomas Gomensoro Substation 1,0.036,0.0489,False,False,55.0962,150000,way/182129565
+2.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 1_150kV,Belen Substation,0.0748,0.0104,False,False,58.9485,150000,way/554576101+way/662904841
+53.0,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Florida Substation 1_150kV,Florida Substation 2_150kV,0.0375,0.0493,False,False,4.6139,150000,way/626917820
+126.0,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Dolores Substation,Mercedes Substation,0.0312,0.0557,False,False,35.1774,150000,way/241168938
+159.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Solis de Mataojo Substation 1,Bifurcación,0.0149,0.0723,False,False,14.4967,,way/1468089792
+140.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 4_150kV,Young Substation 3_150kV,0.0272,0.0604,False,False,114.5579,150000,way/662886532
+44.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia del Sacramento Substation 1,Carmelo Substation 2,0.0685,0.0191,False,False,32.7355,150000,way/239697646+way/1047740642
+35.0,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Sara Substation,Melo Substation 1,0.0536,0.0352,False,False,104.922,150000,way/376921908
+134.0,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sarandi Grande Substation 3_150kV,Durazno Substation 1,0.0352,0.0537,False,False,55.3562,150000,way/201213387
+93.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Francisco Veira_150kV,San Carlos Substation 1_150kV,0.0112,0.0787,False,False,23.5583,150000,way/579426095
+50.0,203.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Punta del Este Substation 2,Reductora UTE,0.0333,0.0578,False,False,4.0709,,way/487762182
+8.0,203.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Pan de Azucar Substation,Reductora UTE,0.0356,0.0559,False,False,36.8165,150000,way/183784021
+40.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mercedes Substation,Young Substation 3_150kV,0.0503,0.0414,False,False,77.2251,150000,way/237321265
+53.0,134.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Florida Substation 1_150kV,Sarandi Grande Substation 3_150kV,0.0673,0.0249,False,False,28.158,150000,way/955327346
+173.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Las Toscas Substation,Bifurcación,0.0259,0.067,False,False,11.7955,,way/1267212349
+100.0,88.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sarandi Grande Substation 2_150kV,Estación Cerro Colorado_150kV,0.0563,0.0396,False,False,26.7895,150000,way/578215072
+34.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jose Batlle y Ordonez Substation 1_150kV,Villa Sara Substation,0.0485,0.0489,False,False,62.6454,150000,way/200977116
+197.0,198.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Baltasar Brum Substation 2,Artigas Substation 3,0.0241,0.0746,False,False,44.0973,,way/1381135913
+101.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 3_150kV,Salto Substation 2_150kV,0.0306,0.069,False,False,3.1436,150000,way/1047740641
+39.0,134.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Durazno Substation 1,Sarandi Grande Substation 3_150kV,0.0656,0.042,False,False,55.2994,150000,way/667687807
+103.0,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Dolores,Carmelo Substation 1,0.0712,0.04,False,False,37.0162,150000,way/660480675
+84.0,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia Nicolich Substation 2,Colonia Nicolich Substation 1,0.0763,0.0398,False,False,11.7402,,way/180076097
+70.0,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 2_150kV,Paysandu Substation 1,0.0615,0.0557,False,False,105.3639,150000,way/422481263
+40.0,103.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mercedes Substation,Dolores,0.0485,0.0712,False,False,36.3111,150000,way/200661288
+203.0,25.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Reductora UTE,Rocha Substation 1,0.0652,0.0577,False,False,79.0386,150000,way/178743149+way/187354146
+43.0,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,Subestación Rivera_150kV,0.0811,0.0452,False,False,0.7376,150000,way/204188410
+46.0,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación de Transmisión de Punta del Tigre_500kV,Brujas 500kV_500kV,0.0443,0.0882,False,False,19.5391,500000,way/224812648
+79.0,119.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sarandi del Yi Substation,Santa Clara de Olimar Substation,0.0127,0.1199,False,False,33.5587,150000,way/483089884
+35.0,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Sara Substation,Jose Pedro Varela Substation 2,0.0903,0.0428,False,False,24.3114,,way/1381262046
+40.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mercedes Substation,San Javier Substation,0.0287,0.112,False,False,90.3097,150000,way/186713671+way/190845498
+14.0,197.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Belen Substation,Baltasar Brum Substation 2,0.1214,0.0258,False,False,53.4606,,way/1072364747+way/1381122434
+15.0,201.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tomas Gomensoro Substation 1,Bella Union Substation 2,0.143,0.0068,False,False,22.392,,way/1390515246
+88.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación Cerro Colorado_150kV,Estación Trinidad_150kV,0.0897,0.0618,False,False,21.1037,150000,way/744554441
+87.0,44.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tarariras Substation_150kV,Colonia del Sacramento Substation 1,0.0879,0.0666,False,False,25.443,150000,way/662395427
+25.0,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rocha Substation 1,Aigua Substation_150kV,0.0499,0.1062,False,False,39.209,150000,way/626722941
+34.0,119.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jose Batlle y Ordonez Substation 1_150kV,Santa Clara de Olimar Substation,0.0366,0.1199,False,False,19.4003,150000,way/626921290
+39.0,184.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Durazno Substation 1,Santa Bernardina Substation,0.1448,0.0137,False,False,16.9679,,way/1267212334+way/1290701356
+70.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 2_150kV,Salto Substation 1_150kV,0.0565,0.1077,False,False,13.2228,150000,way/202463318
+2.0,105.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 1_150kV,Salto Substation 4_150kV,0.1345,0.0321,False,False,6.2709,150000,way/1018873576
+12.0,55.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de Carrasco Substation 1,Paso de Carrasco Substation 2,0.1391,0.0277,False,False,6.0982,,way/381398705
+66.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 1_150kV,Estación Trinidad_150kV,0.1269,0.0626,False,False,96.683,150000,way/200968026+way/244134167
+11.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 2,La Paz Substation 6,0.1933,0.0022,False,False,4.0307,,way/575993911
+10.0,108.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 1_150kV,Las Piedras Substation 1,0.1679,0.0388,False,False,7.013,150000,way/244134171
+43.0,60.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,Artigas Substation 1_150kV,0.1628,0.0441,False,False,144.6148,150000,way/805446863
+27.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 1_500kV,San Javier Substation,0.0996,0.1091,False,False,77.69,500000,way/190857326
+12.0,84.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de Carrasco Substation 1,Colonia Nicolich Substation 2,0.1226,0.1095,False,False,6.4147,,way/180076134+way/519102210
+81.0,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 2_150kV,Durazno Substation 1,0.17,0.0656,False,False,64.1258,150000,way/184239921
+39.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Durazno Substation 1,Paso de los Toros Substation 2_150kV,0.0537,0.1923,False,False,64.1452,150000,way/667687808
+27.0,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 1_500kV,Brujas 500kV_500kV,0.1407,0.116,False,False,204.8994,500000,way/184857389
+26.0,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Javier Substation,Young Substation 1_500kV,0.1153,0.1424,False,False,80.2184,500000,way/190845499
+57.0,68.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rosario Substation,Rodriguez Substation 2,0.1503,0.1084,False,False,73.8026,150000,way/662441087
+37.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación Trinidad_150kV,Aguas Corrientes Substation,0.2426,0.0224,False,False,133.0721,150000,way/662431160+way/244134170
+26.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Javier Substation,Salto Substation 1_500kV,0.1621,0.1032,False,False,145.4632,500000,way/190845503
+10.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 1_150kV,Montevideo Substation 2,0.2233,0.0651,False,False,15.4836,150000,way/667694920
+148.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Trinidad Substation 2_150kV,Estación Trinidad_150kV,0.1776,0.1116,False,False,45.3618,150000,way/1047740634
+27.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 1_500kV,La Paz Substation 2,0.1393,0.1647,False,False,228.8217,500000,way/188168812
+11.0,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 2,La Paz Substation 1_500kV,0.1204,0.1846,False,False,9.8145,500000,way/180076111
+69.0,142.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo HVDC,Melo Substation 4_150kV,0.2702,0.0366,False,False,23.9491,150000,way/993454482
+12.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de Carrasco Substation 1,La Paz Substation 2,0.1927,0.1299,False,False,19.4557,500000,way/180076119
+92.0,130.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Libertad Substation 1,Delta del Tigre Substation,0.0289,0.2954,False,False,25.1719,150000,way/626917793
+149.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 6,Paso de los Toros Substation 2_150kV,0.107,0.2208,False,False,11.013,150000,way/1074867872
+193.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Carlos Substation 2,San Carlos Substation 1_150kV,0.0388,0.2979,False,False,15.156,150000,way/1351687862+way/582266093
+187.0,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jose Pedro Varela Substation 1,Jose Pedro Varela Substation 2,0.2977,0.0409,False,False,20.7038,,way/1381262045
+137.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 2,Melo HVDC,0.0703,0.2702,False,False,211.8684,150000,way/998457089+way/993454480+way/992780102+way/1229094285
+11.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 2,Pando Substation 1,0.3238,0.0242,False,False,23.8116,150000,way/217382063
+24.0,113.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Puntas de Valdez Substation 1,Rafael Perazza Substation 2,0.292,0.0633,False,False,9.5525,,way/626917803
+32.0,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Brujas 500kV_500kV,La Paz Substation 1_500kV,0.1241,0.2342,False,False,15.2266,500000,way/224812647
+98.0,117.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Progreso Substation 1,Progreso Substation 2,0.3519,0.0164,False,False,0.3851,,way/626917815
+12.0,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de Carrasco Substation 1,San Carlos Substation 1_500kV,0.1971,0.182,False,False,124.1754,500000,way/180076113
+6.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Carlos Substation 1_500kV,Melo HVDC,0.1717,0.2333,False,False,283.3598,500000,way/376555076
+98.0,117.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Progreso Substation 1,Progreso Substation 2,0.0175,0.3904,False,False,0.3619,,way/536969347|way/626917817
+19.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Norte 150kV_150kV,La Paz Substation 2,0.0743,0.3616,False,False,5.281,150000,way/184698745
+5.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Bifurcación,La Paz Substation 2,0.0297,0.4216,False,False,57.3928,150000,way/177189109
+153.0,131.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia del Sacramento Substation 4,Colonia del Sacramento Substation 2,0.2705,0.2074,False,False,0.37,,way/924973499
+128.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 3_150kV,La Paz Substation 2,0.1113,0.3771,False,False,11.119,150000,way/180076096+way/180076136
+11.0,162.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 2,Estacion 11,0.4946,0.027,False,False,9.5746,,way/575993910
+59.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Santiago Vazquez Substation,Montevideo Substation 2,0.4342,0.119,False,False,10.872,150000,way/667694924
+130.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Delta del Tigre Substation,Estación 4018 Rincón de la Bolsa,0.2954,0.318,False,False,1.3981,150000,way/667700061
+175.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Cardal Substation 2,Estación de Transmisión de Punta del Tigre_500kV,0.1947,0.4318,False,False,54.4696,500000,way/1270712115
+27.0,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 1_500kV,Young Substation 2_500kV,0.1229,0.5189,False,False,3.2163,500000,way/184857395
+13.0,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Montevideo Substation 2,La Paz Substation 4,0.0428,0.6161,False,False,0.1445,150000,way/667694922|way/667694923
+59.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Santiago Vazquez Substation,Estación 4018 Rincón de la Bolsa,0.0786,0.6851,False,False,3.4237,150000,way/667694926
+131.0,153.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia del Sacramento Substation 2,Colonia del Sacramento Substation 4,0.4123,0.4256,False,False,0.1494,,way/924973501|way/924973498
+130.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Delta del Tigre Substation,Estación 4018 Rincón de la Bolsa,0.0017,1.1295,False,False,0.2973,150000,way/667700058
+44.0,131.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia del Sacramento Substation 1,Colonia del Sacramento Substation 2,0.0857,1.0827,False,False,7.3317,150000,way/924418525
+84.0,162.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia Nicolich Substation 2,Estacion 11,0.1095,1.1025,False,False,0.084,,way/1187977727|way/1187977726|way/1187977728|way/1187977729
+140.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 4_150kV,Paso de los Toros Substation 2_150kV,0.0981,1.3946,False,False,0.0767,150000,way/1022082412
+61.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 1,Reductora,0.0343,1.6935,False,False,59.2967,,way/1182045891
+130.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Delta del Tigre Substation,Estación 4018 Rincón de la Bolsa,0.3817,1.4136,False,False,0.536,,way/667700059
+69.0,160.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo HVDC,Melo Substation 5,0.2922,1.6088,False,False,3.6851,150000,way/993454481
+80.0,130.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación 4018 Rincón de la Bolsa,Delta del Tigre Substation,0.6851,1.2172,False,False,0.6545,,way/667700062
+156.0,155.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 4,Tacuarembo Substation 3,0.0235,1.9081,False,False,6.0718,,way/1182069847
+50.0,203.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Punta del Este Substation 2,Reductora UTE,0.0069,1.9757,False,False,2.0761,,way/427808500
+27.0,145.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 1_500kV,Young Substation 5,0.1144,1.943,False,False,6.7074,500000,way/184857394+way/184857392
+68.0,195.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rodriguez Substation 2,Rodriguez Substation 3,0.0133,2.0715,False,False,30.0826,,way/203194189+way/203194186
+101.0,139.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 3_150kV,Salto Substation 6,0.1276,1.978,False,False,0.0766,150000,way/591450810
+28.0,109.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 1_150kV,Trinidad Substation 1,0.2572,1.8486,False,False,40.0519,150000,way/662429750
+204.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 6,La Paz Substation 1_150kV,1.8822,0.239,False,False,4.4151,150000,way/180076139
+118.0,108.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Las Piedras Substation 2,Las Piedras Substation 1,0.0252,2.1185,False,False,1.4271,,way/626917819
+80.0,130.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación 4018 Rincón de la Bolsa,Delta del Tigre Substation,0.318,1.8623,False,False,0.4796,150000;?,way/667700063
+68.0,195.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rodriguez Substation 2,Rodriguez Substation 3,0.0633,2.2022,False,False,0.1405,150000,way/662441089|way/662441090
+160.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo Substation 5,Melo HVDC,1.9452,0.3341,False,False,3.7586,,way/1390784682
+28.0,145.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Young Substation 1_150kV,Young Substation 5,0.1563,2.1744,False,False,0.1149,150000,way/184857393|way/662429752
+103.0,126.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Dolores,Dolores Substation,0.0373,2.4031,False,False,0.0731,150000,way/660480673|way/660480674
+128.0,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 3_150kV,La Paz Substation 4,0.1113,2.5763,False,False,0.1157,150000,way/579239660|way/579239661
+21.0,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Fray Bentos Substation 1_150kV,Fray Bentos Substation 2_150kV,0.0447,2.6516,False,False,3.0578,150000,way/186713676
+131.0,153.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia del Sacramento Substation 2,Colonia del Sacramento Substation 4,2.2387,0.5106,False,False,2.1872,,way/790234603+way/924973502
+189.0,108.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 5,Las Piedras Substation 1,0.0301,2.7841,False,False,1.5189,,way/1309396894
+84.0,162.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia Nicolich Substation 2,Estacion 11,0.0267,2.8067,False,False,3.6172,,way/519102208
+10.0,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 1_150kV,La Paz Substation 5,0.1519,2.7612,False,False,0.0932,150000,way/662895098|way/199941469|way/662895099|way/662895101
+10.0,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 1_150kV,La Paz Substation 5,0.1055,2.819,False,False,0.1264,150000,way/180076138|way/667694921
+162.0,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estacion 11,Toledo Substation,0.0452,3.2587,False,False,3.1727,,way/640398731
+21.0,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Fray Bentos Substation 1_150kV,Fray Bentos Substation 2_150kV,0.0268,3.5682,False,False,0.0705,150000,way/655220222|way/655220223
+53.0,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Florida Substation 1_150kV,Florida Substation 2_150kV,0.0182,3.5798,False,False,128.5525,150000,way/626917825+way/626917821
+161.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 7,Salto Substation 2_150kV,0.0091,3.6765,False,False,1.5933,150000,way/1375997389
+86.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Toledo Substation,La Paz Substation 2,2.588,1.1665,False,False,6.9649,,way/184698741+way/354507046
+11.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 2,Progreso Substation 4,0.1985,3.7471,False,False,14.5194,150000,way/662892831
+86.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Toledo Substation,La Paz Substation 2,3.494,0.4586,False,False,4.9456,,way/443701672
+200.0,202.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Bella Union Substation 1,Tomas Gomensoro Substation 3,0.0097,3.9515,False,False,0.6172,,way/1390515242
+160.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo Substation 5,Melo HVDC,0.0048,4.1139,False,False,1.5934,,way/1229094282
+201.0,99.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Bella Union Substation 2,Tomas Gomensoro Substation 2,2.4533,1.7849,False,False,20.4699,,way/1023803577
+131.0,153.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia del Sacramento Substation 2,Colonia del Sacramento Substation 4,1.9945,2.2901,False,False,0.2034,,way/924519608
+206.0,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Pando Substation 2,Colonia Nicolich Substation 1,1.4511,2.8655,False,False,1.7096,,way/1489503893
+59.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Santiago Vazquez Substation,Estación 4018 Rincón de la Bolsa,0.0572,4.2617,False,False,0.3943,150000,way/180076143
+59.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Santiago Vazquez Substation,Estación 4018 Rincón de la Bolsa,0.4342,3.8889,False,False,0.3977,150000,way/667694925
+205.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Solis de Mataojo Substation 2,Bifurcación,0.6302,3.8334,False,False,0.7463,,way/1468089791
+11.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 2,La Paz Substation 6,0.3723,4.383,False,False,0.8058,150000,way/184698742|way/180076137|way/188168815|way/662892832|way/662895096|way/662895097
+92.0,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Libertad Substation 1,Puntas de Valdez Substation 1,0.0449,4.7641,False,False,6.8495,,way/626917806
+55.0,75.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de Carrasco Substation 2,Paso de Carrasco Substation 3,2.3397,2.5382,False,False,0.3444,,way/797149625
+82.0,29.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nueva Helvecia Substation,Ecilda Paullier Substation,5.083,0.0247,False,False,16.6591,,way/194821826
+141.0,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Colonia del Sacramento Substation 3_150kV,Carmelo Substation 2,0.0312,5.099,False,False,5.7095,150000,way/1022121453
+155.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 3,Tacuarembo Substation 1,0.0079,5.339,False,False,2.4591,,way/1182045888+way/1182069845
+162.0,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estacion 11,Toledo Substation,2.8067,2.588,False,False,0.3478,,way/1201169020|way/1201169021
+10.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 1_150kV,Aguas Corrientes Substation,0.0881,5.3493,False,False,25.1753,150000,way/662895100+way/662436619
+63.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sub Estación UTE 2,San Carlos Substation 1_150kV,5.5296,0.1169,False,False,8.7953,150000,way/200633134
+43.0,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,Subestación Rivera_150kV,2.0042,3.7482,False,False,1.6989,150000,way/1167768292
+47.0,160.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo Substation 1,Melo Substation 5,0.4313,5.6345,False,False,0.401,,way/1352515904
+92.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Libertad Substation 1,Estación de Transmisión de Punta del Tigre_500kV,0.0403,6.2718,False,False,13.041,500000,way/626917797
+155.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 3,Tacuarembo Substation 1,3.3259,3.0942,False,False,0.3808,,way/1483672971
+46.0,130.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación de Transmisión de Punta del Tigre_500kV,Delta del Tigre Substation,0.3932,6.1481,False,False,13.232,500000,way/508774214+way/670679148
+113.0,112.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rafael Perazza Substation 2,Rafael Perazza Substation 1,0.0633,6.9936,False,False,0.0581,,way/626917800
+9.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,La Paz Substation 1_500kV,La Paz Substation 1_150kV,4.1683,3.3655,False,False,0.8242,500000,way/442072254
+3.0,114.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Aguas Corrientes Substation,Canelones Substation 1,0.101,8.219,False,False,3.7735,,way/205077266+way/626917811
+57.0,82.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Rosario Substation,Nueva Helvecia Substation,0.0361,8.3507,False,False,0.1154,150000,way/187598159|way/662441088
+150.0,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paysandu Substation 2,Paysandu Substation 1,2.2854,6.1142,False,False,0.3872,,way/1079070568
+37.0,191.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación Trinidad_150kV,Trinidad Substation 3,0.034,8.853,False,False,0.2366,150000,way/199941470|way/662431174
+37.0,191.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación Trinidad_150kV,Trinidad Substation 3,0.0048,9.0031,False,False,0.0689,150000,way/662429753|way/662429754|way/662431154|way/662431157
+6.0,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Carlos Substation 1_500kV,Subestación Francisco Veira_150kV,0.1543,9.1455,False,False,16.177,500000,way/178742371
+137.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Tacuarembo Substation 2,Tacuarembo Substation 1,0.0764,9.3733,False,False,8.2657,150000,way/998457090
+18.0,115.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Pando Substation 1,Joaquin Suarez Substation,1.2731,8.5885,False,False,1.4058,,way/354504342
+22.0,21.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Fray Bentos Substation 2_150kV,Fray Bentos Substation 1_150kV,9.8148,0.0971,False,False,11.582,150000,way/244146779
+24.0,113.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Puntas de Valdez Substation 1,Rafael Perazza Substation 2,0.292,9.6631,False,False,0.2836,,way/626917802
+6.0,203.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Carlos Substation 1_500kV,Reductora UTE,4.7195,6.8167,False,False,5.8576,500000,way/1291625519
+109.0,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Trinidad Substation 1,Young Substation 2_500kV,7.027,4.8071,False,False,31.7503,500000,way/432145535+way/431483766
+149.0,140.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 6,Paso de los Toros Substation 4_150kV,6.0193,6.0199,False,False,0.5688,150000,way/795036295
+24.0,113.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Puntas de Valdez Substation 1,Rafael Perazza Substation 2,4.7118,9.4562,False,False,5.9959,,way/626917804+way/626917805
+123.0,139.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 5,Salto Substation 6,6.7559,8.7181,False,False,8.2782,132000,way/389805829
+,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Paysandu Substation 1,,0.0413,False,False,34.3142,132000,way/261599785
+88.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación Cerro Colorado_150kV,,0.1722,,False,False,0.1903,150000,way/744554439
+119.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Santa Clara de Olimar Substation,,0.1199,,False,False,0.1038,150000,way/662886533
+,149.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Paso de los Toros Substation 6,,9.1678,False,False,1.8406,,way/496740813
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,9.058,,way/531299567
+104.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Artigas Substation 2_150kV,,0.0919,,False,False,0.0319,150000,way/591448093
+109.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Trinidad Substation 1,,3.5803,,False,False,3.8085,,way/626917785
+89.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Constitucion Substation 1_150kV,,0.1228,,False,False,5.9815,150000,way/591456827
+,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Puntas de Valdez Substation 2_150kV,,0.0613,False,False,25.5337,150000,way/593969196
+,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Melo HVDC,,0.351,False,False,65.1351,500000,way/536956450
+,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,San Javier Substation,,0.1163,False,False,23.4737,500000,way/190845502
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,40.8152,,way/182958845
+1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 1_500kV,,0.0631,,False,False,3.8082,500000,way/186421241
+43.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Convertidor Rivera,,0.0844,,False,False,11.181,230000,way/221918266
+47.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo Substation 1,,0.0471,,False,False,56.3015,,way/273134449
+53.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Florida Substation 1_150kV,,0.0183,,False,False,31.1014,150000,way/310056967
+40.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mercedes Substation,,0.1837,,False,False,3.5032,,way/1200028385
+,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Florida Substation 1_150kV,,0.0862,False,False,15.5474,150000,way/1395554244
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,11.4156,,way/1396101672
+16.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Ramon Substation,,0.1411,,False,False,10.6521,,way/1267212355
+164.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Cardona Substation 2,,0.0427,,False,False,0.3461,,way/1236622549
+183.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Treinta y Tres Substation,,0.0205,,False,False,10.0551,,way/1290698360
+182.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jose Batlle y Ordonez Substation 2,,0.0057,,False,False,48.9328,,way/1290698357
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,1.1841,,way/1306275458
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,4.6146,,way/1363447186
+89.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Constitucion Substation 1_150kV,,9.8759,,False,False,2.7163,150000,way/1024002897
+107.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Melo Substation 2_150kV,,0.1274,,False,False,2.0293,150000,way/995667160
+14.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Belen Substation,,4.0642,,False,False,4.2273,,way/1024002901
+94.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Minas Substation 1_150kV,,0.0712,,False,False,0.1472,150000,way/1047740631
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.2135,,way/1072335602
+33.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Carmelo Substation 1,,0.0364,,False,False,15.0897,,way/1076061080
+147.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Minas de Corrales Substation 2,,0.1736,,False,False,0.168,,way/1087106585
+88.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Estación Cerro Colorado_150kV,,0.1032,,False,False,0.1218,150000,way/744554438|way/578215062|way/744554442
+1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 1_500kV,,0.1446,,False,False,2.6837,500000,way/180612084+way/180612085
+1.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Salto Substation 1_500kV,,0.1434,,False,False,2.4962,500000,way/180612086+way/180612087
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.1185,132000,way/670664420|way/670664421|way/670664422|way/670664423|way/670664424|way/670664425|way/670664426|way/670664427|way/670664428|way/670664432
+89.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Villa Constitucion Substation 1_150kV,,0.1228,,False,False,0.1732,150000,way/995673295|way/995673296
+39.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Durazno Substation 1,,0.0383,,False,False,0.0802,150000,way/667687806|way/667687809
+66.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Paso de los Toros Substation 1_150kV,,0.0592,,False,False,0.1031,150000,way/662429747|way/662429749
+96.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Aigua Substation_150kV,,0.0414,,False,False,0.066,150000,way/662888670|way/662888671
+7.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,San Carlos Substation 1_150kV,,0.1579,,False,False,0.1412,150000,way/662888672|way/662888673
+58.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Vergara Substation 2,,0.0233,,False,False,34.4282,150000,way/626722948+way/998457087
+109.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Trinidad Substation 1,,2.0626,,False,False,0.4019,150000,way/200968025+way/244134168|way/244134169
+,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Belen Substation,,0.0729,False,False,34.5905,,way/1072335596+way/1072335601
+,188.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Villa Constitucion Substation 2,,7.5344,False,False,11.3425,,way/1024002899+way/1024002898
+39.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Durazno Substation 1,,0.0741,,False,False,47.7007,,way/1267212339+way/1290701355

@@ -1,0 +1,149 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,fbus_dist_km,tbus_dist_km,f_crossborder,t_crossborder,length_km,voltage_V,osm_id
+64.0,62.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kakamega substation_132kV,Mumias Sugar's Rang'ala Power Substation,0.0269,0.0206,False,False,31.5948,132000,way/579549263
+51.0,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Gazi Substation,Galu,0.0121,0.0386,False,False,13.967,132000,way/578818098
+78.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Garissa substation_132kV,Garissa Substation,0.032,0.0207,False,False,5.3845,132000,way/696704119
+195.0,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sultan Ketraco Substation,Makueni Substation 3,0.0273,0.0297,False,False,41.5483,,way/1367158358
+195.0,130.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sultan Ketraco Substation,Wote Power Sub station,0.0317,0.028,False,False,41.3381,132000,way/1361233331
+79.0,212.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chuka Substation 2,Chuka Substation 4,0.0326,0.0293,False,False,26.7057,,way/1367198607
+90.0,123.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 3_132kV,Narok Substation 1_132kV,0.0359,0.0294,False,False,62.5133,132000,way/1027098824
+199.0,198.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Makueni Substation 3,Loitokitok 132/33kV - KETRACO Substation_132kV,0.0383,0.034,False,False,66.205,132000,way/1367078565
+71.0,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 2_220kV,Olkaria V Substation_220kV,0.0222,0.0505,False,False,1.3748,220000,way/969560630
+11.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Muhoroni Substation_132kV,Eldoret substation_132kV,0.0553,0.0177,False,False,88.8663,132000,way/180998542+way/181000286
+9.0,120.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kilifi,Takaungu Substation 3_132kV,0.0599,0.0182,False,False,15.4899,132000,way/180034500
+77.0,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sotik substation_132kV,Bomet substation_132kV,0.0465,0.0316,False,False,25.4445,132000,way/696520896
+120.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Takaungu Substation 3_132kV,Takaungu Substation 1,0.0182,0.0675,False,False,11.5464,132000,way/578818095
+122.0,121.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Londiani Substation 1_132kV,Kabarnet Substation_132kV,0.0519,0.0363,False,False,114.3201,132000,way/181010220+way/1270177000
+77.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sotik substation_132kV,Kisii Substation 1_132kV,0.0601,0.0307,False,False,32.282,132000,way/457763292
+109.0,56.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isiolo Substation 1_132kV,Meru_132kV,0.0537,0.0372,False,False,25.985,132000,way/1020270265
+15.0,77.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chemosit substation,Sotik substation_132kV,0.0581,0.0402,False,False,26.7528,132000,way/696520897
+57.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Webuye substation_132kV,Webuye_132kV,0.0633,0.0354,False,False,16.4117,132000,way/579310360
+75.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kitale substation_132kV,Eldoret substation_132kV,0.0853,0.0135,False,False,65.2222,132000,way/696515807
+26.0,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,132 kV Mang'u Substation_132kV,Kiambu Substation 8,0.0757,0.0252,False,False,28.4211,132000,way/578140329
+15.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chemosit substation,Muhoroni Substation_132kV,0.0503,0.0561,False,False,30.9094,132000,way/457763293
+64.0,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kakamega substation_132kV,Webuye substation_132kV,0.0215,0.0862,False,False,27.1946,132000,way/579310359
+6.0,108.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nairobi North 220Kv Substation_220kV,Kiambu Substation 4,0.0836,0.0308,False,False,27.1409,220000,way/180021134
+53.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mwingi,Kindaruma_132kV,0.0819,0.0356,False,False,29.3275,132000,way/578920146
+12.0,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Sondu_132kV,Sang'oro Substation_132kV,0.0534,0.0645,False,False,4.8927,132000,way/579310370
+67.0,68.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Garsen substation_220kV,Lamu substation_220kV,0.0763,0.0433,False,False,96.4191,220000,way/659874581
+73.0,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chuka Substation 1_220kV,Kamburu 220 / 132kV Transmission Substation_220kV,0.0468,0.0804,False,False,35.8258,220000,way/220540548
+22.0,122.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Soilo,Londiani Substation 1_132kV,0.084,0.0519,False,False,53.5534,132000,way/230147787+way/1329200739
+11.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Muhoroni Substation_132kV,Sondu_132kV,0.082,0.054,False,False,98.6546,132000,way/180995663+way/180995659
+16.0,56.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 132 kV Substation_132kV,Meru_132kV,0.1104,0.0283,False,False,117.9841,132000,way/318010718
+202.0,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kitui Substation,Mwingi,0.0282,0.1109,False,False,45.315,,way/1367183623
+192.0,14.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 2_132kV,Nakuru Substation 1,0.0909,0.05,False,False,69.2986,132000,way/1431584700
+61.0,109.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nanyuki substation_132kV,Isiolo Substation 1_132kV,0.1055,0.0377,False,False,70.7058,132000,way/579310402
+37.0,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 1,Olkaria II Substation_220kV,0.0567,0.087,False,False,6.6953,220000,way/308163287
+193.0,74.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chepareria Substation,Kitale substation_220kV,0.0549,0.0949,False,False,70.2411,220000,way/696445755
+53.0,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mwingi,Garissa substation_132kV,0.1099,0.043,False,False,204.2458,132000,way/1275719788+way/696704121
+67.0,107.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Garsen substation_220kV,Malindi Substation_220kV,0.0805,0.0741,False,False,105.8162,220000,way/659878572
+19.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 220 / 132kV Transmission Substation_220kV,Embakasi Sub-Station_220kV,0.082,0.0739,False,False,110.9856,220000,way/578064859
+18.0,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mwingi Substation,Kamburu 220 / 132kV Transmission Substation_220kV,0.0723,0.0847,False,False,7.4864,220000,way/220540553
+27.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Makueni Substation 1,Mariakani,0.0376,0.1254,False,False,299.4122,132000,way/266439954+way/578575694
+2.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Embakasi Sub-Station_132kV,Pumwani Substation 1_132kV,0.072,0.0935,False,False,1.3557,132000,way/180021147
+60.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nyeri Substation 1,Nanyuki substation_132kV,0.1276,0.0394,False,False,51.6059,132000,way/179998382
+16.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 132 kV Substation_132kV,Mwingi Substation,0.099,0.068,False,False,7.5857,132000,way/220540552
+60.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nyeri Substation 1,Kamburu 132 kV Substation_132kV,0.0619,0.1104,False,False,99.0484,132000,way/579310398+way/220541897
+2.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Embakasi Sub-Station_132kV,Pumwani Substation 1_132kV,0.0836,0.0943,False,False,1.3582,132000,way/180021145
+22.0,59.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Soilo,Menengai_132kV,0.0962,0.0898,False,False,12.4396,132000,way/579310376
+8.0,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Galu,0.1654,0.0231,False,False,47.4238,132000,way/374695014
+8.0,107.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Malindi Substation_220kV,0.0823,0.1093,False,False,121.6454,220000,way/578575691+way/1104102138
+8.0,73.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Chuka Substation 1_220kV,0.1511,0.049,False,False,447.148,220000,way/266435362
+91.0,72.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria V Substation_220kV,Olkaria IV Substation_220kV,0.0445,0.1579,False,False,4.1334,220000,way/969561348
+7.0,192.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Pumwani Substation 1_132kV,Suswa Substation 2_132kV,0.1279,0.0775,False,False,76.5719,132000,way/184370161
+54.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kindaruma_132kV,Kamburu 132 kV Substation_132kV,0.111,0.0992,False,False,15.6013,132000,way/578920151
+8.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Takaungu Substation 1,0.1506,0.0675,False,False,50.5171,132000,way/361010721+way/578818100
+7.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Pumwani Substation 1_132kV,Kindaruma_132kV,0.1243,0.0953,False,False,118.1771,132000,way/180021152+way/457973269
+52.0,29.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mombasa Substation 2,Mombasa Substation 1,0.1799,0.0445,False,False,7.2476,132000,way/578818101
+48.0,224.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,Konza Substation,0.0295,0.1961,False,False,37.5494,400000,way/1425464802
+8.0,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Mariakani Substation 3_220kV,0.1703,0.0667,False,False,23.9357,220000,way/1353799764
+36.0,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria II Substation_220kV,Naivasha Substation 4_220kV,0.1338,0.1065,False,False,3.0458,220000,way/669510379
+108.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kiambu Substation 4,Embakasi Sub-Station_220kV,0.0172,0.2313,False,False,19.0425,220000,way/1004203459
+16.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 132 kV Substation_132kV,Kamburu 220 / 132kV Transmission Substation_132kV,0.1831,0.0734,False,False,0.2493,132000,way/220540549|way/220540551
+127.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Migori Substation 3,Kihancha Substation,0.2572,0.024,False,False,28.5863,,way/1367196075
+1.0,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Embakasi Sub-Station_220kV,Kamburu 220 / 132kV Transmission Substation_220kV,0.2054,0.0807,False,False,107.6585,220000,way/578064866
+127.0,128.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Migori Substation 3,Homa Bay Substation 1,0.2438,0.0425,False,False,37.3302,,way/1353476826
+127.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Migori Substation 3,Kisii Substation 1_132kV,0.2632,0.029,False,False,43.5965,132000,way/1353476827
+48.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,Namanga Substation,0.29,0.0407,False,False,94.6326,400000,way/1353787680
+93.0,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 5,Naivasha Substation 3_132kV,0.0337,0.2972,False,False,1.3848,132000,way/665334162
+88.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Athi River Substation 1,Athi River to Embakasi 220kV Transition Substation_220kV,0.3286,0.0036,False,False,11.625,220000,way/578064868
+48.0,194.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,Kajiado Substation,0.3106,0.0818,False,False,16.7778,400000,way/1361202727
+193.0,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Chepareria Substation,Amudat Substation_220kV,0.0555,0.3453,False,False,67.8958,220000,way/579310366
+52.0,29.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mombasa Substation 2,Mombasa Substation 1,0.1799,0.2285,False,False,7.0772,132000,way/578818103
+91.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria V Substation_220kV,Naivasha Substation 2_220kV,0.0445,0.4243,False,False,1.6901,220000,way/846716534
+46.0,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 1_220kV,Nairobi North 220Kv Substation_220kV,0.4042,0.0689,False,False,44.2712,220000,way/180021136
+49.0,88.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_220kV,Athi River Substation 1,0.2154,0.2962,False,False,44.5294,220000,way/578140340
+36.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria II Substation_220kV,Suswa Substation 1_220kV,0.0765,0.5007,False,False,27.4687,220000,way/669510377+way/678141823|way/678141824
+48.0,101.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,Mariakani Substation 3_400kV,0.2815,0.3056,False,False,405.3241,400000,way/578140336
+45.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 1_400kV,Isinya Substation_400kV,0.4489,0.1717,False,False,102.3543,400000,way/569997181
+8.0,52.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Mombasa Substation 2,0.1345,0.4878,False,False,9.7829,132000,way/180034495
+46.0,72.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 1_220kV,Olkaria IV Substation_220kV,0.5386,0.0894,False,False,18.2296,220000,way/669510380
+52.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mombasa Substation 2,Mariakani,0.4878,0.1495,False,False,9.9334,132000,way/180045084
+16.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 132 kV Substation_132kV,Kamburu 220 / 132kV Transmission Substation_132kV,0.1104,0.5305,False,False,0.0469,132000,way/669537268
+92.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 4_220kV,Suswa Substation 1_220kV,0.0897,0.5561,False,False,25.1641,220000,way/669510371
+16.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 132 kV Substation_132kV,Kamburu 220 / 132kV Transmission Substation_132kV,0.1104,0.5467,False,False,0.0458,132000,way/669537267
+16.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 132 kV Substation_132kV,Kamburu 220 / 132kV Transmission Substation_132kV,0.1831,0.5326,False,False,0.2286,132000,way/578920154|way/669537269
+61.0,238.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nanyuki substation_132kV,Nanyuki Substation 2,0.0367,0.7878,False,False,0.0696,132000,way/696306312|way/696306313
+1.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Embakasi Sub-Station_220kV,Embakasi SS,0.8612,0.0996,False,False,11.9095,220000,way/180021133
+14.0,22.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nakuru Substation 1,Soilo,0.0433,1.1434,False,False,14.234,132000,way/579310372
+91.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria V Substation_220kV,Naivasha Substation 2_220kV,0.1043,1.0907,False,False,0.0477,220000,way/1394941663|way/1394941664
+90.0,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 3_132kV,Naivasha Substation 5,0.0612,1.4651,False,False,0.038,132000,way/293403695
+90.0,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 3_132kV,Naivasha Substation 5,0.0612,1.4711,False,False,0.0425,132000,way/293403694
+66.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Pumwani Substation 1_132kV,1.45,0.1151,False,False,8.1704,132000,way/180021127
+192.0,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 2_132kV,Naivasha Substation 3_132kV,0.0384,1.5707,False,False,21.5279,132000,way/1442604356
+48.0,49.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,Isinya Substation_220kV,0.3213,1.2957,False,False,1.4421,400000,way/1425464798
+90.0,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 3_132kV,Naivasha Substation 5,0.0612,1.6358,False,False,1.0601,132000,way/669510372
+1.0,65.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Embakasi Sub-Station_220kV,Pumwani Substation 2,0.8612,1.0001,False,False,0.7964,220000,way/180021148|way/180021130|way/180021135
+66.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Embakasi Sub-Station_220kV,1.45,0.8612,False,False,5.9602,220000,way/180021126
+114.0,113.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Abyssinia substation,Kibos Substation (KETRACO)_132kV,2.2288,0.0853,False,False,9.0969,132000,way/1115312337
+72.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria IV Substation_220kV,Naivasha Substation 2_220kV,0.1579,2.3886,False,False,0.1181,220000,way/1373881334|way/1395075085|way/1395075086|way/1373881333|way/1395075072|way/1395075073
+52.0,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mombasa Substation 2,Mombasa Substation 4,0.1799,2.4743,False,False,0.3373,132000,way/578818102
+8.0,52.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani,Mombasa Substation 2,0.1161,2.6294,False,False,12.967,132000,way/578818106
+36.0,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Olkaria II Substation_220kV,Naivasha Substation 4_220kV,0.1338,2.7975,False,False,0.1181,220000,way/669510378|way/678140050
+219.0,223.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mariakani Substation 4,Mariakani Substation 5,0.036,3.093,False,False,2.2473,132000,way/1409737833
+24.0,167.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Roysambu,Pumwani Substation 10,0.0684,3.1509,False,False,1.553,,way/578015307
+29.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Mombasa Substation 1,Mombasa Substation 5,0.0689,3.2841,False,False,1.1697,,way/1421714071
+19.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kamburu 220 / 132kV Transmission Substation_220kV,Kamburu 220 / 132kV Transmission Substation_132kV,2.1522,1.3311,False,False,1.5175,220000,way/650734616
+90.0,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 3_132kV,Naivasha Substation 5,0.8288,2.9122,False,False,2.6515,132000,way/293403693
+26.0,145.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,132 kV Mang'u Substation_132kV,Thika Substation 3,0.029,3.8049,False,False,0.0966,132000,way/1004816755|way/1004816756|way/1004816757|way/1004816758|way/1004816759|way/1004816760
+230.0,178.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Embu Substation 4,Sagana Substation,0.0897,4.1128,False,False,21.4628,132000,way/1463070981
+69.0,108.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kiambu Substation 2,Kiambu Substation 4,0.7776,4.2711,False,False,2.4371,,way/1500286017+way/1500286013+way/1500286014
+220.0,66.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Pumwani Substation 11,Ruai,2.7728,3.1035,False,False,0.0434,,way/1298988097
+216.0,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Githambo substation_132kV,Thika Substation 1,0.0365,6.2858,False,False,42.6853,132000,way/1390432741
+66.0,27.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Makueni Substation 1,6.4138,0.0376,False,False,141.1556,132000,way/180021154+way/578575695
+66.0,73.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Chuka Substation 1_220kV,6.4138,0.0454,False,False,137.7832,220000,way/180021155
+170.0,6.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kiambu Substation 7,Nairobi North 220Kv Substation_220kV,3.2348,3.5179,False,False,1.2555,220000,way/773903301
+48.0,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,KPLC Sub Stattion,0.3432,6.9545,False,False,0.1496,400000,way/1425454173|way/1425454174|way/1425464800|way/1425464801
+48.0,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,KPLC Sub Stattion,0.1717,7.1897,False,False,0.1185,400000,way/1279912446|way/1279912447|way/1425454172|way/1108959038|way/1108959039|way/1108959040|way/1425454178
+224.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Konza Substation,Machakos_132kV,7.5928,0.0963,False,False,11.6628,132000,way/578575697
+239.0,185.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Nanyuki Substation 3,Rumuruti Substation,4.3021,3.5857,False,False,70.4092,132000,way/579310384+way/1011586726+way/1011586727+way/1011586843+way/1011586920+way/1011587007+way/1011587008+way/1011587009+way/1011587027+way/1011587028+way/1011587029+way/1011587030+way/1011587010+way/1011587011+way/1011587019+way/1011587020+way/1011587021+way/1011587024+way/1011587025+way/1011587026
+48.0,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Isinya Substation_400kV,KPLC Sub Stattion,0.1337,7.8902,False,False,1.1617,400000,way/1425464797
+202.0,153.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kitui Substation,KPLC Kitui Substation,0.0571,7.9725,False,False,1.1469,,way/1442611299
+105.0,28.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,KIMUKA 230KV Substation_230kV,Ngong Wind Power Project,0.0821,9.1768,False,False,3.8083,230000,way/1353743700
+66.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Ruai,Pumwani Substation 11,6.4138,4.3481,False,False,5.0088,220000;132000,way/578064856
+206.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Bungoma Substation 1,,7.6188,,False,False,26.3103,220000,way/579310350
+,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Webuye substation_132kV,,0.0419,False,False,71.4755,132000,way/579310362
+,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,132 kV Mang'u Substation_132kV,,0.125,False,False,14.7775,132000,way/578920149
+57.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Webuye substation_132kV,,0.0419,,False,False,68.7847,132000,way/304014426
+,23.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Amudat Substation_220kV,,0.0564,False,False,209.915,220000,way/181000287
+,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Loiyangalani Substaton_400kV,,0.1725,False,False,35.3077,400000,way/563813240
+55.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Embu Substation 1,,0.0177,,False,False,2.6307,132000,way/578920152
+46.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 1_220kV,,0.5386,,False,False,0.0886,220000,way/678141819|way/678141820|way/678141821
+23.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Amudat Substation_220kV,,0.3077,,False,False,0.3837,220000,way/579310364|way/669513701
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0265,,way/1136166878
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.4657,,way/1203087332
+,9.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Kilifi,,7.9133,False,False,4.1208,,way/955378095
+46.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 1_220kV,,0.5561,,False,False,0.0812,220000,way/678141822
+112.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Kibos Substation (KETRACO)_220kV,,0.0849,,False,False,70.8801,220000,way/1115552102
+93.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Naivasha Substation 5,,3.0743,,False,False,229.3618,400000,way/1016604844
+111.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,AEZ,,0.0738,,False,False,1.4859,220000,way/1141854127
+,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Isinya Substation_400kV,,0.3432,False,False,208.0192,400000,way/1138329786
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.3083,,way/1210716935
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,16.0506,,way/1275426576
+67.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Garsen substation_220kV,,0.0382,,False,False,17.2189,220000,way/1275425759
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.0376,,way/1213160871
+45.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Suswa Substation 1_400kV,,0.341,,False,False,398.4555,400000,way/665668831+way/846589474
+86.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Lamu Substation,,0.0505,,False,False,3.8726,,way/803479166+way/803479168
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.5615,,way/1136175537+way/1136177228
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.8278,,way/1136166879+way/1136175538
+,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,,,,False,False,0.4292,132000,way/180998872|way/180998874+way/180999915|way/180999916
+,44.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,Suswa Substation 1_500kV,,0.4407,True,False,1059.4349,500000,way/797700141+way/832179801+way/1329193191+way/1080627698

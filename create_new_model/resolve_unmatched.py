@@ -42,10 +42,14 @@ Writes
   data/working_files/{region}/matpower_{region}_buses.csv   (updated in-place)
 """
 
+import argparse
+import json
 import math
 import os
+import sys
 import webbrowser
 from collections import defaultdict
+from datetime import datetime, timezone
 
 import folium
 import numpy as np
@@ -60,7 +64,10 @@ from shapely import wkt as shapely_wkt
 
 from pathlib import Path
 import config
-from pipeline_integrity import (clean_bus_tables, read_transformers, manual_bus,
+from pipeline_integrity import (clean_bus_tables, describe_islands, island_report,
+                                refresh_endpoint_names,
+                                read_transformers, manual_bus,
+                                split_multi_voltage_buses, retier_endpoints,
                                 manual_transformer, validate_endpoints)
 
 region = config.region
@@ -68,6 +75,8 @@ region = config.region
 PROJ_ROOT = Path(__file__).parent.parent
 WORK_DIR  = PROJ_ROOT / "data" / "working_files" / region
 WORK_DIR.mkdir(parents=True, exist_ok=True)
+
+import build_provenance
 
 # Pass 1 – Folium / manual
 FOLIUM_RADIUS_KM = 80.0
@@ -122,6 +131,55 @@ def _fmt_kv(v_raw) -> str:
     if not levels:
         return "unknown"
     return " / ".join(f"{v // 1000} kV" for v in levels)
+
+
+class ReviewLog:
+    """Record every manual answer so a review session is auditable and repeatable.
+
+    Sec. IV.B.3 is a human-in-the-loop stage, so the same OSM input previously
+    produced a different model for every reviewer with no record of what was
+    decided. Answers are captured in order; replaying them reproduces the session
+    exactly, because the endpoint iteration order is fixed by the input tables.
+    """
+
+    def __init__(self, path=None, replay=False):
+        self.path = Path(path) if path else None
+        self.entries = []
+        self.pending = []
+        if replay:
+            if not (self.path and self.path.is_file()):
+                raise FileNotFoundError(f"No review journal to replay at {self.path}")
+            saved = json.loads(self.path.read_text(encoding="utf-8"))
+            self.pending = [e["answer"] for e in saved.get("answers", [])]
+            print(f"  Replaying {len(self.pending)} recorded answer(s) from {self.path}")
+
+    def ask(self, prompt, context=None):
+        if self.pending:
+            answer = self.pending.pop(0)
+            print(f"{prompt}{answer}   [replayed]")
+        else:
+            answer = input(prompt)
+        self.entries.append(dict(prompt=prompt.strip(), answer=answer, context=context))
+        return answer
+
+    def save(self, region=None):
+        if self.path is None:
+            return
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.path.write_text(json.dumps(dict(
+            region=region, recorded_at=datetime.now(timezone.utc).isoformat(),
+            answers=self.entries), indent=2), encoding="utf-8")
+        print(f"  Review journal ({len(self.entries)} answer(s)) → {self.path}")
+
+
+def normalise_kv(*values):
+    """Shared kV of the given bus voltages, tolerating volts or kV in the column."""
+    levels = []
+    for value in values:
+        for v in parse_voltage_tag(value):
+            levels.append(v / 1000.0 if v > 1000 else v)
+    shared = [v for v in levels if levels.count(v) == len(values)]
+    return float(min(shared)) if shared else float(min(levels)) if levels else 0.0
 
 
 def voltage_compatible(line_v, bus_v) -> bool:
@@ -359,6 +417,7 @@ def run_pass1(
     bus_df: pd.DataFrame,
     bus_coords: list,
     bus_voltages: list,
+    log: "ReviewLog | None" = None,
 ) -> pd.DataFrame:
     """
     Pass 1: Folium map + interactive CLI.
@@ -397,6 +456,7 @@ def run_pass1(
     valid_bus_i_set = set(bus_df["bus_i"].astype(int).tolist())
     n_resolved = 0
 
+    log            = log if log is not None else ReviewLog()
     bus_df         = bus_df.copy()
     bus_coords_l   = list(bus_coords)
     bus_voltages_l = list(bus_voltages)
@@ -450,9 +510,11 @@ def run_pass1(
         _print_candidates(candidates)
 
         while True:
-            raw = input(
+            raw = log.ask(
                 f"\n  Enter bus_i for {which_w}"
-                f"  (skip / delete / new / merge <N>): "
+                f"  (skip / delete / new / merge <N>): ",
+                context=dict(osm_id=osm_id, endpoint=which_w,
+                             lon=round(ep_w[0], 7), lat=round(ep_w[1], 7)),
             ).strip().lower()
 
             # ── skip ──────────────────────────────────────────────────────
@@ -474,11 +536,11 @@ def run_pass1(
 
             # ── new substation ────────────────────────────────────────────
             if raw == "new":
-                sub_name = input("  New substation name: ").strip()
+                sub_name = log.ask("  New substation name: ").strip()
                 while True:
                     try:
                         sub_kv_1 = float(
-                            input("  Primary voltage (kV, e.g. 161): ").strip())
+                            log.ask("  Primary voltage (kV, e.g. 161): ").strip())
                         if not math.isfinite(sub_kv_1) or sub_kv_1 <= 0:
                             raise ValueError("Voltage must be positive")
                         break
@@ -486,7 +548,7 @@ def run_pass1(
                         print("  Enter a positive numeric kV value (e.g. 161).")
 
                 while True:
-                    sec_raw = input("  Secondary voltage (kV), or Enter for none: ").strip()
+                    sec_raw = log.ask("  Secondary voltage (kV), or Enter for none: ").strip()
                     try:
                         sub_kv_2 = float(sec_raw) if sec_raw else None
                         if sub_kv_2 is not None and (not math.isfinite(sub_kv_2) or sub_kv_2 <= 0 or sub_kv_2 == sub_kv_1):
@@ -564,7 +626,7 @@ def run_pass1(
                 print(f"    B) to-end    ({df.at[tgt_df_i, 'tbus_name']})")
 
                 while True:
-                    ec = input("  Choice (A/B): ").strip().upper()
+                    ec = log.ask("  Choice (A/B): ").strip().upper()
                     if ec in ("A", "B"):
                         break
                     print("  Enter A or B.")
@@ -648,6 +710,27 @@ def run_pass1(
                       f"{min(valid_bus_i_set)}–{max(valid_bus_i_set)}.")
                 continue
 
+            # Guard 1 - self-loop. The automated passes pass exclude_pos so the
+            # to-bus is never the from-bus; a manual pick had no such check, and
+            # Sec. IV.B.2 Step 10 deletes the branch afterwards, losing the line.
+            other_bus = df.at[df_i, other]
+            if not is_null(other_bus) and int(other_bus) == chosen:
+                print(f"  bus {chosen} is already the {other} of this line. That "
+                      "would be a self-loop, which Step 10 removes - the line "
+                      "would be lost. Pick a different bus, or 'delete' the line.")
+                continue
+
+            # Guard 2 - voltage. find_nearest_bus requires the bus voltage to
+            # appear in the line's voltage list whenever both are known; a manual
+            # pick meets the same bar or is recorded as a deliberate override.
+            chosen_bus_v = bus_df.loc[bus_df["bus_i"] == chosen].iloc[0].get("base_kV")
+            if not voltage_compatible(line_v, chosen_bus_v):
+                print(f"  WARNING: line is {_fmt_kv(line_v)} but bus {chosen} is "
+                      f"{_fmt_kv(chosen_bus_v)}. The automated passes reject this.")
+                if log.ask("  Assign anyway? (y/N): ").strip().lower() != "y":
+                    continue
+                print("  Recorded as a deliberate voltage override.")
+
             match_rows = bus_df[bus_df["bus_i"] == chosen]
             mi = match_rows.index[0]
             dist_km = geodesic(
@@ -677,7 +760,19 @@ def run_pass1(
 # MAIN
 # ============================================================
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Manual endpoint review (Sec. IV.B.3)")
+    parser.add_argument("--replay", action="store_true",
+                        help="Re-apply the answers in review_decisions_{region}.json "
+                             "instead of prompting, reproducing a saved session")
+    parser.add_argument("--journal", type=Path, default=None,
+                        help="Where to read/write the review journal")
+    args = parser.parse_args([] if argv is None else argv)
+    # Verified here rather than at import so the module stays importable.
+    build_provenance.verify(config, WORK_DIR, "resolve_unmatched")
+    # Resolved here, not at import, so WORK_DIR stays overridable.
+    journal = args.journal or (WORK_DIR / f"review_decisions_{region}.json")
+    log = ReviewLog(journal, replay=args.replay)
     print("=" * 60)
     print("Loading data")
     print("=" * 60)
@@ -714,7 +809,7 @@ def main():
     print("PASS 1 – Interactive manual review")
     print("=" * 60)
     lines_df, bus_df = run_pass1(
-        lines_df, geom_lookup, bus_df, bus_coords, bus_voltages)
+        lines_df, geom_lookup, bus_df, bus_coords, bus_voltages, log=log)
 
     # ── Delete still-unmatched lines ────────────────────────────
     print("\n" + "=" * 60)
@@ -823,6 +918,8 @@ def main():
     # After manual review some buses may still lack a base_kV value (voltage_tag
     # was absent in OSM). We estimate their voltage from the lines connected to them
     # — a bus inherits the voltage of any line that terminates at it.
+    log.save(region)
+
     print("\n" + "=" * 60)
     print("POST-PROCESSING 1: Filling missing bus voltages from line connections")
     print("=" * 60)
@@ -873,10 +970,30 @@ def main():
                     bus_df.at[idx, "name"] = f"{name}_{kv}kV"
             n_mode = int(still_missing.sum())
             print(f"  Assigned mode voltage {mode_v:.0f} V ({kv} kV) to {n_mode} remaining bus(es).")
+            # The rename just invalidated every endpoint name pointing at these
+            # buses; leaving them stale fails validate_endpoints in Step 8.
+            refresh_endpoint_names(bus_df, lines_resolved)
 
     bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
     print(f"  Updated buses → {WORK_DIR / f'matpower_{region}_buses.csv'}")
 
+
+    # ── POST-PROCESSING 1b: Split substations carrying several line voltages ─────
+    print("\n" + "=" * 60)
+    print("POST-PROCESSING 1b: Splitting multi-voltage substations")
+    print("=" * 60)
+
+    xfmr_path = WORK_DIR / f"transformer_pairs_{region}.csv"
+    transformers = read_transformers(xfmr_path)
+    bus_df, lines_resolved, transformers, n_split = split_multi_voltage_buses(
+        bus_df, lines_resolved, transformers)
+    print(f"  Split {n_split} substation(s) into voltage tiers joined by transformers.")
+    bus_df, lines_resolved, n_moved = retier_endpoints(bus_df, lines_resolved)
+    print(f"  Moved {n_moved} endpoint(s) onto the matching tier of their substation.")
+    refresh_endpoint_names(bus_df, lines_resolved, transformers)
+    bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
+    lines_resolved.to_csv(WORK_DIR / f"matpower_{region}_lines_resolved.csv", index=False)
+    transformers.to_csv(xfmr_path, index=False)
 
     # ── POST-PROCESSING 2: Remove island buses that remain unconnected ────────────
     print("\n" + "=" * 60)
@@ -891,6 +1008,61 @@ def main():
     bus_df.to_csv(WORK_DIR / f"matpower_{region}_buses.csv", index=False)
     print(f"  Final bus count: {len(bus_df)}")
 
+    # ── POST-PROCESSING 3: Close gaps between separate networks ──────────────────
+    # A national transmission grid is normally one synchronous system, so a model
+    # in pieces usually means OSM never mapped the line that joins them, not that
+    # the country is islanded. Sec. IV.B.3 puts a reviewer here for exactly this
+    # kind of gap, but until now the review could only assign the endpoints of
+    # lines OSM already had; it had no way to supply a line OSM was missing.
+    if getattr(config, "EXPECT_CONNECTED_GRID", True):
+        print("\n" + "=" * 60)
+        print("POST-PROCESSING 3: Connecting separate networks")
+        print("=" * 60)
+        for _ in range(len(bus_df)):
+            report = island_report(bus_df, lines_resolved, transformers)
+            if report["components"] <= 1:
+                break
+            print(describe_islands(report, expect_connected=False))
+            island = report["islands"][0]
+            if island["nearest_from"] is None:
+                break
+            a, b = island["nearest_from"], island["nearest_to"]
+            rows = bus_df.set_index("bus_i")
+            kv = normalise_kv(rows.at[a, "base_kV"], rows.at[b, "base_kV"])
+            note = "" if island["voltage_compatible"] else "  [VOLTAGES DIFFER]"
+            answer = log.ask(
+                f"\n  Add a {kv:g} kV line to join the {island['buses']}-bus network"
+                f" — bus {a} ({rows.at[a, 'name']}) to bus {b} ({rows.at[b, 'name']}),"
+                f" {island['gap_km']:.2f} km{note}?  (y / skip): ",
+                context=dict(island_buses=island["buses"], fbus=a, tbus=b,
+                             gap_km=island["gap_km"],
+                             voltage_compatible=island["voltage_compatible"]))
+            if str(answer).strip().lower() not in ("y", "yes"):
+                print("  Left separate. The model will contain more than one network.")
+                break
+            new = {c: 0 for c in lines_resolved.columns}
+            new.update(fbus=a, tbus=b, ratio=0, angle=0, status=1,
+                       angmin=-config.BRANCH_ANGLE_LIMIT_DEG,
+                       angmax=config.BRANCH_ANGLE_LIMIT_DEG,
+                       fbus_name=rows.at[a, "name"], tbus_name=rows.at[b, "name"],
+                       fbus_dist_km=0.0, tbus_dist_km=0.0,
+                       f_crossborder=False, t_crossborder=False,
+                       length_km=island["gap_km"], voltage_V=kv * 1000.0,
+                       osm_id="review:connect")
+            for column in ("fbus_resolve_pass", "tbus_resolve_pass"):
+                if column in new:
+                    new[column] = "connect"
+            lines_resolved = pd.concat(
+                [lines_resolved, pd.DataFrame([new])], ignore_index=True)
+            _apply_rxb(lines_resolved, len(lines_resolved) - 1, kv, island["gap_km"])
+            print(f"  Added line bus {a} — bus {b} ({island['gap_km']:.2f} km, {kv:g} kV).")
+        final = island_report(bus_df, lines_resolved, transformers)
+        verdict = describe_islands(final)
+        print("\n  " + (verdict.replace("\n", "\n  ") if verdict
+                        else "One connected network."))
+        lines_resolved.to_csv(WORK_DIR / f"matpower_{region}_lines_resolved.csv", index=False)
+        log.save(region)
+
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

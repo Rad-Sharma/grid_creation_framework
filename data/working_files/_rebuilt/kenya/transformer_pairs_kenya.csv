@@ -1,0 +1,30 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+1,2,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Embakasi Sub-Station_220kV,Embakasi Sub-Station_132kV,0.0,,transformer
+14,15,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Kamburu 220 / 132kV Transmission Substation_220kV,Kamburu 220 / 132kV Transmission Substation_132kV,0.0,,transformer
+20,21,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,132 kV Mang'u Substation_220kV,132 kV Mang'u Substation_132kV,0.0,,transformer
+31,32,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Suswa Substation 1_500kV,Suswa Substation 1_400kV,0.0,,transformer
+32,33,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Suswa Substation 1_400kV,Suswa Substation 1_220kV,0.0,,transformer
+34,35,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Isinya Substation_400kV,Isinya Substation_220kV,0.0,,transformer
+55,56,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Kitale substation_220kV,Kitale substation_132kV,0.0,,transformer
+71,72,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Kibos Substation (KETRACO)_220kV,Kibos Substation (KETRACO)_132kV,0.0,,transformer
+113,114,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0.0,0.0,1,-60.0,60.0,Mariakani Substation 2_400kV,Mariakani Substation 2_220kV,0.0,,transformer
+5,127,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Mariakani_132kV,Mariakani_220kV,0.0,132000;220000,way/180034502
+13,128,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 6_132kV,El Tarter Substation 6_220kV,0.0,132000;220000,way/210619103
+15,129,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Kamburu 220 / 132kV Transmission Substation_132kV,Kamburu 220 / 132kV Transmission Substation_220kV,0.0,132000;220000,way/220540545
+28,130,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 14_132kV,El Tarter Substation 14_220kV,0.0,132000;220000,way/457973271
+29,131,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,KPLC Sub Stattion_220kV,KPLC Sub Stattion_400kV,0.0,220000;400000,way/551850914
+49,132,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 21_132kV,El Tarter Substation 21_220kV,0.0,132000;220000,way/658995553
+50,133,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,Ruai_132kV,Ruai_220kV,0.0,132000;220000,way/659379440
+60,134,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 29_132kV,El Tarter Substation 29_220kV,0.0,132000;220000,way/773905413
+64,135,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 37_132kV,El Tarter Substation 37_220kV,0.0,132000;220000,way/846716530
+135,136,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 37_220kV,El Tarter Substation 37_400kV,0.0,220000;400000,way/846716530
+69,137,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 49_132kV,El Tarter Substation 49_220kV,0.0,132000;220000,way/980927045
+70,138,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,AEZ_132kV,AEZ_220kV,0.0,132000;220000,way/1062083578
+90,139,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 109_132kV,El Tarter Substation 109_220kV,0.0,132000;220000,way/1353447032
+106,140,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 136_132kV,El Tarter Substation 136_220kV,0.0,132000;220000,way/1367185581
+140,141,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 136_220kV,El Tarter Substation 136_400kV,0.0,220000;400000,way/1367185581
+117,142,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 149_132kV,El Tarter Substation 149_220kV,0.0,132000;220000,way/1411841839
+118,143,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 152_132kV,El Tarter Substation 152_220kV,0.0,132000;220000,way/1424434138
+143,144,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 152_220kV,El Tarter Substation 152_400kV,0.0,220000;400000,way/1424434138
+119,145,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 153_132kV,El Tarter Substation 153_400kV,0.0,132000;400000,way/1426610904
+122,146,2e-05,0.0016,0.0,1000.0,1000.0,1000.0,1.0,0.0,1,-360.0,360.0,El Tarter Substation 162_132kV,El Tarter Substation 162_220kV,0.0,132000;220000,way/1461528190

@@ -1,6 +1,6 @@
-"""Manuscript equations (1)-(2): six log features and Huber epsilon=1.1.
+"""Automate Grid Creation equations (1)-(2): six log features and Huber epsilon=1.1.
 
-The manuscript does not supply the intercept or a fully specified training
+The Automate Grid Creation paper does not supply the intercept or a fully specified training
 preprocessing recipe. A provenance-bearing model artifact is required; the
 published exponents are retained for comparison, not combined with an invented
 intercept or the incompatible Ridge intercept.
@@ -34,7 +34,7 @@ def load_model(path):
     if not path.exists():
         raise FileNotFoundError(
             f"{path} missing. Supply the fitted Huber artifact or use train_paper_load_model.py "
-            "with complete measured training features. The manuscript omits the intercept; "
+            "with complete measured training features. The paper omits the intercept; "
             "the bundled Ridge model cannot reproduce it.")
     model = json.loads(path.read_text(encoding="utf-8"))
     if model.get("model_type") != "huber" or model.get("epsilon") != 1.1:

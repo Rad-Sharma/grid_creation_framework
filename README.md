@@ -1,13 +1,25 @@
 # Synthetic Electric Grid Creation Framework
 
-A Python pipeline for building highly realistic synthetic electric grid models
+A Python pipeline for building exploratory synthetic electric grid models
 from openly available geospatial data (OpenStreetMap, WorldPop, WRI Global
 Power Plant Database, NaturalEarth).
 
-The framework produces MATPOWER Version 2 case files — including a base model,
-a DC-feasible relaxation, and an AC-feasible relaxation — that accurately
-represent the topology and scale of a target country's high-voltage
-transmission network.
+The framework produces MATPOWER Version 2 cases and validation reports.
+Geographic coverage, inferred equipment, and operating feasibility are separate
+questions; solver convergence alone does not establish real-grid accuracy.
+
+**The numbered pipeline in `create_new_model/` is the Automate Grid Creation paper's method.**
+Figures 2, 4 and 7 of the paper map onto `create_buses.py`, `create_lines.py` and
+`create_generators.py` respectively, and its Kenya case reproduces Table VII
+exactly. Follow [Pipeline Steps](#pipeline-steps) for a build intended to match
+the paper.
+
+The shared topology engine and the scenario/dispatch workflow in
+[MODEL_QUALITY.md](MODEL_QUALITY.md) are a separate, stricter track: they preserve
+station sections around conflicting connections, require reviewed transformer
+evidence, and never expand equipment limits to obtain an AC solution. That track
+is useful for equipment-evidence work but is **not** the published method and does
+not reproduce Table VII.
 
 ---
 
@@ -51,15 +63,6 @@ grid_creation_framework/
 
 ---
 
-## Manuscript alignment
-
-The default configuration now selects the manuscript Huber path. See
-[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md) for implemented equations, required
-measured inputs, and unresolved calibration details. The published slopes alone
-are insufficient to reconstruct the fitted model because its intercept is absent.
-The old Ridge approximation remains available through the explicit
-`LOAD_MODEL_METHOD = "legacy_ridge"` setting.
-
 ## Required Inputs
 
 ### 1. OpenStreetMap GeoJSON exports
@@ -77,10 +80,19 @@ Replace `{region}` with the lowercase name set in `config.py` (e.g. `ghana`).
 
 ### 2. Load model and industrial features
 
+Choose the load-model path before starting the numbered pipeline. **Neither path
+runs out of the box without the inputs in its last column.**
+
+| Setting in `create_new_model/config.py` | Purpose | Additional inputs |
+|---|---|---|
+| `LOAD_MODEL_METHOD = "paper_huber"` (default) | The published load equations; the exact fitted calibration is unavailable | Measured VIIRS, normalized steel/gold facilities, fitted Huber artifact |
+| `LOAD_MODEL_METHOD = "legacy_ridge"` | Earlier exploratory approximation | Bundled `model_bundle_v5.pkl`; regional inputs and feature extraction still required |
+
 Paper mode requires `data/bus_data/models/model_huber_paper.json`, measured VIIRS
-radiance, and normalized steel/gold facility data described in
-[PAPER_ALIGNMENT.md](PAPER_ALIGNMENT.md). These complete calibration inputs are
-not bundled. Missing inputs stop the paper path with a diagnostic.
+radiance, and normalized steel/gold facility data. These complete calibration
+inputs are not bundled, and the published slopes alone cannot reconstruct the
+fitted model because its intercept is absent. Missing inputs stop the paper path
+with a diagnostic.
 
 Legacy mode uses `data/bus_data/models/model_bundle_v5.pkl`, the earlier Ridge
 model, imputer and feature list.
@@ -97,6 +109,21 @@ SHAPE_FILE_NAME   = "Ghana"         # country name in NaturalEarth "name" column
 COUNTRY_DEMAND_MW = 2451.0          # total domestic Pd (MW) from a reference case
 NATIONAL_EXPORT_MW = 0.0            # net export (MW) split across cross-border buses
 ```
+
+Step 1 records these settings into `data/working_files/{region}/build_config.json`
+together with a SHA-256 of the OSM input, and Steps 2 and 3 verify against it.
+Editing `config.py` part-way through a region is refused with a list of what
+changed, instead of silently mixing settings into one model. A region built
+before that file existed adopts the current settings with a warning that they
+were never checked against Step 1.
+
+These seven settings are the user inputs of the Automate Grid Creation paper's Table VI. Two further
+settings control Automate Grid Creation paper behaviour and should normally be left alone:
+
+| Setting | Default | Effect |
+|---|---|---|
+| `INFER_TRANSFORMERS_FROM_VOLTAGE` | `True` | Sec. III.B. Joins the buses of a compound-voltage substation with a transformer. Setting this `False` splits the buses but omits the transformer, stranding every upper tier as an island — Kenya drops from 143 branches to 134 and no longer matches Table VII. |
+| `FUEL_COST_BASIS` | `"us"` | Table IV. `"us"` reproduces the published Table V coefficients. `"global"` rescales each curve by that fuel's global/US price ratio; the Automate Grid Creation paper prints the global column but never states how to apply it, so results using it must be reported as departing from Table V. |
 
 ---
 
@@ -116,7 +143,27 @@ Without it the script falls back to the Nominatim API (1 request/second).
 
 ## Pipeline Steps
 
-All scripts are run from the `create_new_model/` directory.
+Install dependencies using the [setup instructions](#dependencies), edit
+`create_new_model/config.py`, and run this availability check from the repository
+root **before spending time on manual review**:
+
+```bash
+python create_new_model/check_inputs.py
+```
+
+It reports all missing local prerequisites together and exits with status 1 if
+any are absent. It does not validate file contents or guarantee a successful run.
+The default paper path will report missing inputs in a fresh checkout; supply
+them, or explicitly choose the legacy approximation if that matches your purpose.
+
+Then run the numbered scripts from the `create_new_model/` directory:
+
+```bash
+cd create_new_model
+python create_buses.py
+python create_lines.py
+python resolve_unmatched.py
+```
 
 ### Step 1 — `create_buses.py`
 
@@ -177,7 +224,7 @@ Available commands at each CLI prompt:
 | Command | Action |
 |---|---|
 | `<bus_i>` | Assign this endpoint to an existing bus |
-| `skip` | Leave for later in the session |
+| `skip` | Leave unmatched; the line is removed when review finishes |
 | `delete` | Delete the entire line |
 | `new` | Create a new substation at the endpoint location |
 | `merge <N>` | Merge this line with line N from the unmatched list |
@@ -193,9 +240,42 @@ After manual review the script:
 The `new` command stores voltages in volts internally. An optional secondary
 voltage creates a separate bus and an explicit transformer connection.
 
+This is the human-in-the-loop stage of Sec. IV.B.3; candidate buses are listed
+within the Automate Grid Creation paper's 80 km radius.
+
+Two rules the automated passes enforce now apply to manual picks as well: a bus
+already used as the line's other endpoint is refused, because that would be a
+self-loop and Step 10 deletes it, losing the line; and a bus whose voltage does
+not match the line requires an explicit confirmation, recorded as a deliberate
+override.
+
+Every answer is written to `review_decisions_{region}.json`. That file is the
+audit trail for the session, and it can be replayed to reproduce the same model
+without prompting:
+
+```bash
+python resolve_unmatched.py --replay
+```
+
+Replay reruns the recorded answers in order. Because the endpoint iteration order
+is fixed by the input tables, the same OSM extract plus the same journal yields
+the same case. Commit the journal alongside the region so the build can be
+reproduced by someone who was not present at the original review.
+
+**Review limitation:** the script prompts once per unmatched endpoint, has no
+saved review session, and does not revisit `skip` answers. A resumable or
+bulk-review interface is still needed. The shared topology workflow in
+[MODEL_QUALITY.md](MODEL_QUALITY.md) exports review reports instead, but it
+requires OSM JSON with node identities, produces different topology tables, and
+is not a drop-in replacement for this step.
+
 ---
 
 ### Step 4 — `build_region_features.py`
+
+Before extraction, run `python check_inputs.py --stage 4`. This checks the bus
+table and load-path prerequisites, including the model needed by Step 5, before
+starting potentially lengthy downloads. Then run `python build_region_features.py`.
 
 **Input:** `data/working_files/{region}/matpower_{region}_buses.csv`
 
@@ -219,6 +299,10 @@ To add known industrial sites with incomplete OSM coverage, populate
 ---
 
 ### Step 5 — `predict_bus_loads.py`
+
+Run `python check_inputs.py --stage 5`, then `python predict_bus_loads.py`.
+Feature filenames must match the configured load-model method; rerun Step 4
+if you change methods.
 
 **Input:** Bus feature CSV, model bundle, `data/working_files/{region}/matpower_{region}_buses.csv`
 
@@ -265,9 +349,17 @@ plants, assigns each to its nearest bus, then assigns MATPOWER bus types:
 
 **Output:** `data/working_files/{region}/matpower_{region}_cost_curves.csv`
 
-Computes MATPOWER polynomial cost curves (MODEL=2, n=3) per generator.
-Coefficients are parameterised by fuel type (Snodgrass et al. 2021).
+Computes MATPOWER polynomial cost curves (MODEL=2, n=3) per generator using
+Table V of the Automate Grid Creation paper, parameterised by fuel type and Pmax
+(Snodgrass et al. 2021).
 Zero-cost fuels (solar, wind, nuclear, geothermal) receive c0 = c1 = c2 = 0.
+
+Table IV's fuel prices are selected by `FUEL_COST_BASIS`. The default `"us"`
+reproduces Table V exactly. `"global"` multiplies all three coefficients of a
+generator's curve by that fuel's global/US price ratio, which reference [48]'s
+heat-rate construction makes exact. Hydro and the zero-cost categories are never
+rescaled; internal combustion is rescaled but flagged approximate because [48]
+built it from ERCOT bids.
 
 ---
 
@@ -302,7 +394,7 @@ Pg values are set to the optimal DC dispatch; Qg = 0.
 
 **AC relaxation** (`eq:shunt_acopf`):
 Solves an AC OPF with additional shunt susceptance variables at each bus.
-The penalty term M·Σ(B_sh²) follows manuscript equation (5a). It reduces
+The penalty term M·Σ(B_sh²) follows equation (5a) of the Automate Grid Creation paper. It reduces
 shunt magnitudes but does not directly minimise the number of shunt devices.
 Generator Pg and Qg are set to the optimal AC dispatch values.
 
@@ -338,12 +430,36 @@ The legend shows line voltages only.
 
 ## Dependencies
 
+Python 3.10+ is required. From the repository root, create and activate a virtual
+environment, then install the runtime requirements (including `matplotlib`):
+
 ```bash
-pip install geopandas pandas numpy scipy scikit-learn rasterio shapely \
-            geopy folium matplotlib requests joblib reverse_geocoder
+python -m venv .venv
 ```
 
-Python 3.10+ is required.
+Activate on Windows PowerShell with `.\.venv\Scripts\Activate.ps1`, or on
+macOS/Linux with `source .venv/bin/activate`, then run:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+`reverse_geocoder` is an optional speed improvement for Step 1. The test
+requirements include the runtime requirements, so both installation paths use
+the same dependency list.
+
+## Troubleshooting Steps 4 and 5
+
+Run `check_inputs.py --stage 4` or `--stage 5` from `create_new_model/` first.
+Missing paper data or calibration must be supplied; installing more Python
+packages cannot replace them. A new Huber refit is not the published fitted model.
+
+If the availability check passes but a step fails, retain the full traceback,
+the exact command, Python version, region, and `LOAD_MODEL_METHOD`. Step 4 also
+uses downloaded boundaries, WorldPop, and Overpass data; the availability check
+does not test those services. Step 5 validates model/features and demand/export
+allocation. Positive exports without detected external buses are an explicit
+error. These are possible failure categories, not a diagnosis without the error.
 
 ---
 
@@ -365,7 +481,12 @@ py -3.10 -m venv .venv
 .\.venv\Scripts\python.exe -m pytest -q
 ```
 
-The tests cover bus/transformer renumbering, transformer-only connections,
+`tests/test_paper_methodology.py` pins the implementation to the Automate Grid Creation paper:
+Table VII's Kenya counts, the Sec. III.B compound-voltage transformer, the
+Table V coefficients, the Table IV price ratios, and the Sec. IV.B.1 Step 3
+voltage-filter rules.
+
+The remaining tests cover bus/transformer renumbering, transformer-only connections,
 manual voltage tiers, empty transformer files, demand/export conservation,
 nighttime-light gating, CSV-to-MATPOWER assembly, failed solver rejection,
 and DC/AC solutions. Network admittances and solved AC balances are compared
@@ -379,6 +500,21 @@ shunts in MATPOWER MW/MVAr units. Solver iteration limits are failures, not
 convergence. Returned cases must pass a 0.0001 MVA balance/thermal tolerance;
 voltage and angle bounds use a 1e-7 tolerance. Export retains sufficient numeric
 precision for round-trip validation.
+
+### Checking a built region
+
+```bash
+python create_new_model/check_topology.py --region kenya
+```
+
+Reports the three defect classes that the automated passes cannot create but the
+manual review of Step 3 can: self-loops left after review, endpoints whose bus
+and line voltages disagree, and `base_kV` values written in kV instead of volts.
+It also prints the busiest bus and the next busiest, which exposes a review
+session that dumped many endpoints onto one bus. Exit status is 1 when any
+defect is found. **Every case currently checked into this repository fails it**,
+including the four regions of Table VII, so treat those files as needing a
+rebuild rather than as reference models.
 
 **Previously generated files are not repaired automatically.** Some checked-in
 regional transformer tables contain stale IDs or name/ID mismatches. Rebuild

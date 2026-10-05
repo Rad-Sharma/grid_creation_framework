@@ -1,4 +1,4 @@
-"""Measured industrial features for manuscript Table I and equation (2).
+"""Measured industrial features for Automate Grid Creation Table I and equation (2).
 
 Each industrial site's VIIRS mean is computed over its own footprint BEFORE
 aggregation. Missing coverage is an error, not a dark site. Steel MW and chemical

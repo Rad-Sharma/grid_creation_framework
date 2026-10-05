@@ -1,0 +1,6 @@
+{
+  "region": "kenya",
+  "review_policy": "assisted",
+  "rebuilt_at": "2026-09-19T22:01:01.580520+00:00",
+  "note": "Rebuilt from OSM with the current pipeline. NOT a reviewed model: Step 3 was answered automatically under the stated policy. Kept separate from the checked-in case in ../../{region}/."
+}

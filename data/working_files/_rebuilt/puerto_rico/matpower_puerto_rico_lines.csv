@@ -1,0 +1,375 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,fbus_dist_km,tbus_dist_km,f_crossborder,t_crossborder,length_km,voltage_V,osm_id
+20.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguirre 2_230kV,Subestación Aguirre 1_230kV,0.0374,0.0162,False,False,0.0991,230000,way/1393386629
+9.0,110.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,Subestación Centro Médico,0.0521,0.0092,False,False,2.4796,115000,way/888219436
+96.0,184.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Conquistador,El Tarter Substation 64,0.0492,0.0132,False,False,3.023,,way/530090015
+46.0,206.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,El Tarter Substation 81,0.0192,0.0485,False,False,0.3867,,way/484032003
+77.0,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Quebrada Seca (Ceiba),Subestación Hidroeléctrica de Río Blanco,0.0462,0.0267,False,False,13.4162,115000,way/22195951
+60.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,El Tarter Substation 90,0.0035,0.0942,False,False,3.2778,,way/546236776
+7.0,246.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 1,El Tarter Substation 117,0.0082,0.0925,False,False,3.9625,,way/22222259
+213.0,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 86,Subestación Venezuela,0.0724,0.0605,False,False,0.507,,way/1431425336
+33.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Martín Peña,Subestación Hato Rey 1420,0.0397,0.0958,False,False,2.0235,115000,way/217564648
+46.0,205.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,El Tarter Substation 80,0.0322,0.1093,False,False,0.0628,,way/1386309033|way/1386309034
+205.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 80,El Tarter Substation 9,0.072,0.0913,False,False,0.2509,,way/1386309014
+7.0,247.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 1,El Tarter Substation 118,0.0052,0.1683,False,False,4.6299,115000,way/22223808+way/22241428
+247.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 118,Subestación Quebrada Negrito,0.1683,0.0095,False,False,3.2874,115000,way/22241441
+206.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 9,0.0564,0.1221,False,False,0.2623,,way/1386309036
+52.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,Subestación San Antón,0.0389,0.1699,False,False,1.4184,,way/1050643459
+98.0,238.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 24,El Tarter Substation 109,0.2192,0.0174,False,False,2.2761,,way/534319234
+2.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Viaducto I,Subestación Viaducto II,0.0042,0.2575,False,False,0.2127,,way/486669586
+70.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Victoria,El Tarter Substation 2,0.0349,0.2405,False,False,51.3101,230000,way/650617637
+2.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Viaducto I,Subestación Viaducto II,0.2288,0.0541,False,False,0.2584,,way/486669595
+85.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 16,Subestación Caimital Bajo,0.0089,0.2982,False,False,1.951,,way/22704526
+51.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación San Antón,Subestación Campo Llano,0.2312,0.0989,False,False,2.2347,,way/486644120+way/486644122
+8.0,75.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguas Buenas,Subestación Vega Redonda,0.0054,0.3612,False,False,13.8722,115000,way/22095166
+53.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Venezuela,El Tarter Substation 86,0.0667,0.3266,False,False,0.224,,way/1431425338
+11.0,52.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Quebrada Negrito,Subestación Sabana Llana I,0.2659,0.1322,False,False,8.5616,230000,way/507085580+way/697227421
+79.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río,Subestación Aguas Buenas,0.4234,0.0169,False,False,18.5655,115000,way/507412307+way/22222165+way/486671121
+2.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Viaducto I,Subestación Viaducto II,0.21,0.2762,False,False,0.0188,,way/486669589
+13.0,168.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rexville,El Tarter Substation 56,0.0597,0.4302,False,False,7.8958,115000,way/1154611619+way/22117740+way/22122562+way/22115516+way/22157061+way/484383926+way/484383927
+110.0,136.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Centro Médico,El Tarter Substation 51,0.1835,0.319,False,False,0.0651,,way/888219437|way/888219439
+4.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Manatí_230kV,Subestación Manatí_115kV,0.46,0.048,False,False,0.4608,230000,way/1378962420
+170.0,208.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Añasco Arriba,El Tarter Substation 83,0.088,0.424,False,False,4.9506,115000,way/697186787+way/512187569+way/548269187
+1.0,20.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguirre 1_230kV,Subestación Aguirre 2_230kV,0.0368,0.4874,False,False,0.4198,230000,way/1462866704
+16.0,104.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Hatillo TC,Subestación Dominguito,0.0223,0.5103,False,False,2.5547,,way/1417917107
+61.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Los Frailes,Subestación Guaynabo Pueblo,0.0383,0.5022,False,False,0.1183,,way/485564779
+213.0,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 86,Subestación Venezuela,0.0038,0.5382,False,False,0.0897,,way/1431425335
+199.0,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Hidroeléctrica de Río Blanco,0.5683,0.0053,False,False,15.3556,115000,way/168511519
+136.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 51,El Tarter Substation 52,0.175,0.3992,False,False,0.1731,,way/888219438
+81.0,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Juncos,El Tarter Substation 77,0.0183,0.5581,False,False,15.7318,115000,way/699297427
+61.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Los Frailes,Subestación Guaynabo Pueblo,0.0383,0.5488,False,False,0.0428,,way/485564783
+4.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Manatí_230kV,Subestación Manatí_115kV,0.5659,0.0283,False,False,0.7056,230000,way/1378962417
+123.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 43,El Tarter Substation 84,0.0318,0.5639,False,False,0.314,115000,way/755753260
+61.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Los Frailes,Subestación Guaynabo Pueblo,0.0383,0.5585,False,False,0.0548,,way/485564782
+3.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hato Rey 1420,Subestación Tres Monjitas - 1414,0.095,0.5465,False,False,0.0577,115000,way/484411292
+3.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hato Rey 1420,Subestación Tres Monjitas - 1414,0.095,0.5482,False,False,0.0586,115000,way/484411295
+3.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hato Rey 1420,Subestación Tres Monjitas - 1414,0.0958,0.5502,False,False,0.0594,,way/484411294
+3.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hato Rey 1420,Subestación Tres Monjitas - 1414,0.0958,0.5521,False,False,0.0612,,way/484411302
+53.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Venezuela,El Tarter Substation 86,0.0951,0.5583,False,False,0.0679,,way/1431425353
+111.0,13.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,Subestación Rexville,0.5975,0.0659,False,False,24.117,115000,way/22148569+way/22151136+way/22233070+way/164767349+way/86141863
+53.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Venezuela,El Tarter Substation 86,0.0201,0.6476,False,False,0.1155,,way/1431425352
+53.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Venezuela,El Tarter Substation 86,0.2687,0.4117,False,False,0.0953,,way/1431425339
+53.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Venezuela,El Tarter Substation 86,0.0084,0.6976,False,False,0.2042,,way/1431425350
+53.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Venezuela,El Tarter Substation 86,0.0668,0.6531,False,False,0.1318,,way/1432014596
+61.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Los Frailes,Subestación Guaynabo Pueblo,0.236,0.5152,False,False,0.1655,,way/485564784
+117.0,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Puerta de Tierra,Subestación Parques y Recreos,0.4141,0.3405,False,False,1.335,,way/435316912
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.7192,0.0365,False,False,1.1875,115000,way/485555746
+123.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 43,El Tarter Substation 84,0.2073,0.5488,False,False,0.1713,115000,way/755753261
+61.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Los Frailes,Subestación Guaynabo Pueblo,0.0383,0.7521,False,False,0.2407,,way/485564781
+206.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 9,0.7308,0.0795,False,False,1.1712,,way/484032006
+46.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,Subestación Viaducto I,0.0323,0.8086,False,False,4.7109,,way/484032007
+2.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Viaducto I,Subestación Viaducto II,0.5972,0.2575,False,False,0.5698,,way/84179775
+123.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 43,El Tarter Substation 84,0.1399,0.7155,False,False,0.0913,115000,way/1030695143
+219.0,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 90,El Tarter Substation 18,0.0942,0.7718,False,False,4.3661,,way/508498653
+61.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Los Frailes,Subestación Guaynabo Pueblo,0.1209,0.7477,False,False,0.3601,,way/485564780
+2.0,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Viaducto I,Subestación Viaducto II,0.5972,0.2762,False,False,0.504,,way/84176393
+46.0,206.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 9,El Tarter Substation 81,0.1445,0.7308,False,False,1.076,,way/484032008
+206.0,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 9,0.7642,0.1122,False,False,1.0311,,way/486244511
+33.0,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Martín Peña,Subestación Hato Rey 1404,0.1011,0.789,False,False,0.0609,,way/304233014
+53.0,213.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Venezuela,El Tarter Substation 86,0.3015,0.5908,False,False,0.2506,,way/1431425355
+61.0,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Los Frailes,Subestación Guaynabo Pueblo,0.389,0.5152,False,False,4.7167,,way/485564785+way/485564793+way/485564798+way/485564799+way/485564786+way/485564795+way/485564800+way/485564797+way/485564804
+3.0,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hato Rey 1420,Subestación Viaducto I,0.0958,0.8086,False,False,1.8458,,way/484411285
+146.0,163.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Puerto Nuevo,Subestación Crematorio,0.5227,0.4006,False,False,0.982,,way/486237260
+123.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 43,El Tarter Substation 84,0.1399,0.8085,False,False,0.1294,115000,way/755753259
+33.0,151.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Martín Peña,Subestación Las Monjas,0.0387,0.9424,False,False,0.7735,,way/304233016
+246.0,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 117,El Tarter Substation 66,0.8055,0.1862,False,False,9.5097,115000,way/22241421+way/1153052954
+115.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación de Hatillo,Hatillo TC,0.9603,0.0424,False,False,6.2516,,way/542951585
+9.0,246.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,El Tarter Substation 117,0.0474,0.967,False,False,0.509,115000,way/1084305280
+4.0,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Manatí_230kV,Subestación Manatí_115kV,0.5659,0.46,False,False,0.1075,230000,way/1378962419
+135.0,8.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Las Carolinas,Subestación Aguas Buenas,0.0121,1.0252,False,False,3.5805,115000,way/701211071
+158.0,157.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Summit Hills II,Subestación Summit Hills I,0.7119,0.3404,False,False,0.4164,,way/486244522
+49.0,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Egozcue,Subestación Martín Peña,0.7187,0.4048,False,False,0.8393,,way/1051100631
+162.0,158.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caparra,Subestación Summit Hills II,0.4335,0.7119,False,False,0.4434,,way/486244521
+217.0,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subeatacióon Los Ángeles,Subestación Campo Llano,0.753,0.4251,False,False,1.548,,way/486644129+way/486644127+way/486644128
+69.0,273.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Guerrero,El Tarter Substation 144,0.0722,1.1275,False,False,0.0949,115000,way/502777099|way/502777098
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.0544,1.1548,False,False,1.5551,115000,way/530120757
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.6262,0.6403,False,False,0.2765,230000,way/485555738
+200.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 78,Subestación Mameyes 2,1.2574,0.0178,False,False,15.5572,115000,way/22182603
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.3447,0.9318,False,False,0.4057,115000,way/484277889
+16.0,271.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Hatillo TC,El Tarter Substation 142,0.0265,1.257,False,False,0.5913,,way/542952039
+77.0,200.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Quebrada Seca (Ceiba),El Tarter Substation 78,0.0427,1.274,False,False,16.3601,115000,way/22138491+way/492160492
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.05,1.2685,False,False,0.6145,115000,way/503447118
+8.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguas Buenas,Subestación Quebrada Negrito,1.053,0.2659,False,False,16.2353,230000,way/84302802
+52.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,Subestación San Antón,0.0959,1.2472,False,False,0.072,115000,way/697227418
+3.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hato Rey 1420,Subestación Tres Monjitas - 1414,0.7441,0.6036,False,False,0.7632,115000,way/484411289
+93.0,150.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 21,Subestación Río Grande Pueblo,0.0144,1.3521,False,False,0.2529,,way/528765979
+12.0,246.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 3,El Tarter Substation 117,0.01,1.3631,False,False,9.7537,115000,way/22238710
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.4302,0.9478,False,False,0.6967,115000,way/484277888
+52.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,Subestación San Antón,0.1322,1.2661,False,False,0.2852,230000,way/697227415|way/697227417
+52.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,Subestación San Antón,0.1322,1.2673,False,False,0.7424,230000,way/697227416
+52.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,Subestación San Antón,0.1319,1.275,False,False,0.1356,115000,way/697227419
+52.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,Subestación San Antón,0.0959,1.3193,False,False,0.102,115000,way/697227420
+2.0,214.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Viaducto I,El Tarter Substation 87,0.8086,0.608,False,False,0.2244,,way/486669601
+48.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río Bayamón,Subestación Los Frailes,0.7155,0.7237,False,False,0.6232,,way/485555768|way/485555770+way/485564791|way/485564790
+11.0,177.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Quebrada Negrito,Subestación Barrazas,0.0145,1.4399,False,False,6.3026,115000,way/22131329
+206.0,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,Subestación Hato Rey 1420,0.7308,0.7441,False,False,3.4845,115000,way/486244499+way/484411280|way/484411281
+17.0,18.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Cambalache (Arecibo)_230kV,Subestación Cambalache (Arecibo)_115kV,0.8812,0.5979,False,False,0.3524,230000,way/531583400
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.0541,1.4299,False,False,0.2266,115000,way/1243484310
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.058,1.4299,False,False,0.2378,115000,way/1243484309
+218.0,225.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación 11 de Agosto,El Tarter Substation 96,0.2965,1.1946,False,False,0.305,,way/1478651680
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.5539,0.9489,False,False,1.7885,230000,way/48274778+way/484275545|way/484275549|way/484275795|way/484275543|way/484275553|way/484275554|way/484275572|way/484275575|way/484275814+way/484275558|way/484275560|way/484275564
+196.0,162.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 74,Subestación Caparra,0.8723,0.6506,False,False,0.2749,,way/486244515
+48.0,168.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río Bayamón,El Tarter Substation 56,0.0074,1.5281,False,False,0.0297,115000,way/485555749
+48.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río Bayamón,Subestación Los Frailes,0.2061,1.3352,False,False,0.5698,,way/485555760
+130.0,235.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 48,El Tarter Substation 106,0.0179,1.5301,False,False,4.4726,,way/1150559540+way/1150559542+way/1150559541+way/1150559543
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.3583,1.1933,False,False,1.2828,230000,way/343875016
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.4014,1.1507,False,False,0.4646,115000,way/343875018
+162.0,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caparra,El Tarter Substation 74,0.6506,0.9137,False,False,0.2432,,way/486244516|way/486244519|way/486244520|way/486244518
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.6262,0.9478,False,False,0.3289,,way/484275570
+8.0,168.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguas Buenas,El Tarter Substation 56,1.035,0.5539,False,False,17.4296,230000,way/48274771
+262.0,263.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 133,El Tarter Substation 134,0.7892,0.806,False,False,0.1768,115000,way/1243555978|way/1243555934|way/1243555935
+54.0,159.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Campo Llano,Subestación Villas Prades,0.243,1.3565,False,False,0.1824,,way/486644124|way/486644121|way/486644123
+51.0,24.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación San Antón,Subestación Sabana Llana II_230kV,0.1699,1.4344,False,False,0.1453,230000,way/486644119|way/1383634404|way/486644118|way/1383634405
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.3744,1.2345,False,False,0.5603,230000,way/1243424928
+231.0,73.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 102,El Tarter Substation 13,1.1058,0.5292,False,False,1.0293,115000,way/1243484332
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.7192,0.9171,False,False,0.2122,115000,way/484275556
+82.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 15,El Tarter Substation 91,0.011,1.6335,False,False,2.6546,230000,way/22189547
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.7143,0.9344,False,False,0.2006,115000;230000,way/536793720
+220.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 91,Subestación Añasco Arriba,1.6219,0.0354,False,False,5.111,230000,way/532991866
+93.0,150.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 21,Subestación Río Grande Pueblo,0.0759,1.5833,False,False,0.0591,,way/528765980
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.2125,1.4523,False,False,0.1865,230000,way/1243484312
+63.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Guaynabo Pueblo,El Tarter Substation 52,0.0154,1.6526,False,False,3.9794,115000,way/513167197
+177.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Barrazas,Subestación Quebrada Negrito,1.4399,0.2407,False,False,6.0718,230000,way/22241430
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.2322,1.4523,False,False,0.163,230000,way/1243484311
+206.0,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 81,El Tarter Substation 74,0.7642,0.9563,False,False,0.3329,,way/486244513|way/486244514|way/1386309037|way/1386309039
+48.0,168.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río Bayamón,El Tarter Substation 56,0.0365,1.6898,False,False,0.1628,115000,way/485555751
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.2322,1.5046,False,False,0.1567,230000,way/1243424934
+240.0,128.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 111,El Tarter Substation 47,1.7395,0.0088,False,False,4.9593,,way/1057999007
+76.0,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hidroeléctrica de Río Blanco,El Tarter Substation 77,0.0268,1.7322,False,False,12.0879,,way/700448995+way/700448996
+9.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,El Tarter Substation 52,0.2193,1.5406,False,False,0.122,115000,way/486671123
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.2616,1.5046,False,False,0.1639,230000,way/1243424933
+137.0,158.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 52,Subestación Summit Hills II,1.464,0.3026,False,False,4.3571,115000,way/85472665
+9.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,El Tarter Substation 52,0.1168,1.6526,False,False,0.3148,115000,way/486671122
+80.0,210.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Mameyes 2,Subestación Canóvanas Pueblo,0.6721,1.1034,False,False,17.2381,115000,way/507085588+way/507085590
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.2597,1.5171,False,False,0.4355,230000,way/1243424935
+9.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,El Tarter Substation 52,0.1168,1.6711,False,False,0.2712,115000,way/486671124
+218.0,225.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación 11 de Agosto,El Tarter Substation 96,0.017,1.7864,False,False,0.5885,,way/1478651681
+70.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Victoria,Subestación Caimital Bajo,0.7405,1.067,False,False,2.9299,230000,way/502972258+way/502972260
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.2374,1.5739,False,False,0.4257,230000,way/1243424936
+48.0,168.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río Bayamón,El Tarter Substation 56,0.1151,1.7003,False,False,0.1087,,way/485555758
+168.0,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación Río Bayamón,0.8779,0.9585,False,False,0.1949,230000,way/484277886
+121.0,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 42,Subestación San Lorenzo I,0.0131,1.8412,False,False,6.2352,,way/1150559544+way/1150559545
+12.0,52.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 3,Subestación Sabana Llana I,1.727,0.1319,False,False,5.4345,115000,way/697227422
+231.0,265.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 102,El Tarter Substation 136,1.1058,0.7533,False,False,16.0043,115000,way/22159372+way/1243518851+way/22206251
+127.0,235.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Bayamón 2,El Tarter Substation 106,0.0162,1.8473,False,False,12.0713,115000,way/492224484+way/22123529+way/84307480
+69.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Guerrero,Subestación Victoria,1.5237,0.3474,False,False,13.5242,115000,way/584759841+way/502972251+way/502972252
+71.0,85.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital Bajo,El Tarter Substation 16,0.0131,1.865,False,False,0.2963,,way/502972263
+48.0,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río Bayamón,Subestación Los Frailes,0.7127,1.1676,False,False,0.1233,,way/485555766
+63.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Guaynabo Pueblo,Subestación UPR - Bayamón,0.0205,1.863,False,False,2.8354,115000,way/492218838+way/492218839
+52.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,El Tarter Substation 3,0.0251,1.8668,False,False,5.778,115000,way/343240051+way/491663652+way/491663653+way/85449505|way/507085578
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,0.5292,1.4,False,False,0.5135,115000,way/1243484333
+183.0,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Arecibo Pueblo,Subestación Cambalache (Arecibo)_230kV,0.1437,1.7876,False,False,0.2134,230000,way/531586056
+134.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 50,El Tarter Substation 2,1.9434,0.0264,False,False,3.4169,115000;?,way/157591565
+11.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Quebrada Negrito,El Tarter Substation 3,0.2407,1.7371,False,False,3.219,230000,way/700448994
+9.0,246.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,El Tarter Substation 117,0.5234,1.4632,False,False,0.5101,115000,way/486673324
+39.0,205.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Cataño,El Tarter Substation 80,1.8857,0.129,False,False,6.4337,115000,way/706812604
+220.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 91,Subestación Añasco Arriba,1.9844,0.0354,False,False,3.3352,115000,way/167573659
+160.0,161.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Solar San Fermín,El Tarter Substation 54,0.0126,2.0521,False,False,0.2514,,way/1082584042|way/1082584043
+48.0,168.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río Bayamón,El Tarter Substation 56,0.5453,1.5234,False,False,0.5435,,way/485555744
+69.0,273.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Guerrero,El Tarter Substation 144,0.5875,1.5075,False,False,0.1639,,way/1490134380|way/1490134378
+168.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 56,Subestación UPR - Bayamón,0.3447,1.7507,False,False,2.3388,115000;230000,way/484275806
+93.0,150.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 21,Subestación Río Grande Pueblo,0.6535,1.4429,False,False,0.8129,,way/528214738
+70.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Victoria,Subestación Caimital Bajo,0.7405,1.375,False,False,4.7692,115000,way/502972256+way/502972259+way/529166735+way/529167094
+267.0,266.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 138,El Tarter Substation 137,1.2511,0.9246,False,False,2.0839,115000,way/1243518880
+10.0,17.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 2,Subestación Cambalache (Arecibo)_230kV,0.0244,2.1619,False,False,0.8038,230000,way/531753877
+170.0,208.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Añasco Arriba,El Tarter Substation 83,0.2299,1.9943,False,False,1.5153,,way/546934706
+71.0,85.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital Bajo,El Tarter Substation 16,0.4061,1.8427,False,False,0.4056,115000;230000,way/650708786
+8.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguas Buenas,El Tarter Substation 102,1.0711,1.1933,False,False,97.5619,230000,way/22096239+way/88758231+way/22156982
+266.0,262.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 137,El Tarter Substation 133,1.5688,0.7442,False,False,4.0896,115000,way/697060279
+219.0,278.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 90,El Tarter Substation 149,1.1204,1.2314,False,False,0.4897,,way/527554337
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,0.7487,1.6136,False,False,0.3224,,way/548929007
+82.0,181.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 15,Subestación Mayagüez Pueblo,0.0484,2.3177,False,False,0.0398,230000,way/700199335|way/1243404730|way/1243404731
+69.0,273.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Guerrero,El Tarter Substation 144,0.0722,2.3731,False,False,1.4532,115000;230000,way/502777100
+267.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 138,El Tarter Substation 102,1.3008,1.1548,False,False,11.8918,115000,way/22158160
+76.0,177.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hidroeléctrica de Río Blanco,Subestación Barrazas,0.0127,2.4433,False,False,18.1489,115000,way/507085623+way/85433199
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,0.9666,1.4997,False,False,0.7396,,way/548792229
+73.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 91,0.7968,1.6795,False,False,53.7256,230000,way/343875003
+10.0,73.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 2,El Tarter Substation 13,1.7049,0.7968,False,False,59.6371,230000,way/22089128
+170.0,208.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Añasco Arriba,El Tarter Substation 83,0.0354,2.5399,False,False,0.121,115000,way/697186788
+231.0,266.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 102,El Tarter Substation 137,1.1058,1.5105,False,False,13.2849,115000,way/22155624+way/1243518852
+271.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 142,Hatillo TC,0.721,1.9343,False,False,0.2336,,way/542952040|way/542952041
+266.0,267.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 137,El Tarter Substation 138,0.9271,1.7747,False,False,0.1313,115000;38000,way/1243518882
+177.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Barrazas,Subestación Juncos,2.4433,0.2852,False,False,14.5738,230000,way/22128665+way/1245603831+way/508276999
+6.0,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Aguas Buenas TC_230kV,Subestación Las Carolinas,2.065,0.6812,False,False,5.067,230000,way/539259151
+75.0,203.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Vega Redonda,Subestación Comerío,0.0689,2.6945,False,False,0.3008,115000,way/506141265|way/1243686647|way/1243686648
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,0.1325,2.665,False,False,0.0799,,way/548268723
+246.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 117,El Tarter Substation 52,1.3631,1.471,False,False,0.1513,115000,way/486673328
+52.0,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Sabana Llana I,Subestación San Antón,0.9649,1.9426,False,False,2.6213,115000,way/1153052950+way/1153052952
+73.0,230.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 101,0.2649,2.6756,False,False,2.5652,115000,way/501875448
+80.0,164.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Mameyes 2,Subestación Río Grande Estates,0.0269,2.9379,False,False,0.665,115000,way/508039846
+138.0,240.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Bayamón Pueblo,El Tarter Substation 111,1.7181,1.265,False,False,14.5017,115000,way/22117588+way/1030680378
+246.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 117,El Tarter Substation 52,1.4711,1.5247,False,False,0.1295,115000,way/486673330
+137.0,246.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 52,El Tarter Substation 117,1.4998,1.5189,False,False,0.0884,115000,way/85472666
+39.0,165.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Cataño,Subestación Bayview,1.897,1.1394,False,False,4.4063,230000;115000,way/492408203
+165.0,138.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Bayview,Subestación Bayamón Pueblo,1.2572,1.7874,False,False,7.4897,115000,way/48274783
+9.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,El Tarter Substation 52,0.9508,2.1479,False,False,0.2388,115000,way/486671118
+12.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 3,Subestación Quebrada Negrito,0.0156,3.0854,False,False,2.3646,115000,way/22239430+way/85449501
+89.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 18,Subestación Victoria,0.0224,3.0872,False,False,1.7565,,way/704357050
+60.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,El Tarter Substation 90,0.8602,2.2975,False,False,0.1209,,way/546472127
+70.0,202.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Victoria,El Tarter Substation 79,0.5523,2.6103,False,False,1.363,,way/529170931+way/529170932
+71.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital Bajo,Subestación Victoria,0.4061,2.7746,False,False,2.6607,115000;230000,way/491823252+way/529166728+way/529166729+way/529166733
+60.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,El Tarter Substation 90,1.3755,1.8251,False,False,0.5267,,way/546460760
+237.0,123.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,El Tarter Substation 43,2.8701,0.3418,False,False,14.0795,115000,way/22183282
+262.0,261.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 133,El Tarter Substation 132,0.7188,2.509,False,False,3.5084,115000;38000,way/1243641515
+261.0,262.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 132,El Tarter Substation 133,2.479,0.7777,False,False,3.548,115000,way/1243555936
+79.0,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río,Subestación Las Carolinas,3.2747,0.002,False,False,11.0466,115000,way/22128349+way/886497380
+60.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,El Tarter Substation 90,0.0466,3.2362,False,False,0.0601,,way/1453234002
+10.0,134.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 2,El Tarter Substation 50,0.0235,3.2744,False,False,4.2234,115000,way/650617632
+134.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 50,Hatillo TC,3.2744,0.0245,False,False,6.4417,115000,way/157591568
+60.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,El Tarter Substation 90,0.8663,2.446,False,False,0.1302,,way/546472128
+123.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 43,El Tarter Substation 84,0.3313,2.9937,False,False,2.8197,115000,way/1417940928
+237.0,236.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,El Tarter Substation 107,1.0758,2.2772,False,False,1.4158,,way/543008269+way/543008267+way/543008268
+60.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,El Tarter Substation 90,1.1318,2.2479,False,False,0.1478,,way/546461895
+16.0,271.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Hatillo TC,El Tarter Substation 142,0.5466,2.834,False,False,2.532,,way/542953766
+240.0,128.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 111,El Tarter Substation 47,1.0539,2.3373,False,False,2.4302,,way/1057999006
+9.0,246.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Monacillos_115kV,El Tarter Substation 117,0.9508,2.4484,False,False,0.5438,115000,way/486671119
+82.0,181.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 15,Subestación Mayagüez Pueblo,1.0721,2.3978,False,False,0.9309,230000,way/697186785
+10.0,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 2,Subestación Arecibo Pueblo,1.7331,1.758,False,False,0.317,230000,way/510045294|way/510045295|way/510045296
+143.0,138.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Juan Domingo,Subestación Bayamón Pueblo,1.6803,1.8346,False,False,0.5971,115000,way/484275571
+138.0,143.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Bayamón Pueblo,Subestación Juan Domingo,1.8171,1.7081,False,False,0.553,115000;230000,way/48274779
+143.0,173.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Juan Domingo,El Tarter Substation 59,1.6637,1.9032,False,False,0.5175,230000,way/484275812
+253.0,254.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 124,El Tarter Substation 125,0.2817,3.2966,False,False,6.835,115000,way/606880337
+218.0,225.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación 11 de Agosto,El Tarter Substation 96,1.262,2.3874,False,False,0.2164,,way/551757638
+60.0,219.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,El Tarter Substation 90,0.7822,2.8704,False,False,0.4289,,way/546472126
+246.0,137.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 117,El Tarter Substation 52,2.1466,1.5354,False,False,1.0997,115000,way/85472664
+93.0,150.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 21,Subestación Río Grande Pueblo,0.6535,3.0614,False,False,1.2134,,way/528214737+way/528214733|way/528214734|way/528214735|way/528214736
+138.0,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Bayamón Pueblo,Subestación Cataño,1.8109,1.91,False,False,2.7067,230000;115000,way/1030680363
+80.0,164.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Mameyes 2,Subestación Río Grande Estates,1.0031,2.7302,False,False,1.1903,,way/508039842
+199.0,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Juncos,3.7468,0.0204,False,False,35.911,230000,way/22175583
+267.0,266.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 138,El Tarter Substation 137,1.3071,2.4715,False,False,0.0573,115000,way/1243518883|way/1243518884
+70.0,71.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Victoria,Subestación Caimital Bajo,0.0328,3.7695,False,False,0.8,230000;115000,way/584759838
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,2.5437,1.3261,False,False,3.7238,230000,way/501875462
+105.0,279.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 30,El Tarter Substation 150,0.0134,3.8705,False,False,0.0114,,way/1154586079
+39.0,138.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Cataño,Subestación Bayamón Pueblo,1.897,2.0847,False,False,0.1867,115000,way/706812603|way/1030680364
+170.0,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Añasco Arriba,El Tarter Substation 18,0.088,3.9262,False,False,10.4557,230000,way/697186786
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,1.4406,2.5743,False,False,1.2507,,way/546934502+way/548920754
+237.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,El Tarter Substation 102,2.8885,1.1548,False,False,57.8023,230000,way/84459669
+275.0,274.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 146,El Tarter Substation 145,0.0176,4.0348,False,False,2.9064,,way/22168662
+220.0,82.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 91,El Tarter Substation 15,1.6303,2.4431,False,False,0.0818,230000,way/700199332
+10.0,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 2,Subestación Arecibo Pueblo,1.6507,2.4775,False,False,2.8118,115000,way/157591567
+10.0,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 2,Subestación Arecibo Pueblo,1.6926,2.5597,False,False,2.4624,230000,way/486881459
+254.0,119.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 125,El Tarter Substation 40_115kV,1.5492,2.7048,False,False,0.558,115000,way/1243686676
+79.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río,El Tarter Substation 1,0.0303,4.3916,False,False,0.4736,115000,way/507412305
+81.0,249.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Juncos,El Tarter Substation 120,0.0818,4.3823,False,False,0.0544,230000,way/508276996
+272.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 143,Subestación Guerrero,1.1897,3.3504,False,False,5.2237,,way/1493558986+way/1498088532
+237.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,El Tarter Substation 2,2.9035,1.6988,False,False,32.3709,230000,way/22107112
+220.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 91,Subestación Añasco Arriba,1.6131,3.0345,False,False,1.7675,230000,way/508498666
+237.0,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,Subestación UPR - Bayamón,2.9055,1.7507,False,False,44.1895,230000,way/22235183+way/699796805
+186.0,12.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 66,El Tarter Substation 3,2.1918,2.5139,False,False,0.0555,,way/22238928
+78.0,280.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital,El Tarter Substation 151,3.0943,1.6161,False,False,2.5175,115000,way/1245603826
+73.0,230.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 101,2.1122,2.6756,False,False,0.0258,115000,way/1243484307|way/1243484308
+165.0,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Bayview,Subestación Cataño,1.2572,3.5462,False,False,0.1507,115000,way/1030680368|way/1030680365|way/1030680366|way/1030680367
+78.0,280.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital,El Tarter Substation 151,3.2033,1.6075,False,False,2.9344,230000;115000,way/697060272
+70.0,202.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Victoria,El Tarter Substation 79,0.3474,4.4694,False,False,8.595,230000,way/502972255+way/167573661
+78.0,280.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital,El Tarter Substation 151,3.3035,1.6098,False,False,3.7916,230000;115000,way/699278778
+236.0,153.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 107,Subestación Manatí Pueblo,2.2325,2.7546,False,False,0.0907,115000,way/697203082
+240.0,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 111,El Tarter Substation 69,1.672,3.3426,False,False,1.8759,,way/1056713173
+12.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 3,Subestación Quebrada Negrito,1.8668,3.1638,False,False,15.6157,115000,way/22131213+way/22129669+way/85449145
+272.0,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 143,Subestación Guerrero,1.7843,3.3026,False,False,0.3553,,way/1494056226
+228.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 99,El Tarter Substation 91,3.448,1.6536,False,False,39.2756,230000,way/22215893+way/530718193+way/508498663
+174.0,19.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Factor,El Tarter Substation 4_115kV,1.0927,4.0269,False,False,0.5556,115000,way/534391518
+208.0,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,El Tarter Substation 18,1.3586,3.9262,False,False,7.1336,115000,way/167573658
+255.0,261.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 126,El Tarter Substation 132,3.1719,2.479,False,False,8.7561,115000,way/501290967
+267.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 138,El Tarter Substation 102,4.6677,1.1933,False,False,9.4381,230000,way/1243484314
+180.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 62,El Tarter Substation 102,2.6925,3.2751,False,False,0.4922,,way/502517247
+73.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 13,El Tarter Substation 102,2.548,3.4524,False,False,0.0418,230000,way/1243652129|way/1243652130|way/1243652131
+280.0,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,Subestación Caimital,1.6161,4.4228,False,False,0.1074,115000,way/1245603828|way/1245603825|way/1245603827|way/1393386176
+237.0,236.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,El Tarter Substation 107,2.4176,3.6467,False,False,0.5266,,way/543216778
+201.0,127.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Jájome,Subestación Bayamón 2,6.1148,0.0162,False,False,8.9786,115000,way/699263103+way/22145366
+237.0,236.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,El Tarter Substation 107,2.9161,3.2181,False,False,3.6968,115000,way/510045280
+210.0,160.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Canóvanas Pueblo,Subestación Solar San Fermín,1.1712,5.0008,False,False,2.1882,115000,way/86134045+way/164066022
+189.0,240.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 69,El Tarter Substation 111,2.4169,3.8507,False,False,1.9758,,way/536766699+way/536766675+way/536766700
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,2.0571,4.2406,False,False,0.2587,,way/547310047
+64.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hidroeléctrica Toro Negro_115kV,El Tarter Substation 23,1.2653,5.0563,False,False,3.1281,115000,way/22255788+way/536499715
+111.0,99.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,El Tarter Substation 25,0.5975,5.8417,False,False,30.5606,115000,way/22140396
+60.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Rincón,Subestación Añasco Arriba,0.8416,5.6591,False,False,7.9361,,way/532081664
+237.0,209.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 108,Subestación Buena Vista,2.8701,3.7012,False,False,32.9761,115000,way/22253964+way/22149344+way/494264586
+83.0,119.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Santa Isabel_115kV,El Tarter Substation 40_115kV,2.327,4.3327,False,False,2.4315,115000,way/22231802
+240.0,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 111,El Tarter Substation 69,3.2109,3.4551,False,False,0.0795,,way/536766712|way/536766711
+269.0,99.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 140,El Tarter Substation 25,0.8085,5.9979,False,False,15.565,115000,way/511571374+way/22109306+way/502517233+way/502517234|way/502517235+way/502517232+way/697199922
+20.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguirre 2_230kV,Subestación Aguirre 1_230kV,3.3397,3.603,False,False,0.5554,230000,way/529223928
+112.0,211.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 35,El Tarter Substation 84,2.8023,4.2424,False,False,1.9594,,way/531326565
+78.0,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital,El Tarter Substation 77,3.3035,3.838,False,False,37.6415,230000,way/157600961
+199.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Las Piedras,0.5513,6.6133,False,False,0.1767,115000,way/1245603844|way/1245603848|way/1245603847
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,4.4132,2.8428,False,False,2.2271,,way/548741507+way/1392016324
+199.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Las Piedras,0.5614,6.8527,False,False,0.3185,115000,way/1245603845|way/1245603849
+77.0,233.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Quebrada Seca (Ceiba),El Tarter Substation 104,0.0597,7.5041,False,False,5.2811,115000,way/697237561
+199.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Las Piedras,0.5588,7.0105,False,False,0.5552,115000,way/1245603876
+134.0,99.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 50,El Tarter Substation 25,1.7644,5.836,False,False,11.8134,115000,way/22109312+way/22109370
+103.0,227.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 29,El Tarter Substation 98,1.9588,5.651,False,False,2.8157,,way/22088827+way/22177857
+79.0,7.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Río,El Tarter Substation 1,3.2747,4.3916,False,False,3.2202,115000,way/22095580+way/22220926
+76.0,250.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Hidroeléctrica de Río Blanco,El Tarter Substation 121,2.6122,5.2699,False,False,1.0872,,way/528565770+way/528565776
+280.0,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,Subestación Caimital,1.6098,6.2846,False,False,2.2794,230000,way/697060275
+229.0,73.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 100,El Tarter Substation 13,7.8338,0.0611,False,False,17.3391,115000,way/503447122
+280.0,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,Subestación Caimital,1.6075,6.3075,False,False,2.2694,230000,way/697060274
+99.0,123.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 25,El Tarter Substation 43,5.8346,2.1987,False,False,20.6778,115000,way/22109391+way/510045284+way/501090059+way/755753263
+89.0,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 18,Subestación Victoria,3.9262,4.1084,False,False,0.3647,230000,way/167573657
+75.0,113.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Vega Redonda,El Tarter Substation 36,0.3612,7.9614,False,False,11.6095,115000,way/501801455
+167.0,80.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Luquillo Pueblo,Subestación Mameyes 2,2.0077,6.3619,False,False,1.1369,,way/528040617
+97.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 23,Subestación de Juana Díaz_115kV,3.0686,5.3796,False,False,5.4377,115000,way/530133139+way/699803735+way/538613513+way/699784932
+253.0,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 124,Subestación Caimital,5.3421,3.2033,False,False,25.9155,115000,way/22231675+way/157600968
+25.0,120.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Cacao,El Tarter Substation 41,1.7282,6.8338,False,False,0.7397,,way/22208026
+253.0,254.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 124,El Tarter Substation 125,5.3343,3.2806,False,False,4.4133,115000,way/509999295+way/1243641522
+21.0,26.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Jobos T.C._115kV,"A.E.S., Guayama_230kV",3.0104,5.7857,False,False,3.3966,115000,way/529196100
+177.0,11.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Barrazas,Subestación Quebrada Negrito,1.4399,7.3872,False,False,1.1109,230000;115000,way/584759835
+91.0,220.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 20,El Tarter Substation 91,7.2599,1.6692,False,False,21.0539,115000,way/530717827
+97.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 23,Subestación de Juana Díaz_115kV,4.1906,4.9301,False,False,0.1914,115000,way/538615612|way/538615922
+255.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 126,El Tarter Substation 23,3.1833,5.9955,False,False,13.2829,115000,way/22173096
+254.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 125,El Tarter Substation 23,3.2805,5.9941,False,False,39.5496,115000,way/22201627+way/22173398
+221.0,222.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 92,El Tarter Substation 93,3.8685,5.5894,False,False,2.8218,230000,way/529058801
+221.0,222.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 92,El Tarter Substation 93,3.8435,5.7545,False,False,0.1198,230000,way/1243404732|way/1243404733
+134.0,10.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 50,El Tarter Substation 2,3.262,6.407,False,False,0.3554,,way/700442224
+253.0,254.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 124,El Tarter Substation 125,4.915,4.8169,False,False,0.3193,230000;115000,way/697060278
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,4.7685,5.0849,False,False,0.3241,,way/549444346
+97.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 23,Subestación de Juana Díaz_115kV,4.8832,5.3015,False,False,0.1374,115000,way/538392819
+279.0,105.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 150,El Tarter Substation 30,4.9784,5.2309,False,False,0.0568,,way/1417967967
+98.0,239.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 24,El Tarter Substation 110,4.4944,5.7999,False,False,0.5594,,way/536121184
+203.0,122.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Comerío,Subestación Naranjito,5.0185,5.6059,False,False,4.6417,,way/22145273
+208.0,170.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,Subestación Añasco Arriba,5.1408,5.5279,False,False,0.3883,,way/549229572
+199.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Las Piedras,3.8302,6.8527,False,False,3.5133,115000,way/699296638
+34.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación de Juana Díaz_115kV,El Tarter Substation 23,4.6923,6.1077,False,False,0.2676,115000,way/530931901
+30.0,229.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Guánica TC_230kV,El Tarter Substation 100,2.4997,8.3443,False,False,2.2797,230000,way/22154576
+83.0,254.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Santa Isabel_115kV,El Tarter Substation 125,5.2564,5.7102,False,False,0.124,115000,way/1243798100
+97.0,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 23,Subestación de Juana Díaz_115kV,5.5025,5.5183,False,False,0.4533,115000,way/538397963
+228.0,229.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 99,El Tarter Substation 100,3.4575,7.8091,False,False,21.4559,230000,way/22153608
+70.0,208.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Victoria,El Tarter Substation 83,5.9715,5.4042,False,False,0.6722,,way/527971146
+180.0,231.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 62,El Tarter Substation 102,3.4513,7.9486,False,False,0.4045,,way/699955664
+99.0,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 25,El Tarter Substation 23,5.8775,5.9471,False,False,36.5292,115000,way/22109349+way/1243652145
+182.0,99.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 63,El Tarter Substation 25,6.4244,5.8691,False,False,5.4424,115000,way/510564224
+230.0,229.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 101,El Tarter Substation 100,5.8424,6.5331,False,False,0.3935,,way/542008672+way/542008673
+99.0,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 25,El Tarter Substation 63,5.5822,6.9145,False,False,3.0988,115000,way/700442222+way/700430537+way/700442223
+280.0,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,Subestación Caimital,9.4718,3.2033,False,False,14.5888,230000,way/157600972
+218.0,221.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación 11 de Agosto,El Tarter Substation 92,5.5629,7.1382,False,False,1.927,,way/1385650950
+99.0,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 25,El Tarter Substation 63,5.835,6.9145,False,False,0.4659,115000,way/22109342
+199.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Las Piedras,3.8302,9.6251,False,False,0.1241,115000,way/699296637
+199.0,204.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 77,Subestación Las Piedras,3.8147,9.6918,False,False,0.1871,115000,way/168511518
+103.0,227.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 29,El Tarter Substation 98,6.1595,7.3591,False,False,7.1543,,way/529454510+way/529454508+way/529454509
+170.0,208.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Añasco Arriba,El Tarter Substation 83,6.734,6.9829,False,False,0.1087,,way/532081661
+208.0,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 83,El Tarter Substation 20,6.3605,7.4613,False,False,0.1833,,way/549607768
+97.0,113.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 23,El Tarter Substation 36,6.0608,7.9629,False,False,19.5764,115000,way/501801460
+99.0,120.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 25,El Tarter Substation 41,5.8749,8.5103,False,False,35.9547,115000,way/22109395+way/169957952
+111.0,141.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,El Tarter Substation 53_115kV,6.659,8.6251,False,False,1.6549,115000,way/22141612+way/22141644
+91.0,208.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 20,El Tarter Substation 83,7.5174,8.6938,False,False,0.3808,,way/549597826
+104.0,16.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Dominguito,Hatillo TC,8.9447,8.9227,False,False,0.8643,,way/543157631
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.4997,,False,False,0.328,230000,way/1245603822
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.4976,,False,False,0.0849,115000,way/1245603823
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.5704,,False,False,4.8247,115000,way/157600960
+,280.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 151,,9.6009,False,False,4.8144,230000;115000,way/157600962
+197.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 75_115kV,,7.4763,,False,False,2.307,115000,way/22168044
+,199.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 77,,3.838,False,False,7.3875,115000,way/492155355
+111.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,,0.0067,,False,False,0.1651,,way/536640150
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.5287,,False,False,0.1168,230000,way/1243484324
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.5287,,False,False,0.1138,230000,way/1243484323
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.1135,,False,False,0.4355,230000,way/1243484327
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.2382,,False,False,0.1739,230000,way/1243484328
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.6009,,False,False,0.237,230000,way/1243484330
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.6009,,False,False,0.1145,115000,way/1243484331
+111.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,,3.1965,,False,False,0.1353,,way/535068068
+111.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,,1.4953,,False,False,0.2751,,way/536578643
+111.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 34,,2.0967,,False,False,0.9648,,way/535337617
+197.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 75_115kV,,8.4846,,False,False,8.1941,115000,way/22168095+way/22169893+way/22170094+way/22170973
+201.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Jájome,,6.1157,,False,False,56.3173,115000,way/22141247+way/22158742+way/1245603842
+280.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 151,,9.4809,,False,False,0.1487,115000,way/1245603824
+,280.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,,El Tarter Substation 151,,9.5287,False,False,4.9885,230000,way/157600963
+78.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Caimital,,3.3035,,False,False,9.2017,115000,way/157600965
+8.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,Subestación Aguas Buenas,,1.0703,,False,False,37.5836,230000,way/22137207
+268.0,,0.0,0.0,0.0,0.0,0.0,0.0,0,0,1,-60,60,El Tarter Substation 139,,6.7058,,False,False,4.7241,,way/22085312

@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "region": "puerto_rico",
+    "COUNTRY_ISO3": "PRI",
+    "REGION_BBOX": [
+      -67.3,
+      17.85,
+      -65.2,
+      18.55
+    ],
+    "SHAPE_FILE_NAME": "Puerto Rico",
+    "MIN_TRANSMISSION_VOLTAGE_V": 115000,
+    "COUNTRY_DEMAND_MW": 2800.0,
+    "NATIONAL_EXPORT_MW": 0.0,
+    "LOAD_MODEL_METHOD": "paper_huber",
+    "INFER_TRANSFORMERS_FROM_VOLTAGE": true,
+    "FUEL_COST_BASIS": "us",
+    "PLANT_NAME_SEARCH_RADIUS_M": 1000
+  },
+  "steps": [
+    {
+      "step": "create_buses",
+      "at": "2026-09-19T21:10:50.233211+00:00"
+    },
+    {
+      "step": "create_lines",
+      "at": "2026-09-19T21:10:53.563942+00:00"
+    },
+    {
+      "step": "resolve_unmatched",
+      "at": "2026-09-19T21:12:38.886833+00:00"
+    }
+  ],
+  "inputs": {
+    "export_puerto_rico_buses.geojson": "15d2cdc31d1ede571e2ecc486612eede06280951229142cfbdb8efd13fd95912"
+  }
+}

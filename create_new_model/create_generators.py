@@ -35,7 +35,8 @@ import numpy as np
 
 from pathlib import Path
 import config
-from plant_names import nearby_plant_name
+from plant_names import (nearby_plant_name, nearest_named,
+                         region_named_power_objects, reset_failure_count)
 
 region    = config.region
 PROJ_ROOT = Path(__file__).parent.parent
@@ -373,12 +374,30 @@ def extract_name(row: pd.Series) -> str:
 
 gdf["plant_name"] = gdf.apply(extract_name, axis=1)
 gdf["inferred_name_osm_id"] = ""
-for idx in gdf.index[gdf["plant_name"].str.startswith("[unnamed")]:
+_name_cache = PROJ_ROOT / "data/bus_data/raw/plant_names"
+unnamed_rows = gdf.index[gdf["plant_name"].str.startswith("[unnamed")]
+
+# Sec. V.B.1 infers a name from the nearest named power object. One Overpass
+# query for the whole region gives the same candidate set as one query per plant
+# and costs a single round trip instead of hundreds against a rate-limited
+# endpoint. The per-plant path stays as the fallback.
+reset_failure_count()
+region_candidates = (region_named_power_objects(config.REGION_BBOX, _name_cache)
+                     if len(unnamed_rows) else [])
+if region_candidates is not None and len(unnamed_rows):
+    print(f"  Region-wide name query returned {len(region_candidates)} named power "
+          f"object(s) for {len(unnamed_rows)} unnamed plant(s).")
+
+for idx in unnamed_rows:
     lat, lon = gdf.at[idx, "latitude"], gdf.at[idx, "longitude"]
     if pd.isna(lat) or pd.isna(lon):
         continue
-    name, reference = nearby_plant_name(lat, lon, PROJ_ROOT / "data/bus_data/raw/plant_names",
+    if region_candidates is not None:
+        name, reference = nearest_named(lat, lon, region_candidates,
                                         config.PLANT_NAME_SEARCH_RADIUS_M)
+    else:
+        name, reference = nearby_plant_name(lat, lon, _name_cache,
+                                            config.PLANT_NAME_SEARCH_RADIUS_M)
     if name:
         gdf.at[idx, "plant_name"] = name
         gdf.at[idx, "inferred_name_osm_id"] = reference
@@ -596,6 +615,59 @@ print(f"    (P limits set; Q limits blank — review fuel)")
 
 
 # ============================================================
+# STEP 8b – SIZE THE PLANTS OSM GIVES NO CAPACITY FOR
+# ============================================================
+# Sec. V-B-2 sends these to a manual lookup, and that remains the accurate route.
+# Left unsized they go out of service, and a country whose OSM coverage is thin
+# then has less generation than demand, which no dispatch can fix. COUNTRY_
+# CAPACITY_MW closes the gap the same way Sec. III-C-6 closes the demand gap:
+# give each plant a weight, then scale the set so the national total is matched.
+# The weight is the median capacity of the tagged plants burning the same fuel,
+# so a fuel OSM does tag well sets the scale for the ones it does not.
+#
+# These are assumed capacities. Every one of them is listed below and flagged in
+# the output CSV, and setting COUNTRY_CAPACITY_MW to 0 turns the whole step off.
+gdf["capacity_assumed"] = False
+COUNTRY_CAPACITY_MW = float(getattr(config, "COUNTRY_CAPACITY_MW", 0.0) or 0.0)
+unsized = gdf["Pmax"].isna()
+
+if COUNTRY_CAPACITY_MW > 0 and unsized.any():
+    print("\n" + "=" * 60)
+    print("STEP 8b: Sizing plants with no OSM capacity")
+    print("=" * 60)
+    tagged = gdf.loc[~unsized]
+    shortfall = COUNTRY_CAPACITY_MW - float(tagged["Pmax"].sum())
+    if shortfall <= 0:
+        print(f"  Tagged plants already supply {tagged['Pmax'].sum():.0f} MW of the "
+              f"{COUNTRY_CAPACITY_MW:.0f} MW national total; nothing to distribute.")
+    else:
+        by_fuel = tagged.groupby("genfuel")["Pmax"].median()
+        fallback = float(tagged["Pmax"].median()) if len(tagged) else 1.0
+        weights = gdf.loc[unsized, "genfuel"].map(by_fuel).fillna(fallback).astype(float)
+        weights = weights.clip(lower=1e-6)
+        sized = weights * (shortfall / weights.sum())
+        gdf.loc[unsized, "Pmax"] = sized.round(3)
+        gdf.loc[unsized, "Pmin"] = 0.0
+        gdf.loc[unsized, "capacity_assumed"] = True
+        for idx in gdf.index[unsized]:
+            cat = reactive_category(gdf.at[idx, "source"]) or "steam"
+            qmax_f, qmin_f = REACTIVE_LIMIT_COEFFICIENTS[cat]
+            gdf.at[idx, "Qmax"] = round(qmax_f * gdf.at[idx, "Pmax"], 3)
+            gdf.at[idx, "Qmin"] = round(qmin_f * gdf.at[idx, "Pmax"], 3)
+        print(f"  Distributed {shortfall:.0f} MW over {int(unsized.sum())} plant(s) "
+              f"to reach COUNTRY_CAPACITY_MW = {COUNTRY_CAPACITY_MW:.0f} MW.")
+        print( "  These capacities are ASSUMED, not measured. Sec. V-B-2 asks for a "
+               "manual lookup:")
+        for idx in gdf.index[unsized][:15]:
+            print(f"    {gdf.at[idx, 'Pmax']:8.2f} MW  {gdf.at[idx, 'plant_name']}")
+        if int(unsized.sum()) > 15:
+            print(f"    ... and {int(unsized.sum()) - 15} more")
+elif unsized.any():
+    print(f"\n  {int(unsized.sum())} plant(s) have no OSM capacity and will be written "
+          f"out of service. Set COUNTRY_CAPACITY_MW in config.py to size them instead.")
+
+
+# ============================================================
 # STEP 9 – BUILD MATPOWER GENERATOR TABLE AND SAVE
 # ============================================================
 print("\n" + "=" * 60)
@@ -627,6 +699,7 @@ gen_out = pd.DataFrame({
     "mBase":           100.0,
     "status":          gdf["status"],
     "Pmax":            gdf["Pmax"],
+    "capacity_assumed": gdf["capacity_assumed"],
     "Pmin":            gdf["Pmin"],
     "generator_name":  gdf["plant_name"],
     "inferred_name_osm_id": gdf["inferred_name_osm_id"],

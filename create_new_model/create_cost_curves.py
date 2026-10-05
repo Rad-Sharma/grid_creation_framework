@@ -183,7 +183,95 @@ def map_to_category(primary_source: str, genfuel: str, method: str = "") -> str:
     return GENFUEL_TO_CATEGORY.get(gf, "cc_gas")
 
 
-def compute_polynomial_coeffs(pmax: float, category: str) -> tuple[float, float, float]:
+# ============================================================
+# TABLE IV – FUEL COSTS BY FUEL TYPE ($/MBTU)
+# ============================================================
+# The Automate Grid Creation paper reports a US and a global price for each
+# fuel. The Table V
+# curve coefficients are derived from [48], which prices fuel at the US EIA
+# values, so "us" reproduces Table V exactly and is the default.
+#
+# The Automate Grid Creation paper prints the global column but never states
+# how to apply it.
+# Reference [48] (Babaeinejadsarookolaee, "Synthetic Power System, Generator Cost
+# Curves", 2018) does, and it makes the scaling exact rather than a guess for
+# most categories. There, $/h at 40/60/80/100 % of capacity is computed as
+# heat_rate(P) x P x fuel_price, and (a, b, c) is the least-squares solution of
+#
+#     [a b c]^T = (A^T A)^-1 A^T Y,   A depending only on P, Y linear in price.
+#
+# Y scales linearly with fuel price and A does not, so (a, b, c) scales exactly
+# linearly with it. Verified against that document's LMS100 sample: 26634 kW x
+# 12689 BTU/kWh x $2.68/MBTU = $905.7297/h, its stated value to four decimals.
+#
+# Selecting "global" still departs from the published Table V numbers and must
+# be reported as such.
+FUEL_COSTS_MBTU = {
+    # fuel            US     global
+    "coal":         (1.78,   2.90),
+    "natural_gas":  (2.68,   4.88),
+    "residual_oil": (9.25,  10.50),
+    "wood":         (3.72,   4.20),
+    "petroleum_coke": (2.56,  3.10),
+    "landfill_gas": (6.18,   5.50),
+}
+
+# Table V curve category -> Table IV fuel. A category with no entry is not
+# rescaled; see SCALING_BASIS for why each one is treated the way it is.
+CATEGORY_TO_FUEL = {
+    "steam_coal": "coal",           "cc_coal": "coal",
+    "steam_gas": "natural_gas",     "gt_gas": "natural_gas",
+    "cc_gas": "natural_gas",        "ic_gas": "natural_gas",
+    "steam_oil": "residual_oil",    "gt_petroleum": "residual_oil",
+    "cc_petroleum": "residual_oil", "ic_petroleum": "residual_oil",
+    "steam_wood": "wood",           "cc_wood": "wood",
+    "steam_petcoke": "petroleum_coke", "cc_petcoke": "petroleum_coke",
+    "steam_landfill": "landfill_gas",  "cc_landfill": "landfill_gas",
+    "ic_landfill": "landfill_gas",
+}
+
+
+# How [48] produced each family, which decides how well fuel-price scaling is
+# justified:
+#   "heat_rate"  - $/h built as heat_rate x P x fuel_price, so scaling is exact.
+#   "market_bid" - internal combustion had no physical heat-rate data, so ERCOT
+#                  generator bid reports were used instead. A bid carries margin
+#                  and O&M as well as fuel, so scaling is directionally right but
+#                  not algebraically implied. These units are fuel-dominated
+#                  gensets, so leaving them unscaled while gas scales 1.82x would
+#                  distort the merit order more than scaling them does.
+#   "borrowed"   - hydro has no fuel at all; [48] states its curves were copied
+#                  from the CCGT samples because they look similar. Table V's
+#                  hydro b = 14 $/MWh is therefore a gas heat rate priced at
+#                  $2.68/MBTU, not a water or O&M value. Scaling it by a gas
+#                  price ratio would propagate that placeholder into a fuel-price
+#                  adjustment, so hydro is left alone. The borrowed curve is a
+#                  limitation of the source data under either basis.
+#   "zero"       - non-dispatchable in [48]; a, b, c are all zero.
+SCALING_BASIS = {
+    **{k: "heat_rate" for k in ("steam_coal", "steam_oil", "steam_gas", "steam_wood",
+                                "steam_landfill", "steam_petcoke", "gt_gas",
+                                "gt_petroleum", "cc_gas", "cc_petroleum", "cc_coal",
+                                "cc_landfill", "cc_petcoke", "cc_wood")},
+    **{k: "market_bid" for k in ("ic_gas", "ic_petroleum", "ic_landfill")},
+    "hydro": "borrowed",
+    **{k: "zero" for k in ("free_steam", "gt_biomass", "renewable")},
+}
+
+
+def fuel_cost_scale(category: str, basis: str = "us") -> float:
+    """Multiplier on the Table V coefficients for the chosen fuel-price basis."""
+    if basis not in ("us", "global"):
+        raise ValueError("FUEL_COST_BASIS must be 'us' or 'global'")
+    fuel = CATEGORY_TO_FUEL.get(category)
+    if basis == "us" or fuel is None:
+        return 1.0
+    us, world = FUEL_COSTS_MBTU[fuel]
+    return world / us
+
+
+def compute_polynomial_coeffs(pmax: float, category: str,
+                              basis: str | None = None) -> tuple[float, float, float]:
     """Return (c2, c1, c0) — the MATPOWER polynomial coefficients for one generator.
 
     Maps directly to the MATPOWER gencost MODEL=2 columns [c2, c1, c0] where
@@ -191,10 +279,13 @@ def compute_polynomial_coeffs(pmax: float, category: str) -> tuple[float, float,
     Coefficients are clamped to zero from below: negative values are artefacts
     of the linear regression fits for plants well outside the training range.
     """
+    if basis is None:
+        basis = getattr(config, "FUEL_COST_BASIS", "us")
     A, B, C = _coeffs(category, pmax)
-    c2 = max(0.0, C)
-    c1 = max(0.0, B)
-    c0 = max(0.0, A)
+    scale = fuel_cost_scale(category, basis)
+    c2 = max(0.0, C) * scale
+    c1 = max(0.0, B) * scale
+    c0 = max(0.0, A) * scale
     return round(c2, 6), round(c1, 6), round(c0, 4)
 
 
