@@ -1,0 +1,6 @@
+fbus,tbus,r,x,b,rateA,rateB,rateC,ratio,angle,status,angmin,angmax,fbus_name,tbus_name,length_km,voltage_V,osm_id
+46,47,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Aboadze Substation 1_330kV,Aboadze Substation 1_161kV,0.0,,transformer
+60,61,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bolgatanga II Substation_330kV,Bolgatanga II Substation_225kV,0.0,,transformer
+61,62,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Bolgatanga II Substation_225kV,Bolgatanga II Substation_161kV,0.0,,transformer
+64,65,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Tamale Substation_330kV,Tamale Substation_161kV,0.0,,transformer
+67,68,2e-05,0.00158,0.0,1000.0,1000.0,1000.0,0,0,1,-60,60,Domeabra Substation_330kV,Domeabra Substation_161kV,0.0,,transformer
