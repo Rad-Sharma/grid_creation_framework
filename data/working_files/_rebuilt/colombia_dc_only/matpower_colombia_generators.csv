@@ -1,0 +1,259 @@
+bus,Pg,Qg,Qmax,Qmin,Vg,mBase,status,Pmax,capacity_assumed,Pmin,generator_name,inferred_name_osm_id,operator,source,genfuel,method,latitude,longitude,osm_id,bus_name,bus_distance_km
+266,0.0,0.0,155.178,-40.626,1.0,100.0,1,333.0,False,0.0,Termotasajero,,Termotasajero,coal,steam,combustion,7.847191,-72.63304,way/71872381,Tasajero_230kV,0.205
+217,0.0,0.0,159.826,-34.854,1.0,100.0,1,314.0,False,0.0,Termocandelaria,,Termocandelaria S.C.A. E.S.P.,gas,gas,combustion,10.35866,-75.485726,way/95606159,Subestation Candelaria_220kV,0.15
+311,0.0,0.0,,,1.0,100.0,1,,False,,Central hidroeléctrica Canoas,,EMGESA,hydro,hydro,water-storage,4.565179,-74.288007,way/244484879,Canoas_115kV,0.022
+431,0.0,0.0,,,1.0,100.0,1,,False,,Enel,,Enel,hydro,hydro,,4.542302,-74.264028,way/244484887,Subestación Electrica Muña III_115kV,0.063
+92,0.0,0.0,0.691,-0.088,1.0,100.0,1,1.8,False,0.0,Central Hidroeléctrica Río Cali,,Celsia,hydro,hydro,,3.449129,-76.568708,way/246635587,Subestacion de San Antonio_115kV,2.908
+216,0.0,0.0,135.14,-35.38,1.0,100.0,1,290.0,False,0.0,Termoguajira,,Gecelca,coal,steam,combustion,11.259149,-73.414342,way/260720038,Guajira_220kV,0.164
+70,0.0,0.0,117.504,-14.994,1.0,100.0,1,306.0,False,0.0,Central Hidroeléctrica la Tasajera,,EPM,hydro,hydro,water-storage,6.412615,-75.428976,way/318881364,La Tasajera_220kV,0.052
+22,0.0,0.0,91.62,-19.98,1.0,100.0,1,180.0,False,0.0,Termocartagena,,Enel,gas,gas,combustion,10.35578,-75.510105,way/329137671,Cartagena_220kV,0.1
+409,0.0,0.0,30.8,-3.52,1.0,100.0,1,55.0,False,0.0,Punta Evans,,CORELCA,diesel,gas_turbine,,12.553403,-81.728914,way/332759634,Arboletes Substation,710.397
+113,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/332949585],,unknown,hydro,hydro,,6.320496,-75.165382,way/332949585,Guatapé_220kV,8.635
+61,0.0,0.0,1.882,-0.24,1.0,100.0,1,4.9,False,0.0,Minicentral Pajarito,,EPM,hydro,hydro,,6.874767,-75.435921,way/375519469,El Salto_220kV,24.883
+193,0.0,0.0,138.448,-30.192,1.0,100.0,1,272.0,False,0.0,Central Térmica Termocentro,,ISAGEN,gas,gas,combustion,6.444236,-74.381142,way/376798020,Termocentro_230kV,0.069
+59,0.0,0.0,82.944,-10.584,1.0,100.0,1,216.0,False,0.0,Guadalupe IV,,EPM,hydro,hydro,,6.839251,-75.189309,way/392663760,Guadalupe IV_220kV,0.161
+177,0.0,0.0,7.45,-0.951,1.0,100.0,1,19.4,False,0.0,Hidroelectrica El Charquito,,Enel,hydro,hydro,run-of-the-river,4.543409,-74.273764,way/401695086,El Charquito_115kV,0.062
+313,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/423900064],,unknown,unknown,unknown,,4.691014,-73.996593,way/423900064,La Calera Substation_115kV,3.294
+359,0.0,0.0,,,1.0,100.0,1,,False,,Energuapi,,unknown,diesel,gas_turbine,combustion,2.567434,-77.884207,way/429375110,Guapi_115kV,2.827
+45,0.0,0.0,,,1.0,100.0,1,,False,,Hidroeléctrica #1,,unknown,hydro,hydro,,6.312193,-75.585855,way/429737246,Occidente_220kV,5.173
+104,0.0,0.0,,,1.0,100.0,1,,False,,Drummond Pribbenow Mine Power Station,,unknown,gas,gas,combustion,9.558638,-73.461388,way/437941171,La Jagua de Ibirico Substation_115kV,0.152
+61,0.0,0.0,103.68,-13.23,1.0,100.0,1,270.0,False,0.0,Guadalupe III,,EPM,hydro,hydro,,6.793023,-75.227297,way/460414772,El Salto_220kV,0.994
+131,0.0,0.0,130.56,-16.66,1.0,100.0,1,340.0,False,0.0,CHE Urrá,,URRÁ S.A. E.S.P.,hydro,hydro,water-storage,8.015449,-76.205019,way/498368603,Subestación Urrá_220kV,0.346
+116,0.0,0.0,7.296,-0.931,1.0,100.0,1,19.0,False,0.0,Central Hidroeléctrica Río Grande 1,,EPM,hydro,hydro,,6.543374,-75.362931,way/533072989,Barbosa - Antioquia_220kV,11.747
+190,0.0,0.0,,,1.0,100.0,1,,False,,Planta Hidroeléctrica de Sueva 1,,CEMEX,hydro,hydro,,4.807816,-73.740484,way/533699264,Subestación eléctrica Sueva 1,0.024
+152,0.0,0.0,109.44,-13.965,1.0,100.0,1,285.0,False,0.0,Central hidroeléctrica Salvajina,,Celsia,hydro,hydro,,2.943571,-76.70498,way/550713025,Salvajina_230kV,0.098
+61,0.0,0.0,3.648,-0.466,1.0,100.0,1,9.5,False,0.0,Hidroeléctrica Caruquia planta,,ISAGEN,hydro,hydro,,6.64604,-75.324949,way/554613907,El Salto_220kV,18.637
+92,0.0,0.0,,,1.0,100.0,1,,False,,Planta 2 EPSA,,unknown,hydro,hydro,,3.454172,-76.583421,way/561394626,Subestacion de San Antonio_115kV,4.598
+21,0.0,0.0,,,1.0,100.0,1,,False,,[Florida (Cauca)],way/564374146,unknown,hydro,hydro,,2.446036,-76.524408,way/564374145,Sub-estación el centro,8.213
+85,0.0,0.0,122.669,-26.751,1.0,100.0,1,241.0,False,0.0,Termovalle,,unknown,gas,gas,combustion,3.565083,-76.453426,way/570065384,Termovalle_115kV,0.169
+82,0.0,0.0,108.417,-23.643,1.0,100.0,1,213.0,False,0.0,Termoemcali I,,Planta Generación,gas,gas,combustion,3.559601,-76.468709,way/570065385,Guachal 115 kV_115kV,0.237
+192,0.0,0.0,384.0,-49.0,1.0,100.0,1,1000.0,False,0.0,Central Hidroeléctrica de Chivor,,AES CHIVOR & CIA SCA ESP,hydro,hydro,,4.881934,-73.231725,way/576919266,Subestación eléctrica Chivor_230kV,0.084
+70,0.0,0.0,,,1.0,100.0,1,,False,,Central Hidroeléctrica Las Palmas,,unknown,hydro,hydro,run-of-the-river,6.615999,-75.500062,way/616660653,La Tasajera_220kV,23.896
+181,0.0,0.0,,,1.0,100.0,1,,False,,Planta termoeléctrica Ocoa,,Ecopetrol,oil,gas_turbine,combustion,4.078303,-73.687123,way/625866553,Subestación eléctrica OCOA_115kV,0.135
+183,0.0,0.0,109.743,-28.731,1.0,100.0,1,235.5,False,0.0,Central Termoeléctrica Martín del Corral,,Enel,coal,steam,combustion,4.970416,-73.948144,way/628941446,Termozipa Substation_115kV,0.056
+178,0.0,0.0,21.12,-2.695,1.0,100.0,1,55.0,False,0.0,Central hidroeléctrica El Salto,,Enel,hydro,hydro,,4.582119,-74.307777,way/632700975,Salto I_115kV,0.099
+186,0.0,0.0,57.6,-7.35,1.0,100.0,1,150.0,False,0.0,Central hidroeléctrica Darío Valencia,,Enel,hydro,hydro,,4.602392,-74.431892,way/632700976,Colegio_115kV,0.033
+187,0.0,0.0,124.416,-15.876,1.0,100.0,1,324.0,False,0.0,Central hidroeléctrica La Guaca,,Enel,hydro,hydro,,4.589461,-74.460208,way/632700977,La Guaca_230kV,0.05
+219,0.0,0.0,105.984,-13.524,1.0,100.0,1,276.0,False,0.0,Central hidroeléctrica El Paraíso,,Enel,hydro,hydro,,4.572301,-74.402582,way/632700978,Paraiso_230kV,0.047
+189,0.0,0.0,2.304,-0.294,1.0,100.0,1,6.0,False,0.0,Planta Hidroeléctrica de Sueva 2,,CEMEX,hydro,hydro,,4.805696,-73.717215,way/633043265,Subestación eléctrica Sueva 2,0.024
+114,0.0,0.0,179.677,-39.183,1.0,100.0,1,353.0,False,0.0,Termoeléctrica La Sierra,,EPM,gas,gas,combustion,6.235497,-74.560805,way/633497907,La Sierra_230kV,0.118
+196,0.0,0.0,215.04,-27.44,1.0,100.0,1,560.0,False,0.0,Central hidroeléctrica Betania,,Enel,hydro,hydro,water-storage,2.708289,-75.429887,way/639181406,Subestación Betania_230kV,0.307
+43,0.0,0.0,467.262,-101.898,1.0,100.0,1,918.0,False,0.0,Termobarranquila,,TEBSA,gas,gas,combustion,10.936851,-74.762968,way/665558857,Tebsa_220kV,0.25
+234,0.0,0.0,307.945,-67.155,1.0,100.0,1,605.0,False,0.0,Central Eléctrica Termoflores,,unknown,gas,gas,combustion,11.026012,-74.81244,way/677118300,Termoflores_220kV,0.131
+259,0.0,0.0,,,1.0,100.0,1,,False,,Hidroeléctrica Prado,,unknown,hydro,hydro,water-storage,3.755022,-74.891064,way/680631403,Subestación de Prado_115kV,0.038
+136,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/698891021],,unknown,diesel,gas_turbine,,8.504146,-77.275612,way/698891021,Turbo Substation_220kV,66.813
+319,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,False,0.0,Celsia Solar Espinal,,Celsia,solar,solar,photovoltaic,4.156465,-74.882253,way/703988491,Nueva Espinal - Celsia Solar_115kV,0.289
+220,0.0,0.0,153.6,-19.6,1.0,100.0,1,400.0,False,0.0,Central hidroeléctrica El Quimbo,,Enel,hydro,hydro,water-storage,2.453191,-75.56439,way/720385048,Subestación Tesalia_230kV,2.109
+222,0.0,0.0,6.912,-0.882,1.0,100.0,1,18.0,False,0.0,Central hidroeléctrica Laguneta,,Enel,hydro,hydro,,4.592359,-74.33349,way/731799439,Laguneta_115kV,0.065
+151,0.0,0.0,3.84,-0.49,1.0,100.0,1,10.0,False,0.0,Central hidroeléctrica Riofrío II,,Celsia,hydro,hydro,,4.16508,-76.321934,way/745171898,Tulua Substation 2_115kV,15.087
+395,0.0,0.0,480.0,-61.25,1.0,100.0,1,1250.0,False,0.0,Central Hidroeléctrica del Guavio,,Enel,hydro,hydro,,4.735883,-73.352399,way/759855944,Subestación Guavio_230kV,0.048
+79,0.0,0.0,,,1.0,100.0,1,,False,,[Subestación Melendez],way/331119348,unknown,gas,gas,combustion,3.386195,-76.528881,way/766771251,Subestación Melendez_115kV,0.534
+145,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/788071305],,unknown,gas,gas,combustion,2.619442,-76.369678,way/788071305,Subestación San Bernardino_230kV,28.271
+255,0.0,0.0,28.416,-3.626,1.0,100.0,1,74.0,False,0.0,Central hidroeléctrica Bajo Anchicayá,,Celsia,hydro,hydro,water-storage,3.609168,-76.917724,way/790668755,Bajo Anchicaya_115kV,0.022
+18,0.0,0.0,,,1.0,100.0,1,,False,,GRANJA EOLICA,,"IVAN, CRISTIAN, ANDRES, OMAR",wind,wind,wind_turbine,1.172093,-77.335469,way/797540986,Jamondino_230kV,10.556
+41,0.0,0.0,203.642,-53.314,1.0,100.0,1,437.0,False,0.0,Gecelca 3,,Gecelca,coal,steam,combustion,7.990509,-75.595125,way/814766999,Cerromatoso_500kV,12.558
+336,0.0,0.0,,,1.0,100.0,1,,False,,[Campo Bonito 115 kV],way/1409542541,unknown,biofuel,biofuel,combustion,4.176285,-72.604384,way/817938240,Campo Bonito 115 kV_115kV,0.37
+261,0.0,0.0,0.72,-0.092,1.0,100.0,1,1.875,False,0.0,Pequeña Central Hidroeléctrica de Mutatá,,GENSA,hydro,hydro,,6.042909,-77.312913,way/826322000,Subestacion PCH Mutatá_115kV,0.022
+261,0.0,0.0,,,1.0,100.0,1,,False,,Pequeña Central Hidroeléctrica de Cupica,,unknown,hydro,hydro,,6.771958,-77.414212,way/826342066,Subestacion PCH Mutatá_115kV,81.819
+261,0.0,0.0,,,1.0,100.0,1,,False,,Micro Central Hidroeléctrica Arusí,,unknown,hydro,hydro,,5.554204,-77.47355,way/826625519,Subestacion PCH Mutatá_115kV,57.195
+263,0.0,0.0,4.531,-0.578,1.0,100.0,1,11.8,False,0.0,La vuelta,,EPM,hydro,hydro,,6.73149,-76.089788,way/830969444,Frontino Substation 1,0.008
+264,0.0,0.0,7.603,-0.97,1.0,100.0,1,19.8,False,0.0,La Herradura,,EPM,hydro,hydro,,6.803031,-76.081103,way/830969451,Frontino Substation 2,0.024
+416,0.0,0.0,,,1.0,100.0,1,,False,,Empresa de energia EBSA,,unknown,unknown,unknown,,5.873551,-72.981565,way/842326526,Bavaria_115kV,8.256
+44,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/845533791],,unknown,solar,solar,photovoltaic,11.014587,-74.86844,way/845533791,Subestación Nueva Barranquilla 110 kv_220kV,3.988
+335,0.0,0.0,50.688,-6.468,1.0,100.0,1,132.0,False,0.0,Central hidroeléctrica Calima,,Celsia,hydro,hydro,,3.881016,-76.560036,way/884144598,Restrepo Substation_115kV,0.69
+365,0.0,0.0,,,1.0,100.0,1,,False,,[San Fernando],way/1419194699,unknown,solar,solar,photovoltaic,3.876954,-73.681533,way/890240878,San Fernando 2,0.674
+269,0.0,0.0,2.876,-0.367,1.0,100.0,1,7.49,False,0.0,CENTRAL HIDROELÉCTRICA AGUA FRESCA,,HZ ENERGY S.A.S.E.S.P.,hydro,hydro,run-of-the-river,5.831609,-75.726213,way/896597598,SUBESTACIÓN CENTRAL HIDROELÉCTRICA AGUA FRESCA,0.05
+419,0.0,0.0,83.476,-18.204,1.0,100.0,1,164.0,False,0.0,Meriléctrica,,unknown,gas,gas,combustion,7.054435,-73.820313,way/943427015,Barrancabermeja Substation 2_230kV,0.086
+211,0.0,0.0,44.792,-9.768,1.0,100.0,1,88.0,False,0.0,Termonorte,,Axia Energia,gas,gas,combustion,11.259845,-74.103128,way/988075421,Termocol_220kV,0.753
+121,0.0,0.0,,,1.0,100.0,1,,False,,[Gaira],way/346992203,unknown,solar,solar,photovoltaic,11.177815,-74.227846,way/1017948200,Subestación Eléctrica Santa Marta_220kV,6.064
+347,0.0,0.0,,,1.0,100.0,1,,False,,Planta Viscorreductora 0,,unknown,oil,gas_turbine,combustion,7.077442,-73.864789,way/1018385367,Barrancabermeja Substation 1,2.619
+347,0.0,0.0,,,1.0,100.0,1,,False,,Planta Viscorreductora 4,,unknown,oil,gas_turbine,combustion,7.075479,-73.868685,way/1018385372,Barrancabermeja Substation 1,2.394
+347,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1018548644],,unknown,oil,gas_turbine,combustion,7.065657,-73.874734,way/1018548644,Barrancabermeja Substation 1,2.884
+347,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1018548645],,unknown,oil,gas_turbine,combustion,7.065035,-73.874324,way/1018548645,Barrancabermeja Substation 1,2.966
+347,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1018548646],,unknown,oil,gas_turbine,combustion,7.064453,-73.874805,way/1018548646,Barrancabermeja Substation 1,3.004
+347,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1018548647],,unknown,oil,gas_turbine,combustion,7.063848,-73.874165,way/1018548647,Barrancabermeja Substation 1,3.094
+114,0.0,0.0,,,1.0,100.0,1,,False,,Micro central Argos,,unknown,hydro,hydro,,6.291279,-74.687668,way/1076209500,La Sierra_230kV,15.338
+116,0.0,0.0,29.952,-3.822,1.0,100.0,1,78.0,False,0.0,Central Hidroeléctrica Carlos Lleras,,unknown,hydro,hydro,,6.520483,-75.251931,way/1082331505,Barbosa - Antioquia_220kV,12.306
+109,0.0,0.0,11.52,-1.47,1.0,100.0,1,30.0,False,0.0,Central Hidroeléctrica La Esmeralda,,unknown,hydro,hydro,,5.040203,-75.727714,way/1082331507,Esmeralda -CHEC 115 kV_115kV,0.089
+109,0.0,0.0,51.84,-6.615,1.0,100.0,1,135.0,False,0.0,Central Hidroeléctrica San Francisco,,unknown,hydro,hydro,,5.050248,-75.742658,way/1082331508,Esmeralda -CHEC 115 kV_115kV,2.031
+272,0.0,0.0,136.32,-17.395,1.0,100.0,1,355.0,False,0.0,Central hidroeléctrica Alto Anchicayá,,Celsia,hydro,hydro,water-storage,3.608119,-76.891631,way/1082331516,Alto Anchicayá_230kV,0.003
+286,0.0,0.0,22.905,-4.995,1.0,100.0,1,45.0,False,0.0,Termodorada,,unknown,gas,gas,combustion,5.444786,-74.674744,way/1082331517,La Dorada_115kV,0.142
+217,0.0,0.0,45.81,-9.99,1.0,100.0,1,90.0,False,0.0,Proeléctrica Mamonal,,Proeléctrica,gas,gas,combustion,10.350862,-75.492877,way/1082331519,Subestation Candelaria_220kV,1.311
+287,0.0,0.0,29.471,-6.427,1.0,100.0,1,57.9,False,0.0,Termo Mechero Morro,,Mechero Energy,gas,gas,combustion,5.459612,-72.450168,way/1082331521,Mechero Morro_115kV,0.073
+288,0.0,0.0,94.674,-20.646,1.0,100.0,1,186.0,False,0.0,Termoyopal,,Termoyopal,gas,gas,combustion,5.444323,-72.453722,way/1082331525,Termoyopal_115kV,0.056
+61,0.0,0.0,3.648,-0.466,1.0,100.0,1,9.5,False,0.0,Hidroeléctrica Guanaquitas,,ISAGEN,hydro,hydro,,6.673364,-75.291284,way/1082331528,El Salto_220kV,14.096
+61,0.0,0.0,15.36,-1.96,1.0,100.0,1,40.0,False,0.0,Central hidroeléctrica Troneras,,EPM,hydro,hydro,,6.78128,-75.24848,way/1082331530,El Salto_220kV,2.1
+60,0.0,0.0,268.8,-34.3,1.0,100.0,1,700.0,False,0.0,Central hidroeléctrica Porce III,,EPM,hydro,hydro,,7.016594,-75.061153,way/1082331531,Porce II_220kV,22.223
+91,0.0,0.0,,,1.0,100.0,1,,False,,Central Hidroelectrica Mirolindo,,unknown,hydro,hydro,,4.424149,-75.207285,way/1082331532,El Papayo_115kV,0.634
+404,0.0,0.0,7.603,-0.97,1.0,100.0,1,19.8,False,0.0,Central Hidroeléctrica Río Mayo,,unknown,hydro,hydro,,1.672081,-77.047342,way/1082331533,Rio Mayo_115kV,0.016
+229,0.0,0.0,,,1.0,100.0,1,,False,,EPM,,EPM,hydro,hydro,,6.092691,-75.490527,way/1082331534,El Retiro Substation_115kV,0.034
+432,0.0,0.0,,,1.0,100.0,1,,False,,[Sesquile],way/1082331535,unknown,hydro,hydro,,5.037307,-73.810787,way/1082331536,Tpeldar_115kV,14.466
+375,0.0,0.0,7.642,-0.975,1.0,100.0,1,19.9,False,0.0,Casa Maquinas Morro Azul,,Risaralda Energia,hydro,hydro,,5.189421,-75.812675,way/1082331537,Viterbo 115 kV_115kV,14.363
+436,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1082331538],,unknown,hydro,hydro,,7.226539,-73.230816,way/1082331538,Lebrija Substation 2,0.029
+54,0.0,0.0,,,1.0,100.0,1,,False,,Estación de Promigas,,Promigas,gas,gas,combustion,8.942741,-75.404969,way/1144113663,Chinú_500kV,19.861
+359,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1153254305],,unknown,microsoft;buildingfootprints,microsoft,,2.769651,-77.662588,way/1153254305,Guapi_115kV,32.883
+289,0.0,0.0,,,1.0,100.0,1,,False,,Parque Solar La Loma,,unknown,solar,solar,photovoltaic,9.602423,-73.637039,way/1172264028,La Loma_500kV,2.106
+60,0.0,0.0,150.528,-19.208,1.0,100.0,1,392.0,False,0.0,CASA DE MAQUINAS PORCE II,,EPM,hydro,hydro,water-storage,6.836669,-75.17513,way/1190728104,Porce II_220kV,1.674
+269,0.0,0.0,7.642,-0.975,1.0,100.0,1,19.9,False,0.0,Central Hidroelectrica Barroso,,Isagen,hydro,hydro,run-of-the-river,5.907506,-75.892074,way/1190944636,SUBESTACIÓN CENTRAL HIDROELÉCTRICA AGUA FRESCA,20.234
+116,0.0,0.0,7.642,-0.975,1.0,100.0,1,19.9,False,0.0,Central Hidroelectrica Hidromontañita,,CELSIA S.A E.S.P.,hydro,hydro,run-of-the-river,6.548016,-75.317565,way/1190948172,Barbosa - Antioquia_220kV,11.817
+158,0.0,0.0,7.642,-0.975,1.0,100.0,1,19.9,False,0.0,Empresa De Energia Del Pacifico S.A. E.S.P,,Empresa De Energia Del Pacifico S.A. E.S.P,hydro,hydro,run-of-the-river,3.615502,-76.179125,way/1190948926,Palmira Substation,10.332
+158,0.0,0.0,,,1.0,100.0,1,,False,,[Casa de Maquinas],node/11057889282,unknown,hydro,hydro,,3.614167,-76.178701,way/1190948927,Palmira Substation,10.353
+113,0.0,0.0,,,1.0,100.0,1,,False,,CENTRAL HIDROELÉCTRICA GUATAPÉ,,unknown,hydro,hydro,run-of-the-river,6.279281,-75.098107,way/1190960620,Guatapé_220kV,0.754
+347,0.0,0.0,,,1.0,100.0,1,,False,,Planta Viscorreductora 3,,unknown,oil,gas_turbine,combustion,7.075965,-73.868078,way/1211115744,Barrancabermeja Substation 1,2.412
+66,0.0,0.0,32.9,-32.9,1.0,100.0,1,100.0,False,0.0,Parque Solar Fundacion,,unknown,solar,solar,photovoltaic,10.48323,-74.227986,way/1219356195,Subestacion Fundación_220kV,6.401
+46,0.0,0.0,,,1.0,100.0,1,,False,,[Juanchito],way/205851971,unknown,solar,solar,photovoltaic,3.444566,-76.478233,way/1231418697,Juanchito_115kV,0.607
+303,0.0,0.0,,,1.0,100.0,1,,False,,[San Fernando],way/1259315847,unknown,solar,solar,photovoltaic,3.889809,-73.689111,way/1259315845,San Fernando 1,0.497
+309,0.0,0.0,,,1.0,100.0,1,,False,,Planta Hidroelécrica La Cascada,,ESSA,hydro,hydro,run-of-the-river,6.559742,-73.149005,way/1264820643,Subesación San Gil_115kV,0.074
+317,0.0,0.0,,,1.0,100.0,1,,False,,CAMCO,,unknown,coal,steam,combustion,3.887727,-77.069137,way/1310630972,Subestación electrica 2,0.874
+87,0.0,0.0,16.8,-1.92,1.0,100.0,1,30.0,False,0.0,Planta de Exploracion Cedrillos E1,,Parex Resources,oil,gas_turbine,combustion,5.309376,-71.754112,way/1310789479,Yopal_115kV,72.156
+334,0.0,0.0,159.894,-159.894,1.0,100.0,1,486.0,False,0.0,Parque Solar Guayepo I & II,,Enel,solar,solar,photovoltaic,10.613183,-74.804962,way/1315379794,Martillo_500kV,3.525
+191,0.0,0.0,,,1.0,100.0,1,,False,,paneles solares,,unknown,solar,solar,photovoltaic,4.694302,-74.217007,way/1321941205,Mosquera_115kV,2.937
+22,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1330054246],,unknown,solar,solar,photovoltaic,27.693993,-99.750983,way/1330054246,Cartagena_220kV,3183.191
+53,0.0,0.0,,,1.0,100.0,1,,False,,Unigas,,unknown,gas,gas,combustion,4.294917,-74.45749,way/1341119609,San Jorge,10.439
+62,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,False,0.0,Celsia Solar Dulima,,Celsia,solar,solar,photovoltaic,4.249221,-74.859219,way/1361361854,Flandes_115kV,5.426
+62,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,False,0.0,Celsia Solar Yuma,,Celsia,solar,solar,photovoltaic,4.255747,-74.860855,way/1361361855,Flandes_115kV,5.216
+62,0.0,0.0,6.58,-6.58,1.0,100.0,1,20.0,False,0.0,Celsia Solar Flandes,,Celsia,solar,solar,photovoltaic,4.243685,-74.87576,way/1361361856,Flandes_115kV,7.308
+62,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,False,0.0,Celsia Solar Lanceros,,Celsia,solar,solar,photovoltaic,4.214211,-74.739083,way/1364895077,Flandes_115kV,11.229
+429,0.0,0.0,30.72,-3.92,1.0,100.0,1,80.0,False,0.0,Amoya,,unknown,hydro,hydro,,3.810569,-75.585759,way/1385451695,Amoya_115kV,0.09
+54,0.0,0.0,,,1.0,100.0,1,,False,,Parque Fotovoltaico La Tolua SAS,,unknown,solar,solar,,9.147475,-75.417155,way/1409437175,Chinú_500kV,3.189
+181,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1409439690],,unknown,solar,solar,,4.078567,-73.709177,way/1409439690,Subestación eléctrica OCOA_115kV,2.402
+356,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1409442451],,unknown,solar,solar,,3.52181,-76.435941,way/1409442451,Palmaseca_115kV,2.025
+139,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1409444170],,unknown,solar,solar,,4.464024,-76.030888,way/1409444170,La Victoria Substation,6.799
+350,0.0,0.0,6.547,-6.547,1.0,100.0,1,19.9,False,0.0,Los Llanos Solar Forest,,unknown,solar,solar,,4.211825,-72.030138,way/1409444866,Los Llanos Solar Forest_115kV,0.993
+140,0.0,0.0,16.776,-4.392,1.0,100.0,1,36.0,False,0.0,Riopaila power station,,unknown,biomass,steam,,4.319895,-76.0898,way/1409537504,Zarzál_115kV,8.248
+162,0.0,0.0,3.257,-3.257,1.0,100.0,1,9.9,False,0.0,Buga 1 solar farm,,unknown,solar,solar,,3.935381,-76.304705,way/1409539669,Buga Substation,1.9
+85,0.0,0.0,6.547,-6.547,1.0,100.0,1,19.9,False,0.0,Quantum solar farm,,unknown,solar,solar,,3.59387,-76.430368,way/1409542539,Termovalle_115kV,4.012
+16,0.0,0.0,,,1.0,100.0,1,,False,,GRANJA SOLAR IL,,unknown,solar,solar,,10.661017,-75.008399,way/1410646221,Sabanalarga_500kV,10.711
+315,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1410844466],,unknown,hydro,hydro,,6.232681,-75.266544,way/1410844466,Marinilla Substation_220kV,10.898
+141,0.0,0.0,6.547,-6.547,1.0,100.0,1,19.9,False,0.0,Parque Solar Sincé Ventus – Sucre Colombia,,unknown,solar,solar,photovoltaic,9.224078,-75.112269,way/1411789192,Subestación Eléctrica 2,23.22
+362,0.0,0.0,,,1.0,100.0,1,,False,,"PCH Oibita, Casa Máquinas",,unknown,hydro,hydro,,6.285236,-73.36339,way/1411790145,Oiba Substation,2.869
+146,0.0,0.0,3.257,-3.257,1.0,100.0,1,9.9,False,0.0,Parque Solar Jeques,,GreenYellow,solar,solar,photovoltaic,5.240688,-73.781647,way/1412345682,Choconta Substation_115kV,15.207
+361,0.0,0.0,,,1.0,100.0,1,,False,,CHEC Hydroelectric Plant,,unknown,hydro,hydro,,5.000051,-75.645938,way/1417155981,Insula -Caldas_115kV,0.204
+347,0.0,0.0,,,1.0,100.0,1,,False,,[Planta Viscorreductora 2],way/1018390342,unknown,oil,gas_turbine,combustion,7.077016,-73.866781,way/1422562176,Barrancabermeja Substation 1,2.458
+366,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1423694994],,unknown,hydro,hydro,,6.893192,-75.685285,way/1423694994,San Andres Substation 2_115kV,0.043
+367,0.0,0.0,,,1.0,100.0,1,,False,,Cañahuate,,unknown,solar,solar,photovoltaic,9.598359,-73.536812,way/1424830010,Cañahuate_115kV,0.234
+399,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424872867],,unknown,solar,solar,photovoltaic,10.002652,-75.074137,way/1424872867,San Juan Nepomuceno Substation,0.102
+369,0.0,0.0,32.242,-32.242,1.0,100.0,1,98.0,False,0.0,49604,,unknown,solar,solar,,8.693002,-75.791501,way/1424875659,San Carlos Substation_230kV,0.567
+296,0.0,0.0,,,1.0,100.0,1,,False,,[SE Bolívar 66 kV],way/1257856872,unknown,solar,solar,photovoltaic,10.444287,-75.390966,way/1424889329,SE Bolívar 66 kV_220kV,0.545
+207,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424892742],,unknown,solar,solar,,10.933437,-74.909646,way/1424892742,Subestación Eléctrica ISA | Caracolí 220kv_220kV,9.946
+48,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424892743],,unknown,solar,solar,,3.029057,-76.497056,way/1424892743,Santander_115kV,3.539
+247,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424892781],,unknown,solar,solar,,4.433215,-72.632249,way/1424892781,Jaguey_230kV,23.303
+224,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424892827],,unknown,solar,solar,,3.475236,-72.194493,way/1424892827,Subestación Eléctrica 3,71.097
+286,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424892831],,unknown,solar,solar,,5.467147,-74.656181,way/1424892831,La Dorada_115kV,3.106
+48,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424892961],,unknown,solar,solar,,3.053585,-76.433979,way/1424892961,Santander_115kV,9.012
+54,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424893247],,unknown,solar,solar,,9.100604,-75.419843,way/1424893247,Chinú_500kV,2.275
+67,0.0,0.0,,,1.0,100.0,1,,False,,Planta de energía solar Ecopetrol,,Es una planta de generación para autoconsumo,solar,solar,photovoltaic,10.13591,-73.977688,way/1424945895,Subestacion El Copey_500kV,4.787
+24,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424945953],,unknown,solar,solar,photovoltaic,10.522955,-75.385096,way/1424945953,SE Bolívar 220 kV_500kV,8.558
+397,0.0,0.0,,,1.0,100.0,1,,False,,Parque solar fotovoltaico TEPUY-EPM,,unknown,solar,solar,,5.388746,-74.724043,way/1424946347,Tepuy_115kV,1.001
+398,0.0,0.0,,,1.0,100.0,1,,False,,Parque Solar Portón Del Sol,,unknown,solar,solar,photovoltaic,5.411181,-74.714559,way/1424947044,Portón Del Sol_230kV,0.472
+194,0.0,0.0,8.225,-8.225,1.0,100.0,1,25.0,False,0.0,13728,,unknown,solar,solar,,5.103583,-74.89804,way/1424947384,Subestación eléctrica San Felipe_230kV,2.327
+151,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424947427],,unknown,solar,solar,,4.14544,-76.187884,way/1424947427,Tulua Substation 2_115kV,7.05
+41,0.0,0.0,1.349,-1.349,1.0,100.0,1,4.1,False,0.0,63901,,unknown,solar,solar,,7.980564,-75.218031,way/1424947537,Cerromatoso_500kV,30.966
+410,0.0,0.0,3.29,-3.29,1.0,100.0,1,10.0,False,0.0,60488,,unknown,solar,solar,,8.843266,-76.033079,way/1424948263,Monteria Substation,0.364
+138,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424948322],,unknown,solar,solar,,3.85876,-67.904565,way/1424948322,Rubiales_230kV,394.148
+383,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424948572],,unknown,solar,solar,,3.497267,-76.352227,way/1424948572,Sucromiles_115kV,2.256
+46,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424949157],,unknown,solar,solar,,3.458214,-76.503308,way/1424949157,Juanchito_115kV,2.847
+268,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424949159],,unknown,solar,solar,photovoltaic,10.881683,-74.779269,way/1424949159,Subestación Electrica EPSA | Caracolí - 110kv_220kV,5.482
+169,0.0,0.0,10.528,-10.528,1.0,100.0,1,32.0,False,0.0,90413,,unknown,solar,solar,,8.492854,-74.856433,way/1424949674,Nechi Substation,45.472
+426,0.0,0.0,4.277,-4.277,1.0,100.0,1,13.0,False,0.0,82792,,unknown,solar,solar,,3.115428,-75.274967,way/1424949881,Oriente (Huila)_115kV,20.057
+249,0.0,0.0,0.592,-0.592,1.0,100.0,1,1.8,False,0.0,28388,,unknown,solar,solar,,3.124726,-76.462002,way/1424950254,Cabaña_230kV,9.579
+268,0.0,0.0,7.896,-7.896,1.0,100.0,1,24.0,False,0.0,102663,,unknown,solar,solar,photovoltaic,10.780287,-74.887155,way/1424950312,Subestación Electrica EPSA | Caracolí - 110kv_220kV,13.652
+234,0.0,0.0,0.559,-0.559,1.0,100.0,1,1.7,False,0.0,73628,,unknown,solar,solar,,11.034662,-74.827039,way/1424950474,Termoflores_220kV,1.991
+338,0.0,0.0,4.277,-4.277,1.0,100.0,1,13.0,False,0.0,75456,,unknown,solar,solar,photovoltaic,10.321942,-75.485767,way/1424950515,Cartagena Substation_115kV,2.111
+336,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424950640],,unknown,solar,solar,,4.342397,-72.714161,way/1424950640,Campo Bonito 115 kV_115kV,22.339
+140,0.0,0.0,2.895,-2.895,1.0,100.0,1,8.8,False,0.0,59221,,unknown,solar,solar,,4.285602,-76.084196,way/1424951748,Zarzál_115kV,11.759
+80,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424951862],,unknown,solar,solar,,3.520542,-76.491323,way/1424951862,Termoyumbo_115kV,3.886
+369,0.0,0.0,,,1.0,100.0,1,,False,,Parque Solar Alejandría,,unknown,solar,solar,,8.358566,-75.574301,way/1424952022,San Carlos Substation_230kV,44.761
+214,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424952023],,unknown,solar,solar,photovoltaic,11.000424,-74.21864,way/1424952023,Rio Cordoba_220kV,3.067
+371,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424952395],,unknown,solar,solar,,8.588232,-73.616634,way/1424952395,Ayacucho_115kV,1.654
+144,0.0,0.0,1.02,-1.02,1.0,100.0,1,3.1,False,0.0,75616,,unknown,solar,solar,,4.718681,-75.923413,way/1424952454,Cartago_230kV,1.992
+423,0.0,0.0,,,1.0,100.0,1,,False,,Parque Solar - Planta de Ecopetrol Coveñas,,unknown,solar,solar,photovoltaic,9.405661,-75.701959,way/1424952572,Toluviejo 2_220kV,26.997
+265,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424952579],,unknown,solar,solar,,10.419853,-73.247136,way/1424952579,Subestacion Valledupar_220kV,5.156
+338,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424952750],,unknown,solar,solar,photovoltaic,10.132793,-75.456216,way/1424952750,Cartagena Substation_115kV,22.567
+334,0.0,0.0,29.281,-29.281,1.0,100.0,1,89.0,False,0.0,Parque Solares Bolivar,,unknown,solar,solar,photovoltaic,10.578568,-74.890345,way/1424952752,Martillo_500kV,7.388
+425,0.0,0.0,3.948,-3.948,1.0,100.0,1,12.0,False,0.0,19194,,unknown,solar,solar,,5.183175,-74.697442,way/1424952857,Mariquita_115kV,20.483
+425,0.0,0.0,2.829,-2.829,1.0,100.0,1,8.6,False,0.0,40523,,unknown,solar,solar,,5.146972,-74.691295,way/1424953089,Mariquita_115kV,21.868
+425,0.0,0.0,2.829,-2.829,1.0,100.0,1,8.6,False,0.0,40523,,unknown,solar,solar,,5.151176,-74.687328,way/1424953090,Mariquita_115kV,22.175
+94,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424953159],,unknown,solar,solar,,4.21899,-74.629826,way/1424953159,Girardot City Substation,19.725
+284,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424953202],,unknown,solar,solar,,4.753377,-74.142035,way/1424953202,Portugal_115kV,2.715
+24,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424953970],,unknown,solar,solar,photovoltaic,10.552256,-75.39911,way/1424953970,SE Bolívar 220 kV_500kV,11.742
+265,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424954009],,unknown,solar,solar,,10.381864,-73.194716,way/1424954009,Subestacion Valledupar_220kV,12.091
+433,0.0,0.0,1.217,-1.217,1.0,100.0,1,3.7,False,0.0,11689,,unknown,solar,solar,,4.814431,-75.74986,way/1424954103,Cuba_115kV,1.918
+433,0.0,0.0,1.217,-1.217,1.0,100.0,1,3.7,False,0.0,11689,,unknown,solar,solar,,4.815958,-75.744868,way/1424954104,Cuba_115kV,1.67
+150,0.0,0.0,2.961,-2.961,1.0,100.0,1,9.0,False,0.0,72341,,unknown,solar,solar,,4.038661,-76.185992,way/1424954252,Tulua Substation 1,4.392
+296,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424954296],,unknown,solar,solar,,10.420219,-75.148817,way/1424954296,SE Bolívar 66 kV_220kV,27.16
+268,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424954401],,unknown,solar,solar,photovoltaic,10.884551,-74.797374,way/1424954401,Subestación Electrica EPSA | Caracolí - 110kv_220kV,3.48
+214,0.0,0.0,4.277,-4.277,1.0,100.0,1,13.0,False,0.0,16212,,unknown,solar,solar,,10.883766,-74.158092,way/1424954453,Rio Cordoba_220kV,16.541
+358,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424954467],,unknown,solar,solar,,10.749619,-74.774481,way/1424954467,Remolino Substation,9.228
+146,0.0,0.0,1.053,-1.053,1.0,100.0,1,3.2,False,0.0,93288,,unknown,solar,solar,,5.34691,-73.708665,way/1424954544,Choconta Substation_115kV,23.469
+369,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424954867],,unknown,solar,solar,,8.356071,-75.542175,way/1424954867,San Carlos Substation_230kV,46.992
+41,0.0,0.0,2.895,-2.895,1.0,100.0,1,8.8,False,0.0,68767,,unknown,solar,solar,,8.010371,-75.29987,way/1424954883,Cerromatoso_500kV,23.097
+46,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424954902],,unknown,solar,solar,,3.449738,-76.492787,way/1424954902,Juanchito_115kV,1.347
+54,0.0,0.0,5.264,-5.264,1.0,100.0,1,16.0,False,0.0,63427,,unknown,solar,solar,,9.106333,-75.426334,way/1424955310,Chinú_500kV,1.536
+338,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424955351],,unknown,solar,solar,photovoltaic,10.315916,-75.503989,way/1424955351,Cartagena Substation_115kV,1.619
+10,0.0,0.0,4.606,-4.606,1.0,100.0,1,14.0,False,0.0,81786,,unknown,solar,solar,,8.068638,-73.197123,way/1424955445,Ocana_500kV,21.396
+231,0.0,0.0,8.225,-8.225,1.0,100.0,1,25.0,False,0.0,56345,,unknown,solar,solar,,4.040354,-74.976811,way/1424955469,Guamo Substation,0.794
+231,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424955500],,unknown,solar,solar,,3.886894,-74.990575,way/1424955500,Guamo Substation,16.398
+299,0.0,0.0,2.764,-2.764,1.0,100.0,1,8.4,False,0.0,79959,,unknown,solar,solar,,4.375672,-73.226514,way/1424955731,Suria (Delsur)_115kV,42.28
+10,0.0,0.0,,,1.0,100.0,1,,False,,[Ocana],way/79165477,unknown,solar,solar,,8.224561,-73.322922,way/1424956689,Ocana_500kV,0.836
+233,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424956731],,unknown,solar,solar,,4.082374,-73.561881,way/1424956731,Suria_115kV,13.46
+420,0.0,0.0,8.883,-8.883,1.0,100.0,1,27.0,False,0.0,49497,,unknown,solar,solar,,6.87577,-73.781581,way/1424956768,Barrancabermeja Substation 3_115kV,13.359
+268,0.0,0.0,20.727,-20.727,1.0,100.0,1,63.0,False,0.0,10597,,unknown,solar,solar,,10.839105,-74.838149,way/1424957172,Subestación Electrica EPSA | Caracolí - 110kv_220kV,5.631
+41,0.0,0.0,3.619,-3.619,1.0,100.0,1,11.0,False,0.0,Montelíbano Solar S.A.S. E.S.P,,unknown,solar,solar,,7.968332,-75.371136,way/1424957276,Cerromatoso_500kV,14.176
+249,0.0,0.0,1.217,-1.217,1.0,100.0,1,3.7,False,0.0,78228,,unknown,solar,solar,,3.168519,-76.452206,way/1424957318,Cabaña_230kV,6.169
+369,0.0,0.0,8.883,-8.883,1.0,100.0,1,27.0,False,0.0,103781,,unknown,solar,solar,,8.436312,-75.602431,way/1424957815,San Carlos Substation_230kV,35.877
+265,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424957841],,unknown,solar,solar,,10.335025,-73.228234,way/1424957841,Subestacion Valledupar_220kV,14.587
+120,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424957864],,unknown,solar,solar,,3.275935,-76.535146,way/1424957864,Papeles del Cauca (Papelcauca)_115kV,7.618
+425,0.0,0.0,4.277,-4.277,1.0,100.0,1,13.0,False,0.0,30915,,unknown,solar,solar,,5.207076,-74.865596,way/1424957979,Mariquita_115kV,2.0
+214,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1424958006],,unknown,solar,solar,photovoltaic,10.972588,-74.216334,way/1424958006,Rio Cordoba_220kV,5.936
+80,0.0,0.0,,,1.0,100.0,1,,False,,[Termoyumbo],way/331669952,unknown,solar,solar,photovoltaic,3.554599,-76.498383,way/1424963040,Termoyumbo_115kV,0.021
+202,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1430780238],,unknown,diesel,gas_turbine,combustion,7.824959,-76.649963,way/1430780238,Subestación Urabá_230kV,25.283
+191,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1449937574],,unknown,solar,solar,,4.739737,-74.269642,way/1449937574,Mosquera_115kV,4.78
+87,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1450184310],,unknown,gas,gas,combustion,5.394422,-71.872736,way/1450184310,Yopal_115kV,59.205
+390,0.0,0.0,,,1.0,100.0,1,,False,,Guavio hydroelectric plant,,unknown,hydro,hydro,,4.723531,-73.483087,way/1453652286,Ubala_115kV,1.331
+339,0.0,0.0,,,1.0,100.0,1,,False,,Sogamoso,,unknown,hydro,hydro,,7.103452,-73.41047,way/1453652287,Lebrija Substation 1_115kV,0.312
+58,0.0,0.0,,,1.0,100.0,1,,False,,Central Hidroeléctrica San Carlos,,unknown,hydro,hydro,,6.213722,-74.816026,way/1453652288,Epm Playas_230kV,12.783
+58,0.0,0.0,,,1.0,100.0,1,,False,,Playas hydroelectric plant,,unknown,hydro,hydro,,6.290228,-74.9377,way/1453652289,Epm Playas_230kV,3.839
+58,0.0,0.0,65.28,-8.33,1.0,100.0,1,170.0,False,0.0,Central Hidroeléctrica Jaguas,,ISAGEN,hydro,hydro,,6.3548,-75.004186,way/1453652290,Epm Playas_230kV,13.958
+35,0.0,0.0,,,1.0,100.0,1,,False,,[Antioquia],way/165848335,unknown,hydro,hydro,,7.133606,-75.660486,way/1453652291,Antioquia_500kV,0.442
+60,0.0,0.0,,,1.0,100.0,1,,False,,Central Hidroelectrica Luzma,,unknown,hydro,hydro,,6.994243,-75.056285,way/1456654166,Porce II_220kV,20.56
+137,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1456854157],,unknown,hydro,hydro,,3.911455,-76.084835,way/1456854157,Tulua_115kV,21.061
+87,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1461970465],,unknown,solar,solar,photovoltaic,5.31569,-72.390819,way/1461970465,Yopal_115kV,3.374
+212,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359476],,unknown,hydro,hydro,,4.818469,-75.727451,way/1462359476,Dosquebradas 115 kV_115kV,1.77
+275,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359477],,unknown,hydro,hydro,,4.514081,-74.583697,way/1462359477,Subestación Anapoima_115kV,6.213
+314,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359478],,unknown,hydro,hydro,,6.02384,-75.1399,way/1462359478,Santuario Substation_115kV,18.95
+113,0.0,0.0,,,1.0,100.0,1,,False,,[Calderas],way/497971123,unknown,hydro,hydro,,6.158629,-75.040566,way/1462359479,Guatapé_220kV,14.57
+95,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359480],,unknown,hydro,hydro,,5.692486,-75.329697,way/1462359480,Aguadas_330kV,16.434
+342,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359481],,unknown,hydro,hydro,,5.862476,-75.506464,way/1462359481,Fredonia Substation,19.604
+116,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359484],,unknown,hydro,hydro,,6.541853,-75.157734,way/1462359484,Barbosa - Antioquia_220kV,22.102
+45,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359485],,unknown,hydro,hydro,,6.362958,-75.582535,way/1462359485,Occidente_220kV,2.706
+33,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462359486],,unknown,hydro,hydro,,6.361201,-75.530751,way/1462359486,Bello_220kV,2.687
+26,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462688737],,unknown,hydro,hydro,,7.210425,-73.164205,way/1462688737,Palos_230kV,5.874
+177,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462689403],,unknown,hydro,hydro,,4.533844,-74.276539,way/1462689403,El Charquito_115kV,1.152
+61,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462689404],,unknown,hydro,hydro,,6.845883,-75.359151,way/1462689404,El Salto_220kV,15.84
+269,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462689405],,unknown,hydro,hydro,,5.920347,-75.831991,way/1462689405,SUBESTACIÓN CENTRAL HIDROELÉCTRICA AGUA FRESCA,15.352
+342,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462689406],,unknown,hydro,hydro,,5.856484,-75.482123,way/1462689406,Fredonia Substation,22.352
+314,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462689407],,unknown,hydro,hydro,,5.968668,-75.051043,way/1462689407,Santuario Substation_115kV,30.457
+113,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1462689408],,unknown,hydro,hydro,,6.409246,-75.13551,way/1462689408,Guatapé_220kV,15.447
+87,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1463658518],,unknown,solar,solar,,5.374165,-72.395594,way/1463658518,Yopal_115kV,3.665
+21,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1464191488],,unknown,hydro,hydro,,2.382891,-76.495018,way/1464191488,Sub-estación el centro,13.084
+21,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1464191489],,unknown,hydro,hydro,,2.376741,-76.492129,way/1464191489,Sub-estación el centro,13.703
+18,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1464191490],,unknown,hydro,hydro,,1.268749,-77.315045,way/1464191490,Jamondino_230kV,9.007
+137,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1464191491],,unknown,hydro,hydro,,4.050443,-76.183105,way/1464191491,Tulua_115kV,3.247
+386,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1464191492],,unknown,hydro,hydro,,5.332393,-75.078126,way/1464191492,Manzanares -Caldas_115kV,10.75
+36,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1464191493],,unknown,hydro,hydro,,5.609577,-74.954357,way/1464191493,Subestación eléctrica Miel_230kV,8.76
+423,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1469873568],,unknown,solar,solar,photovoltaic,9.796785,-75.853607,way/1469873568,Toluviejo 2_220kV,57.366
+423,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1469960610],,unknown,solar,solar,photovoltaic,9.779895,-75.874722,way/1469960610,Toluviejo 2_220kV,57.936
+423,0.0,0.0,0.043,-0.043,1.0,100.0,1,0.13,False,0.0,[unnamed way/1469971532],,unknown,solar,solar,photovoltaic,9.786232,-75.859702,way/1469971532,Toluviejo 2_220kV,57.107
+423,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1469971576],,unknown,solar,solar,photovoltaic,9.785753,-75.859509,way/1469971576,Toluviejo 2_220kV,57.057
+44,0.0,0.0,1.026,-1.026,1.0,100.0,1,3.12,False,0.0,Granja Solar Universidad del Norte - Promigas,,Renewable Energy Systems,solar,solar,photovoltaic,11.023795,-74.850916,way/1476601750,Subestación Nueva Barranquilla 110 kv_220kV,3.754
+268,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1486113840],,unknown,solar,solar,,10.852172,-74.767181,way/1486113840,Subestación Electrica EPSA | Caracolí - 110kv_220kV,7.885
+268,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1486113841],,unknown,solar,solar,,10.852167,-74.76886,way/1486113841,Subestación Electrica EPSA | Caracolí - 110kv_220kV,7.729
+43,0.0,0.0,,,1.0,100.0,1,,False,,[Olímpica - Manuela Beltran],way/781766180,unknown,solar,solar,,10.906413,-74.768619,way/1486114018,Tebsa_220kV,3.439
+32,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1486114426],,unknown,solar,solar,,10.365434,-75.462325,way/1486114426,Ternera_220kV,1.284
+131,0.0,0.0,0.494,-0.494,1.0,100.0,1,1.5,False,0.0,Aquasol,,unknown,solar,solar,photovoltaic,8.006927,-76.204829,way/1497603987,Subestación Urrá_220kV,1.254
+88,0.0,0.0,,,1.0,100.0,1,,False,,Planta de Energía Solar de Soacha,,Colgas,solar,solar,thermal,4.568949,-74.215074,way/1503616283,Subestación San Mateo_230kV,1.589
+87,0.0,0.0,,,1.0,100.0,1,,False,,[unnamed way/1507994485],,unknown,oil,gas_turbine,combustion,5.489258,-71.873692,way/1507994485,Yopal_115kV,61.034
+227,0.0,0.0,,,1.0,100.0,1,,False,,Llanogas,,unknown,gas,gas,combustion,2.935781,-73.20488,way/1512168294,San José del Guaviare_115kV,77.214
+32,0.0,0.0,0.921,-0.921,1.0,100.0,1,2.8,False,0.0,YurbaQua,,unknown,solar,solar,photovoltaic,10.389125,-75.446618,way/1520933391,Ternera_220kV,2.232
+113,0.0,0.0,,,1.0,100.0,1,,False,,Ciel & Terre,,Ciel & Terre,solar,solar,photovoltaic,6.296474,-75.167199,way/1523953474,Guatapé_220kV,7.552

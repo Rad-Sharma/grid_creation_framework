@@ -17,7 +17,13 @@ Pass 1 – Folium map + interactive CLI (human-in-the-loop)
     delete        – mark the entire line for deletion
     new           – add a brand-new substation at the endpoint location
                     (prompts for name, primary kV, optional secondary kV)
+    tap           – the endpoint tees into another line: split that line at
+                    the nearest point and join all three at a new junction bus
     merge <N>     – merge this line segment with Line N from the unmatched list
+
+Automatic mode (--auto) answers every prompt itself, using the same commands a
+reviewer would type and the rules in run_pass1's _auto_answer. Its journal
+replays like a manual one, so a reviewer can audit or correct it afterwards.
 
 After Pass 1 the script:
   • Deletes lines still unmatched after all decisions
@@ -48,7 +54,7 @@ import math
 import os
 import sys
 import webbrowser
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 
 import folium
@@ -82,6 +88,22 @@ import build_provenance
 FOLIUM_RADIUS_KM = 80.0
 FOLIUM_OUTPUT    = str(WORK_DIR / f"unmatched_review_{region}.html")
 OFFSET_DEG       = 0.005   # ~0.5 km angular offset for co-located markers
+TAP_SEARCH_KM    = 1.0     # how far the tap command looks for the line being tapped
+
+# Automatic mode (--auto). The Automate Grid Creation paper puts a reviewer at
+# Sec. IV.B.3; these thresholds stand in for that reviewer, so a case built with
+# them is not a reviewed model. Each one reuses a distance the paper already uses
+# for the same judgement where it has one.
+AUTO_JOIN_KM    = 0.5    # an endpoint this close to a bus or to another line's end
+                         # is at it (d_junc, Sec. IV.B.2 Step 6)
+AUTO_TAP_KM     = 0.1    # an endpoint this close to the inside of another line tees
+                         # into it; OSM normally shares the node outright
+AUTO_ASSIGN_KM  = 10.0   # proximity radius of Sec. IV.B.2 Step 8 (BUS_ASSIGN_THRESHOLD_KM)
+AUTO_TIER_KM    = 2.0    # a substation at another voltage this close is taken to be
+                         # the one the line serves, missing that voltage in OSM
+AUTO_STUB_KM    = 2.0    # a dead-end line shorter than this is an OSM fragment;
+                         # a longer one runs to a substation OSM has not mapped
+AUTO_CONNECT_KM = 50.0   # longest voltage-compatible hop added to join two networks
 
 # R / X / B / rateA power-law fit coefficients  (V in kV, 100 MVA base)
 # Formulae: value = a * V^b (per km for R, X, B; total MVA for rateA)
@@ -142,32 +164,128 @@ class ReviewLog:
     exactly, because the endpoint iteration order is fixed by the input tables.
     """
 
-    def __init__(self, path=None, replay=False):
+    def __init__(self, path=None, replay=False, mode="manual"):
         self.path = Path(path) if path else None
         self.entries = []
         self.pending = []
+        self.queued = []     # (answer, rule, reason) decided by automatic mode
+        self.mode = mode
+        self.replay = replay
         if replay:
             if not (self.path and self.path.is_file()):
                 raise FileNotFoundError(f"No review journal to replay at {self.path}")
             saved = json.loads(self.path.read_text(encoding="utf-8"))
-            self.pending = [e["answer"] for e in saved.get("answers", [])]
+            # Numbered from 1, as a reviewer counts the answers in the file.
+            self.pending = [dict(e, number=n)
+                            for n, e in enumerate(saved.get("answers", []), 1)]
+            # An automatic journal visits endpoints in stages, so it must be
+            # replayed the same way for its answers to line up.
+            self.mode = saved.get("mode", "manual")
             print(f"  Replaying {len(self.pending)} recorded answer(s) from {self.path}")
 
+    def queue(self, answers, rule, reason=""):
+        """Supply the answers automatic mode chose for the prompts that follow."""
+        if self.queued:
+            raise RuntimeError(f"Automatic answers left unused: {self.queued}")
+        self.queued = [(answer, rule, reason) for answer in answers]
+
     def ask(self, prompt, context=None):
-        if self.pending:
-            answer = self.pending.pop(0)
+        rule = reason = None
+        if self.queued:
+            answer, rule, reason = self.queued.pop(0)
+            # The rule is shown once, on the prompt that opens the decision.
+            note = f"   [auto: {rule}{' - ' + reason if reason else ''}]" if context else ""
+            print(f"{prompt}{answer}{note}")
+        elif self.pending:
+            recorded = self.pending.pop(0)
+            self._check(recorded, prompt, context)
+            answer, rule, reason = (recorded["answer"], recorded.get("rule"),
+                                    recorded.get("reason"))
             print(f"{prompt}{answer}   [replayed]")
+        elif self.mode == "automatic":
+            raise RuntimeError(f"Automatic review has no answer for: {prompt.strip()}")
         else:
             answer = input(prompt)
-        self.entries.append(dict(prompt=prompt.strip(), answer=answer, context=context))
+        entry = dict(prompt=prompt.strip(), answer=answer, context=context)
+        if rule:
+            entry.update(rule=rule, reason=reason)
+        self.entries.append(entry)
         return answer
+
+    @staticmethod
+    def _subject(prompt, context):
+        """What a prompt asks about, comparable between a journal and a rerun.
+
+        A prompt that opens a decision carries its endpoint, or the two buses a
+        network join would connect. A follow-up (substation name, kV, merge end,
+        voltage override) has no context of its own and is known by its question.
+        """
+        if not context:
+            return ("question", prompt.strip())
+        if "osm_id" in context:
+            return ("endpoint", str(context["osm_id"]), str(context["endpoint"]))
+        if "fbus" in context:
+            return ("join", int(context["fbus"]), int(context["tbus"]))
+        return ("context", json.dumps(context, sort_keys=True, default=str))
+
+    @staticmethod
+    def _describe(subject):
+        kind, *detail = subject
+        if kind == "endpoint":
+            return f"{detail[1]} of {detail[0]}"
+        if kind == "join":
+            return f"joining bus {detail[0]} to bus {detail[1]}"
+        if kind == "question":
+            return f'the follow-up question "{detail[0]}"'
+        return detail[0]
+
+    def _recorded_for(self, recorded):
+        return self._describe(self._subject(recorded.get("prompt", ""),
+                                            recorded.get("context")))
+
+    def _check(self, recorded, prompt, context):
+        """Stop when a recorded answer belongs to a different prompt than this one.
+
+        Replay hands out answers in order. A journal edit that changes how many
+        prompts a decision takes, or which endpoints come up, moves every later
+        answer onto the wrong prompt, where many are still valid commands - a
+        substation's kV is a plausible bus number. Catching the first answer
+        that moves keeps it from being applied.
+        """
+        if self._subject(recorded.get("prompt", ""), recorded.get("context")) \
+                == self._subject(prompt, context):
+            return
+        raise RuntimeError(
+            f"Journal answer {recorded['number']} ({recorded['answer']!r}) was recorded "
+            f"for {self._recorded_for(recorded)}, but the review has reached "
+            f"{self._describe(self._subject(prompt, context))}. The journal stops "
+            "matching the review here, most likely because of an edit at or before "
+            "this answer. Step 3 may already have changed the bus and transformer "
+            "tables, so rebuild from Step 1 before replaying again.")
+
+    def finish(self):
+        """Fail a replay that ends with recorded answers it never used."""
+        if not self.pending:
+            return
+        first = self.pending[0]
+        raise RuntimeError(
+            f"The review finished with {len(self.pending)} journal answer(s) unused, "
+            f"from answer {first['number']} ({first['answer']!r}, recorded for "
+            f"{self._recorded_for(first)}) on. The journal does not match this review, "
+            "most likely because of an edit before that answer. The tables Step 3 "
+            "wrote do not follow the journal; rebuild from Step 1 before replaying again.")
 
     def save(self, region=None):
         if self.path is None:
             return
+        if self.pending:
+            # A replay still under way. Writing now would cut the unused answers
+            # out of the very journal being replayed.
+            return
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self.path.write_text(json.dumps(dict(
-            region=region, recorded_at=datetime.now(timezone.utc).isoformat(),
+            region=region, mode=self.mode,
+            recorded_at=datetime.now(timezone.utc).isoformat(),
             answers=self.entries), indent=2), encoding="utf-8")
         print(f"  Review journal ({len(self.entries)} answer(s)) → {self.path}")
 
@@ -201,6 +319,58 @@ def _line_length_km(coords: list) -> float:
         for i in range(len(coords) - 1))
 
 
+def floor_lengths_at_bus_span(lines_df, bus_df):
+    """Raise each line's length to the distance between the buses it connects.
+
+    Equation (3) scales R, X and B by length, and until Step 3 finishes that
+    length is the length of the OSM geometry which survived preprocessing. Once
+    an endpoint is assigned to a substation the geometry does not reach - the
+    automated passes allow it, and the manual review offers candidates up to
+    80 km away - the two stop describing the same conductor. A conductor cannot
+    be shorter than the straight line between the substations it joins, so that
+    distance is its floor.
+
+    Left alone this is not a rounding error. Colombia carried 560 of 979 lines
+    below their own floor and one at 1/2500 of it: a 20 m impedance across a
+    50 km span, which is a near short circuit between two distant buses. The
+    resulting 1e-5 pu reactances leave the network ill-conditioned enough that
+    PIPS, and Ipopt through PowerModels, both refuse even the DC problem.
+
+    R, X and B are each linear in length, so they scale with it; the thermal
+    limit of (3d) depends only on voltage and does not move. Returns
+    (lines raised, worst ratio found, kilometres added).
+    """
+    located = {}
+    for _, row in bus_df.iterrows():
+        if not is_null(row.get("latitude")) and not is_null(row.get("longitude")):
+            located[int(row["bus_i"])] = (float(row["latitude"]), float(row["longitude"]))
+    raised, worst, added = 0, 1.0, 0.0
+    for i, row in lines_df.iterrows():
+        f, t = row.get("fbus"), row.get("tbus")
+        if is_null(f) or is_null(t):
+            continue
+        here, there = located.get(int(f)), located.get(int(t))
+        # Co-located buses are the two tiers of one switchyard, joined by a
+        # transformer whose impedance is equipment, not distance.
+        if here is None or there is None or here == there:
+            continue
+        span = geodesic(here, there).km
+        recorded = float(row.get("length_km", 0) or 0)
+        if span <= recorded + 1e-9:
+            continue
+        if recorded > 0:
+            worst = min(worst, recorded / span)
+            scale = span / recorded
+            for column in ("r", "x", "b"):
+                value = row.get(column)
+                if not is_null(value):
+                    lines_df.at[i, column] = round(float(value) * scale, 6)
+        added += span - recorded
+        lines_df.at[i, "length_km"] = round(span, 4)
+        raised += 1
+    return raised, worst, added
+
+
 def nearby_candidates(
     endpoint: tuple,
     line_v,
@@ -220,6 +390,60 @@ def nearby_candidates(
                     bv))
     out.sort(key=lambda c: c[1])
     return out
+
+
+def _local_km(origin, points) -> np.ndarray:
+    """(lon, lat) points as km east and north of origin.
+
+    Equirectangular, like pipeline_integrity._separation_km: well inside 1 % over
+    the tens of kilometres automatic mode compares, and vectorised, which the
+    per-pair geodesic is not.
+    """
+    pts = np.asarray(points, dtype=float).reshape(-1, 2)
+    scale = math.cos(math.radians(origin[1]))
+    return np.column_stack(((pts[:, 0] - origin[0]) * 111.32 * scale,
+                            (pts[:, 1] - origin[1]) * 110.57))
+
+
+def find_tap(endpoint, line_v, lines, max_km):
+    """Nearest point inside another line that this endpoint meets: a tee.
+
+    lines yields (key, coords, voltage). A point within AUTO_JOIN_KM of that
+    line's own ends is not a tee but two ends meeting, which merging or
+    assignment handles, so only interior points count. Returns
+    dict(key, segment, t, point, km) for coords[segment] + t * (next - this),
+    or None.
+    """
+    best = None
+    for key, coords, voltage in lines:
+        if len(coords) < 2 or not voltage_compatible(line_v, voltage):
+            continue
+        xy = _local_km(endpoint, coords)
+        start, step = xy[:-1], xy[1:] - xy[:-1]
+        length2 = (step ** 2).sum(axis=1)
+        t = np.divide(-(start * step).sum(axis=1), length2,
+                      out=np.zeros(len(step)), where=length2 > 0).clip(0.0, 1.0)
+        foot = start + t[:, None] * step
+        dist = np.hypot(foot[:, 0], foot[:, 1])
+        k = int(dist.argmin())
+        if dist[k] > max_km or (best is not None and dist[k] >= best["km"]):
+            continue
+        if min(np.hypot(*(foot[k] - xy[0])), np.hypot(*(foot[k] - xy[-1]))) <= AUTO_JOIN_KM:
+            continue
+        a, b = np.asarray(coords[k], float), np.asarray(coords[k + 1], float)
+        best = dict(key=key, segment=k, t=float(t[k]), km=float(dist[k]),
+                    point=tuple(float(v) for v in a + t[k] * (b - a)))
+    return best
+
+
+def split_line(coords, segment, t, point):
+    """The two halves of a polyline at point, which lies on coords[segment:segment + 2]."""
+    coords = [tuple(c) for c in coords]
+    if t <= 1e-9:
+        return coords[:segment + 1], coords[segment:]
+    if t >= 1 - 1e-9:
+        return coords[:segment + 2], coords[segment + 1:]
+    return coords[:segment + 1] + [point], [point] + coords[segment + 1:]
 
 
 def _endpoint_from_coords(coords: list, which: str) -> tuple:
@@ -428,7 +652,12 @@ def run_pass1(
       delete      – mark the entire line for deletion
       new         – create a new substation at the endpoint coordinates
                     (prompts for name, primary kV, optional secondary kV)
+      tap         – split the line this endpoint tees into and join them
+                    at a new junction bus
       merge <N>   – merge this line with Line N from the unmatched list
+
+    When log.mode is "automatic" the prompts are answered by _auto_answer
+    instead of a person, and no map is drawn.
     """
     df = lines_df.copy()
 
@@ -449,29 +678,71 @@ def run_pass1(
         print("  No endpoints left for manual review.")
         return df, bus_df
 
-    print(f"\n  Building Folium map for {len(unmatched_rows)} endpoint(s)…")
+    log            = log if log is not None else ReviewLog()
+    automatic      = log.mode == "automatic"
+    deciding       = automatic and not log.replay
+
     handled_seqs:  set = set()   # seq indices definitively resolved (not skipped)
     rows_to_delete: set = set()  # df row indices to delete at end
     consumed:       set = set()  # df row indices absorbed by a merge
     valid_bus_i_set = set(bus_df["bus_i"].astype(int).tolist())
     n_resolved = 0
 
-    log            = log if log is not None else ReviewLog()
     bus_df         = bus_df.copy()
     bus_coords_l   = list(bus_coords)
     bus_voltages_l = list(bus_voltages)
 
+    # Geometry of every live line, kept current through merges, taps and
+    # deletions, with a bounding box each so a tap search skips distant lines.
+    shapes: dict = {}
+    boxes:  dict = {}
+    box_index = {"keys": None, "array": None}
+
+    def _reshape(i, coords):
+        if coords is None or len(coords) < 2:
+            shapes.pop(i, None)
+            boxes.pop(i, None)
+        else:
+            pts = np.asarray(coords, dtype=float)
+            shapes[i] = pts
+            boxes[i] = (*pts.min(axis=0), *pts.max(axis=0))
+        box_index["keys"] = None
+
+    for i in df.index:
+        _reshape(i, geom_lookup.get(str(df.at[i, "osm_id"]), []))
+
+    def _near_lines(point, km, exclude):
+        """(df index, coords, voltage) of live lines whose box is within km of point."""
+        if box_index["keys"] is None:
+            box_index["keys"] = list(boxes)
+            box_index["array"] = np.array([boxes[k] for k in box_index["keys"]]).reshape(-1, 4)
+        b = box_index["array"]
+        pad_lat = km / 110.57
+        pad_lon = km / (111.32 * max(math.cos(math.radians(point[1])), 0.01))
+        hit = ((b[:, 0] - pad_lon <= point[0]) & (point[0] <= b[:, 2] + pad_lon)
+               & (b[:, 1] - pad_lat <= point[1]) & (point[1] <= b[:, 3] + pad_lat))
+        for j in np.flatnonzero(hit):
+            k = box_index["keys"][j]
+            if k != exclude and k in shapes:
+                yield k, shapes[k], df.at[k, "voltage_V"]
+
     def _refresh_map():
+        if automatic:
+            return
         path = _build_folium_map(
             unmatched_rows, handled_seqs, geom_lookup,
             bus_df, bus_coords_l, bus_voltages_l, df)
         print(f"  [Map updated → {path}  –  press F5 in browser to refresh]")
 
-    _refresh_map()
-    map_path = os.path.abspath(FOLIUM_OUTPUT)
-    print(f"  Saved map → {map_path}")
-    print("  Opening in browser – refer to it while answering prompts below.")
-    webbrowser.open(f"file://{map_path}")
+    if automatic:
+        print(f"\n  Automatic review of {len(unmatched_rows)} endpoint(s); no map is drawn.")
+    else:
+        print(f"\n  Building Folium map for {len(unmatched_rows)} endpoint(s)…")
+        _refresh_map()
+        map_path = os.path.abspath(FOLIUM_OUTPUT)
+        print(f"  Saved map → {map_path}")
+        print("  Opening in browser – refer to it while answering prompts below.")
+        webbrowser.open(f"file://{map_path}")
 
     def _print_candidates(cands):
         if cands:
@@ -481,38 +752,211 @@ def run_pass1(
         else:
             print("    (none within radius)")
 
-    for seq, (df_i, row, which, ep) in enumerate(unmatched_rows):
+    # ── Automatic mode ────────────────────────────────────────────────────
+    known_kv = [parse_voltage_tag(v)[0] for v in df.get("voltage_V", pd.Series(dtype=object))
+                if parse_voltage_tag(v)]
+    fallback_kv = (Counter(known_kv).most_common(1)[0][0] if known_kv
+                   else config.MIN_TRANSMISSION_VOLTAGE_V) / 1000.0
+    compatible_cache: dict = {}
+
+    def _kv_of(*voltages):
+        """kV for a new bus: the first known level among voltages, else the regional mode."""
+        for v in voltages:
+            levels = parse_voltage_tag(v)
+            if levels:
+                return levels[0] / 1000.0
+        return fallback_kv
+
+    def _shared_kv(line_v, other_v):
+        shared = [v for v in parse_voltage_tag(line_v) if v in parse_voltage_tag(other_v)]
+        return shared[0] / 1000.0 if shared else _kv_of(line_v, other_v)
+
+    def _compatible(line_v):
+        """Per bus, whether the prompt's voltage guard would accept it for line_v."""
+        known = compatible_cache.setdefault(str(line_v), [])
+        volts = bus_df["base_kV"].tolist()
+        known.extend(voltage_compatible(line_v, v) for v in volts[len(known):])
+        return np.array(known, dtype=bool)
+
+    def _meeting_ends(df_i, ep, line_v):
+        """Unresolved ends of other lines within AUTO_JOIN_KM of ep, nearest first."""
+        pad_lat = AUTO_JOIN_KM / 110.57
+        pad_lon = AUTO_JOIN_KM / (111.32 * max(math.cos(math.radians(ep[1])), 0.01))
+        found = {}
+        for s, (di, _, w, _) in enumerate(unmatched_rows):
+            if s in handled_seqs or di == df_i or di not in shapes:
+                continue
+            end = shapes[di][0] if w == "fbus" else shapes[di][-1]
+            if abs(end[0] - ep[0]) > pad_lon or abs(end[1] - ep[1]) > pad_lat:
+                continue
+            if not is_null(df.at[di, w]) or not voltage_compatible(line_v, df.at[di, "voltage_V"]):
+                continue
+            d = float(np.hypot(*_local_km(ep, end)[0]))
+            if d <= AUTO_JOIN_KM and (di not in found or d < found[di][0]):
+                found[di] = (d, s, w)
+        return [(s, di, w) for di, (d, s, w) in sorted(found.items(), key=lambda kv: kv[1][0])]
+
+    def _new_bus(label, ep, kv):
+        name = f"{label} {ep[1]:.4f} {ep[0]:.4f}"
+        return ["new", name, f"{kv:g}", ""]
+
+    def _auto_answer(df_i, which, ep, line_v, stage):
+        """Answer the prompt for one endpoint: (answers, rule, reason).
+
+        Each rule answers with a command a reviewer could have typed, so the
+        journal replays like a manual one. Stage 1 acts only on what the OSM
+        geometry itself shows - a substation, the rest of the line, a junction,
+        a tee; stage 2 adds the judgements that keep the line; stage 3 decides
+        what is left. Running them in that order means nothing is invented or
+        deleted while a better-supported answer is still available elsewhere.
+        """
+        other = "tbus" if which == "fbus" else "fbus"
+        other_bus = None if is_null(df.at[df_i, other]) else int(df.at[df_i, other])
+        if df_i not in shapes:
+            return ["skip"], "no geometry", "the line has no OSM geometry to judge"
+        # 0. Both ends are open and at one point. Whatever the first attaches
+        #    to, the second lands beside it, so the line can only become a
+        #    self-loop. (A short line with one end attached is judged below; it
+        #    may be a real tie to a neighbouring substation.)
+        far_end = shapes[df_i][-1] if which == "fbus" else shapes[df_i][0]
+        if other_bus is None and float(np.hypot(*_local_km(ep, far_end)[0])) <= AUTO_JOIN_KM:
+            return ["delete"], "self-loop", "both open ends of the line are at one point"
+        bus_ids = bus_df["bus_i"].astype(int).to_numpy()
+        km = np.hypot(*_local_km(ep, np.asarray(bus_coords_l, dtype=float)).T)
+        same = _compatible(line_v)
+        other_end = bus_ids == (-1 if other_bus is None else other_bus)
+
+        def nearest(mask):
+            hits = np.flatnonzero(mask)
+            return int(hits[km[hits].argmin()]) if len(hits) else None
+
+        def described(k):
+            return f"bus {bus_ids[k]} {bus_df.at[k, 'name']} ({_fmt_kv(bus_df.at[k, 'base_kV'])}, {km[k]:.2f} km)"
+
+        # 1. The endpoint is at a substation of its own voltage.
+        k = nearest(same & ~other_end & (km <= AUTO_JOIN_KM))
+        if k is not None:
+            return [str(bus_ids[k])], "at substation", described(k)
+
+        # 2. It meets the open end of another line: one is the rest of this
+        #    line, two or more make a junction. Two lines from the same bus
+        #    meeting here would merge into a self-loop, so they are a junction too.
+        meeting = _meeting_ends(df_i, ep, line_v)
+        if len(meeting) == 1:
+            tgt_seq, tgt_df_i, tgt_which = meeting[0]
+            far = df.at[tgt_df_i, "tbus" if tgt_which == "fbus" else "fbus"]
+            if other_bus is None or is_null(far) or int(far) != other_bus:
+                return ([f"merge {tgt_seq + 1}", "A" if tgt_which == "fbus" else "B"],
+                        "continues", f"into line {tgt_seq + 1} ({df.at[tgt_df_i, 'osm_id']})")
+        if meeting:
+            kv = _kv_of(line_v, *[df.at[m[1], "voltage_V"] for m in meeting])
+            return (_new_bus("Junction", ep, kv), "junction",
+                    f"{len(meeting) + 1} line ends meet here")
+
+        # 3. It lies on another line, away from that line's ends: a tee.
+        tee = find_tap(ep, line_v, _near_lines(ep, AUTO_TAP_KM, df_i), AUTO_TAP_KM)
+        if tee is not None:
+            return ["tap"], "tee", f"on {df.at[tee['key'], 'osm_id']} ({tee['km']:.2f} km)"
+
+        # 4. A substation of its own voltage lies within the Step 2 radius.
+        k = nearest(same & ~other_end & (km <= AUTO_ASSIGN_KM))
+        if k is not None:
+            return [str(bus_ids[k])], "nearest substation", described(k)
+
+        if stage == 1:
+            return ["skip"], "deferred", "revisited in stage 2"
+
+        # 5. The line comes back to the substation it starts from: a self-loop,
+        #    which Sec. IV.B.2 Step 10 would delete anyway. Ending farther out
+        #    than a stub's length, it is a radial line, and rule 7 judges it.
+        if other_end.any() and km[other_end].min() <= AUTO_STUB_KM:
+            return ["delete"], "self-loop", (f"ends {km[other_end].min():.2f} km from "
+                                             f"its own other end, bus {other_bus}")
+
+        # 6. A substation at another voltage is close. The line is attached
+        #    across the voltage guard; POST-PROCESSING 1b then gives the
+        #    substation a tier at the line's voltage and a transformer.
+        k = nearest(~same & ~other_end & (km <= AUTO_TIER_KM))
+        if k is not None:
+            return [str(bus_ids[k]), "y"], "other-voltage substation", described(k)
+
+        if stage == 2:
+            return ["skip"], "deferred", "revisited in stage 3"
+
+        # 7. A dead end on a line long enough to be real runs to a substation
+        #    OSM has not mapped.
+        length = 0.0 if is_null(df.at[df_i, "length_km"]) else float(df.at[df_i, "length_km"])
+        flag = df.loc[df_i].get("f_crossborder" if which == "fbus" else "t_crossborder")
+        crossing = not is_null(flag) and bool(flag)
+        if other_bus is not None and length >= AUTO_STUB_KM:
+            return (_new_bus("Inferred substation", ep, _kv_of(line_v)), "inferred substation",
+                    f"{'cross-border ' if crossing else ''}dead end of a {length:.1f} km line")
+
+        # 8. Anything else is an OSM fragment.
+        if other_bus is None:
+            return ["delete"], "fragment", "no connection at either end"
+        return ["delete"], "stub", f"{length:.2f} km dead end, shorter than {AUTO_STUB_KM:g} km"
+
+    # Manual review visits each endpoint once. Automatic review makes three
+    # passes, so that stage 1's rules settle every endpoint they can before
+    # stage 2 and 3 add or delete anything.
+    def _schedule():
+        for stage in ((1, 2, 3) if automatic else (3,)):
+            seq = 0
+            while seq < len(unmatched_rows):   # taps and merges append endpoints
+                yield seq, stage
+                seq += 1
+
+    for seq, stage in _schedule():
+        df_i, row, which, ep = unmatched_rows[seq]
+        if seq in handled_seqs:
+            continue
         # Skip if this row was already consumed by a merge or marked for deletion
         if df_i in consumed or df_i in rows_to_delete:
             handled_seqs.add(seq)
             continue
+        # A merge or tap since this endpoint was listed may already have settled it.
+        if not is_null(df.at[df_i, which]):
+            handled_seqs.add(seq)
+            continue
 
-        osm_id  = str(row["osm_id"])
+        osm_id  = str(df.at[df_i, "osm_id"])
         other   = "tbus" if which == "fbus" else "fbus"
-        line_v  = row.get("voltage_V", None)
+        line_v  = df.loc[df_i].get("voltage_V", None)
         _, _, marker_label = _marker_combo(seq)
 
         which_w = which
-        ep_w    = ep
+        ep_w    = (_endpoint_from_coords(geom_lookup[osm_id], which)
+                   if geom_lookup.get(osm_id) else ep)
 
-        candidates = nearby_candidates(
-            ep_w, line_v, bus_df, bus_coords_l, bus_voltages_l, FOLIUM_RADIUS_KM)
+        if not automatic:
+            candidates = nearby_candidates(
+                ep_w, line_v, bus_df, bus_coords_l, bus_voltages_l, FOLIUM_RADIUS_KM)
 
-        print(f"\n{'─' * 60}")
-        print(f"  Line {seq + 1}/{len(unmatched_rows)}  (map marker: {marker_label})")
-        print(f"  OSM id  : {osm_id}")
-        print(f"  Voltage : {_fmt_kv(line_v)}")
-        print(f"  Length  : {row.get('length_km', '?')} km")
-        print(f"  {other:4s}   : {df.at[df_i, other]} "
-              f"({df.at[df_i, f'{other}_name']})")
-        print(f"  Missing : {which_w}")
-        print(f"  Nearest buses within {FOLIUM_RADIUS_KM} km:")
-        _print_candidates(candidates)
+            print(f"\n{'─' * 60}")
+            print(f"  Line {seq + 1}/{len(unmatched_rows)}  (map marker: {marker_label})")
+            print(f"  OSM id  : {osm_id}")
+            print(f"  Voltage : {_fmt_kv(line_v)}")
+            print(f"  Length  : {df.at[df_i, 'length_km'] if 'length_km' in df.columns else '?'} km")
+            print(f"  {other:4s}   : {df.at[df_i, other]} "
+                  f"({df.at[df_i, f'{other}_name']})")
+            print(f"  Missing : {which_w}")
+            print(f"  Nearest buses within {FOLIUM_RADIUS_KM} km:")
+            _print_candidates(candidates)
 
+        refused = 0
         while True:
+            if deciding:
+                refused += 1
+                if refused > 3:
+                    raise RuntimeError(
+                        f"Automatic review could not settle line {seq + 1} ({osm_id}): "
+                        "the prompt refused its answers.")
+                log.queue(*_auto_answer(df_i, which_w, ep_w, line_v, stage))
             raw = log.ask(
-                f"\n  Enter bus_i for {which_w}"
-                f"  (skip / delete / new / merge <N>): ",
+                (f"  Line {seq + 1}/{len(unmatched_rows)} {which_w}: " if automatic else
+                 f"\n  Enter bus_i for {which_w}"
+                 f"  (skip / delete / new / tap / merge <N>): "),
                 context=dict(osm_id=osm_id, endpoint=which_w,
                              lon=round(ep_w[0], 7), lat=round(ep_w[1], 7)),
             ).strip().lower()
@@ -520,11 +964,15 @@ def run_pass1(
             # ── skip ──────────────────────────────────────────────────────
             if raw == "skip":
                 # Do NOT add to handled_seqs — the marker stays on the map.
+                if automatic and which_w != which:
+                    # A merge left this end open; list it so a later stage returns.
+                    unmatched_rows.append((df_i, df.loc[df_i], which_w, ep_w))
                 break
 
             # ── delete ────────────────────────────────────────────────────
             if raw == "delete":
                 rows_to_delete.add(df_i)
+                _reshape(df_i, None)
                 # Mark ALL seq entries for this df_i as handled so we don't
                 # prompt for the partner endpoint (fbus/tbus) of this line.
                 for s, (di, _, _, _) in enumerate(unmatched_rows):
@@ -588,6 +1036,63 @@ def run_pass1(
                 _refresh_map()
                 break
 
+            # ── tap into another line ─────────────────────────────────────
+            if raw == "tap":
+                tee = find_tap(ep_w, line_v, _near_lines(ep_w, TAP_SEARCH_KM, df_i),
+                               TAP_SEARCH_KM)
+                if tee is None:
+                    print(f"  No voltage-compatible line passes within {TAP_SEARCH_KM:g} km "
+                          "of this endpoint away from its own ends; nothing to tap.")
+                    continue
+                host = tee["key"]
+                host_osm = str(df.at[host, "osm_id"])
+                head, tail = split_line(geom_lookup[host_osm], tee["segment"],
+                                        tee["t"], tee["point"])
+                kv = _shared_kv(line_v, df.at[host, "voltage_V"])
+                junction_i = int(bus_df["bus_i"].max()) + 1
+                junction_name = f"Junction {tee['point'][1]:.4f} {tee['point'][0]:.4f}"
+                junction = manual_bus(junction_i, junction_name, tee["point"], kv,
+                                      bus_df.columns)
+                bus_df = pd.concat([bus_df, pd.DataFrame([junction])], ignore_index=True)
+                bus_coords_l.append(np.array(tee["point"]))
+                bus_voltages_l.append(junction["voltage_tag"])
+                valid_bus_i_set.add(junction_i)
+
+                # The host becomes its head half, ending at the junction; a new
+                # row carries the tail half from the junction to the host's to-end.
+                tail_i = int(df.index.max()) + 1
+                df.loc[tail_i] = df.loc[host]
+                for i, part, end, flag in ((host, head, "tbus", "t_crossborder"),
+                                           (tail_i, tail, "fbus", "f_crossborder")):
+                    part_id = f"{host_osm}#{1 if i == host else 2}"
+                    geom_lookup[part_id] = part
+                    df.at[i, "osm_id"]             = part_id
+                    df.at[i, "length_km"]          = round(_line_length_km(part), 4)
+                    df.at[i, end]                  = junction_i
+                    df.at[i, f"{end}_name"]        = junction_name
+                    df.at[i, f"{end}_dist_km"]     = 0.0
+                    df.at[i, f"{end}_resolve_pass"] = "tap_split"
+                    if flag in df.columns:
+                        df.at[i, flag] = False
+                    _reshape(i, part)
+                # The host's own open to-end, if it had one, is now the tail's.
+                for s, (di, _, w, _) in enumerate(unmatched_rows):
+                    if di == host and w == "tbus":
+                        handled_seqs.add(s)
+                if is_null(df.at[tail_i, "tbus"]):
+                    unmatched_rows.append((tail_i, df.loc[tail_i], "tbus", tail[-1]))
+
+                df.at[df_i, which_w]                   = junction_i
+                df.at[df_i, f"{which_w}_name"]         = junction_name
+                df.at[df_i, f"{which_w}_dist_km"]      = round(tee["km"], 4)
+                df.at[df_i, f"{which_w}_resolve_pass"] = "manual_tap"
+                n_resolved += 1
+                handled_seqs.add(seq)
+                print(f"  Split {host_osm} at a new {kv:g} kV junction, bus {junction_i}, "
+                      f"and assigned {which_w} = {junction_i}")
+                _refresh_map()
+                break
+
             # ── merge with another line ───────────────────────────────────
             if raw.startswith("merge"):
                 parts = raw.split()
@@ -614,16 +1119,17 @@ def run_pass1(
                 tgt_coords = geom_lookup.get(tgt_osm_id, [])
                 cur_coords = geom_lookup.get(str(df.at[df_i, "osm_id"]), [])
 
-                print(f"\n  Merging with Line {tgt_seq + 1}:")
-                print(f"    OSM id : {tgt_osm_id}")
-                print(f"    fbus   : {df.at[tgt_df_i, 'fbus']}  "
-                      f"({df.at[tgt_df_i, 'fbus_name']})")
-                print(f"    tbus   : {df.at[tgt_df_i, 'tbus']}  "
-                      f"({df.at[tgt_df_i, 'tbus_name']})")
-                print(f"  Which end of Line {tgt_seq + 1} connects to "
-                      f"Line {seq + 1}'s {which_w}?")
-                print(f"    A) from-end  ({df.at[tgt_df_i, 'fbus_name']})")
-                print(f"    B) to-end    ({df.at[tgt_df_i, 'tbus_name']})")
+                if not automatic:
+                    print(f"\n  Merging with Line {tgt_seq + 1}:")
+                    print(f"    OSM id : {tgt_osm_id}")
+                    print(f"    fbus   : {df.at[tgt_df_i, 'fbus']}  "
+                          f"({df.at[tgt_df_i, 'fbus_name']})")
+                    print(f"    tbus   : {df.at[tgt_df_i, 'tbus']}  "
+                          f"({df.at[tgt_df_i, 'tbus_name']})")
+                    print(f"  Which end of Line {tgt_seq + 1} connects to "
+                          f"Line {seq + 1}'s {which_w}?")
+                    print(f"    A) from-end  ({df.at[tgt_df_i, 'fbus_name']})")
+                    print(f"    B) to-end    ({df.at[tgt_df_i, 'tbus_name']})")
 
                 while True:
                     ec = log.ask("  Choice (A/B): ").strip().upper()
@@ -672,6 +1178,8 @@ def run_pass1(
 
                 consumed.add(tgt_df_i)
                 rows_to_delete.add(tgt_df_i)
+                _reshape(df_i, merged_coords)
+                _reshape(tgt_df_i, None)
                 # Mark all seq entries for the consumed line as handled
                 for s, (di, _, _, _) in enumerate(unmatched_rows):
                     if di == tgt_df_i:
@@ -688,11 +1196,13 @@ def run_pass1(
                 if still_missing_f or still_missing_t:
                     which_w = "fbus" if still_missing_f else "tbus"
                     ep_w = _endpoint_from_coords(merged_coords, which_w)
-                    candidates = nearby_candidates(
-                        ep_w, line_v, bus_df, bus_coords_l, bus_voltages_l,
-                        FOLIUM_RADIUS_KM)
-                    print(f"  Still missing {which_w}. Nearest buses:")
-                    _print_candidates(candidates)
+                    refused = 0
+                    if not automatic:
+                        candidates = nearby_candidates(
+                            ep_w, line_v, bus_df, bus_coords_l, bus_voltages_l,
+                            FOLIUM_RADIUS_KM)
+                        print(f"  Still missing {which_w}. Nearest buses:")
+                        _print_candidates(candidates)
                     continue
                 else:
                     n_resolved += 1
@@ -703,7 +1213,7 @@ def run_pass1(
                 chosen = int(raw)
             except ValueError:
                 print("  Please enter a bus_i integer,"
-                      " skip, delete, new, or merge <N>.")
+                      " skip, delete, new, tap, or merge <N>.")
                 continue
             if chosen not in valid_bus_i_set:
                 print(f"  bus_i={chosen} not found. Valid range: "
@@ -753,6 +1263,13 @@ def run_pass1(
         df = df.drop(index=list(rows_to_delete)).reset_index(drop=True)
         print(f"\n  Deleted {len(rows_to_delete)} line(s) (deletions + merges).")
     print(f"  Pass 1 resolved {n_resolved} endpoint(s).")
+    if automatic:
+        # One count per decision: the opening prompt of each carries its context.
+        rules = Counter(e["rule"] for e in log.entries
+                        if e.get("context") and e.get("rule") and e["rule"] != "deferred")
+        print("  Automatic decisions:")
+        for rule, count in rules.most_common():
+            print(f"    {count:5d}  {rule}")
     return df, bus_df
 
 
@@ -761,10 +1278,15 @@ def run_pass1(
 # ============================================================
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="Manual endpoint review (Sec. IV.B.3)")
-    parser.add_argument("--replay", action="store_true",
-                        help="Re-apply the answers in review_decisions_{region}.json "
-                             "instead of prompting, reproducing a saved session")
+    parser = argparse.ArgumentParser(description="Endpoint review (Sec. IV.B.3)")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--replay", action="store_true",
+                      help="Re-apply the answers in review_decisions_{region}.json "
+                           "instead of prompting, reproducing a saved session")
+    mode.add_argument("--auto", action="store_true",
+                      help="Answer every prompt by rule instead of asking. The "
+                           "result is not a reviewed model; the journal records "
+                           "the rule behind each answer")
     parser.add_argument("--journal", type=Path, default=None,
                         help="Where to read/write the review journal")
     args = parser.parse_args([] if argv is None else argv)
@@ -772,7 +1294,8 @@ def main(argv=None):
     build_provenance.verify(config, WORK_DIR, "resolve_unmatched")
     # Resolved here, not at import, so WORK_DIR stays overridable.
     journal = args.journal or (WORK_DIR / f"review_decisions_{region}.json")
-    log = ReviewLog(journal, replay=args.replay)
+    log = ReviewLog(journal, replay=args.replay,
+                    mode="automatic" if args.auto else "manual")
     print("=" * 60)
     print("Loading data")
     print("=" * 60)
@@ -806,7 +1329,8 @@ def main(argv=None):
 
     # ── Pass 1: Interactive review ───────────────────────────────
     print("\n" + "=" * 60)
-    print("PASS 1 – Interactive manual review")
+    print("PASS 1 – " + ("Automatic review (not a reviewed model)"
+                         if log.mode == "automatic" else "Interactive manual review"))
     print("=" * 60)
     lines_df, bus_df = run_pass1(
         lines_df, geom_lookup, bus_df, bus_coords, bus_voltages, log=log)
@@ -837,6 +1361,13 @@ def main(argv=None):
         df.at[i, "rateB"] = round(mva, 2)
         df.at[i, "rateC"] = round(mva, 2)
 
+
+    raised, worst, added = floor_lengths_at_bus_span(lines_df, bus_df)
+    if raised:
+        print(f"  Raised {raised} line length(s) to the distance between their own "
+              f"substations, adding {added:,.0f} km.")
+        print(f"  The most understated was at {worst:.4f} of its floor; equation (3) "
+              f"would have given it that fraction of its impedance.")
 
     # Bus voltage lookup (post-fill, so all buses should have a voltage now)
     # Use pd.to_numeric to handle values that may have been read back as strings.
@@ -1023,13 +1554,27 @@ def main(argv=None):
             if report["components"] <= 1:
                 break
             print(describe_islands(report, expect_connected=False))
-            island = report["islands"][0]
-            if island["nearest_from"] is None:
-                break
+            if log.mode == "automatic":
+                # Unattended, only a short hop between buses of one voltage is
+                # added; a longer gap or a voltage change is left for a reviewer.
+                island = next((i for i in report["islands"]
+                               if i["nearest_from"] is not None and i["voltage_compatible"]
+                               and i["gap_km"] <= AUTO_CONNECT_KM), None)
+                if island is None:
+                    print("  No remaining gap is a voltage-compatible hop within "
+                          f"{AUTO_CONNECT_KM:g} km; left for review.")
+                    break
+            else:
+                island = report["islands"][0]
+                if island["nearest_from"] is None:
+                    break
             a, b = island["nearest_from"], island["nearest_to"]
             rows = bus_df.set_index("bus_i")
             kv = normalise_kv(rows.at[a, "base_kV"], rows.at[b, "base_kV"])
             note = "" if island["voltage_compatible"] else "  [VOLTAGES DIFFER]"
+            if log.mode == "automatic" and not log.replay:
+                log.queue(["y"], "join networks",
+                          f"{island['buses']}-bus network, {island['gap_km']:.2f} km hop")
             answer = log.ask(
                 f"\n  Add a {kv:g} kV line to join the {island['buses']}-bus network"
                 f" — bus {a} ({rows.at[a, 'name']}) to bus {b} ({rows.at[b, 'name']}),"
@@ -1062,6 +1607,8 @@ def main(argv=None):
                         else "One connected network."))
         lines_resolved.to_csv(WORK_DIR / f"matpower_{region}_lines_resolved.csv", index=False)
         log.save(region)
+
+    log.finish()
 
 
 if __name__ == "__main__":

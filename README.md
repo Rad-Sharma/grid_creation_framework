@@ -152,7 +152,14 @@ python create_new_model/check_inputs.py
 ```
 
 It reports all missing local prerequisites together and exits with status 1 if
-any are absent. It does not validate file contents or guarantee a successful run.
+any are absent. It also checks `SHAPE_FILE_NAME`, `COUNTRY_ISO3` and
+`REGION_BBOX` against the bundled NaturalEarth boundaries, because each of those
+three inputs otherwise fails quietly: a name NaturalEarth does not have disables
+cross-border detection, an ISO code it does not have clips every Voronoi cell to
+the bounding rectangle, and a box that misses the country clips the network
+away. A box smaller than the country is reported as a `NOTE` rather than an
+error, since a study area may legitimately be smaller. It does not validate file
+contents or guarantee a successful run.
 The default paper path will report missing inputs in a fresh checkout; supply
 them, or explicitly choose the legacy approximation if that matches your purpose.
 
@@ -162,7 +169,7 @@ Then run the numbered scripts from the `create_new_model/` directory:
 cd create_new_model
 python create_buses.py
 python create_lines.py
-python resolve_unmatched.py
+python resolve_unmatched.py          # or: python resolve_unmatched.py --auto
 ```
 
 ### Step 1 — `create_buses.py`
@@ -227,14 +234,22 @@ Available commands at each CLI prompt:
 | `skip` | Leave unmatched; the line is removed when review finishes |
 | `delete` | Delete the entire line |
 | `new` | Create a new substation at the endpoint location |
+| `tap` | The endpoint tees into another line: split that line at the nearest point and join the three at a new junction bus |
 | `merge <N>` | Merge this line with line N from the unmatched list |
 
 After manual review the script:
 1. Removes still-unmatched lines.
-2. Computes R, X, B, rateA from empirical power-law fits.
-3. **Fills missing bus voltages** from connected line voltages.
-4. **Assigns the most common regional voltage** to any buses still unassigned.
-5. **Removes unconnected buses**, considering both lines and transformers, and
+2. **Raises each line's length to the distance between the buses it connects.**
+   Equation (3) scales R, X and B by length, and that length is the OSM geometry
+   which survived preprocessing. An endpoint assigned to a substation the
+   geometry does not reach leaves the two describing different conductors, and a
+   conductor cannot be shorter than the straight line between its endpoints.
+   Without this floor more than half the lines in most regions carried the
+   impedance of a shorter conductor, the worst at 1/2500 of its own floor.
+3. Computes R, X, B, rateA from empirical power-law fits.
+4. **Fills missing bus voltages** from connected line voltages.
+5. **Assigns the most common regional voltage** to any buses still unassigned.
+6. **Removes unconnected buses**, considering both lines and transformers, and
    applies the same bus renumbering to both branch tables.
 
 The `new` command stores voltages in volts internally. An optional secondary
@@ -262,12 +277,101 @@ is fixed by the input tables, the same OSM extract plus the same journal yields
 the same case. Commit the journal alongside the region so the build can be
 reproduced by someone who was not present at the original review.
 
-**Review limitation:** the script prompts once per unmatched endpoint, has no
-saved review session, and does not revisit `skip` answers. A resumable or
-bulk-review interface is still needed. The shared topology workflow in
+Each recorded answer is checked against the endpoint, network join or follow-up
+question it was recorded for. If an answer would reach a different one, or the
+review ends with answers unused, replay stops with an error that names the first
+answer that no longer fits. That usually means the journal was edited at or
+before that answer. The journal file is not rewritten until a replay has used
+every answer, so the edited version is kept for fixing. Step 3 updates the bus
+and transformer tables in place, so rebuild from Step 1 before replaying again.
+
+**Review limitation:** the manual review prompts once per unmatched endpoint, has
+no saved review session, and does not revisit `skip` answers. On a large region
+that is thousands of prompts (the checked-in Australia lines leave 1,501
+endpoints unmatched). Automatic mode, below, removes the prompts but not the
+need for review. The shared topology workflow in
 [MODEL_QUALITY.md](MODEL_QUALITY.md) exports review reports instead, but it
 requires OSM JSON with node identities, produces different topology tables, and
 is not a drop-in replacement for this step.
+
+#### Automatic mode
+
+```bash
+python resolve_unmatched.py --auto
+```
+
+Answers every prompt by rule instead of asking. **This goes beyond the Automate
+Grid Creation paper**, whose Sec. IV.B.3 puts a reviewer here and whose
+conclusion names full automation as future work, so a case built this way is not
+a reviewed model. It gives a first model of a large region without thousands of
+prompts; the decisions it made still need review.
+
+**How it answers.** Each rule answers with the command a reviewer could have
+typed (a bus number, `merge`, `new`, `tap`, `delete` or `skip`), and that answer
+goes through the same prompt as a manual one. The checks on manual picks still
+apply: a self-loop is refused, and a bus at another voltage is accepted only with
+the same explicit `y` a reviewer would give. No map is drawn and no person is
+ever asked anything. If no rule supplies an answer, or the prompt refuses a
+rule's answer three times, the run stops with an error rather than guessing or
+waiting for input.
+
+**Rules.** Endpoints are visited in three stages, so nothing is added or deleted
+while a safer answer is still available elsewhere. For each endpoint the rules
+are tried top to bottom and the first that applies answers. A rule stays active
+in every stage after the one it starts in, and an endpoint no rule settles comes
+up again in the next stage.
+
+| From stage | Rule | Answer |
+|---|---|---|
+| 1 | Both ends of the line are open and within 0.5 km of each other | `delete`: it can only become a self-loop |
+| 1 | A substation of the line's voltage within 0.5 km (d_junc, Sec. IV.B.2) | assign it |
+| 1 | Exactly one other open line end within 0.5 km | `merge`: it is the rest of this line |
+| 1 | Two or more other open ends within 0.5 km, or one whose merge would loop back to this line's own bus | `new` junction bus; the other ends then attach to it by the rule above |
+| 1 | The end lies within 0.1 km of another line, away from that line's ends | `tap` |
+| 1 | A substation of the line's voltage within 10 km (Step 2's `BUS_ASSIGN_THRESHOLD_KM`) | assign the nearest |
+| 2 | The end is within 2 km of the line's own other substation | `delete`: a self-loop |
+| 2 | A substation at another voltage within 2 km | assign it across the voltage guard; POST-PROCESSING 1b adds the tier and transformer |
+| 3 | A dead end on a line of 2 km or more | `new` inferred substation at the endpoint, cross-border ends included |
+| 3 | Anything else | `delete`: a short stub, or a fragment attached to nothing |
+
+When a merge leaves the joined line with another open end, that end is decided
+straight away, in the same stage.
+
+**Joining separate networks.** After the endpoint pass, POST-PROCESSING 3 adds a
+line between two separate networks only when the gap is a voltage-compatible hop
+of at most 50 km. It repeats until the grid is one network or no gap qualifies.
+Wider gaps, and gaps between different voltages, are left and reported, and
+`check_topology.py` flags them. For a region that really is islanded, set
+`EXPECT_CONNECTED_GRID = False` in `config.py`; this step is then skipped in both
+modes.
+
+**Finding what it changed.** The journal, `review_decisions_{region}.json`,
+records `"mode": "automatic"` and, beside every answer, the endpoint it answers
+(OSM id, which end, coordinates), the rule that chose it and the reason. The run
+ends with a count of decisions per rule. In the output tables:
+
+- buses it created are named `Junction` or `Inferred substation` followed by the
+  coordinates;
+- lines it added to join networks have `osm_id` `review:connect`;
+- `fbus_resolve_pass` and `tbus_resolve_pass` record how each end was settled
+  (`manual`, `manual_merge`, `manual_tap`, `manual_new`, `tap_split`, `connect`).
+
+**Replaying and correcting.** `--replay` reruns an automatic journal in the same
+three stages and reproduces the case exactly; `--auto` and `--replay` cannot be
+combined. A correction made in the journal replays cleanly when the same prompts
+accept it as accepted the answer it replaces: one bus number for another bus at
+the line's voltage that is not the line's other end, for example. Some changes
+move later answers onto the wrong prompts: changing how many answers a decision
+takes (a `new` takes four, a bus number one), or which endpoints come up
+(turning a `delete` into an assignment brings the line's other end up for
+review). Replay stops at the first answer that moved, as described above, rather
+than applying it.
+
+The thresholds are named at the top of `resolve_unmatched.py` (`AUTO_*`).
+Tested on fresh Step 2 output for Uruguay, Kenya, Taiwan and Colombia: every
+case came out with no self-loops and no voltage-incompatible endpoints. Uruguay
+and Taiwan came out as one network each; Kenya kept three gaps and Colombia
+seven, all wider than 50 km or between different voltages.
 
 ---
 
@@ -296,6 +400,18 @@ To add known industrial sites with incomplete OSM coverage, populate
 `KNOWN_REGIONAL_INDUSTRIAL` in this script with
 `(lat, lon, bucket_type, label)` tuples.
 
+Two rules protect the features a region is built on:
+
+- **Any source that cannot be read is named at the end of the step**, together
+  with the predictor it leaves at zero for every bus. A failed Overpass call
+  used to zero `road_density` in silence, which is a different load model
+  rather than a slower run.
+- **A cached satellite feature table is refused unless it describes the current
+  buses.** Every column in `gee_features_{region}_matpower.csv` is a reduction
+  over one bus's Voronoi cell, and the join key is the bus position, so a
+  rebuilt region would take another substation's nighttime lights. Delete the
+  file and re-run the step to fetch features for the current buses.
+
 ---
 
 ### Step 5 — `predict_bus_loads.py`
@@ -318,9 +434,13 @@ captive-power discount → generation bus pinning → lowest-voltage domestic bu
 national export distribution across cross-border buses. Domestic demand is
 preserved after voltage selection; export buses are exempt from that filter.
 
-Cross-border buses are detected from the NaturalEarth country boundary.
-Positive configured exports with no detected external buses cause an error
-instead of silently omitting the export demand.
+Cross-border buses are the ones nearer another country's NaturalEarth polygon
+than their own. Merely falling outside the boundary is not enough: the 110 m
+coastline is simplified by kilometres, so coastal substations in Taiwan,
+Australia and Puerto Rico plot outside countries that have no land border.
+Buses outside the boundary but nearest their own country are reported and kept
+domestic. Positive configured exports with no detected external buses cause an
+error instead of silently omitting the export demand.
 
 ---
 

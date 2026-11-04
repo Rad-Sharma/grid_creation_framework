@@ -197,30 +197,73 @@ def voronoi_finite_polygons(pts, bbox, clip_geom=None):
     return result
 
 
+NATURAL_EARTH_COUNTRIES = ("https://naturalearth.s3.amazonaws.com/110m_cultural/"
+                           "ne_110m_admin_0_countries.zip")
+
+
+def natural_earth_countries():
+    """Open the committed NaturalEarth countries file, downloading only if absent.
+
+    The same archive is committed at data/boundaries/ and used for cross-border
+    detection, so a new region should not need the network to find its own
+    outline. Downloading unconditionally also meant a blocked network silently
+    demoted every Voronoi cell to the bounding rectangle.
+    """
+    cache = PROJ_ROOT / "data" / "boundaries" / "ne_110m_admin_0_countries.zip"
+    if cache.is_file() and cache.stat().st_size > 0:
+        return gpd.read_file(cache)
+    world = gpd.read_file(NATURAL_EARTH_COUNTRIES)
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        import urllib.request
+        urllib.request.urlretrieve(NATURAL_EARTH_COUNTRIES, cache)
+    except Exception:
+        pass
+    return world
+
+
+def country_rows(world, iso_code):
+    """Rows for one country, by ISO A3 and then by the administrative code.
+
+    NaturalEarth 110 m records ISO_A3 as "-99" for five sovereign states, so a
+    lookup on that column alone silently finds nothing for them.
+    """
+    for column in ("ISO_A3", "ADM0_A3", "ISO_A3_EH", "ADM0_A3_US"):
+        if column in world.columns:
+            rows = world[world[column] == iso_code]
+            if len(rows):
+                return rows
+    return world.iloc[:0]
+
+
 def get_land_polygon(iso_code, bbox):
-    """Return country land polygon clipped to bbox (falls back to bbox rectangle)."""
+    """Return the country land polygon clipped to bbox.
+
+    Falls back to the bounding rectangle, which makes every coastal Voronoi cell
+    reach out to sea and inflates its area, so each fallback says why.
+    """
     cache = RAW_DIR / f"ne_land_{iso_code}.geojson"
     min_lon, min_lat, max_lon, max_lat = bbox
     box_poly = Polygon([(min_lon,min_lat),(max_lon,min_lat),
                         (max_lon,max_lat),(min_lon,max_lat)])
     if not cache.exists():
         try:
-            world = gpd.read_file(
-                "https://naturalearth.s3.amazonaws.com/110m_cultural/"
-                "ne_110m_admin_0_countries.zip"
-            )
-            country = world[world["ISO_A3"] == iso_code]
+            country = country_rows(natural_earth_countries(), iso_code)
             if len(country) == 0:
+                print(f"  [land polygon] COUNTRY_ISO3 '{iso_code}' matches no NaturalEarth "
+                      f"country - using the bounding box, so cell areas will include sea")
                 return box_poly
             try:
                 geom = country.geometry.union_all()
             except AttributeError:
                 geom = country.geometry.unary_union
             import json as _json
+            cache.parent.mkdir(parents=True, exist_ok=True)
             with open(cache, "w") as f:
                 _json.dump({"type": "Feature", "geometry": geom.__geo_interface__}, f)
         except Exception as exc:
-            print(f"  [land polygon] {exc} — using bbox")
+            print(f"  [land polygon] {exc} - using the bounding box, so cell areas "
+                  f"will include sea")
             return box_poly
     try:
         import json as _json
@@ -229,9 +272,13 @@ def get_land_polygon(iso_code, bbox):
             data = _json.load(f)
         geom = _shape(data["geometry"])
         land = geom.intersection(box_poly)
-        return land if not land.is_empty else box_poly
+        if land.is_empty:
+            print(f"  [land polygon] REGION_BBOX does not overlap '{iso_code}' - using "
+                  f"the bounding box; check the bbox is (min_lon, min_lat, max_lon, max_lat)")
+            return box_poly
+        return land
     except Exception as exc:
-        print(f"  [land polygon] Load failed: {exc} — using bbox")
+        print(f"  [land polygon] Load failed: {exc} - using the bounding box")
         return box_poly
 
 
@@ -494,6 +541,37 @@ def proxy_ntl_ghsl_from_nz(bus_df):
     return bus_df
 
 
+def gee_cache_mismatch(gee_df, bus_df):
+    """Explain why a cached GEE feature table cannot describe this bus set.
+
+    Every column in the cache is a reduction over a Voronoi cell, and the
+    tessellation is built from the bus coordinates, so a cache is only valid for
+    the bus set that produced it. The join key is "BUS_{bus_i}", a positional
+    index: rebuild a region and bus 7 is a different substation, so merging on it
+    hands each bus another site's nighttime lights and built-up area. Taiwan went
+    from 287 buses to 392 in a rebuild, and of the substations the cache did
+    cover by position, only a handful were still the ones it had measured.
+
+    Returns a description of the first mismatch found, or None when the cache and
+    the bus set agree on every bus.
+    """
+    if "poc_code" not in gee_df.columns or "name" not in gee_df.columns:
+        return "has no poc_code/name columns, so it cannot be checked against the bus set"
+    cached, current = set(gee_df["poc_code"]), set(bus_df["poc_code"])
+    if cached != current:
+        return (f"covers {len(cached)} bus(es) and this region now has {len(current)}"
+                f" ({len(current - cached)} uncovered, {len(cached - current)} stale)")
+    cached_name = dict(zip(gee_df["poc_code"], gee_df["name"].astype(str)))
+    now_name = dict(zip(bus_df["poc_code"], bus_df["bus_name"].astype(str)))
+    disagree = sorted(poc for poc in current if cached_name[poc] != now_name[poc])
+    if disagree:
+        first = disagree[0]
+        return (f"describes a different substation at {len(disagree)} of {len(current)}"
+                f" bus(es); {first} is now {now_name[first]!r}"
+                f" and the cache recorded {cached_name[first]!r}")
+    return None
+
+
 # ---------------------------------------------------------------------------
 # GEE satellite feature download
 # ---------------------------------------------------------------------------
@@ -705,6 +783,11 @@ def main():
     # e.g. URY → https://…/2020/URY/ury_ppp_2020_1km_Aggregated.tif
     iso3_lower = COUNTRY_ISO3.lower()
     pop_tif    = RAW_DIR / f"worldpop_{region}.tif"
+    # Each of these sources feeds a load-model predictor. When one cannot be
+    # fetched the feature it feeds stays at zero for every bus, which is a
+    # different model rather than a slower run, so collect them and say so once
+    # at the end instead of leaving three lines to scroll past.
+    unavailable = []
 
     if not pop_tif.exists():
         wp_url = (
@@ -723,6 +806,8 @@ def main():
             print(f"    {wp_url}")
             print(f"  Save as: {pop_tif}")
             print("  Population will be 0 until the file is present.")
+            unavailable.append(("pop_density", f"worldpop_{region}.tif",
+                                "the paper's strongest predictor (+0.510)"))
 
     bus_df["total_population"] = 0.0
     if pop_tif.exists():
@@ -774,6 +859,9 @@ out geom tags;
                 print(f"  Error: {exc}")
                 time.sleep(20)
 
+    if not ind_cache.exists():
+        unavailable.append(("ind_heavy_* areas", f"osm_{region}_industrial_typed.json",
+                            "every industrial predictor, including chemical area (+0.372)"))
     way_rows, point_rows = parse_industrial_elements(ind_data.get("elements", []))
     print(f"  {len(way_rows)} way polygons, {len(point_rows)} point features")
 
@@ -836,6 +924,9 @@ out geom;
             except Exception as exc:
                 print(f"  Road query error: {exc}")
                 time.sleep(20)
+    if not road_cache.exists():
+        unavailable.append(("road_density", f"osm_{region}_roads.json",
+                            "the commercial-activity predictor (+0.342)"))
     if road_cache.exists():
         with open(road_cache) as f:
             road_data = json.load(f)
@@ -889,6 +980,9 @@ out body;
                 time.sleep(15)
             except Exception:
                 time.sleep(20)
+    if not comm_cache.exists():
+        unavailable.append(("num_commercial_nodes", f"osm_{region}_commercial.json",
+                            "a legacy Ridge predictor"))
     if comm_cache.exists():
         with open(comm_cache) as f:
             comm_data = json.load(f)
@@ -919,9 +1013,20 @@ out body;
             gee_cols = ["ntl_sum","ntl_mean","ntl_max","ntl_std",
                         "ghsl_built_km2","era5_temp_c","built_up_pct","cropland_pct","tree_cover_pct"]
             gee_cols_present = [c for c in gee_cols if c in gee_df.columns]
+            stale = gee_cache_mismatch(gee_df, bus_df)
 
-            if "poc_code" in gee_df.columns:
-                # Preferred path: merge on poc_code (always unique)
+            if stale:
+                # Refuse the cache rather than merge it. Merging would attach
+                # another substation's radiance and built-up area to nearly every
+                # bus, and say nothing about having done so.
+                print(f"  [GEE] Ignoring {gee_cache.name}: it {stale}.")
+                print("  [GEE] Each cached column is a reduction over a bus's Voronoi cell,")
+                print("        so the cache only describes the bus set that produced it.")
+                print("        Delete the file and re-run this step to download features for")
+                print("        the current buses; the NZ proxy stands in until then.")
+                bus_df = proxy_ntl_ghsl_from_nz(bus_df)
+            elif "poc_code" in gee_df.columns:
+                # Preferred path: merge on poc_code (unique within one bus set)
                 merged = bus_df.merge(
                     gee_df[["poc_code"] + gee_cols_present],
                     on="poc_code", how="left", suffixes=("", "_gee")
@@ -970,6 +1075,19 @@ out body;
         bus_df = bus_df.drop(columns=replaced).merge(guarded, on="poc_code", validate="one_to_one")
     suffix = "paper_features" if paper_mode else "features_with_industrial"
     out_path = FEAT_DIR / f"{region}_{suffix}.csv"
+    if unavailable:
+        print()
+        print("=" * 68)
+        print(f"{len(unavailable)} feature source(s) could not be read; the features")
+        print("below are zero for every bus in this region:")
+        for feature, source, effect in unavailable:
+            print(f"  {feature:22} missing {source}")
+            print(f"  {'':22} zeroes {effect}")
+        print("The run continues, because a region can be modelled without them, but")
+        print("the loads it produces are not the ones these methods describe. Supply")
+        print("the files listed above and re-run this step before using the case.")
+        print("=" * 68)
+
     bus_df.to_csv(out_path, index=False)
     print(f"\nSaved → {out_path}  ({len(bus_df)} rows × {bus_df.shape[1]} cols)")
     print("\nNext step: python predict_bus_loads.py")

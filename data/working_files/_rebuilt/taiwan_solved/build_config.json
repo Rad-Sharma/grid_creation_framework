@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "region": "taiwan",
+    "COUNTRY_ISO3": "TWN",
+    "REGION_BBOX": [
+      119.3,
+      21.75,
+      122.11,
+      25.4
+    ],
+    "SHAPE_FILE_NAME": "Taiwan",
+    "MIN_TRANSMISSION_VOLTAGE_V": 115000,
+    "COUNTRY_DEMAND_MW": 31400,
+    "NATIONAL_EXPORT_MW": 0.0,
+    "LOAD_MODEL_METHOD": "legacy_ridge",
+    "INFER_TRANSFORMERS_FROM_VOLTAGE": true,
+    "FUEL_COST_BASIS": "us",
+    "PLANT_NAME_SEARCH_RADIUS_M": 1000
+  },
+  "steps": [
+    {
+      "step": "create_buses",
+      "at": "2026-09-21T20:10:00.425113+00:00"
+    },
+    {
+      "step": "create_lines",
+      "at": "2026-09-21T20:10:12.362113+00:00"
+    },
+    {
+      "step": "resolve_unmatched",
+      "at": "2026-09-21T20:21:24.229226+00:00"
+    }
+  ],
+  "inputs": {
+    "export_taiwan_buses.geojson": "436ef481fc70f5628604deb63ba256c9d5c94981c26986237bda96bc6d03fa7d"
+  }
+}

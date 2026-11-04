@@ -377,7 +377,14 @@ def _solve_dc(data, penalty):
     x = result.x if result.constr_violation <= 1e-8 else probe.x
     gen[:, 1], gen[:, 2] = x[pg] * base, 0.
     bus[:, 8] = np.rad2deg(x[th])
-    expansion = np.maximum(x[sl] * base, 0.)
+    # (4a) minimises the sum of squared slacks, so for the dispatch just solved
+    # the minimiser is exactly the overload on each branch. Reading the slack
+    # variable instead reports an interior point's distance from its own bound:
+    # every one of Taiwan's 807 branches came back 0.016 MVA short of zero, which
+    # made a relaxation of 110 corridors look like a relaxation of all of them.
+    _, bf, shift = dc_matrices(data)
+    flow = base * (bf @ x[th] + shift)
+    expansion = np.where(limited, np.maximum(np.abs(flow) - branch[:, 5], 0.), 0.)
     for col in (5, 6, 7):
         # Preserve zero (unlimited) emergency ratings.
         update = limited & (branch[:, col] > 0)
@@ -516,6 +523,8 @@ def _solve_ac(data, max_bsh, rounds=20, headroom=1e-3):
     # for a given Bs; otherwise converting back would need a Bs above the limit.
     ceiling = np.full(n, max_bsh * base * float(np.min(bus[:, 12]))**2)
 
+    existing_shunt = bus[:, 5].copy()
+
     attempt = _reactive_opf(data, ceiling)
     if attempt is None and _relieve_thermal(data, ceiling):
         attempt = _reactive_opf(data, ceiling)
@@ -545,19 +554,30 @@ def _solve_ac(data, max_bsh, rounds=20, headroom=1e-3):
     solved, reactive = best
     keep = np.abs(reactive) > POWER_TOL_MVA
     # MATPOWER Bs is MVAr at 1.0 pu and a fixed shunt supplies Bs*V^2, so this
-    # reproduces exactly the injection the source was making.
-    bus[:, 5] = np.where(keep, reactive / solved["bus"][:, 7]**2, 0.)
+    # reproduces exactly the injection the source was making. (5) calls B_sh the
+    # shunt installed *in addition to* any already in the network, and the source
+    # was drawing on top of that one, so the two add; overwriting would quietly
+    # remove reactive support the case already had.
+    bus[:, 5] = existing_shunt + np.where(keep, reactive / solved["bus"][:, 7]**2, 0.)
 
-    # That operating point already satisfies the source-free case, so hand it to
-    # the solver as the starting point rather than making it search from flat.
+    # Converting the source into the shunt that injects exactly what it drew
+    # leaves the voltages, angles and dispatch untouched, so this operating point
+    # is feasible for the source-free case by construction. Re-solving is
+    # therefore about optimality, not feasibility: it is worth trying, because
+    # the shunt is now fixed and the optimum moves, but a solver that declines to
+    # converge from a point on several active constraints has not shown the case
+    # to be infeasible. Keep the converted point when it does, and let
+    # check_solution rule on the exact nonlinear model either way.
     warm = dict(version="2", baseMVA=base, bus=bus.copy(), gen=gen.copy(),
                 branch=data["branch"].copy(), gencost=data["gencost"].copy())
     warm["bus"][:, 7:9] = solved["bus"][:, 7:9]
     warm["gen"][:, 1:3] = solved["gen"][:, 1:3]
-    final = _run_opf(warm)
+    final = _run_opf(warm) or _run_opf(dict(warm, bus=bus.copy(), gen=gen.copy()))
     if final is None:
-        raise RuntimeError("AC feasibility relaxation produced shunts the OPF cannot use")
-    gen[:, 1:3] = final["gen"][:, 1:3]
+        print("  Equation (5): keeping the converted shunt schedule; the source-free "
+              "OPF did not re-converge, so this point is feasible but not re-optimised.")
+        final = solved
+    gen[:, 1:3] = final["gen"][:len(gen), 1:3]
     bus[:, 7:9] = final["bus"][:, 7:9]
     # A power flow holds each PV bus at its generator's Vg, not at the bus Vm, so
     # leaving Vg at its old value hands runpf a different operating point from

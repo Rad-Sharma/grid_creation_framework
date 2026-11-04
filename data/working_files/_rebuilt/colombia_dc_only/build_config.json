@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "region": "colombia",
+    "COUNTRY_ISO3": "COL",
+    "REGION_BBOX": [
+      -79.1,
+      -4.3,
+      -66.8,
+      13.5
+    ],
+    "SHAPE_FILE_NAME": "Colombia",
+    "MIN_TRANSMISSION_VOLTAGE_V": 115000,
+    "COUNTRY_DEMAND_MW": 9100,
+    "NATIONAL_EXPORT_MW": 0.0,
+    "LOAD_MODEL_METHOD": "legacy_ridge",
+    "INFER_TRANSFORMERS_FROM_VOLTAGE": true,
+    "FUEL_COST_BASIS": "us",
+    "PLANT_NAME_SEARCH_RADIUS_M": 1000
+  },
+  "steps": [
+    {
+      "step": "create_buses",
+      "at": "2026-09-21T20:32:58.432401+00:00"
+    },
+    {
+      "step": "create_lines",
+      "at": "2026-09-21T20:33:02.191016+00:00"
+    },
+    {
+      "step": "resolve_unmatched",
+      "at": "2026-09-21T20:57:02.461242+00:00"
+    },
+    {
+      "step": "resolve_unmatched",
+      "at": "2026-09-21T20:57:57.981938+00:00"
+    }
+  ],
+  "inputs": {
+    "export_colombia_buses.geojson": "30116d4b990cfd8aaaf62014eead608ee45620d41d6fe60505e8353938f52d03"
+  }
+}
