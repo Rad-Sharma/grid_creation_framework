@@ -170,7 +170,10 @@ def test_relaxations_barely_touch_an_already_feasible_case():
     result = ef.solve_ac_feasibility(ef.solve_dc_feasibility(data))
     independent_ac_check(result)
     extra = result['branch'][:, 5] - original['branch'][:, 5]
-    assert extra.sum() < 1., f'added {extra.sum():.3f} MVA of line capacity'
+    # Exactly nothing: (4) sizes each slack at the branch's own overload, and
+    # case30 has none. Reading the interior point's slack variable instead left
+    # a hair on every branch.
+    assert extra.max() == 0., f'added {extra.sum():.3f} MVA of line capacity'
     # Only the two buses that already carried a shunt may end up with one.
     touched = np.abs(result['bus'][:, 5] - original['bus'][:, 5]) > 1e-6
     assert touched.sum() <= (original['bus'][:, 5] != 0).sum()

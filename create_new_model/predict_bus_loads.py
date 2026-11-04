@@ -114,9 +114,22 @@ def _country_boundaries():
 
 def detect_cross_border_buses(feat_df: pd.DataFrame,
                                shape_file_name: str) -> set:
-    """Return a set of bus_name values whose coordinates fall outside the
-    country boundary (NaturalEarth 110 m).  These buses carry international
-    exchange flows and must not receive domestic load.
+    """Return the bus_name values that sit in a neighbouring country.
+
+    These buses carry international exchange flows and must not receive domestic
+    load, so the test has to be right in both directions: a missed one absorbs
+    domestic demand it never serves, and a false one is struck off the domestic
+    total, its share handed to the rest of the network.
+
+    Falling outside the boundary is not sufficient evidence on its own. The
+    NaturalEarth 110 m coastline is simplified by kilometres, so a coastal
+    substation well inside its own country plots outside the polygon: 31 of
+    Taiwan's 287 buses, 49 of Australia's 2050 and 7 of Puerto Rico's 170, in
+    countries with no land border for a bus to be on the far side of. A bus is
+    therefore called external only when some other country's polygon is strictly
+    closer to it than its own, which is what being across a border means.
+    Distances are measured in the equal-area projection the rest of the pipeline
+    uses, not in degrees.
     """
     try:
         import geopandas as gpd
@@ -131,18 +144,40 @@ def detect_cross_border_buses(feat_df: pd.DataFrame,
                   f"— cross-border detection disabled.")
             return set()
 
-        country_geom = country.geometry.union_all()
-        outside = set()
-        for _, row in feat_df.iterrows():
-            lat = row.get("lat")
-            lon = row.get("lon")
-            if pd.isna(lat) or pd.isna(lon):
-                continue
-            if not country_geom.contains(Point(float(lon), float(lat))):
-                outside.add(row["bus_name"])
+        located = feat_df[feat_df["lat"].notna() & feat_df["lon"].notna()]
+        if located.empty:
+            return set()
 
-        print(f"  [cross-border] Detected {len(outside)} external bus(es) "
-              f"outside '{shape_file_name}' boundary.")
+        def as_points(frame, crs=None):
+            series = gpd.GeoSeries([Point(float(lon), float(lat)) for lon, lat
+                                    in zip(frame["lon"], frame["lat"])],
+                                   crs="EPSG:4326")
+            return series.to_crs(crs) if crs else series
+
+        home = country.geometry.union_all()
+        beyond = located[~as_points(located).within(home).to_numpy()]
+        if beyond.empty:
+            print(f"  [cross-border] Detected 0 external bus(es); every bus lies "
+                  f"inside the '{shape_file_name}' boundary.")
+            return set()
+
+        # EPSG:6933 is the equal-area projection the industrial footprints use,
+        # so "closer" is a distance in metres on both sides of the comparison.
+        metric = "EPSG:6933"
+        home_m = gpd.GeoSeries([home], crs="EPSG:4326").to_crs(metric).iloc[0]
+        others_m = world[world["name"] != shape_file_name].to_crs(metric).geometry
+        outside, coastal = set(), 0
+        for name, point in zip(beyond["bus_name"], as_points(beyond, metric)):
+            if others_m.distance(point).min() < home_m.distance(point):
+                outside.add(name)
+            else:
+                coastal += 1
+
+        print(f"  [cross-border] Detected {len(outside)} external bus(es) nearer "
+              f"another country than '{shape_file_name}'.")
+        if coastal:
+            print(f"  [cross-border] {coastal} further bus(es) fall outside the 110 m "
+                  f"boundary but are nearest their own country; kept domestic.")
         return outside
 
     except Exception as exc:
