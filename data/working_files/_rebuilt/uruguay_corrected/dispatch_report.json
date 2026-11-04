@@ -1,0 +1,26 @@
+{
+  "case_sha256": "da88218cd6b0381db76cf4f3a48be1813a7e27dc3cbab4f6e2834a2e4dccbf35",
+  "full_case_validated": true,
+  "equipment_relaxed": false,
+  "load_reduced": false,
+  "limitation": "Timeout or solver failure is not an infeasibility proof; feasibility is not geographic accuracy",
+  "islands": [
+    {
+      "component": 0,
+      "buses": 187,
+      "demand_mw": 1350.0004,
+      "solver_success": true,
+      "feasibility_tolerance": 1e-08,
+      "warnings": [],
+      "residual_mva": 2.7653113339629485e-06,
+      "thermal_mva": 0.0,
+      "voltage_pu": 0.0,
+      "pg_mw": 0.0,
+      "qg_mvar": 0.0,
+      "offline_generation_mva": 0.0,
+      "angle_deg": 0.0,
+      "passes": true,
+      "status": "validated"
+    }
+  ]
+}

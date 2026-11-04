@@ -1,0 +1,9 @@
+{
+  "region": "colombia",
+  "review_policy": "assisted",
+  "rebuilt_at": "2026-09-21T21:48:33.241171+00:00",
+  "note": "Rebuilt from OSM with the corrected pipeline (defects 29-34). NOT a reviewed model: Step 3 was answered by auto_review.py assisted. DC-feasible only: equation (5) finds no AC solution. Kept so the diagnosis in REBUILD_NOTES thread 6 can be reproduced.",
+  "assumptions": "LOAD_MODEL_METHOD=legacy_ridge; COUNTRY_DEMAND_MW=9100, NATIONAL_EXPORT_MW=0, COUNTRY_CAPACITY_MW=0 (none needed; the 111 tagged plants carry 14 345 MW, a margin of 1.58). MIN_TRANSMISSION_VOLTAGE_V=115000, +/-60 deg branch angle limit. Line lengths carry the defect-34 floor: 610 of 979 were raised, adding 8019 km.",
+  "result": "488 buses, 1124 branches (145 transformers), 258 generators, ONE island. check_topology reports 0 self-loops and 0 voltage-incompatible endpoints of 1958, busiest bus degree 17, where the checked-in case has 44 self-loops and a bus of degree 205. Equation (4) is satisfied with only 283 MVA of extra capacity on 5 branches, and no branch angle exceeds 53.5 of the 60 degrees allowed. Equation (5) finds no AC solution.",
+  "diagnosis": "The voltage band is the only binding constraint. With a +/-405 MVAr reactive source at every one of the 488 buses, lifting the thermal limits does not help, nor the angle limits, nor both together; freeing voltages to [0.5, 1.5] does, and the solutions found sit at 1.46 to 1.50 pu with the sources absorbing 10 066 MVAr. The cause is a reactive surplus: the lines produce 5356 MVAr of charging against 1409 MVAr of generator absorption. See REBUILD_NOTES thread 6."
+}

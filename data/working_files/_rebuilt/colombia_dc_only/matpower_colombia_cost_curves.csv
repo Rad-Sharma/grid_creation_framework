@@ -1,0 +1,259 @@
+generator_name,bus,source,genfuel,curve_type,Pmax,model,startup,shutdown,n,c2,c1,c0
+Termotasajero,266,coal,steam,steam_coal,333.0,2,0.0,0.0,3,0.018153,12.88572,549.564
+Termocandelaria,217,gas,gas,cc_gas,314.0,2,0.0,0.0,3,0.018522,13.64138,932.032
+Central hidroeléctrica Canoas,311,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Enel,431,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Central Hidroeléctrica Río Cali,92,hydro,hydro,hydro,1.8,2,0.0,0.0,3,2e-05,14.0,1.6706
+Termoguajira,216,coal,steam,steam_coal,290.0,2,0.0,0.0,3,0.015796,12.7636,479.56
+Central Hidroeléctrica la Tasajera,70,hydro,hydro,hydro,306.0,2,0.0,0.0,3,0.004704,14.0,341.462
+Termocartagena,22,gas,gas,cc_gas,180.0,2,0.0,0.0,3,0.010536,13.3506,612.04
+Punta Evans,409,diesel,gas_turbine,gt_petroleum,55.0,2,0.0,0.0,3,0.12315,27.253,801.12
+[unnamed way/332949585],113,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Minicentral Pajarito,61,hydro,hydro,hydro,4.9,2,0.0,0.0,3,6.7e-05,14.0,5.1333
+Central Térmica Termocentro,193,gas,gas,cc_gas,272.0,2,0.0,0.0,3,0.016019,13.55024,831.736
+Guadalupe IV,59,hydro,hydro,hydro,216.0,2,0.0,0.0,3,0.003318,14.0,240.932
+Hidroelectrica El Charquito,177,hydro,hydro,hydro,19.4,2,0.0,0.0,3,0.000291,14.0,21.3298
+[unnamed way/423900064],313,unknown,unknown,cc_gas,,2,0.0,0.0,3,,,
+Energuapi,359,diesel,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Hidroeléctrica #1,45,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Drummond Pribbenow Mine Power Station,104,gas,gas,cc_gas,,2,0.0,0.0,3,,,
+Guadalupe III,61,hydro,hydro,hydro,270.0,2,0.0,0.0,3,0.00415,14.0,301.25
+CHE Urrá,131,hydro,hydro,hydro,340.0,2,0.0,0.0,3,0.005228,14.0,379.44
+Central Hidroeléctrica Río Grande 1,116,hydro,hydro,hydro,19.0,2,0.0,0.0,3,0.000285,14.0,20.883
+Planta Hidroeléctrica de Sueva 1,190,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Central hidroeléctrica Salvajina,152,hydro,hydro,hydro,285.0,2,0.0,0.0,3,0.004381,14.0,318.005
+Hidroeléctrica Caruquia planta,61,hydro,hydro,hydro,9.5,2,0.0,0.0,3,0.000138,14.0,10.2715
+Planta 2 EPSA,92,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[Florida (Cauca)],21,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Termovalle,85,gas,gas,cc_gas,241.0,2,0.0,0.0,3,0.014172,13.48297,757.708
+Termoemcali I,82,gas,gas,cc_gas,213.0,2,0.0,0.0,3,0.012503,13.42221,690.844
+Central Hidroeléctrica de Chivor,192,hydro,hydro,hydro,1000.0,2,0.0,0.0,3,0.015392,14.0,1116.66
+Central Hidroeléctrica Las Palmas,70,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Planta termoeléctrica Ocoa,181,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Central Termoeléctrica Martín del Corral,183,coal,steam,steam_coal,235.5,2,0.0,0.0,3,0.01281,12.60882,390.834
+Central hidroeléctrica El Salto,178,hydro,hydro,hydro,55.0,2,0.0,0.0,3,0.000839,14.0,61.095
+Central hidroeléctrica Darío Valencia,186,hydro,hydro,hydro,150.0,2,0.0,0.0,3,0.002302,14.0,167.21
+Central hidroeléctrica La Guaca,187,hydro,hydro,hydro,324.0,2,0.0,0.0,3,0.004982,14.0,361.568
+Central hidroeléctrica El Paraíso,219,hydro,hydro,hydro,276.0,2,0.0,0.0,3,0.004242,14.0,307.952
+Planta Hidroeléctrica de Sueva 2,189,hydro,hydro,hydro,6.0,2,0.0,0.0,3,8.4e-05,14.0,6.362
+Termoeléctrica La Sierra,114,gas,gas,cc_gas,353.0,2,0.0,0.0,3,0.020847,13.72601,1025.164
+Central hidroeléctrica Betania,196,hydro,hydro,hydro,560.0,2,0.0,0.0,3,0.008616,14.0,625.18
+Termobarranquila,43,gas,gas,cc_gas,918.0,2,0.0,0.0,3,0.054521,14.95206,2374.384
+Central Eléctrica Termoflores,234,gas,gas,cc_gas,605.0,2,0.0,0.0,3,0.035866,14.27285,1626.94
+Hidroeléctrica Prado,259,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/698891021],136,diesel,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Celsia Solar Espinal,319,solar,solar,renewable,10.0,2,0.0,0.0,3,0.0,0.0,0.0
+Central hidroeléctrica El Quimbo,220,hydro,hydro,hydro,400.0,2,0.0,0.0,3,0.006152,14.0,446.46
+Central hidroeléctrica Laguneta,222,hydro,hydro,hydro,18.0,2,0.0,0.0,3,0.000269,14.0,19.766
+Central hidroeléctrica Riofrío II,151,hydro,hydro,hydro,10.0,2,0.0,0.0,3,0.000146,14.0,10.83
+Central Hidroeléctrica del Guavio,395,hydro,hydro,hydro,1250.0,2,0.0,0.0,3,0.019242,14.0,1395.91
+[Subestación Melendez],79,gas,gas,cc_gas,,2,0.0,0.0,3,,,
+[unnamed way/788071305],145,gas,gas,cc_gas,,2,0.0,0.0,3,,,
+Central hidroeléctrica Bajo Anchicayá,255,hydro,hydro,hydro,74.0,2,0.0,0.0,3,0.001132,14.0,82.318
+GRANJA EOLICA,18,wind,wind,renewable,,2,0.0,0.0,3,,,
+Gecelca 3,41,coal,steam,steam_coal,437.0,2,0.0,0.0,3,0.023852,13.18108,718.876
+[Campo Bonito 115 kV],336,biofuel,biofuel,cc_gas,,2,0.0,0.0,3,,,
+Pequeña Central Hidroeléctrica de Mutatá,261,hydro,hydro,hydro,1.875,2,0.0,0.0,3,2.1e-05,14.0,1.7544
+Pequeña Central Hidroeléctrica de Cupica,261,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Micro Central Hidroeléctrica Arusí,261,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+La vuelta,263,hydro,hydro,hydro,11.8,2,0.0,0.0,3,0.000174,14.0,12.8406
+La Herradura,264,hydro,hydro,hydro,19.8,2,0.0,0.0,3,0.000297,14.0,21.7766
+Empresa de energia EBSA,416,unknown,unknown,cc_gas,,2,0.0,0.0,3,,,
+[unnamed way/845533791],44,solar,solar,renewable,,2,0.0,0.0,3,,,
+Central hidroeléctrica Calima,335,hydro,hydro,hydro,132.0,2,0.0,0.0,3,0.002025,14.0,147.104
+[San Fernando],365,solar,solar,renewable,,2,0.0,0.0,3,,,
+CENTRAL HIDROELÉCTRICA AGUA FRESCA,269,hydro,hydro,hydro,7.49,2,0.0,0.0,3,0.000107,14.0,8.0263
+Meriléctrica,419,gas,gas,cc_gas,164.0,2,0.0,0.0,3,0.009582,13.31588,573.832
+Termonorte,211,gas,gas,cc_gas,88.0,2,0.0,0.0,3,0.005053,13.15096,392.344
+[Gaira],121,solar,solar,renewable,,2,0.0,0.0,3,,,
+Planta Viscorreductora 0,347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Planta Viscorreductora 4,347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+[unnamed way/1018548644],347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+[unnamed way/1018548645],347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+[unnamed way/1018548646],347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+[unnamed way/1018548647],347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Micro central Argos,114,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Central Hidroeléctrica Carlos Lleras,116,hydro,hydro,hydro,78.0,2,0.0,0.0,3,0.001193,14.0,86.786
+Central Hidroeléctrica La Esmeralda,109,hydro,hydro,hydro,30.0,2,0.0,0.0,3,0.000454,14.0,33.17
+Central Hidroeléctrica San Francisco,109,hydro,hydro,hydro,135.0,2,0.0,0.0,3,0.002071,14.0,150.455
+Central hidroeléctrica Alto Anchicayá,272,hydro,hydro,hydro,355.0,2,0.0,0.0,3,0.005459,14.0,396.195
+Termodorada,286,gas,gas,cc_gas,45.0,2,0.0,0.0,3,0.00249,13.05765,289.66
+Proeléctrica Mamonal,217,gas,gas,cc_gas,90.0,2,0.0,0.0,3,0.005172,13.1553,397.12
+Termo Mechero Morro,287,gas,gas,cc_gas,57.9,2,0.0,0.0,3,0.003259,13.085643,320.4652
+Termoyopal,288,gas,gas,cc_gas,186.0,2,0.0,0.0,3,0.010894,13.36362,626.368
+Hidroeléctrica Guanaquitas,61,hydro,hydro,hydro,9.5,2,0.0,0.0,3,0.000138,14.0,10.2715
+Central hidroeléctrica Troneras,61,hydro,hydro,hydro,40.0,2,0.0,0.0,3,0.000608,14.0,44.34
+Central hidroeléctrica Porce III,60,hydro,hydro,hydro,700.0,2,0.0,0.0,3,0.010772,14.0,781.56
+Central Hidroelectrica Mirolindo,91,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Central Hidroeléctrica Río Mayo,404,hydro,hydro,hydro,19.8,2,0.0,0.0,3,0.000297,14.0,21.7766
+EPM,229,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[Sesquile],432,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Casa Maquinas Morro Azul,375,hydro,hydro,hydro,19.9,2,0.0,0.0,3,0.000298,14.0,21.8883
+[unnamed way/1082331538],436,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Estación de Promigas,54,gas,gas,cc_gas,,2,0.0,0.0,3,,,
+[unnamed way/1153254305],359,microsoft;buildingfootprints,microsoft,cc_gas,,2,0.0,0.0,3,,,
+Parque Solar La Loma,289,solar,solar,renewable,,2,0.0,0.0,3,,,
+CASA DE MAQUINAS PORCE II,60,hydro,hydro,hydro,392.0,2,0.0,0.0,3,0.006029,14.0,437.524
+Central Hidroelectrica Barroso,269,hydro,hydro,hydro,19.9,2,0.0,0.0,3,0.000298,14.0,21.8883
+Central Hidroelectrica Hidromontañita,116,hydro,hydro,hydro,19.9,2,0.0,0.0,3,0.000298,14.0,21.8883
+Empresa De Energia Del Pacifico S.A. E.S.P,158,hydro,hydro,hydro,19.9,2,0.0,0.0,3,0.000298,14.0,21.8883
+[Casa de Maquinas],158,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+CENTRAL HIDROELÉCTRICA GUATAPÉ,113,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Planta Viscorreductora 3,347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Parque Solar Fundacion,66,solar,solar,renewable,100.0,2,0.0,0.0,3,0.0,0.0,0.0
+[Juanchito],46,solar,solar,renewable,,2,0.0,0.0,3,,,
+[San Fernando],303,solar,solar,renewable,,2,0.0,0.0,3,,,
+Planta Hidroelécrica La Cascada,309,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+CAMCO,317,coal,steam,steam_coal,,2,0.0,0.0,3,,,
+Planta de Exploracion Cedrillos E1,87,oil,gas_turbine,gt_petroleum,30.0,2,0.0,0.0,3,0.0359,22.788,526.02
+Parque Solar Guayepo I & II,334,solar,solar,renewable,486.0,2,0.0,0.0,3,0.0,0.0,0.0
+paneles solares,191,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1330054246],22,solar,solar,renewable,,2,0.0,0.0,3,,,
+Unigas,53,gas,gas,cc_gas,,2,0.0,0.0,3,,,
+Celsia Solar Dulima,62,solar,solar,renewable,20.0,2,0.0,0.0,3,0.0,0.0,0.0
+Celsia Solar Yuma,62,solar,solar,renewable,10.0,2,0.0,0.0,3,0.0,0.0,0.0
+Celsia Solar Flandes,62,solar,solar,renewable,20.0,2,0.0,0.0,3,0.0,0.0,0.0
+Celsia Solar Lanceros,62,solar,solar,renewable,10.0,2,0.0,0.0,3,0.0,0.0,0.0
+Amoya,429,hydro,hydro,hydro,80.0,2,0.0,0.0,3,0.001224,14.0,89.02
+Parque Fotovoltaico La Tolua SAS,54,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1409439690],181,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1409442451],356,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1409444170],139,solar,solar,renewable,,2,0.0,0.0,3,,,
+Los Llanos Solar Forest,350,solar,solar,renewable,19.9,2,0.0,0.0,3,0.0,0.0,0.0
+Riopaila power station,140,biomass,steam,gt_biomass,36.0,2,0.0,0.0,3,0.0,0.0,0.0
+Buga 1 solar farm,162,solar,solar,renewable,9.9,2,0.0,0.0,3,0.0,0.0,0.0
+Quantum solar farm,85,solar,solar,renewable,19.9,2,0.0,0.0,3,0.0,0.0,0.0
+GRANJA SOLAR IL,16,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1410844466],315,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Parque Solar Sincé Ventus – Sucre Colombia,141,solar,solar,renewable,19.9,2,0.0,0.0,3,0.0,0.0,0.0
+"PCH Oibita, Casa Máquinas",362,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Parque Solar Jeques,146,solar,solar,renewable,9.9,2,0.0,0.0,3,0.0,0.0,0.0
+CHEC Hydroelectric Plant,361,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[Planta Viscorreductora 2],347,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+[unnamed way/1423694994],366,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Cañahuate,367,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424872867],399,solar,solar,renewable,,2,0.0,0.0,3,,,
+49604,369,solar,solar,renewable,98.0,2,0.0,0.0,3,0.0,0.0,0.0
+[SE Bolívar 66 kV],296,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424892742],207,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424892743],48,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424892781],247,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424892827],224,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424892831],286,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424892961],48,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424893247],54,solar,solar,renewable,,2,0.0,0.0,3,,,
+Planta de energía solar Ecopetrol,67,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424945953],24,solar,solar,renewable,,2,0.0,0.0,3,,,
+Parque solar fotovoltaico TEPUY-EPM,397,solar,solar,renewable,,2,0.0,0.0,3,,,
+Parque Solar Portón Del Sol,398,solar,solar,renewable,,2,0.0,0.0,3,,,
+13728,194,solar,solar,renewable,25.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424947427],151,solar,solar,renewable,,2,0.0,0.0,3,,,
+63901,41,solar,solar,renewable,4.1,2,0.0,0.0,3,0.0,0.0,0.0
+60488,410,solar,solar,renewable,10.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424948322],138,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424948572],383,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424949157],46,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424949159],268,solar,solar,renewable,,2,0.0,0.0,3,,,
+90413,169,solar,solar,renewable,32.0,2,0.0,0.0,3,0.0,0.0,0.0
+82792,426,solar,solar,renewable,13.0,2,0.0,0.0,3,0.0,0.0,0.0
+28388,249,solar,solar,renewable,1.8,2,0.0,0.0,3,0.0,0.0,0.0
+102663,268,solar,solar,renewable,24.0,2,0.0,0.0,3,0.0,0.0,0.0
+73628,234,solar,solar,renewable,1.7,2,0.0,0.0,3,0.0,0.0,0.0
+75456,338,solar,solar,renewable,13.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424950640],336,solar,solar,renewable,,2,0.0,0.0,3,,,
+59221,140,solar,solar,renewable,8.8,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424951862],80,solar,solar,renewable,,2,0.0,0.0,3,,,
+Parque Solar Alejandría,369,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424952023],214,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424952395],371,solar,solar,renewable,,2,0.0,0.0,3,,,
+75616,144,solar,solar,renewable,3.1,2,0.0,0.0,3,0.0,0.0,0.0
+Parque Solar - Planta de Ecopetrol Coveñas,423,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424952579],265,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424952750],338,solar,solar,renewable,,2,0.0,0.0,3,,,
+Parque Solares Bolivar,334,solar,solar,renewable,89.0,2,0.0,0.0,3,0.0,0.0,0.0
+19194,425,solar,solar,renewable,12.0,2,0.0,0.0,3,0.0,0.0,0.0
+40523,425,solar,solar,renewable,8.6,2,0.0,0.0,3,0.0,0.0,0.0
+40523,425,solar,solar,renewable,8.6,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424953159],94,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424953202],284,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424953970],24,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424954009],265,solar,solar,renewable,,2,0.0,0.0,3,,,
+11689,433,solar,solar,renewable,3.7,2,0.0,0.0,3,0.0,0.0,0.0
+11689,433,solar,solar,renewable,3.7,2,0.0,0.0,3,0.0,0.0,0.0
+72341,150,solar,solar,renewable,9.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424954296],296,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424954401],268,solar,solar,renewable,,2,0.0,0.0,3,,,
+16212,214,solar,solar,renewable,13.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424954467],358,solar,solar,renewable,,2,0.0,0.0,3,,,
+93288,146,solar,solar,renewable,3.2,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424954867],369,solar,solar,renewable,,2,0.0,0.0,3,,,
+68767,41,solar,solar,renewable,8.8,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424954902],46,solar,solar,renewable,,2,0.0,0.0,3,,,
+63427,54,solar,solar,renewable,16.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424955351],338,solar,solar,renewable,,2,0.0,0.0,3,,,
+81786,10,solar,solar,renewable,14.0,2,0.0,0.0,3,0.0,0.0,0.0
+56345,231,solar,solar,renewable,25.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424955500],231,solar,solar,renewable,,2,0.0,0.0,3,,,
+79959,299,solar,solar,renewable,8.4,2,0.0,0.0,3,0.0,0.0,0.0
+[Ocana],10,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424956731],233,solar,solar,renewable,,2,0.0,0.0,3,,,
+49497,420,solar,solar,renewable,27.0,2,0.0,0.0,3,0.0,0.0,0.0
+10597,268,solar,solar,renewable,63.0,2,0.0,0.0,3,0.0,0.0,0.0
+Montelíbano Solar S.A.S. E.S.P,41,solar,solar,renewable,11.0,2,0.0,0.0,3,0.0,0.0,0.0
+78228,249,solar,solar,renewable,3.7,2,0.0,0.0,3,0.0,0.0,0.0
+103781,369,solar,solar,renewable,27.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424957841],265,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1424957864],120,solar,solar,renewable,,2,0.0,0.0,3,,,
+30915,425,solar,solar,renewable,13.0,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1424958006],214,solar,solar,renewable,,2,0.0,0.0,3,,,
+[Termoyumbo],80,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1430780238],202,diesel,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+[unnamed way/1449937574],191,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1450184310],87,gas,gas,cc_gas,,2,0.0,0.0,3,,,
+Guavio hydroelectric plant,390,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Sogamoso,339,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Central Hidroeléctrica San Carlos,58,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Playas hydroelectric plant,58,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Central Hidroeléctrica Jaguas,58,hydro,hydro,hydro,170.0,2,0.0,0.0,3,0.00261,14.0,189.55
+[Antioquia],35,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+Central Hidroelectrica Luzma,60,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1456854157],137,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1461970465],87,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1462359476],212,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462359477],275,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462359478],314,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[Calderas],113,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462359480],95,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462359481],342,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462359484],116,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462359485],45,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462359486],33,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462688737],26,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462689403],177,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462689404],61,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462689405],269,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462689406],342,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462689407],314,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1462689408],113,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1463658518],87,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1464191488],21,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1464191489],21,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1464191490],18,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1464191491],137,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1464191492],386,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1464191493],36,hydro,hydro,hydro,,2,0.0,0.0,3,,,
+[unnamed way/1469873568],423,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1469960610],423,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1469971532],423,solar,solar,renewable,0.13,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1469971576],423,solar,solar,renewable,,2,0.0,0.0,3,,,
+Granja Solar Universidad del Norte - Promigas,44,solar,solar,renewable,3.12,2,0.0,0.0,3,0.0,0.0,0.0
+[unnamed way/1486113840],268,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1486113841],268,solar,solar,renewable,,2,0.0,0.0,3,,,
+[Olímpica - Manuela Beltran],43,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1486114426],32,solar,solar,renewable,,2,0.0,0.0,3,,,
+Aquasol,131,solar,solar,renewable,1.5,2,0.0,0.0,3,0.0,0.0,0.0
+Planta de Energía Solar de Soacha,88,solar,solar,renewable,,2,0.0,0.0,3,,,
+[unnamed way/1507994485],87,oil,gas_turbine,gt_petroleum,,2,0.0,0.0,3,,,
+Llanogas,227,gas,gas,cc_gas,,2,0.0,0.0,3,,,
+YurbaQua,32,solar,solar,renewable,2.8,2,0.0,0.0,3,0.0,0.0,0.0
+Ciel & Terre,113,solar,solar,renewable,,2,0.0,0.0,3,,,

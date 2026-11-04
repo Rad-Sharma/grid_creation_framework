@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "region": "uruguay",
+    "COUNTRY_ISO3": "URY",
+    "REGION_BBOX": [
+      -58.5,
+      -35.1,
+      -53.0,
+      -30.0
+    ],
+    "SHAPE_FILE_NAME": "Uruguay",
+    "MIN_TRANSMISSION_VOLTAGE_V": 115000,
+    "COUNTRY_DEMAND_MW": 1350,
+    "NATIONAL_EXPORT_MW": 0.0,
+    "LOAD_MODEL_METHOD": "legacy_ridge",
+    "INFER_TRANSFORMERS_FROM_VOLTAGE": true,
+    "FUEL_COST_BASIS": "us",
+    "PLANT_NAME_SEARCH_RADIUS_M": 1000
+  },
+  "steps": [
+    {
+      "step": "create_buses",
+      "at": "2026-09-21T20:46:42.043500+00:00"
+    },
+    {
+      "step": "create_lines",
+      "at": "2026-09-21T20:46:44.941990+00:00"
+    },
+    {
+      "step": "resolve_unmatched",
+      "at": "2026-09-21T20:50:28.762950+00:00"
+    }
+  ],
+  "inputs": {
+    "export_uruguay_buses.geojson": "1ffac22a707d5d549183a96aecbe3fe0a2f226f9908196e1a21c7a375355bc63"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "region": "taiwan",
+  "review_policy": "assisted",
+  "rebuilt_at": "2026-09-21T21:42:44.042845+00:00",
+  "note": "Rebuilt from OSM with the corrected pipeline (defects 29-34). NOT a reviewed model: Step 3 was answered by auto_review.py assisted. The first Taiwan case that runs; the Automate Grid Creation paper leaves Taiwan's row of Table VII blank.",
+  "assumptions": "LOAD_MODEL_METHOD=legacy_ridge; COUNTRY_DEMAND_MW=31400 (Taiwan's average demand), NATIONAL_EXPORT_MW=0 (no interconnection), COUNTRY_CAPACITY_MW=0 - none needed, because the 71 plants OSM tags carry 44 788 MW against 31 400 MW of demand, a margin of 1.43. The other 372 plants have no OSM capacity and are out of service, as Sec. V-B-2 intends. MIN_TRANSMISSION_VOLTAGE_V=115000, +/-60 deg branch angle limit, everything else pipeline default. The stale satellite cache was refused, so NTL/GHSL come from the declared NZ proxy.",
+  "result": "392 buses, 807 branches (87 transformers), 443 generators, ONE island. check_topology reports 0 self-loops, 0 voltage-incompatible endpoints of 1440, busiest bus degree 16. DC and AC feasible. AC power flow converges: Vmin 1.076, Vmax 1.100, every bus inside [0.9, 1.1], losses 1110.6 MW (3.5 %) on 31 400 MW. check_solution passes against the exact nonlinear model, max branch angle difference 32.9 deg. 370 shunts above 1 MVAr (296 capacitive, 74 reactive), largest 334.5 MVAr.",
+  "caveat": "constrained_dispatch.py does NOT validate this case: PyPOWER's PIPS will not re-converge on it at any tolerance in the ladder, the same difficulty defect 32 describes. That is a solver limitation, not evidence about the case. runpf converges on it, check_solution passes against the exact nonlinear model, and PowerModels.jl 0.21.5 with Ipopt 1.14.1 solves all four formulations of this exported case: DC 7.584e6, SOC 8.741e6, QC 8.741e6, AC 8.762e6, in the order a correct relaxation hierarchy requires."
+}

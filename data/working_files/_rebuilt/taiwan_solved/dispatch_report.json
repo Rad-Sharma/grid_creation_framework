@@ -1,0 +1,19 @@
+{
+  "case_sha256": "4be48e20486a5b693bf1a441eebf1bd47f08b02e3b4a35e72667d325b3683e75",
+  "full_case_validated": false,
+  "equipment_relaxed": false,
+  "load_reduced": false,
+  "limitation": "Timeout or solver failure is not an infeasibility proof; feasibility is not geographic accuracy",
+  "islands": [
+    {
+      "component": 0,
+      "buses": 392,
+      "demand_mw": 31400.0012,
+      "solver_success": false,
+      "feasibility_tolerance": 1e-06,
+      "warnings": [],
+      "passes": false,
+      "status": "solver_or_validation_failed"
+    }
+  ]
+}
